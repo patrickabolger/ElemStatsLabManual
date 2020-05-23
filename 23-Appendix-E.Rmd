@@ -1,0 +1,53 @@
+# E: *Results* example {-}
+
+```{block, type="rmdwarning"}
+**WARNING**: This document will be uploaded to Turnitin. It will also have been read by your classmates. Therefore, it is a very bad idea to copy this to modify to use in your own *Results* section. Doing so would be a form of plagiarism. 
+```
+
+<br/>
+
+```{block2, type="rmdtip"}
+**TIP**: As noted in Chapter \@ref(WritingMethodSections), section \@ref(PWEFM1ParticipantsReviseSubsection), the proper way to use the example we have provided below is to paraphrase it. To do this, read through the example, section by section. For each section, read for meaning. Make sure you understand it. Then minimize it in your screen and bring up the document that you are writing. **Critically**, **walk away for a few minutes**. Wash a couple of dishes; dust off a shelf, write a text message to a friend; do some jumping jacks; whatever, but actively **do** something totally unrelated to writing this section. Then return after 2-3 minutes, and write out the relevant section in your own words, according to the content you remember reading from the example passage (adjusted for your own content, naturally). The cognitive reality here is that you will remember the content after 2-3 minutes, but you will have forgotten both the ordering of information and the exact wording of the original [The first evidence of this was found by Sachs [-@Sachs1967]]. This way, there is very little chance that you will plagiarize.
+```
+
+<br/><br/>
+
+The survey design and data for the example *Results* section below is adapted from a classroom project by Fettig, López Fuentes, and Villarreal [-@FettigLopezfuentesVillarreal2019].
+
+<br/><br/>
+
+>Study 1
+>
+>*Results*
+>
+>In this portion of the study, we looked at the effects on overall sleep quality from two categorical variables. The first was whether students were involved in extracurricular activities. This was answered as either *Yes* or *No* in the survey, and therefore had two levels. The second was their employment status, and could be answered as *No* (not employed), *Part-time*, or *Full-time*. Therefore, it had three levels.
+>
+>The variable *Extracurricular Activities* was analyzed using an independent-samples *t*-test, and the variable *Employment Status* was analyzed using a One-Way ANOVA. For the *t*-test, we used a test that was corrected for heterogeneity of variance, whereas in the One-Way ANOVA, we tested the assumption of homogeneity of variance with Levene's Test.
+>
+>*Extracurricular Activities*
+>
+>The results of the analysis of *Extracurricular Activities* on *Sleep Quality* is represented in Figure 1 below.
+>
+>
+```{r, fig.cap="Figure 1. The effect of extracurricular activities on sleep quality. Error bars represent the 95% confidence interval. Sleep quality is on a standardized scale.", echo=F, out.width="600px"}
+knitr::include_graphics("images/ResultsAppendices/Ttest_ExtracurricOnSleepQual.png")
+```
+>
+>
+>Although participants who reported being involved in extracurricular activities indicated that their sleep quality was better overall (*M* = 0.0522, *SD* = 0.891, *n* = 31) than their counterparts who reported not being involved in extracurricular activities (*M* = -0.285, *SD* = 0.858, *n* = 6), the difference was non-significant, *Welch's* $t(7.25)=-0.885,p=.405,d=-0.384$. It seems that whatever differences there were between the groups may have been due to chance.
+>
+>*Employment Status*
+>
+>The results of the analysis of *Employment Status* on *Sleep Quality* is represented in Figure 2 below.
+>
+>
+```{r, fig.cap="Figure 2. The effect of employment status on sleep quality. Error bars represent the 95% confidence interval. Sleep quality is on a standardized scale.", echo=F, out.width="600px"}
+knitr::include_graphics("images/ResultsAppendices/ANOVA_EmplStatOnSleepQual.png")
+```
+>
+>
+>There seems to be a trend for participants who are working full time to report having lower sleep quality (*M* = -0.798, *SD* = not available, *n* = 1) than either the participants who were not working at all (*M* = 0.0124, *SD* = 0.915, *n* = 28) or who were working part-time (*M* = 0.0563, *SD* = 0.831, *n* = 8). However, there were no significant differences among the groups, $F(2,34)=0.504,p=0.609,\eta_p^2=0.029$.^[NOTE: THIS WOULD NOT APPEAR AT ALL IN THE RESULTS SECTION; IT IS HYPOTHETICAL. However, if there had been a significant difference, we would have reported the post-hoc tests as follows, which would normally highlight at least one significant difference, but not in this case since there was no signficant difference in the omnibus test: "We also ran post-hoc comparisons using the Holm correction. There was no significant difference between those who reported working full time and those who reported not working at all, $t(34)=-0.886,p=1$. Nor was there any significant difference between full-timers and those who reported working part time, $t(34)=-0.897,p=1$. Finally, there was no significant difference between the part-timers and those who reported not working at all, $t(34)=-0.122,p=1$.]
+>
+>In fact, as is clear to see, there was only one participant who indicated they were working full time. These results cannot be trusted since there is no within-group variance associated with a factor level with an *n* of 1.
+>
+>If we drop that level and re-run the analysis between the students either working part time or not at all, we also get no statistically significant effect, $F(1,34)=0.00772,p=0.931,\eta_p^2=0$.

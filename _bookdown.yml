@@ -1,0 +1,7 @@
+book_filename: "ElemStatsLabManual"
+delete_merged_file: true
+repo: https://github.com/patrickabolger/ElemStatsLabManual
+output_dir: docs
+language:
+  ui:
+    chapter_name: "Chapter "

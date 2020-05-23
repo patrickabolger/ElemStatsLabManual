@@ -1,0 +1,14 @@
+# H: *Discussion* rubric {-}
+
+```{r, echo=F, message=F, warning=F}
+DiscussionRubric <- readr::read_tsv("OtherResources/RubricForDiscussion.tsv")
+```
+
+```{r RubricForDiscussion, echo=F, warning=F, message=F}
+library(magrittr)
+knitr::kable(DiscussionRubric,
+caption = 'Rubric for transitional Discussion sections (Note: the Transition and Preview criteria do not apply to the last Discussion section before the General Discussion)'
+) %>%
+kableExtra::kable_styling(bootstrap_options = c("striped", "condensed", "responsive"), font_size=11, full_width = T) %>%
+kableExtra::column_spec(1, bold = T, border_right = T)
+```

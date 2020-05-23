@@ -1,0 +1,420 @@
+# Writing *Discussion* sections {#WritingDiscussionSections}
+
+## Purpose and structure of *Discussion* sections {#StructureOfDiscussionSections}
+
+The *Discussion* section can take one of two forms, and depending on which form it takes, it will convey somewhat different information.
+
+<br/><br/>
+
+### Single-study *Discussion* sections {#StructureOfSingleStudyDiscussionSections}
+
+Specifically, if it is a single-study paper (i.e., there are **no** subheadings similar to *Study 1*, *Study 2*, or *Experiment 1*, *Experiment 2*, etc.), then this section synthesizes the entire study. It usually starts with the predictions found near the end of the introduction, summarizes the findings (from the *Results* section), and then finally tries to make sense of the predictions, given the results. An outline of this kind of paper can be seen near the top of section \@ref(OrganizationOfAPAResearchReports) above. In fact, its structure corresponds perfectly to the acronym IMRaD (hence, the acronym), Section \@ref(OrganizationOfAPAResearchReports) is re-produced directly below:
+
+- ***I***ntroduction
+- ***M***ethods
+- ***R***esults 
+***a***nd
+- ***D***iscussion
+
+<br/><br/>
+
+### Multiple-study *Discussion* sections {#StructureOfMultipleStudyDiscussionSections}
+
+But if there are multiple "studies" within the paper (e.g., *Study 1*, *Study 2*, or *Experiment 1*, *Experiment 2*, etc.), then there is typically a *Discussion* section for each study, followed in the end by a *General Discussion*. 
+
+An outline of this kind of paper can be found near the end of section \@ref(OrganizationOfAPAResearchReports) above. But we will re-produce it below:
+
+- Introduction
+- Study/Experiment 1
+  - Methods
+  - Results
+  - Discussion
+- Study/Experiment 2
+  - Methods
+  - Results
+  - Discussion
+- General Discussion^[In fact, both Assignment #3 and Assignment #4 roughtly conform to the two *Study/Experiment* structures. That is, Assignment #3 is the *Results* and *Discussion* for the *t*-test and ANOVA, whereas Assignment #4 is the same for the correlation and regression, along with *General Discussion* at the end. One major difference between your papers and the canonical multi-study paper is that you wrote a *Method* section that applied to all the studies, instead of having separate methods for each study/experiment (a more common approach).]
+
+In this case, the study-specific *Discussion* sections restrict themselves to the predictions and results concerning that particular study/experiment, followed by a transition to the next study/experiment, if any.
+
+This make sense, of course. There are several reasons that a researcher might split a paper up into separate studies like this. One reason is that it is easier for the reader to digest the information this way. Essentially, it is the same reason that you might organize a smaller paper (e.g., a five-paragraph essay) into separate paragraphs that deal with different aspects of the overall argument.
+
+Another reason to do this is that the studies/experiments actually ***were*** separate studies/experiments. Often, researchers have to investigate, say, three aspects of the same thing, which entails that they probably need to do it three different ways. These would be reported as three separate studies/experiments.
+
+Another version of the distinct-study approach (and a much more common version, from what we can tell) is when there really is only one main study, but the main study is not "strong" enough to stand on its own, so the other studies serve to supplement the main one by addressing possible weaknesses or ruling out alternative explanations to the main study, etc.
+
+Whatever the case, as mentioned above, these *Discussion* sections often end with a transition to the next section, if there is one. This transition gives the *raison d'etre* for the subsequent section, and often provides a quick one-sentence preview of what the next study/experiment looks like.
+
+When there is no subsequent study, naturally this means that the *General Discussion* (which is mandatory in this type of multiple-study paper) directly follows. In this case, this transition section is simply skipped as the reader understands that, at least according to the writers, everything that needs to be addressed by another experiment or study (at least within the larger context of the paper) has already been addressed at that point.
+
+<br/><br/>
+
+#### The *General Discussion* section {#StructureOfGeneralDiscussionSectionsInDiscussionChapter}
+
+Among other things, the *General Discussion* primarily synthesizes the findings from all the separate *Discussion* sections into one, which then analyzes the more general predictions laid out at the end the *Introduction*. However, just *how* to write this section is covered in a separate chapter (Chapter \@ref(WritingGeneralDiscussionSections)). Therefore, we will restrict this chapter to simple *Discussion* sections.
+
+<br/><br/>
+
+Below are some examples of *Discussion* sections of the type that you will be writing: individual discussion section leading up to a *General Discussion*.
+
+<br/><br/>
+
+### Examples of *Discussion* sections {#ExamplesOfDiscussionSections}
+
+#### Example 1 {#ExampleOfDicsussionSections1}
+
+Guekes, Gaskell, and Zwitserlood [-@GeukesGaskellZwitserlood2015] describe the results of their Experiment 1 in the *Discussion* section excerpted below.
+
+This experimental paradigm concerned foreign-language vocabulary acquisition and long-term memory consolidation. Participants were indirectly taught associations between pseudo-words in German (i.e., things that could be words, but are not, like *flimp* in English) and colors. The participants then performed a series of [stroop tasks](https://en.wikipedia.org/wiki/Stroop_effect) at various delays where they needed to indicate the color of the font a letter string is presented in, ignoring any meaning the letter string might have. When the meaning interferes, it is called a *congruency* effect, and it is evidence of automatic semantic (word-meaning) activation. The researchers purported that any stroop effects between the pseudo-words and the colors that lingered well after the learning phase would be evidence for memory consolidation at work in long-term (neocortical) learning.
+
+The *Discussion* section of The Experiment 1 is presented below. Note that the very first sentence summarizes the design of the experiment.
+
+>**Experiment 1**...
+>
+>*Materials and Methods*...
+>
+>*Results*...
+>
+>*Discussion*
+>
+>Experiment 1 was designed to test whether novel words that have recently been associated with native color words via lexical association are already able to produce a congruency effect in the Stroop paradigm. The response-time findings show that this is indeed the case: Immediately after learning as well as 24 h later, novel color words generated sizable congruency effects. Given that learning in this experiment consisted of a word-word-association procedure that neither required nor encouraged deep semantic processing of the novel words, the presence of a Stroop effect seems notable. The fact that we see the effect immediately after learning suggests that, under these conditions, consolidation is not necessary for the effect to emerge.
+>
+>We further found that the change of the congruency effect between the two sessions was not identical in the two stimulus languages: The congruency effect in the German words decreased by 17 ms on the second day compared to the first day's Stroop session, while in the novel words the effect increased by 9 ms. Thus, in both languages, congruency effects are present on both days, but the significantly contrasting pattern of overnight changes in the Stroop effects... points to the possibility that, during the 24 h interval, the two classes of words are processed in a qualitatively different way. Experiment 3 will address the question of time and consolidation effects more directly.
+>
+>The learning run in this first experiment, although based on a relatively shallow learning task, contained a large number of trials per word and thus resulted in a classification performance that approached ceiling levels. It is therefore unclear whether the novel word congruency effect crucially depends on such a large number of learning trials or whether a significant reduction of the trial number will lead to a qualitatively similar result.
+>
+>Furthermore, so far the Stroop sessions only contained congruent and incongruent trials but no neutral control stimuli, rendering it impossible to clearly identify the effect as facilitatory, inhibitory, or a mix of both. In native-language Stroop, these two main components (facilitation and inhibition) can indeed be distinguished ... They are respectively defined as the difference in response times between neutral control stimuli and congruent stimuli (facilitation) or between neutral control stimuli and incongruent stimuli (inhibition). While the relative proportions of the components may vary depending on the properties of the neutral stimuli..., the interference component is typically substantially larger than the facilitation component... If the novel word effect were closely linked to the native words effect, then it should at least be similarly divisible into an inhibitory and a facilitatory component.
+>
+>In Experiment 2, we addressed both the question of learning intensity and the question of whether the novel word congruency effect is composed of facilitation, inhibition, or both.
+>
+>**Experiment 2**...
+
+<br/><br/>
+
+The most important thing to note in this *Discussion* section is its overall structure. The first paragraph compares what they were looking for (spelled out at the end of the *Introduction*, among other places) and whether they found it (from the *Results* section). And paragraph two elaborates more on the findings, focusing on a different aspect (the change in findings across a 24-hour delay).
+
+The third and fourth paragraphs highlight two weaknesses (respectively) in Study 1 that should probably be addressed. These two paragraphs are then followed up, predictably, by a transition to the next study (Study 2) that will directly address these weaknesses.
+
+Thus, the organizational content of the *Discussion* section for Experiment 1 is as follows:
+
+- What did we expect?
+- What did we find?
+- What were the weaknesses in what we just did?
+- How are we going to address those weaknesses?
+
+This is a very typical example of how such *Discussion* sections are organized.
+
+<br/><br/>
+
+#### Example 2 {#ExampleOfDicsussionSections2}
+
+It is useful here to contrast the first and the last *Discussion* sections from Guekes, Gaskell, and Zwitserlood [-@GeukesGaskellZwitserlood2015]. You can see the difference between the end of the first *Discussion* section, for Experiment 1, and their third, for Experiment 3. That of the third is below.
+
+<br/><br/>
+
+>**Experiment 3**...
+>
+>*Materials and Methods*...
+>
+>*Results*...
+>
+>**Discussion**
+>
+>In the third experiment, we tested whether the novel-word Stroop effect depended on the presence of German words during the Stroop test. We therefore removed the German words from these blocks and otherwise repeated Experiment 1. We added a between-participants manipulation to differentiate predicted consolidation effects from effects of mere temporal order. One group of participants performed the first Stroop block immediately after learning and the second Stroop block about 24 h later. A second group of participants had no Stroop block immediately after learning, but rather performed both blocks on the second day.
+>
+>Results show that in Group 1, the Stroop effect was not present in the block that was administered immediately after learning but only on the second day. In Group 2, with both Stroop blocks on the second day, the effect was present already in the first Stroop block. These results lead to two important conclusions: First, the novel word effect can be observed even when no German color words are included in the Stroop blocks. Second, the differing results between the two groups indicate that, in the absence of the native-language words, the effect arises only after a period that allows memory consolidation.
+>
+>**General Discussion**...
+
+<br/><br/>
+
+Notable, they omitted any transition too the subsequent section, which is the *General Discussion*. This is because they believe that they have sufficiently addressed any concerns at this point, and it is time to talk about the experiment in general.
+
+<br/><br/>
+
+#### Example 3 {#ExampleOfDicsussionSections3}
+
+In the following study, Schneider and Carbon [-@SchneiderCarbon2017] studied how selfies taken at different angles can affect whether and how people looking at those selfies associate certain certain characteristics such as attractiveness and helpfulness (among others) with those same selfies.
+
+The example we use is from Study 2 (of two studies). We also included the very beginning of the section (where *Study 2* begins, starting with "Study 1 revealed that perspective..."). This is because the researchers, in this case, chose to place the transition paragraph at the beginning of Study 2, rather than at the end of the *Discussion* in Study 1 (contrast this with the approach used by Guekes, Gaskell, and Zwitserlood [-@GeukesGaskellZwitserlood2015] in section \@ref(ExampleOfDicsussionSections1)). 
+
+The small takeaway here is that it is also an option to put transitions at the beginning of subsequent sections rather than at the end of preceding sections. What is important in the end is that there is some sort of transition near the change from one study to another.
+
+>**Study 2**
+>
+>Study 1 revealed that perspective has an impact on facial judgments, especially for body weight judgments...; other postulated effects were less pronounced or absent. However, the used viewing perspectives of Study 1 are sometimes found with selfies but some additional ones are even more typical of the selfie style ... Just imagine that you are going to take a selfie on your next trip. It is unlikely that you will only rotate your mobile phone rigidly around one axis, but typically you will use a combination of such rotations. Accordingly, the aim of Study 2 was to examine the impact of typical *perspectives* of selfies on facial judgments...
+>
+>*Methods*...
+>
+>*Results*...
+>
+>*Discussion*
+>
+>The aim of Study 2 was to examine whether more selfie-specific *viewing perspectives* have an even more pronounced effect on facial judgments. Accordingly, in Study 2, we let participants rate personality variables across different viewing perspectives on the basis of faces. In accordance with the findings of Study 1, we could show that in case of *attractiveness* judgments were positively affected by horizontally rotating and elevating the camera. Similarly to Study 1, this effect was slightly (but not significantly) more pronounced for the left side of the face compared to the right side. We also reported larger effects for male faces compared to female faces. This suggests a clear preference for lateral and elevated snapshots. This conclusion is supported by findings that elevating the camera *plus* rotating the camera is generally preferred for taking selfies... An elevation within pure frontal depictions had *no* effect on attractiveness ratings at all what is in line with Study 1... However, there was a slight (but non-significant) decrease in perceived attractiveness. In the case of the $below_{right}$ condition (which is equivalent to a view from the right bottom) we found a *decrease* in perceived attractiveness, and this effect was even more pronounced for female faces. [Other authors have] argued that the right side of the owner's face positively affects the perception of facial attractiveness. However, this effect had not yet been investigated in combination with a classical selfie-style camera upward tilt. Similarly, it could be shown that facial cues can be taken as a valid predictor of body weight and this highly correlates with the perceived health and attractiveness...
+>
+>Regarding the assessment of *helpfulness* in Study 2, we showed that elevating and rotating the camera had a significant and positive effect. Similarly to Study 1, this effect was again slightly more pronounced in faces showing their right cheek ($above_{30°right}$). In contrast, we replicated the negative effect of Study 1 (a *frontally* elevated camera: the *above30°* condition is equivalent to a taller person looking downwards on a smaller person). At first sight this contradicts the finding of Study 1, where we argued the typical view of a taller person caused people to assess the viewed person as more helpful. The additional horizontal rotation eliminated this effect. We can only speculate at this point, but in the specific combination of tilting and rotating a camera might have induced a higher rating for helpfulness in Study 2 as this perspective reveals many details of the face and also looks quite realistic—the participants probably perceived a face from this perspective as much more of a real face than would have been the case with a flat picture of a face. The variable *helpfulness* might benefit from such a more holistic capture of a face to a greater extent than other variables.
+>
+>Regarding the *body weight* judgments, we replicated the height-weight illusion that we also documented for Study 1. From this point of view..., we expected and found generally higher body weight judgments for lower camera positions and generally lower body weight judgments for elevated camera positions. Surprisingly, in cases of lower camera positions ($below_{30°left}$ and $below_{30°right}$), we were able to show that a further camera rotation slightly reduced the effect of higher body weight judgments and this was significant compared to the *below30°* control condition. This suggests a strong positive rotation effect on perceived body weight, which is in accordance with the findings of Study 1. Similarly, we also found a slight but non-significant advantage in the combination of elevating and rotating the camera. Taken together, elevating the camera produces significantly lower body weight judgments across all conditions. An additional rotation does not sufficiently improve this effect. Lowering the camera produces significantly higher body weight judgments across all conditions. However, an additional rotation has a significant effect on perceived body weight (lower body weight judgments).
+>
+>**General Discussion**...
+
+<br/><br/>
+
+The pattern in the *Discussion* section of this study is similar to that of example 2 above (section \@ref(ExampleOfDicsussionSections2)). The researchers start off by reminding the reader what they were looking for in this particular segment of the study (something covered at least generally at the end of the *Introduction*), followed by a very brief description of how they did it. 
+
+The remainder of the first paragraph is devoted to what they actually did find, but restricted to the evaluation of *attractiveness* among the selfie viewers, one of the key constructs under investigation (reported in the *Results* section). The second paragraph then deals with the perception of *helpfulness*, and the last paragraph, with the perception of *body weight*, each of which had been covered already in subsequent sections of *Results*.
+
+Finally, there is no transition since the next section is the *General Discussion*.
+
+<br/><br/>
+
+#### Example in Appendix G {#ExampleInAppendixG}
+
+There is an example of a *Discussion* section in *Appendix G*. It is just a couple of paragraphs. This example builds on the *Method* example in Appendix C and *Results* section in Appendix E, which in turn were based on the survey, data, and **actual** analysis from one of the research groups formed in PSYC 301 for Spring 2019 [@FettigLopezfuentesVillarreal2019].
+
+Following that is another example that **pretends** to have found significant results. Use this example instead if you actually found a significant effect in your results. Again, this second example is based on a fictional outcome for Fettig, López-Fuentes, and Villarreal [-@FettigLopezfuentesVillarreal2019].
+
+<!-- ### Outside help on *Discussion* sections {#OutsideHelpOnDiscussionSections} -->
+
+## Practice writing exercise {#PWEFD}
+<!-- PWEFD is an acronym for "Practice Writing Assignment for Discussion" -->
+
+This writing exercise relates to part of Writing Assignment #3 in your lab (see section \@ref(WritingAssignment3)), but just the second part: the *Discussion*.
+
+<br/><br/>
+
+### Getting ready {#PWEFDGettingReady}
+
+#### Form groups {#PWEFDFormingGroups}
+
+Form working dyads (or triads) like you did for the first three exercises of this type. Work with someone from your own research group again, if you can. 
+
+<br/><br/>
+
+Come up with a unique nickname for your group and open a Google Doc as you did before, but give it the following name: **[YOUR GROUP NICKNAME] Chapter \@ref(WritingDiscussionSections) Exercise**. Then share the document with the other members of your working group, as well as your TA.
+
+#### Establish *counter*-findings {#PWEFDEstablishFindingsCounterToYourActualFindings}
+
+Soon, you will begin the practice writing exercises for the *Discussion* section. But first, you will need to review your current findings (either the statistical output in jamovi, or any current working draft you have of your *Results* section).
+
+For the purposes of the writing exercise that follows, you will pretend as if you obtained exactly the opposite results that you did in your actual analysis. That is, if you **did** get statistically significant results on your *t*-test, pretend as if you had **not**. Likewise, you you did **not** get statistically significant results on your *t*-test, pretend as if you actually **did**. The same goes for your ANOVA, but treat the *t*-test and ANOVA separately.
+
+An entailment of this artificial reversal of findings is that some of you may find yourselves in a situation where you need to discuss null findings. We will provide some guidance below on how to do this even though there are few examples in the literature due to the file-drawer effect.
+
+<br/><br/>
+
+### Writing {#PWEFDWriting}
+
+The rest of this writing exercise is actually about writing. But before you begin, type in the *Discussion* header at the top.
+
+Also note that writing exercise has you start on part 1 of the *Discussion* section. Then you jump to part 3 (the *preview*). Last, you go back to section 2 to complete that.
+
+#### Part 1: Review and compare {#PWEFDReviewAndCompare}
+
+ 
+
+In the *Results* section you simply described the outcomes of the statistical analyses, with minimal reference to what had been expected given what you laid out in your *Introduction*.^[In practice, there are often very short comparisons of outcomes to expectations in the *Results* section. But the purpose of doing so in that section is simply to "hold the reader's hand." That is, as is true with any kind of organized writing, it is easier to read through a *Results* section if it is connected, albeit minimally, to what came before and what comes after. Hence, the brief evaluations you sometimes find in *Results* sections. You can find these kinds of quick, backward-looking references in Example 3 in Chapter \@ref(WritingResultsSections), section \@ref(ExamplesOfResultsSections3). Key words there are "Critically, as predicted by reconsolidation theory..." in the third paragraph of the example, and the nearly identical "Critically, in line with reconsolidation theory..." in the fourth paragraph.] In contrast, the *Discussion* section is where you concentrate on comparing what you had expected to find versus what you actually did find.
+
+If you found significant differences in the way that you though you would, this section is where you confirm your theory. There is an illustration of this in Example 1 (\@ref(ExampleOfDicsussionSections1), paragraph 1, beginning with "The response-time findings show that this is indeed the case..."). Another illustration of this is in example 2 (section \@ref(ExampleOfDicsussionSections2), about halfway through the second paragraph, beginning with the line, "These results lead to two important conclusions:..."). Finally, the authors of Example 3 (\@ref(ExampleOfDicsussionSections3)) are doing this when they write, "In accordance with the findings of Study 1, we could show that in case of *attractiveness* judgments were positively affected by..."
+
+If you have a null finding (i.e., your study showed a significant effect; therefore, you have to write this section as if there had **not** been a significant effect), then writing this section will be a little bit more challenging. 
+
+First, you need to make the clearly (but understandably) false assumption that you did everything right with your survey.^[Again, the main author of this lab manual, Dr. Patrick Bolger, fully understands that there is no way you could have done this right given the absurdly short amount of time he gave you to prepare the survey.] This will allow you, albeit a little disingenuously, to treat your null findings as confirmation of the null hypothesis. This now means that you can use language like the following: "Our evidence suggests that the notion that there is no X in Y is true."
+
+And please remember that we are only allowing this artificial stipulation in order to make writing easier in this section.
+
+<br/><br/>
+
+##### Feedback across working groups {#PWEFDReviewAndCompareFeedbackAcrossGroups}
+
+Just like before, find a group from another research study and give them *Can comment* access to your document (as well as giving your TA *Can Edit* privileges).
+
+Give the other group helpful comments on how they referred back to their original hypotheses (you will need to just trust them on this), as well as how well they tie in their current results into either support or lack of support for the original predictions. Is everything clear? Does anything look ambiguous?
+
+As before, when you are done commenting, place a final comment near the end of the document you are commenting on that says, "We are done commenting."
+
+<br/><br/>
+
+##### Class review {#PWEFDReviewAndCompareClassReview}
+
+As a class, discuss any issues that came up that might benefit from an expert's perspective (that of your TA).
+
+<br/><br/>
+
+##### Revise {#PWEFDReviewAndCompareRevise}
+
+Take about 10 minutes to revise (as a pair) any issues that came up either in your counterpart-group's comments or during class discussion.
+
+<br/><br/>
+
+#### Part 3: Preview {#PWEFDPreviewStudy2}
+
+Here, you will provide a brief preview of what is to come in Study 2.
+
+In this case, we are actually jumping over a component of the *Discussion*. The preview is actually the third element, with the transition being the second.
+
+However, this part is easy and does not require too much thought. Nonetheless, it will be crucial for your partner group to have in order to help you form a transition paragraph (see section \@ref(PWEFDTransitionToStudy2) below).
+
+First, start by typing in the following words directly **after** the review and summary that you just completed:
+
+<br/>
+
+>[TRANSITION PARAGRAPH WILL GO HERE]
+
+<br/>
+
+Second, you will start typing the preview in the space **below** the section set aside for the transition paragraph. The space below will be the preview.
+
+In the preview, you simply need to state what the next section, in this case Study 2, is going to cover. Simply recall what the last two questions were in your survey, and convey that information to the reader.
+
+There is only one example of this in the examples we provided above: Example 1 in section \@ref(ExampleOfDicsussionSections1) (Again, the other two examples are the final *Discussion* sections before the *General Discussion*, so there is no transition statement).
+
+<br/><br/>
+
+##### Feedback across working groups {#PWEFDPreviewStudy2FeedbackAcrossGroups}
+
+Have your partner working group have a look at your preview. But don't take too much time on this. The main thing they should be looking for is whether it is clear what will be analyzed in the next section. There really isn't too much to this section of the *Discussion*.
+
+<br/><br/>
+
+##### Class review {#PWEFDPreviewStudy2ClassReview}
+
+Likewise, do not plan on spending too much time on this as a class, though you should, if for no other reason than to address questions that arose during the writing of this subsection.
+
+<br/><br/>
+
+##### Revise {#PWEFDPreviewStudy2Revise}
+
+Take 5 minutes to make any necessary revisions.
+
+<br/><br/>
+
+#### Part 2: Transition {#PWEFDTransitionToStudy2}
+
+In this section, you will begin the transition to the next study (part 3: the *preview* that you just worked on being the final piece in the transition).
+
+For this section you will write **over** the part you initially put in square brackets:
+
+<br/>
+
+>[TRANSITION PARAGRAPH WILL GO HERE] <- overwrite this
+
+<br/>
+
+What goes here is a transition between the review and comparison that you completed at the beginning of the *Discussion* and the preview you wrote at the bottom. You need to connect the two, if possible.
+
+Normally, in most published papers that you read, there will be a good underlying reason for creating a follow-up study. In this case, there may not be since we gave you very little time to generate your variables, and we pre-chose their design. Thus, Study 2 is an artificial follow-up to Study 1. The cart is before the horse.
+
+There are a couple of options here, however. It should be fairly easy to create a transition.
+
+First, it is possible that there really **is** some sort of conceptual difference between your categorical predictor variables in Study 1 and your continuous predictor variables in Study 2. If so, this is the best kind of transition you can provide. Emphasize this difference as you develop your transition. In fact, I would encourage you to push hard to make this kind of transition work.
+
+The next best option is to just state (in abstract terms), "We just did X, but we haven't looked at Y." This is a very straightforward transition as it is already implicit, somewhat, from the end of your *Introduction*. This approach is not quite as good as the first since it isn't a "principled" transition that flow naturally out of the study design. But it is an acceptable transition.
+
+But if those both fail for some reason, another way to pitch a transition is to note that nominal variables (i.e., the ones you use as predictor variables in *t*-tests and ANOVAs) tend to be less informative than continuous variables, and that therefore, perhaps the continuous predictor variables (i.e., the ones you will use for correlation and regression) will render more informative results. 
+
+Consider this last one a backup plan of last resort for your transition.
+
+In the end, it's possible that your feedback group will have some ideas for you for the transition section of the *Discussion*. Perhaps one of these ideas will allow you to adopt the first strategy above.
+
+<br/><br/>
+
+##### Feedback across working groups {#PWEFDTransitionFeedbackAcrossGroups}
+
+This time, focus on your parnter working group's paper in terms of how natural the transition section feels. If it is not that natural, try to brainstorm on some ideas that they might use to make the transition.
+
+When you're done, let the other group know with a final comment.
+
+<br/><br/>
+
+##### Class review {#PWEFDTransitionClassReview}
+
+Take some time to review this as a class. This is a chance for the entire class to participate in a brainstorm where possible transitions for each group are discussed.
+
+<br/><br/>
+
+##### Revise {#PWEFDTransitionRevise}
+
+Consider your classmates' ideas about writing this section. Revise if you think it's going to make this section flow better.
+
+<br/><br/>
+
+## Writing Assignment #3 {#WritingAssignment3}
+
+After having completed the writing excercise above as well as having read and completed the exercises in chapter \@ref(WritingResultsSections), you should have a pretty good idea about how to go about the next writing assignment: Writing Assignment #3. See below for more details.
+
+<br/><br/>
+
+### General Instructions {#GeneralInstructionsOnWritingAssignment3}
+
+Writing Assignment #3 will consist of the *Results* and *Discussion* sections of *Study 1*. In fact, you will use those very headers:
+
+>**Study 1**
+>
+>*Results*
+>
+>*Discussion*
+
+Like *Writing Assignment #2* (*Method*), this one is authentic in that you will be using your own data from your own study.
+
+<br/>
+
+```{block, type="rmdnote"}
+**NOTE**:  Again, do NOT put your name on this assignment. It will be submitted for anonymous peer review through Peerceptiv, and including your name makes it non-anonymous.
+```
+
+<br/>
+
+Finally, as you did with Assignment #2, you should tag on these *Results* and *Discussion* sections to the current, full version of your paper so far (*Introduction* and *Method*). It will be easier to review if the reviewers (i.e., your peers) have access to your *Introduction* as well as your *Method* section.
+
+<br/><br/>
+
+<!-- Insert the section below and remove it from the chapter on the General Discussion -->
+
+<!-- You should also not be afraid to modify your *Introduction* to cohere better with your *Discussion* sections and *General Discussion*. We understand that you wrote the *Introduction* at the very beginning of the semester, without understanding, really, what was coming up. You may now have a better sense of you should have been predicting with your study, and you should feel free to make modifications there.^[This should not be confused with *HARK-ing* ("hypothesizing after results are known").You should understand that changing one's **hypothesis** according the research results is considered a *QRP* (a questionable reserch practice). That is **not** what we are suggesting here. Rather, we are suggesting that you go back and make yourself clearer as to what you *should* (past tense) have been predicting in the first place. This is clarification, not HARKing.] -->
+
+<!-- Also, if you are so inclined, you can modify the *Method* section to be more specific about the statistical design of your study. This would be for self-edification, however. -->
+
+<!-- <br/><br/> -->
+
+### Specific Instructions {#SpecificInstructionsOnWritingAssignment3}
+
+As noted above, Writing Assignment #3 will consist of the *Results* and *Discussion* sections, underneath the major header *Study 1*. The header *Study 1* should be centered, and at the top of the page.
+
+<br/><br/>
+
+#### *Results* {#SpecificInstructionsOnWritingAssignment3Results}
+
+As you have already practiced, your *Results* section should summarize the statistical analyses carried out using both the *t*-test on your composite variable using the categorical variable with two levels, and the ANOVA on your composite variable using a oneway ANOVA (not necessarily the One-Way procedure in jamovi, but probably the simple *ANOVA* option).
+
+One of the statistical analyses should be presented first, and then the other, in separate paragraphs. Make sure that the sentences of each paragraph read like normal English prose, preferably prose that you could read out loud to a 5th grader.
+
+Inserted among the sentences as parentheticals, or set off by commas, should be any statistics, descriptive or inferential, that you include. In the end, the reader should be able to mentally delete the statistics and read your *Results* as normal English sentences.
+
+Those statistics should be in APA format. You can see the examples we have provided in Chapter \@ref(WritingResultsSections) [sections \@ref(ExamplesOfResultsSections1), \@ref(ExamplesOfResultsSections2), and \@ref(ExamplesOfResultsSections3)], or the example provided in Appendix E. You can also look up the general format for descriptive statistics in section \@ref(ReportingDescriptiveStatistics), and for inferential statistics in section \@ref(ReportingInferentialStatistics). Finally, you can refer to handouts provided in the main class.
+
+For descriptive statistics, always report the mean, the standard deviation, and the sample size of the group. For inferential statistics, be sure to include the test statistics (along with the *p*-value, naturally), as well as the 95% confidence intervals (if available), and the effect size.
+
+Each analysis should be accompanied by **either** a table **or** a figure, **but not both**.^[It could be the case that for, some strange reason, you can't do without both. That's okay too] In fact, you could choose a figure for one, but a table for the other.^[Please note though that this would be odd given the nature of the current assignment with two categorical predictor variables, but perhaps appropriate in certain circumstances.]
+
+But whichever you choose for each of your analyses, insert a caption (with tables, captions go above the table; with figures, they go below the figure). Note that if you are using Google Docs, you will need one of the the following Add-Ons: *Captionizer* or *Caption Maker*.^[Note that I found *Caption Maker* to be somewhat complex for the current assignment. And *Captionizier* is a little bit wonky. I had to delete the caption and re-insert a few times to make it work.] If you are using Office 365 in the cloud, you may have to skillfully type in the caption in the main text. If you are using a stand-alone word processor on your desktop, there is usually an "insert caption" function somewhere (it varies by product).
+
+Importantly, the prose of the *Results* should make reference directly to any tables or figures that are in this section (e.g., "As depicted in Figure...")
+
+There is a rubric in Appendix F for the *Results* section.
+
+<br/><br/>
+
+#### *Discussion* {#SpecificInstructionsOnWritingAssignment3Discussion}
+
+In short, the *Discussion* section should briefly mention the relevant questions or predictions made at the end of the *Introduction*. This should be followed by a summary of how the results on that particular question/prediction came out (without using statistics), and whether they supported or disconfirmed any prediction made, or whether the outcome was unresolved.
+
+Naturally, the *unresolved* case is one in which you failed to reject the null hypothesis. Due to the [file-drawer effect](http://www.psychfiledrawer.org/academic_webpages.php), there are not as many examples in the literature of this kind of *Discussion*. However, for the purposes of this paper, you can assume that you did things right and that you *should* have found the effect if it was there. This is an unwarranted assumption, but we will allow you to make it. This makes the *Discussion* a little bit easier to write as you can now "pretend" as if you found evidence of no effect.^[There is a way to find evidence **for** the null hypothesis, but you will need to take a class on Bayesian statistics to find out how.]
+
+After doing this, this section should move on to making a transition to the next study (*Study 2*). As noted above, one normally lets the needs of the study guide the writing (e.g., we need another study, so we'll add a section to the paper). But in this case, because of the nature of the class, we set up your writing sections beforehand (putting the cart before the horse). This makes it little bit trickier to come up with a natural transition to Study 2, but in the end, one of the strategies covered in the writing exercise above (section \@ref(PWEFDTransitionToStudy2)) should work.
+
+You may also want to consult with your TA here for ideas. Note that, in this case, it is okay if the members of your group all share the same strategy for the transition, though you may not use each other's writing (something that is **never** allowed anyway, except in real-world situations where you are co-authoring the **same** document).
+
+However you do this, end this section with a quick preview (1-2 sentences) of what lies ahead in Study 2, which will consist of two analyses, a correlation and a simple regression, both using continuous predictor variables (on the same composite outcome variable).
+
+There is a rubric in Appendix H for the *Discussion* section.

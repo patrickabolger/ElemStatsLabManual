@@ -1,0 +1,14 @@
+# J: *General Discussion* rubric {-}
+
+```{r, echo=F, message=F, warning=F}
+GeneralDiscussionRubric <- readr::read_tsv("OtherResources/RubricForGeneralDiscussion.tsv")
+```
+
+```{r RubricForGeneralDiscussion, echo=F, warning=F, message=F}
+library(magrittr)
+knitr::kable(GeneralDiscussionRubric,
+caption = 'Rubric for the General Discussion'
+) %>%
+kableExtra::kable_styling(bootstrap_options = c("striped", "condensed", "responsive"), font_size=11, full_width = T) %>%
+kableExtra::column_spec(1, bold = T, border_right = T)
+```

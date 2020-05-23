@@ -1,0 +1,33 @@
+# A: *Introduction* example {-}
+
+```{block, type="rmdwarning"}
+**WARNING**: This document will be uploaded to Turnitin. It will also have been read by your classmates. Therefore, it is a very bad idea to copy this to modify to use in your own results section. Doing so would be a form of plagiarism. 
+```
+
+**Personality and domain generalizability in the anti-vaccination movement**
+
+  If one so chose, it would not be difficult to find what seems to be an unusually large number of people who oppose vaccinations. One could search on social media or on search engines for groups and websites that warn people against getting their children vaccinated according to public health guidelines. 
+
+<br/>
+
+  A time-traveler from the mid-20th century might find this situation very disconcerting. Ochmann and Roser mapped the infection and death rates from polio throughout the 20th century on the website https://ourworldindata.org/polio. Polio was a relatively rare disease worldwide prior to the 20th century, but then began spreading, especially during the 1940s and 1950s, at which point it had become an epidemic. But with the introduction of the polio vaccine in 1955, these rates dropped dramatically, and were statistically zero by the mid-1960s. Naturally, people of that generation must have in awe of the power of vaccines. Any debate about the effectiveness of vaccines must have seemed out of the question.
+
+<br/>
+
+  But several decades later, in 1998, a British physician named Andrew Wakefield (along with 12 colleagues) published a widely discussed study in the journal *The Lancet*, claiming that there was a link between the MMR (measles-mumps-rubella) vaccine and autism. The study was later found to be quite fraudulent in several respects. The article was retracted by the Lancet, and Wakefield was not only disgraced in the UK, but also lost his medical license there. He subsequently moved to the US, where he still, somehow, retained some credibility. 
+
+<br/>
+
+  This is where things got "interesting." Wakefield has somehow retained a sizeable cadre of ardent followers despite his utterly catastrophic loss of credibility in the medical establishment. His anti-vaccination movement seems to have grown. Or if it has not grown in number, it certainly has in the degree of zealotry. His followers can be found on social media and elsewhere relentlessly criticizing the advocates of mainstream medical science, where repeated studies have found no link between the MMR vaccine and autism. In fact, the benefits to public vaccination in general far outweigh the vaccine-injury risk posed to individuals for any given vaccine. Historical data clearly show this.
+
+<br/>
+
+  One of the more interesting questions we, as psychologists, can ask is the following: What sort of underlying personality characteristic drives people to states of such obsessive science denial? Surely, the ultimate answer to this will be complex, so for the purposes of the current paper,we asked more specific questions, namely: 1) Is this personality trait "specific," and thus restricted to certain domains (e.g., vaccines vs. extraterrestrials vs. global warming) and not others? Or 2) Is it "general", thereby applying across multiple domains (e.g., not only vaccines, but also extraterrestrials, etc.)? We were also interested in whether demographic variables or intellectual identification with mainstream knowledge communities had an effect. 
+
+<br/>
+
+  We designed a survey that would pose various scenarios to respondents that had to do with conspiracy theories that are commonly touted in social media. We recorded not only agreement/disagreement with the likelihood of those conspiracies, but also critical demographic information (e.g., sex, age, political affiliation, education level, socioeconomic status, etc.), as well as some variables measuring degree of intellectual identification with the information professions (e.g., science, governmental agencies, the intelligence community, etc.).
+
+<br/>
+
+  Although this study is exploratory in nature, our best guess is that conspiracy thinking is domain specific since it takes so much energy to be a denialist in any one domain. Doing so across domains would probably be too much for most people. But that is just a relatively uninformed guess. It could very well be the case that it is generalized across domains. The answers to the questions raised here may ultimately help us find ways to minimize the damaging effects that conspiracy thinking can engender.

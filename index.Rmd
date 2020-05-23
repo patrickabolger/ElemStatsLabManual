@@ -1,0 +1,398 @@
+--- 
+title: 'A Lab Manual for PSYC 301: Elementary Statistics for Psychology'
+author: 
+  name: "Patrick Bolger, PhD"
+  affiliation: " Department of Psychological & Brain Sciences at Texas A&M University"
+date: "`r format(Sys.time(), '%d %B %Y')`"
+output:
+  bookdown::gitbook: default
+description: 'This is a lab manual for PSYC 301: Elementary Statistics for Psychology. It is an open educational resource (OER), so there is no charge to students.'
+documentclass: book
+link-citations: yes
+nocite: "@SchroederEpley2015, \n@MehrSongSpelke2016,\n@RogersMilkman2016\n"
+bibliography:
+- book.bib
+- packages.bib
+site: bookdown::bookdown_site
+biblio-style: apalike
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = F, warning = F, message = F)
+library(magrittr)
+library(kableExtra)
+```
+
+```{r, eval=F, include=F}
+# The code below will install packages that you need for this Bookdown document,
+# but only if you don't already have the package(s).
+# To make it work, you'll need to switch eval=F to eval=T, above, then run this chunk
+# by clicking the green arrow in the uppr right of this chunk. 
+# IMPORTANT: Afterwards, set eval=T back to eval=F. (the reason for this is that it is
+# considered rude to share code that automatically installs programs on other people's computers.)
+# want <- c("readr", "dplyr", "magrittr", "jmv", "kableExtra", "trimr", "haven", "scatr")
+# have <- want %in% rownames(installed.packages())
+# if(any(!have)) install.packages(want[!have])
+# rm(want)
+# rm(have)
+```
+
+
+```{r, eval=F, include=F}
+# You will need the package "bookdown". If you don't have it installed, you can set
+# eval=TRUE above. Set it back to FALSE after installing.
+#install.packages("bookdown")
+# or the development version
+#devtools::install_github("rstudio/bookdown")
+```
+
+```{r}
+# automatically create a bib database for R packages
+# Some are obscured from the reader, so they don't need to go here
+knitr::write_bib(c(
+  .packages(), 'bookdown', 'knitr', 'rmarkdown', 'haven', 'dplyr', 'magrittr', 'kableExtra', 'jmv', 'ggplot2'
+  ), 
+'packages.bib')
+```
+
+# Preface {-}
+
+**Howdy!**
+
+This is a lab manual for PSYC 301: Elementary Statistics for Psychology at Texas A&M University. It is an [Open Educational Resource](https://en.wikipedia.org/wiki/Open_educational_resources), and is free to read, licensed under the [Creative Commons Attribution-ShareAlike 4.0 International License](https://creativecommons.org/licenses/by-sa/4.0/). 
+
+```{r cc-by-sa, out.width='20%', fig.align='left', echo=F}
+knitr::include_graphics('images/by-sa.png')
+```  
+
+![bookdown sticker](images/stickers/bookdown.png){width=15%}![dplyr sticker](images/stickers/dplyr.png){width=15%}![ggplot2 sticker](images/stickers/ggplot2.png){width=15%}![knitr sticker](images/stickers/knitr.png){width=15%}![tinytex sticker](images/stickers/logo-tinytex.png){width=15%}![migrittr sticker](images/stickers/pipe.png){width=15%}![rmarkdown sticker](images/stickers/rmarkdown.png){width=15%}![RStudio sticker](images/stickers/RStudio.png){width=15%}![kableExtr sticker](images/stickers/kableExtra.svg){width=15%}![tibble sticker](images/stickers/tibble.png){width=15%}
+
+<br/>
+
+It complements the main class, which also uses an OER textbook, **Learning Statistics with jamovi** by @lsj, linked [here](https://www.learnstatswithjamovi.com/). 
+
+In short, the class is more about the theory behind statistics, and the lab is more about practical application, especially writing up research that employs statistics. Among other things, your TA will guide you through this manual by directing you which chapters to read, what to pay particular attention to, and which exercises to practice with. More specific goals are listed below.
+
+<br/>
+
+## Goals {#goals}
+
+The purpose of this manual and the other resources listed above is to give you the resources necessary to do the following:
+
+1. ***Learn jamovi***. Using the free statistical software [jamovi](https://www.jamovi.org/), leverage the knowledge of statistical theory that you learn in the main class in order to carry out small-scale, in-class exercises. jamovi employs an easy-to-use graphical user interface ([GUI](https://en.wikipedia.org/wiki/Graphical_user_interface), pronounced "gooey"), but is built on top of the programming language [R](https://www.R-project.org/) [@R-base], which has become extremely popular among data scientists during the last two decades. Chapters \@ref(GettingUsedtoJamovi)-\@ref(FactorialAnova) of this lab manual cover learning jamovi.
+
+2. ***Design and conduct your own study*** in small groups. This will take the form of a survey that you will design and distribute using Google Forms (see above). You already have a template for this survey in your shared group folder in Google Drive (under the main instructor's account). Please save this Google Form (i.e., GoogleFormsTemplate) as a new form with a name that appropriately reflects the topic of your survey (e.g., SleepAndAcademicAchievement). There is more on Google Drive and Google Forms down below. Chapter \@ref(SurveyDesignAndDataCollection) of this lab manual provides a general overview of this portion of the research project.
+
+3. ***Analyze the data from your study***. Using the same software (jamovi), perform the front-end work on the main project assignment of the lab: a small-scale research paper. Specifically, you will import raw data from your survey into jamovi, modify the data however necessary (both covered in Chapter \ref(DataPreparationAndAnalyses) of this manual), and carry out the appropriate statistical analyses and visualizations quickly and efficiently These statistical procedures are covered in Chapters \@ref(DescriptiveStats)-\@ref(FactorialAnova) of this manual, but specifically the following chapters in the following order: \@ref(ComparingTwoMeans) and \@ref(ComparingSeveralMeans), followed by \@ref(CorrAndLinearReg)). The output of these analyses will underlie what you write in the Results and Discussion sections of your paper (see below).
+
+4. ***Write a paper*** (in four parts). Based on both (1) through (3) directly above, you will write a small-scale research paper. This effort will be staged through four, major writing assignments based broadly speaking on each of the four typical sections of a research paper in psychology: **Introduction**, **Methods**, **Results**, and **Discussion**.^[This is sometimes referred to as *IMRaD* structure, an acronym composed of each of the section's first letters.] However, due to the timing of statistical topics in the main class, the paper will take the following, slightly modified, though still very common form:^[In fact, it is more common.] **Introduction**, **Methods**, STUDY 1 (**Results**, **Discussion**), STUDY 2 (**Results**, **Discussion**), **General Discussion**. Each assignment will be broken into two parts: (1) a rough draft that will be peer-reviewed through Peerceptiv (via eCampus); and (2) a final draft that will be submitted through Turnitin (also via eCampus). This results in a total of eight writing assignments to turn in. Perceptiv and Turnitin are covered in more detail below. Chapters \@ref(ReportingResearch)-\@ref(WritingGeneralDiscussionSections), as well as all the Appendixes (A-J), are dedicated to showing you how to write just such a paper.
+
+<br/>
+
+## Resources {#Resources}
+
+As noted above, you will need certain resources in order to achieve these goals. What follows are two lists of all the resources you will need to do so, all of which are available to you at no extra cost (beyond the tuition you have already paid). The first list consists of **fixed** resources, meaning that they are either textbooks, handouts, videos, or data sources that are given to you as-is. The second list is **active**, meaning generally that it's software that you can use freely, but you must do the work for it to be meaningful.
+
+<br/>
+
+### Fixed resources {#FixedResources}
+
+``` {block, type="rmdgrey"}
+- This ***lab manual*** [@Bolger2019]. It was created also using the programming language R, along with the R package [Bookdown](https://bookdown.org/) [@R-bookdown], which uses [RMarkdown](https://rmarkdown.rstudio.com/) [@R-rmarkdown] to create books.  RMarkdown is a [markdown language](https://en.wikipedia.org/wiki/Markdown) for R created by the popular integrated development environment ([IDE](https://en.wikipedia.org/wiki/Integrated_development_environment)) [RStudio](https://www.rstudio.com/) [@RStudio], which makes programming in R easier. Several other R packages were also used throughout. These are represented by the hexagon stickers below.
+```  
+
+<br/>
+
+``` {block, type="rmdgrey", out.width="600px"}
+- ***The jamovi user guide*** [@jamovi], linked [here](https://www.jamovi.org/user-manual.html). The jamovi website has a user manual for basic functions.  
+See the figure below.
+```
+
+<br/>
+
+```{r jum, fig.cap="The jamovi user guide.", echo=F, out.width="600px"}
+knitr::include_graphics("images/Index/jum.png")
+```
+
+<br/>
+
+``` {block, type="rmdgrey"}
+- ***The jamovi blog*** [@jamoviblog], linked [here](https://blog.jamovi.org/). This blog from jamovi has occasional entries that can be helpful.  
+See the figure below.
+```
+
+<br/>
+
+```{r jblog, fig.cap="The jamovi blog.", echo=F, out.width="600px"}
+knitr::include_graphics("images/Index/jblog.png")
+```
+
+<br/>
+
+``` {block, type="rmdgrey"}
+- ***Learning statistics with jamovi*** [@lsj] linked [here](https://www.learnstatswithjamovi.com/). This free .pdf book is the textbook for the main class, of course. Chapter 3 is devoted to getting you started in jamovi.  
+See the figure below.
+```
+
+<br/>
+
+```{r lsj, fig.cap="Learning statistics with jamovi.", echo=F, out.width="600px"}
+knitr::include_graphics("images/Index/lsj.png")
+```
+
+<br/>
+
+``` {block, type="rmdgrey"}
+- ***The jamovi quickstart guide*** [@Rafi2019], linked [here](https://www.jamoviguide.com/). This is another free, but strictly online book that shows you how to carry out various functions in jamovi.  
+See the figure below.
+```
+
+<br/>
+
+```{r jqg, fig.cap="The jamovi quickstart guide.", echo=F, out.width="600px"}
+knitr::include_graphics("images/Index/jqg.png")
+```
+
+<br/>
+
+``` {block, type="rmdgrey"}
+- ***datalab.cc*** [@datalab.cc], linked [here](https://datalab.cc/). This is a company created by Dr. Barton Poulson. The company is dedicated to teaching people about data science. One of the tools that gets extensive attention in the website is jamovi.^[There are also free video tutorials on other tools for data science (including [SPSS](https://datalab.cc/tools/spss01) if you are so inclined). You can find the full list of tutorials on data-science tools [here](https://datalab.cc/tools/toc). There are also some videos on the theory of statistics, which may be helpful in the main class: [datalab.cc's statistics series](https://datalab.cc/foundations/statistics)] There are over 50 YouTube videos (totaling nearly 5 hours!) available for different functions in jamovi, all available under the [Attribution 4.0 International (CC BY 4.0) Creative Commons license](https://creativecommons.org/licenses/by/4.0/). This means that they are free for me to assign, and you to use. Note that we will not provide direct links to the individual videos.^[Linking directly just multiplies the number of URLs that we need to keep updated, something we'd rather avoid.] Rather, we will tell you which numbered video to scroll to. To choose a video, click in the upper right-hand corner of the video screen. A drop-down menu will appear, where you scroll down to choose particular videos. If you're at Texas A&M, these tutorials are also available through the *LinkedIn Learning* tutorials, which you can go to through the *Howdy!* portal.
+
+See the figure below.
+```
+
+<br/>
+
+```{r datalabcc, fig.cap="datalab.cc.", echo=F, out.width="600px"}
+knitr::include_graphics("images/Index/datalabcc.png")
+```
+
+<br/>
+
+``` {block, type="rmdgrey"}
+- ***Statistics for psychologists: An online textbook*** [@Wendorf2019], linked [here](https://osf.io/qe5ym/). This is a free online textbook also available to you under the [Attribution 4.0 International (CC BY 4.0) Creative Commons license](https://creativecommons.org/licenses/by/4.0/). There are only a few chapters that are relevant here, namely the ones having to do with jamovi. There is an easier online venue to view the textbook than the Open Science Framework (which consists of individual .pdf files, which you are allowed to download for free). But Dr. Wendorf's other website at the University of Wisconsin - Stevens Point, [here](https://www4.uwsp.edu/psych/cw/statistics/sourcebook.htm), is easier to navigate. We will link to tutorials here, especially in Chapters 3-9 of this lab manual.  
+See the figure below.
+```
+
+<br/>
+
+```{r wendorf, fig.cap="Statistics for social science - A sourcebook for basic statistical methods.", echo=F, out.width="600px"}
+knitr::include_graphics("images/Index/wendorf.png")
+```
+
+<br/>
+
+``` {block, type="rmdgrey"}
+- ***Freely available data sets***. There will also be a number of data sets freely available online that we will use throughout the semester. These will be referenced throughout this manual as they become relevant.
+```
+
+<br/>
+
+### Software {#Software}
+
+``` {block, type="rmdgrey"}
+- The free statistical software ***jamovi*** [@jamovi], linked [here](https://www.jamovi.org/), which again, is a friendly graphical user interface (GUI) for basic functions from the powerful open-source statistical software R [@R-base]. jamovi (all lowercase) was designed to provide the basic functionality that SPSS provides. SPSS is more common in the social sciences (for now), but you have to pay a lot of money to download it on your computer. jamovi can be downloaded and installed onto the following operating systems: Windows, Macs, Linux, and ChromeOS. See the next section for more detailed rationale for using jamovi.  
+See the figure below.
+```
+
+<br/>
+
+```{r jamovi, fig.cap="jamovi.", echo=F, out.width="600px"}
+knitr::include_graphics("images/Index/jamovi.png")
+```
+
+<br/>
+
+``` {block, type="rmdgrey"}
+- ***eCampus***, linked [here](https://ecampus.tamu.edu/), which is the learning-management system that Texas A&M currently uses. It is based on [Blackboard](https://www.blackboard.com/higher-education/index.html).  
+See the figure below.
+```
+
+<br/>
+
+```{r ecampus, fig.cap="eCampus.", echo=F, out.width="600px"}
+knitr::include_graphics("images/Index/ecampus.png")
+```
+
+<br/>
+
+``` {block, type="rmdgrey"}
+- ***Peerceptiv***, linked [here](https://www.peerceptiv.com/), which is a peer-review platform, and will be used to evaluate all rough drafts in this lab. Peerceptiv is not free, per se, but Texas A&M University has acquired a license for all its students to use. You will log in to it through eCampus.  
+See the figure below.
+```  
+
+<br/>
+
+```{r peerceptiv, fig.cap="Peerceptiv.", echo=F, out.width="600px"}
+knitr::include_graphics("images/Index/peerceptiv.png")
+```  
+
+<br/>
+
+``` {block, type="rmdwarning"}
+***WARNING***: Do ***not ever*** log in to Peerceptiv through Peerceptiv's website to upload documents. Instead, ***always*** log in through the links provided in eCampus. 
+```  
+
+<br/>
+
+``` {block, type="rmdgrey"}
+- ***Turnitin***, linked [here](https://www.turnitin.com/), which is also commercial software, the license to which you have already contributed with your tuition. This is where you will upload all your final drafts... also strictly through eCampus (again, ***do not*** log in to Turnitin's website directly). Turnitin is plagiarism-detection software. Plagiarism is not that likely in this lab since you will be working in groups on unique research projects with their own data. However, it has, in the past, detected within-group plagiarism in this class (all student writing must be independent, even within groups).  
+See the figure below.
+```
+
+<br/>
+
+```{r turnitin, fig.cap="Turnitin.", echo=F, out.width="600px"}
+knitr::include_graphics("images/Index/turnitin.png")
+```  
+
+<br/>
+
+``` {block, type="rmdwarning"}
+***WARNING***: Do ***not ever*** log in to Turnitin through Turnitin's website to upload documents. Instead, ***always*** log in through the links provided in eCampus.
+```  
+
+<br/>
+
+``` {block, type="rmdgrey"}
+- ***Google Apps for Texas A&M***, linked [here](https://google.tamu.edu/).  
+See the figure below.
+```
+
+<br/>
+
+```{r googleapps, fig.cap="Google apps at TAMU.", echo=F, out.width="600px"}
+knitr::include_graphics("images/Index/googleapps.png")
+```
+
+<br/>
+
+``` {block GoogleApps, type="rmdgrey"}
+Google Apps at Texas A&M is a suite of cloud-based productivity software that you have available to you since you paid for it already with your tuition (Google Apps is also available for individuals for free, but Google Apps for Education is an enhanced suite that must be paid for by institutions). The main programs you will use are the following:
+
+  - ***Google Drive***, linked [here](https://google.tamu.edu/Apps/google_drive.html). Google Drive will allow you to store your group's files. Each student group will share a folder that will be located on the course instructor's Google Drive. That is, your course instructor will be the owner. Your TA will also have access to this folder. There will be some key files that they will provide to each group. All documents except individual writing assignments will go into this folder. If you are at Texas A&M, there are tutorials through *LinkedIn Learning* in the *Howdy!* portal.
+  
+  Google Drive also provides you access to several kinds of productivity software, the following of which are critical to this class:
+
+  - ***Google Forms***, linked [here](https://support.google.com/a/users/answer/9302965?hl=en). You'll use Google forms to design and send out your survey. There will be a template we provide for you in your group's shared Google Drive. Texas A&M also has tutorials through *LinkedIn Learning*, accessible through the *Howdy!* portal.
+
+  - ***Google Docs***, linked [here](https://support.google.com/a/users/answer/9300503?hl=en). We highly suggest you use Google Docs to write your papers. The reason is that you can save different [versions](https://support.google.com/docs/answer/190843) of it. In fact, just before you submit your writing assignments to Peerceptiv or Turnitin (see above), you could save that version of your Google Doc (**File** > **Version history** > **Name current version**; and name it, say, *Introduction_RoughDraft*), and it will be time-stamped. Even if you change your document subsequently, you can always revert it back to an earlier version, as can your TA or professor if you grant them **Can Edit** access. Tutorials on *Google Docs* are also available through *LinkedIn Learning* at Texas A&M.
+```  
+
+<br/>
+
+## Rationale for jamovi {#RationaleForJamovi}
+
+You might be wondering why this lab manual focuses on jamovi and not, say, the more popular statistical-analysis software in the social sciences: [SPSS](https://www.ibm.com/analytics/spss-statistics-software) [@spss]. 
+
+Indeed, jamovi is new and not as popular (at least not yet) in the social sciences, including Psychology. To be honest, SPSS is still the most popular among professors in Psychology. You are likely to encounter SPSS if you, say, join a lab in the Psychology Department.
+
+However, jamovi offers some features that exceed in quality those of SPSS (at least the current version):^[The authors of your main textbook, @lsj, also have a list of reasons to prefer jamovi over SPSS. This list can be found at the very beginning of Chapter 3 of that textbook]
+
+1. ***Cost***. jamovi is free for you to download onto your laptop (Windows, Mac, Linux, and ChromeOS). Note that you can also download SPSS on to your computer, but it will cost you. It is marketed through various third-party retailers. See the [SPSS](https://www.ibm.com/us-en/marketplace/spss-statistics-gradpack/details#product-header-top) website for details.^[You can find SPSS on designated computers throughout campus. This includes the computers in your lab because the department has purchased these licenses] In the end, however, jamovi turns out to be easier to use than SPSS, though the underlying statistical analyses are the same.^[We should mention that [SAS](https://www.sas.com/en_us/learn/academic-programs/students.html) is another commercial statistical-analysis software company that actually has made their extremely powerful software freely available for educational purposes. You can download it for free as [SAS University Edition](https://www.sas.com/en_us/software/university-edition.html), and it will run on your computer through your browser as a [virtualized application](https://en.wikipedia.org/wiki/Application_virtualization). The downside is that few psychologists use SAS, and it is notoriously difficult to learn. You can also find SAS on the [VOAL](https://connect.voal.tamu.edu/)]
+
+2. ***Navigability***. jamovi's GUI is much easier to navigate than that of SPSS. jamovi is really, really new (established in 2017), and SPSS has been around since the 1960s. As a result of its age and, presumably, a disinclination to field user complaints about broken code, SPSS carries a lot of menu "baggage" that retains backwards-compatibility with earlier versions of the software. That is, you can run statistical analyses in SPSS using code that your wrote decades ago. The cost of that failure to get rid of older functions is that SPSS has accumulated a lot of menu clutter. This can be frustrating for beginners. jamovi has no such clutter.
+
+3. ***Compactness***. jamovi keeps its data, code, and output all in one file (a file with the .omv suffix). This makes analyses really easy to share with classmates, TAs, and (eventually) colleagues. You just send them the file that you worked on, and it opens up for them **exactly** the same way you left it when you last saved it. SPSS is not like this as the data, the syntax (to run the statistical procedures), and the output are all stored as three separate files (.sav, .sps, and .spv files, respectively). This can be frustrating. In jamovi, there is only one file (.omv).
+
+4. ***Convenience***. If you send someone a .omv file from jamovi to work on, but they don't have jamovi installed, naturally they can just download and install it for free,^[... unless your collaborator refuses to download jamovi onto their own computer (a possibility, presumably)] and then get to work (as long as they have the space on their hard drive). For SPSS in contrast, if the person you are sharing your SPSS output with does **not** have SPSS available (on the computer they're currently working on), then they will either have to find a computer with SPSS on it or purchase and SPSS license to open your analysis. Alternatively, you could export all output to .pdf or .htm format. But then they would only be able to view your output, and not be able to change anything. Moreover, if you just want to share data, you need to export it to a text-delimited file so that your colleague can open it up on their end. All of this is solved by jamovi, where everything is all in one file.
+
+<br/>
+
+## Organization of this manual {#OrganizationOfThisManual}
+
+The lab manual is organized as follows. 
+
+**Unit I** is ***Basics***.
+
+**Chapter \@ref(GettingUsedtoJamovi)** is an introduction to jamovi, namely: how to install it on your own computer, how to add modules, navigating the interface, sharing files, etc. 
+
+**Chapter \@ref(BasicDataOperations)** shows you how to, enter and import data into jamovi, as well as manipulate it, transform it, etc.
+
+**Chapter \@ref(DescriptiveStats)** shows you how to generate the basic statistics (**descriptive statistics**) that must always be reported in research. These descriptive statistics also lay the foundation for the inferential statistics that follow in subsequent chapters. 
+
+**Chapter \@ref(DataVisualization)** tutors you on how to use the graphical capabilities of jamovi.
+
+<br/>
+
+**Unit II** is ***Inferential statistics***.
+
+**Chapter \@ref(CategoricalDataAnalysis)** begins the first such test in this class: categorical data analysis, and in particular, **chi-square**, which you can use when the outcome variable is a discrete count of something (like number of people in the class), and your predictor is a categorical variable with (hopefully) very few levels (e.g., **Class Level**: *Freshman*, *Sophomore*, *Junior*, *Senior*). 
+
+**Chapter \@ref(ComparingTwoMeans)** covers ***t*****-tests**, which you use when your outcome variable is continuous (e.g., body weight), and you have a single, dichotomous predictor variable (e.g., Dietary Preference: vegetarian vs. omnivore). 
+
+**Chapter \@ref(CorrAndLinearReg)**, ***Correlation and linear regression***, shows you the analysis to use when you have a single, continuous outcome variable, and one or more continuous predictor variables, like IQ and GPA.^[This is another lie; there is no limit to the number or types of variables in linear regression, but we keep it mostly simple to start with in this chapter.] 
+
+**Chapter \@ref(ComparingSeveralMeans)** is an extension of chapter \@ref(ComparingTwoMeans), but instead of having just 2 levels for the single, categorical predictor variable, it can have 3 or more levels. This is called a **one-way ANOVA**. For example, you might have salary as predicted by whether you're faculty, staff, or a student. 
+
+**Chapter \@ref(FactorialAnova)** extends the ANOVA model from Chapter \@ref(ComparingSeveralMeans) even further by allowing you to have 2 or more predictors, each of which is categorical with 2 or more levels (e.g., *Degree of Happiness* as predicted by *Gender* and *Class Level* (*freshman*, *sophomore*, *junior*, *senior*)). This is called a **factorial ANOVA**
+
+<br/>
+
+**Unit III** is ***Research Projects***.
+
+***Chapter \@ref(SurveyDesignAndDataCollection)*** is about getting your study designed and your data collected.
+
+***Chapter \@ref(DataPreparationAndAnalyses)*** is concerned with getting the data you have collected in your project into a format that you can use for the analyses, and then carrying out those analyses.
+
+<br/>
+
+**Unit IV** is ***Writing***.
+
+**Chapter \@ref(ReportingResearch)** is an overview of the process and product of a research paper in Psychology. 
+
+Subsequent chapters get more specific. 
+
+Namely, **Chapter \@ref(WritingIntroductions)** covers how to write the ***Introduction*** section.
+
+**Chapter \@ref(WritingMethodSections)** covers how to write the ***Method*** section.
+
+**Chapter \@ref(WritingResultsSections)**, introduces you to how to report the ***Results*** section.
+
+**Chapter \@ref(WritingDiscussionSections)**, introduces you to how to report the ***Discussion*** section.
+
+And **Chapter \@ref(WritingGeneralDiscussionSections)** shows you how to write the ***General Discussion***, which ties everything together.
+
+<br/>
+
+
+<!-- Not sure about this yet -->
+<!-- This is followed by an ***Appendix*** and a ***References*** section. The Appendix contains...  -->
+
+<!-- **MORE MORE MORE MORE** -->
+
+<!-- <br/> -->
+
+## Main outcome of class {#MainOutcomeOfClass}
+
+When you finish this class, as well as this lab, you should not only understand the theoretical underpinnings of data science (a more general label for statistics), but also know how to communicate about it. This kind of knowledge should serve you well for the rest of your life, not only professionally, but also personally. You are bombarded every day with statistics, especially in the news. There is a reason that it is required by most departments at the university: Knowledge of statistics makes you into a more informed citizen in general.
+
+**So let's take the first steps on the way to becoming a data analyst!!**
+
+<!-- <br/> -->
+
+<!-- ## Conventions in this manual {#ConventionsInThisManual} -->
+
+<!-- Every so often, you will encounter a grey box with some message in it. In fact, you have already seen a couple of the (above). There are different varieties of boxes. They are borrowed from @R-bookdown, as follows: -->
+
+<!-- ``` {block Note, type="rmdnote"} -->
+<!-- **NOTE**: This type of box is a note. We use this when there is a reason to highlight information, though it may not be very important information. -->
+<!-- ``` -->
+
+<!-- ``` {block Important, type="rmdimportant"} -->
+<!-- **IMPORTANT**::This type of box includes something that is important. We use this when there is information we feel compelled to emphasize for the benefit of your learning. -->
+<!-- ``` -->
+
+<!-- ``` {block Tip, type="rmdtip"} -->
+<!-- **TIP**: This type of box is a tip. This is information that will make your life easier in this lab. -->
+<!-- ``` -->
+
+<!-- ``` {block Caution, type="rmdcaution"} -->
+<!-- **CAUTION**: This type of box encompasses a caution. We use this when there is a strong possibility of you making a minor mistake and we want to warn you so that you don't become frustrated. -->
+<!-- ``` -->
+
+<!-- ``` {block Warning, type="rmdwarning"} -->
+<!-- **WARNING**: This type of box is a warning. This is similar to a caution (see above), but more serious. Warnings are for mistakes that can cause you a good deal of grief. -->
+<!-- ``` -->
+
+<!--chapter:end:index.Rmd-->

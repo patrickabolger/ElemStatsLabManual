@@ -1,0 +1,35 @@
+# G: *Discussion* example {-}
+
+```{block, type="rmdwarning"}
+**WARNING**: This document will be uploaded to Turnitin. It will also have been read by your classmates. Therefore, it is a very bad idea to copy this to modify to use in your own *Discussion* section. Doing so would be a form of plagiarism. 
+```
+
+<br/>
+
+```{block2, type="rmdtip"}
+**TIP**: As noted in Chapter \@ref(WritingMethodSections), section \@ref(PWEFM1ParticipantsReviseSubsection), the proper way to use the example we have provided below is to paraphrase it. To do this, read through the example, section by section. For each section, read for meaning. Make sure you understand it. Then minimize it in your screen and bring up the document that you are writing. **Critically**, **walk away for a few minutes**. Wash a couple of dishes; dust off a shelf, write a text message to a friend; do some jumping jacks; whatever, but actively **do** something totally unrelated to writing this section. Then return after 2-3 minutes, and write out the relevant section in your own words, according to the content you remember reading from the example passage (adjusted for your own content, naturally). The cognitive reality here is that you will remember the content after 2-3 minutes, but you will have forgotten both the ordering of information and the exact wording of the original [The first evidence of this was found by Sachs [-@Sachs1967]]. This way, there is very little chance that you will plagiarize.
+```
+
+<br/><br/>
+
+The survey design and data for the example *Discussion* section below is adapted from a classroom project by Fettig, López Fuentes, and Villarreal [-@FettigLopezfuentesVillarreal2019].
+
+<br/><br/>
+
+>**Study 1**...
+>
+>*Results*... [see Appendix E]
+>
+>*Discussion*
+>
+>The purpose of this study was to look at how different aspects of student life affect sleep quality. *Study one* addressed how two relatively broad categories of student life affected sleep quality, namely, whether students were involved in extracurricular activities or not, and what their employment status was. We were expecting to find that students involved in extracurricular activities would report having lower quality sleep than students who were not involved in such activities. We were also expecting to find that students who were not working at all would indicate that they had better sleep than students who were working part-time or full-time. Additionally, we were expecting to find that students working part-time would fare better on sleep quality than students working full time.
+>
+>There were trends in the data, but no significant effects. That is, although students who were actually engaged in extracurricular activities reported sleeping better (surprisingly) than those who were not engaged, the difference was not significant. It may be the case that our study was under-powered, but the trend in the data is difficult to explain. Under the statistically unjustified assumption of a Type II error, it could be that actively distracting oneself from the learning demands of academia actually ameliorate the factors that lead to disturbed sleep.
+>
+>Likewise, there were some odd (non-significant) trends with the analysis of employment status. Recall that we were expecting to find that those who were working full-time would report sleeping worse than either those working part-time or those not working at all. However, also recall that there was only on participant who reported working full time, so we could not analyze the data with that level in the ANOVA. Therefore, in the ANOVA with only two levels, we found no statistically significant difference between those who were working part-time and those not working at all. At best, there seemed to be a great deal more variation among the part-timers vs. the non-workers. This might be worth further investigation.
+>
+>However, it seems somehow incomplete to restrict oneself to analyzing sleep quality by how students fit in to broad student/professional categories like extracurricular activity and employment. Therefore, in addition to addressing these relatively broad categories, we also addressed a couple of ways in which student life can be intense or not. Specifically, they responded to questions on how many academic hours they were taking and the intensity of their overall workload (academic, professional, etc.).
+>
+>Naturally, we expected to find that the more intense a student's life is (either in terms of academic or overall workload), the more likely they would report lower levels of sleep quality. This is the topic of *Study 2*, which follows below. 
+>
+>***Study 2***...

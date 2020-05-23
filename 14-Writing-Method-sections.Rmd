@@ -1,0 +1,482 @@
+# Writing *Method* sections {#WritingMethodSections}
+
+This chapter covers how to write the second part of an empirical IMRaD research report in the field of Psychology: the *Method* section (singular *Method*, not plural). The chapter culminates with *Writing Assignment #2* (Section \@ref(WritingAssignment2)), which will be the second of the four writing assignments for this course.
+
+Note that Before carrying out either *Practice Writing Exercise 1* (section \@ref(PWEFM1)) or *Writing Assignment 2* (section \@ref(WritingAssignment2)), you will probably need to have already performed the following procedures on your survey data: 
+
+a. filtering out participants who did not want their data analyzed  
+b. generating descriptive statistics about basic demographics, namely counts by sex and mean age (and standard deviation)  
+c. reverse-scoring any reverse-coded items  
+d. transforming variables on different scales  
+e. evaluating internal reliability (Cronbach's Alpha)  
+f. calculating the composite variable  
+
+How to do each of procedures (a) and (c)-(f) is covered in Chapter \@ref(DataPreparationAndAnalyses) in section \@ref(PreparingDataFinalStepsBeforeAnalysis). How to carry out procedure (b) is in Chapter \@ref(DescriptiveStats), section \@ref(DescriptivesInJamovi). Justifications for these preliminary analyses are below.
+
+<br/><br/>
+
+We included these procedures (again, see section \@ref(PreparingDataFinalStepsBeforeAnalysis)) because of the parameters of the study we had you carry out. 
+
+First (*a* above), there is always the possibility that a participant or two doesn't want their data analyzed. If you recall, you placed this question near the end of the survey. We can use the values provided here to remove those observations with a filter. You need to do this first as it will affect any descriptive statistics you carry out in (b).
+
+Second (*b* above), all studies involving human participants report the numbers of participants by sex, and the mean and standard deviation of their ages in years. You may also want to carry out descriptive statistics on each of your outcome variables. You can see how, for the example in Appendix C, this mattered a little bit. It depends on your study, however.
+
+Third (*c* above), one of your outcome variable is probably reverse-coded. This means that it is answered in the opposite way from other questions For example, whereas two of your variables might be worded as, "I like X's very much" (1 = Agree, 5 = Disagree), a reverse-coded question might be worded as, "I **dis**like Y's very much." Most longer surveys contain reverse-coded questions in order to either make the survey more interesting overall, or to detect dishonest (mechanical) responses, or both.
+
+Fourth (*d* above), you *may* need to transform one or more of your three outcome variables into *z*-scores before averaging them together. The reasons for this is that it makes no sense to average things that are on different scales (like averaging someone's weight with their height). However, *z*-scores are a standardization technique that allows you to do so. But if your three outcome variables are all on the same scale (e.g., a 1-5 Likert scale), then you don't need to worry about *z*-scores.
+
+Fifth (*e* above), you will need to calculate Cronbach's Alpha. Cronbach's Alpha is a way of evaluating how well a set of scores correspond with each other in terms of participant responses (item consistency). Presumably, your three outcome variables should correlate well with each other since they purportedly measure different aspects of the same thing (a single construct). Therefore, it is useful (and generally expected) to calculate and evaluate Cronbach's Alpha anytime you have a set of items in a composite variable.
+
+The last step (*f* above) will be to create the composite variable. This can be either a sum or an average (mean). What is imporant for later discussions is that you remember exactly which one you chose.
+
+So if you have not yet performed these procedures with your data, please go to sections @\ref(DescriptivesInJamovi) and \@ref(PreparingDataFinalStepsBeforeAnalysis). You will need to have done so prior to beginning the writing practice (section \@ref(PWEFM1)) and assignment (section \@ref(WritingAssignment2)) down below.
+
+<br/><br/>
+
+In fact, doing all the procedures above in a single jamovi file corresponds to *Statistical Output for Assignment 2* in eCampus.
+
+<br/><br/>
+
+For now, we will move on to the purpose and structure of Method sections.
+
+<br/><br/>
+
+## Purpose of the Method section {#PurposeOfTheMethodSection}
+
+The Method section is often under-valued by the casual reader. But it is extremely important for two main reasons. First, it is the section that reviewers for journals (and skilled researchers in general) read carefully in order to evaluate the validity (and to some extent, the reliability) of a study. There is a famous saying in research design: ***garbage in, garbage out***. This means that no matter how much you try, you won't be able to correct a bad research design, even with sound statistics. A bad research design will result in bad results (though a good research design does not necessarily entail good results). The Method section is where a reviewer or a careful reader would detect the *garbage-in* half of the saying. Paper submissions to journals are often rejected solely on the basis of the Method section alone.
+
+Second, the Method section serves as a set of instructions for future researchers to replicate the study. Although replications are woefully under-published, they are a very important, indeed, indispensable part of the scientific process.^[For an explanation of why replications are rarely published, enter either the expression *publication bias* or *file drawer effect* into a search engine.] Therefore, you will devote a lot of time and space to this section in your own papers.
+
+That said, it is easy to go too far in a Method section by providing too much detail. You probably will not have this problem in your own papers since your class projects are inherently small. But as you "graduate" to more elaborate studies, this is a danger.
+
+Conveniently, the Method section is quite straightforward in how it is written. This is made easier by the fact that, with the exception of very brief reports, Method sections are broken into various sub-sections.
+
+<br/><br/>
+
+## Structure of Method sections {#StructureOfMethodSections}
+
+As noted above, the Method section is all about spelling your study out so that others can either evaluate your study design, or "replicate" the study altogether.^[Note that *replicate* does not mean *reproduce* verbatim. Rather, it technically refers to performing the same study (or nearly the same study) on a new sample of participants drawn randomly from the same population.]
+
+In terms of content, the Method section describes...
+
+- the *who*: a description of the sample that was used
+- the *what*: a description of the materials or instruments used
+- the *how* (researchers): a very general description of how the researchers analyzed the data statistically, including the research design
+- the *how* (participants): a description of what participants actually did
+  - this last sub-section acts as a transition to the *Results* section that follows
+
+Accordingly, the Method section is split into various sub-sections, with fairly predictable labels, along with a fairly predictable order.
+
+We cover them in turn below.
+
+<br/><br/>
+
+### *Participants* {#MethodSection1Participants}
+
+This sub-section was traditionally called *Subjects*, but that more passive label fell out of use as the more active *Participants* label better reflected the shift to higher standards of informed consent over the years.^[Naturally however, it would be more appropriate to use *Subjects* if the source of your data were entities who were less capable of active consent or assent, like monkeys, rats, neurons, etc.]
+
+The sub-section details the general demographics of the sample. In reports several numbers, including those referring to the total number of participants analyzed, proportion of participants by sex, and the mean and standard deviation of age (in years for adults; years and months for children). 
+
+It also reports any exclusion criteria (a priori reasons why participants would be removed for analysis). Normally, the sub-sub-section on exclusion criteria contrasts the total number of participants who completed the study versus the final number of participants analyzed.
+
+It also reports on any details about the participants that would be critical to the study at hand. If the study includes many subgroups (e.g., low socioeconomic status children with dyslexia vs. high socioeconomic status children with dyslexia), those would need to be reported here. In this class, you do not have such a situation. As a result, your *Participant* sub-section will be relatively short.
+
+Finally, this section often details any incentives that were offered participants. Incentives can include anything from monetary remuneration to course credit. 
+
+Sometimes, researchers report that the study had obtained approval from a Research Ethics Board. But we are not sure why since this does not affect the study itself in any way, and could easily be reported in a footnote or endnote. But you will see instances of this here and there where it is reported directly in this sub-section.
+
+<br/><br/>
+
+#### Examples of *Participants* {#ExamplesOfSubSectionOnParticipants}
+
+Here is an example from Weisberg, DeYoung, and Hirsh [-@WeisbergDeyoungHirsh2011]. This study was a replication of previous studies (in general) that looked at gender differences in *Big Five* personality traits. Naturally, it was a survey, and so the demographics of the respondents mattered.
+
+>*Participants*
+>
+>Participants (*N* = 2643; 892 male, 1751 female) were drawn from a number of research projects, for which they received either monetary compensation or university course credit. Much of the data was collected in a large Canadian metropolitan area, either as an online survey or as a part of laboratory studies (*N* = 1826; 537 male, 1289 female). Some participants (*N* = 481; 200 male, 281 female) were members of the Eugene-Springfield community sample (ESCS). Lastly, 336 participants were recruited via Amazon’s Mechanical Turk (MTurk; 155 male, 181 female) and completed the measures online. Participants ranged in age from 17 to 85 (*M* = 27.2, SD = 14.4). The majority of participants identified as White (39.9%) or Asian (27.5%), with 1% or less identifying as Native American, Hispanic, and Black. Twenty-five percent of participants identified as “other,” and 5% did not specify ethnicity. The demographic data for a number of our samples allowed participants to choose from only the above five ethnicity classifications or specify their ethnicity as “other.” Therefore, the classification of “Asian” contains individuals of both South-Asian and East-Asian ethnic backgrounds. Though South-Asian and East-Asian cultures are markedly different in many ways, both are more collectivist than Western cultures... and therefore provide an interesting contrast to the White/European ethnic background.
+
+<br/><br/>
+
+The example above is a moderately sized sub-section on participants. Notice that everything is in the past tense. This tendency will continue through the *Results* section. There are longer and shorter versions, as exemplified below.
+
+There is something that is really important to notice about the example above, as well as all the examples below. Namely, most statistics about samples, especially means and standard deviations, are usually (though not always) reported between parentheses. For example (from above):
+
+>Participants ranged in age from 17 to 85 (*M* = 27.2, SD = 14.4)
+
+Also note that the letter *M* stands for *mean* and the letters *SD* stand for *standard deviation*. These are standard APA guidelines. APA guidelines also stipulate that these statistical acronyms (or more precisely, *initialisms*) should be in italics, though the authors here did not do this for the standard deviation for whatever reason. You should, however.
+
+<br/><br/>
+
+Below is an even more detailed participant-description sub-section (shortened as much as possible; deletions indicated by ellipses[...]). It is from Macdonald, Germine, Anderson, Christodoulou, and McGrath [-@MacdonaldGermineAndersonChristodoulouMcGrath2017]. Their study was a survey sent out to a very large number of educators and the general public in the United States about belief in neuroscience myths (e.g., being left- vs. right-brained, learning styles, etc.). As with any complex survey like this one, it was important to spell out details on who actually responded vs. who was actually analyzed, and how.
+
+>*Participants*
+>
+>The neuromyths survey and associated demographic questionnaires were hosted on the website TestMyBrain.org from August 2014–April 2015. TestMyBrain.org is a citizen science website where members of the public can participate in research studies to contribute to science and learn more about themselves. In addition to these citizen scientists, we also explicitly advertised this study to individuals with educational or neuroscience backgrounds and encouraged them to visit TestMyBrain.org. Advertisements were distributed through professional and university listservs and social networks (i.e., Council for Exceptional Children, Spell-Talk, Society for Neuroscience DC chapter, American University (AU) School of Education, AU Behavior, Cognition, and Neuroscience program, AU College of Arts and Sciences Facebook page), as well as professional and personal contacts of the authors. In order to increase participation from educators, we used a snowball sampling technique in which each participant that completed the survey was asked to share the survey link with an educator that he/she knew through various social media (i.e., Twitter, Facebook, LinkedIn, email, etc.)...
+>
+>The starting sample included surveys from 17,129 respondents worldwide. Only fully completed surveys were logged for further analysis. Participants were excluded if they reported experiencing technical problems with the survey (735 dropped), reported taking the survey more than once (e.g., based on a yes/no question at the end of the survey; 2,670 dropped), or reported cheating (e.g., looking up answers on the internet, discussing with an external person, 17 dropped).
+>
+>Further exclusion criteria were age <18 years (2,121 dropped), missing data on gender or educational background (361 dropped), and non-US participant (according to IP address or self-endorsement; 6,899 dropped). Next, we plotted overall survey accuracy by time to complete the survey to filter individuals who might have rushed through the survey without reading the questions (22 dropped). On the demographics questionnaire, participants were asked if they were currently enrolled or completed middle school, high school, some college, college degree, or graduate degree. We excluded individuals with a middle school or high school degree from the analyses because of inadequate representation of these individuals in the sample (*N* = 424 general public, 3 educators, 0 high neuroscience exposure). Therefore, our analyses were limited to those with “some college” experience or beyond. These filtering and data cleaning steps brought our final sample size to *N* = 3,877 (*N* = 3,045 general public, 598 educators, 234 high neuroscience exposure).
+>
+>One of the goals of this study was to compare the neuromyths performance of three groups: the general public, self-identified educators, and individuals with high neuroscience exposure. We defined “high neuroscience exposure” using a question on the demographics questionnaire which asked, “Have you ever taken a college/university course related to the brain or neuroscience?” Answer options for this item were “none,” “one,” “a few,” or “many.” Those who indicated “many” were categorized in the neuroscience group, unless they also reported being an educator, in which case they remained in the educator group (*N* = 53 educators also reported taking many neuroscience courses). We prioritized educator status over neuroscience exposure in this grouping in order to understand the full range of training backgrounds in the educator group. The “general public” group was composed of all individuals who completed the survey but did not self-identify as an educator or having high neuroscience exposure. We use the term “general public” to refer to the citizen scientists who participated, but we acknowledge the selection artifacts inherent to this group and address these limitations in the discussion section. Table 1 shows the demographic features of the three groups...
+
+<br/><br/>
+
+Obviously, that was quite long. Your papers will not approach anything like that. But you should know about the diversity of these sub-sections. Some are quite long, and some are quite short. It depends on the nature of the study. Survey studies usually require more information about participants; experiments usually less. Next is an example from an experiment carried out in a laboratory setting.
+
+<br/><br/>
+
+And finally, below is a significantly shorter description of participants from Jung, Wranke, Hamburger, and Knauff [-@JungWrankeHamburgerKnauff2014]. This study consisted of a series of laboratory experiments at a university. Although they included a survey to gauge the emotional state of the participants, it was done so in an experimental fashion, and no demographic variables were recorded. Thus, as you can see, the description of participants is quite minimal since the demographics of the participants are already quite well known (college-age students):^[Incidentally, this would be a pretty typical write-up for the experiments that you might participate in when you are recruited through any Psychology department's participant pool.]
+
+>*Participants*
+>
+>Thirty students from the University of Giessen participated in this study (mean age: 22.93 years; range: 19–30 years; 18 female, 12 male). They did not participate in any previous investigations on conditional reasoning and they received a monetary compensation of eight Euro. The participants came from a range of disciplines and none of them were psychology students. They were all native German speakers and provided informed written consent.
+
+<br/><br/>
+
+Such short sub-sections on participants is not uncommon in laboratory-based research with neuro-typical adult participants (e.g., college students).
+
+Next, we move on to the *Materials* sub-section.
+
+<br/><br/>
+
+### *Materials* {#MethodSection2Materials}
+
+First, we have used the term *Materials* as one example of several that might be appropriate. It depends on the study. Other terms that are commonly used to head this sub-section are *Stimuli*, *Instruments*, and *Measures*, among others.
+
+What these different sub-heading labels share, however, is that they describe anything and everything that participants interact with consistently during a study or experiment. In the case of surveys, the participants are exposed to questions. In the case of a lexical-decision task, participants make decisions about letter strings (words and pseudowords, usually). 
+
+As was true in the case of describing participants above, the length and detail of this sub-section will vary with its complexity. For highly complex designs, where it would be virtually impossible to cover each and every item, researchers usually resort to supplementing this sub-section with tables and/or appendixes.
+
+Descriptions that might be covered in this sub-section vary as much as different studies and experiments differ. For instance, anyone working with lexical-decision tasks (the bread and butter of psycholinguistics), would need to include the following:
+
+1. The total number of items  
+2. The total number of words vs. pseudo-words  
+3. The mean frequency of occurrence of the words  
+4. The mean letter-lengths (in number of letters) for both kinds of stimuli  
+5. The procedure used to select both words and pseudo-words (you cannot select them all)  
+6. The nature of the words and pseudo-words (e.g., high-frequency vs. low-frequency animal labels, like *dog* and *okapi*, respectively; or pronounceability of the words like syllabic complexity; or semantic characteristics like concrete vs. abstract]). Anything goes here really; it depends on what the study is trying to test.  
+6. A list of the words and pseudo-words used (often in an Appendix, or available somewhere online)  
+
+<br/><br/>
+
+But the description of materials for a psycholinguistic study is going to differ dramatically from that of a survey. A survey is going to list elements like the following:
+
+A. the total number of questions  
+B. the constructs that the questions relate to  
+C. the number of items within each construct  
+D. the questions themselves (if not too numerous)  
+E. the potential range of scores if the response to the question is continuous (e.g., a Likert item on a scale of 1 to 5, with 1 meaning *strongly disagree* and 5 meaning *strongly agree*, and 0 meaning *neither disagree nor agree*)  
+F. the order of the questions on the survey  
+G. any branching that occurs during the survey (subsets of questions that only appear if a respondent answers a certain way on another question)  
+
+There could be more in these sections, respectively. It depends on the study. There are a few examples below.
+
+<br/><br/>
+
+#### Examples of *Materials* {#ExamplesOfSubSectionOnMaterials}
+
+The study below by Rollero and DePiccoli [-@RolleroDepiccoli2017] is about self-objectification and how higher-order personal values (e.g., self-enhancement, openness to change) influence the extent to which people self-objectify. They use the term *Measures* instead of *Materials*. These two terms are almost synonymous.
+
+This consisted of a fairly quick survey, so it is probably more like what you will be doing in Writing Assignment #2 in section \@ref(WritingAssignment2).
+
+>Measures
+>
+>Data were gathered by a self-reported questionnaire which took about 15 min to be filled in. The following variables were assessed:
+>
+>**Self-objectification: Body Shame**
+>
+>The Body Shame subscale of the Objectified Body Consciousness Scale (McKinley and Hyde, 1996) was administered. It is an eight item scale used to measure self-objectification and feelings of shame when one’s body does not conform to cultural standards. Participants responded to a 7-point scale ranging from “strongly disagree” to “strongly agree” (Cronbach's $\alpha=0.83$). (e.g., “When I can’t control my weight, I feel like something must be wrong with me”).
+>
+>**Self-objectification: Body Surveillance**
+>
+>The Body Surveillance subscale of the Objectified Body Consciousness Scale (McKinley and Hyde, 1996) was also used. It measures the frequency with which participants monitor their physical appearance and consists of eight items on a 7-point scale ranging from “strongly disagree” to “strongly agree” (Cronbach’s $\alpha=0.84$) (e.g., “I rarely think about how I look” – reversed item).
+>
+>**Personal Values**
+>
+>Based on the Schwartz’s Values Survey (Schwartz, 1992, 2006) respondents rated 56 values “as a guiding principle in my life,” using a 5-point scale ranging from “opposed to my values” to “of supreme importance.” Following the Schwartz’s model, items were grouped into four subscales, referring to the higher order values: self-enhancement ($\alpha=0.81$), conservation ($\alpha=0.72$), self-transcendence ($\alpha=0.84$), and openness to change ($\alpha=0.79$).
+>
+>**Body Mass Index**
+>
+>Participant reported their height and weight, which were used to calculate BMI ($kg/m^2$).
+
+<br/><br/>
+
+In the case above, the questions were drawn from published, external question batteries. As a result, they only needed to provide the references to the original papers that described the survey in more detail. If you create your own questions on a survey, you would need to spell out each question in more detail (assuming there are only a few of them).
+
+<br/><br/>
+
+The example below is from a German study about effortful control and bilingualism [@KellerTroeschLoherGrob2016]. The study involved extensive testing of 4-5 year-old children on multiple measures involving cognitive control and language. As a result, the description of materials is quite extensive since one has to be very careful and very precise in one's interactions with such young children.
+
+>*Measures*
+>
+>*Effortful Control*
+>
+>Effortful control was assessed using the German version of the *Child Behavior Questionnaire* ... by childcare and kindergarten teachers at $T_1$ [Time 1]. The Child Behavior Questionnaire is a widely used assessment of temperament used in early to middle childhood. The present study used the subscale EC, consisting of 12 items (i.e., “When drawing or coloring in a book, shows strong concentration” and “Is quickly aware of some new item in the room”). Children’s EC ability was rated on a 7-point Likert scale ranging from 1 = extremely true to 7 = extremely untrue. In the current sample, internal consistency of the subscale was rated as good, with a Cronbach’s $\alpha=0.84$. Items were averaged to form an EC score.
+>
+>*Language*
+>
+>At $T_1$, German language competence was measured with the standardized language development test SETK-2 (*Sprachentwicklungstest für zweijährige Kinder*...), which was designed for monolingual German-speaking children aged 2 years. The SETK-2 assesses children’s expressive and receptive vocabulary, as well as morphological and syntactical aspects of the German language. A pilot study indicated very low German language competence in DLLs [dual language learners].... Therefore, the SETK-2 was applied despite a higher chronological age of the DLL sample compared to test norms. This procedure allowed us to prevent floor effects in DLLs with regards to their substantially lower competence spectrum. Although the SETK-2 was applied to both monolinguals and DLLs, for hypotheses testing, DLL children’s data were used exclusively due to ceiling effects in monolinguals.
+>
+>The SETK-2 consists of four subtests: *Word Comprehension*, *Sentence Comprehension*, *Word Production*, and *Sentence Production*. Both language comprehension subtests of the SETK-2 are similar in structure to the Peabody Picture Vocabulary Test ... where the child was presented four colored pictures from which the child had to choose the correct alternative form when orally presented a word or sentence. In both subtests of language production, children were presented with picture cards that depicted either objects or actions, which had to be named or described. The four subtests *Word Comprehension*, *Sentence Comprehension*, *Word Production*, and *Sentence Production* range from 0–8 points, 0–9 points, 0–24 points and 0–77 points, respectively. In the present study, standard values (T-scores) were used as dependent variables, based on the German monolingual 30- to 35-month-old norm sample (Grimm, 2000). In the current sample, internal consistencies were $\alpha_{Word Comprehension}=0.85$, $\alpha_{Sentence Comprehension}=0.81$, $\alpha_{Word Production}=0.95$, and $\alpha_{Sentence Production}=0.93$
+>
+>At $T_2$ [Time 2], language competence was assessed in the entire sample with three subtests of the SET 5–10 (*Sprachstandserhebungstest für Kinder im Alter zwischen 5 und 10 Jahren*...), a language development test for children aged 5–10 years. In the present study, the subtests *Language Comprehension*, *Picture Naming*, and *Picture Story* were applied. The subtest Language Comprehension assesses the comprehension of complex sentence structures (main and subordinate clauses). Children were thus read 12 sentences that had to be replayed with toys. The subtest Picture Naming assesses expressive vocabulary. Children were presented 40 picture cards of objects and actions that had to be named (e.g., stamp, thermometer, or painting a wall). In the subtest Picture Story, children were asked to tell a story based on five consecutive pictures. This narrative was subsequently analyzed based on predefined semantic and syntactic criteria. The three subtests Language Comprehension, Picture Naming, and Picture Story range from 0–12 points, 0–40 points, and 0–8 points, respectively. However, for all further analyses, standard values of the SET 5–10 (*T*-scores) were used.... In the current sample, internal consistencies were $\alpha_{LanguageComprehension}=0.94$, $\alpha_{PictureNaming}=0.80$, and $\alpha_{PictureStory}=0.74$. In order to gain a broader verbal competence score, a global score was built, based on the average of the three subtests. The internal consistency of the global score was Cronbach’s $\alpha=0.78$.
+
+<br/><br/>
+
+Naturally, you are not working with children in this class, so your Materials sub-section will not be nearly as long. It would be more like the first example above.
+
+The next sub-section of the Method section is normally *Design* and/or *Analysis*, or both. This is covered next.
+
+<br/><br/>
+
+### *Design and Analysis* {#MethodSection3DesignAndAnalysis}
+
+This sub-section briefly outlines the research design and the statistical analyses that will be used. But see the note below:
+
+```{block2, type="rmdnote"}
+**NOTE**: At this point of the class, we have not really discussed the inferential statistics that you need to describe here. Therefore, you cannot be expected to write all of this sub-section well. So we will not require you to write the entire sub-section. Rather, for Writing Assignment 2, we will only require you to write about how you combined your three outcome variables into a single construct and used Cronbach's alpha to evaluate the result. You will need to include how you reverse coded any items here as well. If on top of that you had outcome variables on different scales, and therefore needed to transform your outcome variables into *z*-scores before averaging or summing them, then you would also need to include that in this assignment. We will have you add the part about statistical analyses in the final paper (Writing Assignment 4). There is more information on this below in section \@ref(WritingAssignment2).
+```
+
+<br/><br/>
+
+Sometimes this sub-section simply goes by *Design*,*Analysis*, *Data Analysis*, or *Variables*. Each of these labels can also appear as combined or separate sub-sections in the Method section. That is, the labels that appear in Method sections can be quite flexible, depending on the nature of the study. Another factor that affects sub-section labeling is the extent to which researchers need to spell out each sub-section. Often, if a sub-section is not going to occupy very much space at all, it makes sense to combine it with another sub-section.
+
+However it's organized, this sub-section (or these sub-sections) can be quite technical. And this is because it lays out for the reader, reviewers, and researchers who might want to replicate the experiment if and how variables were created (e.g., averaged into a composite), or managed (e.g., transformed), and then analyzed.
+
+We provide some examples below, but we do not expect you to understand all of it yet, since all of it includes the statistical analyses that we have not yet covered in class.
+
+<br/><br/>
+
+#### Examples of *Design and Analysis* {#ExamplesOfSubSectionOnDesignAndAnalysis}
+
+The first example is from Dekker, Lee, Howard-Jones, and Jolles [-@DekkerLeeHowardjonesJolles2012]. This paper is on the same topic as the paper by MacDonald et al. [-@MacdonaldGermineAndersonChristodoulouMcGrath2017] referred to above in section \@ref(ExamplesOfSubSectionOnParticipants), but Dekker et al. was a study on educators in the UK only, and pre-dates MacDonald et al.
+
+>*Data Analysis*
+>
+>The data was analyzed using the Statistical Package for the Social Sciences (SPSS) version 17.0 for Windows. For all analysis, a statistical threshold of $\alpha=0.05$ was used. Independent *t*-tests were performed to examine differences between countries (independent variable) in percentage of neuromyths and percentage of correct responses on general statements (dependent variables). To examine which factors predicted neuromyths, a regression analysis was performed for percentage of myths (dependent variable) with country, sex, age, school type (primary/secondary school), reading popular science, reading scientific journals, in-service training, and percentage of correct answers on general assertions (predictors). A second regression analysis was performed to examine the predictors of neuroscience literacy. Percentage of correct answers on general assertions was the dependent variable, and predictors were country, sex, age, school type (primary/secondary school), reading popular science, reading scientific journals, and in-service training.
+
+Although you perhaps do not understand what *t*-tests and regression analyses are yet, you can certainly tell which variables are outcome variables and which are predictor variables. Interestingly, these authors switch back and forth between the terms *independent variable* and *predictor*. Switching like this is not generally recommended, but you can see that it does happen. Just remember that *dependent variable* = *outcome variable* and equivalently, *independent variable* = *predictor variable*.
+
+<br/><br/>
+
+The example below is from Christophel and Schnotz [-@ChristophelSchnotz2017]. They used a survey to examine how men and women differ in how they approach online STEM-related coursework. It is not an ideal example of *Design* or *Analysis*. In fact, it is named *Variables and Materials*. However, we include it here because it is rather close to what you will need to do in your own Design sub-section: namely, 1) describe the statistical parameters of your design (i.e., the composite outcome and individual, predictor variables); and 2) report on how you constructed your composite variable from the three outcome variables.
+
+One difference though is that you would really only report one Cronbach's alpha, namely: the one that assesses the composite outcome variable, consisting of the three outcome variables you collected in your survey. You might also report on *z*-scores, if you needed to create them before averaging/summing the outcome variables into a composite.
+
+We will provide you with a more relevant example of how to write your own papers (including this sub-section) in Appendix C.
+
+>*Variables and Materials*
+>
+>We used gender (female vs. male), strategic competences, and arithmetic-operative competences as independent variables and mental effort and situational interest as dependent variables. The values for *Cronbach’s Alpha* were assessed with 214 participants from all studies within the OML project (see values below).
+>
+>To assess the strategic competences, we used three scales (planning, regulation, and monitoring) of the Kieler learning strategy inventory... which has a four-step answer format (example item: “If I prepare myself/learn I make myself a list with the important things and learn it afterwards”). The value for *Cronbach’s Alpha* was 0.88. The arithmetic-operative competences were assessed with two task packages from the Berlin intelligence structure test... which challenge students to solve mathematical problems in a fixed time frame, moderated by an experimental assistant (example item: “A worker earns €15.20 per hour. How much does he earn if he works 5 h?”). The value for *Cronbach’s Alpha* was 0.99. Mental effort was collected with an item of Paas et al. (1994) and an item of Wagner (2013). These items capture students’ judgment of the amount of effort required and of the task difficulty (example item: “How much did you exert yourself while solving the learning environment?”). Both items included a nine-step answer format. The value for *Cronbach’s Alpha* for mental effort was 0.56 and, therefore, low; this might be because the scale measures both estimated effort and perceived difficulty. The situational interest of students in the completion of the learning environment was explored with adapted items from the questionnaire in order to capture the actual motivation in learning and performance situations... The value for *Cronbach’s Alpha* was 0.81. The FAM questionnaire included a seven-step answer format (example item: “In this learning environment I like the role of the scientist who discovers relationships”).
+
+<br/><br/> 
+
+You may have noticed that authors wrote out *Cronbach's Alpha* in its entirety instead of using the greek letter $\alpha$. This is fine for your papers as well, unless you really want to play around with your word processor by inserting special characters.
+
+<br/><br/>
+
+### *Procedure* {#MethodSection4Procedure}
+
+This sub-section of the Method section describes what the researchers did between designing the study and analyzing the data, and how the participants interacted with the materials during the study. In other words, what happened during the data-collection phase. This is important to reviewers and wise readers since often the order in which participants carry out tasks, or even the lighting conditions in a room, can sometimes plausibly make a difference in the outcome of an experiment.
+
+Be sure to include what participants were doing from beginning to end, and any role in the process that the researchers played. Naturally, you do not want to provide excruciating details here. Rather, provide enough so that a serious scientist could replicate what you did.
+
+<br/><br/>
+
+#### Examples of *Procedure* {#ExamplesOfSubSectionOnProcedure}
+
+The example below by Colzato, Ozturk, and Hommel [-@ColzatoOzturkHommel2012] is from a study on how different styles of meditation affect thinking. 
+
+>*Procedure and Design*
+>
+>The participant and the coach laid on two separate mats (at a distance of about 1 m) on the floor; half sitting with the back against a back-jack. Eyes were closed in all three conditions. The same instructor, certified in Samatha, Mindfulness, and TB [Transformational Breath] training, provided the instruction for all three sessions. Participants served in three 45-min sessions separated by 10 days. In one session they performed under the supervision of a certified meditation coach the FA [focused-attention] meditation (35 min) and completed for 10 min (5 min each) a short version of the RAT [Remote Association Task (Convergent Thinking)]... and the AUT [Alternate Uses Task (Divergent Thinking)]... In the other two sessions the method was the same except that participants performed the OM [open-monitoring] meditation and the baseline session and completed new items of the RAT and AUT. The order of these three types of sessions was counterbalanced across participants by means of a Latin square. The RAT and AUT were scored by two independent readers blinded to the experimental conditions.
+>
+>[more details on the RAT and AUT]
+>
+>*Statistical Analysis*
+>
+>Mood scores and five measures (from the two tasks) were extracted for each participant: originality, fluency, flexibility, and elaboration scores from the AUT, the number of correct items from the RAT. All measures were analyzed separately by means of repeated-measures ANOVAs with Session (OM vs. FA vs. BA) as within-subjects factor and order of Session as covariate (in order to account for possible order effect). A significance level of *p* < 0.05 [sic]^[Note that the significance level is set as $\alpha=.05$, not $p<.05$] was adopted for all tests.
+
+<br/><br/>
+
+The example below of this kind of sub-section is from Kachel, Steffens, and Niedlich [-@KachelSteffensNiedlich2016], who were trying to establish a build a faster, more reliable tool to assess gender roles. The instrument employed was a series of survey questions from various test batteries.
+
+This would be more typical of your papers in this class.
+
+>*Procedure*
+>
+>Participating students were tested at the University of Trier in a lab cubicle equipped with an iMac. The participants recruited via the snowball technique were tested individually in their homes or offices (as they wished) using an iBook. The instructions, the implicit tests, and the questionnaires were presented by a self-composed HyperCard computer program. Initially, participants were asked to report their age, educational background, and size of hometown. Then, they started with the IAT. IAT task order was held constant because of the correlational nature of the study.... All participants did the self-masculine/others-feminine task first. After the IAT, the questionnaires were presented in the order described in the Materials Section—accordingly, data for the TMF was collected before all other scales. Finally, participants were debriefed and thanked.
+
+In your own write-ups, you would be describing how the participant received the survey, and what the participant saw on the survey, starting at the beginning.
+
+<br/><br/>
+
+## Outside help on Method sections {#OutsideHelpOnMethodsSections}
+
+The most extensive treatment we have found on Method sections is [here](https://www.verywellmind.com/how-to-write-a-method-section-2795726) from *Verywell Mind*, the psychological branch of the *Verywell* website hosted by *Dotdash* (formerly *About.com*), and associated with the *Cleveland Clinic.* 
+
+The nicest, bullet-point style summary we have seen of what goes into a Method section is in Method portion the table linked [here](https://academic.oup.com/view-large/27747354). This is part of a short paper that was written for health-care researchers [@PernegerHudelson2004] about how to write IMRaD papers in general. You can find it [here](https://academic.oup.com/intqhc/article/16/3/191/1814554), where you can scroll to the discussion of the Method section.
+
+The following link from [The Visual Communication Guy](https://thevisualcommunicationguy.com/writing/how-to-organize-a-paper/how-to-organize-a-paper-the-imrad-format/) has a nice list of what to do and not to do in IMRaD papers. The part on the Method section is informative.
+
+<br/><br/>
+
+## Practice writing exercise 1 {#PWEFM1}
+<!-- PWEFM is an acronym for "Practice Writing Assignment for Methods" -->
+
+Form working dyads (or triads) like you did for the last assignment of this type (section \@ref(PWEFI1)). However, this time, work with someone from your own research group, if you can. 
+
+```{block, type="rmdnote"}
+**NOTE**: If your research group consists only of three people, you may want to work in a triad. Otherwise, one of you will end up in another group, which can be done, but it is not as convenient.
+```
+
+<br/><br/>
+
+Now come up with a unique nickname for your group and open a Google Doc as you did then, but give it the following name: **[YOUR GROUP NICKNAME] Chapter \@ref(WritingMethodSections) Exercise 1**. Then share the document with the other members of your working group, as well as your TA.
+
+You are now ready to start the practice writing exercises for the *Method* section.
+
+<br/><br/>
+
+### Participants {#PWEFM1Participants}
+
+As explained above in section \@ref(MethodSection1Participants), one thing that this section does, if the participant group consists of humans, is to report basic demographics. This usually means the numbers of each sex in the sample of participants, as well as their mean age (and standard deviation).
+
+But beyond that, the best way to think of this sub-section of the Method section (and, indeed, all the sub-sections that follow it) is as a road map to another researcher who might want to replicate the study.
+
+#### Brainstorm on participant reporting {#PWEFM1ParticipantsBrainstormOnThingsToWrite}
+
+Take a few minutes and brainstorm with your working-group partners on what elements of participant description would be useful to an outside researcher who wanted to replicate^[Note that being able to "replicate" the participants really refers to having sufficiently accurate information to draw participants randomly from the same population as in your study. So you are trying to provide information about your population of participants, which could be affected by the way you sampled them (e.g., convenience sampling, snowball sampling, etc.).] the study. Type in your ideas under the header *Ideas for Participant sub-section*.
+
+<br/><br/>
+
+Discuss this as a class once you are done brainstorming.
+
+<br/><br/>
+
+#### Write a participant sub-section for your data {#PWEFM1ParticipantsWriteForOwnData}
+
+Now look at your own data (or the data from *one* of your research groups if you're not all from the same research group). You probably have the basic statistics you need from jamovi for the Method section at this point, so refer back to that. If not, you can fabricate the statistics based on what you expect.
+
+Together, write out a *Participant* sub-section for your data. Naturally, you must include information about sex and age, but also include anything else about your sample that your group and the class in general brainstormed in the exercise above (section \@ref(PWEFM1ParticipantsBrainstormOnThingsToWrite)).
+
+<br/><br/>
+
+#### Feedback across working groups {#PWEFM1ParticipantsFeedbackAcrossGroups}
+
+As you did the last time you engaged in this kind of activity with the *Introduction*, someone from your group should raise their hand. Look for another working group that also has a hand up (this should *not* be another pair from within your research group unless that is the only option). Get their university emails and share your Google Doc with them electronically (i.e., *share* it with them in Google Drive). When you add them, add them with commenting (*Can comment*) privileges. They will reciprocate, giving you commenting privileges on theirs. Read that group's sentences (as they will yours). 
+
+Give the other groups helpful comments with respect to what you think might be helpful for you if you had to replicate their study on a new sample of participants (from the same population). Also feel free to offer comments about the organization of information in this sub-section. Finally, make sure you read the note after the next paragraph.
+
+When finished commenting, place a final comment near the end of your counterpart working group's sentences that says, "We are done commenting."
+
+```{block2, type="rmdnote"}
+**NOTE**: When you comment, focus on content and organization of the sub-section. Try to steer away from commenting on little details like whether standard deviation should be represented as *SD* or *s*, or whether something should be in italics or boldface. The TAs will be grading your final draft, ultimately, on **what** you include (content), and **how you organize** your information. But they will not be grading you on APA conventions at this point (whereas they will in the Results section in the next writing assignment). For now, they may add non-evaluative notes for you on your final draft to help you along in this regard, but for now, we are more concerned with what you are writing and how you are organizing it.
+```
+
+<br/><br/>
+
+#### Class review {#PWEFM1ParticipantsDiscussAsClass}
+
+As a class, discuss any issues that came up that might benefit from an expert's perspective (that of your TA).
+
+<br/><br/>
+
+#### Revise subsection {#PWEFM1ParticipantsReviseSubsection}
+
+Take a few minutes to revise any part of this sub-section that you think should be changed. Resolve comments where possible. 
+
+You should end up with a final, polished sentence that you would be comfortable using later on as a model for your own Participant subsection.
+
+```{block2, type="rmdwarning"}
+**WARNING**: Do not re-use the wording of this document for your own papers! Once it is written in lab, it is considered someone else's paper for the purposes of this class. Copying it for your own writing will thus be considered a form of plagiarism. Moreover, do not copy this document and try to change words progressively until it looks like you have a different document. This is, in fact, the most **dangerous** form of plagiarism, because if you get caught, there is evidence of you not only plagiarizing, but also evidence of you knowing what you were doing was wrong. This is *checkmate* (I assume) as far as the Aggie Honor System Office is concerned. Please read their [section on plagiarism](http://aggiehonor.tamu.edu/Rules-and-Procedures/Rules/Honor-System-Rules#Plagiarism). There is also a handout in eCampus under the appropriate folder titled "Types of Plagiarism (from Turnitin)." This is a more detailed set of descriptions for different kinds of plagiarism. The changing-a-few-words strategy is listed there as number 3 ("Find - Replace"). It is our opinion that this kind of plagiarism is much worse than indicated by Turnitin in the sense that it is also quite "self-incriminating."
+
+The best way to use the current lab-based document as a template for your own paper is to read each section for the content. Then distract yourself for a little bit with an unrelated task (e.g., making a cup of coffee, washing a couple of dishes). Return after a couple of minutes and try to re-write what you just read without looking at it.
+
+There is actually psycholinguistic evidence (e.g., Sachs [-@Sachs1967]) that our memory cannot hold on to what was said **exactly** for very long, but we can hold on to the meaning of what was said for quite some time. You can take advantage of this in your own writing to get around this sort of plagiarism.
+```
+
+<br/><br/>
+
+### Materials, Design, and Procedures {#PWEFM1MaterialsDesignProcedures}
+
+Repeat the sequence above for the following sub-sections: Materials, Design, and Procedures.
+
+There are a few notes below as to how the activity might change a little by section.
+
+<br/><br/>
+
+#### Materials {#PWEFM1Materials}
+
+The only thing different about this section is that it will be **far** more extensive than participants. This is because you administered a survey. Therefore, what you put on the survey becomes extremely important to anyone who wanted to replicate your experiment.
+
+However, restrict yourself to the survey itself. If there are changes to the raw data later on (e.g., transformation, composite variables), then they would go in the Design subsection.
+
+<br/><br/>
+
+#### Design {#PWEFM1Design}
+
+The unique part of this section is that we are not going to ask you to present what specific statistical tests you intend to perform. Since those come up later in the course, we cannot expect you to spell them out here. However, in an authentic section such as this (which might be named *Design and Analysis*), you would spell this out as part of your research plan.
+
+<br/><br/>
+
+#### Procedures {#PWEFM1Procedures}
+
+There is nothing unusual about this section relative to the others. The way to think about it is as a walk-through. Your reader, who could have in mind replicating your experiment, should be able to visualize what happened during the study, mostly from the participant's perspective, but also partly from the researcher (to the extent that they were directly involved in the data-collection itself). In a sense, it's what happened between the materials development and the data analysis.
+
+<br/><br/>
+
+## Writing Assignment #2 {#WritingAssignment2}
+
+This is part of the main writing assignments in your lab. It is the second part (Method) of the complete IMRaD research paper that you will write.
+
+<br/><br/>
+
+### General Instructions {#GeneralInstructionsOnWritingAssignment2}
+
+Unlike *Writing Assignment #1* (the *Introduction*), this second assignment will be more authentic. That is, since you will have both your data and your research designs available, it should be no problem to write out a fully fleshed-out *Methods* section.
+
+Like the *Introduction* in *Writing Assignment #1*, it should be about 2 to 3 additional pages long, double-spaced, Times New Roman, 12 font.
+
+```{block2, type="rmdnote"}
+**NOTE**: There is an example of a *Method* section in *Appendix C*. It turns out to be 3 pages long when it is double-spaced. This example was based on the survey and data from one of the research groups formed in PSYC 301 for Spring 2019 [@FettigLopezfuentesVillarreal2019].
+```
+
+<br/><br/>
+
+But unlike the *Introduction*, this section **does indeed** get a header: *Method* (singular, not plural). It will also have sub-headers, as will be explained below.
+
+<br/>
+
+```{block, type="rmdnote"}
+**NOTE**:  Remember, do NOT put your name on this assignment. It will be submitted for anonymous peer review through Peerceptiv, and including your name makes it non-anonymous. Your TAs will know exactly who you are since it is submitted electronically, and Peerceptiv indicates who you are (to the TAs and the instructor only). You don't even need to put your name on it for the final draft. We will know who you are.
+```
+
+<br/>
+
+Finally, for the peer-review (Peerceptiv) assignment you should just add this section to the current version of your *Introduction*. It will be easier to review if the reviewer (i.e., your peers and your TA) have access to your *Introduction* as well. Otherwise, they will be "operating in the dark."
+
+<br/><br/>
+
+### Specific Instructions {#SpecificInstructionsOnWritingAssignment2}
+
+Your methods section should contain four sub-sections with the following sub-headers: *Participants*, *Materials*, *Design*, and *Procedure*.
+
+Each of these sections should contain the details spelled out in their respective section above:
+
+- *Participants*: see section \@ref(MethodSection1Participants)  
+- *Material*: see section \@ref(MethodSection2Materials) (specifically the lettered list A-G)  
+- *Design*: see section \@ref(MethodSection3DesignAndAnalysis)  
+- *Procedure*: see section \@ref(MethodSection4Procedure)
+
+<br/><br/>
+
+As was indicated above (in a note at the beginning of section \@ref(MethodSection3DesignAndAnalysis)), we do not expect you at this point to be able to spell out the particular statistical analyses that will be used throughout the rest of your paper.^[However, if you are curious, they are as follows: 1) an independent-samples *t*-test for your two-level predictor variable; 2) a One-Way ANOVA for your 3-5 level predictor variable; and 3) a correlation and a simple linear regression for your two continuous predictor variables (your choice as to which variable goes with which analysis).] For now, you will detail the particulars of the design, but not the statistical analysis.
+
+A good strategy for this paper would be to explain in as much detail as possible, the details of each section. We did note at the beginning of this chapter (section \@ref(PurposeOfTheMethodSection)) that in a more elaborate study, it is easy to over-do the Method section in terms of detail. That is not really possible in your case, unless you start going in to painful detail about every single step you took in the *Procedure* sub-section (try to keep that reasonable).
+
+In addition to the example Method section in *Appendix C* [based on Fettig, López Fuentes, and Villarreal [-@FettigLopezfuentesVillarreal2019]], there is also a rubric for this assignment in *Appendix D*.
+
+The upload instructions and tips detailed for Writing Assignment #1 (located in section \@ref(UploadingRoughDraftOfWritingAssignment1)) also apply here in exactly the same way. Please review those.

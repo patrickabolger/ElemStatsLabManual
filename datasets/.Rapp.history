@@ -1,0 +1,6 @@
+load("/Users/bolgeradmin/Documents/Work/TAMU/PSYCH/Teach/New301/LabManualBookdown/datasets/Ch06_ChicoOriginalWithDiff.rds")
+q()
+load("/Users/bolgeradmin/Documents/Work/TAMU/PSYCH/Teach/PSYC301LabManual/datasets/CategoricalData_NPI.rds")
+q()
+load("/Users/bolgeradmin/Documents/Work/TAMU/PSYCH/Teach/PSYC301LabManual/datasets/CategoricalData_NPI.rds")
+q()

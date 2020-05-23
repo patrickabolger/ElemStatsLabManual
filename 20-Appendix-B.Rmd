@@ -1,0 +1,14 @@
+# B: *Introduction* rubric {-}
+
+```{r, echo=F, message=F, warning=F}
+IntroRubric <- readr::read_tsv("OtherResources/RubricForIntroduction.tsv")
+```
+
+```{r RubricForIntroduction, echo=F, warning=F, message=F}
+library(magrittr)
+knitr::kable(IntroRubric,
+caption = 'Rubric for Introduction sections.'
+) %>%
+kableExtra::kable_styling(bootstrap_options = c("striped", "condensed", "responsive"), font_size=11, full_width = T) %>%
+kableExtra::column_spec(1, bold = T, border_right = T)
+```

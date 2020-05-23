@@ -1,0 +1,60 @@
+# Factorial ANOVA {#FactorialAnova}
+
+**UNDER CONSTRUCTION**
+
+Scheduled for November 26, 2019
+
+<br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/>><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/>><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/>><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/>
+
+Sometimes you have more than one predictor variable. This chapter covers the case when you have two or more categorical predictor variables that might operate independently or together to account for variance in the outcome variable. This is called a *Factorial ANOVA*.
+
+## Basic: joyzepam data {#BasicFactorialAnovaJoyzepam}
+
+<br/><br/>
+
+### Obtaining the data {#BasicFactorialAnovaJoyzepamObtainingTheData}
+
+<br/><br/>
+
+### Implementing the procedure {#BasicFactorialAnovaJoyzepamImplementing}
+
+<br/><br/>
+
+### Interpreting the output {#BasicFactorialAnovaJoyzepamInterpreting}
+
+<br/><br/>
+
+### Reporting the output {#BasicFactorialAnovaJoyzepamReporting}
+
+<br/><br/>
+
+## Advanced: advanced data NAME {#AdvancedFactorialAnova_NAME}
+
+<br/><br/>
+
+### Obtaining the data {#AdvancedFactorialAnova_NAMEObtainingTheData}
+
+<br/><br/>
+
+### Implementing the procedure {#AdvancedFactorialAnova_NAMEImplementing}
+
+<br/><br/>
+
+### Interpreting the output {#AdvancedFactorialAnova_NAMEInterpreting}
+
+<br/><br/>
+
+### Reporting the output {#AdvancedFactorialAnova_NAMEReporting}
+
+<br/><br/>
+
+## Conclusion {#ConclusionOfFactorialAnova}
+
+<br/><br/>
+
+## Outside help on factorial ANOVA
+{#OutsideHelpOnFactorialAnova}
+
+<br/><br/>
+
+## Extra practice on factorial ANOVA {#PracticingFactorialAnova}
