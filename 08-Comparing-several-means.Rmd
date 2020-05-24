@@ -4,7 +4,7 @@ This chapter explains how to use jamovi to analyze a continuous outcome variable
 
 For example, you might analyze something like attitude towards increasing taxes to fund public education. And your participants might have been, say, Democrats, Republicans, and "Others." In this case, you could look at their mean responses by group, and figure out if any of these means were significantly different from any of the others.
 
-<br/><br/>
+<br/>
 
 ## The One-Way ANOVA {#OnewayAnova}
 
@@ -15,13 +15,13 @@ In this test, we are interested in whether three or more groups comprising indep
 The *F*-test is the calculation of a particular kind of ratio, the *F*-ratio (unsurprisingly!). It is the ratio of between-subjects variance (*Mean Squares Between*) divided by the within-subjects variance (*Mean Squares Within*). Each of these, respectively, is the ratio of the *Sum of Squares* (between or within) divided by the *degrees of freedom* (between or within). Thus:
 
 $$F= \frac{MeanSquares_{between}}{MeanSquares_{within}} = \frac{\frac{SumOfSquares_{betweeen}}{DegreesOfFreedom_{between}}}{\frac{SumOfSquares_{within}}{DegreesOfFreedom_{within}}}$$
-<br/><br/>
+<br/>
 
 And this is a pretty complex formula if spelled out all the way. You can refer to Table 13.1 in [@lsj, p. 334] if you want to see how this works. In fact, Table 13.1 is in a standard ANOVA-table format, though we won't go into that in this manual.
 
 Naturally, you do not need to calculate the *F*-ratio by hand. jamovi will do it for you.
 
-<br/><br/>
+<br/>
 
 ### Basic: Clinical Trial data {#OnewayAnovaClinicalTrialData}
 
@@ -29,13 +29,13 @@ The data set that Navarro and Foxcroft [-@lsj] use to illustrate the One-Way ANO
 
 This lab manual simply presents the dataset and analysis in a more lab-like way.
 
-<br/><br/>
+<br/>
 
 #### Obtaining the data {#OnewayAnovaClinicalTrialDataObtainingTheData}
 
 To follow along yourself, you can open the in the module from @lsj: $(\equiv)$ > *File* > *Data Library* > *learning statistics with jamovi* > *Clinical Trial.omv*. We are only going to look at the effect of *drug* on *mood.gain* (the outcome variable).
 
-<br/><br/>
+<br/>
 
 #### Implementing the procedure {#OnewayAnovaClinicalTrialDataImplementing}
 
@@ -51,7 +51,7 @@ See Figure \@ref(fig:OneWayClinicalParametersMain) directly below for a depictio
 knitr::include_graphics("images/SeveralMeans/ANOVAClinicalParamatersMain.png")
 ```
 
-<br/><br/>
+<br/>
 
 Next, click the arrow pointing to *Model* and make sure that *drug* is placed under *Model Terms* (and leave *Sum of squares* as *Type 3*. There is no built-in correction for heterogeneous variances in this procedure, but you can test the assumption using *Levene's Test for Homogeneity of Variance*. This avails itself if you check the box *Homogeneity tests* under *Assumption Checks*. See Figure \@ref(fig:ANOVAClinicalParamatersModelAndLevene) below for a depiction of these options.
 
@@ -59,7 +59,7 @@ Next, click the arrow pointing to *Model* and make sure that *drug* is placed un
 knitr::include_graphics("images/SeveralMeans/ANOVAClinicalParamatersModelAndLevene.png")
 ```
 
-<br/><br/>
+<br/>
 
 Under *Post-Hoc Tests*, make sure that *drug* is in the box on the right, and that the *Correction* is set to *Holm*. This is a more powerful way to conduct multiple post-hoc analyses than Bonferroni adjustments (see Navarro and Foxcroft [-@lsj, section 13.5.4, pp. 343-344] for a more thorough explanation). Scheffé and Tukey are also reasonable options. Ultimately however, all choices end up leading to the same conclusion in this case, which is often the case. See Figure \@ref(fig:OneWayClinicalParametersPostHoc) below for how to select these options.
 
@@ -67,7 +67,7 @@ Under *Post-Hoc Tests*, make sure that *drug* is in the box on the right, and th
 knitr::include_graphics("images/SeveralMeans/ANOVAClinicalParamatersPostHoc.png")
 ```
 
-<br/><br/>
+<br/>
 
 Finally, under *Estimated Marginal Means*, make sure that the following are true:
 
@@ -83,7 +83,7 @@ These options are shown in Figure \@ref(fig:ANOVAClinicalParamatersEMM) below.
 knitr::include_graphics("images/SeveralMeans/ANOVAClinicalParamatersEMM.png")
 ```
 
-<br/><br/>
+<br/>
 
 The results should appear as follows:
 
@@ -104,7 +104,7 @@ jmv::ANOVA(
     emmTables = TRUE)
 ```
 
-<br/><br/>
+<br/>
 
 #### Interpreting the output {#OnewayAnovaClinicalTrialDataInterpreting}
 
@@ -117,13 +117,13 @@ However, another key value is in the last column. This is the effect size, $\eta
 $$\eta^2 = \frac{SumOfSquares_{between}}{SumOfSquares_{total}}= \frac{SumOfSquares_{between}}{SumOfSquares_{between}+SumOfSquares_{within}}=$$
 $$\frac{3.45}{3.45+1.39} = \frac{3.45}{4.84} = 0.713$$
 
-<br/><br/>
+<br/>
 
 Naturally, that *F*-test is an omnibus test, and only tells us that there are some significant differences among the three means, but it doesn't tell us which. Therefore, there are also some post-hoc tests that we called for, which are located in third table down. It appears that there is a significant difference between joyzepam and each of the other two drugs, but not between the other two drugs themselves. This is clear in the figure, where you can see that the confidence interval for joyzepam does not overlap with either of the other two drugs, but the confidence intervals of the other two drugs overlap with each other quite a bit.^[Note that this is an approximate rule. Sometimes confidence intervals do overlap a little between variables that turn out to be significantly different.]
 
 Also note that the *Estimated Marginal Means* may be slightly different than the means that you obtain from running *Exploration* > *Descriptives* in jamovi. This topic is beyond the scope of this class as it has to do with how means are calculated multiple regression. Although these are legitimate estimates, you should report the means and standard deviations from the *Descriptives* procedure instead of the *Estimated Marginal Means* from the ANOVA output.
 
-<br/><br/>
+<br/>
 
 #### Reporting the output {#OnewayAnovaClinicalTrialDataReporting}
 
@@ -138,7 +138,7 @@ As already shown in the case of chi-square, the *z*- and *t*-tests, and the corr
 7. one of three symbols: =, <, or >
 8. a *p*-value
 
-<br/><br/>
+<br/>
 
 There will be only two differences this time:
 
@@ -149,30 +149,30 @@ To report the *F*-test in APA format, you can get all the information you need f
 
 $F(2,15)=18.6,p<.001, \eta_p^2=0.713$
 
-<br/><br/>
+<br/>
 
 We can now put together a partial *Results* section for this one analysis:
 
 >The mood improvement over the course of three months differed significantly across the three groups of patients taking either *joyzepam*, *anxifree*, or a placebo, $F(2,15)=18.6,p<.001, \eta_p^2=0.713$. Post-hoc comparisons with Holm corrections revealed that there was a significant difference between *joyzepam* and both *anxifree* [$t(15)=-4.36,p<.001$] and the placebo [$t(15)=5.88,p<.001$]. However, there was no significant difference between *anxifree* and the placebo [$t(15)=1.52,p=.15$]. These differences are also clear in Figure 1, where it is clear that the 95% confidence interval for *joyzepam* does not overlap with those of either of the other two conditions, whereas the confidence intervals for the latter two conditions overlap substantially. *joyzepam* is clearly resulting in a significantly greater mood gain than the other two conditions. Additionally, the effect size ($\eta^2=0.713$) is quite large, suggesting that this difference between *joyzepam* and the other two conditions is quite substantial in magnitude.
 
-<br/><br/>
+<br/>
 
 ### Advanced
 
 ***Everything below Scheduled for Spring 2020***
 
-<br/><br/>
+<br/>
 
 ## Repeated-measures One-Way ANOVA
 
-<br/><br/>
+<br/>
 
 ## Outside help on One-Way ANOVA
 
-<br/><br/>
+<br/>
 
 <!-- ## Conclusion {#ConclusionOfOnewayAnova} -->
 
-<!-- <br/><br/> -->
+<!-- <br/> -->
 
 ## Extra practice One-Way ANOVA {#PracticingOnewayAnova}

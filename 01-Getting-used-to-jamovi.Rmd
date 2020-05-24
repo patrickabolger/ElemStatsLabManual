@@ -18,65 +18,65 @@ There are four tabs in the uppermost menu bar. They are as follows:
 
 The **Data** tab in Figure \@ref(fig:DataTab) below shows you a set of options on how to manipulate data within the spreadsheet. 
 
-<br/><br/>
+<br/>
 
 ```{r DataTab, fig.cap="The data tab.", echo=F, out.width="600px"}
 knitr::include_graphics("images/GettingUsedToJamovi/datatab.png")
 ``` 
 
-<br/><br/>
+<br/>
 
 The **Analyses** tab in Figure \@ref(fig:AnalysesTab) below shows you options for different statistical analyses you can run on the data that you have in the spreadsheet. 
 
-<br/><br/>
+<br/>
 
 ```{r AnalysesTab, fig.cap="The analyses tab.", echo=F, out.width="600px"}
 knitr::include_graphics("images/GettingUsedToJamovi/analysestab.png")
 ```
 
-<br/><br/>
+<br/>
 
 The window that occupies most of the right side of the interface is where output goes. It will be blank until you do something. I'm going to open a data set that will be used in sections below for various pedagogical reasons. I'm just going to calculate the mean for the variable called *mood.gain*.
 
 In Figure \@ref(fig:BlankOutput) below, we have not yet done anything to the data, so the output window on the right is blank.
 
-<br/><br/>
+<br/>
 
 ```{r BlankOutput, fig.cap="Data with no analyses performed (blank window on left).", echo=F, out.width="600px"}
 knitr::include_graphics("images/GettingUsedToJamovi/blankoutput.png")
 ```
 
-<br/><br/>
+<br/>
 
 But Figure \@ref(fig:DummyOutput) below shows what you see in that same window after asking for descriptive statistics and a histogram (commands you haven't learned how to execute yet) of the *mood.gain* variable.
 
-<br/><br/>
+<br/>
 
 ```{r DummyOutput, fig.cap="Basic descriptive statistics.", echo=F, out.width="600px"}
 knitr::include_graphics("images/GettingUsedToJamovi/dummyoutput.png")
 ```
 
-<br/><br/>
+<br/>
 
 - There is a **Basic operations**^[We don't know the official name of this.] menu on the far left that is triggered by clicking the three horizontal lines, or $(\equiv)$. See Figure \@ref(fig:BasicOperationsMenu) below. Clicking this will make some file operations slide in from the left. These are things like saving the .omv file with a name, importing data, exporting data, etc. Note that to get out of this menu option, you just need to click the big arrow. This is true for any sub-menu in jamovi.
 
-<br/><br/>
+<br/>
 
 ```{r BasicOperationsMenu, fig.cap="The basic operations menu.", echo=F, out.width="300px"}
 knitr::include_graphics("images/GettingUsedToJamovi/basicoperations.png")
 ```
 
-<br/><br/>
+<br/>
 
 - There is a **Preferences**^[Same here. There seems to be no official name.] menu on the far right. See Figure \@ref(fig:PreferencesTab) below. To activate it click the three vertical dots $(\vdots)$. There are settings in here. You may want to change the color scheme, or round numbers to a certain number of decimals, etc. You can set these preferences here.
 
-<br/><br/>
+<br/>
 
 ```{r PreferencesTab, fig.cap="The preferences menu.", echo=F, out.width="300px"}
 knitr::include_graphics("images/GettingUsedToJamovi/preferences.png")
 ```
 
-<br/><br/>
+<br/>
 
 - Finally, there is a tab labeled **Modules** on the far right when you are under **Analyses** (there is a **plus sign** "+" to identify it as well). To understand what is going on with this tab, you first have to understand that when you downloaded jamovi, you downloaded it in its base form. The base form is what the authors of the software believe will carry you through basic analyses without overloading the software and making it unnecessarily large to download and install. However, many users will want or need to carry out specific analyses that the software authors consider either unusual or extra. They provide this extra functionality in the form of modules. They are written by either the jamovi team, or in many cases, avid users of jamovi (you can do so as well, if you're so inclined).
 
@@ -89,7 +89,7 @@ knitr::include_graphics("images/GettingUsedToJamovi/modules1.png")
 knitr::include_graphics("images/GettingUsedToJamovi/modules2.png")
 ```
 
-<br/><br/>
+<br/>
 
 You might notice that one module is installed by default. This is the base **jamovi** module that comes with the software. However, there are some other modules you will need installed for this class. They are as follows:
 
@@ -99,7 +99,7 @@ You might notice that one module is installed by default. This is the base **jam
 
 - **R data Sets**. This module loads the sample data sets that come with R. You will be using one or more of these data sets in this lab manual.
 
-<br/><br/>
+<br/>
 
 ## Outside help on basics {#OutsideHelpOnBasics}
 
@@ -107,7 +107,7 @@ You might notice that one module is installed by default. This is the base **jam
 
 [datalab.cc's general introductory tutorial on jamovi](https://datalab.cc/tools/jamovi) is a nice overview of jamovi. Choose video #1, called **Welcome**. If you are at Texas A&M University, you can also go to the *Howdy!* portal and search for jamovi in the *LinkedIn Learning* tutorials. In fact, all of  datalab.cc's tutorials on jamovi are available there.
 
-<br/><br/>
+<br/>
 
 ### Downloading and installing {#OutsideHelpOnDownloadingAndInstalling}
 
@@ -116,20 +116,20 @@ Here are some tutorials on how to download and install jamovi:
   - the [datalab.cc video tutorial](https://datalab.cc/tools/jamovi) on how to do this. Scroll to video #2, **Installing jamovi**.
   - @lsj, Chapter 3, Section 1 (3.1)
 
-<br/><br/>
+<br/>
 
 ### Navigating {#OutsideHelpOnNavigating}
 
 - [datalab.cc's video tutorial on navigating jamovi](https://datalab.cc/tools/jamovi). Scroll to video #3, **Navigating jamovi**
 - [the jamovi user guide](https://www.jamovi.org/user-manual.html#getting-started)
 
-<br/><br/>
+<br/>
 
 ### Modules {#OutsideHelpOnModules}
 
 [datalab.cc's video tutorial on jamovi modules](https://datalab.cc/tools/jamovi). Scroll to video #7, **jamovi modules**.
 
-<br/><br/>
+<br/>
 
 ## Conclusion {#ConclusionOfBasics}
 

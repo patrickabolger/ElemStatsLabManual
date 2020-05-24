@@ -1,11 +1,16 @@
 bookdown::gitbook:
-  css: style.css
+  dev: svglite
+  css: css/style.css
   config:
     toc:
+      collapse: none
       before: |
         <li><a href="./">A Lab Manual for PSYC 301: Elementary Statistics for Psychology</a></li>
         <li><a href="./">Patrick Bolger, PhD.</a></li>
       after: |
         <li><a href="https://github.com/rstudio/bookdown" target="blank">Published with bookdown</a></li>
-#    download: ["pdf", "epub"]
+            sharing:
+      sharing:
+        github: yes
+        facebook: no
   pandoc_args: ["--csl", "apa.csl"]

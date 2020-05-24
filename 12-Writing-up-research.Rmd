@@ -4,7 +4,7 @@
 
 You already understand that writing is a major component of this lab (as well as the lab in PSYC 302 - *Research Methods and Design in Psychology*). This chapter provides some context and a general framework for doing well in this writing component of the lab. There are no practical exercises in this chapter, only information about how to go about writing in Psychology. Subsequent sections (Chapters \@ref(WritingIntroductions)-\@ref(WritingGeneralDiscussionSections)) provide more detail.
 
-<br/><br/>
+<br/>
 
 ## The broader context {#TheBroaderContext}
 
@@ -14,7 +14,7 @@ This lab in PSYC 302 introduces you to what can be conceptualized as two interli
 
 We will describe these circles below, starting with the one you are most familiar with: the *education* circle. Note that the circle described below is characterized by a particular "flavor" that is quite unique to Psychology. It would be unusual to find this kind of undergraduate integration in other academic disciplines.
 
-<br/><br/>
+<br/>
 
 ### The education circle {#EducationCircles}
 
@@ -26,11 +26,11 @@ Here is an example of such writing, from the a recently finished open-educationa
 
 >Piaget has been criticized for overemphasizing the role that physical maturation plays in cognitive development and in underestimating the role that culture and interaction (or experience) plays in cognitive development. Looking across cultures reveals considerable variation in what children are able to do at various ages. Piaget may have underestimated what children are capable of given the right circumstances. (p. 33)
 
-<br/><br/>
+<br/>
 
 You have seen this kind of writing before if you have read any textbook before. We can assume that includes absolutely all of you. What you may ***not*** have seen before is the kind of writing described next.
 
-<br/><br/>
+<br/>
 
 ### The research circle {#ResearchCircle}
 
@@ -38,31 +38,31 @@ The research cycle spins off of the third step above, where professors and gradu
 
 We haven't yet had a chance to create a diagram of these circles. Instead, we will rely on your imagination for the time being. However, there is a related image from the *Understanding Science* website at the University of California Museum of Paleontology [-@UCMuseumOfPaleontology]. You can see this below, as Figure \@ref(fig:BigPictureOfScience).
 
-<br/><br/>
+<br/>
 
 ```{r BigPictureOfScience, fig.cap='The overall process of research (courtesy of the *University of California Museum of Anthropology*. The image is copyrighted. Please contact them at understandingscience@berkeley.edu if you wish to reproduce the image.).', echo=F, out.width="750px"}
 knitr::include_graphics("images/WriteUpResearch/BigPictureOfScience.gif")
 ```
 
-<br/><br/>
+<br/>
 
 This is a much more complex visualization than the two-circle description we provided above. Indeed, it's a more comprehensive depiction of the scientific process. Nonetheless, you may picture yourself as a student beneficiary, gaining knowledge in the blue circle, but also contributing data to experments in upper half of the central, green circle. Thus, it is in the interaction between the blue and green circles that Psychology students (you) find themselves in.
 
 But the main take-away in this sub-section is that the purpose of this class is to bring you closer to not only the green circle, but also the pinkish and violet  circles.
 
-<br/><br/>
+<br/>
 
 ### The research genre {#ResearchGenre}
 
 However, the particular style of language used within the *research* circle is definitely ***NOT*** intended to be read by the lay public, even those who are fairly educated. Rather, it is quite full of not only jargon that the uninitiated will probably not understand, but also of quite specialized concepts that are not widely understood, like the inferential statistics that are the focus of this class.
 
-<br/><br/>
+<br/>
 
 Here is an example excerpt from the *Introduction* to an article [@BarkerSemenovMichaelsonProvanSnyderMunakata2014] in the journal *Frontiers in Psychology*, an open-access journal in the field.
 
 >To accomplish [complex decision-making] tasks, children must engage executive functions (EFs), the cognitive control processes that regulate thought and action in support of goal-directed behavior. EFs develop dramatically during childhood ..., and support a number of higher-level cognitive processes, including planning and decision-making, maintenance and manipulation of information in memory, inhibition of unwanted thoughts, feelings, and actions, and flexible shifting from one task to another. Researchers have used a variety of laboratory tasks to measure child EFs, including table-top behavioral tasks (e.g., the classic marshmallow test, card-sorting tasks) and computerized tasks (e.g., Go/No-go, Flanker), many of which tap multiple aspects of EF. Over the past decade, EFs have emerged as critical, early predictors of success across a range of important outcomes, including school readiness in preschoolers..., as well as academic performance at school entry... and beyond. (p. 1)
 
-<br/><br/>
+<br/>
 
 And that's just from the *Introduction*, the least jargon-laced section of a paper. 
 
@@ -70,17 +70,17 @@ Below is an example from the *Method* section of the same paper. It has more jar
 
 >Children completed a computerized flanker task... assessing their ability to resolve conflicting visual information by appropriately responding to a central stimulus while ignoring flanking stimuli. The Flanker task is a commonly-used measure of externally-directed EF in 6-year-olds ... and has been shown to be sensitive to some interventions targeting EF in this age group... During the task, children were instructed to indicate the orientation (left or right pointing) of a centrally-presented target stimulus, via a corresponding button press. (p. 6)
 
-<br/><br/>
+<br/>
 
 And finally, the following is from the *Results* section, which is full of jargon:
 
 >Weekly and annual/typical estimates of how children spent their time... were marginally correlated, for both structured activities (*r* = 0.24; *p* < 0.06) and less-structured activities (*r* = 0.23; *p* < 0.071). We thus generated composite scores across weekly and annual/typical estimates to provide a more accurate and reliable measure of children's time. Each composite measure (for structured time, and separately for less-structured time) was formed by summing z-scored time in prior-week activities with z-scored ratings from the parent survey of annual/typical child activities, within each participant. (p. 7)
 
-<br/><br/>
+<br/>
 
 Clearly, this is not intended for the layperson. Rather, it is intended to be read by other experts in the field.
 
-<br/><br/>
+<br/>
 
 ## Purpose of writing in this class {#PurposeOfThisClass}
 
@@ -98,7 +98,7 @@ In this particular lab (i.e., if you are using this particular lab manual), you 
 
 But first, a general introduction to scientific writing is in order.
 
-<br/><br/>
+<br/>
 
 ## The genre of science {#TheGenreOfScience}
 
@@ -110,7 +110,7 @@ All of these are considered high artistic achievements (especially the first two
 
 But let's go back to the topic at hand: research reporting.
 
-<br/><br/>
+<br/>
 
 In direct contrast, it is quite difficult to imagine how flaunting the conventions of narrative would somehow be of any use whatsoever in research reporting. For instance, no researcher needs or even wants to step into the minds of other researchers or their participants. The goal of scientific reporting is strictly the conveyance of information. Thus, something very different is true of writing conventions among researchers: Creativity in content is paramount (i.e., finding ways to answer questions), whereas creativity in form (e.g., flaunting narrative conventions) is eschewed. In fact, you might see at this point how codifying the narrative conventions quite narrowly would lend quite an advantage to readers of research reports. If narrow enough, constraints on expression could actually help readers predict what kind of information will be conveyed, in what order, in what form, and with which specific labels. 
 
@@ -118,25 +118,25 @@ This is no different than, say, a manager at a private company that wants quarte
 
 Indeed, this standardization has already been taken care of for you by the American Psychological Association (APA). This will be explained next.
 
-<br/><br/>
+<br/>
 
 ## Style guides {#StyleGuides}
 
 So this brings us to what is called a *style guide*. A style guide is a set of conventions (usually written down in a manual) that a particular industry recommends writers follow for communication. With respect to research reporting, for instance, any particular style guide will recommend specific conventions for organizing information in papers, for citing sources, for wording, and for the reporting of statistics, among many other constraints. Examples of style guides include *The Chicago Manual of Style* (aka *Turabian*), *MLA* (the *Modern Language Association*), *AMA* (the *American Medical Association*), and *CSE* (the *Council of Science Editors*). There are many.
 
-<br/><br/>
+<br/>
 
 ### APA style {#ApaStyle}
 
 But the style guide that has taken hold in Psychology (and many other fields) is that of the *American Psychological Association*. The style they recommend is called [APA style](https://en.wikipedia.org/wiki/APA_style), and is detailed in a manual called [The Publication Manual of the American Psychological Association](https://apastyle.apa.org/manual/). To obtain a personal copy of the manual, it must be purchased. However, university libraries always have multiple copies. There are multiple copies available in the stacks at the *Evans Library* at Texas A&M, but they are often checked out. There are at least two copies in the 1st Floor Annex of Evans, however. For what it's worth, the map to this location is displayed below in Figure \@ref(fig:LocationOfAPAManualInEvansLibrary1stFloorAnnex).
 
-<br/><br/>
+<br/>
 
 ```{r LocationOfAPAManualInEvansLibrary1stFloorAnnex, fig.cap='Location of reserve copies at the Evans Library (1st Floor Annex) at Texas A&M of the *Publication Manual of the American Psychological Association, 6th ed.*.', echo=F, out.width="750px"}
 knitr::include_graphics("images/WriteUpResearch/LocationOfAPAManualInEvansLibrary1stFloorAnnex.png")
 ```
 
-<br/><br/>
+<br/>
 
 Unfortunately, the APA does not appear to make the electronic version of the manual available to university libraries.
 
@@ -148,11 +148,11 @@ That said, this class will focus very little on citing sources in APA format. Yo
 - General APA guidelines
 - How to report statistics
 
-<br/><br/>
+<br/>
 
 We will start with the overall structure.
 
-<br/><br/>
+<br/>
 
 #### Organization of APA research reports {#OrganizationOfAPAResearchReports}
 
@@ -163,7 +163,7 @@ The basic skeleton of a research report in APA format is as follows:
 - ***R***esults; ***a***nd
 - ***D***iscussion.
 
-<br/><br/>
+<br/>
 
 This is sometimes called ***IMRaD*** structure (or often just ***IMRAD***), an acronym based on the first letter of each major section (above, plus the coordinating conjunction). This structure has become dominant in the sciences during the last 50 years (@SollaciPereria2004). [Here](https://en.wikipedia.org/wiki/IMRAD) is a Wikipedia link on the format.
 
@@ -175,13 +175,13 @@ The ***Discussion*** section begins "narrowly," by referring back to the results
 
 Figure \@ref(fig:HourglassImageFromTurbekEtAl2016) below is reproduced from an article by Turbek et al. [-@TurbekChockDonahueHavrillaOliverioPolutchkoShoemakerVimerati2016]. (The figure refers to biology, but you can just replace *BIOLOGICAL* with *PSYCHOLOGICAL*).
 
-<br/><br/>
+<br/>
 
 ```{r HourglassImageFromTurbekEtAl2016, fig.cap='The hourglass shape of the IMRaD research paper (from Figure 1, p. 420, of @TurbekChockDonahueHavrillaOliverioPolutchkoShoemakerVimerati2016.', echo=F, out.width="600px"}
 knitr::include_graphics("images/WriteUpResearch/HourglassImageFromTurbekEtAl2016.jpeg")
 ```
 
-<br/><br/>
+<br/>
 
 A more common skeleton is as follows since most research reports consist of more than one study and/or experiment:
 
@@ -200,11 +200,11 @@ A more common skeleton is as follows since most research reports consist of more
   - Discussion
 - General Discussion
 
-<br/><br/>
+<br/>
 
 The rhetorical shape of this structure is not that much different from the simpler hourglass approach above. The main difference is that only the *General Discussion* widens to the maximum extent at the end, whereas the study-specific *Discussion* sections usually only broaden out enough to justify the experiment that follows (if any). 
 
-<br/><br/>
+<br/>
 
 In this class you will be producing one of these reports. Ultimately, it will take the following form:
 
@@ -218,11 +218,11 @@ In this class you will be producing one of these reports. Ultimately, it will ta
   - Discussion
 - General Discussion
 
-<br/><br/>
+<br/>
 
 We will review how to write each section in Chapters \@ref(WritingIntroductions)-\@ref(WritingGeneralDiscussionSections).
 
-<br/><br/>
+<br/>
 
 #### General APA guidelines {#GeneralAPAGuidelines}
 
@@ -251,17 +251,17 @@ There are also some basic, over-arching formatting guidelines for all APA papers
   - Method and Results section should be reported in the past tense
   - Introduction and Discussion can use more present tense
   
-<br/><br/>
+<br/>
 
 Note that in the papers for this class, we will not ask you to include a title page nor an abstract. Writing starts on the body of the paper (i.e., beginning with the introduction).
 
-<br/><br/>
+<br/>
 
 #### How to report statistics {#HowToReportStatistics}
 
 The reporting of statistics is consistent across descriptive statistics and inferential tests.
 
-<br/><br/>
+<br/>
 
 ##### Descriptive statistics {#ReportingDescriptiveStatistics}
 
@@ -269,23 +269,23 @@ These are usually reported in parentheses in text. When this is the case, they a
 
 >"The typical scores for the low-income group were higher (*M* = 32.81, *SD* = 5.6, *n* = 42) than the high-income group, whose scores were typically lower (*M* = 24.52, *SD* = 6.4, *n* = 28)"
 
-<br/><br/>
+<br/>
 
 Sometimes however, they are reported in the text itself. This often happens when authors are discussing the numbers themselves instead of the constructs. For example:
 
 >"The mean of 32.81 for the low-income group was calculated in the context of a positive skew, whereas the mean of 24.52 for the high-income group was not."
 
-<br/><br/>
+<br/>
 
 But in general, one should try to keep descriptive statistics in parentheses so that they do not interfere with the prose too much. That is, if you omit the descriptive statistics in parentheses when you read out loud, your listener can still understand what you're saying. Thus, the first example passage above could be coherently read aloud as follows:
 
 >"The typical scores for the low-income group were higher than the high-income group, whose scores were typically lower."
 
-<br/><br/>
+<br/>
 
 In short, the information outside the parentheses should be vital to the prose, and the information inside the parentheses should not be vital to the prose.
 
-<br/><br/>
+<br/>
 
 Standard APA abbreviations for typical statistics covered in this class are as follows:
 
@@ -296,11 +296,11 @@ Standard APA abbreviations for typical statistics covered in this class are as f
 - median: *Mdn*
 - z-score: *z*
 
-<br/><br/>
+<br/>
 
 Other descriptive statistics do not get abbreviations, as far as we know, as they are rarely reported this way.
 
-<br/><br/>
+<br/>
 
 ##### Inferential statistics {#ReportingInferentialStatistics}
 
@@ -308,7 +308,7 @@ Inferential statistics are reported with a consistent pattern in APA. The patter
 
 $[$*test-letter*$]$(df) = $[$obtained-value$]$, *p* [= OR < OR >] $[$p-value$]$
 
-<br/><br/>
+<br/>
 
 - **test-letter**: this is usually a single, italicized roman or greek letter that represents the particular inferential test that was run. Examples that are relevant for this class include the following:
 
@@ -325,7 +325,7 @@ $[$*test-letter*$]$(df) = $[$obtained-value$]$, *p* [= OR < OR >] $[$p-value$]$
 - ***[= OR < OR >]***: That is, either ***=***, or ***<***, or ***>***. One (*and only one*) of those three symbols must occur in this location, depending on whether the *p*-value is exactly the number to the right (***=***), less than that number (***<***), or greater than that number (***>***).
 - ***p-value***: This is the *p*-value, an number between 0 and 1.^[When multiplied by 100, the *p*-value is the number of times out of 100 that you would expect to get the obtained value that you did (or one that is more extreme) if you not only repeated the experiment/study an infinite number of times, but the null hypothesis were also underlyingly true.]
 
-<br/><br/>
+<br/>
 
 That looks like a ***lot*** of information (and it is), but the actual, written form that it takes is quite concise. Here are some more concrete (albeit fabricated) examples:
 
@@ -340,13 +340,13 @@ That looks like a ***lot*** of information (and it is), but the actual, written 
 - *z*-test  
   - $z=14.60,p<.05$  
 
-<br/><br/>
+<br/>
 
 ## Issues not extensively covered {#IssuesNotExtensivelyCovered}
 
 There are a few issues that are keys to good writing, but that we do not cover extensively in this manual due to a lack of space.
 
-<br/><br/>
+<br/>
 
 ### Critical thinking {#CriticalThinking}
 
@@ -354,7 +354,7 @@ It is sad that we do not cover this here, as it is the backbone of good research
 
 However, there are good outside sources on critical-thinking skills. We will cover these under Section \@ref(OutsideHelpOnWritingUpResearch) below.
 
-<br/><br/>
+<br/>
 
 ### "Grammar", clarity, and mechanics {#MechanicsOfWriting}
 
@@ -368,13 +368,13 @@ When teachers have referred to your "bad grammar," therefore, they were really r
 
 It is at this point that we will no longer use the term "grammar" for this writing issue that keeps rearing its ugly head on your teacher's feedback to you. Rather, we will simply call it what it is: *mastering formal English*.
 
-<br/><br/>
+<br/>
 
 #### Mastering formal English {#MasteringFormalEnglish}
 
 So you can see that we are not just shamelessly trying to get you to study the psychology of language.^[Well, maybe a little.] Rather, you should conceptualize becoming a better writer in academic English as a form of foreign-language learning, especially of vocabulary. As such, it is not out of reach as the expression "You have bad grammar" might imply. Rather, you just need to learn some additional vocabulary, along with a few other minor modifications to a language you already know very, very well (i.e., English, in our case).
 
-<br/><br/>
+<br/>
 
 ##### Learning the vocabulary {#LearningFormalEnglishVocabulary}
 
@@ -382,7 +382,7 @@ The bulk of the learning task here is acquiring formal vocabulary, which for his
 
 It is well beyond the scope of this manual to delineate the differences between the informal and formal vocabulary of English. However, the link above gives you some insight. And we will provide some links at the end of this chapter.
 
-<br/><br/>
+<br/>
 
 ##### Learning the style {#LearningTheStyleOfFormalEnglish}
 
@@ -392,7 +392,7 @@ Formal:
 
 >Due to the fact that there is a Thursday football game, non-essential university staff are encouraged to leave early on that day.
 
-<br/><br/>
+<br/>
 
 The first clause there is a subordinate clause that can't itself form a complete sentence.
 
@@ -400,7 +400,7 @@ Informal:
 
 >There's gonna be a football game on Thursday. So employees that don't need to be here should leave early.
 
-<br/><br/>
+<br/>
 
 In this case, both clauses (before and after the comma) form complete sentences. They are independent clauses.
 
@@ -416,13 +416,13 @@ For example, Here is the first line of the paper from @WatsonCrick1953, an artic
 
 >"We wish to suggest a structure for the salt of deoxyribose nucleic acid (D.N.A.). This structure has novel features which are of considerable biological interest."
 
-<br/><br/>
+<br/>
 
 They could have said:
 
 >!!!!!!!! We just nailed down the basic chemistry of not only how life perpetuates itself, but also how life forms evolve! This is going to change the world!
 
-<br/><br/>
+<br/>
 
 But they didn't. Instead, they used expressions like "wish to suggest" and "considerable biological interest."
 
@@ -436,7 +436,7 @@ Traditionally, writing in the sciences and Psychology has also tended to be ***i
 
 But just as in the case of vocabulary, the specific stylistic differences between informal and formal English are quite numerous, and beyond the scope of this manual. But we do have some links to some outside help at the end of this chapter.
 
-<br/><br/>
+<br/>
 
 ### Pacing the writing process {#PacingTheWritingProcess} 
 
@@ -448,21 +448,21 @@ It also often results in clarity problems or awkward constructions, like misplac
 
 (Obviously, your results didn't take the survey. Rather, your participants did.)
 
-<br/><br/>
+<br/>
 
 Good writers recognize the discrepancy between the speed, on the one hand, of uttering thoughts through language (or just generating thoughts), versus writing them out, on the other. They are also aware of the writing problems that can arise from this discrepancy. As a result, they develop strategies to check and double-check (*revising") their writing (ultimately, without getting bogged down in micro-editing, which can also impede your writing).
 
-<br/><br/>
+<br/>
 
-```{block, type="rmdwarning"}
+```{block2, type="rmdwarning", echo=T}
 **WARNING**: Writing at the last minute is only going to exacerbate such working-memory errors as you go into panic mode. Start writing ***early***, at a thoughtful pace, to circumvent this kind of writing crisis. In fact, you can only learn how to write efficiently this way if you practice it. So again, start ***early***!
 ```
 
-<br/><br/>
+<br/>
 
 Another strategy to deal with this discrepancy is to break the writing process up into different stages, starting with pre-writing. This is mentioned at the end of [this page](https://owl.purdue.edu/owl/general_writing/the_writing_process/prewriting/index.html) on pre-writing strategies from the renowned [Online Writing Lab](https://owl.purdue.edu/owl/purdue_owl.html) at Purdue University (which we will often reference in this manual). However, the thought process that would go into this differs depending on the section you are writing. So we will return to this within each writing assignment (Chapters \@ref(WritingIntroductions)-\@ref(WritingGeneralDiscussionSections)).
 
-<br/><br/>
+<br/>
 
 ## Outside help on writing up research {#OutsideHelpOnWritingUpResearch}
 
@@ -470,7 +470,7 @@ One of the oldest, online sources for help on research writing is the [Online Wr
 
 [Writing the Scientific Paper](https://wac.colostate.edu/resources/writing/guides/scientific-paper/)
 
-<br/><br/>
+<br/>
 
 ### Research papers in APA format
 
@@ -478,7 +478,7 @@ One of the oldest, online sources for help on research writing is the [Online Wr
 
 [Headings and seriation](https://owl.purdue.edu/owl/research_and_citation/apa_style/apa_formatting_and_style_guide/apa_headings_and_seriation.html)
 
-<br/><br/>
+<br/>
 
 ### Writing up research {#WritingUpResearch}
 

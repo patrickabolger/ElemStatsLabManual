@@ -10,10 +10,10 @@
 
   <meta property="og:title" content="Chapter 7 Correlation and linear regression | A Lab Manual for PSYC 301: Elementary Statistics for Psychology" />
   <meta property="og:type" content="book" />
-  
+  <meta property="og:url" content="https://patrickabolger.github.io/ElemStatsLabManual/" />
   
   <meta property="og:description" content="This is a lab manual for PSYC 301: Elementary Statistics for Psychology. It is an open educational resource (OER), so there is no charge to students." />
-  
+  <meta name="github-repo" content="patrickabolger/ElemStatsLabManual" />
 
   <meta name="twitter:card" content="summary" />
   <meta name="twitter:title" content="Chapter 7 Correlation and linear regression | A Lab Manual for PSYC 301: Elementary Statistics for Psychology" />
@@ -23,7 +23,7 @@
 
 
 
-<meta name="date" content="2020-05-22" />
+<meta name="date" content="2020-05-24" />
 
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <meta name="apple-mobile-web-app-capable" content="yes" />
@@ -53,6 +53,7 @@
 
 
 
+<link rel="stylesheet" href="css/style.css" type="text/css" />
 </head>
 
 <body>
@@ -65,6 +66,10 @@
       <nav role="navigation">
 
 <ul class="summary">
+<li><a href="./">A Lab Manual for PSYC 301: Elementary Statistics for Psychology</a></li>
+<li><a href="./">Patrick Bolger, PhD.</a></li>
+
+<li class="divider"></li>
 <li class="chapter" data-level="" data-path="index.html"><a href="index.html"><i class="fa fa-check"></i>Preface</a><ul>
 <li class="chapter" data-level="0.1" data-path="index.html"><a href="index.html#goals"><i class="fa fa-check"></i><b>0.1</b> Goals</a></li>
 <li class="chapter" data-level="0.2" data-path="index.html"><a href="index.html#Resources"><i class="fa fa-check"></i><b>0.2</b> Resources</a><ul>
@@ -372,6 +377,10 @@
 <li><a href="i-general-discussion-example.html#i-general-discussion-example">I: <em>General Discussion</em> example</a></li>
 <li><a href="j-general-discussion-rubric.html#j-general-discussion-rubric">J: <em>General Discussion</em> rubric</a></li>
 <li class="chapter" data-level="" data-path="references.html"><a href="references.html"><i class="fa fa-check"></i>References</a></li>
+<li class="divider"></li>
+<li><a href="https://github.com/rstudio/bookdown" target="blank">Published with bookdown</a></li>
+    sharing:
+
 </ul>
 
       </nav>
@@ -393,7 +402,7 @@
 <h1><span class="header-section-number">Chapter 7</span> Correlation and linear regression</h1>
 <p>So far, we have only addressed cases where the predictor variable is categorical in nature (e.g., <strong><em>Sex</em></strong>: <em>male</em>/<em>female</em>; <strong><em>Handedness</em></strong>: <em>left</em>/<em>right</em>/<em>ambidextrous</em>).</p>
 <p>But this chapter is all about how to analyze data when both the outcome variable and the predictor variable are continuous in nature. For example, you might be interested in the proclivity of university students to attend sporting events (measured on a scale from 1-7, 1 being <em>not at all</em>, and 7 being <em>every event I can possibly attend</em>) as predicted by how much they crave social interaction (same scale, 1 being <em>not at all</em> and 7 being <em>all the time</em>). You might expect that students who provide higher values on the first question would also tend to provide higher values on the second, and vice-versa. This sort of analysis cannot be carried out with a chi-square, or <em>t</em>-test, or ANOVA. It can be analyzed, however, as a correlation or a simple regression.<a href="#fn68" class="footnote-ref" id="fnref68"><sup>68</sup></a></p>
-<p><br/><br/></p>
+<p><br/></p>
 <div id="Correlations" class="section level2">
 <h2><span class="header-section-number">7.1</span> Correlations</h2>
 <p>The first analysis in this chapter is correlation. The second is a simple regression. Both involved only two variables: a single, continuous outcome variable, and a single, continuous predictor variable.</p>
@@ -401,7 +410,7 @@
 <p>Restricting ourselves to correlation, the obtained value for a correlation between two continuous variables is known as Pearson’s <em>r</em>, after Karl Pearson.<a href="#fn70" class="footnote-ref" id="fnref70"><sup>70</sup></a> The obtained value of Pearson’s <em>r</em> ranges from -1 to 1, with the extremes (-1 and 1) indicating opposite, but equally strong, directions of correlation, and the middle value, 0, indicating no relationship at all. The closer one is to the extremes (-1 or 1), the <em>stronger</em> the correlation is. The closer one is to the middle (0), the <em>weaker</em> the correlation is.</p>
 <p>The direction of the correlation (i.e., whether it’s positive or negative) simply indicates the how the variables are related. Specifically, if the values of <em>X</em> tend to increase alongside increases in <em>Y</em>, then the correlation is positive (e.g., height and weight are always positively correlated, though the correlation is not perfect).</p>
 <p>In contrast, if as the values of <em>X</em> go up, the values of <em>Y</em> tend to go <strong>down</strong>, then the correlation is negative. This is what you would find if you compared the amount of rainfall to the number of university students who walk or ride their bikes to school (note, that the number of students who <em>drive</em> to school would be positively correlated in this case – thus, the direction of a correlation [positive or negative] has nothing to do with whether the relationship is “good” or “bad”).</p>
-<p>In the textbook <span class="citation">(Navarro and Foxcroft <a href="#ref-lsj">2019</a>)</span> in section 12.1.3, the authors simplify the formula for Pearson’s <em>r</em> to the following:</p>
+<p>In the textbook <span class="citation">(Navarro &amp; Foxcroft, <a href="#ref-lsj">2019</a>)</span> in section 12.1.3, the authors simplify the formula for Pearson’s <em>r</em> to the following:</p>
 <p><span class="math display">\[r_{XY}=\frac{COV(X,Y)}{\hat{\sigma}_X,\hat{\sigma}_Y}\]</span></p>
 <p>But for whatever reason, they don’t simplify it further. This can be done. The easiest formula for Pearson’s <em>r</em> (at least from the perspective of the author of this lab manual) is the following:</p>
 <p><span class="math display">\[r_{XY}=\frac{\sum{Z_XZ_Y}}{n-1}\]</span>
@@ -412,11 +421,11 @@
 <p><br/></p>
 <p>That is, for every observation in your data set, take the <em>z</em>-score for <em>X</em> and multiply it by the <em>z</em>-score for <em>Y</em>; add all those product up; and then divide by the number of observations minus 1 (<em>n-1</em>).</p>
 <p>There is also a significance test associated with correlation. You can perform this inferential test on its own,<a href="#fn71" class="footnote-ref" id="fnref71"><sup>71</sup></a> or as a <em>t</em>-test of a coefficient in a simple regression (more on this later in section <a href="CorrAndLinearReg.html#LinearRegression">7.2</a> below).</p>
-<p><br/><br/></p>
+<p><br/></p>
 <div id="BasicCorrelationParenthood" class="section level3">
 <h3><span class="header-section-number">7.1.1</span> Basic: Parenthood data</h3>
 <p>This part of the lab manual simply presents the material in Navarro and Foxcroft <span class="citation">(<a href="#ref-lsj">2019</a>)</span>, Chapter 12.1 to 12.2, but in a more lab-oriented manner.</p>
-<p><br/><br/></p>
+<p><br/></p>
 <div id="BasicCorrelationParenthoodGettingTheData" class="section level4">
 <h4><span class="header-section-number">7.1.1.1</span> Importing the data</h4>
 <p>The data used to illustrate correlation in this chapter is called <code>Parenthood.csv</code> and it is available from the jamovi module associated with this textbook. Just go to <span class="math inline">\((\equiv)\)</span> &gt; <em>Open</em> &gt; <em>Data Library</em> &gt; <code>Parentood.csv</code>.</p>
@@ -429,8 +438,8 @@
 <li>their son’s sleeping patterns (in total hours per night)</li>
 </ol>
 <p>This data set is actually a comma-delimited text file (hence, the title of this subsection: <em>Importing</em>). So although jamovi is good at guessing, sometimes it makes mistakes. You want to make sure that all the variables, except perhaps <code>ID</code>, are continuous. So change any mis-specified variables first.</p>
-<p>You can also re-name the variables, if you wish, into human-readable names, as Navarro and Foxcroft suggest <span class="citation">(<a href="#ref-lsj">2019</a>, 282)</span>. Do this in the top row of each variable when you double click the name. You should also probably save it as a .omv (jamovi) file. For the purposes of display, I chose <code>My sleep (hrs.)</code>, <code>Baby sleep (hrs.)</code>, and <code>My grumpiness</code>.</p>
-<p><br/><br/></p>
+<p>You can also re-name the variables, if you wish, into human-readable names, as Navarro and Foxcroft suggest <span class="citation">(<a href="#ref-lsj">2019</a>, p. 282)</span>. Do this in the top row of each variable when you double click the name. You should also probably save it as a .omv (jamovi) file. For the purposes of display, I chose <code>My sleep (hrs.)</code>, <code>Baby sleep (hrs.)</code>, and <code>My grumpiness</code>.</p>
+<p><br/></p>
 </div>
 <div id="BasicCorrelationParenthoodFamiliarization" class="section level4">
 <h4><span class="header-section-number">7.1.1.2</span> Familiarization</h4>
@@ -453,7 +462,7 @@
 </blockquote>
 <p><br/></p>
 <p>Importantly, you can probably guess that there will probably be a statistical correlation between the baby’s sleep and the author’s grumpiness. However, such a clearly indirect relationship would be conceptually <em>mediated</em><a href="#fn72" class="footnote-ref" id="fnref72"><sup>72</sup></a> by the author’s own sleep.</p>
-<p><br/><br/></p>
+<p><br/></p>
 </div>
 <div id="BasicCorrelationParenthoodAnalysis" class="section level4">
 <h4><span class="header-section-number">7.1.1.3</span> Analysis</h4>
@@ -492,7 +501,7 @@ Figure 7.1: Setting the parameters for a correlation matrix across sleep hours (
 ##                         95% CI Upper         -0.8594714           -0.4157643                —   
 ##                         95% CI Lower         -0.9340614           -0.6861101                —   
 ##  ──────────────────────────────────────────────────────────────────────────────────────────────</code></pre>
-<p><img src="ElemStatsLabManual_files/figure-html/unnamed-chunk-131-1.png" width="672" /></p>
+<p><img src="ElemStatsLabManual_files/figure-html/unnamed-chunk-130-1.svg" width="672" /></p>
 <p><br/></p>
 <p>Both results are correlation matrices: one in the form of a table (the top one); the other in the form of a figure (the bottom one). Both of them have the same pattern:</p>
 <ul>
@@ -508,11 +517,16 @@ Figure 7.1: Setting the parameters for a correlation matrix across sleep hours (
 </ul>
 <p>As noted earlier, correlations near zero indicate no relationship at all between variables, whereas correlations approaching -1 or 1 indicate strong linear relationships. So here, the confidence intervals are quite informative. Essentially, if the interval does not contain zero, you have a significant effect. This is more informative than <em>p</em>-values (which are also provided) because in addition to statistical significance, the confidence intervals contain a range of possible population correlation coefficients.</p>
 <p><br/></p>
+
+<div class="rmdtip">
+<strong><em>TIP</em></strong>: An easy way to look at confidence intervals here is to see if both values (for one correlation) are either both negative or both positive. If they are, then the correlation is significant since the range cannot contain 0. If on the other hand, the lower bound is negative and the upper bound is positive, then the range <em>does</em> contain zero, and you do not have significance. Thus, to test for significance, you don’t need to actually look at the values in the confidence intervals, just the signs (+ or -).
+</div>
+
 <p><br/></p>
 <p>In the analysis here you can see that all the variables are correlated with each other. The strongest correlation is between the author’s sleep and their grumpiness, <span class="math inline">\(r(98)=-0.903, p&lt;.001\)</span>. This is indeed the logical connection to grumpiness. But we can also see that there is a statistically significant correlation between the author’s grumpiness and their baby’s sleep, <span class="math inline">\(r(98)=-0.566, p&lt;.001\)</span> (surely an indirect relationship, mediated by the author’s sleep), and finally between the author’s sleep and their baby’s sleep, <span class="math inline">\(r(98)=0.628, p&lt;.001\)</span>, a positive correlation (the more the baby sleeps, the more the author sleeps). The degrees of freedom for Pearson’s <em>r</em>, by the way, is <span class="math inline">\(N-2\)</span>. The author’s fake data has 100 recordings of these three variables. Thus, the degrees of freedom are <span class="math inline">\(100-2=98\)</span>.</p>
-<p><br/><br/></p>
+<p><br/></p>
 <p>There is a useful page online that annotates the output of correlations in jamovi. It is page four of the <em>JAMOVI: Annotated Output</em> document from Wendorf <span class="citation">(<a href="#ref-Wendorf2019">2018</a>)</span>. You can find it <a href="https://www4.uwsp.edu/psych/cw/statistics/textbook.htm">here</a>, though you need to choose <em>JAMOVI</em> in the menu across the top, then <em>JAMOVI: Annotated Output</em>.</p>
-<p><br/><br/></p>
+<p><br/></p>
 </div>
 <div id="BasicCorrelationParenthoodVisualizationWithScatr" class="section level4">
 <h4><span class="header-section-number">7.1.1.4</span> Visualization using scatr</h4>
@@ -528,7 +542,7 @@ Figure 7.2: Setting the parameters for a scatterplot between <code>My grumpiness
 </div>
 <p><br/></p>
 <p>The output of this procedure should look something like what is below.</p>
-<p><img src="ElemStatsLabManual_files/figure-html/unnamed-chunk-133-1.png" width="672" /></p>
+<p><img src="ElemStatsLabManual_files/figure-html/unnamed-chunk-132-1.svg" width="672" /></p>
 <p><br/></p>
 <p>As before, you can see that there is a negative correlation between <code>My grumpiness</code> and <code>My sleep (hrs.)</code>. As the parent sleeps less, their grumpiness goes up, and as they sleep more, their grumpiness goes down.</p>
 <p>Now technically speaking (and this really is getting nit-picky), this is the wrong graph for the Pearson’s <em>r</em>. So was the one above generated through the <em>Regression</em> analysis. This is because, as noted in section <a href="CorrAndLinearReg.html#Correlations">7.1</a> above, Pearson’s <em>r</em> actually uses standardized versions of each variable, and what you see here are the variables in their raw values (just read the axes; a standardized scale would have 0 in the middle).</p>
@@ -544,11 +558,11 @@ Figure 7.3: Setting the parameters for a scatterplot between <code>My grumpiness
 </div>
 <p><br/></p>
 <p>And the results should appear as below.</p>
-<p><img src="ElemStatsLabManual_files/figure-html/unnamed-chunk-134-1.png" width="672" /></p>
+<p><img src="ElemStatsLabManual_files/figure-html/unnamed-chunk-133-1.svg" width="672" /></p>
 <p><br/></p>
 <p>The outputs are nearly identical, visually, in this case. And again, underneath, they really are the same thing. Sometimes you will see correlations depicted without an <em>X</em> or <em>Y</em> axis, and the reason for that is straightforward: The origin (where both <em>X</em> and <em>Y</em> equal 0) now bisects the data right in the middle of the plot. So visualizing the axes in this case would be both intrusive and redundant.</p>
 <p>One thing that has changed, however, is that the slope of the line in the second scatterplot (directly above) for the standardized variables (recall that the slope of the line is defined as the change in the value on <em>Y</em> for a one-unit change in <em>X</em>) is now tightly related to Pearson’s <em>r</em>. In fact, the slope in the figure above is now Pearson’s <em>r</em> correlation coefficient, <strong><em>exactly</em></strong>. If you wanted to state it in words, you’d say, “For every standard-deviation increase of one in <code>My sleep (hrs.)</code>, there is a corresponding decrease of .903 standard-deviation units in <code>My grumpiness</code>.” Or, “As I sleep more, I get less grumpy.”</p>
-<p><br/><br/></p>
+<p><br/></p>
 </div>
 <div id="BasicCorrelationParenthoodReporting" class="section level4">
 <h4><span class="header-section-number">7.1.1.5</span> Reporting the output</h4>
@@ -572,7 +586,7 @@ Figure 7.3: Setting the parameters for a scatterplot between <code>My grumpiness
 </li>
 <li>confidence intervals between square brackets, with the lower bound reported first followed by the upper bound (separated by a comma), along with the interval identified (usually 95%)</li>
 </ol>
-<p><br/><br/></p>
+<p><br/></p>
 <p>The test letter is now <em>r</em> (not <em>t</em>, <em>z</em>, or <span class="math inline">\(\chi^2\)</span>). The degrees of freedom is calculated as <span class="math inline">\(N-2\)</span>.</p>
 <p>To report Pearson’s <em>r</em> in APA format, you can get most of the information you need from the correlation matrix that we requested in section <a href="CorrAndLinearReg.html#BasicCorrelationParenthoodAnalysis">7.1.1.3</a> above. The test statistic is <em>r</em>. There were 100 days that the author (fakely) recorded these data. Thus, the degrees of freedom is <span class="math inline">\(100-2\)</span> or <span class="math inline">\(98\)</span>. Next, we need the three obtained values for Pearson’s <em>r</em> itself (for the correlation between each pair of the three variables). These are also in that same table, namely:</p>
 <ul>
@@ -592,6 +606,11 @@ Figure 7.3: Setting the parameters for a scatterplot between <code>My grumpiness
 <li><span class="math inline">\([0.492, 0.734]\)</span></li>
 </ul>
 <p><br/></p>
+
+<div class="rmdnote">
+<strong>NOTE</strong>: The effect size for Pearson’s <em>r</em> is Pearson’s <em>r</em> itself. There is no need, therefore, to report a separate effect size.
+</div>
+
 <p><br/></p>
 <p>These inferential statistics were all reported above at the end of section <a href="CorrAndLinearReg.html#BasicCorrelationParenthoodAnalysis">7.1.1.3</a>. But we will re-produce them below:</p>
 <ul>
@@ -601,18 +620,18 @@ Figure 7.3: Setting the parameters for a scatterplot between <code>My grumpiness
 </li>
 <li><code>My sleep (hrs.)</code> with <code>Baby sleep (hrs.)</code>: <em>r</em>(98) = 0.628, <em>p</em> &lt; .001, 95% CI [0.492, 0.734]</li>
 </ul>
-<p><br/><br/></p>
+<p><br/></p>
 <p>We can now put together a partial <em>Results</em> section for this one analysis:</p>
 <blockquote>
 <p>An analysis of this dataset suggests that the less the parent slept [<em>My Sleep (hrs.)</em>], the worse mood they were in (<em>My grumpiness</em>), <span class="math inline">\(r(98)=-0.903, p&lt;.001\)</span>, 95% CI [-0.934, -0.859]. Likewise, the less the baby slept [<em>Baby sleep (hrs.)</em>], the worse mood the parent was in, <span class="math inline">\(r(98)=-0.566, p&lt;.001\)</span>, 95% CI [-0.686, -0.416]. This correlation was almost certainly an indirect relationship, mediated by the amount that the parent slept. Finally, the more the baby slept, the more the parent slept, <span class="math inline">\(r(98)=0.628, p&lt;.001\)</span>, 95% CI [0.492, 0.734]. This last correlation would be unsurprising to any parent, as would probably any of these correlations.</p>
 </blockquote>
-<p><br/><br/></p>
+<p><br/></p>
 </div>
 </div>
 <div id="AdvancedCorrelationSPRING2020" class="section level3">
 <h3><span class="header-section-number">7.1.2</span> Advanced</h3>
 <p><strong><em>SLATED FOR SPRING 2020</em></strong></p>
-<p><br/><br/></p>
+<p><br/></p>
 </div>
 </div>
 <div id="LinearRegression" class="section level2">
@@ -635,21 +654,21 @@ Figure 7.3: Setting the parameters for a scatterplot between <code>My grumpiness
 <p>Here is a formula that you will find in more advanced textbooks on linear regression:</p>
 <p><span class="math display">\[Y=\beta_0+\beta_1X\]</span></p>
 <p>Here, <span class="math inline">\(\beta_0\)</span> is the intercept and <span class="math inline">\(\beta_1\)</span> is the slope. The advantage to this formulation is that anything represented as greek <span class="math inline">\(\beta\)</span> (greek lowercase “beta”) must be calculated, and anything represented as <span class="math inline">\(X\)</span> is given to you (from the data set). This formulation becomes more handy when you study multiple linear regression.</p>
-<p><br/><br/></p>
+<p><br/></p>
 <div id="BasicRegressionParenthood" class="section level3">
 <h3><span class="header-section-number">7.2.1</span> Basic: Parenthood data (again)</h3>
 <p>Navarro and Foxcroft <span class="citation">(<a href="#ref-lsj">2019</a>)</span> use the same data set to illustrate simple linear regression as they did correlation. This makes sense since it is informative to see the similarity across the two analysis options.</p>
-<p><br/><br/></p>
+<p><br/></p>
 <div id="BasicRegressionParenthoodGettingTheData" class="section level4">
 <h4><span class="header-section-number">7.2.1.1</span> Import and familiarize</h4>
 <p>As you did above (and you don’t currently have it open), just go to <span class="math inline">\((\equiv)\)</span> &gt; <em>Open</em> &gt; <em>Data Library</em> &gt; <code>Parentood.csv</code>.</p>
 <p>You will probably need to make some adjustments as we did for the correlation analysis. Refer to the instructions above in section <a href="CorrAndLinearReg.html#BasicCorrelationParenthoodGettingTheData">7.1.1.1</a>.</p>
 <p>Also familiarize yourself with the data as illustrated in section <a href="CorrAndLinearReg.html#BasicCorrelationParenthoodFamiliarization">7.1.1.2</a> above.</p>
-<p><br/><br/></p>
+<p><br/></p>
 </div>
 <div id="BasicRegressionParenthoodAnalysis" class="section level4">
 <h4><span class="header-section-number">7.2.1.2</span> Analysis</h4>
-<p>Following the textbook <span class="citation">(Navarro and Foxcroft <a href="#ref-lsj">2019</a>, sec. 12.4.1)</span>, go to the <em>Analyses</em> tab and choose <em>Regression</em> &gt; <em>Linear Regression</em>. See Figure <a href="CorrAndLinearReg.html#fig:SetParametersForLinReg">7.4</a> below.</p>
+<p>Following the textbook <span class="citation">(Navarro &amp; Foxcroft, <a href="#ref-lsj">2019</a>, sec. 12.4.1)</span>, go to the <em>Analyses</em> tab and choose <em>Regression</em> &gt; <em>Linear Regression</em>. See Figure <a href="CorrAndLinearReg.html#fig:SetParametersForLinReg">7.4</a> below.</p>
 <p><br/></p>
 <div class="figure"><span id="fig:SetParametersForLinReg"></span>
 <img src="images/CorrAndLinReg/SetParametersForLinReg.png" alt="Setting the parameters for a linear regression of `My grumpiness` on `My Sleep (hrs)`, from the `parenthood.csv` dataset in Navarro and Foxcroft [-@lsj]." width="600px" />
@@ -657,7 +676,7 @@ Figure 7.3: Setting the parameters for a scatterplot between <code>My grumpiness
 Figure 7.4: Setting the parameters for a linear regression of <code>My grumpiness</code> on <code>My Sleep (hrs)</code>, from the <code>parenthood.csv</code> dataset in Navarro and Foxcroft <span class="citation">(<a href="#ref-lsj">2019</a>)</span>.
 </p>
 </div>
-<p><br/><br/></p>
+<p><br/></p>
 <p>You should also choose a couple of options under the <em>Model Coefficients</em> box, which lies below the main window (see Figure <a href="CorrAndLinearReg.html#fig:SetParametersForLinRegExtra">7.5</a> below). These options are the <em>ANOVA test</em>, the <em>Confidence interval</em> (set at 95%), and the <em>Standardized estimate</em>.</p>
 <p><br/></p>
 <div class="figure"><span id="fig:SetParametersForLinRegExtra"></span>
@@ -666,7 +685,7 @@ Figure 7.4: Setting the parameters for a linear regression of <code>My grumpines
 Figure 7.5: Adding some parameters for the linear regression of <code>My grumpiness</code> on <code>My Sleep (hrs)</code>, from the <code>parenthood.csv</code> dataset in Navarro and Foxcroft <span class="citation">(<a href="#ref-lsj">2019</a>)</span>.
 </p>
 </div>
-<p><br/><br/></p>
+<p><br/></p>
 <p>The results should look something like the following:</p>
 <pre><code>## 
 ##  LINEAR REGRESSION
@@ -714,12 +733,12 @@ Figure 7.5: Adding some parameters for the linear regression of <code>My grumpin
 </blockquote>
 <p><br/></p>
 <p>Not very concrete, to say the least. For this reason, the regression coefficients are usually more interesting to talk about.</p>
-<p><br/><br/></p>
+<p><br/></p>
 </div>
 <div id="BasicRegressionParenthoodVisualizationWithScatr" class="section level4">
 <h4><span class="header-section-number">7.2.1.3</span> Visualization using scatr</h4>
 <p>We actually did this already in section <a href="CorrAndLinearReg.html#BasicCorrelationParenthoodVisualizationWithScatr">7.1.1.4</a> above. However, we will do it again below, but this time with density plots selected in <em>scatr</em> instead of boxplots:</p>
-<p><img src="ElemStatsLabManual_files/figure-html/unnamed-chunk-137-1.png" width="672" /></p>
+<p><img src="ElemStatsLabManual_files/figure-html/unnamed-chunk-136-1.svg" width="672" /></p>
 <p><br/></p>
 <p>This visualization adds something that was a little bit more difficult to see with the boxplots for each variable in section <a href="CorrAndLinearReg.html#BasicCorrelationParenthoodVisualizationWithScatr">7.1.1.4</a>. Namely, the shape of the distribution (as density plots) for each variable is skewed negatively. Using our powers of visual inference, it looks like, at least most of the time, the author is getting just over 7 hours/night of sleep, and has a typical grumpiness level of about 60 or so. Nonetheless, there are some bad nights with little sleep (though not less than 4.5 hours of sleep) and subsequent higher levels of grumpiness (though not higher than about 91).</p>
 <p>You might also notice the blue-ish shaded area around the linear regression line. This represents the 95% confidence interval for the slope of the line. From the output of the regression, we can see that the standard error for this slope is 0.429. Using our pretty-good-guess formula for the 95% confidence interval, we get the following:</p>
@@ -728,7 +747,7 @@ Figure 7.5: Adding some parameters for the linear regression of <code>My grumpin
 <p>This was actually nearly identical to the confidence interval provided in jamovi in the output above: [-9.79, -8.09], which jamovi calculated using a value from the <em>t</em>-distribution at 95% instead of the value we used from the <em>z</em>-distribution (1.96).</p>
 <p>Of course, this confidence interval suggests that if we ran this experiment 100 times, and calculated this confidence interval each time, 95 of those confidence intervals would contain the population mean. Assuming this is one of those 95 times, the true grumpiness-to-sleep relation is between -9.79 and -8.09 (using the output from jamovi), with the best estimate at -8.94.</p>
 <p>You might also have noticed that the confidence interval (the shaded area) near the ends of the line is further away from the line than it is near the middle of the line. This turns out to have a straightforward explanation: The confidence interval refers to a slope, not a fixed point, like a mean. As such, both a shallower and a steeper slope will diverge from the line more towards the ends than towards the middle. To visualize what’s going on here mentally, think of the line as lying on a fulcrum towards the middle of the line, and rotating over that fulcrum like a see-saw through the confidence interval.</p>
-<p><br/><br/></p>
+<p><br/></p>
 </div>
 <div id="BasicRegressionParenthoodReporting" class="section level4">
 <h4><span class="header-section-number">7.2.1.4</span> Reporting the output</h4>
@@ -739,24 +758,24 @@ Figure 7.5: Adding some parameters for the linear regression of <code>My grumpin
 </blockquote>
 <p><br/></p>
 <p>Note that the intercept was not mentioned since it is meaningless in this data. The author may indeed experience nights without sleep, but not in this data set. The regression line really only relates to the range of values it is based on. Here, the author never seems to have slept less than 5 hours or so.</p>
-<p><br/><br/></p>
+<p><br/></p>
 </div>
 </div>
 <div id="AdvancedRegressionSPRING2020" class="section level3">
 <h3><span class="header-section-number">7.2.2</span> Advanced:</h3>
 <p><strong><em>SLATED FOR SPRING, 2020</em></strong></p>
-<p><br/><br/></p>
+<p><br/></p>
 </div>
 </div>
 <div id="MultipleLinearRegression" class="section level2">
 <h2><span class="header-section-number">7.3</span> Multiple linear regression</h2>
 <p><strong><em>SLATED FOR SPRING, 2020</em></strong></p>
-<p><br/><br/></p>
+<p><br/></p>
 </div>
 <div id="OutsideHelpOnCorrelation" class="section level2">
 <h2><span class="header-section-number">7.4</span> Outside help on correlation</h2>
 <p>For outside help on understanding the output from <em>Regression</em> &gt; <em>Correlation matrix</em> in jamovi, go to the <a href="https://www4.uwsp.edu/psych/cw/statistics/textbook.htm">online textbook</a> by Wendorf <span class="citation">(<a href="#ref-Wendorf2019">2018</a>)</span>. From the pull-down menus, choose <em>JAMOVI</em> &gt; <em>Annotated Output</em>, and scroll down to page 4.</p>
-<p><br/><br/></p>
+<p><br/></p>
 <!-- ## Outside help on linear regression {#OutsideHelpOnLinearRegression} -->
 <!-- ## Outside help {#OutsideHelpOnCorrAndReg} -->
 <!-- ### Outside help on correlations {#OutsideHelpOnCorrelations} -->
@@ -772,10 +791,10 @@ Figure 7.5: Adding some parameters for the linear regression of <code>My grumpin
 <h3>References</h3>
 <div id="refs" class="references">
 <div id="ref-lsj">
-<p>Navarro, Daneille J, and David R Foxcroft. 2019. <em>Learning Statistics with Jamovi: A Tutorial for Psychology Students and Other Beginners</em> (version 0.70). Sydney, New South Wales, Australia: Self. <a href="https://doi.org/10.24384/hgc3-7p15">https://doi.org/10.24384/hgc3-7p15</a>.</p>
+<p>Navarro, D. J., &amp; Foxcroft, D. R. (2019). Learning statistics with jamovi: A tutorial for psychology students and other beginners (Version 0.70). <a href="https://doi.org/10.24384/hgc3-7p15">https://doi.org/10.24384/hgc3-7p15</a></p>
 </div>
 <div id="ref-Wendorf2019">
-<p>Wendorf, Craig A. 2018. <em>Statistics for Social Science: A Sourcebook of Basic Statistical Methods</em>. Stevens Point, WI: Self.</p>
+<p>Wendorf, C. A. (2018). <em>Statistics for social science: A sourcebook of basic statistical methods</em>. Stevens Point, WI: Self.</p>
 </div>
 </div>
 <div class="footnotes">
@@ -838,7 +857,11 @@ gitbook.start({
 },
 "download": null,
 "toc": {
-"collapse": "subsection"
+"collapse": "none",
+"sharing": {
+"github": true,
+"facebook": false
+}
 }
 });
 });

@@ -2,7 +2,7 @@
 
 This chapter covers how to write the first part of an empirical research paper in the field of Psychology. The chapter culminates with *Writing Assignment #1* (Section \@ref(WritingAssignment1)), which will be the first of four writing assignments for this course.
 
-<br/><br/>
+<br/>
 
 ## The purpose of the *Introduction* {#PurposeOfTheIntroduction}
 
@@ -10,7 +10,7 @@ The primary purpose of an *Introduction* in a research report is to justify the 
 
 In line with our earlier statement in Section \@ref(TheGenreOfScience) that writing in the sciences is very standardized (recall the *hourglass* analogy), the overall organizational structure of the *Introduction* is extremely predictable. For original research papers, there really is only one kind of structures to introductions: the general-to-specific pattern.^[There are some other patterns, like the problem-solution pattern, but they are much less common.]
 
-<br/><br/>
+<br/>
 
 ## Structure of introductions {#StructureOfIntroductions}
 
@@ -18,23 +18,23 @@ Introductions almost always follow a general-to-specific pattern of development 
 
 The vast majority of part 2 (the part that lies between the beginning and end) is a literature review, which explains what researchers have studied before, and crucially (near the end), what they haven't. 
 
-<br/><br/>
+<br/>
 
-```{block2, type="rmdnote"}
+```{block2, type="rmdnote", echo=T}
 ***NOTE***: Although you will not be required in this lab to do a proper literature review (there simply is no time), we will ask you to follow a general-to-specific structure in your *Introduction*. Instead of previous literature, you will use various strategies to write this section. These will be covered in the instructions for the main writing assignment (*Writing Assignment 1* in Section \@ref(WritingAssignment1). Note also that you ***can*** do a literature review if you so choose, but it is not required.
 ```
 
-<br/><br/>
+<br/>
 
 Below we will provide several real-world examples of these three different components of the *Introduction*.
 
-<br/><br/>
+<br/>
 
 ## Examples of introductions {#ExamplesOfIntroductions}
 
 Even though you probably won't be doing a proper literature review for this class, you should see how one normally develops. After all, all the real-world examples of this type of writing will include literature reviews, so there really is no way around this.
 
-<br/><br/>
+<br/>
 
 ### Examples of opening sentences {#ExamplesOfOpeningSentencesOfIntroductions}
 
@@ -42,37 +42,37 @@ You were probably told by a teacher back in the day that you should have a good 
 
 To illustrate that this is the case, we will randomly select the first five papers that appear in the journal *Frontiers in Psychology*, when we restrict the search to papers that have already been published (on 07 August 2019) and fall under the category *Most viewed*.^[We did exclude one on precognition, due to personally held principles on not covering absurd topics.] They are as follows:
 
-<br/><br/>
+<br/>
 
 Lilienfeld et al. [-@LilienfeldSauvigneLynnCautinLatzmanWaldman2015]:  
 
 >The goal of this article is to promote clear thinking and clear writing among students and teachers of psychological science by curbing terminological misinformation and confusion.
 
-<br/><br/>
+<br/>
 
 Schäfer, Sedlmeier, Städler, and Huron [-@SchaferSedlmeierStadlerHuron2013]:  
 
 >Why do people listen to music?
 
-<br/><br/>
+<br/>
 
 Lakens [-@Lakens2013], which you might want to read yourself since it is relevant to this class:  
 
 >Effect sizes are the most important outcome of empirical studies.
 
-<br/><br/>
+<br/>
 
 Beetz, Uvnäs-Moberg, Julius, and Kotrschal [-@BeetzUvnasmobergJuliusKotrschal2012]:  
 
 >During the last decade it has become more widely accepted that pet ownership and animal assistance in therapy and education may have a multitude of positive effects on humans.
 
-<br/><br/>
+<br/>
 
 And finally, Barker et al. [-@BarkerSemenovMichaelsonProvanSnyderMunakata2014]:  
 
 >Executive functions (EFs) in childhood predict important life outcomes.
 
-<br/><br/>
+<br/>
 
 You can see how psychologists are not using colorful hooks. These are not like newspaper headlines. Instead, these initial sentences are pretty dull, and even sometimes (deliberately) commonplace (e.g., "Why do people listen to music?").
 
@@ -82,7 +82,7 @@ Nonetheless, you can also see from the examples given above that the authors ***
 
 There are practice exercises on this in section \@ref(PWEFI1OpeningSentence) below.
 
-<br/><br/>
+<br/>
 
 ### Examples of the literature review {#ExamplesOfTheLiteratureReview}
 
@@ -96,29 +96,29 @@ The following excerpt consists of the first two paragraphs of the *Introduction*
 >
 >While there are some newcomers on the dark trait scene (e.g., sadism and spitefulness), the most studied and validated dark traits are indexed by the now infamous “Dark Triad” of personality: narcissism, Machiavellianism, and subclinical psychopathy... Since the initial paper proposing a Dark Triad of personality..., research on the topic has increased every year, with two thirds of the publications on the Dark Triad appearing in 2014 and 2015 alone... While each of the three members of the Dark Triad have unique features and correlates..., there is enough overlap among these socially aversive personalities that researchers have argued that they “should be studied in concert”...
 
-<br/><br/>
+<br/>
 
 If you had to summarize each of these paragraphs into a single sentence, you would see that the second is more specific than the first. Here are our summaries:
 
 1. Scientists have found that everyone, to varying degrees, feels, thinks, and behaves anti-socially at times according to a basic set of dark traits.  
 2. The "Dark Triad" is the most studied subset of these basic, dark traits, and we should continue to study this subset as a single group.  
 
-<br/><br/>
+<br/>
 
 As single phrases, the summary might go as follows: 
 
 A. Universal bad behavior among humans and its core personality correlates  
 B. The reliability of the *dark triad* as a subset of this core  
 
-<br/><br/>
+<br/>
 
 Clearly, the latter is more specific than the former in both cases.
 
-<br/><br/>
+<br/>
 
 There is an exercise on writing progressively more specific paragraphs below in section \@ref(PWEFI1GeneralToSpecific).
 
-<br/><br/>
+<br/>
 
 The take-home message from these examples is the organization, not the content. If you look outside this manual for help on writing literature reviews (or just reading literature reviews in journal articles yourself), you will see a lot of tutorials on how to refer to outside sources (e.g., summarizing, paraphrasing, citing). This is because the typical *Introduction* in Psychology consists of summaries of other studies or at least references to them (as in the two passages above). In fact, you can write an introduction that is almost purely summaries of other studies sequenced from most general to most specific. This is quite common actually.
 
@@ -128,7 +128,7 @@ For this class, due to a lack of time, you will not be summarizing outside resea
 
 But that will have to wait. The next section is about the very end of the *Introduction*.
 
-<br/><br/>
+<br/>
 
 <!-- add something about the research space -->
 
@@ -138,7 +138,7 @@ Before you read further, you should review the main textbook [@lsj], Chapter 9, 
 
 But again, writing out either a research ***question*** or a research ***hypothesis*** is a requirement in your writing. So that is what we will discuss below.
 
-<br/><br/>
+<br/>
 
 Eventually, the progressive narrowing of topics along the progression of the *Introduction* culminates in a *research space*. This is a gap in the research, some area of inquiry that has not yet been addressed.^[Replication studies (which are despairingly rare) do not create a unique research spaces, *per se*. But such cases could easily be justified as simply a lack of sufficient replication up to that point in time.]
 
@@ -154,35 +154,35 @@ Below is a three-paragraph example from the end of the *Introduction* of @Steinm
 >
 >RQ. What is the relative importance of students’ domain-specific ability self-concepts, task values, goal orientations, and achievement motives for their grades in the respective domain when including all of them, students’ intelligence and prior achievement simultaneously in the analytic models?
 
-<br/><br/>
+<br/>
 
 It's not difficult to see that the first paragraph of the excerpt highlights a gap in the research. the second paragraph explains how the current research will fill that gap. And the third paragraph is even explicitly labeled as a research question.
 
 Note that their study was more exploratory than confirmatory, and as a result, it was difficult for them to formulate specific research hypotheses. Instead, they opted for a *research question*.^[Exploratory studies are all well and good (especially if the authors are honest about it), but they do tend to be less preferred by journals than more confirmatory approaches.]
 
-<br/><br/>
+<br/>
 
 Here is an example of a true research hypothesis (coming from a more confirmatory study) from the end of the *Introduction* by @DongLiuJiaLiLi2018 [p. 2]. Note that it is worded as a statement, not a question.
 
 >Based on previous literature..., we hypothesized that the effect of the cues were simultaneously interactive during trust judgments, and the effect of facial expression would be susceptible to social context, while the effect of facial gender would be stable in different settings.
 
-<br/><br/>
+<br/>
 
 This is the kind of research hypothesis you should really aim for, though the research-question approach (as opposed to research-hypothesis approach) might be unavoidable in this lab, given the parameters of the research project we ask you to carry out.
 
-<br/><br/>
+<br/>
 
 Taking a typical example of a research project in this class, a research ***question*** might be as follows:
 
 >We wanted to find out how satisfaction with sleep relates to satisfaction with grades.
 
-<br/><br/>
+<br/>
 
 But a research ***hypothesis*** would look more like the following:
 
 >We predict that satisfaction with sleep will correlate positively with satisfaction with grades.
 
-<br/><br/>
+<br/>
 
 So you can see how research hypotheses are preferred in the world of research, but sometimes, if there are no great grounds for predictions one way or another, a research question will suffice as a minimum requirement. Again, this has nothing to do with statistical hypotheses, which will ***always*** be part of a study involving inferential statistics.
 
@@ -190,7 +190,7 @@ Down below are practice exercises on writing research questions (section \@ref(P
 
 So we just highlighted the three components of the introduction. We will now point you to some outside sources of writing introductions, followed by some practice exercises, and finally, *Writing Assignment #1*.
 
-<br/><br/>
+<br/>
 
 <!-- add something on impact statements -->
 
@@ -199,16 +199,16 @@ So we just highlighted the three components of the introduction. We will now poi
 @WortmanwunderKiefer2012
 <br/>
 https://writing.colostate.edu/guides/page.cfm?pageid=1561&guideid=83
-<br/><br/>
+<br/>
 @Bazerman2010
 <br/>
 https://writing.colostate.edu/textbooks/informedwriter/chapter15.pdf
-<br/><br/>
+<br/>
 @Driscoll2011
 <br/>
 https://wac.colostate.edu/books/writingspaces2/driscoll--introduction-to-primary-research.pdf
 
-<br/><br/>
+<br/>
 
 ### Opening sentences {#OutsideHelpOnIntroductionsOpeningSentences}
 
@@ -216,7 +216,7 @@ There really isn't too much to say here other than you need to make a general st
 
 <!-- there should be more here -->
 
-<br/><br/>
+<br/>
 
 ## Practice writing exercise 1 {#PWEFI1}
 
@@ -224,7 +224,7 @@ There really isn't too much to say here other than you need to make a general st
  
 These practice exercises work best in pairs. Form a pair (or a triad if necessary). Since you will be working in pairs or triads, we will simplify here and just call these *working groups*.^[... but not *lab groups* since that could be confused with the research groups you are in.] Come up with a name for your group (e.g., *SoccerHeads*, or *TheHellaCoolPair*^[The head author of this manual is from Northern California, where *hella* is common.]). 
 
-<br/><br/>
+<br/>
 
 ### Setting up your groups and docs {#PWEFI1SettingUpGroupsAndDocs}
 
@@ -232,13 +232,13 @@ You can form these working groups now.
 
 Once in your working groups, ***one*** of you should start a Google Doc in your own Google Drive. Figure \@ref(fig:CreatingANewGoogleDoc) below shows you the two steps you need to take in Google Drive to start a new Google Doc.
 
-<br/><br/>
+<br/>
 
 ```{r CreatingANewGoogleDoc, fig.show="hold", out.width="50%", fig.align="left", fig.cap="Creating a new Google Doc.", echo=F}
 knitr::include_graphics(c("images/WriteIntros/CreateNewDocumentInGoogleDrive.png", "images/WriteIntros/ChooseGoogleDocOption.png"))
 ```
 
-<br/><br/>
+<br/>
 
 Title the Google Doc as follows: **[YOUR GROUP NAME] Chapter \@ref(WritingIntroductions) Exercise 1**, where [YOUR GROUP NAME] is replaced by the group name you chose above (excluding the square brackets). So for example: **SoccerHeads Chapter \@ref(WritingIntroductions) Exercises.** Note that there is no *Save* button in Google Docs. It's saved automatically as you go.
 
@@ -250,17 +250,17 @@ Do this now.
 
 See Figure \@ref(fig:CanEditPrivilegesInGoogleDocs) below for what we mean by editing privileges in Google Docs.
 
-<br/><br/>
+<br/>
 
 ```{r CanEditPrivilegesInGoogleDocs, fig.cap="Sharing a Google Doc with *Can Edit* privileges.", echo=F, out.width="600px"}
 knitr::include_graphics('images/WriteIntros/CanEditPrivilegesInGoogleDocs.png')
 ```
 
-<br/><br/>
+<br/>
 
 You are now ready to start the practice writing exercises.
 
-<br/><br/>
+<br/>
 
 <!-- genre-based instruction -->
 <!-- joint construction -->
@@ -277,19 +277,19 @@ These exercises are short. But use them to practice not only how to start a rese
 
 But first, type the following heading in: *Opening Sentence*.
 
-<br/><br/>
+<br/>
 
 #### Write two opening sentences {#PWEFI1OpeningSentenceWriteTwo}
 
 Let's say you're creating a survey about quality of life in student dormitories in the first year of college. Referring back to the opening sentences in section \@ref(ExamplesOfOpeningSentencesOfIntroductions) as guides, work together on two possible opening sentences (on paper) to start the paper on dormitory life.^[Working on a Google Doc together can be a little disconcerting at first since you will see others working on the same electronic document as you. But you will get used to it.]
 
-<br/><br/>
+<br/>
 
-```{block, type="rmdnote"}
-***NOTE***: This topic is a random suggestion. You can choose any topic to write on as a lab. However, everyone in the lab should agree upon the topic. Avoid uncomfortable topics that might make some students feel both uncomfortable and  unwilling to let everyone know that they're uncomfortable with it. The topic should be quite benign. Your TA will act as a consultant here.
+```{block2, type="rmdnote", echo=T}
+***NOTE***: This topic is a random suggestion. You can choose any topic to write on as a lab. However, everyone in the lab should agree upon the topic. Avoid uncomfortable topics that might make some students feel both uncomfortable and  unwilling to let everyone know that they are uncomfortable with it. The topic should be quite benign. Your TA will act as a consultant here.
 ```
 
-<br/><br/>
+<br/>
 
 #### Feedback across working groups {#PWEFI1OpeningSentenceGroupFeedback}
 
@@ -299,25 +299,25 @@ Do any of the sentences use overly ornate or "catchy" language? Add comments to 
 
 When finished commenting, place a final comment near the end of your counterpart working group's sentences that says, "We are done commenting."
 
-<br/><br/>
+<br/>
 
 #### Class review {#PWEFI1OpeningSentenceClassReview}
 
 Very briefly, discuss this as a class. 
 
-<br/><br/>
+<br/>
 
 #### Revise opening sentences {#PWEFI1OpeningSentenceRevise}
 
 Afterwards, insert comments in your own document where you feel necessary (*Insert* > *Comment*). There's also an icon in the toolbar for this (![](images/icons/baseline_add_comment_black_18dp.png)).^[The Google icons used in this paragraph were provided by Google (https://google.github.io/material-design-icons/) and covered under the [Apache License 2.0](https://www.apache.org/licenses/LICENSE-2.0.html). You are free to re-use these icons in your own work, but do not sell them.] You can also reply to other comments, or *resolve* them (if you, in fact, resolved them). Note that if you resolve it, it will disappear from your screen, but you can always retrieve it by clicking the *Open comment history* at the upper right (![](images/icons/baseline_comment_black_18dp.png); Note: you may have to *Show the menus* by clicking the down arrow ![](images/icons/baseline_keyboard_arrow_down_black_18dp.png) at the upper right to reveal these options). Also, come up with a final, polished sentence that you would be comfortable using later on.
 
-<br/><br/>
+<br/>
 
 ### Research question {#PWEFI1ResearchQuestion}
 
 This is actually the third main element of the *Introduction*, but we are practicing it second in the practice exercises since this will make sense of the subsequent block of exercises in Section \@ref(PWEFI1GeneralToSpecific).
 
-<br/><br/>
+<br/>
 
 #### Write up research question {#PWEFI1ResearchQuestionWriteOne}
 
@@ -325,7 +325,7 @@ First, type in the following heading: *Research Question*.
 
 Now, think of a research **question** on the the dormitory topic that you might pose (being careful to distinguish between research *questions* and research *hypotheses*). Use the examples (of research *questions*) provided above in section \@ref(ExamplesOfResearchQuestionsAndHypotheses) as guides. Type in your research question together in your working group.
 
-<br/><br/>
+<br/>
 
 #### Feedback across working groups {#PWEFI1ResearchQuestionWorkingGroupFeedback}
 
@@ -335,25 +335,25 @@ For example, evaluate whether it is more specific than the opening sentence; it 
 
 Show the other group when you are finished by typing in "We are done commenting" close to the end of their writing.
 
-<br/><br/>
+<br/>
 
 #### Class review {#PWEFI1ResearchQuestionClassReview}
 
 Briefly, discuss this as a class. This will take somewhat longer than the last class review since more goes in to formulating a good research question.
 
-<br/><br/>
+<br/>
 
 #### Revise research question {#PWEFI1ResearchQuestionRevise}
 
 After the class review, either insert, or reply-to, or resolve comments in your own document where you feel necessary. Work with your partner(s) to come up with a final, polished version of the research question that you would be comfortable using later on.
 
-<br/><br/>
+<br/>
 
 ### Research Hypothesis {#PWEFI1ResearchHypothesis}
 
 This is the an alternative, or second part, to the third and last element of the introduction, but we're doing it before we do the middle of the introduction (below) in order to make that exercise more productive. The hypothesis goes **either** in the exact same place as the research question (if no research question is explicitly stated), **or** right after the research question (when the research question is explicitly stated). Importantly, it is a more specific version of the research question, thus continuing the general-to-specific progression of the *Introduction*.
 
-<br/><br/>
+<br/>
 
 #### Write up research hypothesis {#PWEFI1ResearchHypothesisWriteOne}
 
@@ -361,7 +361,7 @@ First, write in the following heading for this section: *Research Hypothesis*.
 
 For the dormitory topic, together with the other members of your working group, generate a specific hypothesis, but this time using the *hypotheses* in section \@ref(ExamplesOfResearchQuestionsAndHypotheses) as guides (**not** the *research questions*). Type the hypothesis in to this section.
 
-<br/><br/>
+<br/>
 
 #### Feedback across working groups {#PWEFI1ResearchHypothesisWorkingGroupFeedback}
 
@@ -371,19 +371,19 @@ For example, does their hypothesis make specific predictions that could be confi
 
 Again, indicate when you are finished by typing in a final comment near the end: "We are done commenting."
 
-<br/><br/>
+<br/>
 
 #### Class review {#PWEFI1ResearchHypothesisReview}
 
 Briefly, discuss this as a class. This might take a little bit longer than the class review on research questions since a research hypothesis is more specific.
 
-<br/><br/>
+<br/>
 
 #### Revise research hypothesis {#PWEFI1ResearchHypothesisRevise}
 
 After the class review, either insert, or reply-to, or resolve comments in your own document where you feel necessary. Work with your partner(s) to come up with a final, polished version of the research hypothesis that you would be comfortable using later on.
 
-<br/><br/>
+<br/>
 
 ### General-to-specific paragraphs {#PWEFI1GeneralToSpecific}
 
@@ -393,7 +393,7 @@ However, most introductions in IMRaD reports are much more extensive. A randomly
 
 Back to the current in-lab assignment.
 
-<br/><br/>
+<br/>
 
 #### Write an "in-between" paragraph {#PWEFI1GeneralToSpecificWriteParagraph}
 
@@ -401,7 +401,7 @@ First, write the following heading in to your Google Doc: *In-between paragraph*
 
 This time, write separately (in different paragraphs; it doesn't matter whether your above or below). Write a 3-4 sentence paragraph that will be more specific than the opening sentence, but more general than both the research question and the research hypothesis. You can talk about a general sentiment that you suspect is shared by students in that environment, or a news story that is relevant, or an anecdote (a story that occurred), or whatever.
 
-<br/><br/>
+<br/>
 
 #### Feedback across working groups {#PWEFI1GeneralToSpecificWorkingGroupFeedback}
 
@@ -410,13 +410,13 @@ Is each paragraph of 3-4 sentences more specific than the opening sentence, yet 
 
 Yet again, indicate when you are finished by typing in a final comment near the end: "We are done commenting."
 
-<br/><br/>
+<br/>
 
 #### Class review {#PWEFI1GeneralToSpecificReview}
 
 Briefly, discuss this as a class. The TA will ask for a few examples. This will take significantly longer than the previous class reviews since there is much more writing involved.
 
-<br/><br/>
+<br/>
 
 #### Revise in-between paragraphs {#PWEFI1GeneralToSpecificRevise}
 
@@ -426,7 +426,7 @@ If you have time, try to come up with a final sentence or two that identifies a 
 
 This gap won't follow directly from the other paragraphs, though we expect that in your own paper submissions, the gap **will** emerge naturally from the preceding paragraphs.
 
-<br/><br/>
+<br/>
 
 ## Practice writing exercise 2 {#PWEFI2}
 
@@ -437,21 +437,21 @@ Here, you can repeat the practice above, but with a topic of your group's choice
 - Write a research question  
 - Write a research hypothesis
 
-<br/><br/>
+<br/>
 
 Start a new Google Doc to carry this out. You may want to work with a different counterpart working group as well.
 
-<br/><br/>
+<br/>
 
 Congratulations! You're done with the practice assignments for writing *Introductions*!
 
 Your TA might ask you to download this document as a .pdf onto your lab computer, and then upload the .pdf as your attendance assignment for the day.
 
-<br/><br/>
+<br/>
 
 Moving on, below is your first major writing assignment.
 
-<br/><br/>
+<br/>
 
 ## Writing Assignment #1 {#WritingAssignment1}
 
@@ -465,7 +465,7 @@ It should be about 1.5 to 2 pages long, double-spaced, Times New Roman, 12 font.
 
 **Also, do NOT put your name on it**. It will be submitted for anonymous peer review through Peerceptiv, and including your name makes it non-anonymous. Your TAs will know exactly who you are since it is submitted electronically, and Peerceptiv indicates who you are (to the TAs and the instructor only).
 
-<br/><br/>
+<br/>
 
 ### Specific Instructions {#SpecificInstructionsOnWritingAssignment1}
 
@@ -483,25 +483,25 @@ The canonical *Introduction* proceeds as follows:
 
 6. Finally, at the end of the *Introduction* is a prediction or two. These predictions may be *weak* or *strong*. A *weak* prediction is not "weak" in the grading/assessment sense. Rather, *weak* here simply means that the researcher does not necessarly commit to a particular outcome. In fact, a weak prediction may be the most appropriate (and get a higher grade) if in fact you don't have a good reason to make a *strong* prediction. A *strong* prediction is one that commits to variables coming out one way or another in the study. This is usually desirable in the real world of science, but is not really expected of assignments like this one.
 
-<br/><br/>
+<br/>
 
 There is an example of such a paper in **Appendix A**. That paper starts off by broadly introducing the topic of the anti-vaccination movement. It then starts broadly by talking about the historical development of the polio epidemic. It gets a little more specific by describing how the vaccination era brought polio under control in the 1950s and 1960s. This is followed by a specific event in 1998 that seems to have triggered the beginnings of an anti-vaccination movement. Finally, it gets even more specific by pondering what sort of psychology underlies someone who engages in this kind of thinking. A lack of understanding of this kind of conspiracy thinking is identified as a reseach gap, even though that lack of understanding may or may not apply only to the author.^[And this is okay since we are not requiring a bonafide literature review, one of the purposes of which is to assure the reader that the researcher is not trying to *re-invent the wheel*.] This is followed by a brief description of the study that was designed to help fill that gap. The author ends the *Introduction* by making some weak predictions about the outcome of the survey, along with the potential impact or meaning of the study.
 
 The rubric that will be used to evaluate this assignment is in **Appendix B**.
 
-<br/><br/>
+<br/>
 
-```{block2, type="rmdtip"}
+```{block2, type="rmdtip", echo=T}
 ***TIP***: We suggest that you write this as a Google Doc as well (in your university Google account only). The reason is that before you upload it to Peerceptiv (and ultimately Turnitin for the final draft), you can "Name (the) current version." Google Docs allows versioning, which is a way of taking a snapshot of the document along with a timestamp. This is useful for many reasons, among which is when you want to provide evidence to your professor that you actually had something done when you said you did. This is much, much more difficult with documents that are written on individual computers. To create a version, just click *File* > *Version history* > *Name current version*. Give it a name like *YourName_PSYC301_Introduction_RoughDraft*. You can see the process of saving a version below in Figure \@ref(fig:SaveNamedVersionInGoogleDocs)
 ```
 
-<br/><br/>
+<br/>
 
 ```{r SaveNamedVersionInGoogleDocs, fig.show="hold", out.width="50%", fig.align="left", fig.cap="Saving a named version of a Google Doc.", echo=F, out.width="600px"}
 knitr::include_graphics(c("images/WriteIntros/VersionHistoryInitiate.png", "images/WriteIntros/VersionHistoryFinish.png"))
 ```
 
-<br/><br/>
+<br/>
 
 ### Uploading the rough draft {#UploadingRoughDraftOfWritingAssignment1}
 
@@ -511,27 +511,27 @@ On the day that you are supposed to upload your draft to Peerceptiv (via eCampus
 
 After the grace period, there is almost no chance that your assignment will get reviewed by one of your peers. As a result, Peerceptiv won't let you upload it. However, you still need to submit it (It's a requirement of *W* courses at Texas A&M that you submit a rough and final draft). This means that you will need to email it to your TA, who will then give you direct feedback (but again, your maximum score would be 15/30). However, for **each** additional 24-hour period after the initial grace-period expires, you lose 10% off your **final** draft. And even if you are down to 0 points, you still must submit a final draft for feedback before you can submit a final draft. Again, these are rules for the *W* courses at Texas A&M.
 
-<br/><br/>
+<br/>
 
-```{block, type="rmdnote"}
+```{block2, type="rmdnote", echo=T}
 **NOTE**: You may be able to submit your paper directly from Google Docs by copying the unique URL for the document (e.g., https://docs.google.com/document/d/15ApECWiuvoWgQysyQaKKWfNierx-yULT5udKVXdIj9B), but we are not quite certain. If that does not work, you can always download the Google Doc as a .pdf (*File* > *Download* > *PDF Document (.pdf)*), then upload it to Peerceptiv from your computer. That will *always* work.
 ```
 
-<br/><br/>
+<br/>
 
-```{block, type="rmdtip"}
+```{block2, type="rmdtip", echo=T}
 ***TIP***: Do you want a painless point for extra credit? Well just take a screenshot of the Peerceptiv screen after you submit your document. The screen will say *Document Submitted*. (see page 12 of the [.pdf linked here](https://www.peerceptiv.com/wp-content/uploads/2019/01/User-Guide_rev-Jan-15-2019.pdf) for what this should look like.). Upload this to the appropriate extra-credit assignment in eCampus.
 ```
 
-<br/><br/>
+<br/>
 
 The [Peerceptiv Student User Videos](https://peerceptiv.zendesk.com/hc/en-us/articles/360026540253-Peerceptiv-Student-User-Videos) have several links to how-to videos. You should watch all of them (there are only four currently). The third one, *Login and Submission* is the most important when you have finished your rough draft.
 
-<br/><br/>
+<br/>
 
 After you have uploaded your draft, further instructions for Peerceptiv will be given to you in class.
 
-<br/><br/>
+<br/>
 
 ### Uploading the final draft 
 
@@ -545,16 +545,16 @@ It is easier to "upload" ("sideload"? Cloud-to-cloud) a Google Doc into Turnitin
 - Choose from Dropbox  
 - **Choose from Google Drive**
 
-<br/><br/>
+<br/>
 
-```{block, type="rmdwarning"}
+```{block2, type="rmdwarning", echo=T}
 ***WARNING***: For Google Drive, there may be a screen that asks you whether you grant permission to Turnitin to interact with your Google Drive. Please note that if that happens (it probably will), that IS ***NOT*** THE UPLOAD PROCESS. Only ***AFTER*** you give Turnitin permission to interact with your Google account, can you ***THEN*** upload.
 ```
 
-<br/><br/>
+<br/>
 
-```{block, type="rmdtip"}
-***TIP***: The 1 point of extra credit also applies to Turnitin for the final draft. However, Turnitin goes about things differently. They send you an email when you have successfully submitted. So what **you** need to do this time is either take a screenshot of the email, or (to save space) save your email as a .pdf. But each email software program is a little bit different in how it goes about printing/exporting/saving files to .pdf format. We'll have to leave this to you if you want to do this. But it is an important skill if you don't already know how to do it.
+```{block2, type="rmdtip", echo=T}
+***TIP***: The 1 point of extra credit also applies to Turnitin for the final draft. However, Turnitin goes about things differently. They send you an email when you have successfully submitted. So what **you** need to do this time is either take a screenshot of the email, or (to save space) save your email as a .pdf. But each email software program is a little bit different in how it goes about printing/exporting/saving files to .pdf format. We will have to leave this to you if you want to do this. But it is an important skill if you do not already know how to do it.
 ```
 
-<br/><br/>
+<br/>

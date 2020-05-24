@@ -1,6 +1,6 @@
 # A: *Introduction* example {-}
 
-```{block, type="rmdwarning"}
+```{block2, type="rmdwarning", echo=T}
 **WARNING**: This document will be uploaded to Turnitin. It will also have been read by your classmates. Therefore, it is a very bad idea to copy this to modify to use in your own results section. Doing so would be a form of plagiarism. 
 ```
 

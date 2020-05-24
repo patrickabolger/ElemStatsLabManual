@@ -8,11 +8,11 @@ First, it is important to realize that the *Results* and *Discussion* sections a
 
 For now, the current chapter will focus on how *Results* sections are structured. It will end with some links to outside resources on writing these sections, as well as a series of writing activities.
 
-<br/><br/>
+<br/>
 
 In short, the *Results* section simply reports the results of whatever analysis you carried out. Much, much, much more often than not in Psychology, this means reporting your statistical analyses.
 
-<br/><br/>
+<br/>
 
 ## Structure of *Results* sections {#StructureOfResultsSections}
 
@@ -30,7 +30,7 @@ To add to point #5 above, it would be incorrect to think that one could write ou
 
 We will exemplify this below with one of the three passages.
 
-<br/><br/>
+<br/>
 
 ### Examples of *Results* sections {#ExamplesOfResultsSections}
 
@@ -38,7 +38,7 @@ We will exemplify this below with one of the three passages.
 
 Here is an example from Experiment 1 of Ward and Wegner [-@WardWegner2013], who were looking at *mind-blanking*, or "an extreme decoupling of perception and attention, one in which attention fails to bring any stimuli into conscious awareness" (p. 1). Experiment 1 here is about establishing mind-blanking as a mental state distinct from other mental states, namely: mind-wandering and being focused. Participants were probed with questions about their mental states at random while reading from the first six chapters of Leo Tolstoy's *War and Peace*.
 
-<br/><br/>
+<br/>
 
 >Results
 Participants reported experiencing all three mental states: mind-blanking, mind-wandering, and being focused, with a mean response time for each mental state probe of 3.14 s. Means and standard deviations for each mental state are presented in Table 1 [represented in figure \@ref(fig:WardWegner2013Table1) below]. Each mean represents the number of times each mental state was reported out of a total of 6 possible probes. Each percentage represents the percentage of mental state probes that were responded to with an answer of “yes,” indicating that the identified mental state was being experienced immediately prior to the appearance of the probe. Each probe asked about only one mental state at a time; thus, any answer of “no” could indicate that the participant was experiencing either of the two other mental states (e.g., a participant answering “no” to a focus-probe could have been either mind-blanking or mind-wandering).
@@ -51,7 +51,7 @@ knitr::include_graphics("images/WriteRsltsDisc/WardWegner2013_Table1.jpg")
 >
 >We also tested for correlations between mental states. Mind-wandering was negatively correlated with being focused, $r_{(23)}=-0.71,p<0.001$. Mind-blanking, on the other hand, was uncorrelated with both mind-wandering, $r_{(23)}=-0.06, p=0.80$, and being focused, $r_{(23)}=-0.26, p=0.24$.
 
-<br/><br/>
+<br/>
 
 Irrespective of the quality of this study, there are a few key points worth noting. First, notice that this *Results* section begins with a summary of certain general statistics that may or may not impinge on other findings. For instance, in the case here, if the researchers here *had*, in fact, found that there were differences in the average time it took for participants to evaluate each probe type, then that might suggest that the the different mental states are not equally available for introspection, or that that the various states do not have clear definitional boundaries. 
 
@@ -65,13 +65,13 @@ Fourth, notice how all statistics are reported between or after commas. The reas
 
 One interesting, but quite minor thing about the report above is that the researchers subscripted the degrees of freedom (e.g., "$r_{(23)}=-0.26, p=0.24$". This is a convention that you see often outside of Psychology (apparently among statisticians themselves), and sometimes within Psychology.^[In fact, there is an internally consistent logic behind subscripting degrees of freedom. In linear regression, it is common to use subscripts (even in Psychology) to refer to specific instances of whatever the subscript is attached to. For instance $X_{1_i}$ would be the score on variable $X_1$ (as opposed to variable $X_2$) for participant *i* (e.g., "Joe"). The degrees of freedom work the same way, in that they refer to specific distributions as defined by the degrees of freedom. So in the same way, $t_{32}$ or $t_{(32)}$ would refer to a *t*-distribution as defined by 32 degrees of freedom, which is different from, say, a *t*-distribution as defined by 20 degrees of freedom. Nonetheless, the APA, for whatever reason, does not explicitly advocate subscripting degrees of freedom. Credit goes to Brenton Wiernik at the University of South Florida for pointing out the notational consistency of reporting degrees of freedom as subscripts.] But technically, it is not APA format as it is not specifically mentioned in the APA style guide at all. See the examples below, where the researchers do not subscript the degrees of freedom. In sum, do not subscript your degrees of freedom, unless your professor (or a journal) asks you to. Also note that this is about the most minor quibble one might bring up in APA formatting.
 
-<br/><br/>
+<br/>
 
 #### Example 2 {#ExamplesOfResultsSections2}
 
 Below is the *Results* section from a study by Schroeder and Epley [-@SchroederEpley2015] that looked at how fake and real job recruiters evaluate written vs. spoken job-application pitches. That is, fake job applicants gave spoken and written pitches on why they should be hired These pitches were then evaluated by either fake or real recruiters as to their quality. No single recruiter received both the spoken and written pitches from the same candidate. Below, we provide the *Results* section of the final study (*Experiment 4*) with 39 professional recruiters.
 
-<br/><br/>
+<br/>
 
 >Results
 >
@@ -87,15 +87,15 @@ knitr::include_graphics("images/WriteRsltsDisc/SchroederEpley2015Fig7.jpg")
 >
 >Finally, the recruiters did not spend significantly different amounts of time engaging with the stimuli in the audio condition (*M* = 173.85s, *SD* = 145.97) and the transcript condition (*M* = 137.86s, *SD* = 197.49), *t*(37) = 0.65, *p* = .52, *d* = 0.21. Although 6 recruiters did not complete the memory test, those who did complete it wrote similar amounts about the candidates in the audio condition (*M* = 53.94 words, *SD* = 30.06) and the transcript condition (*M* = 58.67 words, *SD* = 15.07), *t*(31) = −0.55, *p* = .59, *d* = 0.20.
 
-<br/><br/>
+<br/>
 
 There are a couple of interesting characteristics of this particular write-up that should be noted. First, as noted previously, one should present statistics in either parentheses or between commas. This is so that the prose that remains is readable as normal text. Below, we present the first paragraph in the example above with the parentheticals and comma-offset sections replaced with ellipses [i.e., ...]):
 
-<br/><br/>
+<br/>
 
 >The pattern of evaluations by professional recruiters replicated the pattern observed in Experiments 1 through 3b... In particular, the recruiters believed that the job candidates had greater intellect -- were more competent, thoughtful, and intelligent -- when they listened to pitches... than when they read pitches.... The recruiters also formed more positive impressions of the candidates—rated them as more likeable and had a more positive and less negative impression of them -- when they listened to pitches... than when they read pitches... Finally, they also reported being more likely to hire the candidates when they listened to pitches... than when they read the same pitches...
 
-<br/><br/>
+<br/>
 
 Second, notice that the figure in this case isn't allowed to "speak for itself." More broadly, the rule is that no table or figure can be "dropped in cold" to a manuscript. If you insert a table or a figure into a manuscript, that table or figure is mentioned nearby in the main text (as well as described, preferably). 
 
@@ -113,7 +113,7 @@ but then in addition to the test statistics itself, they also report the 95% con
 
 >*t*(37) = 3.53, *p* < .01, 95% CI of the difference = [0.85, 3.13], *d* = 1.16.
 
-<br/><br/>
+<br/>
 
 #### Example 3 {#ExamplesOfResultsSections3}
 
@@ -123,7 +123,7 @@ After having found that the therapy worked in this limited context, the research
 
 They reported their results as follows:
 
-<br/><br/>
+<br/>
 
 >Results
 >
@@ -171,13 +171,13 @@ For the independent-samples *t*-test, you can see examples in sections \@ref(Ind
 
 Finally, there is an example in Appendix E of a *Results* section, written with the same data as the *Method* section in Appendix C [@FettigLopezfuentesVillarreal2019].
 
-<br/><br/>
+<br/>
 
 ### Formatting tables in APA {#FormattingTablesInAPA}
 
 For now, you do not need to know that much about formatting tables properly in APA. The only reason for this is that the output from jamovi is close enough. 
 
-<br/><br/>
+<br/>
 
 To export the table from jamovi, right- or control-click the table itself, and choose *Table* > *Copy*. Then you can paste it right in to your word processor. See figure \@ref(fig:HowToCopyTableFromJamovi) below.
 
@@ -185,7 +185,7 @@ To export the table from jamovi, right- or control-click the table itself, and c
 knitr::include_graphics("images/WriteRsltsDisc/HowToCopyTableFromJamovi.png")
 ```
 
-<br/><br/>
+<br/>
 
 However, the table caption is not available as part of the pasted object (nor as part of the image, if you choose *Table* > *Export*, an option that is less word-processor friendly).
 
@@ -193,7 +193,7 @@ To insert a caption in MS Word, select the table, then choose *Insert* > *Captio
 
 To do this in Google Docs, you need to install an Add-on called *Captionizer*. Once you install it, you put the cursor somewhere inside the table, go to *Add-ons* > *Captionizer* > *Tables* > *Number this table*. The caption will appear at the top where it should be.
 
-<br/><br/>
+<br/>
 
 Give the table a caption title that describes well what the table contains. In the table embedded in figure \@ref(fig:WardWegner2013Table1) above, the caption is quite simple, but adequate and to the point: 
 
@@ -205,7 +205,7 @@ Give the table a caption title that describes well what the table contains. In t
 
 As was the case with tables, there is no reason to go in to too much detail about APA formatting guidelines for figures; the output from jamovi is sufficient.
 
-<br/><br/>
+<br/>
 
 One difference is that it seems it's better to export (to file) an image of the figures in jamovi rather than copy-and-pasting them. One then inserts an image into the word processor. 
 
@@ -216,13 +216,13 @@ To do this, simply right- or control-click the image in jamovi and select *image
 knitr::include_graphics("images/WriteRsltsDisc/HowToExportImageFromJamovi.png")
 ```
 
-<br/><br/>
+<br/>
 
 In MS Word, choose *Insert* > *Pictures* > *Picture from File*. Then find the location where you saved the image and double-click it.
 
 In Google Docs, choose *Insert* > *Image* > *Upload from computer*, and double-click the image.
 
-<br/><br/>
+<br/>
 
 For captioning, nearly the same procedures apply as above.
 
@@ -230,7 +230,7 @@ In MS Word, select the image and choose *Insert* > *Caption*. But this time make
 
 In Google Docs, select the image and go to *Add-ons* > *Captionizer* > *Images* > *Number selected image*. The default is to put the caption below the image. However, it is also the default to label it *image 1*. You can either write over the word *Image* with *Figure*, or change the default. To change the default, choose *Add-ons* > *Captionizer* > *Options*. Under *Options for Images*, change *Image* to *Figure*. Then click *Make default* at the bottom.
 
-<br/><br/>
+<br/>
 
 As far as the title of the caption is concerned, the same simple rule applies: simple and to the point.
 
@@ -260,19 +260,19 @@ The same is true in the caption from Figure 4 (embedded in Figure \@ref(fig:Jame
 
 This writing exercise relates to part of Writing Assignment #3 in your lab (see section \@ref(WritingAssignment3)), but just the first part: Results.
 
-<br/><br/>
+<br/>
 
 ### Forming groups {#PWEFRFormingGroups}
 
 Form working dyads (or triads) like you did for the first two exercises of this type. Work with someone from your own research group again, if you can. 
 
-<br/><br/>
+<br/>
 
 Come up with a unique nickname for your group and open a Google Doc as you did before, but give it the following name: **[YOUR GROUP NICKNAME] Chapter \@ref(WritingResultsSections) Exercise**. Then share the document with the other members of your working group, as well as your TA.
 
 Shortly, you will be ready to start the practice writing exercises for the *Results* section. But first, you are going to need to get some statistical output ready (in order to have something to write about).
 
-<br/><br/>
+<br/>
 
 ### Get the statistical output ready {#PWEFRGetStatisticalOutputReady}
 
@@ -284,7 +284,7 @@ Recall that you have two nominal predictors in for your data: one with two level
 
 In this analysis, your outcome variable for both the *t*-test and the One-Way ANOVA is the composite variable that you calculated. If you were not able to calculate a composite variable, then you can use one of your three outcome variables for this writing exercise.
 
-<br/><br/>
+<br/>
 
 #### Do your analyses {#PWEFRDoYourAnalyses}
 
@@ -300,13 +300,13 @@ Finally, include not only descriptives, but also plots for both the *t*-test and
 
 Note that the limits of the "error bars" on the dot plot that jamovi provides actually form the confidence interval. It is common to refer to these as *error bars*. However, that term is slightly misleading since the bars themselves usually do not directly represent the standard error (which is sort of implied by the term), but rather the 95% confidence interval, which for $N>30$ is approximately $\overline{X} \pm 1.96 \times SE_{mean}$.^[jamovi will be more exact than 1.96, of course. The formula that jamovi uses is actually based on the *t*-distribution, not the *z*-distribution $\overline{X} \pm t_{95\%}(N-2) \times SE_{mean}$]
 
-<br/><br/>
+<br/>
 
 #### Save your figures {#PWEFRSaveYourFigures}
 
 If you just created graphs, then you should save the output of those graphs to your hard drive. See section \@ref(FormattingFiguresInAPA) for instructions on how to do this. Make sure you not only give thee files transparent names (e.g., *TTestFigure.png* and *ANOVAFigure.png*), but that you also remember where you put them.
 
-<br/><br/>
+<br/>
 
 #### Insert figures into document {#PWEFRInsertFiguresIntoDoc}
 
@@ -316,13 +316,13 @@ You can refer back to section \@ref(FormattingFiguresInAPA) for instructions on 
 
 If a figure is not appropriate for some reason, you can insert a table instead using the instructions laid out in section \@ref(FormattingTablesInAPA).
 
-<br/><br/>
+<br/>
 
 ### Writing {#PWEFRWriting}
 
 The rest of this writing exercise is actually about writing. But before you begin, type in the *Results* header at the top.
 
-<br/><br/>
+<br/>
 
 #### Simple description of the figures or tables {#PWEFRDescriptionOfTheFiguresOrTables}
 
@@ -345,7 +345,7 @@ You should refer to the figures/tables by their type and number, and those table
 
 Everything you write here should be in formal, but simple English. Do not try anything fancy here. The *Results* sections already tends to be densely packed with information (which we will proceed to do later), but this plain-English part should be quite simple to read.
 
-<br/><br/>
+<br/>
 
 ##### Feedback across working groups {#PWEFRDescriptionOfTheFiguresOrTablesFeedbackAcrossGroups}
 
@@ -355,25 +355,25 @@ Give the other groups helpful comments with respect to how well their prose desc
 
 When finished commenting, place a final comment near the end of your counterpart working group's sentences that says, "We are done commenting."
 
-<br/><br/>
+<br/>
 
 ##### Class review {#PWEFRDescriptionOfTheFiguresOrTablesDiscussAsClass}
 
 As a class, discuss any issues that came up that might benefit from an expert's perspective (that of your TA).
 
-<br/><br/>
+<br/>
 
 ##### Revise {#PWEFRDescriptionOfTheFiguresOrTablesRevise}
 
 Take about 10 minutes to revise (as a pair) any issues that came up either in your counterpart-group's comments or during class discussion.
 
-<br/><br/>
+<br/>
 
 #### Add statistical results {#PWEFRAddStatisticalResults}
 
 Now, you are going to add some descriptive and inferential statistics to the results you have already written.
 
-<br/><br/>
+<br/>
 
 ##### Add descriptive statistics {#PWEFRAddDescriptiveStatistics}
 
@@ -385,7 +385,7 @@ Do this for every level of every nominal variable that you have. The reporting p
 
 Example 2 above (section \@ref(ExamplesOfResultsSections2)) above illustrates the points above.
 
-<br/><br/>
+<br/>
 
 ##### Add inferential statistics {#PWEFRAddInferentialStatistics}
 
@@ -405,17 +405,17 @@ Thus,
 
 >Men reported having more reservations about same-sex marriage. However, an independent-samples *t*-test showed that this difference was not statistically significant, *t*(32) = 1.56, *p* > .05, 95% CI of the difference = [-1.5, 1.34], *d* = .55.
 
-<br/><br/>
+<br/>
 
 You can also report these within parentheses or brackets, though using square brackets seems to be better since degrees of freedom are already reported in parentheses:^[You can see how enclosing everything in regular parentheses is slightly more confusing with the degrees of freedom **also** in parentheses: "This difference was statistically significant using an independent-samples *t*-test (*t*(32) = 3.5, *p* < .001)."]
 
 > Analyzed using an independent-samples *t*-test, this difference was statistically significant [*t*(32) = 3.5, *p* < .001, 95% CI of the difference = [0.95, 2.53], *d* = .55].
 
-<br/><br/>
+<br/>
 
 Thus, our suggestion is that you use either commas or square brackets to set off the inferential statistics.
 
-<br/><br/>
+<br/>
 
 The sentence structure can get redundant here, so try to mix the language up a bit. For example:
 
@@ -431,7 +431,7 @@ or
 
 etc.
 
-<br/><br/>
+<br/>
 
 Below is an example for an *F*-test (where the effect size is captured by a statistic called $\eta^2$, pronounced "eta squared," where *eta* rhymes perfectly with *beta*):
 
@@ -439,11 +439,11 @@ Below is an example for an *F*-test (where the effect size is captured by a stat
 
 <br/>
 
-```{block, type="rmdnote"}
+```{block2, type="rmdnote", echo=T}
 **NOTE**: It may be difficult for you to find a way to type in $\eta^2$. Therefore, feel free to just write "eta-squared," as in the following: [*F*(2,45) = 6.53, *p* = .02, eta-squared = .79]. But if you want to try, in Google Docs go to *Insert* > *Special characters*, then type in *eta* into the search box. Choose the eta that doesn't have diacritics attached to it, and click it. it should show up in your document. Then type a 2 adjacent to right of the eta symbol, highlight the 2, and go to *Format* > *Text* > *Superscript*.
 ```
 
-<br/><br/>
+<br/>
 
 Speaking of *F*-tests, if you have a significant *F*-test, you will want to follow up any One-Way ANOVAs with subsequent post-hoc comparisons. This is covered in section 13.5 of Navarro and Foxcroft [-@lsj]. 
 
@@ -455,13 +455,13 @@ Below is an example of this:
 
 However, if you do **not** have a significant *F*-test, then there is no need (or justification, for that matter) to run any multiple comparisons between the levels of that variable.
 
-<br/><br/>
+<br/>
 
 Example 3 above (section \@ref(ExamplesOfResultsSections3), after the figure) provides an example of multiple comparisons after the omnibus,^[You will often hear the term *omnibus* ANOVA. This term simply emphasizes the fact that the *F*-test itself is blind to which differences among its 3+ means rendered it significant overall. To figure out which ones made it significant, you need post-hoc, or planned, multiple comparisons. Another interesting etymological note is that the bus you might ride to and from school in was traditionally an abbreviation of *omnibus*, a vehicle for carrying lots of people. The analogy here is that the omnibus *F*-test carries within it a number of possible comparisons, as a bus holds a number of passengers.] One-Way ANOVA. Note however, that the researchers there used something called *planned comparisons*, which are different from *post-hoc* comparisons. Navarro and Foxcroft [-@lsj] cover this in a footnote in section 13.5.2, and then more extensively in Chapter 14, section 14.9.
 
 However, that write-up is still a good model.
 
-<br/><br/>
+<br/>
 
 ##### Feedback across working groups {#PWEFRAddStatisticalResultsFeedbackAcrossGroups}
 
@@ -476,13 +476,13 @@ But this time, give the other group feedback on details, namely:
 
 When finished commenting, place a final comment near the end of your counterpart working group's sentences that says, "We are done commenting."
 
-<br/><br/>
+<br/>
 
 ##### Class review {#PWEFRAddStatisticalResultsDiscussAsClass}
 
 As a class, discuss any issues that came up that might benefit from an your TA's perspective.
 
-<br/><br/>
+<br/>
 
 ##### Revise {#PWEFRAddStatisticalResultsRevise}
 

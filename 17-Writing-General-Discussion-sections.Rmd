@@ -16,11 +16,11 @@ Although the *Results* sections are about equal across the two assignments,^[The
 
 And as just implied, Assignment #4 has an extra section, the *General Discussion*. These differences between Assignments #3 and #4 were also mentioned at the end of section \@ref(StructureOfMultipleStudyDiscussionSections). But it is time to turn our attention to writing the *General Discussion*.
 
-<br/><br/>
+<br/>
 
 First, we talk about the general organizational pattern of the *General Discussion* within the broader context of the paper. Then we provide some guidance as to what kind of content to put in this final section of the IMRaD paper.
 
-<br/><br/>
+<br/>
 
 ## Structure of *General Discussion* sections {#StructureOfGeneralDiscussionSections}
 
@@ -34,24 +34,24 @@ For what it's worth, this completes what is informally referred to as the "hourg
 knitr::include_graphics("images/WriteUpResearch/HourglassImageFromTurbekEtAl2016.jpeg")
 ```
 
-<br/><br/>
+<br/>
 
 If the paper consists of multiple studies, then the *General Discussion* forms the bottom of the hourglass (not the *Discussion*).^[The image is simplified, and more relevant to a single-study paper.] 
 Figure \@ref(fig:HourglassImageFromTurbekEtAl2016b) also suggests that there is a separate *Conclusion* section (or here, *Conclusions and Implications*). You may see this as well in some papers, but it is optional, and perhaps only merited in very long papers as a strategy to help readers organize very long stretches of prose. In our case, we will include any conclusions and/or implications within the *General Discussion*.
 
-<br/><br/>
+<br/>
 
 ## Contents of *General Discussion* sections {#ContentsOfGeneralDiscussionSections}
 
 Overall, the *General Discussion* is going to evaluate the entire paper, focusing mostly on what was predicted to happen versus what did happen, the extent to which the current study answers the questions it set out to answer, and what might come next in the research process. But the first part of the *General Discussion* is quite predictably a synthesis.
 
-<br/><br/>
+<br/>
 
 ### Synthesizing {#ContentsOfGeneralDiscussionSectionsSynthesizing}
 
 The synthesis is comprised of a summary followed by an comparison of the overall predictions of the paper against those findings. However, example 2 below (section \@ref(ContentsOfGeneralDiscussionSectionsSynthesizingExample2)) bucks this trend across studies to some degree.
 
-<br/><br/>
+<br/>
 
 #### Summarizing {#ContentsOfGeneralDiscussionSectionsSummarizing}
 
@@ -59,7 +59,7 @@ Whatever may lie ahead in the *General Discussion*,^[or *Discussion* in a single
 
 Thus, there may be a bit of repetition here from earlier sections (though not word-by-word, which would be awkward). The point of this is to prepare the reader for a comparison of the overall predictions of the study against the overall findings.
 
-<br/><br/>
+<br/>
 
 #### Comparing {#ContentsOfGeneralDiscussionSectionsComparing}
 
@@ -71,13 +71,13 @@ The question the researchers usually have to ask themselves at this point is as 
 
 >Did our findings in general support, in general, the main prediction(s) we made at the outset?
 
-<br/><br/>
+<br/>
 
 There is much more for the researcher to discuss. However, we will temporarily stop here in order to illustrate the writing concepts described above.
 
 <br/>
 
-```{block2, type="rmdnote"}
+```{block2, type="rmdnote", echo=T}
 **NOTE**: Note that due to [publication bias](https://en.wikipedia.org/wiki/Publication_bias) in science (and particularly in psychological science), most of the primary research articles that you read will have *Discussion* or *General Discussion* sections that confirm the predictions of the study in one way or another. This is not really as it should be since well-conducted studies that find null effects ought also be commonly published.
 
 But they are not.
@@ -89,7 +89,7 @@ An unfortunate, mild^[There are much, much more severe side effects of this, lik
 
 Since there are so many possibilities when it comes to content for the *General Discussion*, we will provide examples as we go. That is, for each content possibility in the *General Discussion*, we will provide an immediate example or two.
 
-<br/><br/>
+<br/>
 
 ##### Example 1 {#ContentsOfGeneralDiscussionSectionsSynthesizingExample1}
 
@@ -111,7 +111,7 @@ We begin with the summary of findings. Below is that very section from the paper
 >
 >In three experiments, we tested the semantic links of novel color words that had been associated with color concepts through lexical association with native language (German) color words. To assess which conditions are necessary for semantic learning, the learning and test phases were realized such that they minimized semantic processing. **In Experiment 1**, novel words were associated with native-language color words until almost perfect discrimination performance. They were then entered into the Stroop task together with German color words. We observed substantial novel word Stroop effects both immediately after learning and 1 day later. A significant three-way interaction indicated that the reduction of the effect from Day 1 to Day 2 in the German words contrasted significantly with a simultaneous increase of the effect in the novel words, thus suggesting an influence of memory consolidation. **In Experiment 2**, learning intensity was considerably reduced and neutral control stimuli were added to the Stroop blocks. We again observed substantial Stroop-congruency effects directly after learning and 24 h later. A detailed analysis including the control condition showed that interference made up a significant portion of the novel-word Stroop effect. **In Experiment 3**, we repeated Experiment 1, but crucially removed the German words from the Stroop task, so that the novel words were now tested without any L1 context from the learning phase. The novel-word Stroop effect was now not observed immediately after learning, but only 24 h later. Results from a second group that had a different time course of Stroop blocks showed that the delayed emergence of the effect in Group 1 is not due to a simple build-up or training effect from one block to the next. Rather, it must be related to the temporal distance between learning and test--that is, to memory consolidation.
 
-<br/><br/>
+<br/>
 
 In the example above (directly under *General Discussion*), even if you don't understand exactly what was said, you can see the summaries of each of the experiments: *In Experiment 1*..., *In Experiment 2*..., and *In Experiment 3*... Importantly, note that the very last sentence of this paragraph contains a strong hint regarding how they are going to interpret their findings in light of their predictions, which were at least partly focused on memory consolidation. 
 
@@ -119,7 +119,7 @@ From the *Introduction*:
 
 >A further aim of our study was to test whether the establishment and availability of such semantic links depends on an opportunity for memory consolidation. [@GeukesGaskellZwitserlood2015, p. 3]
 
-<br/><br/>
+<br/>
 
 Recall that we claimed that authors will always compare their overall findings against their overall expectations. And this is indeed the case here. But it doesn't happen immediately in this case. Rather, the authors here address a couple of qualifications to their findings. This takes place over the two paragraph subsequent to the first one in the *General Discussion*. However, in the fourth paragraph of the *General Discussion* [@GeukesGaskellZwitserlood2015, p. 13], the authors do return to the main issue of memory consolidation, and  how overall results relate.
 
@@ -127,7 +127,7 @@ Recall that we claimed that authors will always compare their overall findings a
 
 >Perhaps the most interesting aspect of our results is that the opportunity for consolidation affected Stroop performance, and that this consolidation effect was further moderated by context, that is, by the presence of German color word trials in the Stroop task. This impact of memory consolidation on the integration of novel words fits with data from word-learning studies on the learning of word forms only... or on the acquisition of form and meaning... The data from Experiment 3 in particular demonstrate that memory consolidation is relevant for associating novel words with meaning, not only for integrating novel word forms into lexical networks. This is consistent with the [Complementary Learning Systems] account of word-learning....
 
-<br/><br/>
+<br/>
 
 ##### Example 2 {#ContentsOfGeneralDiscussionSectionsSynthesizingExample2}
 
@@ -159,7 +159,7 @@ With this understanding in mind, it is instructive to read the few two sentences
 >
 >The main goal of this study was to reveal the impact of perspective on persons depicted via selfies. In two studies, we revealed clear effects of perspective on higher cognitive processes (namely the perception of person-related variables on the basis of facial depictions)... [@SchneiderCarbon2017, p.12]
 
-<br/><br/>
+<br/>
 
 This summary is obviously much shorter than the equivalent summary (summarized first above) by Geukes, Gaskell, and Zwitserlood [-@GeukesGaskellZwitserlood2015]. But it is actually not the end of the summary. But what directly follows these first two sentences is instead a reminder to the reader of the nature of this study as phenomenon description instead of theory evaluation. It reads like a miniaturized version of the *Introduction*:
 
@@ -197,7 +197,7 @@ Again, the important inference from the example presented above is that although
 
 The authors were very explicit (and deliberately repetitive, it seems) about this, making sure both to inform and remind the reader that this was the case. This makes sense. The default expectation in research is that any new research be based on past research. If it is not, it will need extra justification before reviewers will consider it for publication. 
 
-<br/><br/>
+<br/>
 
 ### Clarifying {#ContentsOfGeneralDiscussionSectionsClarifying}
 
@@ -207,7 +207,7 @@ The word *clarification* should be interpreted liberally here to apply to variou
 
 <br/>
 
-```{block2, type="rmdnote"}
+```{block2, type="rmdnote", echo=T}
 **NOTE**: Importantly, note that the scope of the discussion broadens here. This fits with the description made earlier (section \@ref(StructureOfGeneralDiscussionSections)) of the *General Discussion* proceeding from specific to general, like the bottom of an hourglass.
 ```
 
@@ -232,13 +232,13 @@ Content that might be included here encompasses (but is not limited to) the foll
   - *If so, how generally does the current study apply to previous research?*
   - *Can these limitations be overcome in future studies? If so, how?*  
 
-<br/><br/>
+<br/>
 
 As just noted above, there is a great deal of diversity in terms of how the researchers go about clarifying aspects of their overall study.
 
 We will provide merely two examples so as not to make this section stretch on indefinitely. They are from the the now familiar studies by both Geukes, Gaskell, and Zwitserlood [-@GeukesGaskellZwitserlood2015] and Schneider and Carbon [-@SchneiderCarbon2017].
 
-<br/><br/>
+<br/>
 
 #### Example 1 {#ContentsOfGeneralDiscussionSectionsClarifyingExample1}
 
@@ -252,7 +252,7 @@ Immediately after paragraph four, reproduced above, Geukes, Gaskell, and Zwitser
 
 Clearly, the first part of the passage ties in the research to previous research, and the second part identifies another experiment that showed similar results, thereby corroborating the current findings, and strengthening the current researchers' case.
 
-<br/><br/>
+<br/>
 
 #### Example 2 {#ContentsOfGeneralDiscussionSectionsClarifyingExample2}
 
@@ -262,7 +262,7 @@ Returning to the *General Discussion* from Schneider and Carbon [-@SchneiderCarb
 
 >**We would also like to mention some limitations of this study**: Past research revealed that direct vs. averted gazes have a direct impact on the perception of a given face... More precisely,... an averted gaze has a negative effect on the perception of attractiveness. However, the effect of the combination of averted head plus direct gaze vs. frontal face plus averted gaze across different viewing perspectives on the perception of higher cognitive variables (like those we used) has not yet been investigated. **In this study, we did not investigate such a combination**, which would incidentally be very much in accord with some Renaissance portraits like La Gioconda by Leonardo da Vinci.... Future research should address such further settings to enrich the existing knowledge base on selfies. **Another weakness** of the present study is that we neither could control the actual size of the presented face on the monitor nor the actual viewing distance. Moreover, we must expect that display color, contrast and brightness were not at the same level across all participants. This might affect the perception of a face dramatically. **However**, the fact that we could replicate the height-weight illusion... makes it conjecturable that other effects were relative stable. Similarly, other studies... used relatively unstandardized images that could not be controlled along those variables, and though [sic] revealed consistent results.
 
-<br/><br/>
+<br/>
 
 ### Concluding {#ContentsOfGeneralDiscussionSectionsConcluding}
 
@@ -270,7 +270,7 @@ The last part of the *General Discussion* (indeed, the last part of the entire p
 
 We get an example of each from each of our continuing examples.
 
-<br/><br/>
+<br/>
 
 #### Example 1 {#ContentsOfGeneralDiscussionSectionsConcludingExample1}
 
@@ -280,7 +280,7 @@ Geukes, Gaskell, and Zwitserlood [-@GeukesGaskellZwitserlood2015] provide an exa
 
 >In sum, our results stress that careful experimental manipulations are necessary to fully capture the intricate learning and memory processes involved in the acquisition of novel meaningful words. The brain recruits multiple resources to immediately associate newly learned material with well-established knowledge. The context in which learning takes place, and the particular aspects that the learning situation provides or focuses upon, are important for the immediacy of effects that indicate the integration of newly learned words. A stable and strong integration in existing semantic networks, diagnosed by automatic effects in suitable tasks, seems to require consolidation, to become less dependent on contextual cues from the learning situation. [@GeukesGaskellZwitserlood2015]
 
-<br/><br/>
+<br/>
 
 #### Example 2 {#ContentsOfGeneralDiscussionSectionsConcludingExample2}
 
@@ -288,20 +288,20 @@ Schneider and Carbon [-@SchneiderCarbon2017] provide a slightly different ending
 
 >Despite all the back draws [sic] you always face with standardized and systematically varied material, such experimental material can test already small effects which might be tested with more ecologically valid material in the field later on. We hope that our study contributes to the understanding on how perspective can change the assessment of higher cognitive variables. This will help to sensitize selfie-ists how [sic] powerful the use of perspective might be in conveying their inner states.
 
-<br/><br/>
+<br/>
 
 ### Example in Appendix I {#ExampleInAppendixI}
 
 There is an example in Appendix I of a *General Discussion*. It is actually a write-up of the results from Fettig, López Fuentes, and Villarreal [-@FettigLopezfuentesVillarreal2019]. For  the sake of completeness, it also includes *Study 2*, which is then followed by the *General Discussion*. Thus, this example mirrors what is expected for Writing Assignment #4.
 
-<br/><br/>
+<br/>
 
 ## Practice writing exercise {#PWEFGD}
 <!-- PWEFGD is an acronym for "Practice Writing Assignment for General Discussion" -->
 
 This writing exercise relates to part of Writing Assignment #4 in your lab (see section \@ref(WritingAssignment4)), but mostly just the last part: the *General Discussion*.
 
-<br/><br/>
+<br/>
 
 ### Getting ready {#PWEFGDGettingReady}
 
@@ -309,11 +309,11 @@ This writing exercise relates to part of Writing Assignment #4 in your lab (see 
 
 Form working dyads (or triads) like you did for prior exercises of this type. Work with someone from your own research group again, if you can. 
 
-<br/><br/>
+<br/>
 
 Come up with a unique nickname for your group and open a Google Doc as you did before, but give it the following name: **[YOUR GROUP NICKNAME] Chapter  \@ref(WritingGeneralDiscussionSections) Exercise**. Then share the document with the other members of your working group, as well as your TA.
 
-<br/><br/>
+<br/>
 
 #### Establish *counter*-findings {#PWEFGDEstablishFindingsCounterToYourActualFindings}
 
@@ -323,7 +323,7 @@ Again, for these exercises, you will write as if you obtained exactly the opposi
 
 After doing this, some of you may need to discuss null findings. You will need to be creative here.
 
-<br/><br/>
+<br/>
 
 #### Create Study 2 outline {#PWEFGDCreateOutlineOfResultsAndDiscussionForStudy2}
 
@@ -333,13 +333,13 @@ Instead, come up with an outline, with your partner(s), concerning roughly what 
 
 You will use this to help you write a *General Discussion* below.
 
-<br/><br/>
+<br/>
 
 ### Writing {#PWEFGDWriting}
 
 The writing you will in the sections that follow is about the *General Discussion*. So write that header at the top of your document, centered.
 
-<br/><br/>
+<br/>
 
 #### Part 1: Synthesizing
 
@@ -349,7 +349,7 @@ We have provided examples above of this (sections \@ref(ContentsOfGeneralDiscuss
 
 That said, the beginning of any *General Discussion* or *Discussion* section in almost any IMRaD paper will have an example here.
 
-<br/><br/>
+<br/>
 
 ##### Feedback across working groups {#PWEFGDSynthesizingFeedbackAcrossGroups}
 
@@ -359,19 +359,19 @@ Give the other group helpful comments on how they referred back to their origina
 
 Like before, when you are done commenting, place a final comment near the end of the document you are commenting on that says, "We are done commenting."
 
-<br/><br/>
+<br/>
 
 ##### Class review {#PWEFGDSynthesizingClassReview}
 
 Get together as a class and discuss any issues that came up that might benefit from your TA's perspective.
 
-<br/><br/>
+<br/>
 
 ##### Revise {#PWEFGDSynthesizingRevise}
 
 Take about 10 minutes to revise (as a pair) any issues that came up either in the comments of your counterpart group or during class discussion that you just finished.
 
-<br/><br/>
+<br/>
 
 #### Part 2: Clarifying
 
@@ -389,7 +389,7 @@ Nonetheless, there are alternatives. You may want to consider developing such st
 
 But whatever strategy you choose, remember that the main point is to inform the public of what you have studied and what you have found. Irrespective of whether you had statistically significant results or not, the public should "walk away" from reading your article being more informed than they were when they began reading your article. You have sort of a scientific responsibility here. Both overestimating and understimating the importance of your study can mislead the public.
 
-<br/><br/>
+<br/>
 
 ##### Feedback across working groups {#PWEFGDClarifyingFeedbackAcrossGroups}
 
@@ -397,19 +397,19 @@ Provide the other working group some feedback as to whether their clarification 
 
 When done, place a final comment near the end of the document you are commenting on that says, "We are done commenting on the *Clarification*."
 
-<br/><br/>
+<br/>
 
 ##### Class review {#PWEFGDClarifyingClassReview}
 
 This would be a really good opportunity to tap into the creativity and expertise of your TA. To the same extent that you read textbooks, they read IMRaD papers. Therefore, this classroom discussion should take longer in order to flesh out some creative possibilities here.
 
-<br/><br/>
+<br/>
 
 ##### Revise {#PWEFGDClarifyingRevise}
 
 Take about 10 minutes to revise this section to maximize its potential to be a convincing qualitative analysis of your overall findings.
 
-<br/><br/>
+<br/>
 
 ##### Part 3: Concluding
 
@@ -421,7 +421,7 @@ Still, you have have some other ideas on how to conclude the paper. If your find
 
 Whatever choice you make here, however, the paper should end on a pretty general note, either a general synopsis, or a look forward to future research.
 
-<br/><br/>
+<br/>
 
 ##### Feedback across working groups {#PWEFGDFinalizingFeedbackAcrossGroups}
 
@@ -429,19 +429,19 @@ Look at your counterpart group's final section and think about how you might hav
 
 Let them know when you are done with a comment in the document itself.
 
-<br/><br/>
+<br/>
 
 ##### Class review {#PWEFGDFinalizingClassReview}
 
 This would also be a good opportunity to share different strategies here. The emphasis here would be less on TA expertise, and more on the collective creative thinking of individual groups.
 
-<br/><br/>
+<br/>
 
 ##### Revise {#PWEFGDFinalizingRevise}
 
 Take about five minutes to revise this section of the paper.
 
-<br/><br/>
+<br/>
 
 ## Writing Assignment #4 {#WritingAssignment4}
 
@@ -473,7 +473,7 @@ Second, the paper will also include the *General Discussion*. Therefore, the fin
 
 <br/>
 
-```{block, type="rmdnote"}
+```{block2, type="rmdnote", echo=T}
 **NOTE**:  To repeat, do NOT put your name on this assignment. It will be submitted Peerceptiv for anonymous review; including your name on it makes it non-anonymous.
 ```
 
@@ -487,7 +487,7 @@ You should also not be afraid to modify your *Introduction* to cohere better wit
 
 Also, if you are so inclined, you can modify the *Method* section to be more specific about the statistical design of your study (under *Design and Analysis*). This would be for self-edification and personal satisfaction, however, as it's not likely that your peer-reviewers would refer back to that.
 
-<br/><br/>
+<br/>
 
 ### Specific Instructions {#SpecificInstructionsOnWritingAssignment4}
 
@@ -495,7 +495,7 @@ As noted above, Writing Assignment #4 will consist not only of the *Results* and
 
 But for the current assignment, the first header should say *Study 2*, and should be centered at the top of the page.
 
-<br/><br/>
+<br/>
 
 #### *Results* {#SpecificInstructionsOnWritingAssignment4Results}
 
@@ -521,7 +521,7 @@ Again, be sure to include in the prose of the *Results* direct reference to the 
 
 There is a rubric in Appendix F for the *Results* section. This has not changed.
 
-<br/><br/>
+<br/>
 
 #### *Discussion* {#SpecificInstructionsOnWritingAssignment4Discussion}
 
@@ -531,7 +531,7 @@ However, unlike in Writing Assignment #3 (for Study 1), there is no transition f
 
 There is a rubric in Appendix H for the *Results* section. However, the third and fourth criteria in that rubric (i.e., the *Transition* and the *Preview*) do not apply to the last study in a multi-study design.
 
-<br/><br/>
+<br/>
 
 #### *General Discussion* {#SpecificInstructionsOnWritingAssignment4GeneralDiscussion}
 

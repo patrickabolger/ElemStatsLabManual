@@ -2,23 +2,23 @@
 
 There are a few visualizations possible from among the jamovi **Descriptives** options. Again, your main textbook by @lsj dedicates a chapter to data visualization in jamovi. This is Chapter 5 (**Drawing graphs**). And also again, the best way to get through this chapter is to open up jamovi and follow along at each step. There are no practice exercises for this chapter.
 
-<br/><br/>
+<br/>
 
-```{block2, type="rmdnote"}
+```{block2, type="rmdnote", echo=T}
 **NOTE**: There is one important thing you should understand, however, about the visualizations in this chapter (e.g., histograms, boxplots, Q-Q plots). Namely, these visualizations of descriptive statistics are used mostly by researchers to help them make decisions about subsequent analyses. These are ***NOT*** typically visualizations that are reported in the *Results* sections of journal articles. In jamovi, the plots that **are** used in *Results* sections are included within the menu for the statistical analysis itself. For example, there is a box called *Descriptives plots* that you can check under the *T-Tests* tab. This will give you a dot plot with confidence intervals [to be explained later in @lsj]. The exception below is the bar plot for frequency data (section \@ref(Barplots)). Such plots are, in fact, often used in *Results* sections of papers.
 ```
 
-<br/><br/>
+<br/>
 
 To illustrate these various visualizations, we will use the Chico2.omv sample data set from @lsj. To get to this, just go to $(\equiv)$ > **Open** > **Data Library** > **Chico 2**. The data consist of grades on some test (**grade_test**), which is a continuous variable, along with a time-of-test variable, **time**, which is a 2-level factor, where "1" means **at time 1** and "2" means **at time 2**.
 
-<br/><br/>
+<br/>
 
-```{block, type="rmdnote"}
+```{block2, type="rmdnote", echo=T}
 **NOTE**: It is important to note at this point that none of the **Plots** from the the **Descriptives** menu will work if the variable you are trying to visualize is not **Continuous**. Go back to the **Data** tab to check this if you are having trouble getting jamovi to depict your data visually.
 ```
 
-<br/><br/>
+<br/>
 
 ## Histograms {#Histograms}
 
@@ -32,17 +32,17 @@ Often paired with the histogram is the **density plot**, which uses math to esti
 
 Go get these for the Chico2.omv data, we moved **grade_test** over to the **Variables** box, and **time** over to the **Split by** box. Then we checked **Histogram** and **Density** under **Histograms**. You can see the parameters that need to be set in Figure \@ref(fig:VisualizationsHistAndDensity) below.
 
-<br/><br/>
+<br/>
 
 ```{r VisualizationsHistAndDensity, fig.cap="Parameters for histograms and density plots for **test grade** split by **time of test** [with the data set 'Chico 2' from @lsj].", echo=F, out.width="600px"}
 knitr::include_graphics("images/DataVis/VisualizationsHistAndDensity.png")
 ```
 
-<br/><br/>
+<br/>
 
 The results of this are below.
 
-<br/><br/>
+<br/>
 
 ```{r, include=FALSE}
 Chico2 <- readRDS("datasets/DataVis_Chico2.rds")
@@ -67,7 +67,7 @@ jmv::descriptives(
 rm(Chico2)
 ```
 
-<br/><br/>
+<br/>
 
 ## Boxplots {#Boxplots}
 
@@ -75,35 +75,35 @@ One of the drawbacks of histograms and density plots is that, although they are 
 
 We will use the **Harpo** data set provided by @lsj (we see this data again in Chapter 11 of @lsj). This data has to do with the grades of 33 fictional students in "Dr. Harpo's" statistics class. Dr. Harpo also has two tutors: Anastasia and Bernadette. Go to $(\equiv)$ > *Open* > *Data Library* > *Harpo*.
 
-<br/><br/>
+<br/>
 
-```{block2, type="rmdnote"}
+```{block2, type="rmdnote", echo=T}
 **NOTE**: When you open the **Harpo** data set, you will need to change the *grade* variable to continuous, which you learned how to do in Section \@ref(Manualling). You can leave the *tutor* variable alone.
 ```
 
-<br/><br/>
+<br/>
 
-```{block2, type="rmdtip"}
+```{block2, type="rmdtip", echo=T}
 **TIP**: Save this file as a .omv file. Not only are there a lot of analyses here that you will be carrying out, but we also re-visit this data in Chapter \@ref(ComparingTwoMeans), when we work on *t*-tests.
 ```
 
-<br/><br/>
+<br/>
 
 Once you have addressed the note above, go to **Exploration** > **Descriptives** and simply slide the *grade* variable into the **Variables** box, and then (since you already know how to do this) slide the *tutor* variable into the **Split by** box. Finally, click the **Box plot** box under the *Box Plots* heading. Also check the following boxes, which will help you understand the boxplot: **Quartiles**, **Median**, **Minimum**, and **Maximum**. You can see these settings in Figure \@ref(fig:VisualizationsBoxplotParameters) below.
 
-<br/><br/>
+<br/>
 
 ```{r VisualizationsBoxplotParameters, fig.cap="Parameter settings for boxplots along with related descriptive statistics.", echo=F, out.width="600px"}
 knitr::include_graphics("images/DataVis/VisualizationsBoxplotParameters.png")
 ```
 
-<br/><br/>
+<br/>
 
-```{block, type="rmdnote"}
+```{block2, type="rmdnote", echo=T}
 **NOTE**: If we had chosen two separate variables to slide into the **Variables** box, and then clicked **Box plot**, you would have seen two separate plots, each with one boxplot. That is, to get the side-by-side plots, you need to have a **Split by** variable, which in turn must be nominal (e.g., *time*, *Sex*, *tutor*), not continuous.
 ```
 
-<br/><br/>
+<br/>
 
 Along with the statistics, Two side-by-side plots should appear in the output window. You can see all this below. But because of the length of the explanation (spanning several paragraphs), we are going to start explaining the boxplot above the descriptives and figure below, so that it is easier for you to scroll back and forth.
 
@@ -115,7 +115,7 @@ All this also suggests that half of all the scores lie between the 1st and 3rd q
 
 So now, what does the horizontal line in the middle of the boxes mean? That line represents the ***median*** (also explained below in the glossary below, Section \@ref(Median))). Working from the discussion directly above, the median is simply the **2nd quartile**, or the **50th percentile**. This can be verified by looking at the values for the median and the 50th percentile; they are identical values (for Anastasia and Bernadette, respectively).
 
-<br/><br/>
+<br/>
 
 ```{r, echo=F}
 Harpo <- readRDS("datasets/DataVis_Harpo.rds")
@@ -132,7 +132,7 @@ jmv::descriptives(
     quart = TRUE)
 ```
 
-<br/><br/>
+<br/>
 
 In other words, the median is the middle value of your data, if you ordered your data from smallest to largest. That is, irrespective of their own values, half of the data points should lie below the median, and half above (and if there is an even number of data points, the median is the average of the middle two values).
 
@@ -152,7 +152,7 @@ Overall, the boxplot is a quick way of visually determining critical characteris
   - This matters much more if there are considerably more dots above the top whisker than below the bottom whisker (or vice-versa)  
   - The larger the data set, the more dots in the extremes you can expect (what matters is their relative distribution above or below the whiskers), so dots appearing in the boxplot is much more of a concern for smaller data sets
   
-<br/><br/>
+<br/>
 
 ## Violin plots {#ViolinPlots}
 
@@ -161,11 +161,11 @@ Violin plots are really an extension of the boxplot. You can think of it this wa
 - A violin plot is vertical, whereas a density plot is horizontal
 - A violin plot is usually reflected against itself,^[Sometimes, the reflecting is dispensed with since it is, actually, redundant.] whereas a density plot is not.^[The reflecting is what ultimately gives the violin plot its shape, and hence, its name.]
 
-<br/><br/>
+<br/>
 
 To get a violin plot, simply click of the **Violin** check box under *Box plots*. Also click *Box plot*, as that will give you an idea of how the violin plot circumscribes the boxplot, which you already understand. Finally, also check *Density* under *Histograms*. We have seen these before, but it is a good idea to do so now to see how the density plots and violin plots relate.
 
-<br/><br/>
+<br/>
 
 ```{r, echo=FALSE}
 jmv::descriptives(
@@ -182,7 +182,7 @@ jmv::descriptives(
     max = FALSE)
 ```
 
-<br/><br/>
+<br/>
 
 Nicely, the boxplots get embedded within the violin plots when you click both in jamovi. This is another reason why these kinds of plots can stuff a lot of information into a small space.
 
@@ -190,23 +190,23 @@ Anyway, the first thing to notice (if you hadn't already with the boxplots befor
 
 Note the "violin-like" quality of the plots.^[This is sort of a lie. Honestly, normally distributed data look more like deep-sea skates or rays, but the labels *stingray plot* or *skate plot* are going to take off any time soon; the misnomer has stuck. Nonetheless, when the data is really bimodal, you do get a violin-like quality to the plots.] This comes from turning a density plot on its side and reflecting it against itself. Obviously, the density plot by itself is more detailed, whereas the violin plot is a more restricted visualization.
 
-<br/><br/>
+<br/>
 
 ## Dot plots {#DotPlots}
 
 One final way of illustrating the nature of your data is to use a dot plot. This simply plots out each observation along the y-axis of the graph. There are two options here: You can *stack* the dots, or *jitter* them. Stacking works better for small data sets (like the Harpo data set), whereas jittering works better for large data sets where you are likely to have many dots with close or identical values. Generating this graph is just as easy as the others. Just check the **Data** box (under *Box plots*), and choose *Stacked* or *Jittered* from the drop-down menu below it. An example of this is shown in Figure \@ref(fig:VisualizationsDotPlainParameters) below.
 
-<br/><br/>
+<br/>
 
 ```{r VisualizationsDotPlainParameters, fig.cap="Parameters for generating a stacked dot plot.", echo=F, out.width="600px"}
 knitr::include_graphics("images/DataVis/VisualizationsDotPlainParameters.png")
 ```
 
-<br/><br/>
+<br/>
 
 The results of the stacked dot plot can be seen below. We also checked *Violin* in order to illustrate the relationship between the two. Side-by-side dots represent identical values (i.e., students who got the same grade).
 
-<br/><br/>
+<br/>
 
 ```{r, echo=FALSE}
 jmv::descriptives(
@@ -223,11 +223,11 @@ jmv::descriptives(
     max = FALSE)
 ```
 
-<br/><br/>
+<br/>
 
 Note that these all fall under *Box plots* for a reason. Namely, you can combine these plots in any way you see fit. We have combined all three into one plot below. Note that the dots are **jittered** this time, strictly for illustration purposes (i.e., it was not helpful in any way for visualization since the number of observations is low).
 
-<br/><br/>
+<br/>
 
 ```{r, echo=FALSE}
 jmv::descriptives(
@@ -244,35 +244,35 @@ jmv::descriptives(
     max = FALSE)
 ```
 
-<br/><br/>
+<br/>
 
 ## Bar plots {#Barplots}
 
 The next visualization covered here is a **bar plot**. 
 
-<br/><br/>
+<br/>
 
-```{block, type="rmdnote"}
-**NOTE**: This isn't the clumsy bar ***graph*** that has been used so often throughout history. A bar graph (for lack of a better term that distinguishes it from bar **plot**) represents continuous data (e.g., reaction times) with a bar (or bars). This type of chart is often discouraged by many in favor of line charts and dot charts with error bars. One reason is that bar graphs are often wasteful in terms of space. Another reason is that if we restrict bar plots to counts, then we "unite" bar plots with histograms, since histograms represent counts as well. So universally, bars = counts. You cannot rely on that last sentence yet, as it's only an ideal. But regardless, bars are used in jamovi only to count up frequencies. jamovi replaces bar graphs representing continuous data with dot or line plots These are available under the appropriate inferential tests.
+```{block2, type="rmdnote", echo=T}
+**NOTE**: This is not the clumsy bar ***graph*** that has been used so often throughout history. A bar graph (for lack of a better term that distinguishes it from bar **plot**) represents continuous data (e.g., reaction times) with a bar (or bars). This type of chart is often discouraged by many in favor of line charts and dot charts with error bars. One reason is that bar graphs are often wasteful in terms of space. Another reason is that if we restrict bar plots to counts, then we "unite" bar plots with histograms, since histograms represent counts as well. So universally, bars = counts. You cannot rely on that last sentence yet, as it's only an ideal. But regardless, bars are used in jamovi only to count up frequencies. jamovi replaces bar graphs representing continuous data with dot or line plots These are available under the appropriate inferential tests.
 ```
 
-<br/><br/>
+<br/>
 
 The bar plot is a good way of visualizing frequency data.^[Traditionally, pie charts have been used to do this, but pie charts can be problematic for several reasons. [Here](https://www.businessinsider.com/pie-charts-are-the-worst-2013-6) is a link that explains pretty clearly why.] This type of visualization is not usually necessary for any kind of write-up summarizing your data set. However, it can be very useful, ultimately, for chi-square analyses and the display of individual Likert items. A discussion of chi-square analyses comes up later in this *Guide* (Chapter \@ref(CategoricalDataAnalysis)), and in your main textbook [@lsj; Chapter 10]. The display of Likert items does not really come up in this class.
 
 Despite the fact that you will probably not need this kind of plot for this class, you can still practice. We will use the *Harpo* data again. We will compare the number of students in Anastasia's vs. Bernadette's tutoring groups. First, you need to drag the *tutor* variable over to the *Variables* box. Then check the *Frequency tables* check box located under the left-most (but label-less) white box. Finally, check the *Bar plot* box under *Bar plots* to get the frequency plot. You can see the parameter settings for this in Figure \@ref(fig:VisualizationsFrequenciesParameters)
 
-<br/><br/>
+<br/>
 
 ```{r VisualizationsFrequenciesParameters, fig.cap="Parameters for generating a bar plot.", echo=F, out.width="600px"}
 knitr::include_graphics("images/DataVis/VisualizationsFrequenciesParameters.png")
 ```
 
-<br/><br/>
+<br/>
 
 The result is a simple bar plot of the number of students in each tutoring group, along with relevant descriptive statistics above the plot. See below.
 
-<br/><br/>
+<br/>
 
 ```{r, echo=FALSE}
 jmv::descriptives(
@@ -288,11 +288,11 @@ jmv::descriptives(
     max = FALSE)
 ```
 
-<br/><br/>
+<br/>
 
 The meaning of the bar plot is almost self-explanatory in this case.
 
-<br/><br/>
+<br/>
 
 ## Q-Q plots {#QQPlots}
 
@@ -304,13 +304,13 @@ That may have made little sense to you at this point, and that's okay. What's im
 
 We've provided the Q-Q plot for the *Harpo* data, with *grade* divided into the two *tutor* groups: Anastasia and Bernadette. The parameters you need to set to generate this is in Figure \@ref(fig:VisualizationsQQPlotParameters) below.
 
-<br/><br/>
+<br/>
 
 ```{r VisualizationsQQPlotParameters, fig.cap="Parameters for generating Q-Q plots.", echo=F, out.width="600px"}
 knitr::include_graphics("images/DataVis/VisualizationsQQPlotParameters.png")
 ```
 
-<br/><br/>
+<br/>
 
 ```{r, echo=FALSE}
 jmv::descriptives(
@@ -325,7 +325,7 @@ jmv::descriptives(
     max = FALSE)
 ```
 
-<br/><br/>
+<br/>
 
 As you can see, the dots line up quite closely to the line, suggesting that the data is normally distributed.
 
@@ -335,7 +335,7 @@ To show what a positively skewed data set looks like in a Q-Q plot, we have open
 rm(Harpo)
 ```
 
-<br/><br/>
+<br/>
 
 ```{r, include=FALSE}
 AflMargins <- readRDS("datasets/DataVis_AflMargins.rds")
@@ -355,7 +355,7 @@ jmv::descriptives(
     max = FALSE)
 ```
 
-<br/><br/>
+<br/>
 
 This time we included the histogram to show you the positive skew. In the Q-Q plot, look at the y-axis, and how the scale only goes down to about -1.5 standardized residuals (*z*-scores), whereas the x-axis goes down to -3. The dots splay out to the left away from the line, suggesting that they're clumping up at the bottom end and **not** producing a nice, leftward, asymptotic (small) tail. At the upper end, you can see that several dots have higher values than the line would "suggest." This means that the *z*-scores are too high for the distribution for it to be considered a normal. In other words, there is positive skew.
 
@@ -365,7 +365,7 @@ If you didn't understand very much of that, that's okay. The beauty of the Q-Q p
 rm(AflMargins)
 ```
 
-<br/><br/>
+<br/>
 
 ## Outside help on visualization
 
@@ -373,13 +373,13 @@ rm(AflMargins)
 
 datalab.cc also has a [tutorial on histograms and density plots](https://datalab.cc/tools/jamovi). They are videos #19 and #20, respectively (these are also available for Texas A&M as tutorials in the set of *LinkedIn Learning* tutorials at Texas A&M). Your textbook [@lsj] also covers histograms in the first section (5.1) of Chapter 5. 
 
-<br/><br/>
+<br/>
 
 ### Boxplots {#OutsideHelpOnBoxPlots}
 
 For some outside help on boxplots, you can go to video #21, [datalab.cc's tutorial on boxplots](https://datalab.cc/tools/jamovi).
 
-<br/><br/>
+<br/>
 
 ### Violin plots {#OutsideHelpOnViolinPlots}
 
@@ -387,13 +387,13 @@ For more on violin plots, you can go [datalab.cc's tutorial](https://datalab.cc/
 
 Your main textbook also covers violin plots in Section 5.2.1.
 
-<br/><br/>
+<br/>
 
 ### Dot plots {#OutsideHelpOnDotPlots}
 
 For outside help on dot plots, you can go to [datalab.cc's tutorial on dot plots](https://datalab.cc/tools/jamovi), which is video #23.
 
-<br/><br/>
+<br/>
 
 ### Bar plots (#OutsideHelpOnBarPlots)
 

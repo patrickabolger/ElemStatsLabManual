@@ -4,7 +4,7 @@
 
 The *Discussion* section can take one of two forms, and depending on which form it takes, it will convey somewhat different information.
 
-<br/><br/>
+<br/>
 
 ### Single-study *Discussion* sections {#StructureOfSingleStudyDiscussionSections}
 
@@ -16,7 +16,7 @@ Specifically, if it is a single-study paper (i.e., there are **no** subheadings 
 ***a***nd
 - ***D***iscussion
 
-<br/><br/>
+<br/>
 
 ### Multiple-study *Discussion* sections {#StructureOfMultipleStudyDiscussionSections}
 
@@ -47,17 +47,17 @@ Whatever the case, as mentioned above, these *Discussion* sections often end wit
 
 When there is no subsequent study, naturally this means that the *General Discussion* (which is mandatory in this type of multiple-study paper) directly follows. In this case, this transition section is simply skipped as the reader understands that, at least according to the writers, everything that needs to be addressed by another experiment or study (at least within the larger context of the paper) has already been addressed at that point.
 
-<br/><br/>
+<br/>
 
 #### The *General Discussion* section {#StructureOfGeneralDiscussionSectionsInDiscussionChapter}
 
 Among other things, the *General Discussion* primarily synthesizes the findings from all the separate *Discussion* sections into one, which then analyzes the more general predictions laid out at the end the *Introduction*. However, just *how* to write this section is covered in a separate chapter (Chapter \@ref(WritingGeneralDiscussionSections)). Therefore, we will restrict this chapter to simple *Discussion* sections.
 
-<br/><br/>
+<br/>
 
 Below are some examples of *Discussion* sections of the type that you will be writing: individual discussion section leading up to a *General Discussion*.
 
-<br/><br/>
+<br/>
 
 ### Examples of *Discussion* sections {#ExamplesOfDiscussionSections}
 
@@ -89,7 +89,7 @@ The *Discussion* section of The Experiment 1 is presented below. Note that the v
 >
 >**Experiment 2**...
 
-<br/><br/>
+<br/>
 
 The most important thing to note in this *Discussion* section is its overall structure. The first paragraph compares what they were looking for (spelled out at the end of the *Introduction*, among other places) and whether they found it (from the *Results* section). And paragraph two elaborates more on the findings, focusing on a different aspect (the change in findings across a 24-hour delay).
 
@@ -104,13 +104,13 @@ Thus, the organizational content of the *Discussion* section for Experiment 1 is
 
 This is a very typical example of how such *Discussion* sections are organized.
 
-<br/><br/>
+<br/>
 
 #### Example 2 {#ExampleOfDicsussionSections2}
 
 It is useful here to contrast the first and the last *Discussion* sections from Guekes, Gaskell, and Zwitserlood [-@GeukesGaskellZwitserlood2015]. You can see the difference between the end of the first *Discussion* section, for Experiment 1, and their third, for Experiment 3. That of the third is below.
 
-<br/><br/>
+<br/>
 
 >**Experiment 3**...
 >
@@ -126,11 +126,11 @@ It is useful here to contrast the first and the last *Discussion* sections from 
 >
 >**General Discussion**...
 
-<br/><br/>
+<br/>
 
 Notable, they omitted any transition too the subsequent section, which is the *General Discussion*. This is because they believe that they have sufficiently addressed any concerns at this point, and it is time to talk about the experiment in general.
 
-<br/><br/>
+<br/>
 
 #### Example 3 {#ExampleOfDicsussionSections3}
 
@@ -158,7 +158,7 @@ The small takeaway here is that it is also an option to put transitions at the b
 >
 >**General Discussion**...
 
-<br/><br/>
+<br/>
 
 The pattern in the *Discussion* section of this study is similar to that of example 2 above (section \@ref(ExampleOfDicsussionSections2)). The researchers start off by reminding the reader what they were looking for in this particular segment of the study (something covered at least generally at the end of the *Introduction*), followed by a very brief description of how they did it. 
 
@@ -166,7 +166,7 @@ The remainder of the first paragraph is devoted to what they actually did find, 
 
 Finally, there is no transition since the next section is the *General Discussion*.
 
-<br/><br/>
+<br/>
 
 #### Example in Appendix G {#ExampleInAppendixG}
 
@@ -181,7 +181,7 @@ Following that is another example that **pretends** to have found significant re
 
 This writing exercise relates to part of Writing Assignment #3 in your lab (see section \@ref(WritingAssignment3)), but just the second part: the *Discussion*.
 
-<br/><br/>
+<br/>
 
 ### Getting ready {#PWEFDGettingReady}
 
@@ -189,7 +189,7 @@ This writing exercise relates to part of Writing Assignment #3 in your lab (see 
 
 Form working dyads (or triads) like you did for the first three exercises of this type. Work with someone from your own research group again, if you can. 
 
-<br/><br/>
+<br/>
 
 Come up with a unique nickname for your group and open a Google Doc as you did before, but give it the following name: **[YOUR GROUP NICKNAME] Chapter \@ref(WritingDiscussionSections) Exercise**. Then share the document with the other members of your working group, as well as your TA.
 
@@ -201,7 +201,7 @@ For the purposes of the writing exercise that follows, you will pretend as if yo
 
 An entailment of this artificial reversal of findings is that some of you may find yourselves in a situation where you need to discuss null findings. We will provide some guidance below on how to do this even though there are few examples in the literature due to the file-drawer effect.
 
-<br/><br/>
+<br/>
 
 ### Writing {#PWEFDWriting}
 
@@ -223,7 +223,7 @@ First, you need to make the clearly (but understandably) false assumption that y
 
 And please remember that we are only allowing this artificial stipulation in order to make writing easier in this section.
 
-<br/><br/>
+<br/>
 
 ##### Feedback across working groups {#PWEFDReviewAndCompareFeedbackAcrossGroups}
 
@@ -233,19 +233,19 @@ Give the other group helpful comments on how they referred back to their origina
 
 As before, when you are done commenting, place a final comment near the end of the document you are commenting on that says, "We are done commenting."
 
-<br/><br/>
+<br/>
 
 ##### Class review {#PWEFDReviewAndCompareClassReview}
 
 As a class, discuss any issues that came up that might benefit from an expert's perspective (that of your TA).
 
-<br/><br/>
+<br/>
 
 ##### Revise {#PWEFDReviewAndCompareRevise}
 
 Take about 10 minutes to revise (as a pair) any issues that came up either in your counterpart-group's comments or during class discussion.
 
-<br/><br/>
+<br/>
 
 #### Part 3: Preview {#PWEFDPreviewStudy2}
 
@@ -269,25 +269,25 @@ In the preview, you simply need to state what the next section, in this case Stu
 
 There is only one example of this in the examples we provided above: Example 1 in section \@ref(ExampleOfDicsussionSections1) (Again, the other two examples are the final *Discussion* sections before the *General Discussion*, so there is no transition statement).
 
-<br/><br/>
+<br/>
 
 ##### Feedback across working groups {#PWEFDPreviewStudy2FeedbackAcrossGroups}
 
 Have your partner working group have a look at your preview. But don't take too much time on this. The main thing they should be looking for is whether it is clear what will be analyzed in the next section. There really isn't too much to this section of the *Discussion*.
 
-<br/><br/>
+<br/>
 
 ##### Class review {#PWEFDPreviewStudy2ClassReview}
 
 Likewise, do not plan on spending too much time on this as a class, though you should, if for no other reason than to address questions that arose during the writing of this subsection.
 
-<br/><br/>
+<br/>
 
 ##### Revise {#PWEFDPreviewStudy2Revise}
 
 Take 5 minutes to make any necessary revisions.
 
-<br/><br/>
+<br/>
 
 #### Part 2: Transition {#PWEFDTransitionToStudy2}
 
@@ -317,7 +317,7 @@ Consider this last one a backup plan of last resort for your transition.
 
 In the end, it's possible that your feedback group will have some ideas for you for the transition section of the *Discussion*. Perhaps one of these ideas will allow you to adopt the first strategy above.
 
-<br/><br/>
+<br/>
 
 ##### Feedback across working groups {#PWEFDTransitionFeedbackAcrossGroups}
 
@@ -325,25 +325,25 @@ This time, focus on your parnter working group's paper in terms of how natural t
 
 When you're done, let the other group know with a final comment.
 
-<br/><br/>
+<br/>
 
 ##### Class review {#PWEFDTransitionClassReview}
 
 Take some time to review this as a class. This is a chance for the entire class to participate in a brainstorm where possible transitions for each group are discussed.
 
-<br/><br/>
+<br/>
 
 ##### Revise {#PWEFDTransitionRevise}
 
 Consider your classmates' ideas about writing this section. Revise if you think it's going to make this section flow better.
 
-<br/><br/>
+<br/>
 
 ## Writing Assignment #3 {#WritingAssignment3}
 
 After having completed the writing excercise above as well as having read and completed the exercises in chapter \@ref(WritingResultsSections), you should have a pretty good idea about how to go about the next writing assignment: Writing Assignment #3. See below for more details.
 
-<br/><br/>
+<br/>
 
 ### General Instructions {#GeneralInstructionsOnWritingAssignment3}
 
@@ -359,7 +359,7 @@ Like *Writing Assignment #2* (*Method*), this one is authentic in that you will 
 
 <br/>
 
-```{block, type="rmdnote"}
+```{block2, type="rmdnote", echo=T}
 **NOTE**:  Again, do NOT put your name on this assignment. It will be submitted for anonymous peer review through Peerceptiv, and including your name makes it non-anonymous.
 ```
 
@@ -367,7 +367,7 @@ Like *Writing Assignment #2* (*Method*), this one is authentic in that you will 
 
 Finally, as you did with Assignment #2, you should tag on these *Results* and *Discussion* sections to the current, full version of your paper so far (*Introduction* and *Method*). It will be easier to review if the reviewers (i.e., your peers) have access to your *Introduction* as well as your *Method* section.
 
-<br/><br/>
+<br/>
 
 <!-- Insert the section below and remove it from the chapter on the General Discussion -->
 
@@ -375,13 +375,13 @@ Finally, as you did with Assignment #2, you should tag on these *Results* and *D
 
 <!-- Also, if you are so inclined, you can modify the *Method* section to be more specific about the statistical design of your study. This would be for self-edification, however. -->
 
-<!-- <br/><br/> -->
+<!-- <br/> -->
 
 ### Specific Instructions {#SpecificInstructionsOnWritingAssignment3}
 
 As noted above, Writing Assignment #3 will consist of the *Results* and *Discussion* sections, underneath the major header *Study 1*. The header *Study 1* should be centered, and at the top of the page.
 
-<br/><br/>
+<br/>
 
 #### *Results* {#SpecificInstructionsOnWritingAssignment3Results}
 
@@ -403,7 +403,7 @@ Importantly, the prose of the *Results* should make reference directly to any ta
 
 There is a rubric in Appendix F for the *Results* section.
 
-<br/><br/>
+<br/>
 
 #### *Discussion* {#SpecificInstructionsOnWritingAssignment3Discussion}
 

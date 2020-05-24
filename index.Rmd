@@ -1,20 +1,21 @@
 --- 
 title: 'A Lab Manual for PSYC 301: Elementary Statistics for Psychology'
-author: 
-  name: "Patrick Bolger, PhD"
-  affiliation: " Department of Psychological & Brain Sciences at Texas A&M University"
+author:
+  affiliation: ' Department of Psychological & Brain Sciences at Texas A&M University'
+  name: Patrick Bolger, PhD
 date: "`r format(Sys.time(), '%d %B %Y')`"
-output:
-  bookdown::gitbook: default
-description: 'This is a lab manual for PSYC 301: Elementary Statistics for Psychology. It is an open educational resource (OER), so there is no charge to students.'
-documentclass: book
-link-citations: yes
-nocite: "@SchroederEpley2015, \n@MehrSongSpelke2016,\n@RogersMilkman2016\n"
 bibliography:
 - book.bib
 - packages.bib
+description: 'This is a lab manual for PSYC 301: Elementary Statistics for Psychology.
+  It is an open educational resource (OER), so there is no charge to students.'
+documentclass: book
+github-repo: patrickabolger/ElemStatsLabManual
+link-citations: yes
+nocite: "@SchroederEpley2015, \n@MehrSongSpelke2016,\n@RogersMilkman2016\n"
 site: bookdown::bookdown_site
 biblio-style: apalike
+url: https\://patrickabolger.github.io/ElemStatsLabManual/
 ---
 
 ```{r setup, include=FALSE}
@@ -97,9 +98,10 @@ As noted above, you will need certain resources in order to achieve these goals.
 
 ### Fixed resources {#FixedResources}
 
-``` {block, type="rmdgrey"}
-- This ***lab manual*** [@Bolger2019]. It was created also using the programming language R, along with the R package [Bookdown](https://bookdown.org/) [@R-bookdown], which uses [RMarkdown](https://rmarkdown.rstudio.com/) [@R-rmarkdown] to create books.  RMarkdown is a [markdown language](https://en.wikipedia.org/wiki/Markdown) for R created by the popular integrated development environment ([IDE](https://en.wikipedia.org/wiki/Integrated_development_environment)) [RStudio](https://www.rstudio.com/) [@RStudio], which makes programming in R easier. Several other R packages were also used throughout. These are represented by the hexagon stickers below.
-```  
+```{block2, note-text, type='rmdnote', echo=T}
+This ***lab manual*** [@Bolger2019] was created also using the programming language R within RStudio Desktop, along with the R package [bookdown](https://bookdown.org/) [@R-bookdown], which uses [rmarkdown](https://rmarkdown.rstudio.com/) [@R-rmarkdown] to create books. Rarkdown is a [markdown language](https://en.wikipedia.org/wiki/Markdown) for R created by the popular integrated development environment ([IDE](https://en.wikipedia.org/wiki/Integrated_development_environment)) [RStudio](https://www.rstudio.com/) [@RStudio], which makes programming in R easier. Several other R packages were also used throughout. These are represented by the hexagon stickers near the top of this page
+
+``` 
 
 <br/>
 

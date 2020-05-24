@@ -10,51 +10,51 @@ Sometimes you have more than one predictor variable. This chapter covers the cas
 
 ## Basic: joyzepam data {#BasicFactorialAnovaJoyzepam}
 
-<br/><br/>
+<br/>
 
 ### Obtaining the data {#BasicFactorialAnovaJoyzepamObtainingTheData}
 
-<br/><br/>
+<br/>
 
 ### Implementing the procedure {#BasicFactorialAnovaJoyzepamImplementing}
 
-<br/><br/>
+<br/>
 
 ### Interpreting the output {#BasicFactorialAnovaJoyzepamInterpreting}
 
-<br/><br/>
+<br/>
 
 ### Reporting the output {#BasicFactorialAnovaJoyzepamReporting}
 
-<br/><br/>
+<br/>
 
 ## Advanced: advanced data NAME {#AdvancedFactorialAnova_NAME}
 
-<br/><br/>
+<br/>
 
 ### Obtaining the data {#AdvancedFactorialAnova_NAMEObtainingTheData}
 
-<br/><br/>
+<br/>
 
 ### Implementing the procedure {#AdvancedFactorialAnova_NAMEImplementing}
 
-<br/><br/>
+<br/>
 
 ### Interpreting the output {#AdvancedFactorialAnova_NAMEInterpreting}
 
-<br/><br/>
+<br/>
 
 ### Reporting the output {#AdvancedFactorialAnova_NAMEReporting}
 
-<br/><br/>
+<br/>
 
 ## Conclusion {#ConclusionOfFactorialAnova}
 
-<br/><br/>
+<br/>
 
 ## Outside help on factorial ANOVA
 {#OutsideHelpOnFactorialAnova}
 
-<br/><br/>
+<br/>
 
 ## Extra practice on factorial ANOVA {#PracticingFactorialAnova}

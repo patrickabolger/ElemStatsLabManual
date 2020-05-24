@@ -4,7 +4,7 @@ So far, we have only addressed cases where the predictor variable is categorical
 
 But this chapter is all about how to analyze data when both the outcome variable and the predictor variable are continuous in nature. For example, you might be interested in the proclivity of university students to attend sporting events (measured on a scale from 1-7, 1 being *not at all*, and 7 being *every event I can possibly attend*) as predicted by how much they crave social interaction (same scale, 1 being *not at all* and 7 being *all the time*). You might expect that students who provide higher values on the first question would also tend to provide higher values on the second, and vice-versa. This sort of analysis cannot be carried out with a chi-square, or *t*-test, or ANOVA. It can be analyzed, however, as a correlation or a simple regression.^[Note that there is a considerable amount of controversy here. Many would argue that Likert scales are either not truly interval scales, or (when used as predictor variables) not measured without error, or both. These are assumptions of the basic, introductory kind of regression we are doing this is class (ordinary least squares), though there are more advanced solutions to these problems (e.g., ordinal logistic regression and errors-in-variables modeling, respectively). At the same time, such questions are beyond the scope of this class. They are worth noting, however, to return to later when your statistical knowledge is sufficiently advanced.]
 
-<br/><br/>
+<br/>
 
 ## Correlations {#Correlations}
 
@@ -39,13 +39,13 @@ That is, for every observation in your data set, take the *z*-score for *X* and 
 
 There is also a significance test associated with correlation. You can perform this inferential test on its own,^[with its own lookup table, if you happen to be in Papua New Guinea with a dead laptop battery, but a functioning hardcopy of a statistics book] or as a *t*-test of a coefficient in a simple regression (more on this later in section \@ref(LinearRegression) below).
 
-<br/><br/>
+<br/>
 
 ### Basic: Parenthood data {#BasicCorrelationParenthood}
 
 This part of the lab manual simply presents the material in Navarro and Foxcroft [-@lsj], Chapter 12.1 to 12.2, but in a more lab-oriented manner.
 
-<br/><br/>
+<br/>
 
 #### Importing the data {#BasicCorrelationParenthoodGettingTheData}
 
@@ -61,7 +61,7 @@ This data set is actually a comma-delimited text file (hence, the title of this 
 
 You can also re-name the variables, if you wish, into human-readable names, as Navarro and Foxcroft suggest [-@lsj, p. 282]. Do this in the top row of each variable when you double click the name. You should also probably save it as a .omv (jamovi) file. For the purposes of display, I chose `My sleep (hrs.)`, `Baby sleep (hrs.)`, and `My grumpiness`.
 
-<br/><br/>
+<br/>
 
 #### Familiarization {#BasicCorrelationParenthoodFamiliarization}
 
@@ -85,7 +85,7 @@ Or more precisely:
 
 Importantly, you can probably guess that there will probably be a statistical correlation between the baby's sleep and the author's grumpiness. However, such a clearly indirect relationship would be conceptually *mediated*^[When the causal relationships among variables is unclear, one can employ *mediation analysis*, a set of statistical procedures designed to pull apart how inter-correlated variables are directly vs. indirectly related to each other. But this also is beyond the scope of this course.] by the author's own sleep.
 
-<br/><br/>
+<br/>
 
 #### Analysis {#BasicCorrelationParenthoodAnalysis}
 
@@ -134,7 +134,7 @@ As noted earlier, correlations near zero indicate no relationship at all between
 
 <br/>
 
-```{block, type="rmdtip"}
+```{block2, type="rmdtip", echo=T}
 ***TIP***: An easy way to look at confidence intervals here is to see if both values (for one correlation) are either both negative or both positive. If they are, then the correlation is significant since the range cannot contain 0. If on the other hand, the lower bound is negative and the upper bound is positive, then the range *does* contain zero, and you do not have significance. Thus, to test for significance, you don't need to actually look at the values in the confidence intervals, just the signs (+ or -).
 ```
 
@@ -142,11 +142,11 @@ As noted earlier, correlations near zero indicate no relationship at all between
 
 In the analysis here you can see that all the variables are correlated with each other. The strongest correlation is between the author's sleep and their grumpiness, $r(98)=-0.903, p<.001$. This is indeed the logical connection to grumpiness. But we can also see that there is a statistically significant correlation between the author's grumpiness and their baby's sleep, $r(98)=-0.566, p<.001$ (surely an indirect relationship, mediated by the author's sleep), and finally between the author's sleep and their baby's sleep, $r(98)=0.628, p<.001$, a positive correlation (the more the baby sleeps, the more the author sleeps). The degrees of freedom for Pearson's *r*, by the way, is $N-2$. The author's fake data has 100 recordings of these three variables. Thus, the degrees of freedom are $100-2=98$.
 
-<br/><br/>
+<br/>
 
 There is a useful page online that annotates the output of correlations in jamovi. It is page four of the *JAMOVI: Annotated Output* document from Wendorf [-@Wendorf2019]. You can find it [here](https://www4.uwsp.edu/psych/cw/statistics/textbook.htm), though you need to choose *JAMOVI* in the menu across the top, then *JAMOVI: Annotated Output*.
 
-<br/><br/>
+<br/>
 
 #### Visualization using scatr {#BasicCorrelationParenthoodVisualizationWithScatr}
 
@@ -217,7 +217,7 @@ The outputs are nearly identical, visually, in this case. And again, underneath,
 
 One thing that has changed, however, is that the slope of the line in the second scatterplot (directly above) for the standardized variables (recall that the slope of the line is defined as the change in the value on *Y* for a one-unit change in *X*) is now tightly related to Pearson's *r*. In fact, the slope in the figure above is now Pearson's *r* correlation coefficient, ***exactly***. If you wanted to state it in words, you'd say, "For every standard-deviation increase of one in `My sleep (hrs.)`, there is a corresponding decrease of .903 standard-deviation units in `My grumpiness`." Or, "As I sleep more, I get less grumpy."
 
-<br/><br/>
+<br/>
 
 #### Reporting the output {#BasicCorrelationParenthoodReporting}
 
@@ -233,7 +233,7 @@ As already shown in the case of chi-square, and both the *z*- and *t*-tests, APA
 8. a *p*-value  
 9. confidence intervals between square brackets, with the lower bound reported first followed by the upper bound (separated by a comma), along with the interval identified (usually 95%)  
 
-<br/><br/>
+<br/>
 
 The test letter is now *r* (not *t*, *z*, or $\chi^2$). The degrees of freedom is calculated as $N-2$.  
 
@@ -253,7 +253,7 @@ Finally, we should report the confidence intervals, which we asked for in jamovi
 
 <br/>
 
-```{block, type="rmdnote"}
+```{block2, type="rmdnote", echo=T}
 **NOTE**: The effect size for Pearson's *r* is Pearson's *r* itself. There is no need, therefore, to report a separate effect size. 
 ```
 
@@ -265,19 +265,19 @@ These inferential statistics were all reported above at the end of section \@ref
 - `Baby sleep (hrs.)` with `My grumpiness`: *r*(98) = -0.566, *p* < .001, 95% CI [-0.686, -0.416]   
 - `My sleep (hrs.)` with `Baby sleep (hrs.)`: *r*(98) = 0.628, *p* < .001, 95% CI [0.492, 0.734]  
 
-<br/><br/>
+<br/>
 
 We can now put together a partial *Results* section for this one analysis:
 
 >An analysis of this dataset suggests that the less the parent slept [*My Sleep (hrs.)*], the worse mood they were in (*My grumpiness*), $r(98)=-0.903, p<.001$, 95% CI [-0.934, -0.859]. Likewise, the less the baby slept [*Baby sleep (hrs.)*], the worse mood the parent was in, $r(98)=-0.566, p<.001$, 95% CI [-0.686, -0.416]. This correlation was almost certainly an indirect relationship, mediated by the amount that the parent slept. Finally, the more the baby slept, the more the parent slept, $r(98)=0.628, p<.001$, 95% CI [0.492, 0.734]. This last correlation would be unsurprising to any parent, as would probably any of these correlations.
 
-<br/><br/>
+<br/>
 
 ### Advanced {#AdvancedCorrelationSPRING2020}
 
 ***SLATED FOR SPRING 2020***
 
-<br/><br/>
+<br/>
 
 ## Linear regression {#LinearRegression}
 
@@ -315,13 +315,13 @@ $$Y=\beta_0+\beta_1X$$
 
 Here, $\beta_0$ is the intercept and $\beta_1$ is the slope. The advantage to this formulation is that anything represented as greek $\beta$ (greek lowercase "beta") must be calculated, and anything represented as $X$ is given to you (from the data set). This formulation becomes more handy when you study multiple linear regression.
 
-<br/><br/>
+<br/>
 
 ### Basic: Parenthood data (again) {#BasicRegressionParenthood}
 
 Navarro and Foxcroft [-@lsj] use the same data set to illustrate simple linear regression as they did correlation. This makes sense since it is informative to see the similarity across the two analysis options.
 
-<br/><br/>
+<br/>
 
 #### Import and familiarize {#BasicRegressionParenthoodGettingTheData}
 
@@ -331,7 +331,7 @@ You will probably need to make some adjustments as we did for the correlation an
 
 Also familiarize yourself with the data as illustrated in section \@ref(BasicCorrelationParenthoodFamiliarization) above.
 
-<br/><br/>
+<br/>
 
 #### Analysis {#BasicRegressionParenthoodAnalysis}
 
@@ -343,7 +343,7 @@ Following the textbook [@lsj, section 12.4.1], go to the *Analyses* tab and choo
 knitr::include_graphics("images/CorrAndLinReg/SetParametersForLinReg.png")
 ```
 
-<br/><br/>
+<br/>
 
 You should also choose a couple of options under the *Model Coefficients* box, which lies below the main window (see Figure \@ref(fig:SetParametersForLinRegExtra) below). These options are the *ANOVA test*, the *Confidence interval* (set at 95%), and the *Standardized estimate*.
 
@@ -353,7 +353,7 @@ You should also choose a couple of options under the *Model Coefficients* box, w
 knitr::include_graphics("images/CorrAndLinReg/SetParametersForLinRegExtra.png")
 ```
 
-<br/><br/>
+<br/>
 
 The results should look something like the following:
 
@@ -391,7 +391,7 @@ Recall that this was also interpretable as Pearson's *r*, but only in standard-d
 
 Not very concrete, to say the least. For this reason, the regression coefficients are usually more interesting to talk about.
 
-<br/><br/>
+<br/>
 
 #### Visualization using scatr {#BasicRegressionParenthoodVisualizationWithScatr}
 
@@ -422,7 +422,7 @@ Of course, this confidence interval suggests that if we ran this experiment 100 
 
 You might also have noticed that the confidence interval (the shaded area) near the ends of the line is further away from the line than it is near the middle of the line. This turns out to have a straightforward explanation: The confidence interval refers to a slope, not a fixed point, like a mean. As such, both a shallower and a steeper slope will diverge from the line more towards the ends than towards the middle. To visualize what's going on here mentally, think of the line as lying on a fulcrum towards the middle of the line, and rotating over that fulcrum like a see-saw through the confidence interval.
 
-<br/><br/>
+<br/>
 
 #### Reporting the output {#BasicRegressionParenthoodReporting}
 
@@ -436,25 +436,25 @@ A *Results* section reporting this information might appear as follows:
 
 Note that the intercept was not mentioned since it is meaningless in this data. The author may indeed experience nights without sleep, but not in this data set. The regression line really only relates to the range of values it is based on. Here, the author never seems to have slept less than 5 hours or so.
 
-<br/><br/>
+<br/>
 
 ### Advanced: {#AdvancedRegressionSPRING2020}
 
 ***SLATED FOR SPRING, 2020***
 
-<br/><br/>
+<br/>
 
 ## Multiple linear regression {#MultipleLinearRegression}
 
 ***SLATED FOR SPRING, 2020***
 
-<br/><br/>
+<br/>
 
 ## Outside help on correlation {#OutsideHelpOnCorrelation}
 
 For outside help on understanding the output from *Regression* > *Correlation matrix* in jamovi, go to the [online textbook](https://www4.uwsp.edu/psych/cw/statistics/textbook.htm) by Wendorf [-@Wendorf2019]. From the pull-down menus, choose *JAMOVI* > *Annotated Output*, and scroll down to page 4.
 
-<br/><br/>
+<br/>
 
 <!-- ## Outside help on linear regression {#OutsideHelpOnLinearRegression} -->
 

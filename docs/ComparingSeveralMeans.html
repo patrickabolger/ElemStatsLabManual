@@ -10,10 +10,10 @@
 
   <meta property="og:title" content="Chapter 8 Comparing several means | A Lab Manual for PSYC 301: Elementary Statistics for Psychology" />
   <meta property="og:type" content="book" />
-  
+  <meta property="og:url" content="https://patrickabolger.github.io/ElemStatsLabManual/" />
   
   <meta property="og:description" content="This is a lab manual for PSYC 301: Elementary Statistics for Psychology. It is an open educational resource (OER), so there is no charge to students." />
-  
+  <meta name="github-repo" content="patrickabolger/ElemStatsLabManual" />
 
   <meta name="twitter:card" content="summary" />
   <meta name="twitter:title" content="Chapter 8 Comparing several means | A Lab Manual for PSYC 301: Elementary Statistics for Psychology" />
@@ -23,7 +23,7 @@
 
 
 
-<meta name="date" content="2020-05-22" />
+<meta name="date" content="2020-05-24" />
 
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <meta name="apple-mobile-web-app-capable" content="yes" />
@@ -53,6 +53,7 @@
 
 
 
+<link rel="stylesheet" href="css/style.css" type="text/css" />
 </head>
 
 <body>
@@ -65,6 +66,10 @@
       <nav role="navigation">
 
 <ul class="summary">
+<li><a href="./">A Lab Manual for PSYC 301: Elementary Statistics for Psychology</a></li>
+<li><a href="./">Patrick Bolger, PhD.</a></li>
+
+<li class="divider"></li>
 <li class="chapter" data-level="" data-path="index.html"><a href="index.html"><i class="fa fa-check"></i>Preface</a><ul>
 <li class="chapter" data-level="0.1" data-path="index.html"><a href="index.html#goals"><i class="fa fa-check"></i><b>0.1</b> Goals</a></li>
 <li class="chapter" data-level="0.2" data-path="index.html"><a href="index.html#Resources"><i class="fa fa-check"></i><b>0.2</b> Resources</a><ul>
@@ -372,6 +377,10 @@
 <li><a href="i-general-discussion-example.html#i-general-discussion-example">I: <em>General Discussion</em> example</a></li>
 <li><a href="j-general-discussion-rubric.html#j-general-discussion-rubric">J: <em>General Discussion</em> rubric</a></li>
 <li class="chapter" data-level="" data-path="references.html"><a href="references.html"><i class="fa fa-check"></i>References</a></li>
+<li class="divider"></li>
+<li><a href="https://github.com/rstudio/bookdown" target="blank">Published with bookdown</a></li>
+    sharing:
+
 </ul>
 
       </nav>
@@ -391,28 +400,28 @@
             <section class="normal" id="section-">
 <div id="ComparingSeveralMeans" class="section level1">
 <h1><span class="header-section-number">Chapter 8</span> Comparing several means</h1>
-<p>This chapter explains how to use jamovi to analyze a continuous outcome variable when it is split into three or more levels of a categorical predictor variable. It follows the main textbook <span class="citation">(Navarro and Foxcroft <a href="#ref-lsj">2019</a>, Chapter 13)</span></p>
+<p>This chapter explains how to use jamovi to analyze a continuous outcome variable when it is split into three or more levels of a categorical predictor variable. It follows the main textbook <span class="citation">(Navarro &amp; Foxcroft, <a href="#ref-lsj">2019</a>, Chapter 13)</span></p>
 <p>For example, you might analyze something like attitude towards increasing taxes to fund public education. And your participants might have been, say, Democrats, Republicans, and “Others.” In this case, you could look at their mean responses by group, and figure out if any of these means were significantly different from any of the others.</p>
-<p><br/><br/></p>
+<p><br/></p>
 <div id="OnewayAnova" class="section level2">
 <h2><span class="header-section-number">8.1</span> The One-Way ANOVA</h2>
-<p>Carrying out One-Way ANOVA is covered in your main textbook <span class="citation">(Navarro and Foxcroft <a href="#ref-lsj">2019</a>, Sections 13.1 to 13.7)</span>.</p>
+<p>Carrying out One-Way ANOVA is covered in your main textbook <span class="citation">(Navarro &amp; Foxcroft, <a href="#ref-lsj">2019</a>, Sections 13.1 to 13.7)</span>.</p>
 <p>In this test, we are interested in whether three or more groups comprising independent observations differ with each on a single, continuous outcome variable.<a href="#fn73" class="footnote-ref" id="fnref73"><sup>73</sup></a></p>
 <p>The <em>F</em>-test is the calculation of a particular kind of ratio, the <em>F</em>-ratio (unsurprisingly!). It is the ratio of between-subjects variance (<em>Mean Squares Between</em>) divided by the within-subjects variance (<em>Mean Squares Within</em>). Each of these, respectively, is the ratio of the <em>Sum of Squares</em> (between or within) divided by the <em>degrees of freedom</em> (between or within). Thus:</p>
 <p><span class="math display">\[F= \frac{MeanSquares_{between}}{MeanSquares_{within}} = \frac{\frac{SumOfSquares_{betweeen}}{DegreesOfFreedom_{between}}}{\frac{SumOfSquares_{within}}{DegreesOfFreedom_{within}}}\]</span>
-<br/><br/></p>
-<p>And this is a pretty complex formula if spelled out all the way. You can refer to Table 13.1 in <span class="citation">(Navarro and Foxcroft <a href="#ref-lsj">2019</a>, 334)</span> if you want to see how this works. In fact, Table 13.1 is in a standard ANOVA-table format, though we won’t go into that in this manual.</p>
+<br/></p>
+<p>And this is a pretty complex formula if spelled out all the way. You can refer to Table 13.1 in <span class="citation">(Navarro &amp; Foxcroft, <a href="#ref-lsj">2019</a>, p. 334)</span> if you want to see how this works. In fact, Table 13.1 is in a standard ANOVA-table format, though we won’t go into that in this manual.</p>
 <p>Naturally, you do not need to calculate the <em>F</em>-ratio by hand. jamovi will do it for you.</p>
-<p><br/><br/></p>
+<p><br/></p>
 <div id="OnewayAnovaClinicalTrialData" class="section level3">
 <h3><span class="header-section-number">8.1.1</span> Basic: Clinical Trial data</h3>
 <p>The data set that Navarro and Foxcroft <span class="citation">(<a href="#ref-lsj">2019</a>)</span> use to illustrate the One-Way ANOVA is fictional. It is a hypothetical clinical trial in which which 18 patients with moderate to severe depression are recruited to participate in a trial in which half receive Cognitive Behavioral Therapy in contrast to half who do not. Each half then receives one of three drugs: <em>joyzepam</em>, <em>Anxifree</em> (a real antidepressant), and a placebo. Three participants are in each group, across both levels of therapy type. Their mood is measured at the beginning and then 3 months later on a 10-point scale from -5 to 5.</p>
 <p>This lab manual simply presents the dataset and analysis in a more lab-like way.</p>
-<p><br/><br/></p>
+<p><br/></p>
 <div id="OnewayAnovaClinicalTrialDataObtainingTheData" class="section level4">
 <h4><span class="header-section-number">8.1.1.1</span> Obtaining the data</h4>
-<p>To follow along yourself, you can open the in the module from <span class="citation">Navarro and Foxcroft (<a href="#ref-lsj">2019</a>)</span>: <span class="math inline">\((\equiv)\)</span> &gt; <em>File</em> &gt; <em>Data Library</em> &gt; <em>learning statistics with jamovi</em> &gt; <em>Clinical Trial.omv</em>. We are only going to look at the effect of <em>drug</em> on <em>mood.gain</em> (the outcome variable).</p>
-<p><br/><br/></p>
+<p>To follow along yourself, you can open the in the module from <span class="citation">Navarro &amp; Foxcroft (<a href="#ref-lsj">2019</a>)</span>: <span class="math inline">\((\equiv)\)</span> &gt; <em>File</em> &gt; <em>Data Library</em> &gt; <em>learning statistics with jamovi</em> &gt; <em>Clinical Trial.omv</em>. We are only going to look at the effect of <em>drug</em> on <em>mood.gain</em> (the outcome variable).</p>
+<p><br/></p>
 </div>
 <div id="OnewayAnovaClinicalTrialDataImplementing" class="section level4">
 <h4><span class="header-section-number">8.1.1.2</span> Implementing the procedure</h4>
@@ -423,26 +432,26 @@
 <div class="figure"><span id="fig:OneWayClinicalParametersMain"></span>
 <img src="images/SeveralMeans/ANOVAClinicalParamatersMain.png" alt="Main parameter settings for the ANOVA procedure using the *Clinical Trial* data from @lsj." width="600px" />
 <p class="caption">
-Figure 8.1: Main parameter settings for the ANOVA procedure using the <em>Clinical Trial</em> data from <span class="citation">Navarro and Foxcroft (<a href="#ref-lsj">2019</a>)</span>.
+Figure 8.1: Main parameter settings for the ANOVA procedure using the <em>Clinical Trial</em> data from <span class="citation">Navarro &amp; Foxcroft (<a href="#ref-lsj">2019</a>)</span>.
 </p>
 </div>
-<p><br/><br/></p>
+<p><br/></p>
 <p>Next, click the arrow pointing to <em>Model</em> and make sure that <em>drug</em> is placed under <em>Model Terms</em> (and leave <em>Sum of squares</em> as <em>Type 3</em>. There is no built-in correction for heterogeneous variances in this procedure, but you can test the assumption using <em>Levene’s Test for Homogeneity of Variance</em>. This avails itself if you check the box <em>Homogeneity tests</em> under <em>Assumption Checks</em>. See Figure <a href="ComparingSeveralMeans.html#fig:ANOVAClinicalParamatersModelAndLevene">8.2</a> below for a depiction of these options.</p>
 <div class="figure"><span id="fig:ANOVAClinicalParamatersModelAndLevene"></span>
 <img src="images/SeveralMeans/ANOVAClinicalParamatersModelAndLevene.png" alt="Model settings and assumption checks for the ANOVA procedure using the *Clinical Trial* data from @lsj." width="600px" />
 <p class="caption">
-Figure 8.2: Model settings and assumption checks for the ANOVA procedure using the <em>Clinical Trial</em> data from <span class="citation">Navarro and Foxcroft (<a href="#ref-lsj">2019</a>)</span>.
+Figure 8.2: Model settings and assumption checks for the ANOVA procedure using the <em>Clinical Trial</em> data from <span class="citation">Navarro &amp; Foxcroft (<a href="#ref-lsj">2019</a>)</span>.
 </p>
 </div>
-<p><br/><br/></p>
+<p><br/></p>
 <p>Under <em>Post-Hoc Tests</em>, make sure that <em>drug</em> is in the box on the right, and that the <em>Correction</em> is set to <em>Holm</em>. This is a more powerful way to conduct multiple post-hoc analyses than Bonferroni adjustments (see Navarro and Foxcroft <span class="citation">(<a href="#ref-lsj">2019</a>, sec. 13.5.4, pp. 343-344)</span> for a more thorough explanation). Scheffé and Tukey are also reasonable options. Ultimately however, all choices end up leading to the same conclusion in this case, which is often the case. See Figure <a href="ComparingSeveralMeans.html#fig:OneWayClinicalParametersPostHoc">8.3</a> below for how to select these options.</p>
 <div class="figure"><span id="fig:OneWayClinicalParametersPostHoc"></span>
 <img src="images/SeveralMeans/ANOVAClinicalParamatersPostHoc.png" alt="Multiple-comparison, post-hoc settings for the ANOVA procedure using the *Clinical Trial* data from @lsj." width="600px" />
 <p class="caption">
-Figure 8.3: Multiple-comparison, post-hoc settings for the ANOVA procedure using the <em>Clinical Trial</em> data from <span class="citation">Navarro and Foxcroft (<a href="#ref-lsj">2019</a>)</span>.
+Figure 8.3: Multiple-comparison, post-hoc settings for the ANOVA procedure using the <em>Clinical Trial</em> data from <span class="citation">Navarro &amp; Foxcroft (<a href="#ref-lsj">2019</a>)</span>.
 </p>
 </div>
-<p><br/><br/></p>
+<p><br/></p>
 <p>Finally, under <em>Estimated Marginal Means</em>, make sure that the following are true:</p>
 <ul>
 <li><em>drug</em> makes it over to the box on the right under <em>Term 1</em><br />
@@ -459,10 +468,10 @@ Figure 8.3: Multiple-comparison, post-hoc settings for the ANOVA procedure using
 <div class="figure"><span id="fig:ANOVAClinicalParamatersEMM"></span>
 <img src="images/SeveralMeans/ANOVAClinicalParamatersEMM.png" alt="Graphic settings for the ANOVA procedure using the *Clinical Trial* data from @lsj." width="600px" />
 <p class="caption">
-Figure 8.4: Graphic settings for the ANOVA procedure using the <em>Clinical Trial</em> data from <span class="citation">Navarro and Foxcroft (<a href="#ref-lsj">2019</a>)</span>.
+Figure 8.4: Graphic settings for the ANOVA procedure using the <em>Clinical Trial</em> data from <span class="citation">Navarro &amp; Foxcroft (<a href="#ref-lsj">2019</a>)</span>.
 </p>
 </div>
-<p><br/><br/></p>
+<p><br/></p>
 <p>The results should appear as follows:</p>
 <pre><code>## 
 ##  ANOVA
@@ -510,8 +519,8 @@ Figure 8.4: Graphic settings for the ANOVA procedure using the <em>Clinical Tria
 ##    joyzepam    1.4833333    0.1243502    1.2182872    1.7483794   
 ##    placebo     0.4500000    0.1243502    0.1849539    0.7150461   
 ##  ────────────────────────────────────────────────────────────────</code></pre>
-<p><img src="ElemStatsLabManual_files/figure-html/unnamed-chunk-139-1.png" width="672" /></p>
-<p><br/><br/></p>
+<p><img src="ElemStatsLabManual_files/figure-html/unnamed-chunk-138-1.svg" width="672" /></p>
+<p><br/></p>
 </div>
 <div id="OnewayAnovaClinicalTrialDataInterpreting" class="section level4">
 <h4><span class="header-section-number">8.1.1.3</span> Interpreting the output</h4>
@@ -520,10 +529,10 @@ Figure 8.4: Graphic settings for the ANOVA procedure using the <em>Clinical Tria
 <p>However, another key value is in the last column. This is the effect size, <span class="math inline">\(\eta_p^2\)</span>. This statistic is also a bit redundant in the table since it is actually derived from column two. Well, when there is one predictor variable, it is equivalent to <span class="math inline">\(\eta^2\)</span> (<em>eta squared</em>), which is available from the table as the sum of squares between divided by the total sum of squares. The effect size here of .713 is quite large.</p>
 <p><span class="math display">\[\eta^2 = \frac{SumOfSquares_{between}}{SumOfSquares_{total}}= \frac{SumOfSquares_{between}}{SumOfSquares_{between}+SumOfSquares_{within}}=\]</span>
 <span class="math display">\[\frac{3.45}{3.45+1.39} = \frac{3.45}{4.84} = 0.713\]</span></p>
-<p><br/><br/></p>
+<p><br/></p>
 <p>Naturally, that <em>F</em>-test is an omnibus test, and only tells us that there are some significant differences among the three means, but it doesn’t tell us which. Therefore, there are also some post-hoc tests that we called for, which are located in third table down. It appears that there is a significant difference between joyzepam and each of the other two drugs, but not between the other two drugs themselves. This is clear in the figure, where you can see that the confidence interval for joyzepam does not overlap with either of the other two drugs, but the confidence intervals of the other two drugs overlap with each other quite a bit.<a href="#fn75" class="footnote-ref" id="fnref75"><sup>75</sup></a></p>
 <p>Also note that the <em>Estimated Marginal Means</em> may be slightly different than the means that you obtain from running <em>Exploration</em> &gt; <em>Descriptives</em> in jamovi. This topic is beyond the scope of this class as it has to do with how means are calculated multiple regression. Although these are legitimate estimates, you should report the means and standard deviations from the <em>Descriptives</em> procedure instead of the <em>Estimated Marginal Means</em> from the ANOVA output.</p>
-<p><br/><br/></p>
+<p><br/></p>
 </div>
 <div id="OnewayAnovaClinicalTrialDataReporting" class="section level4">
 <h4><span class="header-section-number">8.1.1.4</span> Reporting the output</h4>
@@ -538,7 +547,7 @@ Figure 8.4: Graphic settings for the ANOVA procedure using the <em>Clinical Tria
 <li>one of three symbols: =, &lt;, or &gt;</li>
 <li>a <em>p</em>-value</li>
 </ol>
-<p><br/><br/></p>
+<p><br/></p>
 <p>There will be only two differences this time:</p>
 <ul>
 <li>The test letter is now <em>F</em> (not <em>t</em> or <span class="math inline">\(\chi^2\)</span>)<br />
@@ -547,29 +556,29 @@ Figure 8.4: Graphic settings for the ANOVA procedure using the <em>Clinical Tria
 </ul>
 <p>To report the <em>F</em>-test in APA format, you can get all the information you need from the second table in the output above (the ANOVA table). The test statistic is <em>F</em>. There are two degrees of freedom: one for the sum of squares between, and one for the sum of squares within. These are located in the third column under <em>df</em>. They are 2 an 15, respectively, in that order [i.e., (<span class="math inline">\(df_{between}\)</span>,<span class="math inline">\(df_{within}\)</span>)]. Next, we need the <em>F</em>-ratio itself, which is located in the fifth column under <em>F</em>. As noted above, the <em>p</em>-value is in the second-to-last column. We also report the effect size, which is in the last column. All together, the full report of the test statistic, in the order presented directly above, is as follows:</p>
 <p><span class="math inline">\(F(2,15)=18.6,p&lt;.001, \eta_p^2=0.713\)</span></p>
-<p><br/><br/></p>
+<p><br/></p>
 <p>We can now put together a partial <em>Results</em> section for this one analysis:</p>
 <blockquote>
 <p>The mood improvement over the course of three months differed significantly across the three groups of patients taking either <em>joyzepam</em>, <em>anxifree</em>, or a placebo, <span class="math inline">\(F(2,15)=18.6,p&lt;.001, \eta_p^2=0.713\)</span>. Post-hoc comparisons with Holm corrections revealed that there was a significant difference between <em>joyzepam</em> and both <em>anxifree</em> [<span class="math inline">\(t(15)=-4.36,p&lt;.001\)</span>] and the placebo [<span class="math inline">\(t(15)=5.88,p&lt;.001\)</span>]. However, there was no significant difference between <em>anxifree</em> and the placebo [<span class="math inline">\(t(15)=1.52,p=.15\)</span>]. These differences are also clear in Figure 1, where it is clear that the 95% confidence interval for <em>joyzepam</em> does not overlap with those of either of the other two conditions, whereas the confidence intervals for the latter two conditions overlap substantially. <em>joyzepam</em> is clearly resulting in a significantly greater mood gain than the other two conditions. Additionally, the effect size (<span class="math inline">\(\eta^2=0.713\)</span>) is quite large, suggesting that this difference between <em>joyzepam</em> and the other two conditions is quite substantial in magnitude.</p>
 </blockquote>
-<p><br/><br/></p>
+<p><br/></p>
 </div>
 </div>
 <div id="advanced" class="section level3">
 <h3><span class="header-section-number">8.1.2</span> Advanced</h3>
 <p><strong><em>Everything below Scheduled for Spring 2020</em></strong></p>
-<p><br/><br/></p>
+<p><br/></p>
 </div>
 </div>
 <div id="repeated-measures-one-way-anova" class="section level2">
 <h2><span class="header-section-number">8.2</span> Repeated-measures One-Way ANOVA</h2>
-<p><br/><br/></p>
+<p><br/></p>
 </div>
 <div id="outside-help-on-one-way-anova" class="section level2">
 <h2><span class="header-section-number">8.3</span> Outside help on One-Way ANOVA</h2>
-<p><br/><br/></p>
+<p><br/></p>
 <!-- ## Conclusion {#ConclusionOfOnewayAnova} -->
-<!-- <br/><br/> -->
+<!-- <br/> -->
 </div>
 <div id="PracticingOnewayAnova" class="section level2">
 <h2><span class="header-section-number">8.4</span> Extra practice One-Way ANOVA</h2>
@@ -579,13 +588,13 @@ Figure 8.4: Graphic settings for the ANOVA procedure using the <em>Clinical Tria
 <h3>References</h3>
 <div id="refs" class="references">
 <div id="ref-lsj">
-<p>Navarro, Daneille J, and David R Foxcroft. 2019. <em>Learning Statistics with Jamovi: A Tutorial for Psychology Students and Other Beginners</em> (version 0.70). Sydney, New South Wales, Australia: Self. <a href="https://doi.org/10.24384/hgc3-7p15">https://doi.org/10.24384/hgc3-7p15</a>.</p>
+<p>Navarro, D. J., &amp; Foxcroft, D. R. (2019). Learning statistics with jamovi: A tutorial for psychology students and other beginners (Version 0.70). <a href="https://doi.org/10.24384/hgc3-7p15">https://doi.org/10.24384/hgc3-7p15</a></p>
 </div>
 </div>
 <div class="footnotes">
 <hr />
 <ol start="73">
-<li id="fn73"><p>Technically, you can also do this kind of test on a categorical variable with only two levels, something you would normally think to do an independent-samples <em>t</em>-test on. However, the results will be the same in this case, except that the ultimate obtained value for <em>F</em> (the ANOVA test) will be the equivalent of the obtained value for <em>t</em>, but squared. <span class="citation">(Navarro and Foxcroft <a href="#ref-lsj">2019</a>)</span> talk about this briefly in section 13.10.<a href="ComparingSeveralMeans.html#fnref73" class="footnote-back">↩</a></p></li>
+<li id="fn73"><p>Technically, you can also do this kind of test on a categorical variable with only two levels, something you would normally think to do an independent-samples <em>t</em>-test on. However, the results will be the same in this case, except that the ultimate obtained value for <em>F</em> (the ANOVA test) will be the equivalent of the obtained value for <em>t</em>, but squared. <span class="citation">(Navarro &amp; Foxcroft, <a href="#ref-lsj">2019</a>)</span> talk about this briefly in section 13.10.<a href="ComparingSeveralMeans.html#fnref73" class="footnote-back">↩</a></p></li>
 <li id="fn74"><p>22 Oct 2019: Note however that you may get a strange message in German here: <em>unerwartetes Symbol 1:…</em>, which means “Unexpected symbol 1:….” This seems to be a bug in jamovi. If you get it, just uncheck the box; the error message goes away.<a href="ComparingSeveralMeans.html#fnref74" class="footnote-back">↩</a></p></li>
 <li id="fn75"><p>Note that this is an approximate rule. Sometimes confidence intervals do overlap a little between variables that turn out to be significantly different.<a href="ComparingSeveralMeans.html#fnref75" class="footnote-back">↩</a></p></li>
 </ol>
@@ -640,7 +649,11 @@ gitbook.start({
 },
 "download": null,
 "toc": {
-"collapse": "subsection"
+"collapse": "none",
+"sharing": {
+"github": true,
+"facebook": false
+}
 }
 });
 });

@@ -1,20 +1,20 @@
 # I: *General Discussion* example {-}
 
-```{block, type="rmdwarning"}
+```{block2, type="rmdwarning", echo=T}
 **WARNING**: This document will be uploaded to Turnitin. It will also have been read by your classmates. Therefore, it is a very bad idea to copy this to modify to use in your own *General Discussion* section. Doing so would be a form of plagiarism. 
 ```
 
 <br/>
 
-```{block2, type="rmdtip"}
+```{block2, type="rmdtip", echo=T}
 **TIP**: As noted in Chapter \@ref(WritingMethodSections), section \@ref(PWEFM1ParticipantsReviseSubsection), the proper way to use the example we have provided below is to paraphrase it. To do this, read through the example, section by section. For each section, read for meaning. Make sure you understand it. Then minimize it in your screen and bring up the document that you are writing. **Critically**, **walk away for a few minutes**. Wash a couple of dishes; dust off a shelf, write a text message to a friend; do some jumping jacks; whatever, but actively **do** something totally unrelated to writing this section. Then return after 2-3 minutes, and write out the relevant section in your own words, according to the content you remember reading from the example passage (adjusted for your own content, naturally). The cognitive reality here is that you will remember the content after 2-3 minutes, but you will have forgotten both the ordering of information and the exact wording of the original [The first evidence of this was found by Sachs [-@Sachs1967]]. This way, there is very little chance that you will plagiarize.
 ```
 
-<br/><br/>
+<br/>
 
 The survey design and data for the example section below is adapted from a classroom project by Fettig, López Fuentes, and Villarreal [-@FettigLopezfuentesVillarreal2019]. The example starts with the *Results* and *Discussion* for *Study 2*, and then provides a *General Discussion* at the end.
 
-<br/><br/>
+<br/>
 
 >**Introduction**...
 >

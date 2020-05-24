@@ -2,7 +2,7 @@
 
 This chapter helps you through a number of issues that have to do with data entry, opening it, exploring it, importing it. exporting it, modifying it, etc. The best way to learn in this chapter is to follow along in each section using jamovi on your own computer. There are also some extra practice exercises at the end of the chapter.
 
-<br/><br/>
+<br/>
 
 ## Entering data manually {#Manualling}
 
@@ -10,13 +10,13 @@ Okay, about the only people who enter data manually anymore are students who are
 
 When you start jamovi, or open a *new* document [i.e., $(\equiv)$ > *New*], you will see three default variable names, **A**, **B**, and **C**, in the the three leftmost columns of the spreadsheet (jamovi expects you to change these variable names). There is also a tiny, grayed-out column on the far left that gives you the row number of the spreadsheet. The default scale of measurement for variables A, B, and C is nominal (categorical). To see this, just double-click A, B, or C. See Figure \@ref(fig:DefaultVarView) 
 
-<br/><br/>
+<br/>
 
 ```{r DefaultVarView, fig.cap="Default view of variables in jamovi.", echo=F, out.width="600px"}
 knitr::include_graphics("images/BasicDataPrep/DefaultVarView.png")
 ```
 
-<br/><br/>
+<br/>
 
 As long as you're doing this, you might as well save this file as YOUR.LASTNAME_YOUR.FIRSTNAME_jamoviPractice.omv,^[.omv being the native file extension for jamovi files] or something like that.
 
@@ -34,13 +34,13 @@ The next box down, **Description**, is an alternative description for the variab
 
 Below that on the left, you'll see a vertical series of 4 buttons. These define the scale of measurement that the variable represents. We only use **nominal**, **continuous**, and **ID** in this class. Implicit in **continuous** are two levels: **interval** and **ratio**. Using the drop-down box to the right of the button selections, interval data should technically be coded as **integer**, and ratio data should be coded as **decimal**. See Figure \@ref(fig:EighthGradeAggr) for an example.
 
-<br/><br/>
+<br/>
 
 ```{r EighthGradeAggr, fig.cap="Re-labeling and changing the scale of measurement.", echo=F, out.width="600px"}
 knitr::include_graphics("images/BasicDataPrep/EighthGradeAggr.png")
 ```
 
-<br/><br/>
+<br/>
 
 The **ID** variable is just an anonymous substitute for a participant's name. It's either a pseudonym (a fake name, like *AAB* or *Los Angeles* or *frogma*) or a number, but for analysis purposes, it's just a unique label, not a number.
 
@@ -50,13 +50,13 @@ This is where you'll need to double-click the box for 0, and type over it with *
 
 In Figure \@ref(fig:SexZeroOneVar) below, we've created the variable **Sex**, made it **Nominal**/**Integer** and coded 0s as **male** and 1s as **female**.^[Yes, we reversed them from how they were described above, just to show you that the number-label associations are wholly arbitrary]
 
-<br/><br/>
+<br/>
 
 ```{r SexZeroOneVar, fig.cap="Assigning values to factors.", echo=F, out.width="600px"}
 knitr::include_graphics("images/BasicDataPrep/SexZeroOneVar.png")
 ```
 
-<br/><br/>
+<br/>
 
 Now that that's done, if you start entering the real data manually in the spreadsheet, one of three things will happen.
 
@@ -68,29 +68,29 @@ jamovi can deal with both (2) and (3) above for analysis, but method (3) is not 
 
 That said, when using method (2), it's a good idea to make sure that in the drop-down menu under *Data type* you choose *text*. Otherwise, you will get some confusing (albeit harmless) statistics when carry out *descriptives* (the topic of Chapter \@ref(DescriptiveStats)).
 
-<br/><br/>
+<br/>
 
 ```{r BadLevelThruMisspell, fig.cap="Relative difficulty in seeing a bad level when the data is entered as text.", echo=F, out.width="600px"}
 knitr::include_graphics("images/BasicDataPrep/BadLevelThruMisspell.png")
 ```
 
-<br/><br/>
+<br/>
 
 In contrast, if you make a mistake and enter a 2 instead of a 0 or a 1 for **Sex**, you'll see a 2 there. It will stand out like a sore thumb. See Figure \@ref(fig:BadLevelThruNumber) for an example of this.
 
-<br/><br/>
+<br/>
 
 ```{r BadLevelThruNumber, fig.cap="Relative ease in seeing a bad level when the data is entered as a number.", echo=F, out.width="600px"}
 knitr::include_graphics("images/BasicDataPrep/BadLevelThruNumber.png")
 ```
 
-<br/><br/>
+<br/>
 
 You can find a practice exercise for this section below: *Practice Exercise* \@ref(PracManualing).
 
 Now on to something much simpler, but also much more reflective of what you will actually be doing with data: Opening existing data files.
 
-<br/><br/>
+<br/>
 
 ## Opening data files {#Opening}
 
@@ -100,20 +100,20 @@ jamovi comes with a few sample data sets pre-installed. They can be found by cli
 
 If you haven't already done so, you should also install the module for the main textbook for the class [@lsj]. To install it go to **Analyses** > **Modules (+)** > **jamovi library** > **Available** > **learning statistics with jamovi** > **Install**. As noted above, you'll find the sample data sets (all from Psychology) under $(\equiv)$ > **Open** > **learning statistics with jamovi**. The main textbook will refer to these data sets throughout the course. You can see this step in Figure \@ref(fig:OpenLsjDatasets) below. Also, in contrast to the four default data sets in jamovi, not all the data sets from @lsj are native-jamovi .omv files; some of them have different file extensions, like .csv. We'll get to that, especially under \@ref(Importing). Finally, you should also install the module called **R data sets**, as you will work with one or more of these in this lab manual.
 
-<br/><br/>
+<br/>
 
 ```{r OpenLsjDatasets, fig.cap="Finding sample spreadsheet data in jamovi.", echo=F, out.width="600px"}
 knitr::include_graphics("images/BasicDataPrep/OpenLsjDatasets.png")
 ```
 
-<br/><br/>
+<br/>
 
 ``` {block2, type = ".rmdnote"}
 **NOTE**: jamovi will keep opening up new windows as you open new data sets. You can close any one of them by clicking the red button in the upper, left-hand side of the jamovi window (on a Mac) or the x symbol in the upper, right-hand side (on Windows).^[We are not yet sure how this is done in Linux or ChromeOS yet] However, if you want to keep jamovi up and running, make sure you have at least one other jamovi window active. The easiest way to do this is to go to $(\equiv)$ > **New** before you close the data set you are working on. Otherwise, you will need to re-start jamovi. Much like SPSS, jamovi assumes that if you do not have a data file open, then you do not want software program open either.^[One trick is just to keep a blank, *New* data file open at all times. This is useful if you keep accidentally closing jamovi down.]
 
 ```
 
-<br/><br/>
+<br/>
 
 ## Importing data {#Importing}
 
@@ -123,7 +123,7 @@ There are a variety of ways that this might take place, but two of them are far 
 - importing data from a proprietary data format
 - importing data from a non-proprietary delimited text file
 
-<br/><br/>
+<br/>
 
 A proprietary data format is primarily one generated by commercial software. For instance, SPSS stores its data in .sav files. SAS stores its data in .sas7bdat files^[Yes, that's the weirdest file extension in the history of computers.] and Stata in .dta files. Usually, jamovi will open these directly as it uses powerful R packages, like [*haven*](https://cran.r-project.org/web/packages/haven/index.html), that know how to open these files. Just click $(\equiv)$ > **Open** > **This PC** > **Browse** and find the file that you need to open (it needs to be downloaded on your computer already).
 
@@ -131,13 +131,13 @@ But the most convenient and reliable way to transfer data from computer to compu
 
 We converted the data set from @lsj called *Clinical Trial* into both comma-delimited and tab-delimited files. When you open them up with a simple text editor like *Notepad* or *Text Edit*, you'll see something like Figure \@ref(fig:ClinicalTrialAsCsv) below. It is in raw, plain-text, comma-separated (.csv) format on the left, and in its tab-delimited format (.txt or .tsv) on the right.^[You can't see the tabs because tabs aren't normally meant to be seen by computer users, but rest assured: they're there.]
 
-<br/><br/>
+<br/>
 
 ```{r ClinicalTrialAsCsv, fig.show="hold", out.width="50%", fig.align="left", fig.cap="Examples of comma-delimited (left) and tab-delimited (right) files", echo=F}
 knitr::include_graphics(c("images/BasicDataPrep/ClinicalTrialAsCsv.png", "images/BasicDataPrep/ClinicalTrialAsTab.png"))
 ```
 
-<br/><br/>
+<br/>
 
 jamovi opens delimited text files just as easily as proprietary data files. In Excel, there's generally a wizard that you have to get through to import delimited files. In contrast, jamovi imports them straight up, no wizards.
 
@@ -145,19 +145,19 @@ Just click $(\equiv)$ > **Open** > **This PC** > **Browse** and find the delimit
 
 Beware however, that jamovi will sometimes import defective delimited files and assume that they're not defective. This results in a bad data set. You often need to check your visually. If you data set is large, then you can use descriptive statistics (covered in Chapter \@ref(Descriptive Stats)) to find evidence of this kind of problem. To illustrate this, we deliberately distorted a file containing reaction times, and then imported it through jamovi. In this case, we removed the commas from the very last line of data. The results can be seen below in Figure \@ref(fig:BadReactionTimeImport) below.
 
-<br/><br/>
+<br/>
 
 ```{r BadReactionTimeImport, fig.cap="jamovi importing a bad comma-delimited file, where the final line of data had its commas removed.", echo=F, out.width="600px"}
 knitr::include_graphics("images/BasicDataPrep/BadReactionTimeImport.png")
 ```
 
-<br/><br/>
+<br/>
 
 As you can see, there were supposed to be 3 columns of data: an *ID* variable (*participant*), a *condition* variable, and the dependent (outcome) variable *rt* (reaction time). But since the commas were removed from the last line, jamovi thought that all three variables were really just one, and assigned that value to *participant*. You should always be on the lookout for such data-import errors in your own work.
 
 For practice on importing data, go to *Practice Exercise* \@ref(PracticeImporting), but you might want to wait until you read the next section, as well as do the practice exercise for exporting. The reason is that you will be importing data that you export (from Google Sheets, or manually) for those exercises.
 
-<br/><br/>
+<br/>
 
 ## Exporting data {#Exporting}
 
@@ -165,23 +165,23 @@ All statistical software (e.g., SPSS, SAS), all spreadsheet programs (e.g., Exce
 
 The comma-delimited file usually has a specific .csv extension (meaning "**c**omma-**s**eparated **v**alues"). Tab-delimited files use a .tsv or just .txt extension.
 
-<br/><br/>
+<br/>
 
-```{block, type="rmdnote"}
+```{block2, type="rmdnote", echo=T}
 **NOTE**: There is something you should understand about these delimited text files however. This is ultimately not that important, but may help to eliminate some confusion down the road. Delimited text files are non-proprietary (not owned by any particular company). So like we said, just about any software can open them and read them as they are supposed to be read. 
 
-Moreover, the file extensions that go with them (e.g., .csv, .tsv) are simply informal user conventions that serve as "clues" for your computer and/or software as to how to open them. So a .csv extension tells your software that it's likely (but not assured) that this is a delimited file with commas acting as delimiters. The less-universal .tsv extension tells your software to guess similarly, but to expect tabs instead. 
+Moreover, the file extensions that go with them (e.g., .csv, .tsv) are simply informal user conventions that serve as "clues" for your computer and/or software as to how to open them. So a .csv extension tells your software that it is likely (but not assured) that this is a delimited file with commas acting as delimiters. The less-universal .tsv extension tells your software to guess similarly, but to expect tabs instead. 
 
-All this helps explain a common phenomenon that many novice data analysts find confusing. Specifically, many data-collection software programs say that they will export to Microsoft Excel, and do so with an .xls file extension. Then when you open it with Excel (which your computer will probably do automatically if Excel is installed), Excel tells you that it's not actually an Excel file after all, and that you have to import it as a delimited text file. 
+All this helps explain a common phenomenon that many novice data analysts find confusing. Specifically, many data-collection software programs say that they will export to Microsoft Excel, and do so with an .xls file extension. Then when you open it with Excel (which your computer will probably do automatically if Excel is installed), Excel tells you that it is not actually an Excel file after all, and that you have to import it as a delimited text file. 
 
-This is confusing until you realize that what these software programs are doing is creating a valid, text-delimited file, but arbitrarily pasting an .xls extension to the end of of the file name. The extension tells your computer to use Excel specifically to open it (and Excel can do so), but since it's not actually a proprietary Excel file, Excel will instead sent it through a delimited-file import procedures. 
+This is confusing until you realize that what these software programs are doing is creating a valid, text-delimited file, but arbitrarily pasting an .xls extension to the end of of the file name. The extension tells your computer to use Excel specifically to open it (and Excel can do so), but since it is not actually a proprietary Excel file, Excel will instead sent it through a delimited-file import procedures. 
 
 You can actually try this trick yourself by clicking any delimited text file that you have created, and changing the extension to .xls. Then double-click it. If you have Excel installed, your computer will probably call up Excel to open it, but then Excel will have to import it.
 
-Presumably, these data-collection software programs do this so that people don't have to figure out which program to use to open these files. This is useful for novices, but  a little annoying for experts.
+Presumably, these data-collection software programs do this so that people do not have to figure out which program to use to open these files. This is useful for novices, but  a little annoying for experts.
 ```
 
-<br/><br/>
+<br/>
 
 One thing you want to make sure of is that you don't have any of these special delimiters ***inside*** the values of your delimited file. This will split up your data in places you don't want it to split. For this reason, linguists, for instance, often avoid comma-delimited files since a lot of language data has commas in it (e.g., passages scraped from the Web). Linguists would prefer something like tabs, or something never used in natural text, like pipes.^[The pipe is the $(\mid)$ character, which is on the same key as the backslash $(\backslash)$. This key is located above your computer's *enter*/*return* key and below the *delete*/*backspace* key at the upper-right of the [QWERTY](https://en.wikipedia.org/wiki/QWERTY) keyboard layout (the default in the US)]
 
@@ -189,13 +189,13 @@ You also have to be careful receiving data from countries that use commas to ind
 
 For practice on this, go to Practice Exercise \@ref(PracticeExporting). And don't forget to follow that exercise with the practice exercise on importing data (*Practice Exercise* \@ref(PracticeImporting)).
 
-<br/><br/>
+<br/>
 
 ## Manipulating data {#ManipulatingData}
 
 The three main types of data manipulation that you can carry out in jamovi are *transforming*, *computing*, and *filtering*. We will only cover the latter two here. Data *transforming* in jamovi is for creating formulas that can be applied to multiple variables. It is a bit beyond the scope of this class, but a nice tutorial from datalab.cc can be found [here](https://datalab.cc/tools/jamovi) as video #15.
 
-<br/><br/>
+<br/>
 
 ### Computing new variables {#ComputingNewVariables}
 
@@ -205,7 +205,7 @@ We are going to show you three different ways to compute new variables in this s
 - Generating random variables
 - Creating data transformations
 
-<br/><br/>
+<br/>
 
 #### Recoding new variables {#RecodingNewVariables}
 
@@ -217,19 +217,19 @@ We started by going to the *Data* tab in jamovi, double-clicking the header of a
 
 You should now have something that looks similar to Figure \@ref(fig:ChangingLevelsOfClassLevelNoFormula) below.
 
-<br/><br/>
+<br/>
 
 ```{r ChangingLevelsOfClassLevelNoFormula, fig.cap="Initial window when computing a new variable based on an old variable", echo=F, out.width="600px"}
 knitr::include_graphics("images/BasicDataPrep/ChangingLevelsOfClassLevelNoFormula.png")
 ```
 
-<br/><br/>
+<br/>
 
 To create the new variable, we needed a nested **if-then-else** formula.^[This is very common. Microsoft Excel also allows you to do this. In fact, the syntax is identical in Excel as the form is nearly universal.] We could have clicked the $f_{x}$ drop-down box and find the *IF()* function under the *Logical:* heading. But we needed something more complex. The syntax for what we needed is below. We just typed this in to the box next to $f_{x}$.
 
 >IF(ClassLevel=='Freshman','Underclassman',IF(ClassLevel=='Sophomore','Underclassman',IF(ClassLevel=='Junior','Upperclassman',IF(ClassLevel=='Senior','Upperclassman','error'))))
 
-<br/><br/>
+<br/>
 
 You can interpret this formula in plain English as follows:
 
@@ -245,24 +245,24 @@ You can interpret this formula in plain English as follows:
 
 After we did this, jamovi looked like the Figure \@ref(fig:ChangingLevelsOfClassLevelWithFormula) below.
 
-<br/><br/>
+<br/>
 
 ```{r ChangingLevelsOfClassLevelWithFormula, fig.cap="Computed-variable window after the nested if-then-else formula was added.", echo=F, out.width="600px"}
 knitr::include_graphics("images/BasicDataPrep/ChangingLevelsOfClassLevelWithFormula.png")
 ```
 
-<br/><br/>
+<br/>
 
 Note the new values that populated the *ClassLevelStatus* variable in the spreadsheet.
 
 What's going on is that the basic formula is if-then-else, but the *else* part of the formula can be replaced with another *if* statement. This is nesting, and it is very, very useful for recoding variables.
 
-<br/><br/>
+<br/>
 
-```{block, type="rmdnote"}
-**NOTE**: You might be wondering why we need two equals signs (==) in the computed variable, and not just a single equals sign (=). Recall that jamovi is based on R. In R, two equals signs are used for evaluating particular values. In this case, it can be interpreted as "where it's equal to." In contrast, a single equals sign (=) is used for various other, common operations, including the creation of variables, the assignment of arguments to functions, etc.
+```{block2, type="rmdnote", echo=T}
+**NOTE**: You might be wondering why we need two equals signs (==) in the computed variable, and not just a single equals sign (=). Recall that jamovi is based on R. In R, two equals signs are used for evaluating particular values. In this case, it can be interpreted as "where it is equal to." In contrast, a single equals sign (=) is used for various other, common operations, including the creation of variables, the assignment of arguments to functions, etc.
 
-In addition, the exclamation mark (!) means **NOT** in R and jamovi. So != means "where it is **not** equal to." Thus, the equivalent for our purposes would be =ClassLevel != 'Freshman' (i.e., "if the value is NOT 'freshman, then...").
+In addition, the exclamation mark (!) means **NOT** in R and jamovi. So != means "where it is **not** equal to." Thus, the equivalent for our purposes would be =ClassLevel != 'Freshman' (i.e., "if the value is NOT 'freshman', then...").
 
 For numerical variables you can also use the symbols < for "less than", > for "greater than", <= for "less than or equal to" etc.
 
@@ -271,7 +271,7 @@ Your main textbook [@lsj] covers this in Section 6.2.
 You might also have noticed the weird sequence of closing parentheses at the end of the formula. This is due to the fact that each IF() statement must have both opening and closing parentheses. The open throughout the formula, but only close at the end. They are actually embedded, like If(IF(IF(IF))), similar to those Russian dolls.
 ```
 
-<br/><br/>
+<br/>
 
 #### Generating random data {#Randoming}
 
@@ -279,39 +279,39 @@ As noted above, there is a special case of manual data entry that you might find
 
 Go to the **Data** tab. Then create a new variable by double-clicking at the top of a blank column. You will see a small menu appear with **NEW DATA VARIABLE**, **NEW COMPUTED VARIABLE**, and **NEW TRANSFORMED VARIABLE**. See Figure \@ref(fig:NewVarIcons), below, for a depiction of what you should see.
 
-<br/><br/>
+<br/>
 
 ```{r NewVarIcons, fig.cap="Options for creating new variables.", echo=F, out.width="400px"}
 knitr::include_graphics("images/BasicDataPrep/NewVarIcons.png")
 ```
 
-<br/><br/>
+<br/>
 
 Click the middle one: **NEW COMPUTED VARIABLE**. Give the new variable an appropriate name. The example we have chosen **Random Normal**, which means that it's going to result in numbers generated randomly from a normal distribution that we define with a user-specified mean and standard deviation. There is a small box labeled $(f~x~)$. Click it and scroll down to the bottom of the **Functions** window where it finally says **Simulation**. See Figure \@ref(fig:RandomNormal1), below, for a depiction of what you should see.
 
-<br/><br/>
+<br/>
 
 ```{r RandomNormal1, fig.cap="Finding the formula for a random normal distribution", echo=F, out.width="600px"}
 knitr::include_graphics("images/BasicDataPrep/RandomNormal1.png")
 ```
 
-<br/><br/>
+<br/>
 
 Double-click **NORM**, and then look in the box to the right of $f_{x}$, and you'll see the following formula: =NORM(). Between the parentheses, type in two numbers separated by a comma. The number to the left of the comma will be the mean of your randomly generated data, and the number to the right of the comma will the standard deviation of that data. For illustration purposes (see below), we have chosen the mean to be 65, and the standard deviation to be 16. You can choose whatever values you want. Press the ENTER/RETURN key.
 
 Once you do that, start typing in numbers (or names, or whatever) in one of the other default columns (you can rename it "ID" later, if you were so interested). You can also skip rows (as we did to illustrate). Then look what happens under the variable **Random Normal**. You should see random numbers being put into the cells between the topmost row with a value, and the bottom-most row with a value. These are randomly generated by jamovi. The results of this little simulation here can be seen below in Figure \@ref(fig:RandomNormal2) below.
 
-<br/><br/>
+<br/>
 
 ```{r RandomNormal2, fig.cap="Inserting the formula and observations for a random, normal distribution with a mean of 65, and a standard deviation of 16.", echo=F, out.width="600px"}
 knitr::include_graphics("images/BasicDataPrep/RandomNormal2.png")
 ```
 
-<br/><br/>
+<br/>
 
 You will get some actual practice doing this in a later exercise (Section \@ref(PairedSamplesChicoAdvancedData)).
 
-<br/><br/>
+<br/>
 
 #### Data transformations {#DataTransformations}
 
@@ -321,7 +321,7 @@ For instance, reaction-time data is almost always skewed positively. The reason 
 
 A solution that is typically applied in reaction-time analyses is the log transformation (or a square-root transformation, or a reciprocal transformation; there are several transformations available).
 
-<br/><br/>
+<br/>
 
 ##### Log transformations {#LogTransformations}
 
@@ -329,7 +329,7 @@ If you've forgotten what logarithms are, they are (in base 10) the value you nee
 
 Below is some raw reaction-time data.^[courtesy of the R package *trimr*.] Our only purpose here is to show you the positive skew in a histogram, and how applying a logarithm to the data brings in the skew.
 
-<br/><br/>
+<br/>
 
 ```{r, echo=FALSE, message=FALSE, warning=FALSE}
 library(trimr)
@@ -342,7 +342,7 @@ detach("package:trimr", unload=TRUE)
 write.table(dat,"datasets/BasicDataPrep_RTdata.csv", sep=",", row.names = FALSE)
 ```
 
-<br/><br/>
+<br/>
 
 ```{r, echo=FALSE, message=FALSE, warning=FALSE}
 jmv::descriptives(
@@ -357,7 +357,7 @@ jmv::descriptives(
     max = FALSE)
 ```
 
-<br/><br/>
+<br/>
 
 Clearly, the reaction-time data is extremely skewed, with some reaction times as high as 8,000 ms (8 seconds!).
 
@@ -373,17 +373,17 @@ Just to the right $f_{x}$ symbol, you can see a small down triangle $(\blacktria
 
 Most of what we have described above appears in Figure \@ref(fig:Log10TransformParameters) below.
 
-<br/><br/>
+<br/>
 
 ```{r Log10TransformParameters, fig.cap="Parameter settings to apply a log transformation (base 10) to positively skewed data.", echo=F, out.width="600px"}
 knitr::include_graphics("images/BasicDataPrep/Log10TransformParameters.png")
 ```
 
-<br/><br/>
+<br/>
 
 Now, we can create of histogram of the new, logged reaction-time variable. It is still slightly skewed to the right, but it is much better than before.
 
-<br/><br/>
+<br/>
 
 ```{r, echo=FALSE, warning=FALSE, message=FALSE}
 dat$log10_rt <- log10(dat$rt)
@@ -402,7 +402,7 @@ jmv::descriptives(
     max = FALSE)
 ```
 
-<br/><br/>
+<br/>
 
 ##### *z*-scores {#ZScores}
 
@@ -416,13 +416,13 @@ Standardizes scores (*z*-scores) are kind of the same thing. Whereas before you 
 
 In jamovi, we calculate *z*-scores by clicking on a new, blank column, selecting $f_{x}$ *NEW COMPUTED VARIABLE*, naming the new variable something like *log_rt_zscores* clicking the $f_{x}$ box and scrolling down to the function *Z*, double-clicking it, followed by double-clicking *log10_rt* (under the right-hand column *Variables*) to place it in between the parentheses (or just typing the variable name there). This can be seen in Figure \@ref(fig:CalculatingZScoresStart) below.
 
-<br/><br/>
+<br/>
 
 ```{r CalculatingZScoresStart, fig.cap="Parameter settings to calculate z-scores on the log transformation of the reaction-time data.", echo=F, out.width="600px"}
 knitr::include_graphics("images/BasicDataPrep/CalculatingZScoresStart.png")
 ```
 
-<br/><br/>
+<br/>
 
 After pressing <enter> the *z*-scores are calculated for that column. It's that simple.
 
@@ -430,7 +430,7 @@ Now let's go back to the problem of extreme observations (i.e., outliers).
 
 A conservative approach to filtering extreme observations is to remove observations with *z*-scores more extreme than 2 or 2.5 (positive or negative). These correspond to values that are beyond 2 or 2.5 standard deviations away from the mean, so they comprise about 5% or 1% of the observations, respectively.^[Technically, the area below a normal curve at and beyond a *z*-score of +2 is 2.275%. We often use a *z*-score of 2 as a cutoff since it is easier than remembering 1.96, which is the *z*-score beyond which 2.5% of the observations should occur under a normal distribution. Multiplied by 2 for the two sides of the distribution, this comes to 5% of the data. The same is true of using a *z*-score of 2.5. It is easier than remembering 2.57, which, if used as a cutoff, will cut off 1% of the data (only 0.5% of the scores lie beyond 2.57 standard deviations above the mean; multiplied by two equals 1%). Ultimately, cutting off 5% or 1% of the extreme values using *z*-scores of 1.96 and 2.57, respectively, is really just as arbitrary as using *z*-scores of 2 and 2.5 to cut off 4.55% or 1.242% of the data, respectively. The results are really just about the same anyway. It's just easier to remember 2 and 2.5 than 1.96 and 2.57.] You can see why in the histogram below.
 
-<br/><br/>
+<br/>
 
 ```{r, echo=FALSE, message=FALSE, warning=FALSE}
 colors <- c(rep("red",2), rep("blue",2.5), rep("orange",3))
@@ -448,23 +448,23 @@ hstg +
   ggplot2::scale_x_continuous(breaks = seq(-3, 4, 1), lim = c(-3, 4))
 ```
 
-<br/><br/>
+<br/>
 
-```{block, type="rmdnote"}
-**NOTE**: Often, researchers don't *remove* extreme values, but rather *trim* them (or *windsorize* them). These approaches change the raw values to scores lying at the extremes, but they do not remove the observations altogether. The decision about which approach to use depends on the study at hand and the tradition of the particular field the study is in.
+```{block2, type="rmdnote", echo=T}
+**NOTE**: Often, researchers do not *remove* extreme values, but rather *trim* them (or *windsorize* them). These approaches change the raw values to scores lying at the extremes, but they do not remove the observations altogether. The decision about which approach to use depends on the study at hand and the tradition of the particular field the study is in.
 ```
 
-<br/><br/>
+<br/>
 
 Below, we will show you how to remove these outliers, after we show you how to remove observations from reluctant participants.
 
-<br/><br/>
+<br/>
 
-```{block2, type="rmdnote"}
+```{block2, type="rmdnote", echo=T}
 If you wanted to trim outliers instead of deleting them, you would need to compute a new variable as similar to what was demonstrated in Section \@ref(DataTransformations) above, not use the filtering procedure demonstrated below.
 ```
 
-<br/><br/>
+<br/>
 
 ### Filtering data {#FilteringData}
 
@@ -482,21 +482,21 @@ This was easy to do. The filter function is located under the *Data* tab. Once t
 
 >Consent=='Yes'
 
-<br/><br/>
+<br/>
 
 This filter equation could be read as follows, like a command to jamovi: "Create a new variable called "Filter 1. For this variable, look under the variable *Consent* and return **only** the rows that have *Yes* as a value in the cell; filter out the others. You can see this below in Figure \@ref(fig:FilterOnFakeNoConsents)
 
-<br/><br/>
+<br/>
 
 ```{r FilterOnFakeNoConsents, fig.cap="Results of applying filter (Consent=='Yes') to fabricated lack-of-consent data.", echo=F, out.width="600px"}
 knitr::include_graphics("images/BasicDataPrep/FilterOnFakeNoConsents.png")
 ```
 
-<br/><br/>
+<br/>
 
 In the figure (or your own jamovi file, if you are following along), note the green check marks $(\color{green}\checkmark)$ versus red *times* or *X* symbols $(\color{red}\times)$ in the new filter variable that appears on the left under the new variable called *Filter 1*. This means that any subsequent analysis of our variables would be restricted to the observations with green check marks, and those with red Xs will be excluded. That is, the analysis would only apply to people who had consented to have their data analyzed.^[If you click the "eye" symbol, it will hide the rows with $\color{red}\times$'s in them. Click it back, however, before you proceed below, assuming you are following along.]
 
-<br/><br/>
+<br/>
 
 ```{r, echo=FALSE, warning=FALSE, message=FALSE}
 FilterData <- readRDS("datasets/BasicDataPrep_FilterData.rds")
@@ -510,7 +510,7 @@ jmv::descriptives(
     max = FALSE)
 ```
 
-<br/><br/>
+<br/>
 
 If you do a simple *Descriptives* procedure (see Section \@ref(DescriptivesInJamovi) in the next chapter), you can see that N=18 (as above) since the procedure did not analyze the observations that were filtered out (i.e., #19 and #20).
 
@@ -518,17 +518,17 @@ To remove the logged reaction-time outliers described in Section \@ref(DataTrans
 
 >"-2.5 < Z(log10_rt) < 2.5"
 
-<br/><br/>
+<br/>
 
 This can be read as follows: "Filter **in** any values of log10_rt where the *z*-score of that variable is not only greater than -2.5, but also less than +2.5" (i.e., filter **out** the more extreme values that are either less than or equal to -2.5 or greater than or equal to +2.5). You can see this jamovi filter in Figure \@ref(fig:FilterOnExtremeRTs) below.
 
-<br/><br/>
+<br/>
 
 ```{r FilterOnExtremeRTs, fig.cap="Results of applying filter to extreme (logged) reaction times.", echo=F, out.width="600px"}
 knitr::include_graphics("images/BasicDataPrep/FilterOnExtremeRTs.png")
 ```
 
-<br/><br/>
+<br/>
 
 ## General note: Understanding *tidy*-ness {#GeneralNoteUnderstandingTidyness}
 
@@ -544,7 +544,7 @@ The briefest description is that in a tidy data set, all of the following are tr
 - all rows are observations (or cases): people, rats, etc.; and 
 - each cell is one datum^[It's not usually recommended nowadays to use the singular form for *data* (lest you sound pedantic or ostentatious, since it really has fallen out of normal usage), but in this case it's justified.] for that observation on that variable, with no data summaries. 
 
-<br/><br/>
+<br/>
 
 Anything other than the tidy data structure above will usually cause problems with data analysis, something that is true across statistical-analysis software.
 
@@ -552,25 +552,25 @@ You will not have to worry too much about having non-tidy data sets in this clas
 
 But if you find yourself handling data as a professional some day, even if you are not doing statistics yourself, please remember *tidy* data format. This is especially true if you are preparing data for other data scientists (e.g., statisticians) to use. They will appreciate your efforts to make their lives easier.
 
-<br/><br/>
+<br/>
 
 ## Outside help on basic data preparation {#OutsideHelpOnBasicDataOperations}
 
 [datalab.cc](https://datalab.cc/tools/jamovi) has a general introduction to this part of data analysis. Go to video #9 (*Wrangling Data*) to see this. As noted previously, at Texas A&M, you can find it under the *LinkedIn Learning* tutorials through the *Howdy!* portal.
 
-<br/><br/>
+<br/>
 
 ### Entering and adjusting data {#OutsideHelpOnEnteringData}
 
 You should know that for a good overview of what is covered above, you can go to [datalab.cc's videos](https://datalab.cc/tools/jamovi) #10 and #12 (**Entering data** and **Variable types & labels**, respectively).
 
-<br/><br/>
+<br/>
 
 ### Opening data {#OutsideHelpOnOpeningData}
 
 For further orientation as to how to do what we just explained above, watch the video from the [*Sample data* tutorial from datalab.cc](https://datalab.cc/tools/jamovi). Scroll to video #4.
 
-<br/><br/>
+<br/>
 
 ### Importing data {#OutsideHelpOnImportingData}
 
@@ -578,7 +578,7 @@ Here is the datalab.cc video tutorial on [importing data](https://datalab.cc/too
 
 Your main textbook [@lsj] also covers this in Sections 3.4 and 3.5.
 
-<br/><br/>
+<br/>
 
 ### Recoding variables {#OutsideHelpOnRecodingVariables}
 
@@ -592,13 +592,13 @@ The jamovi blog also covers data transforms [here](https://blog.jamovi.org/2018/
 
 Finally, your textbooks also covers this in Section 6.3.3.
 
-<br/><br/>
+<br/>
 
 ### Generating random data {#OutsideHelpOnGeneratingRandomData}
 
 There is nothing on datalab.cc. However, the jamovi blog has a short blog post on it (a mention, mostly) [here](https://blog.jamovi.org/2017/11/28/jamovi-formulas.html#simulation).
 
-<br/><br/>
+<br/>
 
 ### Transforming variables {#OutsideHelpOnTransormingVariables}
 
@@ -608,7 +608,7 @@ The jamovi blog also has a post on computed variables [here](https://blog.jamovi
 
 Finally, your main textbook [@lsj] covers this in section 3.3.2. And it covers logarithms and exponentials in Section 6.4.
 
-<br/><br/>
+<br/>
 
 ### Filtering data {#OutsideHelpOnFilteringData}
 
@@ -618,7 +618,7 @@ The jamovi blog [@jamoviblog] also has an introduction to filters [here](https:/
 
 Your main textbook [@lsj] covers this in Section 6.5.
 
-<br/><br/>
+<br/>
 
 ## Practice Exercises {#BasicDataPreprationPracticeExercises}
 
@@ -626,13 +626,13 @@ Your main textbook [@lsj] covers this in Section 6.5.
 
 Here is some practice, Exercise \@ref(BasicDataOperations)A, *Manually Entering data*.
 
-<br/><br/>
+<br/>
 
 #### The data
 
 The textbook by @lsj includes a data set about a clinical trial involving 18 participants divided into two treatment groups (Cognitive Behavioral Therapy [CBT] vs. no therapy [no.therapy]). Within each of these groups of nine, three had been taking a drug called **anxifree**, three had been taking a drug called **joyzepam**, and three a placebo. The outcome variable is **mood.gain**, which is some measure of improvement of mood over some time period. The complete data set is displayed below Table \@ref(tab:tables-ClinTrial). You will have to use the scroll bar to see the entire data set.
 
-<br/><br/>
+<br/>
 
 ```{r tables-ClinTrial, echo=F , message=F}
 ClinTrial <- readRDS("datasets/DescStats_ClinicalTrial.rds")
@@ -641,99 +641,99 @@ knitr::kable(ClinTrial, caption="A clinical-trial data set.") %>%
   scroll_box(width = "500px", height = "200px")
 ```
 
-<br/><br/>
+<br/>
 
 Your task is to enter this data manually into a new spreadsheet in jamovi. You'll need to assign levels to the numbers you use for the two nominal variables. Do not enter them as text.
 
 First, open a new spreadsheet in jamovi by clicking $(\equiv)$ > **New**. Then save it with a reasonable name, like *P301.Exercise_*\@ref(PracManualing)*.omv*.
 
-<br/><br/>
+<br/>
 
 #### The **ID** variable {#PracticeManuallingID}
 
 Second, double-click on the variable named **A**, and change the name to **ID**. You can provide a description if you like (this is good for remembering what your variables mean). Click **ID** as the variable type, and leave the box below that as **Integer**. Finally, type in 1-18 in the first 18 rows, respectively. You should have something like the results depicted in Figure \@ref(fig:PracEnterID), below.
 
-<br/><br/>
+<br/>
 
 ```{r PracEnterID, fig.cap="Entering an ID variable.", echo=F, out.width="600px"}
 knitr::include_graphics("images/BasicDataPrep/PracEnterID.png")
 ```
 
-<br/><br/>
+<br/>
 
 #### The **drug** variable {#PracticeManuallingDrug}
 
 Third, prepare the variable **drug** with its three levels: **anxifree**, **joyzepam**, and **placebo**. Do this by double-clicking on the default variable **B**, and renaming it **drug**. The data type should remain **nominal**. Associate each of the levels of the **drug** variable with an integer, associations that will be arbitrary. We have chosen 0 for **placebo**, 1 for **anxifree**, and 2 for **joyzepam** (but you can use whatever integers to refer to whatever levels you like, as long as you don't repeat them within the same variable). Then, for the first three rows (IDs 1-3) under **drug**, type in 0; for IDs 4-6 type in 1; and for IDs 7-9, type in 2. You should see something like Figure \@ref(fig:PracEnterDrug1) below.
 
-<br/><br/>
+<br/>
 
 ```{r PracEnterDrug1, fig.cap="Entering the drug variable.", echo=F, out.width="600px"}
 knitr::include_graphics("images/BasicDataPrep/PracEnterDrug1.png")
 ```
 
-<br/><br/>
+<br/>
 
 Once you have done this, you can replace the numbers in the **Levels** box with the names of the levels. Start with selecting 0, and typing over it with **placebo**. After this first step, you should see something like Figure \@ref(fig:PracEnterDrug2) below.
 
-<br/><br/>
+<br/>
 
 ```{r PracEnterDrug2, fig.cap="Start assigning labels to integer levels in a nominal variable.", echo=F, out.width="600px"}
 knitr::include_graphics("images/BasicDataPrep/PracEnterDrug2.png")
 ```
 
-<br/><br/>
+<br/>
 
 Then, change overwrite 1 with **anxifree** and 2 with **joyzepam**. Click anywhere in the spreadsheet and you should see all the numbers disappear, replaced by the appropriate levels. Your results should look like what's depicted in Figure \@ref(fig:PracEnterDrug3).
 
-<br/><br/>
+<br/>
 
 ```{r PracEnterDrug3, fig.cap="Complete assigning labels to integer levels in a nominal variable.", echo=F, out.width="600px"}
 knitr::include_graphics("images/BasicDataPrep/PracEnterDrug3.png")
 ```
 
-<br/><br/>
+<br/>
 
 The last thing you need to do for the variable **drug** is type in the last nine integer values under **drug** (do **not** type in labels at this point). In this case, the same sequence of integers is repeated as above: that is, three 0s, followed by three 1s, and then three 2s. As you do this, you should see the labels fill in automatically, as in Figure \@ref(fig:PracEnterDrug4) below.
 
-<br/><br/>
+<br/>
 
 ```{r PracEnterDrug4, fig.cap="Fill in the rest of the values under the variable.", echo=F, out.width="400px"}
 knitr::include_graphics("images/BasicDataPrep/PracEnterDrug4.png")
 ```
 
-<br/><br/>
+<br/>
 
 #### The **therapy** variable {#PracticeManuallingTherapy}
 
 Fourth, prepare the variable **therapy**. This is another nominal variable. There are two levels for the variable: **no.therapy** and **CBT** (which stands for **Cognitive Behavioral Therapy**). We will leave doing this to you since it is straightforwardly the same procedure as for **drug**, above. But pay close attention to Table \@ref(tab:tables-ClinTrial).
 
-<br/><br/>
+<br/>
 
 #### The **mood.gain** variable {#PracticeManuallingMoodGain}
 
 Fifth, you need to enter the data for **mood.gain**. When you click this fourth, blank column, a little menu with three options will appear (jamovi only provides you with 3 default variables). Choose **NEW DATA VARIABLE**. Rename **D** (or whatever letter you get there) with **mood.gain**. Then click the **Continuous** button, because this variable is going to be on an interval scale. Under the **Data type** pull-down menu, switch the variable from **Integer** to **Decimal**. At this point, you can just enter the data. Do so carefully, however, as the data are different for each row. And double-check your work. When you're finished, you should see something like what's depicted in Figure \@ref(fig:PracEnterMoodGain) below.
 
-<br/><br/>
+<br/>
 
 ```{r PracEnterMoodGain, fig.cap="Entering the mood.gain variable manually.", echo=F, out.width="600px"}
 knitr::include_graphics("images/BasicDataPrep/PracEnterMoodGain.png")
 ```
 
-<br/><br/>
+<br/>
 
 **You're done!! with Practice Exercise \@ref(#PracManualing)**
 
-<br/><br/>
+<br/>
 
 Next you will work on importing and exporting data, but in reverse order. That is, we are first going to export data from a spreadsheet, which corresponds above to section \@ref(Exporting) Then we will work on importing the data we just exported, which is covered above in Section \@ref(Importing).
 
-<br/><br/>
+<br/>
 
 ### Practice exporting {#PracticeExporting}
 
 Here is some practice on Exporting, *Practice Exercise* \@ref(BasicDataOperations)B, starting with entering data into a spreadsheet.
 
-<br/><br/>
+<br/>
 
 #### Spreadsheet data {#PracEnterGoogleSheetData}
 
@@ -741,11 +741,11 @@ A great many researchers end up with their data stored somehow in a spreadsheet.
 
 So to mimic this all-too-common experience, you need to open up a spreadsheet in [Google Sheets](https://www.google.com/docs/about/). The link takes you to **Google Docs** which includes **Google Sheets**. Note, you will need to create a Google account if you do not have one already. If you are a student at Texas A&M, you already have this, and we require you to use your university Google account. You can find it [here](https://google.tamu.edu/), where you log in to **Google Drive**.
 
-```{block, type="rmdwarning"}
+```{block2, type="rmdwarning", echo=T}
 **WARNING**: When you log in to your university Google account, it is wise to log ***OUT*** of any other non-university Google accounts you may have. You will lose functionality if you are connected to a private Google account simultaneously. This apparently has something to do with the fact that **Google Apps for Texas A&M** is compliant with the [Family Educational Rights and Privacy Act](https://studentprivacy.ed.gov/audience/parents-and-students) (FERPA), whereas the private Google accounts are not.
 ```
 
-<br/><br/>
+<br/>
 
 Under **Drive** in the upper left, click the **+ New** icon to create a new document in your drive, and select **Google Sheets**. You should see a new Google Sheet open up.^[It is essentially the same as *Microsoft Excel* (commercial) or *Libre Office Calc* (free), among others.] You can change the name in the upper left from *Untitled spreadsheet* to something like *PracticeExportingDelimitedFiles* (or something like that). Just click where it says *Untitled Spreadsheet* and type over it with the new name (e.g., *Practice_Exercise_@\ref(PracticeExporting)*. It's automatically saved in your Google Drive.
 
@@ -753,33 +753,33 @@ In cell A1 (the upper-right-most cell in the grid), type **ID**. Move over one c
 
 Let's make 6 rows of data. For **ID**, type in 1-6 in cells A2 to A7, respectively. Under **Sex** type in a "1" in cells B2 to B4, and a "2" in cells B5 to B7. Under **Aggression** type in some random values on a scale from 1 to 7. See Figure \@ref(fig:GoogleSheetManualData) below for an example of how we did this.^[To do this in a non-thinking way, a function in Google Sheets called [RANDBETWEEN](https://cloud.google.com/dataprep/docs/html/RANDBETWEEN-Function_118228858) was used. You can see this in the formula bar just above the column references. The exact function is =RANDBETWEEN(1,7), which means: "Produce a random number (integer) between the values of 1 and 7." It was then copy-and-pasted from C2 to C3 through C7.]
 
-<br/><br/>
+<br/>
 
 ```{r GoogleSheetManualData, fig.cap="Entering data manually into Google Sheets.", echo=F, out.width="600px"}
 knitr::include_graphics("images/BasicDataPrep/GoogleSheetManualData.png")
 ``` 
 
-<br/><br/>
+<br/>
 
 #### Exporting to a delimited file {#PracExportGoogleSheetData}
 
 The next step is to export the data from the Google Sheet. This is extremely easy. Simply click **File** > **Download as** > **Comma-separated values (.csv, current sheet)**. You can see an illustration of this below in Figure \@ref(fig:GoogleSheetExportData)
 
-<br/><br/>
+<br/>
 
 ```{r GoogleSheetExportData, fig.cap="Exporting data into .csv format from Google Sheets.", echo=F, out.width="600px"}
 knitr::include_graphics("images/BasicDataPrep/GoogleSheetExportData.png")
 ```
 
-<br/><br/>
+<br/>
 
 Do this, and, when prompted, save it to somewhere on the same computer where jamovi is located. ***And remember where you saved it!***
 
-<br/><br/>
+<br/>
 
 You could also bypass all this exporting from a spreadsheet program by just entering the data manually into a plain text file, and appending the appropriate file extension. No one does this, but it is useful for illustration. In fact, you can try this yourself by copying and pasting the text below into a program like TextEdit (on a Mac) or Notepad (on a PC), and saving it as a plain-text file with the appropriate file extension. Here is how you would do that (using TextEdit's menu as the example [Notepad should be similar]):
 
-<br/><br/>
+<br/>
 
 1. Select the four lines of text below, and then copy it to the clipboard:  
 
@@ -788,7 +788,7 @@ You could also bypass all this exporting from a spreadsheet program by just ente
 "Gandalf",32,1
 "Boromir",44,1  
 
-<br/><br/>
+<br/>
 
 2. Open up TextEdit (or any other word processor)  
 3. Paste the clipboard material in (you could also try typing it in directly)  
@@ -796,11 +796,11 @@ You could also bypass all this exporting from a spreadsheet program by just ente
 5. Open up jamovi
 6. Go to $(\equiv)$ > *Import* and find the file you just created.
 
-<br/><br/>
+<br/>
 
 This should work as well, though you can see why you'd have to be crazy to do it for large data sets.
 
-<br/><br/>
+<br/>
 
 ### Practice importing {#PracticeImporting}
 
@@ -808,33 +808,33 @@ Here is some practice on Importing, Exercise \@ref(BasicDataOperations)C: import
 
 Open jamovi. Go to $(\equiv)$ > **Import**. Once there, optionally select **CSV** at the bottom where it gives you a drop-down menu called **Data files** (this will narrow the file search). Click the **Browse** button at the upper right, and then search for your .csv file. You should see something like what's in Figure \@ref(fig:JamoviImportStart).
 
-<br/><br/>
+<br/>
 
 ```{r JamoviImportStart, fig.cap="Starting to import a delimited file in jamovi.", echo=F, out.width="600px"}
 knitr::include_graphics("images/BasicDataPrep/JamoviImportStart.png")
 ```
 
-<br/><br/>
+<br/>
 
 Double-click it when you see it. You should see something like you see in Figure \@ref(fig:JamoviImportEnd) below.
 
-<br/><br/>
+<br/>
 
 ```{r JamoviImportEnd, fig.cap="jamovi spreadsheet after importing delimited file.", echo=F, out.width="600px"}
 knitr::include_graphics("images/BasicDataPrep/JamoviImportEnd.png")
 ```
 
-<br/><br/>
+<br/>
 
 Notice that jamovi just added the variables to the right of its default variables. Just delete the default variables by going to the **Data** tab at the top, selecting the column or any cell for variable **A**, and clicking the **Delete** icon in the menu at the top (the one with the vertical red stripe). Repeat this for variables **B** and **C**. Alternatively, you could select variable **A**, then hold down the SHIFT key, and select variable **C**. Then delete them all at once. This latter method was used in the screenshot depicted in Figure \@ref(fig:JamoviImportDeleteVars) below.^[You can also do all this *before* importing the new data.]
 
-<br/><br/>
+<br/>
 
 ```{r JamoviImportDeleteVars, fig.cap="Deleting variables in jamovi.", echo=F, out.width="600px"}
 knitr::include_graphics("images/BasicDataPrep/JamoviImportDeleteVars.png")
 ```
 
-<br/><br/>
+<br/>
 
 In addition to adding unnecessary, default variables, jamovi also doesn't recognize certain things that are critical to your analysis. It actually has no way of knowing the following, so it's understandable:
 
@@ -842,7 +842,7 @@ In addition to adding unnecessary, default variables, jamovi also doesn't recogn
 - the numbers (1 and 2) for for **Sex** should represent levels of a nominal variable (it couldn't have since the levels were never assigned); and
 - **Aggression** should be continuous.
 
-<br/><br/>
+<br/>
 
 You just change these manually. Double-click **ID** and then click the **ID** option. Use the same procedure for **Sex** as you did in Sections \@ref(PracticeManuallingDrug) and \@ref(PracticeManuallingTherapy), but assign, say "1" to **Female** and "2" to **Male** (or vice-versa; your choice). For **Aggression** use the same procedure you used in Section \@ref(PracticeManuallingMoodGain). That is, just change the variable type to **Continuous**. Keep the **Data type** as **Integer** (or make it so).
 
@@ -850,7 +850,7 @@ Make sure to save your results.
 
 **Congratulations! You're done**
 
-<br/><br/>
+<br/>
 
 <!-- ### Practice wrangling data {#PracticeWranglingData} -->
 
