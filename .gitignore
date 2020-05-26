@@ -2,5 +2,8 @@
 .Rhistory
 .RData
 .Ruserdata
+.nojeckyll
 docs/.nojeckyll
+.DS_Store
 images/.DS_Store
+css/toc.css
