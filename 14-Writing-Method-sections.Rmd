@@ -29,7 +29,7 @@ Fifth (*e* above), you will need to calculate Cronbach's Alpha. Cronbach's Alpha
 
 The last step (*f* above) will be to create the composite variable. This can be either a sum or an average (mean). What is imporant for later discussions is that you remember exactly which one you chose.
 
-So if you have not yet performed these procedures with your data, please go to sections @\ref(DescriptivesInJamovi) and \@ref(PreparingDataFinalStepsBeforeAnalysis). You will need to have done so prior to beginning the writing practice (section \@ref(PWEFM1)) and assignment (section \@ref(WritingAssignment2)) down below.
+So if you have not yet performed these procedures with your data, please go to sections \@ref(DescriptivesInJamovi) and \@ref(PreparingDataFinalStepsBeforeAnalysis). You will need to have done so prior to beginning the writing practice (section \@ref(PWEFM1)) and assignment (section \@ref(WritingAssignment2)) down below.
 
 <br/>
 

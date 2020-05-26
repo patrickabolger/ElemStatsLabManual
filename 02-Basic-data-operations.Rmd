@@ -747,7 +747,7 @@ So to mimic this all-too-common experience, you need to open up a spreadsheet in
 
 <br/>
 
-Under **Drive** in the upper left, click the **+ New** icon to create a new document in your drive, and select **Google Sheets**. You should see a new Google Sheet open up.^[It is essentially the same as *Microsoft Excel* (commercial) or *Libre Office Calc* (free), among others.] You can change the name in the upper left from *Untitled spreadsheet* to something like *PracticeExportingDelimitedFiles* (or something like that). Just click where it says *Untitled Spreadsheet* and type over it with the new name (e.g., *Practice_Exercise_@\ref(PracticeExporting)*. It's automatically saved in your Google Drive.
+Under **Drive** in the upper left, click the **+ New** icon to create a new document in your drive, and select **Google Sheets**. You should see a new Google Sheet open up.^[It is essentially the same as *Microsoft Excel* (commercial) or *Libre Office Calc* (free), among others.] You can change the name in the upper left from *Untitled spreadsheet* to something like *PracticeExportingDelimitedFiles* (or something like that). Just click where it says *Untitled Spreadsheet* and type over it with the new name (e.g., *Practice_Exercise_\@ref(PracticeExporting)*. It's automatically saved in your Google Drive.
 
 In cell A1 (the upper-right-most cell in the grid), type **ID**. Move over one cell to the right (B1). Type in the name of some two-level nominal variable, like **Sex** (we'll get to entering values below). Finally, in the third cell over (C1), type in the name of a continuous variable, like **Aggression**.
 
