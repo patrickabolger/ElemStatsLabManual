@@ -99,7 +99,7 @@ As noted above, you will need certain resources in order to achieve these goals.
 ### Fixed resources {#FixedResources}
 
 ```{block2, note-text, type='rmdnote', echo=T}
-This ***lab manual*** [@Bolger2019] was created also using the programming language R within RStudio Desktop, along with the R package [bookdown](https://bookdown.org/) [@R-bookdown], which uses [rmarkdown](https://rmarkdown.rstudio.com/) [@R-rmarkdown] to create books. Rarkdown is a [markdown language](https://en.wikipedia.org/wiki/Markdown) for R created by the popular integrated development environment ([IDE](https://en.wikipedia.org/wiki/Integrated_development_environment)) [RStudio](https://www.rstudio.com/) [@RStudio], which makes programming in R easier. Several other R packages were also used throughout. These are represented by the hexagon stickers near the top of this page
+This ***lab manual*** [@Bolger2019] was created also using the programming language R within *RStudio Desktop*, along with the R package [bookdown](https://bookdown.org/) [@R-bookdown], which uses [rmarkdown](https://rmarkdown.rstudio.com/) [@R-rmarkdown] to create books. *R Markdown* is a [markdown language](https://en.wikipedia.org/wiki/Markdown) for R created by the popular integrated development environment ([IDE](https://en.wikipedia.org/wiki/Integrated_development_environment)) [RStudio](https://www.rstudio.com/) [@RStudio], which makes programming in R easier. Several other R packages were also used throughout. These are represented by the hexagon stickers near the top of this page
 
 ``` 
 
