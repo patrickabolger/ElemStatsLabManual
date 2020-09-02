@@ -226,8 +226,9 @@ knitr::include_graphics("images/BasicDataPrep/ChangingLevelsOfClassLevelNoFormul
 <br/>
 
 To create the new variable, we needed a nested **if-then-else** formula.^[This is very common. Microsoft Excel also allows you to do this. In fact, the syntax is identical in Excel as the form is nearly universal.] We could have clicked the $f_{x}$ drop-down box and find the *IF()* function under the *Logical:* heading. But we needed something more complex. The syntax for what we needed is below. We just typed this in to the box next to $f_{x}$.
+<br/>
 
->IF(ClassLevel=='Freshman','Underclassman',IF(ClassLevel=='Sophomore','Underclassman',IF(ClassLevel=='Junior','Upperclassman',IF(ClassLevel=='Senior','Upperclassman','error'))))
+`IF(ClassLevel=='Freshman','Underclassman',IF(ClassLevel=='Sophomore','Underclassman',IF(ClassLevel=='Junior','Upperclassman',IF(ClassLevel=='Senior','Upperclassman','error'))))`
 
 <br/>
 
@@ -480,8 +481,8 @@ So then we needed to filter them out.
 
 This was easy to do. The filter function is located under the *Data* tab. Once there, we just clicked the icon labeled *Filters* (at the upper-right). The icon looks like a funnel, half full of liquid. There's a box there labeled *ROW FILTERS*. In the box under *Filter 1*, labeled $f_{x}$, we typed in the following (the first "=" sign is provided by jamovi):
 
->Consent=='Yes'
-
+<br/>
+`Consent=='Yes'`
 <br/>
 
 This filter equation could be read as follows, like a command to jamovi: "Create a new variable called "Filter 1. For this variable, look under the variable *Consent* and return **only** the rows that have *Yes* as a value in the cell; filter out the others. You can see this below in Figure \@ref(fig:FilterOnFakeNoConsents)
@@ -516,8 +517,8 @@ If you do a simple *Descriptives* procedure (see Section \@ref(DescriptivesInJam
 
 To remove the logged reaction-time outliers described in Section \@ref(DataTransformations) above, you would simple repeat the filter above, but the formula in the $f_{x}$ box would be as follows (for deleting observations greater than 2.5 standard deviations from the mean). In this case, we are not using the *z*-score column we created; rather, we're calculating the *z*-score within the filter formula.
 
->"-2.5 < Z(log10_rt) < 2.5"
-
+<br/>
+`-2.5 < Z(log10_rt) < 2.5`
 <br/>
 
 This can be read as follows: "Filter **in** any values of log10_rt where the *z*-score of that variable is not only greater than -2.5, but also less than +2.5" (i.e., filter **out** the more extreme values that are either less than or equal to -2.5 or greater than or equal to +2.5). You can see this jamovi filter in Figure \@ref(fig:FilterOnExtremeRTs) below.
@@ -783,10 +784,10 @@ You could also bypass all this exporting from a spreadsheet program by just ente
 
 1. Select the four lines of text below, and then copy it to the clipboard:  
 
-"ID","Age","MaritalStatus"
-"Bilbo",24,2
-"Gandalf",32,1
-"Boromir",44,1  
+`"ID","Age","MaritalStatus"`
+`"Bilbo",24,2`
+`"Gandalf",32,1`
+`"Boromir",44,1`  
 
 <br/>
 

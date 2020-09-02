@@ -1,20 +1,17 @@
 --- 
 title: 'A Lab Manual for PSYC 301: Elementary Statistics for Psychology'
 author:
-  affiliation: ' Department of Psychological & Brain Sciences at Texas A&M University'
-  name: Patrick Bolger, PhD
+  affiliation: 'Department of Psychological & Brain Sciences at Texas A&M University'
+  name: "Patrick Bolger, PhD"
 date: "`r format(Sys.time(), '%d %B %Y')`"
-bibliography:
-- book.bib
-- packages.bib
-description: 'This is a lab manual for PSYC 301: Elementary Statistics for Psychology.
-  It is an open educational resource (OER), so there is no charge to students.'
+bibliography: ["book.bib", "packages.bib"]  
+description: 'This is a lab manual for PSYC 301: Elementary Statistics for Psychology. It is an open educational resource (OER), so there is no charge to students.'
 documentclass: book
 github-repo: patrickabolger/ElemStatsLabManual
-link-citations: yes
+link-citations: true
 nocite: "@SchroederEpley2015, \n@MehrSongSpelke2016,\n@RogersMilkman2016\n"
+biblio-style: "apalike"
 site: bookdown::bookdown_site
-biblio-style: apalike
 url: https\://patrickabolger.github.io/ElemStatsLabManual/
 ---
 
@@ -51,7 +48,7 @@ library(kableExtra)
 # automatically create a bib database for R packages
 # Some are obscured from the reader, so they don't need to go here
 knitr::write_bib(c(
-  .packages(), 'bookdown', 'knitr', 'rmarkdown', 'haven', 'dplyr', 'magrittr', 'kableExtra', 'jmv', 'ggplot2'
+  .packages(), 'bookdown', 'knitr', 'rmarkdown', 'haven', 'kableExtra', 'jmv', 'tinytex', 'tidyverse'
   ), 
 'packages.bib')
 ```

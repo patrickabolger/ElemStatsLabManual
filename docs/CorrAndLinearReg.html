@@ -6,7 +6,7 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
   <title>Chapter 7 Correlation and linear regression | A Lab Manual for PSYC 301: Elementary Statistics for Psychology</title>
   <meta name="description" content="This is a lab manual for PSYC 301: Elementary Statistics for Psychology. It is an open educational resource (OER), so there is no charge to students." />
-  <meta name="generator" content="bookdown 0.19 and GitBook 2.6.7" />
+  <meta name="generator" content="bookdown 0.20.3 and GitBook 2.6.7" />
 
   <meta property="og:title" content="Chapter 7 Correlation and linear regression | A Lab Manual for PSYC 301: Elementary Statistics for Psychology" />
   <meta property="og:type" content="book" />
@@ -23,7 +23,7 @@
 
 
 
-<meta name="date" content="2020-05-28" />
+<meta name="date" content="2020-09-02" />
 
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <meta name="apple-mobile-web-app-capable" content="yes" />
@@ -32,6 +32,7 @@
   
 <link rel="prev" href="ComparingTwoMeans.html"/>
 <link rel="next" href="ComparingSeveralMeans.html"/>
+<script src="libs/header-attrs-2.3/header-attrs.js"></script>
 <script src="libs/jquery-2.2.3/jquery.min.js"></script>
 <link href="libs/gitbook-2.6.7/css/style.css" rel="stylesheet" />
 <link href="libs/gitbook-2.6.7/css/plugin-table.css" rel="stylesheet" />
@@ -50,6 +51,7 @@
 
 
 <script src="libs/kePrint-0.0.1/kePrint.js"></script>
+<link href="libs/lightable-0.0.1/lightable.css" rel="stylesheet" />
 
 
 
@@ -70,9 +72,11 @@
 <li><a href="./">Patrick Bolger, PhD.</a></li>
 
 <li class="divider"></li>
-<li class="chapter" data-level="" data-path="index.html"><a href="index.html"><i class="fa fa-check"></i>Preface</a><ul>
+<li class="chapter" data-level="" data-path="index.html"><a href="index.html"><i class="fa fa-check"></i>Preface</a>
+<ul>
 <li class="chapter" data-level="0.1" data-path="index.html"><a href="index.html#goals"><i class="fa fa-check"></i><b>0.1</b> Goals</a></li>
-<li class="chapter" data-level="0.2" data-path="index.html"><a href="index.html#Resources"><i class="fa fa-check"></i><b>0.2</b> Resources</a><ul>
+<li class="chapter" data-level="0.2" data-path="index.html"><a href="index.html#Resources"><i class="fa fa-check"></i><b>0.2</b> Resources</a>
+<ul>
 <li class="chapter" data-level="0.2.1" data-path="index.html"><a href="index.html#FixedResources"><i class="fa fa-check"></i><b>0.2.1</b> Fixed resources</a></li>
 <li class="chapter" data-level="0.2.2" data-path="index.html"><a href="index.html#Software"><i class="fa fa-check"></i><b>0.2.2</b> Software</a></li>
 </ul></li>
@@ -81,10 +85,12 @@
 <li class="chapter" data-level="0.5" data-path="index.html"><a href="index.html#MainOutcomeOfClass"><i class="fa fa-check"></i><b>0.5</b> Main outcome of class</a></li>
 </ul></li>
 <li class="part"><span><b>I Basics</b></span></li>
-<li class="chapter" data-level="1" data-path="GettingUsedtoJamovi.html"><a href="GettingUsedtoJamovi.html"><i class="fa fa-check"></i><b>1</b> Getting used to jamovi</a><ul>
+<li class="chapter" data-level="1" data-path="GettingUsedtoJamovi.html"><a href="GettingUsedtoJamovi.html"><i class="fa fa-check"></i><b>1</b> Getting used to jamovi</a>
+<ul>
 <li class="chapter" data-level="1.1" data-path="GettingUsedtoJamovi.html"><a href="GettingUsedtoJamovi.html#DownloadingAndInstallingJamovi"><i class="fa fa-check"></i><b>1.1</b> Downloading and installing</a></li>
 <li class="chapter" data-level="1.2" data-path="GettingUsedtoJamovi.html"><a href="GettingUsedtoJamovi.html#NavigatingJamovi"><i class="fa fa-check"></i><b>1.2</b> Navigation</a></li>
-<li class="chapter" data-level="1.3" data-path="GettingUsedtoJamovi.html"><a href="GettingUsedtoJamovi.html#OutsideHelpOnBasics"><i class="fa fa-check"></i><b>1.3</b> Outside help on basics</a><ul>
+<li class="chapter" data-level="1.3" data-path="GettingUsedtoJamovi.html"><a href="GettingUsedtoJamovi.html#OutsideHelpOnBasics"><i class="fa fa-check"></i><b>1.3</b> Outside help on basics</a>
+<ul>
 <li class="chapter" data-level="1.3.1" data-path="GettingUsedtoJamovi.html"><a href="GettingUsedtoJamovi.html#OutsideHelpOnOveralIntroduction"><i class="fa fa-check"></i><b>1.3.1</b> Overall introduction</a></li>
 <li class="chapter" data-level="1.3.2" data-path="GettingUsedtoJamovi.html"><a href="GettingUsedtoJamovi.html#OutsideHelpOnDownloadingAndInstalling"><i class="fa fa-check"></i><b>1.3.2</b> Downloading and installing</a></li>
 <li class="chapter" data-level="1.3.3" data-path="GettingUsedtoJamovi.html"><a href="GettingUsedtoJamovi.html#OutsideHelpOnNavigating"><i class="fa fa-check"></i><b>1.3.3</b> Navigating</a></li>
@@ -92,17 +98,20 @@
 </ul></li>
 <li class="chapter" data-level="1.4" data-path="GettingUsedtoJamovi.html"><a href="GettingUsedtoJamovi.html#ConclusionOfBasics"><i class="fa fa-check"></i><b>1.4</b> Conclusion</a></li>
 </ul></li>
-<li class="chapter" data-level="2" data-path="BasicDataOperations.html"><a href="BasicDataOperations.html"><i class="fa fa-check"></i><b>2</b> Basic data operations</a><ul>
+<li class="chapter" data-level="2" data-path="BasicDataOperations.html"><a href="BasicDataOperations.html"><i class="fa fa-check"></i><b>2</b> Basic data operations</a>
+<ul>
 <li class="chapter" data-level="2.1" data-path="BasicDataOperations.html"><a href="BasicDataOperations.html#Manualling"><i class="fa fa-check"></i><b>2.1</b> Entering data manually</a></li>
 <li class="chapter" data-level="2.2" data-path="BasicDataOperations.html"><a href="BasicDataOperations.html#Opening"><i class="fa fa-check"></i><b>2.2</b> Opening data files</a></li>
 <li class="chapter" data-level="2.3" data-path="BasicDataOperations.html"><a href="BasicDataOperations.html#Importing"><i class="fa fa-check"></i><b>2.3</b> Importing data</a></li>
 <li class="chapter" data-level="2.4" data-path="BasicDataOperations.html"><a href="BasicDataOperations.html#Exporting"><i class="fa fa-check"></i><b>2.4</b> Exporting data</a></li>
-<li class="chapter" data-level="2.5" data-path="BasicDataOperations.html"><a href="BasicDataOperations.html#ManipulatingData"><i class="fa fa-check"></i><b>2.5</b> Manipulating data</a><ul>
+<li class="chapter" data-level="2.5" data-path="BasicDataOperations.html"><a href="BasicDataOperations.html#ManipulatingData"><i class="fa fa-check"></i><b>2.5</b> Manipulating data</a>
+<ul>
 <li class="chapter" data-level="2.5.1" data-path="BasicDataOperations.html"><a href="BasicDataOperations.html#ComputingNewVariables"><i class="fa fa-check"></i><b>2.5.1</b> Computing new variables</a></li>
 <li class="chapter" data-level="2.5.2" data-path="BasicDataOperations.html"><a href="BasicDataOperations.html#FilteringData"><i class="fa fa-check"></i><b>2.5.2</b> Filtering data</a></li>
 </ul></li>
 <li class="chapter" data-level="2.6" data-path="BasicDataOperations.html"><a href="BasicDataOperations.html#GeneralNoteUnderstandingTidyness"><i class="fa fa-check"></i><b>2.6</b> General note: Understanding <em>tidy</em>-ness</a></li>
-<li class="chapter" data-level="2.7" data-path="BasicDataOperations.html"><a href="BasicDataOperations.html#OutsideHelpOnBasicDataOperations"><i class="fa fa-check"></i><b>2.7</b> Outside help on basic data preparation</a><ul>
+<li class="chapter" data-level="2.7" data-path="BasicDataOperations.html"><a href="BasicDataOperations.html#OutsideHelpOnBasicDataOperations"><i class="fa fa-check"></i><b>2.7</b> Outside help on basic data preparation</a>
+<ul>
 <li class="chapter" data-level="2.7.1" data-path="BasicDataOperations.html"><a href="BasicDataOperations.html#OutsideHelpOnEnteringData"><i class="fa fa-check"></i><b>2.7.1</b> Entering and adjusting data</a></li>
 <li class="chapter" data-level="2.7.2" data-path="BasicDataOperations.html"><a href="BasicDataOperations.html#OutsideHelpOnOpeningData"><i class="fa fa-check"></i><b>2.7.2</b> Opening data</a></li>
 <li class="chapter" data-level="2.7.3" data-path="BasicDataOperations.html"><a href="BasicDataOperations.html#OutsideHelpOnImportingData"><i class="fa fa-check"></i><b>2.7.3</b> Importing data</a></li>
@@ -111,15 +120,18 @@
 <li class="chapter" data-level="2.7.6" data-path="BasicDataOperations.html"><a href="BasicDataOperations.html#OutsideHelpOnTransormingVariables"><i class="fa fa-check"></i><b>2.7.6</b> Transforming variables</a></li>
 <li class="chapter" data-level="2.7.7" data-path="BasicDataOperations.html"><a href="BasicDataOperations.html#OutsideHelpOnFilteringData"><i class="fa fa-check"></i><b>2.7.7</b> Filtering data</a></li>
 </ul></li>
-<li class="chapter" data-level="2.8" data-path="BasicDataOperations.html"><a href="BasicDataOperations.html#BasicDataPreprationPracticeExercises"><i class="fa fa-check"></i><b>2.8</b> Practice Exercises</a><ul>
+<li class="chapter" data-level="2.8" data-path="BasicDataOperations.html"><a href="BasicDataOperations.html#BasicDataPreprationPracticeExercises"><i class="fa fa-check"></i><b>2.8</b> Practice Exercises</a>
+<ul>
 <li class="chapter" data-level="2.8.1" data-path="BasicDataOperations.html"><a href="BasicDataOperations.html#PracManualing"><i class="fa fa-check"></i><b>2.8.1</b> Practice entering data</a></li>
 <li class="chapter" data-level="2.8.2" data-path="BasicDataOperations.html"><a href="BasicDataOperations.html#PracticeExporting"><i class="fa fa-check"></i><b>2.8.2</b> Practice exporting</a></li>
 <li class="chapter" data-level="2.8.3" data-path="BasicDataOperations.html"><a href="BasicDataOperations.html#PracticeImporting"><i class="fa fa-check"></i><b>2.8.3</b> Practice importing</a></li>
 </ul></li>
 </ul></li>
-<li class="chapter" data-level="3" data-path="DescriptiveStats.html"><a href="DescriptiveStats.html"><i class="fa fa-check"></i><b>3</b> Descriptive statistics</a><ul>
+<li class="chapter" data-level="3" data-path="DescriptiveStats.html"><a href="DescriptiveStats.html"><i class="fa fa-check"></i><b>3</b> Descriptive statistics</a>
+<ul>
 <li class="chapter" data-level="3.1" data-path="DescriptiveStats.html"><a href="DescriptiveStats.html#OverviewOfDescriptiveStats"><i class="fa fa-check"></i><b>3.1</b> Overview</a></li>
-<li class="chapter" data-level="3.2" data-path="DescriptiveStats.html"><a href="DescriptiveStats.html#DescriptivesInJamovi"><i class="fa fa-check"></i><b>3.2</b> Descriptives in jamovi</a><ul>
+<li class="chapter" data-level="3.2" data-path="DescriptiveStats.html"><a href="DescriptiveStats.html#DescriptivesInJamovi"><i class="fa fa-check"></i><b>3.2</b> Descriptives in jamovi</a>
+<ul>
 <li class="chapter" data-level="3.2.1" data-path="DescriptiveStats.html"><a href="DescriptiveStats.html#SummarizingContinuousVariables"><i class="fa fa-check"></i><b>3.2.1</b> Summarizing continuous variables</a></li>
 <li class="chapter" data-level="3.2.2" data-path="DescriptiveStats.html"><a href="DescriptiveStats.html#GroupedSummaries"><i class="fa fa-check"></i><b>3.2.2</b> Grouped summaries</a></li>
 <li class="chapter" data-level="3.2.3" data-path="DescriptiveStats.html"><a href="DescriptiveStats.html#Frequencies"><i class="fa fa-check"></i><b>3.2.3</b> Frequencies</a></li>
@@ -127,20 +139,23 @@
 </ul></li>
 <li class="chapter" data-level="3.3" data-path="DescriptiveStats.html"><a href="DescriptiveStats.html#OutsideHelpOnDescriptives"><i class="fa fa-check"></i><b>3.3</b> Outside help on descriptives</a></li>
 <li class="chapter" data-level="3.4" data-path="DescriptiveStats.html"><a href="DescriptiveStats.html#PracticeSummarizingAndReporting"><i class="fa fa-check"></i><b>3.4</b> Practice summarizing and reporting</a></li>
-<li class="chapter" data-level="3.5" data-path="DescriptiveStats.html"><a href="DescriptiveStats.html#GlossaryOfDescriptives"><i class="fa fa-check"></i><b>3.5</b> Glossary of descriptives</a><ul>
+<li class="chapter" data-level="3.5" data-path="DescriptiveStats.html"><a href="DescriptiveStats.html#GlossaryOfDescriptives"><i class="fa fa-check"></i><b>3.5</b> Glossary of descriptives</a>
+<ul>
 <li class="chapter" data-level="3.5.1" data-path="DescriptiveStats.html"><a href="DescriptiveStats.html#CentralTendency"><i class="fa fa-check"></i><b>3.5.1</b> Central tendency</a></li>
 <li class="chapter" data-level="3.5.2" data-path="DescriptiveStats.html"><a href="DescriptiveStats.html#Dispersion"><i class="fa fa-check"></i><b>3.5.2</b> Dispersion</a></li>
 <li class="chapter" data-level="3.5.3" data-path="DescriptiveStats.html"><a href="DescriptiveStats.html#diagnostics"><i class="fa fa-check"></i><b>3.5.3</b> Diagnostics</a></li>
 </ul></li>
 </ul></li>
-<li class="chapter" data-level="4" data-path="DataVisualization.html"><a href="DataVisualization.html"><i class="fa fa-check"></i><b>4</b> Data visualizations</a><ul>
+<li class="chapter" data-level="4" data-path="DataVisualization.html"><a href="DataVisualization.html"><i class="fa fa-check"></i><b>4</b> Data visualizations</a>
+<ul>
 <li class="chapter" data-level="4.1" data-path="DataVisualization.html"><a href="DataVisualization.html#Histograms"><i class="fa fa-check"></i><b>4.1</b> Histograms</a></li>
 <li class="chapter" data-level="4.2" data-path="DataVisualization.html"><a href="DataVisualization.html#Boxplots"><i class="fa fa-check"></i><b>4.2</b> Boxplots</a></li>
 <li class="chapter" data-level="4.3" data-path="DataVisualization.html"><a href="DataVisualization.html#ViolinPlots"><i class="fa fa-check"></i><b>4.3</b> Violin plots</a></li>
 <li class="chapter" data-level="4.4" data-path="DataVisualization.html"><a href="DataVisualization.html#DotPlots"><i class="fa fa-check"></i><b>4.4</b> Dot plots</a></li>
 <li class="chapter" data-level="4.5" data-path="DataVisualization.html"><a href="DataVisualization.html#Barplots"><i class="fa fa-check"></i><b>4.5</b> Bar plots</a></li>
 <li class="chapter" data-level="4.6" data-path="DataVisualization.html"><a href="DataVisualization.html#QQPlots"><i class="fa fa-check"></i><b>4.6</b> Q-Q plots</a></li>
-<li class="chapter" data-level="4.7" data-path="DataVisualization.html"><a href="DataVisualization.html#outside-help-on-visualization"><i class="fa fa-check"></i><b>4.7</b> Outside help on visualization</a><ul>
+<li class="chapter" data-level="4.7" data-path="DataVisualization.html"><a href="DataVisualization.html#outside-help-on-visualization"><i class="fa fa-check"></i><b>4.7</b> Outside help on visualization</a>
+<ul>
 <li class="chapter" data-level="4.7.1" data-path="DataVisualization.html"><a href="DataVisualization.html#OutsideHelpOnHistograms"><i class="fa fa-check"></i><b>4.7.1</b> Histograms</a></li>
 <li class="chapter" data-level="4.7.2" data-path="DataVisualization.html"><a href="DataVisualization.html#OutsideHelpOnBoxPlots"><i class="fa fa-check"></i><b>4.7.2</b> Boxplots</a></li>
 <li class="chapter" data-level="4.7.3" data-path="DataVisualization.html"><a href="DataVisualization.html#OutsideHelpOnViolinPlots"><i class="fa fa-check"></i><b>4.7.3</b> Violin plots</a></li>
@@ -149,51 +164,64 @@
 </ul></li>
 </ul></li>
 <li class="part"><span><b>II Inferential statistics</b></span></li>
-<li class="chapter" data-level="5" data-path="CategoricalDataAnalysis.html"><a href="CategoricalDataAnalysis.html"><i class="fa fa-check"></i><b>5</b> Categorical data analysis</a><ul>
-<li class="chapter" data-level="5.1" data-path="CategoricalDataAnalysis.html"><a href="CategoricalDataAnalysis.html#ChiSquareGoodnessOfFit"><i class="fa fa-check"></i><b>5.1</b> Chi-square goodness-of-fit test</a><ul>
+<li class="chapter" data-level="5" data-path="CategoricalDataAnalysis.html"><a href="CategoricalDataAnalysis.html"><i class="fa fa-check"></i><b>5</b> Categorical data analysis</a>
+<ul>
+<li class="chapter" data-level="5.1" data-path="CategoricalDataAnalysis.html"><a href="CategoricalDataAnalysis.html#ChiSquareGoodnessOfFit"><i class="fa fa-check"></i><b>5.1</b> Chi-square goodness-of-fit test</a>
+<ul>
 <li class="chapter" data-level="5.1.1" data-path="CategoricalDataAnalysis.html"><a href="CategoricalDataAnalysis.html#ChiSquareGoodnessOfFitBasicCards"><i class="fa fa-check"></i><b>5.1.1</b> Basic: The Cards data</a></li>
 <li class="chapter" data-level="5.1.2" data-path="CategoricalDataAnalysis.html"><a href="CategoricalDataAnalysis.html#ChiSquareGoodnessOfFitAdvancedUCBAdmit"><i class="fa fa-check"></i><b>5.1.2</b> Advanced: Student admissions at UC Berkeley</a></li>
 </ul></li>
-<li class="chapter" data-level="5.2" data-path="CategoricalDataAnalysis.html"><a href="CategoricalDataAnalysis.html#ChiSquareTestOfIndependence"><i class="fa fa-check"></i><b>5.2</b> Chi-square test of independence</a><ul>
+<li class="chapter" data-level="5.2" data-path="CategoricalDataAnalysis.html"><a href="CategoricalDataAnalysis.html#ChiSquareTestOfIndependence"><i class="fa fa-check"></i><b>5.2</b> Chi-square test of independence</a>
+<ul>
 <li class="chapter" data-level="5.2.1" data-path="CategoricalDataAnalysis.html"><a href="CategoricalDataAnalysis.html#ChiSquareTestOfIndependenceChapek9"><i class="fa fa-check"></i><b>5.2.1</b> Basic: The <em>Chapek 9</em> data</a></li>
 <li class="chapter" data-level="5.2.2" data-path="CategoricalDataAnalysis.html"><a href="CategoricalDataAnalysis.html#NarcissisticPersonalityInventory"><i class="fa fa-check"></i><b>5.2.2</b> Advanced: The Narcissistic Personality Inventory</a></li>
 </ul></li>
-<li class="chapter" data-level="5.3" data-path="CategoricalDataAnalysis.html"><a href="CategoricalDataAnalysis.html#OutsideHelpOnChisquare"><i class="fa fa-check"></i><b>5.3</b> Outside help on chi-square</a><ul>
+<li class="chapter" data-level="5.3" data-path="CategoricalDataAnalysis.html"><a href="CategoricalDataAnalysis.html#OutsideHelpOnChisquare"><i class="fa fa-check"></i><b>5.3</b> Outside help on chi-square</a>
+<ul>
 <li class="chapter" data-level="5.3.1" data-path="CategoricalDataAnalysis.html"><a href="CategoricalDataAnalysis.html#OutsideHelpOnGoodnessOfFit"><i class="fa fa-check"></i><b>5.3.1</b> Goodness-of-fit test</a></li>
 <li class="chapter" data-level="5.3.2" data-path="CategoricalDataAnalysis.html"><a href="CategoricalDataAnalysis.html#OutsideHelpOnChisquareTestOfIndependence"><i class="fa fa-check"></i><b>5.3.2</b> Chi-square test of independence</a></li>
 </ul></li>
 </ul></li>
-<li class="chapter" data-level="6" data-path="ComparingTwoMeans.html"><a href="ComparingTwoMeans.html"><i class="fa fa-check"></i><b>6</b> Comparing two means</a><ul>
-<li class="chapter" data-level="6.1" data-path="ComparingTwoMeans.html"><a href="ComparingTwoMeans.html#DoingIndSamplesTTest"><i class="fa fa-check"></i><b>6.1</b> The independent-samples <em>t</em>-test</a><ul>
+<li class="chapter" data-level="6" data-path="ComparingTwoMeans.html"><a href="ComparingTwoMeans.html"><i class="fa fa-check"></i><b>6</b> Comparing two means</a>
+<ul>
+<li class="chapter" data-level="6.1" data-path="ComparingTwoMeans.html"><a href="ComparingTwoMeans.html#DoingIndSamplesTTest"><i class="fa fa-check"></i><b>6.1</b> The independent-samples <em>t</em>-test</a>
+<ul>
 <li class="chapter" data-level="6.1.1" data-path="ComparingTwoMeans.html"><a href="ComparingTwoMeans.html#IndSamplesDrHarpo"><i class="fa fa-check"></i><b>6.1.1</b> Basic: Dr. Harpo’s statistics class</a></li>
 <li class="chapter" data-level="6.1.2" data-path="ComparingTwoMeans.html"><a href="ComparingTwoMeans.html#IndSamplesConspiracyData"><i class="fa fa-check"></i><b>6.1.2</b> Advanced 1: The conspiracy data</a></li>
 <li class="chapter" data-level="6.1.3" data-path="ComparingTwoMeans.html"><a href="ComparingTwoMeans.html#IndSamplesSpokeWrit"><i class="fa fa-check"></i><b>6.1.3</b> Advanced 2: Spoken vs. written pitches</a></li>
 </ul></li>
-<li class="chapter" data-level="6.2" data-path="ComparingTwoMeans.html"><a href="ComparingTwoMeans.html#DoingPairedSamplesTTest"><i class="fa fa-check"></i><b>6.2</b> The paired-samples <em>t</em>-test</a><ul>
+<li class="chapter" data-level="6.2" data-path="ComparingTwoMeans.html"><a href="ComparingTwoMeans.html#DoingPairedSamplesTTest"><i class="fa fa-check"></i><b>6.2</b> The paired-samples <em>t</em>-test</a>
+<ul>
 <li class="chapter" data-level="6.2.1" data-path="ComparingTwoMeans.html"><a href="ComparingTwoMeans.html#PairedSamplesChicoBasicData"><i class="fa fa-check"></i><b>6.2.1</b> Basic: The <em>Chico</em> data</a></li>
 <li class="chapter" data-level="6.2.2" data-path="ComparingTwoMeans.html"><a href="ComparingTwoMeans.html#PairedSamplesChicoAdvancedData"><i class="fa fa-check"></i><b>6.2.2</b> Advanced 1: Randomly generated <em>Chico</em> data</a></li>
 <li class="chapter" data-level="6.2.3" data-path="ComparingTwoMeans.html"><a href="ComparingTwoMeans.html#PairedSamplesSingingParents"><i class="fa fa-check"></i><b>6.2.3</b> Advanced 2: Singing parents</a></li>
 <li class="chapter" data-level="6.2.4" data-path="ComparingTwoMeans.html"><a href="ComparingTwoMeans.html#PairedSamplesSingingParentsStudentTask"><i class="fa fa-check"></i><b>6.2.4</b> Your tasks</a></li>
 </ul></li>
-<li class="chapter" data-level="6.3" data-path="ComparingTwoMeans.html"><a href="ComparingTwoMeans.html#OutsideHelpOnComparingTwoMeans"><i class="fa fa-check"></i><b>6.3</b> Outside help on <em>t</em>-tests</a><ul>
+<li class="chapter" data-level="6.3" data-path="ComparingTwoMeans.html"><a href="ComparingTwoMeans.html#OutsideHelpOnComparingTwoMeans"><i class="fa fa-check"></i><b>6.3</b> Outside help on <em>t</em>-tests</a>
+<ul>
 <li class="chapter" data-level="6.3.1" data-path="ComparingTwoMeans.html"><a href="ComparingTwoMeans.html#OutsideHelpOnIndependentSamplesT"><i class="fa fa-check"></i><b>6.3.1</b> Independent samples <em>t</em>-test</a></li>
 <li class="chapter" data-level="6.3.2" data-path="ComparingTwoMeans.html"><a href="ComparingTwoMeans.html#OutsideHelpOnPairedSamplesT"><i class="fa fa-check"></i><b>6.3.2</b> Paired samples <em>t</em>-test</a></li>
 </ul></li>
 </ul></li>
-<li class="chapter" data-level="7" data-path="CorrAndLinearReg.html"><a href="CorrAndLinearReg.html"><i class="fa fa-check"></i><b>7</b> Correlation and linear regression</a><ul>
-<li class="chapter" data-level="7.1" data-path="CorrAndLinearReg.html"><a href="CorrAndLinearReg.html#Correlations"><i class="fa fa-check"></i><b>7.1</b> Correlations</a><ul>
+<li class="chapter" data-level="7" data-path="CorrAndLinearReg.html"><a href="CorrAndLinearReg.html"><i class="fa fa-check"></i><b>7</b> Correlation and linear regression</a>
+<ul>
+<li class="chapter" data-level="7.1" data-path="CorrAndLinearReg.html"><a href="CorrAndLinearReg.html#Correlations"><i class="fa fa-check"></i><b>7.1</b> Correlations</a>
+<ul>
 <li class="chapter" data-level="7.1.1" data-path="CorrAndLinearReg.html"><a href="CorrAndLinearReg.html#BasicCorrelationParenthood"><i class="fa fa-check"></i><b>7.1.1</b> Basic: Parenthood data</a></li>
 <li class="chapter" data-level="7.1.2" data-path="CorrAndLinearReg.html"><a href="CorrAndLinearReg.html#AdvancedCorrelationSPRING2020"><i class="fa fa-check"></i><b>7.1.2</b> Advanced</a></li>
 </ul></li>
-<li class="chapter" data-level="7.2" data-path="CorrAndLinearReg.html"><a href="CorrAndLinearReg.html#LinearRegression"><i class="fa fa-check"></i><b>7.2</b> Linear regression</a><ul>
+<li class="chapter" data-level="7.2" data-path="CorrAndLinearReg.html"><a href="CorrAndLinearReg.html#LinearRegression"><i class="fa fa-check"></i><b>7.2</b> Linear regression</a>
+<ul>
 <li class="chapter" data-level="7.2.1" data-path="CorrAndLinearReg.html"><a href="CorrAndLinearReg.html#BasicRegressionParenthood"><i class="fa fa-check"></i><b>7.2.1</b> Basic: Parenthood data (again)</a></li>
 <li class="chapter" data-level="7.2.2" data-path="CorrAndLinearReg.html"><a href="CorrAndLinearReg.html#AdvancedRegressionSPRING2020"><i class="fa fa-check"></i><b>7.2.2</b> Advanced:</a></li>
 </ul></li>
 <li class="chapter" data-level="7.3" data-path="CorrAndLinearReg.html"><a href="CorrAndLinearReg.html#MultipleLinearRegression"><i class="fa fa-check"></i><b>7.3</b> Multiple linear regression</a></li>
 <li class="chapter" data-level="7.4" data-path="CorrAndLinearReg.html"><a href="CorrAndLinearReg.html#OutsideHelpOnCorrelation"><i class="fa fa-check"></i><b>7.4</b> Outside help on correlation</a></li>
 </ul></li>
-<li class="chapter" data-level="8" data-path="ComparingSeveralMeans.html"><a href="ComparingSeveralMeans.html"><i class="fa fa-check"></i><b>8</b> Comparing several means</a><ul>
-<li class="chapter" data-level="8.1" data-path="ComparingSeveralMeans.html"><a href="ComparingSeveralMeans.html#OnewayAnova"><i class="fa fa-check"></i><b>8.1</b> The One-Way ANOVA</a><ul>
+<li class="chapter" data-level="8" data-path="ComparingSeveralMeans.html"><a href="ComparingSeveralMeans.html"><i class="fa fa-check"></i><b>8</b> Comparing several means</a>
+<ul>
+<li class="chapter" data-level="8.1" data-path="ComparingSeveralMeans.html"><a href="ComparingSeveralMeans.html#OnewayAnova"><i class="fa fa-check"></i><b>8.1</b> The One-Way ANOVA</a>
+<ul>
 <li class="chapter" data-level="8.1.1" data-path="ComparingSeveralMeans.html"><a href="ComparingSeveralMeans.html#OnewayAnovaClinicalTrialData"><i class="fa fa-check"></i><b>8.1.1</b> Basic: Clinical Trial data</a></li>
 <li class="chapter" data-level="8.1.2" data-path="ComparingSeveralMeans.html"><a href="ComparingSeveralMeans.html#advanced"><i class="fa fa-check"></i><b>8.1.2</b> Advanced</a></li>
 </ul></li>
@@ -201,14 +229,17 @@
 <li class="chapter" data-level="8.3" data-path="ComparingSeveralMeans.html"><a href="ComparingSeveralMeans.html#outside-help-on-one-way-anova"><i class="fa fa-check"></i><b>8.3</b> Outside help on One-Way ANOVA</a></li>
 <li class="chapter" data-level="8.4" data-path="ComparingSeveralMeans.html"><a href="ComparingSeveralMeans.html#PracticingOnewayAnova"><i class="fa fa-check"></i><b>8.4</b> Extra practice One-Way ANOVA</a></li>
 </ul></li>
-<li class="chapter" data-level="9" data-path="FactorialAnova.html"><a href="FactorialAnova.html"><i class="fa fa-check"></i><b>9</b> Factorial ANOVA</a><ul>
-<li class="chapter" data-level="9.1" data-path="FactorialAnova.html"><a href="FactorialAnova.html#BasicFactorialAnovaJoyzepam"><i class="fa fa-check"></i><b>9.1</b> Basic: joyzepam data</a><ul>
+<li class="chapter" data-level="9" data-path="FactorialAnova.html"><a href="FactorialAnova.html"><i class="fa fa-check"></i><b>9</b> Factorial ANOVA</a>
+<ul>
+<li class="chapter" data-level="9.1" data-path="FactorialAnova.html"><a href="FactorialAnova.html#BasicFactorialAnovaJoyzepam"><i class="fa fa-check"></i><b>9.1</b> Basic: joyzepam data</a>
+<ul>
 <li class="chapter" data-level="9.1.1" data-path="FactorialAnova.html"><a href="FactorialAnova.html#BasicFactorialAnovaJoyzepamObtainingTheData"><i class="fa fa-check"></i><b>9.1.1</b> Obtaining the data</a></li>
 <li class="chapter" data-level="9.1.2" data-path="FactorialAnova.html"><a href="FactorialAnova.html#BasicFactorialAnovaJoyzepamImplementing"><i class="fa fa-check"></i><b>9.1.2</b> Implementing the procedure</a></li>
 <li class="chapter" data-level="9.1.3" data-path="FactorialAnova.html"><a href="FactorialAnova.html#BasicFactorialAnovaJoyzepamInterpreting"><i class="fa fa-check"></i><b>9.1.3</b> Interpreting the output</a></li>
 <li class="chapter" data-level="9.1.4" data-path="FactorialAnova.html"><a href="FactorialAnova.html#BasicFactorialAnovaJoyzepamReporting"><i class="fa fa-check"></i><b>9.1.4</b> Reporting the output</a></li>
 </ul></li>
-<li class="chapter" data-level="9.2" data-path="FactorialAnova.html"><a href="FactorialAnova.html#AdvancedFactorialAnova_NAME"><i class="fa fa-check"></i><b>9.2</b> Advanced: advanced data NAME</a><ul>
+<li class="chapter" data-level="9.2" data-path="FactorialAnova.html"><a href="FactorialAnova.html#AdvancedFactorialAnova_NAME"><i class="fa fa-check"></i><b>9.2</b> Advanced: advanced data NAME</a>
+<ul>
 <li class="chapter" data-level="9.2.1" data-path="FactorialAnova.html"><a href="FactorialAnova.html#AdvancedFactorialAnova_NAMEObtainingTheData"><i class="fa fa-check"></i><b>9.2.1</b> Obtaining the data</a></li>
 <li class="chapter" data-level="9.2.2" data-path="FactorialAnova.html"><a href="FactorialAnova.html#AdvancedFactorialAnova_NAMEImplementing"><i class="fa fa-check"></i><b>9.2.2</b> Implementing the procedure</a></li>
 <li class="chapter" data-level="9.2.3" data-path="FactorialAnova.html"><a href="FactorialAnova.html#AdvancedFactorialAnova_NAMEInterpreting"><i class="fa fa-check"></i><b>9.2.3</b> Interpreting the output</a></li>
@@ -219,16 +250,19 @@
 <li class="chapter" data-level="9.5" data-path="FactorialAnova.html"><a href="FactorialAnova.html#PracticingFactorialAnova"><i class="fa fa-check"></i><b>9.5</b> Extra practice on factorial ANOVA</a></li>
 </ul></li>
 <li class="part"><span><b>III Research projects</b></span></li>
-<li class="chapter" data-level="10" data-path="SurveyDesignAndDataCollection.html"><a href="SurveyDesignAndDataCollection.html"><i class="fa fa-check"></i><b>10</b> Survey Design and Data Collection</a><ul>
+<li class="chapter" data-level="10" data-path="SurveyDesignAndDataCollection.html"><a href="SurveyDesignAndDataCollection.html"><i class="fa fa-check"></i><b>10</b> Survey Design and Data Collection</a>
+<ul>
 <li class="chapter" data-level="10.1" data-path="SurveyDesignAndDataCollection.html"><a href="SurveyDesignAndDataCollection.html#ResearchProjectsOverview"><i class="fa fa-check"></i><b>10.1</b> Unit Overview</a></li>
 <li class="chapter" data-level="10.2" data-path="SurveyDesignAndDataCollection.html"><a href="SurveyDesignAndDataCollection.html#SurveyDesignAndDataCollectionChapterOverview"><i class="fa fa-check"></i><b>10.2</b> Chapter Overview</a></li>
-<li class="chapter" data-level="10.3" data-path="SurveyDesignAndDataCollection.html"><a href="SurveyDesignAndDataCollection.html#WhatIsScience"><i class="fa fa-check"></i><b>10.3</b> What is <em>Science</em>?</a><ul>
+<li class="chapter" data-level="10.3" data-path="SurveyDesignAndDataCollection.html"><a href="SurveyDesignAndDataCollection.html#WhatIsScience"><i class="fa fa-check"></i><b>10.3</b> What is <em>Science</em>?</a>
+<ul>
 <li class="chapter" data-level="10.3.1" data-path="SurveyDesignAndDataCollection.html"><a href="SurveyDesignAndDataCollection.html#WhatIsMeasurement"><i class="fa fa-check"></i><b>10.3.1</b> What is <em>measurement</em>?</a></li>
 <li class="chapter" data-level="10.3.2" data-path="SurveyDesignAndDataCollection.html"><a href="SurveyDesignAndDataCollection.html#WhatAreConstructs"><i class="fa fa-check"></i><b>10.3.2</b> What are <em>constructs</em>?</a></li>
 <li class="chapter" data-level="10.3.3" data-path="SurveyDesignAndDataCollection.html"><a href="SurveyDesignAndDataCollection.html#WhatIsOperationalization"><i class="fa fa-check"></i><b>10.3.3</b> What is <em>operationalization</em>?</a></li>
 <li class="chapter" data-level="10.3.4" data-path="SurveyDesignAndDataCollection.html"><a href="SurveyDesignAndDataCollection.html#WhatAreVariables"><i class="fa fa-check"></i><b>10.3.4</b> What are <em>variables</em>?</a></li>
 </ul></li>
-<li class="chapter" data-level="10.4" data-path="SurveyDesignAndDataCollection.html"><a href="SurveyDesignAndDataCollection.html#DesigningTheSurvey"><i class="fa fa-check"></i><b>10.4</b> Designing the survey</a><ul>
+<li class="chapter" data-level="10.4" data-path="SurveyDesignAndDataCollection.html"><a href="SurveyDesignAndDataCollection.html#DesigningTheSurvey"><i class="fa fa-check"></i><b>10.4</b> Designing the survey</a>
+<ul>
 <li class="chapter" data-level="10.4.1" data-path="SurveyDesignAndDataCollection.html"><a href="SurveyDesignAndDataCollection.html#VariablesInYourStudy"><i class="fa fa-check"></i><b>10.4.1</b> Variables in your study</a></li>
 <li class="chapter" data-level="10.4.2" data-path="SurveyDesignAndDataCollection.html"><a href="SurveyDesignAndDataCollection.html#MoreInformationOnSurveyQuestions"><i class="fa fa-check"></i><b>10.4.2</b> More information on survey questions</a></li>
 <li class="chapter" data-level="10.4.3" data-path="SurveyDesignAndDataCollection.html"><a href="SurveyDesignAndDataCollection.html#SummaryOfSurveyDesignAssignment"><i class="fa fa-check"></i><b>10.4.3</b> Summary of <em>Survey Design</em> assignment</a></li>
@@ -236,16 +270,19 @@
 </ul></li>
 <li class="chapter" data-level="10.5" data-path="SurveyDesignAndDataCollection.html"><a href="SurveyDesignAndDataCollection.html#CollectingTheData"><i class="fa fa-check"></i><b>10.5</b> Collecting the Data</a></li>
 </ul></li>
-<li class="chapter" data-level="11" data-path="DataPreparationAndAnalyses.html"><a href="DataPreparationAndAnalyses.html"><i class="fa fa-check"></i><b>11</b> Data Preparation and Analyses</a><ul>
+<li class="chapter" data-level="11" data-path="DataPreparationAndAnalyses.html"><a href="DataPreparationAndAnalyses.html"><i class="fa fa-check"></i><b>11</b> Data Preparation and Analyses</a>
+<ul>
 <li class="chapter" data-level="11.1" data-path="DataPreparationAndAnalyses.html"><a href="DataPreparationAndAnalyses.html#DataPreparationAndAnalysesChapterOverview"><i class="fa fa-check"></i><b>11.1</b> Chapter overview</a></li>
 <li class="chapter" data-level="11.2" data-path="DataPreparationAndAnalyses.html"><a href="DataPreparationAndAnalyses.html#PreparingDataExportingDataFromGoogleForms"><i class="fa fa-check"></i><b>11.2</b> Exporting data from Google Forms</a></li>
 <li class="chapter" data-level="11.3" data-path="DataPreparationAndAnalyses.html"><a href="DataPreparationAndAnalyses.html#PreparingDataImportingTheData"><i class="fa fa-check"></i><b>11.3</b> Importing the data into jamovi</a></li>
-<li class="chapter" data-level="11.4" data-path="DataPreparationAndAnalyses.html"><a href="DataPreparationAndAnalyses.html#PreparingDataCleaningUpTheData"><i class="fa fa-check"></i><b>11.4</b> Cleaning up the data</a><ul>
+<li class="chapter" data-level="11.4" data-path="DataPreparationAndAnalyses.html"><a href="DataPreparationAndAnalyses.html#PreparingDataCleaningUpTheData"><i class="fa fa-check"></i><b>11.4</b> Cleaning up the data</a>
+<ul>
 <li class="chapter" data-level="11.4.1" data-path="DataPreparationAndAnalyses.html"><a href="DataPreparationAndAnalyses.html#PreparingDataRenamingVariables"><i class="fa fa-check"></i><b>11.4.1</b> Renaming variables</a></li>
 <li class="chapter" data-level="11.4.2" data-path="DataPreparationAndAnalyses.html"><a href="DataPreparationAndAnalyses.html#PreparingDataRemovingVariables"><i class="fa fa-check"></i><b>11.4.2</b> Removing variables</a></li>
 <li class="chapter" data-level="11.4.3" data-path="DataPreparationAndAnalyses.html"><a href="DataPreparationAndAnalyses.html#PreparingDataAdjustingVariables"><i class="fa fa-check"></i><b>11.4.3</b> Adjusting variables</a></li>
 </ul></li>
-<li class="chapter" data-level="11.5" data-path="DataPreparationAndAnalyses.html"><a href="DataPreparationAndAnalyses.html#PreparingDataFinalStepsBeforeAnalysis"><i class="fa fa-check"></i><b>11.5</b> Final steps before analysis</a><ul>
+<li class="chapter" data-level="11.5" data-path="DataPreparationAndAnalyses.html"><a href="DataPreparationAndAnalyses.html#PreparingDataFinalStepsBeforeAnalysis"><i class="fa fa-check"></i><b>11.5</b> Final steps before analysis</a>
+<ul>
 <li class="chapter" data-level="11.5.1" data-path="DataPreparationAndAnalyses.html"><a href="DataPreparationAndAnalyses.html#PreparingDataFilteringData"><i class="fa fa-check"></i><b>11.5.1</b> Filtering data</a></li>
 <li class="chapter" data-level="11.5.2" data-path="DataPreparationAndAnalyses.html"><a href="DataPreparationAndAnalyses.html#PreparingDataReverseScoring"><i class="fa fa-check"></i><b>11.5.2</b> Reverse-scoring</a></li>
 <li class="chapter" data-level="11.5.3" data-path="DataPreparationAndAnalyses.html"><a href="DataPreparationAndAnalyses.html#PreparingDataCalculatingZScores"><i class="fa fa-check"></i><b>11.5.3</b> Calculating <em>z</em>-scores</a></li>
@@ -254,39 +291,48 @@
 </ul></li>
 </ul></li>
 <li class="part"><span><b>IV Writing</b></span></li>
-<li class="chapter" data-level="12" data-path="ReportingResearch.html"><a href="ReportingResearch.html"><i class="fa fa-check"></i><b>12</b> Reporting research</a><ul>
-<li class="chapter" data-level="12.1" data-path="ReportingResearch.html"><a href="ReportingResearch.html#TheBroaderContext"><i class="fa fa-check"></i><b>12.1</b> The broader context</a><ul>
+<li class="chapter" data-level="12" data-path="ReportingResearch.html"><a href="ReportingResearch.html"><i class="fa fa-check"></i><b>12</b> Reporting research</a>
+<ul>
+<li class="chapter" data-level="12.1" data-path="ReportingResearch.html"><a href="ReportingResearch.html#TheBroaderContext"><i class="fa fa-check"></i><b>12.1</b> The broader context</a>
+<ul>
 <li class="chapter" data-level="12.1.1" data-path="ReportingResearch.html"><a href="ReportingResearch.html#EducationCircles"><i class="fa fa-check"></i><b>12.1.1</b> The education circle</a></li>
 <li class="chapter" data-level="12.1.2" data-path="ReportingResearch.html"><a href="ReportingResearch.html#ResearchCircle"><i class="fa fa-check"></i><b>12.1.2</b> The research circle</a></li>
 <li class="chapter" data-level="12.1.3" data-path="ReportingResearch.html"><a href="ReportingResearch.html#ResearchGenre"><i class="fa fa-check"></i><b>12.1.3</b> The research genre</a></li>
 </ul></li>
 <li class="chapter" data-level="12.2" data-path="ReportingResearch.html"><a href="ReportingResearch.html#PurposeOfThisClass"><i class="fa fa-check"></i><b>12.2</b> Purpose of writing in this class</a></li>
 <li class="chapter" data-level="12.3" data-path="ReportingResearch.html"><a href="ReportingResearch.html#TheGenreOfScience"><i class="fa fa-check"></i><b>12.3</b> The genre of science</a></li>
-<li class="chapter" data-level="12.4" data-path="ReportingResearch.html"><a href="ReportingResearch.html#StyleGuides"><i class="fa fa-check"></i><b>12.4</b> Style guides</a><ul>
+<li class="chapter" data-level="12.4" data-path="ReportingResearch.html"><a href="ReportingResearch.html#StyleGuides"><i class="fa fa-check"></i><b>12.4</b> Style guides</a>
+<ul>
 <li class="chapter" data-level="12.4.1" data-path="ReportingResearch.html"><a href="ReportingResearch.html#ApaStyle"><i class="fa fa-check"></i><b>12.4.1</b> APA style</a></li>
 </ul></li>
-<li class="chapter" data-level="12.5" data-path="ReportingResearch.html"><a href="ReportingResearch.html#IssuesNotExtensivelyCovered"><i class="fa fa-check"></i><b>12.5</b> Issues not extensively covered</a><ul>
+<li class="chapter" data-level="12.5" data-path="ReportingResearch.html"><a href="ReportingResearch.html#IssuesNotExtensivelyCovered"><i class="fa fa-check"></i><b>12.5</b> Issues not extensively covered</a>
+<ul>
 <li class="chapter" data-level="12.5.1" data-path="ReportingResearch.html"><a href="ReportingResearch.html#CriticalThinking"><i class="fa fa-check"></i><b>12.5.1</b> Critical thinking</a></li>
 <li class="chapter" data-level="12.5.2" data-path="ReportingResearch.html"><a href="ReportingResearch.html#MechanicsOfWriting"><i class="fa fa-check"></i><b>12.5.2</b> “Grammar”, clarity, and mechanics</a></li>
 <li class="chapter" data-level="12.5.3" data-path="ReportingResearch.html"><a href="ReportingResearch.html#PacingTheWritingProcess"><i class="fa fa-check"></i><b>12.5.3</b> Pacing the writing process</a></li>
 </ul></li>
-<li class="chapter" data-level="12.6" data-path="ReportingResearch.html"><a href="ReportingResearch.html#OutsideHelpOnWritingUpResearch"><i class="fa fa-check"></i><b>12.6</b> Outside help on writing up research</a><ul>
+<li class="chapter" data-level="12.6" data-path="ReportingResearch.html"><a href="ReportingResearch.html#OutsideHelpOnWritingUpResearch"><i class="fa fa-check"></i><b>12.6</b> Outside help on writing up research</a>
+<ul>
 <li class="chapter" data-level="12.6.1" data-path="ReportingResearch.html"><a href="ReportingResearch.html#research-papers-in-apa-format"><i class="fa fa-check"></i><b>12.6.1</b> Research papers in APA format</a></li>
 <li class="chapter" data-level="12.6.2" data-path="ReportingResearch.html"><a href="ReportingResearch.html#WritingUpResearch"><i class="fa fa-check"></i><b>12.6.2</b> Writing up research</a></li>
 </ul></li>
 </ul></li>
-<li class="chapter" data-level="13" data-path="WritingIntroductions.html"><a href="WritingIntroductions.html"><i class="fa fa-check"></i><b>13</b> Writing introductions</a><ul>
+<li class="chapter" data-level="13" data-path="WritingIntroductions.html"><a href="WritingIntroductions.html"><i class="fa fa-check"></i><b>13</b> Writing introductions</a>
+<ul>
 <li class="chapter" data-level="13.1" data-path="WritingIntroductions.html"><a href="WritingIntroductions.html#PurposeOfTheIntroduction"><i class="fa fa-check"></i><b>13.1</b> The purpose of the <em>Introduction</em></a></li>
 <li class="chapter" data-level="13.2" data-path="WritingIntroductions.html"><a href="WritingIntroductions.html#StructureOfIntroductions"><i class="fa fa-check"></i><b>13.2</b> Structure of introductions</a></li>
-<li class="chapter" data-level="13.3" data-path="WritingIntroductions.html"><a href="WritingIntroductions.html#ExamplesOfIntroductions"><i class="fa fa-check"></i><b>13.3</b> Examples of introductions</a><ul>
+<li class="chapter" data-level="13.3" data-path="WritingIntroductions.html"><a href="WritingIntroductions.html#ExamplesOfIntroductions"><i class="fa fa-check"></i><b>13.3</b> Examples of introductions</a>
+<ul>
 <li class="chapter" data-level="13.3.1" data-path="WritingIntroductions.html"><a href="WritingIntroductions.html#ExamplesOfOpeningSentencesOfIntroductions"><i class="fa fa-check"></i><b>13.3.1</b> Examples of opening sentences</a></li>
 <li class="chapter" data-level="13.3.2" data-path="WritingIntroductions.html"><a href="WritingIntroductions.html#ExamplesOfTheLiteratureReview"><i class="fa fa-check"></i><b>13.3.2</b> Examples of the literature review</a></li>
 <li class="chapter" data-level="13.3.3" data-path="WritingIntroductions.html"><a href="WritingIntroductions.html#ExamplesOfResearchQuestionsAndHypotheses"><i class="fa fa-check"></i><b>13.3.3</b> Examples of research questions and hypotheses</a></li>
 </ul></li>
-<li class="chapter" data-level="13.4" data-path="WritingIntroductions.html"><a href="WritingIntroductions.html#OutsideHelpOnIntroductions"><i class="fa fa-check"></i><b>13.4</b> Outside help on introductions</a><ul>
+<li class="chapter" data-level="13.4" data-path="WritingIntroductions.html"><a href="WritingIntroductions.html#OutsideHelpOnIntroductions"><i class="fa fa-check"></i><b>13.4</b> Outside help on introductions</a>
+<ul>
 <li class="chapter" data-level="13.4.1" data-path="WritingIntroductions.html"><a href="WritingIntroductions.html#OutsideHelpOnIntroductionsOpeningSentences"><i class="fa fa-check"></i><b>13.4.1</b> Opening sentences</a></li>
 </ul></li>
-<li class="chapter" data-level="13.5" data-path="WritingIntroductions.html"><a href="WritingIntroductions.html#PWEFI1"><i class="fa fa-check"></i><b>13.5</b> Practice writing exercise 1</a><ul>
+<li class="chapter" data-level="13.5" data-path="WritingIntroductions.html"><a href="WritingIntroductions.html#PWEFI1"><i class="fa fa-check"></i><b>13.5</b> Practice writing exercise 1</a>
+<ul>
 <li class="chapter" data-level="13.5.1" data-path="WritingIntroductions.html"><a href="WritingIntroductions.html#PWEFI1SettingUpGroupsAndDocs"><i class="fa fa-check"></i><b>13.5.1</b> Setting up your groups and docs</a></li>
 <li class="chapter" data-level="13.5.2" data-path="WritingIntroductions.html"><a href="WritingIntroductions.html#PWEFI1OpeningSentence"><i class="fa fa-check"></i><b>13.5.2</b> Opening sentence</a></li>
 <li class="chapter" data-level="13.5.3" data-path="WritingIntroductions.html"><a href="WritingIntroductions.html#PWEFI1ResearchQuestion"><i class="fa fa-check"></i><b>13.5.3</b> Research question</a></li>
@@ -294,73 +340,89 @@
 <li class="chapter" data-level="13.5.5" data-path="WritingIntroductions.html"><a href="WritingIntroductions.html#PWEFI1GeneralToSpecific"><i class="fa fa-check"></i><b>13.5.5</b> General-to-specific paragraphs</a></li>
 </ul></li>
 <li class="chapter" data-level="13.6" data-path="WritingIntroductions.html"><a href="WritingIntroductions.html#PWEFI2"><i class="fa fa-check"></i><b>13.6</b> Practice writing exercise 2</a></li>
-<li class="chapter" data-level="13.7" data-path="WritingIntroductions.html"><a href="WritingIntroductions.html#WritingAssignment1"><i class="fa fa-check"></i><b>13.7</b> Writing Assignment #1</a><ul>
+<li class="chapter" data-level="13.7" data-path="WritingIntroductions.html"><a href="WritingIntroductions.html#WritingAssignment1"><i class="fa fa-check"></i><b>13.7</b> Writing Assignment #1</a>
+<ul>
 <li class="chapter" data-level="13.7.1" data-path="WritingIntroductions.html"><a href="WritingIntroductions.html#GeneralInstructionsOnWritingAssignment1"><i class="fa fa-check"></i><b>13.7.1</b> General Instructions</a></li>
 <li class="chapter" data-level="13.7.2" data-path="WritingIntroductions.html"><a href="WritingIntroductions.html#SpecificInstructionsOnWritingAssignment1"><i class="fa fa-check"></i><b>13.7.2</b> Specific Instructions</a></li>
 <li class="chapter" data-level="13.7.3" data-path="WritingIntroductions.html"><a href="WritingIntroductions.html#UploadingRoughDraftOfWritingAssignment1"><i class="fa fa-check"></i><b>13.7.3</b> Uploading the rough draft</a></li>
 <li class="chapter" data-level="13.7.4" data-path="WritingIntroductions.html"><a href="WritingIntroductions.html#uploading-the-final-draft"><i class="fa fa-check"></i><b>13.7.4</b> Uploading the final draft</a></li>
 </ul></li>
 </ul></li>
-<li class="chapter" data-level="14" data-path="WritingMethodSections.html"><a href="WritingMethodSections.html"><i class="fa fa-check"></i><b>14</b> Writing <em>Method</em> sections</a><ul>
+<li class="chapter" data-level="14" data-path="WritingMethodSections.html"><a href="WritingMethodSections.html"><i class="fa fa-check"></i><b>14</b> Writing <em>Method</em> sections</a>
+<ul>
 <li class="chapter" data-level="14.1" data-path="WritingMethodSections.html"><a href="WritingMethodSections.html#PurposeOfTheMethodSection"><i class="fa fa-check"></i><b>14.1</b> Purpose of the Method section</a></li>
-<li class="chapter" data-level="14.2" data-path="WritingMethodSections.html"><a href="WritingMethodSections.html#StructureOfMethodSections"><i class="fa fa-check"></i><b>14.2</b> Structure of Method sections</a><ul>
+<li class="chapter" data-level="14.2" data-path="WritingMethodSections.html"><a href="WritingMethodSections.html#StructureOfMethodSections"><i class="fa fa-check"></i><b>14.2</b> Structure of Method sections</a>
+<ul>
 <li class="chapter" data-level="14.2.1" data-path="WritingMethodSections.html"><a href="WritingMethodSections.html#MethodSection1Participants"><i class="fa fa-check"></i><b>14.2.1</b> <em>Participants</em></a></li>
 <li class="chapter" data-level="14.2.2" data-path="WritingMethodSections.html"><a href="WritingMethodSections.html#MethodSection2Materials"><i class="fa fa-check"></i><b>14.2.2</b> <em>Materials</em></a></li>
 <li class="chapter" data-level="14.2.3" data-path="WritingMethodSections.html"><a href="WritingMethodSections.html#MethodSection3DesignAndAnalysis"><i class="fa fa-check"></i><b>14.2.3</b> <em>Design and Analysis</em></a></li>
 <li class="chapter" data-level="14.2.4" data-path="WritingMethodSections.html"><a href="WritingMethodSections.html#MethodSection4Procedure"><i class="fa fa-check"></i><b>14.2.4</b> <em>Procedure</em></a></li>
 </ul></li>
 <li class="chapter" data-level="14.3" data-path="WritingMethodSections.html"><a href="WritingMethodSections.html#OutsideHelpOnMethodsSections"><i class="fa fa-check"></i><b>14.3</b> Outside help on Method sections</a></li>
-<li class="chapter" data-level="14.4" data-path="WritingMethodSections.html"><a href="WritingMethodSections.html#PWEFM1"><i class="fa fa-check"></i><b>14.4</b> Practice writing exercise 1</a><ul>
+<li class="chapter" data-level="14.4" data-path="WritingMethodSections.html"><a href="WritingMethodSections.html#PWEFM1"><i class="fa fa-check"></i><b>14.4</b> Practice writing exercise 1</a>
+<ul>
 <li class="chapter" data-level="14.4.1" data-path="WritingMethodSections.html"><a href="WritingMethodSections.html#PWEFM1Participants"><i class="fa fa-check"></i><b>14.4.1</b> Participants</a></li>
 <li class="chapter" data-level="14.4.2" data-path="WritingMethodSections.html"><a href="WritingMethodSections.html#PWEFM1MaterialsDesignProcedures"><i class="fa fa-check"></i><b>14.4.2</b> Materials, Design, and Procedures</a></li>
 </ul></li>
-<li class="chapter" data-level="14.5" data-path="WritingMethodSections.html"><a href="WritingMethodSections.html#WritingAssignment2"><i class="fa fa-check"></i><b>14.5</b> Writing Assignment #2</a><ul>
+<li class="chapter" data-level="14.5" data-path="WritingMethodSections.html"><a href="WritingMethodSections.html#WritingAssignment2"><i class="fa fa-check"></i><b>14.5</b> Writing Assignment #2</a>
+<ul>
 <li class="chapter" data-level="14.5.1" data-path="WritingMethodSections.html"><a href="WritingMethodSections.html#GeneralInstructionsOnWritingAssignment2"><i class="fa fa-check"></i><b>14.5.1</b> General Instructions</a></li>
 <li class="chapter" data-level="14.5.2" data-path="WritingMethodSections.html"><a href="WritingMethodSections.html#SpecificInstructionsOnWritingAssignment2"><i class="fa fa-check"></i><b>14.5.2</b> Specific Instructions</a></li>
 </ul></li>
 </ul></li>
-<li class="chapter" data-level="15" data-path="WritingResultsSections.html"><a href="WritingResultsSections.html"><i class="fa fa-check"></i><b>15</b> Writing <em>Results</em> sections</a><ul>
+<li class="chapter" data-level="15" data-path="WritingResultsSections.html"><a href="WritingResultsSections.html"><i class="fa fa-check"></i><b>15</b> Writing <em>Results</em> sections</a>
+<ul>
 <li class="chapter" data-level="15.1" data-path="WritingResultsSections.html"><a href="WritingResultsSections.html#NoteOnWritingAssignments3And4"><i class="fa fa-check"></i><b>15.1</b> A note on Writing Assignments 3 and 4</a></li>
-<li class="chapter" data-level="15.2" data-path="WritingResultsSections.html"><a href="WritingResultsSections.html#StructureOfResultsSections"><i class="fa fa-check"></i><b>15.2</b> Structure of <em>Results</em> sections</a><ul>
+<li class="chapter" data-level="15.2" data-path="WritingResultsSections.html"><a href="WritingResultsSections.html#StructureOfResultsSections"><i class="fa fa-check"></i><b>15.2</b> Structure of <em>Results</em> sections</a>
+<ul>
 <li class="chapter" data-level="15.2.1" data-path="WritingResultsSections.html"><a href="WritingResultsSections.html#ExamplesOfResultsSections"><i class="fa fa-check"></i><b>15.2.1</b> Examples of <em>Results</em> sections</a></li>
 <li class="chapter" data-level="15.2.2" data-path="WritingResultsSections.html"><a href="WritingResultsSections.html#FormattingTablesInAPA"><i class="fa fa-check"></i><b>15.2.2</b> Formatting tables in APA</a></li>
 <li class="chapter" data-level="15.2.3" data-path="WritingResultsSections.html"><a href="WritingResultsSections.html#FormattingFiguresInAPA"><i class="fa fa-check"></i><b>15.2.3</b> Formatting figures in APA</a></li>
 </ul></li>
-<li class="chapter" data-level="15.3" data-path="WritingResultsSections.html"><a href="WritingResultsSections.html#PWEFR"><i class="fa fa-check"></i><b>15.3</b> Practice writing exercise</a><ul>
+<li class="chapter" data-level="15.3" data-path="WritingResultsSections.html"><a href="WritingResultsSections.html#PWEFR"><i class="fa fa-check"></i><b>15.3</b> Practice writing exercise</a>
+<ul>
 <li class="chapter" data-level="15.3.1" data-path="WritingResultsSections.html"><a href="WritingResultsSections.html#PWEFRFormingGroups"><i class="fa fa-check"></i><b>15.3.1</b> Forming groups</a></li>
 <li class="chapter" data-level="15.3.2" data-path="WritingResultsSections.html"><a href="WritingResultsSections.html#PWEFRGetStatisticalOutputReady"><i class="fa fa-check"></i><b>15.3.2</b> Get the statistical output ready</a></li>
 <li class="chapter" data-level="15.3.3" data-path="WritingResultsSections.html"><a href="WritingResultsSections.html#PWEFRWriting"><i class="fa fa-check"></i><b>15.3.3</b> Writing</a></li>
 </ul></li>
 </ul></li>
-<li class="chapter" data-level="16" data-path="WritingDiscussionSections.html"><a href="WritingDiscussionSections.html"><i class="fa fa-check"></i><b>16</b> Writing <em>Discussion</em> sections</a><ul>
-<li class="chapter" data-level="16.1" data-path="WritingDiscussionSections.html"><a href="WritingDiscussionSections.html#StructureOfDiscussionSections"><i class="fa fa-check"></i><b>16.1</b> Purpose and structure of <em>Discussion</em> sections</a><ul>
+<li class="chapter" data-level="16" data-path="WritingDiscussionSections.html"><a href="WritingDiscussionSections.html"><i class="fa fa-check"></i><b>16</b> Writing <em>Discussion</em> sections</a>
+<ul>
+<li class="chapter" data-level="16.1" data-path="WritingDiscussionSections.html"><a href="WritingDiscussionSections.html#StructureOfDiscussionSections"><i class="fa fa-check"></i><b>16.1</b> Purpose and structure of <em>Discussion</em> sections</a>
+<ul>
 <li class="chapter" data-level="16.1.1" data-path="WritingDiscussionSections.html"><a href="WritingDiscussionSections.html#StructureOfSingleStudyDiscussionSections"><i class="fa fa-check"></i><b>16.1.1</b> Single-study <em>Discussion</em> sections</a></li>
 <li class="chapter" data-level="16.1.2" data-path="WritingDiscussionSections.html"><a href="WritingDiscussionSections.html#StructureOfMultipleStudyDiscussionSections"><i class="fa fa-check"></i><b>16.1.2</b> Multiple-study <em>Discussion</em> sections</a></li>
 <li class="chapter" data-level="16.1.3" data-path="WritingDiscussionSections.html"><a href="WritingDiscussionSections.html#ExamplesOfDiscussionSections"><i class="fa fa-check"></i><b>16.1.3</b> Examples of <em>Discussion</em> sections</a></li>
 </ul></li>
-<li class="chapter" data-level="16.2" data-path="WritingDiscussionSections.html"><a href="WritingDiscussionSections.html#PWEFD"><i class="fa fa-check"></i><b>16.2</b> Practice writing exercise</a><ul>
+<li class="chapter" data-level="16.2" data-path="WritingDiscussionSections.html"><a href="WritingDiscussionSections.html#PWEFD"><i class="fa fa-check"></i><b>16.2</b> Practice writing exercise</a>
+<ul>
 <li class="chapter" data-level="16.2.1" data-path="WritingDiscussionSections.html"><a href="WritingDiscussionSections.html#PWEFDGettingReady"><i class="fa fa-check"></i><b>16.2.1</b> Getting ready</a></li>
 <li class="chapter" data-level="16.2.2" data-path="WritingDiscussionSections.html"><a href="WritingDiscussionSections.html#PWEFDWriting"><i class="fa fa-check"></i><b>16.2.2</b> Writing</a></li>
 </ul></li>
-<li class="chapter" data-level="16.3" data-path="WritingDiscussionSections.html"><a href="WritingDiscussionSections.html#WritingAssignment3"><i class="fa fa-check"></i><b>16.3</b> Writing Assignment #3</a><ul>
+<li class="chapter" data-level="16.3" data-path="WritingDiscussionSections.html"><a href="WritingDiscussionSections.html#WritingAssignment3"><i class="fa fa-check"></i><b>16.3</b> Writing Assignment #3</a>
+<ul>
 <li class="chapter" data-level="16.3.1" data-path="WritingDiscussionSections.html"><a href="WritingDiscussionSections.html#GeneralInstructionsOnWritingAssignment3"><i class="fa fa-check"></i><b>16.3.1</b> General Instructions</a></li>
 <li class="chapter" data-level="16.3.2" data-path="WritingDiscussionSections.html"><a href="WritingDiscussionSections.html#SpecificInstructionsOnWritingAssignment3"><i class="fa fa-check"></i><b>16.3.2</b> Specific Instructions</a></li>
 </ul></li>
 </ul></li>
-<li class="chapter" data-level="17" data-path="WritingGeneralDiscussionSections.html"><a href="WritingGeneralDiscussionSections.html"><i class="fa fa-check"></i><b>17</b> Writing <em>General Discussion</em> sections</a><ul>
+<li class="chapter" data-level="17" data-path="WritingGeneralDiscussionSections.html"><a href="WritingGeneralDiscussionSections.html"><i class="fa fa-check"></i><b>17</b> Writing <em>General Discussion</em> sections</a>
+<ul>
 <li class="chapter" data-level="17.1" data-path="WritingGeneralDiscussionSections.html"><a href="WritingGeneralDiscussionSections.html#NoteOnWritingAssignments4"><i class="fa fa-check"></i><b>17.1</b> A note on Writing Assignment 4</a></li>
 <li class="chapter" data-level="17.2" data-path="WritingGeneralDiscussionSections.html"><a href="WritingGeneralDiscussionSections.html#StructureOfGeneralDiscussionSections"><i class="fa fa-check"></i><b>17.2</b> Structure of <em>General Discussion</em> sections</a></li>
-<li class="chapter" data-level="17.3" data-path="WritingGeneralDiscussionSections.html"><a href="WritingGeneralDiscussionSections.html#ContentsOfGeneralDiscussionSections"><i class="fa fa-check"></i><b>17.3</b> Contents of <em>General Discussion</em> sections</a><ul>
+<li class="chapter" data-level="17.3" data-path="WritingGeneralDiscussionSections.html"><a href="WritingGeneralDiscussionSections.html#ContentsOfGeneralDiscussionSections"><i class="fa fa-check"></i><b>17.3</b> Contents of <em>General Discussion</em> sections</a>
+<ul>
 <li class="chapter" data-level="17.3.1" data-path="WritingGeneralDiscussionSections.html"><a href="WritingGeneralDiscussionSections.html#ContentsOfGeneralDiscussionSectionsSynthesizing"><i class="fa fa-check"></i><b>17.3.1</b> Synthesizing</a></li>
 <li class="chapter" data-level="17.3.2" data-path="WritingGeneralDiscussionSections.html"><a href="WritingGeneralDiscussionSections.html#ContentsOfGeneralDiscussionSectionsClarifying"><i class="fa fa-check"></i><b>17.3.2</b> Clarifying</a></li>
 <li class="chapter" data-level="17.3.3" data-path="WritingGeneralDiscussionSections.html"><a href="WritingGeneralDiscussionSections.html#ContentsOfGeneralDiscussionSectionsConcluding"><i class="fa fa-check"></i><b>17.3.3</b> Concluding</a></li>
 <li class="chapter" data-level="17.3.4" data-path="WritingGeneralDiscussionSections.html"><a href="WritingGeneralDiscussionSections.html#ExampleInAppendixI"><i class="fa fa-check"></i><b>17.3.4</b> Example in Appendix I</a></li>
 </ul></li>
-<li class="chapter" data-level="17.4" data-path="WritingGeneralDiscussionSections.html"><a href="WritingGeneralDiscussionSections.html#PWEFGD"><i class="fa fa-check"></i><b>17.4</b> Practice writing exercise</a><ul>
+<li class="chapter" data-level="17.4" data-path="WritingGeneralDiscussionSections.html"><a href="WritingGeneralDiscussionSections.html#PWEFGD"><i class="fa fa-check"></i><b>17.4</b> Practice writing exercise</a>
+<ul>
 <li class="chapter" data-level="17.4.1" data-path="WritingGeneralDiscussionSections.html"><a href="WritingGeneralDiscussionSections.html#PWEFGDGettingReady"><i class="fa fa-check"></i><b>17.4.1</b> Getting ready</a></li>
 <li class="chapter" data-level="17.4.2" data-path="WritingGeneralDiscussionSections.html"><a href="WritingGeneralDiscussionSections.html#PWEFGDWriting"><i class="fa fa-check"></i><b>17.4.2</b> Writing</a></li>
 </ul></li>
-<li class="chapter" data-level="17.5" data-path="WritingGeneralDiscussionSections.html"><a href="WritingGeneralDiscussionSections.html#WritingAssignment4"><i class="fa fa-check"></i><b>17.5</b> Writing Assignment #4</a><ul>
+<li class="chapter" data-level="17.5" data-path="WritingGeneralDiscussionSections.html"><a href="WritingGeneralDiscussionSections.html#WritingAssignment4"><i class="fa fa-check"></i><b>17.5</b> Writing Assignment #4</a>
+<ul>
 <li class="chapter" data-level="17.5.1" data-path="WritingGeneralDiscussionSections.html"><a href="WritingGeneralDiscussionSections.html#GeneralInstructionsOnWritingAssignment4"><i class="fa fa-check"></i><b>17.5.1</b> General Instructions</a></li>
 <li class="chapter" data-level="17.5.2" data-path="WritingGeneralDiscussionSections.html"><a href="WritingGeneralDiscussionSections.html#SpecificInstructionsOnWritingAssignment4"><i class="fa fa-check"></i><b>17.5.2</b> Specific Instructions</a></li>
 </ul></li>
@@ -398,19 +460,19 @@
           <div class="page-inner">
 
             <section class="normal" id="section-">
-<div id="CorrAndLinearReg" class="section level1">
+<div id="CorrAndLinearReg" class="section level1" number="7">
 <h1><span class="header-section-number">Chapter 7</span> Correlation and linear regression</h1>
 <p>So far, we have only addressed cases where the predictor variable is categorical in nature (e.g., <strong><em>Sex</em></strong>: <em>male</em>/<em>female</em>; <strong><em>Handedness</em></strong>: <em>left</em>/<em>right</em>/<em>ambidextrous</em>).</p>
 <p>But this chapter is all about how to analyze data when both the outcome variable and the predictor variable are continuous in nature. For example, you might be interested in the proclivity of university students to attend sporting events (measured on a scale from 1-7, 1 being <em>not at all</em>, and 7 being <em>every event I can possibly attend</em>) as predicted by how much they crave social interaction (same scale, 1 being <em>not at all</em> and 7 being <em>all the time</em>). You might expect that students who provide higher values on the first question would also tend to provide higher values on the second, and vice-versa. This sort of analysis cannot be carried out with a chi-square, or <em>t</em>-test, or ANOVA. It can be analyzed, however, as a correlation or a simple regression.<a href="#fn68" class="footnote-ref" id="fnref68"><sup>68</sup></a></p>
 <p><br/></p>
-<div id="Correlations" class="section level2">
+<div id="Correlations" class="section level2" number="7.1">
 <h2><span class="header-section-number">7.1</span> Correlations</h2>
 <p>The first analysis in this chapter is correlation. The second is a simple regression. Both involved only two variables: a single, continuous outcome variable, and a single, continuous predictor variable.</p>
 <p>Underneath however, these two particular analyses turn out to the same thing. The correlation between two continuous variables (which is the kind of regression we deal with in this section) is essentially a special case of a simple regression between two variables. Specifically, correlation is a simple regression where both the outcome variable and the predictor variable are both standardized (i.e., into <em>z</em>-scores).<a href="#fn69" class="footnote-ref" id="fnref69"><sup>69</sup></a></p>
 <p>Restricting ourselves to correlation, the obtained value for a correlation between two continuous variables is known as Pearson’s <em>r</em>, after Karl Pearson.<a href="#fn70" class="footnote-ref" id="fnref70"><sup>70</sup></a> The obtained value of Pearson’s <em>r</em> ranges from -1 to 1, with the extremes (-1 and 1) indicating opposite, but equally strong, directions of correlation, and the middle value, 0, indicating no relationship at all. The closer one is to the extremes (-1 or 1), the <em>stronger</em> the correlation is. The closer one is to the middle (0), the <em>weaker</em> the correlation is.</p>
 <p>The direction of the correlation (i.e., whether it’s positive or negative) simply indicates the how the variables are related. Specifically, if the values of <em>X</em> tend to increase alongside increases in <em>Y</em>, then the correlation is positive (e.g., height and weight are always positively correlated, though the correlation is not perfect).</p>
 <p>In contrast, if as the values of <em>X</em> go up, the values of <em>Y</em> tend to go <strong>down</strong>, then the correlation is negative. This is what you would find if you compared the amount of rainfall to the number of university students who walk or ride their bikes to school (note, that the number of students who <em>drive</em> to school would be positively correlated in this case – thus, the direction of a correlation [positive or negative] has nothing to do with whether the relationship is “good” or “bad”).</p>
-<p>In the textbook <span class="citation">(Navarro &amp; Foxcroft, <a href="#ref-lsj">2019</a>)</span> in section 12.1.3, the authors simplify the formula for Pearson’s <em>r</em> to the following:</p>
+<p>In the textbook <span class="citation">(Navarro &amp; Foxcroft, <a href="#ref-lsj" role="doc-biblioref">2019</a>)</span> in section 12.1.3, the authors simplify the formula for Pearson’s <em>r</em> to the following:</p>
 <p><span class="math display">\[r_{XY}=\frac{COV(X,Y)}{\hat{\sigma}_X,\hat{\sigma}_Y}\]</span></p>
 <p>But for whatever reason, they don’t simplify it further. This can be done. The easiest formula for Pearson’s <em>r</em> (at least from the perspective of the author of this lab manual) is the following:</p>
 <p><span class="math display">\[r_{XY}=\frac{\sum{Z_XZ_Y}}{n-1}\]</span>
@@ -422,11 +484,11 @@
 <p>That is, for every observation in your data set, take the <em>z</em>-score for <em>X</em> and multiply it by the <em>z</em>-score for <em>Y</em>; add all those product up; and then divide by the number of observations minus 1 (<em>n-1</em>).</p>
 <p>There is also a significance test associated with correlation. You can perform this inferential test on its own,<a href="#fn71" class="footnote-ref" id="fnref71"><sup>71</sup></a> or as a <em>t</em>-test of a coefficient in a simple regression (more on this later in section <a href="CorrAndLinearReg.html#LinearRegression">7.2</a> below).</p>
 <p><br/></p>
-<div id="BasicCorrelationParenthood" class="section level3">
+<div id="BasicCorrelationParenthood" class="section level3" number="7.1.1">
 <h3><span class="header-section-number">7.1.1</span> Basic: Parenthood data</h3>
-<p>This part of the lab manual simply presents the material in Navarro and Foxcroft <span class="citation">(<a href="#ref-lsj">2019</a>)</span>, Chapter 12.1 to 12.2, but in a more lab-oriented manner.</p>
+<p>This part of the lab manual simply presents the material in Navarro and Foxcroft <span class="citation">(<a href="#ref-lsj" role="doc-biblioref">2019</a>)</span>, Chapter 12.1 to 12.2, but in a more lab-oriented manner.</p>
 <p><br/></p>
-<div id="BasicCorrelationParenthoodGettingTheData" class="section level4">
+<div id="BasicCorrelationParenthoodGettingTheData" class="section level4" number="7.1.1.1">
 <h4><span class="header-section-number">7.1.1.1</span> Importing the data</h4>
 <p>The data used to illustrate correlation in this chapter is called <code>Parenthood.csv</code> and it is available from the jamovi module associated with this textbook. Just go to <span class="math inline">\((\equiv)\)</span> &gt; <em>Open</em> &gt; <em>Data Library</em> &gt; <code>Parentood.csv</code>.</p>
 <p>The data is fictional, but real in the sense that the first author has a son, who was naturally an infant at one point. It is a fictitious data set where the author recorded three things:</p>
@@ -438,10 +500,10 @@
 <li>their son’s sleeping patterns (in total hours per night)</li>
 </ol>
 <p>This data set is actually a comma-delimited text file (hence, the title of this subsection: <em>Importing</em>). So although jamovi is good at guessing, sometimes it makes mistakes. You want to make sure that all the variables, except perhaps <code>ID</code>, are continuous. So change any mis-specified variables first.</p>
-<p>You can also re-name the variables, if you wish, into human-readable names, as Navarro and Foxcroft suggest <span class="citation">(<a href="#ref-lsj">2019</a>, p. 282)</span>. Do this in the top row of each variable when you double click the name. You should also probably save it as a .omv (jamovi) file. For the purposes of display, I chose <code>My sleep (hrs.)</code>, <code>Baby sleep (hrs.)</code>, and <code>My grumpiness</code>.</p>
+<p>You can also re-name the variables, if you wish, into human-readable names, as Navarro and Foxcroft suggest <span class="citation">(<a href="#ref-lsj" role="doc-biblioref">2019</a>, p. 282)</span>. Do this in the top row of each variable when you double click the name. You should also probably save it as a .omv (jamovi) file. For the purposes of display, I chose <code>My sleep (hrs.)</code>, <code>Baby sleep (hrs.)</code>, and <code>My grumpiness</code>.</p>
 <p><br/></p>
 </div>
-<div id="BasicCorrelationParenthoodFamiliarization" class="section level4">
+<div id="BasicCorrelationParenthoodFamiliarization" class="section level4" number="7.1.1.2">
 <h4><span class="header-section-number">7.1.1.2</span> Familiarization</h4>
 <p>Notice that there are three correlations that we can run here. Namely, correlations between the following variables:</p>
 <ol style="list-style-type: decimal">
@@ -464,17 +526,17 @@
 <p>Importantly, you can probably guess that there will probably be a statistical correlation between the baby’s sleep and the author’s grumpiness. However, such a clearly indirect relationship would be conceptually <em>mediated</em><a href="#fn72" class="footnote-ref" id="fnref72"><sup>72</sup></a> by the author’s own sleep.</p>
 <p><br/></p>
 </div>
-<div id="BasicCorrelationParenthoodAnalysis" class="section level4">
+<div id="BasicCorrelationParenthoodAnalysis" class="section level4" number="7.1.1.3">
 <h4><span class="header-section-number">7.1.1.3</span> Analysis</h4>
 <p>In this case, there are multiple possible correlations, not all of them useful (see section <a href="CorrAndLinearReg.html#BasicCorrelationParenthoodGettingTheData">7.1.1.1</a> above). Nonetheless, it is possible to analyze multiple correlations at the same time in jamovi.</p>
 <p>Go to the <em>Analyses</em> tab, and click <em>Regression</em> and choose <em>Correlation Matrix</em> from the pull-down menu.</p>
-<p>In the textbook, Navarro and Foxcroft <span class="citation">(<a href="#ref-lsj">2019</a>)</span> have you put all four variables into the analysis, but we will have you only choose the grumpiness and sleep variables (leave <code>day</code> alone).</p>
+<p>In the textbook, Navarro and Foxcroft <span class="citation">(<a href="#ref-lsj" role="doc-biblioref">2019</a>)</span> have you put all four variables into the analysis, but we will have you only choose the grumpiness and sleep variables (leave <code>day</code> alone).</p>
 <p>Make sure to check the boxes <em>Pearson</em> under the heading <strong>Correlation Coefficients</strong>, the boxes <em>Report significance</em> and <em>Confidence intervals</em> (with the interval set to 95%) under the heading <strong>Additional Options</strong>, and the boxes <em>Correlation matrix</em> and <em>Statistics</em> under the heading <strong>Plot</strong>.</p>
 <p>These selections should look like figure <a href="CorrAndLinearReg.html#fig:SetParametersForCorrMatrix">7.1</a> below.</p>
 <div class="figure"><span id="fig:SetParametersForCorrMatrix"></span>
 <img src="images/CorrAndLinReg/SetParametersForCorrMatrix.png" alt="Setting the parameters for a correlation matrix across sleep hours (for infant and parent separately) and grumpiness (of parent), from the `parenthood.csv` dataset in Navarro and Foxcroft [-@lsj]." width="600px" />
 <p class="caption">
-Figure 7.1: Setting the parameters for a correlation matrix across sleep hours (for infant and parent separately) and grumpiness (of parent), from the <code>parenthood.csv</code> dataset in Navarro and Foxcroft <span class="citation">(<a href="#ref-lsj">2019</a>)</span>.
+Figure 7.1: Setting the parameters for a correlation matrix across sleep hours (for infant and parent separately) and grumpiness (of parent), from the <code>parenthood.csv</code> dataset in Navarro and Foxcroft <span class="citation">(<a href="#ref-lsj" role="doc-biblioref">2019</a>)</span>.
 </p>
 </div>
 <p><br/></p>
@@ -521,14 +583,13 @@ Figure 7.1: Setting the parameters for a correlation matrix across sleep hours (
 <div class="rmdtip">
 <strong><em>TIP</em></strong>: An easy way to look at confidence intervals here is to see if both values (for one correlation) are either both negative or both positive. If they are, then the correlation is significant since the range cannot contain 0. If on the other hand, the lower bound is negative and the upper bound is positive, then the range <em>does</em> contain zero, and you do not have significance. Thus, to test for significance, you don’t need to actually look at the values in the confidence intervals, just the signs (+ or -).
 </div>
-
 <p><br/></p>
 <p>In the analysis here you can see that all the variables are correlated with each other. The strongest correlation is between the author’s sleep and their grumpiness, <span class="math inline">\(r(98)=-0.903, p&lt;.001\)</span>. This is indeed the logical connection to grumpiness. But we can also see that there is a statistically significant correlation between the author’s grumpiness and their baby’s sleep, <span class="math inline">\(r(98)=-0.566, p&lt;.001\)</span> (surely an indirect relationship, mediated by the author’s sleep), and finally between the author’s sleep and their baby’s sleep, <span class="math inline">\(r(98)=0.628, p&lt;.001\)</span>, a positive correlation (the more the baby sleeps, the more the author sleeps). The degrees of freedom for Pearson’s <em>r</em>, by the way, is <span class="math inline">\(N-2\)</span>. The author’s fake data has 100 recordings of these three variables. Thus, the degrees of freedom are <span class="math inline">\(100-2=98\)</span>.</p>
 <p><br/></p>
-<p>There is a useful page online that annotates the output of correlations in jamovi. It is page four of the <em>JAMOVI: Annotated Output</em> document from Wendorf <span class="citation">(<a href="#ref-Wendorf2019">2018</a>)</span>. You can find it <a href="https://www4.uwsp.edu/psych/cw/statistics/textbook.htm">here</a>, though you need to choose <em>JAMOVI</em> in the menu across the top, then <em>JAMOVI: Annotated Output</em>.</p>
+<p>There is a useful page online that annotates the output of correlations in jamovi. It is page four of the <em>JAMOVI: Annotated Output</em> document from Wendorf <span class="citation">(<a href="#ref-Wendorf2019" role="doc-biblioref">2018</a>)</span>. You can find it <a href="https://www4.uwsp.edu/psych/cw/statistics/textbook.htm">here</a>, though you need to choose <em>JAMOVI</em> in the menu across the top, then <em>JAMOVI: Annotated Output</em>.</p>
 <p><br/></p>
 </div>
-<div id="BasicCorrelationParenthoodVisualizationWithScatr" class="section level4">
+<div id="BasicCorrelationParenthoodVisualizationWithScatr" class="section level4" number="7.1.1.4">
 <h4><span class="header-section-number">7.1.1.4</span> Visualization using scatr</h4>
 <p>The visualization provided by jamovi in the <em>Regression</em> analysis tab is somewhat limited. One of the software developers at jamovi, Ravi Selker, build an add-on module for jamovi named <em>scatr</em>, which does a better job of creating scatterplots.</p>
 <p>To do this with the current data, make sure that <em>scatr</em> is installed (<em>Modules</em> &gt; <em>Manage installed</em>; find the tab <em>Installed</em> (if <em>scatr</em> is listed there, then stop by clicking the “up” arrow at the upper right); if <em>scatr</em> is not listed under <em>Installed</em>, then find the tab <em>Available</em> and scroll to find <em>scatr</em> and click <em>INSTALL</em>); then click the “up” arrow at the upper-right to get out of this menu.</p>
@@ -537,7 +598,7 @@ Figure 7.1: Setting the parameters for a correlation matrix across sleep hours (
 <div class="figure"><span id="fig:SetParametersForScatrOnGrumpinessAndMySleep"></span>
 <img src="images/CorrAndLinReg/SetParametersForScatrOnGrumpinessAndMySleep.png" alt="Setting the parameters for a scatterplot between `My grumpiness` and `My Sleep (hrs.)`, from the `parenthood.csv` dataset in Navarro and Foxcroft [-@lsj]." width="600px" />
 <p class="caption">
-Figure 7.2: Setting the parameters for a scatterplot between <code>My grumpiness</code> and <code>My Sleep (hrs.)</code>, from the <code>parenthood.csv</code> dataset in Navarro and Foxcroft <span class="citation">(<a href="#ref-lsj">2019</a>)</span>.
+Figure 7.2: Setting the parameters for a scatterplot between <code>My grumpiness</code> and <code>My Sleep (hrs.)</code>, from the <code>parenthood.csv</code> dataset in Navarro and Foxcroft <span class="citation">(<a href="#ref-lsj" role="doc-biblioref">2019</a>)</span>.
 </p>
 </div>
 <p><br/></p>
@@ -553,7 +614,7 @@ Figure 7.2: Setting the parameters for a scatterplot between <code>My grumpiness
 <div class="figure"><span id="fig:SetParametersForScatrStandardizedVersion"></span>
 <img src="images/CorrAndLinReg/SetParametersForScatrStandardizedVersion.png" alt="Setting the parameters for a scatterplot between `My grumpiness` and `My Sleep (hrs)`, both standardized for a closer relation to Pearson's *r*, from the `parenthood.csv` dataset in Navarro and Foxcroft [-@lsj]." width="600px" />
 <p class="caption">
-Figure 7.3: Setting the parameters for a scatterplot between <code>My grumpiness</code> and <code>My Sleep (hrs)</code>, both standardized for a closer relation to Pearson’s <em>r</em>, from the <code>parenthood.csv</code> dataset in Navarro and Foxcroft <span class="citation">(<a href="#ref-lsj">2019</a>)</span>.
+Figure 7.3: Setting the parameters for a scatterplot between <code>My grumpiness</code> and <code>My Sleep (hrs)</code>, both standardized for a closer relation to Pearson’s <em>r</em>, from the <code>parenthood.csv</code> dataset in Navarro and Foxcroft <span class="citation">(<a href="#ref-lsj" role="doc-biblioref">2019</a>)</span>.
 </p>
 </div>
 <p><br/></p>
@@ -564,7 +625,7 @@ Figure 7.3: Setting the parameters for a scatterplot between <code>My grumpiness
 <p>One thing that has changed, however, is that the slope of the line in the second scatterplot (directly above) for the standardized variables (recall that the slope of the line is defined as the change in the value on <em>Y</em> for a one-unit change in <em>X</em>) is now tightly related to Pearson’s <em>r</em>. In fact, the slope in the figure above is now Pearson’s <em>r</em> correlation coefficient, <strong><em>exactly</em></strong>. If you wanted to state it in words, you’d say, “For every standard-deviation increase of one in <code>My sleep (hrs.)</code>, there is a corresponding decrease of .903 standard-deviation units in <code>My grumpiness</code>.” Or, “As I sleep more, I get less grumpy.”</p>
 <p><br/></p>
 </div>
-<div id="BasicCorrelationParenthoodReporting" class="section level4">
+<div id="BasicCorrelationParenthoodReporting" class="section level4" number="7.1.1.5">
 <h4><span class="header-section-number">7.1.1.5</span> Reporting the output</h4>
 <p>As already shown in the case of chi-square, and both the <em>z</em>- and <em>t</em>-tests, APA requires a consistent pattern for reporting statistical output:</p>
 <ol style="list-style-type: decimal">
@@ -610,7 +671,6 @@ Figure 7.3: Setting the parameters for a scatterplot between <code>My grumpiness
 <div class="rmdnote">
 <strong>NOTE</strong>: The effect size for Pearson’s <em>r</em> is Pearson’s <em>r</em> itself. There is no need, therefore, to report a separate effect size.
 </div>
-
 <p><br/></p>
 <p>These inferential statistics were all reported above at the end of section <a href="CorrAndLinearReg.html#BasicCorrelationParenthoodAnalysis">7.1.1.3</a>. But we will re-produce them below:</p>
 <ul>
@@ -628,15 +688,15 @@ Figure 7.3: Setting the parameters for a scatterplot between <code>My grumpiness
 <p><br/></p>
 </div>
 </div>
-<div id="AdvancedCorrelationSPRING2020" class="section level3">
+<div id="AdvancedCorrelationSPRING2020" class="section level3" number="7.1.2">
 <h3><span class="header-section-number">7.1.2</span> Advanced</h3>
 <p><strong><em>SLATED FOR SPRING 2020</em></strong></p>
 <p><br/></p>
 </div>
 </div>
-<div id="LinearRegression" class="section level2">
+<div id="LinearRegression" class="section level2" number="7.2">
 <h2><span class="header-section-number">7.2</span> Linear regression</h2>
-<p>Chapter 12 of Navarro and Foxcroft <span class="citation">(<a href="#ref-lsj">2019</a>)</span> begins the discussion of linear regression with a simple linear regression (sections 12.3-12.4). They also note that the <strong>simple</strong> linear regression is essentially the same as Pearson’s <em>r</em>, but without the standardized variables. That is, the simple linear regression uses the raw values of the variables. We also noted this above in section <a href="CorrAndLinearReg.html#BasicCorrelationParenthoodVisualizationWithScatr">7.1.1.4</a>.</p>
+<p>Chapter 12 of Navarro and Foxcroft <span class="citation">(<a href="#ref-lsj" role="doc-biblioref">2019</a>)</span> begins the discussion of linear regression with a simple linear regression (sections 12.3-12.4). They also note that the <strong>simple</strong> linear regression is essentially the same as Pearson’s <em>r</em>, but without the standardized variables. That is, the simple linear regression uses the raw values of the variables. We also noted this above in section <a href="CorrAndLinearReg.html#BasicCorrelationParenthoodVisualizationWithScatr">7.1.1.4</a>.</p>
 <p>This changes two things. First, the intercept gets a real value.</p>
 <p>Recall that since Pearson’s <em>r</em> is calculated from standardized variables, the intercept of the line of best fit (i.e., where it crosses the y-axis) is known beforehand. It is located at <span class="math inline">\(Y=0\)</span>. In fact, the line must cross at the origin (0,0), since by definition, <span class="math inline">\(X=0\)</span> as well at the intercept. So the axes are rarely represented when Pearson’s <em>r</em> is graphed. It would just add visual clutter in the form of a cross drawn through the middle of all the data.</p>
 <p>But since the linear regression uses the raw values, there must be a calculated value at the intercept. The reason here is that all lines must have an intercept before we can map them on to a Cartesian coordinate system (an <span class="math inline">\(X\)</span> and a <span class="math inline">\(Y\)</span> axis). It’s just that in the case of linear regression, this intercept must now be calculated. In Pearson’s <em>r</em>, it was known beforehand.</p>
@@ -645,7 +705,7 @@ Figure 7.3: Setting the parameters for a scatterplot between <code>My grumpiness
 <p>Recall from high-school algebra (or earlier) that the formula for a straight line is as follows:</p>
 <p><span class="math display">\[Y=mX+b\]</span>
 , where <span class="math inline">\(Y\)</span> is some value you’re trying to calculate based on some <span class="math inline">\(X\)</span> value, combined with an intercept, <span class="math inline">\(b\)</span>, and a slope, <span class="math inline">\(m\)</span>.</p>
-<p>Navarro and Foxcroft <span class="citation">(<a href="#ref-lsj">2019</a>)</span> use the following formula:</p>
+<p>Navarro and Foxcroft <span class="citation">(<a href="#ref-lsj" role="doc-biblioref">2019</a>)</span> use the following formula:</p>
 <p><span class="math display">\[Y=bX+a\]</span>
 , where, as you might imagine, the slope is <span class="math inline">\(b\)</span> and <span class="math inline">\(a\)</span> is the intercept.</p>
 <p>This is just the way they do it in Australia, where Navarro is from.</p>
@@ -655,25 +715,25 @@ Figure 7.3: Setting the parameters for a scatterplot between <code>My grumpiness
 <p><span class="math display">\[Y=\beta_0+\beta_1X\]</span></p>
 <p>Here, <span class="math inline">\(\beta_0\)</span> is the intercept and <span class="math inline">\(\beta_1\)</span> is the slope. The advantage to this formulation is that anything represented as greek <span class="math inline">\(\beta\)</span> (greek lowercase “beta”) must be calculated, and anything represented as <span class="math inline">\(X\)</span> is given to you (from the data set). This formulation becomes more handy when you study multiple linear regression.</p>
 <p><br/></p>
-<div id="BasicRegressionParenthood" class="section level3">
+<div id="BasicRegressionParenthood" class="section level3" number="7.2.1">
 <h3><span class="header-section-number">7.2.1</span> Basic: Parenthood data (again)</h3>
-<p>Navarro and Foxcroft <span class="citation">(<a href="#ref-lsj">2019</a>)</span> use the same data set to illustrate simple linear regression as they did correlation. This makes sense since it is informative to see the similarity across the two analysis options.</p>
+<p>Navarro and Foxcroft <span class="citation">(<a href="#ref-lsj" role="doc-biblioref">2019</a>)</span> use the same data set to illustrate simple linear regression as they did correlation. This makes sense since it is informative to see the similarity across the two analysis options.</p>
 <p><br/></p>
-<div id="BasicRegressionParenthoodGettingTheData" class="section level4">
+<div id="BasicRegressionParenthoodGettingTheData" class="section level4" number="7.2.1.1">
 <h4><span class="header-section-number">7.2.1.1</span> Import and familiarize</h4>
 <p>As you did above (and you don’t currently have it open), just go to <span class="math inline">\((\equiv)\)</span> &gt; <em>Open</em> &gt; <em>Data Library</em> &gt; <code>Parentood.csv</code>.</p>
 <p>You will probably need to make some adjustments as we did for the correlation analysis. Refer to the instructions above in section <a href="CorrAndLinearReg.html#BasicCorrelationParenthoodGettingTheData">7.1.1.1</a>.</p>
 <p>Also familiarize yourself with the data as illustrated in section <a href="CorrAndLinearReg.html#BasicCorrelationParenthoodFamiliarization">7.1.1.2</a> above.</p>
 <p><br/></p>
 </div>
-<div id="BasicRegressionParenthoodAnalysis" class="section level4">
+<div id="BasicRegressionParenthoodAnalysis" class="section level4" number="7.2.1.2">
 <h4><span class="header-section-number">7.2.1.2</span> Analysis</h4>
-<p>Following the textbook <span class="citation">(Navarro &amp; Foxcroft, <a href="#ref-lsj">2019</a>, sec. 12.4.1)</span>, go to the <em>Analyses</em> tab and choose <em>Regression</em> &gt; <em>Linear Regression</em>. See Figure <a href="CorrAndLinearReg.html#fig:SetParametersForLinReg">7.4</a> below.</p>
+<p>Following the textbook <span class="citation">(Navarro &amp; Foxcroft, <a href="#ref-lsj" role="doc-biblioref">2019</a>, sec. 12.4.1)</span>, go to the <em>Analyses</em> tab and choose <em>Regression</em> &gt; <em>Linear Regression</em>. See Figure <a href="CorrAndLinearReg.html#fig:SetParametersForLinReg">7.4</a> below.</p>
 <p><br/></p>
 <div class="figure"><span id="fig:SetParametersForLinReg"></span>
 <img src="images/CorrAndLinReg/SetParametersForLinReg.png" alt="Setting the parameters for a linear regression of `My grumpiness` on `My Sleep (hrs)`, from the `parenthood.csv` dataset in Navarro and Foxcroft [-@lsj]." width="600px" />
 <p class="caption">
-Figure 7.4: Setting the parameters for a linear regression of <code>My grumpiness</code> on <code>My Sleep (hrs)</code>, from the <code>parenthood.csv</code> dataset in Navarro and Foxcroft <span class="citation">(<a href="#ref-lsj">2019</a>)</span>.
+Figure 7.4: Setting the parameters for a linear regression of <code>My grumpiness</code> on <code>My Sleep (hrs)</code>, from the <code>parenthood.csv</code> dataset in Navarro and Foxcroft <span class="citation">(<a href="#ref-lsj" role="doc-biblioref">2019</a>)</span>.
 </p>
 </div>
 <p><br/></p>
@@ -682,7 +742,7 @@ Figure 7.4: Setting the parameters for a linear regression of <code>My grumpines
 <div class="figure"><span id="fig:SetParametersForLinRegExtra"></span>
 <img src="images/CorrAndLinReg/SetParametersForLinRegExtra.png" alt="Adding some parameters for the linear regression of `My grumpiness` on `My Sleep (hrs)`, from the `parenthood.csv` dataset in Navarro and Foxcroft [-@lsj]." width="600px" />
 <p class="caption">
-Figure 7.5: Adding some parameters for the linear regression of <code>My grumpiness</code> on <code>My Sleep (hrs)</code>, from the <code>parenthood.csv</code> dataset in Navarro and Foxcroft <span class="citation">(<a href="#ref-lsj">2019</a>)</span>.
+Figure 7.5: Adding some parameters for the linear regression of <code>My grumpiness</code> on <code>My Sleep (hrs)</code>, from the <code>parenthood.csv</code> dataset in Navarro and Foxcroft <span class="citation">(<a href="#ref-lsj" role="doc-biblioref">2019</a>)</span>.
 </p>
 </div>
 <p><br/></p>
@@ -735,7 +795,7 @@ Figure 7.5: Adding some parameters for the linear regression of <code>My grumpin
 <p>Not very concrete, to say the least. For this reason, the regression coefficients are usually more interesting to talk about.</p>
 <p><br/></p>
 </div>
-<div id="BasicRegressionParenthoodVisualizationWithScatr" class="section level4">
+<div id="BasicRegressionParenthoodVisualizationWithScatr" class="section level4" number="7.2.1.3">
 <h4><span class="header-section-number">7.2.1.3</span> Visualization using scatr</h4>
 <p>We actually did this already in section <a href="CorrAndLinearReg.html#BasicCorrelationParenthoodVisualizationWithScatr">7.1.1.4</a> above. However, we will do it again below, but this time with density plots selected in <em>scatr</em> instead of boxplots:</p>
 <p><img src="ElemStatsLabManual_files/figure-html/unnamed-chunk-136-1.svg" width="672" /></p>
@@ -749,7 +809,7 @@ Figure 7.5: Adding some parameters for the linear regression of <code>My grumpin
 <p>You might also have noticed that the confidence interval (the shaded area) near the ends of the line is further away from the line than it is near the middle of the line. This turns out to have a straightforward explanation: The confidence interval refers to a slope, not a fixed point, like a mean. As such, both a shallower and a steeper slope will diverge from the line more towards the ends than towards the middle. To visualize what’s going on here mentally, think of the line as lying on a fulcrum towards the middle of the line, and rotating over that fulcrum like a see-saw through the confidence interval.</p>
 <p><br/></p>
 </div>
-<div id="BasicRegressionParenthoodReporting" class="section level4">
+<div id="BasicRegressionParenthoodReporting" class="section level4" number="7.2.1.4">
 <h4><span class="header-section-number">7.2.1.4</span> Reporting the output</h4>
 <p>A <em>Results</em> section reporting this information might appear as follows:</p>
 <p><br/></p>
@@ -761,20 +821,20 @@ Figure 7.5: Adding some parameters for the linear regression of <code>My grumpin
 <p><br/></p>
 </div>
 </div>
-<div id="AdvancedRegressionSPRING2020" class="section level3">
+<div id="AdvancedRegressionSPRING2020" class="section level3" number="7.2.2">
 <h3><span class="header-section-number">7.2.2</span> Advanced:</h3>
 <p><strong><em>SLATED FOR SPRING, 2020</em></strong></p>
 <p><br/></p>
 </div>
 </div>
-<div id="MultipleLinearRegression" class="section level2">
+<div id="MultipleLinearRegression" class="section level2" number="7.3">
 <h2><span class="header-section-number">7.3</span> Multiple linear regression</h2>
 <p><strong><em>SLATED FOR SPRING, 2020</em></strong></p>
 <p><br/></p>
 </div>
-<div id="OutsideHelpOnCorrelation" class="section level2">
+<div id="OutsideHelpOnCorrelation" class="section level2" number="7.4">
 <h2><span class="header-section-number">7.4</span> Outside help on correlation</h2>
-<p>For outside help on understanding the output from <em>Regression</em> &gt; <em>Correlation matrix</em> in jamovi, go to the <a href="https://www4.uwsp.edu/psych/cw/statistics/textbook.htm">online textbook</a> by Wendorf <span class="citation">(<a href="#ref-Wendorf2019">2018</a>)</span>. From the pull-down menus, choose <em>JAMOVI</em> &gt; <em>Annotated Output</em>, and scroll down to page 4.</p>
+<p>For outside help on understanding the output from <em>Regression</em> &gt; <em>Correlation matrix</em> in jamovi, go to the <a href="https://www4.uwsp.edu/psych/cw/statistics/textbook.htm">online textbook</a> by Wendorf <span class="citation">(<a href="#ref-Wendorf2019" role="doc-biblioref">2018</a>)</span>. From the pull-down menus, choose <em>JAMOVI</em> &gt; <em>Annotated Output</em>, and scroll down to page 4.</p>
 <p><br/></p>
 <!-- ## Outside help on linear regression {#OutsideHelpOnLinearRegression} -->
 <!-- ## Outside help {#OutsideHelpOnCorrAndReg} -->
@@ -800,11 +860,11 @@ Figure 7.5: Adding some parameters for the linear regression of <code>My grumpin
 <div class="footnotes">
 <hr />
 <ol start="68">
-<li id="fn68"><p>Note that there is a considerable amount of controversy here. Many would argue that Likert scales are either not truly interval scales, or (when used as predictor variables) not measured without error, or both. These are assumptions of the basic, introductory kind of regression we are doing this is class (ordinary least squares), though there are more advanced solutions to these problems (e.g., ordinal logistic regression and errors-in-variables modeling, respectively). At the same time, such questions are beyond the scope of this class. They are worth noting, however, to return to later when your statistical knowledge is sufficiently advanced.<a href="CorrAndLinearReg.html#fnref68" class="footnote-back">↩</a></p></li>
-<li id="fn69"><p>Note that in the case of multiple regression, when there is more than one predictor variable, you cannot derive the correlation (Pearson’s <em>r</em>) from any of your continuous predictor variables since the math is different.<a href="CorrAndLinearReg.html#fnref69" class="footnote-back">↩</a></p></li>
-<li id="fn70"><p>Karl Pearson should not be confused with his son, Egon Pearson, who also became an historically important statistician. Most notably, we can partly credit the son with the decision-making component (the “Neyman-Pearson approach”) of null-hypothesis significance testing that the frequentist statistics you are learning in this class revolves around.<a href="CorrAndLinearReg.html#fnref70" class="footnote-back">↩</a></p></li>
-<li id="fn71"><p>with its own lookup table, if you happen to be in Papua New Guinea with a dead laptop battery, but a functioning hardcopy of a statistics book<a href="CorrAndLinearReg.html#fnref71" class="footnote-back">↩</a></p></li>
-<li id="fn72"><p>When the causal relationships among variables is unclear, one can employ <em>mediation analysis</em>, a set of statistical procedures designed to pull apart how inter-correlated variables are directly vs. indirectly related to each other. But this also is beyond the scope of this course.<a href="CorrAndLinearReg.html#fnref72" class="footnote-back">↩</a></p></li>
+<li id="fn68"><p>Note that there is a considerable amount of controversy here. Many would argue that Likert scales are either not truly interval scales, or (when used as predictor variables) not measured without error, or both. These are assumptions of the basic, introductory kind of regression we are doing this is class (ordinary least squares), though there are more advanced solutions to these problems (e.g., ordinal logistic regression and errors-in-variables modeling, respectively). At the same time, such questions are beyond the scope of this class. They are worth noting, however, to return to later when your statistical knowledge is sufficiently advanced.<a href="CorrAndLinearReg.html#fnref68" class="footnote-back">↩︎</a></p></li>
+<li id="fn69"><p>Note that in the case of multiple regression, when there is more than one predictor variable, you cannot derive the correlation (Pearson’s <em>r</em>) from any of your continuous predictor variables since the math is different.<a href="CorrAndLinearReg.html#fnref69" class="footnote-back">↩︎</a></p></li>
+<li id="fn70"><p>Karl Pearson should not be confused with his son, Egon Pearson, who also became an historically important statistician. Most notably, we can partly credit the son with the decision-making component (the “Neyman-Pearson approach”) of null-hypothesis significance testing that the frequentist statistics you are learning in this class revolves around.<a href="CorrAndLinearReg.html#fnref70" class="footnote-back">↩︎</a></p></li>
+<li id="fn71"><p>with its own lookup table, if you happen to be in Papua New Guinea with a dead laptop battery, but a functioning hardcopy of a statistics book<a href="CorrAndLinearReg.html#fnref71" class="footnote-back">↩︎</a></p></li>
+<li id="fn72"><p>When the causal relationships among variables is unclear, one can employ <em>mediation analysis</em>, a set of statistical procedures designed to pull apart how inter-correlated variables are directly vs. indirectly related to each other. But this also is beyond the scope of this course.<a href="CorrAndLinearReg.html#fnref72" class="footnote-back">↩︎</a></p></li>
 </ol>
 </div>
             </section>

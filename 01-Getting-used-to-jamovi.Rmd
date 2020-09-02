@@ -80,14 +80,14 @@ knitr::include_graphics("images/GettingUsedToJamovi/preferences.png")
 
 - Finally, there is a tab labeled **Modules** on the far right when you are under **Analyses** (there is a **plus sign** "+" to identify it as well). To understand what is going on with this tab, you first have to understand that when you downloaded jamovi, you downloaded it in its base form. The base form is what the authors of the software believe will carry you through basic analyses without overloading the software and making it unnecessarily large to download and install. However, many users will want or need to carry out specific analyses that the software authors consider either unusual or extra. They provide this extra functionality in the form of modules. They are written by either the jamovi team, or in many cases, avid users of jamovi (you can do so as well, if you're so inclined).
 
-If you click this tab, and then select **jamovi library**, you will see a pop-up menu consisting of the available modules that are either already **Installed** (the upper-left tab) or **Available** for download (the middle tab). Do not worry about tab on the upper right, **Sideload**, unless you want to write and test your own module. See Figure \@ref(fig:ModulesTabs) below.
+If you click this tab, and then select **jamovi library**, you will see a pop-up menu consisting of the available modules that are either already **Installed** (the upper-left tab) or **Available** for download (the middle tab). Do not worry about tab on the upper right, **Sideload**, unless you want to write and test your own module. See Figure \@ref(fig:ModuleTabs) below.
 
 <br/>
 
-```{r ModulesTabs, fig.cap="Modules in jamovi.", echo=F, out.width="200px"}
-knitr::include_graphics("images/GettingUsedToJamovi/modules1.png")
-knitr::include_graphics("images/GettingUsedToJamovi/modules2.png")
+```{r ModuleTabs, fig.cap="Modules in jamovi.", echo=F, out.width="49%", out.height="20%",fig.show='hold',fig.align='center'}
+knitr::include_graphics(c("images/GettingUsedToJamovi/modules1.png","images/GettingUsedToJamovi/modules2.png"))
 ```
+
 
 <br/>
 
