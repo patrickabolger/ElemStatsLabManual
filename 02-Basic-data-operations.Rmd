@@ -234,15 +234,15 @@ To create the new variable, we needed a nested **if-then-else** formula.^[This i
 
 You can interpret this formula in plain English as follows:
 
-- If the value of *ClassLevel* is *Freshman*,
-  -Then place the value **Under**_classman_ here, under the current variable (*ClassLevelStatus*).
-    - (Else) If that's not the case, then check to see if the level is *Sophomore*;
-      - If it is, then also put *Underclassman* here.
-        - (Else) If that's not the case, then check to see if the level is *Junior*;
-          - If it is, then put **Upper**_classman_ here.
-            - (Else) If that's not the case, then check to see if the level is *Senior*;
-              - If it is, then also put *Upperclassman* here.
-- (Else) If none of those are true, then put *error* here.
+- If the value of *ClassLevel* is *Freshman*,  
+  - Then place the value **Under**classman here, under the current variable (*ClassLevelStatus*).  
+    - (Else) If that's not the case, then check to see if the level is *Sophomore*;  
+      - If it is, then also put *Underclassman* here.  
+        - (Else) If that's not the case, then check to see if the level is *Junior*;  
+          - If it is, then put **Upper**classman here.  
+            - (Else) If that's not the case, then check to see if the level is *Senior*;  
+              - If it is, then also put *Upperclassman* here.  
+- (Else) If none of those are true, then put *error* here.  
 
 After we did this, jamovi looked like the Figure \@ref(fig:ChangingLevelsOfClassLevelWithFormula) below.
 
