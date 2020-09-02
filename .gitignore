@@ -47,12 +47,4 @@ vignettes/*.pdf
 
 ### R.Bookdown Stack ###
 # R package: bookdown caching files
-<<<<<<< HEAD
-<<<<<<< HEAD
 /*_files/
-=======
-/*_files/
->>>>>>> 32741385ddd0e40eeb657ae1668b11c7c4524742
-=======
-/*_files/
->>>>>>> 32741385ddd0e40eeb657ae1668b11c7c4524742
