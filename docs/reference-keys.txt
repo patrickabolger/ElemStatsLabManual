@@ -126,12 +126,12 @@ fig:HowToExportImageFromJamovi
 fig:HourglassImageFromTurbekEtAl2016b
 tab:RubricForIntroduction
 tab:RubricForMethod
-fig:unnamed-chunk-169
-fig:unnamed-chunk-170
+fig:unnamed-chunk-167
+fig:unnamed-chunk-168
 tab:RubricForResults
 tab:RubricForDiscussion
-fig:unnamed-chunk-177
-fig:unnamed-chunk-178
+fig:unnamed-chunk-175
+fig:unnamed-chunk-176
 tab:RubricForGeneralDiscussion
 goals
 Resources

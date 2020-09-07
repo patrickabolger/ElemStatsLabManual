@@ -507,7 +507,7 @@ knitr::include_graphics(c("images/WriteIntros/VersionHistoryInitiate.png", "imag
 
 When you have your rough draft ready to submit, double-check that your name has been removed, and that there is no heading named *Introduction*. The blind peer review in Peerceptiv doesn't really work if you reveal your identity.
 
-On the day that you are supposed to upload your draft to Peerceptiv (via eCampus only!!), you must do so by 6:00 am. It doesn't matter if your lab starts later in the day; everyone uploads by 6:00 am.^[The reasons for this are twofold: First, it is really difficult and complicated to create separate assignments for each section of each lab. Second, we don't want you to submit at the last minute, only to drive in to campus at high speed because you are late.] If you submit it late, but within the first 24 hours of the initial due date/time, then you will get half credit for the assignment. That is, if you would normally have gotten 24 points out of 30, you would get 12 points out of 30. This is called a *grace period* by Peerceptiv.
+On the day that you are supposed to upload your draft to Peerceptiv (via eCampus only!!), you must do so by the time specified by your instructor. If you submit it late, but within the first 24 hours of the initial due date/time, then you will get half credit for the assignment. That is, if you would normally have gotten 24 points out of 30, you would get 12 points out of 30. This is called a *grace period* by Peerceptiv.
 
 After the grace period, there is almost no chance that your assignment will get reviewed by one of your peers. As a result, Peerceptiv won't let you upload it. However, you still need to submit it (It's a requirement of *W* courses at Texas A&M that you submit a rough and final draft). This means that you will need to email it to your TA, who will then give you direct feedback (but again, your maximum score would be 15/30). However, for **each** additional 24-hour period after the initial grace-period expires, you lose 10% off your **final** draft. And even if you are down to 0 points, you still must submit a final draft for feedback before you can submit a final draft. Again, these are rules for the *W* courses at Texas A&M.
 
@@ -515,12 +515,6 @@ After the grace period, there is almost no chance that your assignment will get 
 
 ```{block2, type="rmdnote", echo=T}
 **NOTE**: You may be able to submit your paper directly from Google Docs by copying the unique URL for the document (e.g., https://docs.google.com/document/d/15ApECWiuvoWgQysyQaKKWfNierx-yULT5udKVXdIj9B), but we are not quite certain. If that does not work, you can always download the Google Doc as a .pdf (*File* > *Download* > *PDF Document (.pdf)*), then upload it to Peerceptiv from your computer. That will *always* work.
-```
-
-<br/>
-
-```{block2, type="rmdtip", echo=T}
-***TIP***: Do you want a painless point for extra credit? Well just take a screenshot of the Peerceptiv screen after you submit your document. The screen will say *Document Submitted*. (see page 12 of the [.pdf linked here](https://www.peerceptiv.com/wp-content/uploads/2019/01/User-Guide_rev-Jan-15-2019.pdf) for what this should look like.). Upload this to the appropriate extra-credit assignment in eCampus.
 ```
 
 <br/>
@@ -549,12 +543,6 @@ It is easier to "upload" ("sideload"? Cloud-to-cloud) a Google Doc into Turnitin
 
 ```{block2, type="rmdwarning", echo=T}
 ***WARNING***: For Google Drive, there may be a screen that asks you whether you grant permission to Turnitin to interact with your Google Drive. Please note that if that happens (it probably will), that IS ***NOT*** THE UPLOAD PROCESS. Only ***AFTER*** you give Turnitin permission to interact with your Google account, can you ***THEN*** upload.
-```
-
-<br/>
-
-```{block2, type="rmdtip", echo=T}
-***TIP***: The 1 point of extra credit also applies to Turnitin for the final draft. However, Turnitin goes about things differently. They send you an email when you have successfully submitted. So what **you** need to do this time is either take a screenshot of the email, or (to save space) save your email as a .pdf. But each email software program is a little bit different in how it goes about printing/exporting/saving files to .pdf format. We will have to leave this to you if you want to do this. But it is an important skill if you do not already know how to do it.
 ```
 
 <br/>
