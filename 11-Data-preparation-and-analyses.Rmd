@@ -270,7 +270,7 @@ The final stage is next.
 
 To create a new variable we simply sum or average them together. We can work with the same *bfi_sample3* data from above to do this. We will need to reverse-score *A1* first (see section \@ref(PreparingDataReverseScoring) above.
 
-Using the same procedure as we did above for creating reversed scores (section \@section(PreparingDataReverseScoring)) and creating *z*-scores (section \@ref(PreparingDataCalculatingZScores)), we again clicked the header above a blank column and chose NEW COMPUTED VARIABLE.
+Using the same procedure as we did above for creating reversed scores (section \@ref(PreparingDataReverseScoring)) and creating *z*-scores (section \@ref(PreparingDataCalculatingZScores)), we again clicked the header above a blank column and chose NEW COMPUTED VARIABLE.
 
 Here, we chose to sum together *A1R* (reversed) and *A2*-*A5*.^[We could also average them since they're on the same scale. The result is the same.] We did this by choosing the function SUM from the $f_x$ menu. Then, inside the parentheses of SUM(), we placed all the variables we needed, separated by commas. See Figure \@ref(fig:AgreeablenessCompositeSummedNotAveraged) below for a visualization of what we did.
 
