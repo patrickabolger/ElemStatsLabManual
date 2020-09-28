@@ -23,7 +23,7 @@
 
 
 
-<meta name="date" content="2020-09-19" />
+<meta name="date" content="2020-09-28" />
 
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <meta name="apple-mobile-web-app-capable" content="yes" />
@@ -472,11 +472,11 @@
 <strong>TIP</strong>: As noted in Chapter <a href="WritingMethodSections.html#WritingMethodSections">14</a>, section <a href="WritingMethodSections.html#PWEFM1ParticipantsReviseSubsection">14.4.1.5</a>, the proper way to use the example we have provided below is to paraphrase it. To do this, read through the example, section by section. For each section, read for meaning. Make sure you understand it. Then minimize it in your screen and bring up the document that you are writing. <strong>Critically</strong>, <strong>walk away for a few minutes</strong>. Wash a couple of dishes; dust off a shelf, write a text message to a friend; do some jumping jacks; whatever, but actively <strong>do</strong> something totally unrelated to writing this section. Then return after 2-3 minutes, and write out the relevant section in your own words, according to the content you remember reading from the example passage (adjusted for your own content, naturally). The cognitive reality here is that you will remember the content after 2-3 minutes, but you will have forgotten both the ordering of information and the exact wording of the original [The first evidence of this was found by Sachs <span class="citation">(<a href="#ref-Sachs1967" role="doc-biblioref">1967</a>)</span>]. This way, there is very little chance that you will plagiarize.
 </div>
 <p><br/></p>
-<p>The survey design and data for the example <em>Results</em> section below is adapted from a classroom project by Fettig, López Fuentes, and Villarreal <span class="citation">(<a href="#ref-FettigLopezfuentesVillarreal2019" role="doc-biblioref">2019</a>)</span>.</p>
+<p>The survey design and data for the example <em>Results</em> sections below are adapted from a classroom project by Fettig, López Fuentes, and Villarreal <span class="citation">(<a href="#ref-FettigLopezfuentesVillarreal2019" role="doc-biblioref">2019</a>)</span>.</p>
 <p><br/></p>
 <blockquote>
-<p>Study 1</p>
-<p><em>Results</em></p>
+<p><strong>Study 1</strong></p>
+<p><strong>Results</strong></p>
 <p>In this portion of the study, we looked at the effects on overall sleep quality from two categorical variables. The first was whether students were involved in extracurricular activities. This was answered as either <em>Yes</em> or <em>No</em> in the survey, and therefore had two levels. The second was their employment status, and could be answered as <em>No</em> (not employed), <em>Part-time</em>, or <em>Full-time</em>. Therefore, it had three levels.</p>
 <p>The variable <em>Extracurricular Activities</em> was analyzed using an independent-samples <em>t</em>-test, and the variable <em>Employment Status</em> was analyzed using a One-Way ANOVA. For the <em>t</em>-test, we used a test that was corrected for heterogeneity of variance, whereas in the One-Way ANOVA, we tested the assumption of homogeneity of variance with Levene’s Test.</p>
 <p><em>Extracurricular Activities</em></p>
@@ -500,6 +500,30 @@ Figure 17.3: Figure 2. The effect of employment status on sleep quality. Error b
 <p>In fact, as is clear to see, there was only one participant who indicated they were working full time. These results cannot be trusted since there is no within-group variance associated with a factor level with an <em>n</em> of 1.</p>
 <p>If we drop that level and re-run the analysis between the students either working part time or not at all, we also get no statistically significant effect, <span class="math inline">\(F(1,34)=0.00772,p=0.931,\eta_p^2=0\)</span>.</p>
 </blockquote>
+<hr />
+<blockquote>
+<p><strong>Study 2</strong></p>
+<p><strong>Results</strong></p>
+<p>For study two, we examined how the following two variables affected <em>Sleep Quality</em>: 1) the number of units taken at the university (<em>Academic Hours</em>); and 2) the intensity of one’s overall workload situation (<em>Workload Intensity</em>), which included academic as well as non-academic workload. As explained in the <em>Method</em> section, the former, <em>Academic Hours</em>, was measured simply in academic units, whereas the latter, <em>Workload Intensity</em>, was measured on a Likert scale from 1 to 5, with 1 indicating <em>not intense at all</em> and 5 representing <em>very intense</em>.</p>
+<p>The intensity of overall student workload is analyzed first.</p>
+<p><em>Workload Intensity</em></p>
+<p>We used Pearson’s <em>r</em> to uncover the relation between <em>Sleep Quality</em> and <em>Workload Intensity</em>. This relation was statistically significant, <span class="math inline">\(r(34)=-.34,p=.043\)</span>. Simply put, as one’s overall workload increases, one’s quality of sleep declines. This relation can be seen below in Figure 3 below.</p>
+<div class="figure"><span id="fig:unnamed-chunk-169"></span>
+<img src="images/ResultsAppendices/Corr_WorkIntensityOnSleepQual.png" alt="Figure 3. The effect of *Workload Intensity* on *Sleep Quality*. Both *Sleep Quality* and *Workload Intensity* are on standardized scales." width="600px" />
+<p class="caption">
+Figure 17.4: Figure 3. The effect of <em>Workload Intensity</em> on <em>Sleep Quality</em>. Both <em>Sleep Quality</em> and <em>Workload Intensity</em> are on standardized scales.
+</p>
+</div>
+<p><em>Academic Hours</em></p>
+<p>The outcome variable <em>Sleep Quality</em> was regressed on <em>Academic Hours</em> using a simple linear regression. The results can be seen in Figure 4 below. <em>Sleep Quality</em> (standardized) is predicted to be at 0.133 if a “student”<a href="#fn151" class="footnote-ref" id="fnref151"><sup>151</sup></a> were taking no credits at all. This intercept is not significantly different from zero, <span class="math inline">\(b=0.133, t(34)=0.097,p=.92\)</span>. This suggests, albeit rather oddly, that if a student did not register for any academic units at all, their quality of sleep would not be distinguishable from the average.</p>
+<p>Standardized <em>Sleep Quality</em> did decrease by a miniscule amount (<span class="math inline">\(b=.0093\)</span>) for every extra academic unit taken (starting in this sample of students at 10 units). This tiny drop in quality of sleep was, unsurprisingly, not statistically significant, <span class="math inline">\(t(34)=-0.097,p=.92\)</span>. In general then, the quality of sleep that students report seems not to be affected at all by their courseload.</p>
+<div class="figure"><span id="fig:unnamed-chunk-170"></span>
+<img src="images/ResultsAppendices/Reg_AcademicUnitsOnSleepQual.png" alt="Figure 4. *Workload Intensity* regressed on *Academic Hours*." width="600px" />
+<p class="caption">
+Figure 17.5: Figure 4. <em>Workload Intensity</em> regressed on <em>Academic Hours</em>.
+</p>
+</div>
+</blockquote>
 
 </div>
 <h3>References</h3>
@@ -514,7 +538,8 @@ Figure 17.3: Figure 2. The effect of employment status on sleep quality. Error b
 <div class="footnotes">
 <hr />
 <ol start="150">
-<li id="fn150"><p>NOTE: THIS WOULD NOT APPEAR AT ALL IN THE RESULTS SECTION; IT IS HYPOTHETICAL. However, if there had been a significant difference, we would have reported the post-hoc tests as follows, which would normally highlight at least one significant difference, but not in this case since there was no signficant difference in the omnibus test: "We also ran post-hoc comparisons using the Holm correction. There was no significant difference between those who reported working full time and those who reported not working at all, <span class="math inline">\(t(34)=-0.886,p=1\)</span>. Nor was there any significant difference between full-timers and those who reported working part time, <span class="math inline">\(t(34)=-0.897,p=1\)</span>. Finally, there was no significant difference between the part-timers and those who reported not working at all, <span class="math inline">\(t(34)=-0.122,p=1\)</span>.<a href="e-results-example.html#fnref150" class="footnote-back">↩︎</a></p></li>
+<li id="fn150"><p>NOTE: THIS WOULD NOT APPEAR AT ALL IN THE RESULTS SECTION; IT IS HYPOTHETICAL. However, if there had been a significant difference, we would have reported the post-hoc tests as follows, which would normally highlight at least one significant difference, but not in this case since there was no significant difference in the omnibus test: "We also ran post-hoc comparisons using the Holm correction. There was no significant difference between those who reported working full time and those who reported not working at all, <span class="math inline">\(t(34)=-0.886,p=1\)</span>. Nor was there any significant difference between full-timers and those who reported working part time, <span class="math inline">\(t(34)=-0.897,p=1\)</span>. Finally, there was no significant difference between the part-timers and those who reported not working at all, <span class="math inline">\(t(34)=-0.122,p=1\)</span>.<a href="e-results-example.html#fnref150" class="footnote-back">↩︎</a></p></li>
+<li id="fn151"><p>Note that the value at the intercept is meaningless in this study since there are, almost by definition, no active students taking 0 units.<a href="e-results-example.html#fnref151" class="footnote-back">↩︎</a></p></li>
 </ol>
 </div>
             </section>

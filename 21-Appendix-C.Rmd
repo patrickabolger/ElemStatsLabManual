@@ -8,14 +8,14 @@ The survey design and data for the example *Method* section below is adapted fro
 
 > **Method**
 >
->*Participants*
+>**Participants**
 >
 >There were a total of 37 participants who completed the survey. Twenty-three of them were women (62.2%), and the remainder were men (*n* = 14, 37.8%). The ages (in years) ranged from 18 to 22 (*M* = 19.1, *SD* = 0.95), with the men being slightly older and more varied in age (*M* = 19.4, *SD* = 1.09) than the women (*M* = 19.0, *SD* = 0.825). The mean, the median, and the mode of age were all equal at 19.
 >
 >The participants were recruited via convenience sampling through two *GroupMe* accounts shared by students from two large classes in Psychology at Texas A&M from the previous year.
 >
 >
->*Materials*
+>**Materials**
 >
 >The survey consisted of eleven questions overall. Two of the variables measured participant demographics: *Sex* (*male* vs. *female*); and *Age* (in years). Two other questions had to do with administration (covered in *Procedures* below). The remaining seven variables had directly to do with the research questions at hand. These are covered next in the order in which they appeared in the survey to the participants.
 
@@ -24,7 +24,7 @@ The survey design and data for the example *Method* section below is adapted fro
 >  *Independent variables*. There were four independent variables. The first two were nominal variables. One was a two-level nominal variable called *Extracurricular Activities*.The question that corresponded to the variable was as follows: “Are you a part of extra curricular activities? i.e., clubs, sports, greek life.” Participants could answer either "Yes" or "No." The other nominal variable was a three-level variable called *Employment Status* ("Are you employed?"). There were three options for the participant: "No," "Full-time," and "Part-time." The next two independent variables were continuous. The first of these was *Academic Hours* (“How many academic hours are you currently taking?”). Participants entered the number of credit hours they were taking that semester. The second (and last of the four independent variables) was *Workload Intensity*: “How do you rate the intensity of your overall workload, including academic, work-related, and extracurricular commitments?” This was measured on a 1-5 Likert scale with 1 corresponding to "Not intense at all," and 5 corresponding to "Very intense."
 >
 >
->*Design & Analysis*
+>**Design & Analysis**
 >
 >We were interested in how *Sleep Quality* (the composite, dependent variable) was predicted by whether students were involved in extracurricular activities, the degree to which they were employed, their current academic course load, and the intensity of their general workload (work, academic, and otherwise).
 >
@@ -33,7 +33,7 @@ The survey design and data for the example *Method* section below is adapted fro
 >After the standardization into *z*-scores, the three newly standardized scores were averaged into the single composite. An internal reliability analysis showed that item consistency was quite high (Cronbach’s Alpha = 0.86). An analysis at the Alpha-level change due to single-item dropping revealed that removing any of the items would result in a drop in Alpha. Therefore, all three variables were retained for the composite. The resulting composite, *Sleep Quality* (*M* = 0, *SD* = 0.883) ranged from a score of -2.39 to a maximum score of 1.73. This served as the single dependent variable in all subsequent analyses.
 >
 >
->*Procedures*
+>**Procedures**
 >
 >The researchers simply sent the link to this survey out to potential respondents in the *GroupMe* list mentioned above under *Participants*. Upon receiving the survey, participants were informed about the nature of the study, that participation was optional, and that no personally identifying information would be recorded. At this point, there were given the opportunity to opt out of the study. 
 >

@@ -239,7 +239,7 @@ This sub-section briefly outlines the research design and the statistical analys
 
 <br/>
 
-Sometimes this sub-section simply goes by *Design*,*Analysis*, *Data Analysis*, or *Variables*. Each of these labels can also appear as combined or separate sub-sections in the Method section. That is, the labels that appear in Method sections can be quite flexible, depending on the nature of the study. Another factor that affects sub-section labeling is the extent to which researchers need to spell out each sub-section. Often, if a sub-section is not going to occupy very much space at all, it makes sense to combine it with another sub-section.
+Sometimes this sub-section simply goes by *Design*, *Analysis*, *Data Analysis*, or *Variables*. Each of these labels can also appear as combined or separate sub-sections in the Method section. That is, the labels that appear in Method sections can be quite flexible, depending on the nature of the study. Another factor that affects sub-section labeling is the extent to which researchers need to spell out each sub-section. Often, if a sub-section is not going to occupy very much space at all, it makes sense to combine it with another sub-section.
 
 However it's organized, this sub-section (or these sub-sections) can be quite technical. And this is because it lays out for the reader, reviewers, and researchers who might want to replicate the experiment if and how variables were created (e.g., averaged into a composite), or managed (e.g., transformed), and then analyzed.
 
