@@ -51,7 +51,8 @@ knitr::include_graphics("images/ResultsAppendices/ANOVA_EmplStatOnSleepQual.png"
 >In fact, as is clear to see, there was only one participant who indicated they were working full time. These results cannot be trusted since there is no within-group variance associated with a factor level with an *n* of 1.
 >
 >If we drop that level and re-run the analysis between the students either working part time or not at all, we also get no statistically significant effect, *F*(1,34) = 0.00772, *p* = 0.931, partial eta-squared = 0.
-
+>
+>**Discussion**...
 
 ---
 
@@ -85,3 +86,5 @@ knitr::include_graphics("images/ResultsAppendices/Reg_AcademicUnitsOnSleepQual.p
 >*Sleep Quality* (standardized) is predicted to be at 0.133 if a "student"^[Note that the value at the intercept is meaningless in this study since there are, almost by definition, no active students taking 0 units.] were taking no credits at all. This intercept is not significantly different from zero, *b* = 0.133, *t*(34) = 0.097, *p* = .92, 95% CI [-2.66, 2.93]. This suggests, albeit rather oddly, that if a student did not register for any academic units at all, their quality of sleep would not be distinguishable from the average.
 >
 >Standardized *Sleep Quality* did decrease by a miniscule amount (*b*=.0093, 95% CI [-0.203, 0.185]) for every extra academic unit taken (starting in this sample of students at 10 units). This tiny drop in quality of sleep was, unsurprisingly, not statistically significant, *t*(34) = -0.097, *p* = .92. In general then, the quality of sleep that students report seems not to be affected at all by their courseload.
+>
+>**Discussion**...
