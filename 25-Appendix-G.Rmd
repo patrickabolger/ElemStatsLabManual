@@ -18,9 +18,9 @@ The survey design and data for the example *Discussion* section below is adapted
 
 >**Study 1**...
 >
->**Results*(... [see Appendix E]
+>**Results** ...(see Appendix E)  
 >
->**Discussion**
+>**Discussion**$^{\dagger}$
 >
 >The purpose of this study was to look at how different aspects of student life affect sleep quality. *Study one* addressed how two relatively broad categories of student life affected sleep quality, namely, whether students were involved in extracurricular activities or not, and what their employment status was. We were expecting to find that students involved in extracurricular activities would report having lower quality sleep than students who were not involved in such activities. We were also expecting to find that students who were not working at all would indicate that they had better sleep than students who were working part-time or full-time. Additionally, we were expecting to find that students working part-time would fare better on sleep quality than students working full time.
 >
@@ -32,4 +32,13 @@ The survey design and data for the example *Discussion* section below is adapted
 >
 >Naturally, we expected to find that the more intense a student's life is (either in terms of academic or overall workload), the more likely they would report lower levels of sleep quality. This is the topic of *Study 2*, which follows below. 
 >
->**Study 2**...
+>**Study 2**...  
+>  
+>**Results** ...(see Appendix E)  
+>
+>**Discussion**$^{\dagger\dagger}$
+
+---
+
+$\dagger$ relevant only to Writing Assignment #3  
+$\dagger\dagger$ relevant only to Writing Assignment #4  
