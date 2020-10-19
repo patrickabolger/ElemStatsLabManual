@@ -16,7 +16,7 @@ The survey design and data for the example *Results* sections below are adapted 
 
 <br/>
 
->**Study 1**
+>**Study 1**$^{\dagger}$
 >
 >**Results**
 >
@@ -56,8 +56,7 @@ knitr::include_graphics("images/ResultsAppendices/ANOVA_EmplStatOnSleepQual.png"
 
 ---
 
-
->**Study 2**
+>**Study 2**$^{\dagger\dagger}$
 >
 >**Results**
 >
@@ -88,3 +87,8 @@ knitr::include_graphics("images/ResultsAppendices/Reg_AcademicUnitsOnSleepQual.p
 >Standardized *Sleep Quality* did decrease by a miniscule amount (*b*=.0093, 95% CI [-0.203, 0.185]) for every extra academic unit taken (starting in this sample of students at 10 units). This tiny drop in quality of sleep was, unsurprisingly, not statistically significant, *t*(34) = -0.097, *p* = .92. In general then, the quality of sleep that students report seems not to be affected at all by their courseload.
 >
 >**Discussion**...
+
+---
+
+$\dagger$ relevant only to Writing Assignment #3  
+$\dagger\dagger$ relevant only to Writing Assignment #4
