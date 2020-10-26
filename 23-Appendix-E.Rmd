@@ -56,6 +56,10 @@ knitr::include_graphics("images/ResultsAppendices/ANOVA_EmplStatOnSleepQual.png"
 
 ---
 
+$\dagger$ relevant only to Writing Assignment #3  
+
+---
+
 >**Study 2**$^{\dagger\dagger}$
 >
 >**Results**
@@ -90,5 +94,4 @@ knitr::include_graphics("images/ResultsAppendices/Reg_AcademicUnitsOnSleepQual.p
 
 ---
 
-$\dagger$ relevant only to Writing Assignment #3  
 $\dagger\dagger$ relevant only to Writing Assignment #4

@@ -22,23 +22,38 @@ The survey design and data for the example *Discussion* section below is adapted
 >
 >**Discussion**$^{\dagger}$
 >
->The purpose of this study was to look at how different aspects of student life affect sleep quality. *Study one* addressed how two relatively broad categories of student life affected sleep quality, namely, whether students were involved in extracurricular activities or not, and what their employment status was. We were expecting to find that students involved in extracurricular activities would report having lower quality sleep than students who were not involved in such activities. We were also expecting to find that students who were not working at all would indicate that they had better sleep than students who were working part-time or full-time. Additionally, we were expecting to find that students working part-time would fare better on sleep quality than students working full time.
+>The purpose of this study was to look at how different aspects of student life affect sleep quality. *Study 1* addressed how two relatively broad categories of student life affected sleep quality, namely, whether students were involved in extracurricular activities or not, and what their employment status was. We were expecting to find that students involved in extracurricular activities would report having lower quality sleep than students who were not involved in such activities. We were also expecting to find that students who were not working at all would indicate that they had better sleep than students who were working part-time or full-time. Additionally, we were expecting to find that students working part-time would fare better on sleep quality than students working full time.
 >
->There were trends in the data, but no significant effects. That is, although students who were actually engaged in extracurricular activities reported sleeping better (surprisingly) than those who were not engaged, the difference was not significant. It may be the case that our study was under-powered, but the trend in the data is difficult to explain. Under the statistically unjustified assumption of a Type II error, it could be that actively distracting oneself from the learning demands of academia actually ameliorate the factors that lead to disturbed sleep.
+>There were trends in the data, but no significant effects. That is, although students who were actually engaged in extracurricular activities reported sleeping better (surprisingly) than those who were not engaged, the difference was not significant. It may be the case that our study was under-powered, but the trend in the data is difficult to explain. Under the statistically unjustified assumption of a Type II error, it could be that actively distracting oneself from the learning demands of academia actually ameliorates the factors that lead to disturbed sleep.
 >
->Likewise, there were some odd (non-significant) trends with the analysis of employment status. Recall that we were expecting to find that those who were working full-time would report sleeping worse than either those working part-time or those not working at all. However, also recall that there was only on participant who reported working full time, so we could not analyze the data with that level in the ANOVA. Therefore, in the ANOVA with only two levels, we found no statistically significant difference between those who were working part-time and those not working at all. At best, there seemed to be a great deal more variation among the part-timers vs. the non-workers. This might be worth further investigation.
+>Likewise, there were some odd (non-significant) trends with the analysis of employment status. Recall that we were expecting to find that those who were working full-time would report sleeping worse than either those working part-time or those not working at all. However, also recall that there was only one participant who reported working full time, so we could not analyze the data with that level in the ANOVA. Therefore, in the ANOVA with only two levels, we found no statistically significant difference between those who were working part-time and those not working at all. At best, there seemed to be a great deal more variation among the part-timers vs. the non-workers. This might be worth further investigation.
 >
 >However, it seems somehow incomplete to restrict oneself to analyzing sleep quality by how students fit in to broad student/professional categories like extracurricular activity and employment. Therefore, in addition to addressing these relatively broad categories, we also addressed a couple of ways in which student life can be intense or not. Specifically, they responded to questions on how many academic hours they were taking and the intensity of their overall workload (academic, professional, etc.).
 >
 >Naturally, we expected to find that the more intense a student's life is (either in terms of academic or overall workload), the more likely they would report lower levels of sleep quality. This is the topic of *Study 2*, which follows below. 
->
+
+---
+
+$\dagger$ relevant only to Writing Assignment #3  
+
+---
+
 >**Study 2**...  
 >  
 >**Results** ...(see Appendix E)  
 >
 >**Discussion**$^{\dagger\dagger}$
+>
+>In Study 2, we looked at two variables that measured workload. The first was *Workload Intensity*, which measured the participant's overall workload. The second was *Academic Hours*, which simply documented the academic workoload of the participant. Clearly, the former subsumes the latter, so the comparison of the two will give us some insight into the locus of sleep-quality effects.
+>
+>We were expecting to find that overal workload intensity would correlate negatively with sleep quality, and that is exactly what happened. The negative correlation between the two was significant. The harder one works overall, the lower one's sleep quality. This is not too terribly suprising, however. What is interesting is how this result came out in light of the other variable we measured: *Academic Hours*.
+>
+>For any student, the number of academic hours that they are taking is naturally going to affect their overall workload; they form a component of that workload. So one would expect that if overall workload is negatively affecting sleep quality, so must academic workload. But this turned out not to be the case. The simple regression we ran between the number of academic hours a student was taking and their workload turned out to be negative, but not significantly so. In fact, the effect size was miniscule, *r* = -.0166. 
+>
+>If our data is sound, then these results suggest that what is driving down sleep quality is not academics, but rather the extra responsibilities in general that students take on. This could come in the form of outside employment, extracurricular activites, family obligations, or any number of things. The current analysis is not set up to disentagle these potential causes, but it does point to the need for further analysis. 
+>
+>However, we will cover the combined findings from *Study 1* and *Study 2* in the *General Discussion* below. This will yield a few more insights on future direction in this vein of research.
 
 ---
 
-$\dagger$ relevant only to Writing Assignment #3  
 $\dagger\dagger$ relevant only to Writing Assignment #4  
