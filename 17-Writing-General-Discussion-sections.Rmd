@@ -51,11 +51,13 @@ Overall, the *General Discussion* is going to evaluate the entire paper, focusin
 
 The synthesis is comprised of a summary followed by an comparison of the overall predictions of the paper against those findings. However, example 2 below (section \@ref(ContentsOfGeneralDiscussionSectionsSynthesizingExample2)) bucks this trend across studies to some degree.
 
+Sometimes, these are reversed, where the predictions of the paper (from the *Introduction* are) summarized, then compared against the findings from the studies.
+
 <br/>
 
 #### Summarizing {#ContentsOfGeneralDiscussionSectionsSummarizing}
 
-Whatever may lie ahead in the *General Discussion*,^[or *Discussion* in a single-study paper] one thing will always come first: Namely, the authors will summarize the previous *Results* and *Discussion* sections into one summary, usually in one somewhat concise paragraph.
+Whatever may lie ahead in the *General Discussion*,^[or *Discussion* in a single-study paper] one thing will always come somewher near the beginning of this section: Namely, the authors will summarize the previous *Results* and *Discussion* sections into one summary, usually in one somewhat concise paragraph.
 
 Thus, there may be a bit of repetition here from earlier sections (though not word-by-word, which would be awkward). The point of this is to prepare the reader for a comparison of the overall predictions of the study against the overall findings.
 
@@ -64,6 +66,8 @@ Thus, there may be a bit of repetition here from earlier sections (though not wo
 #### Comparing {#ContentsOfGeneralDiscussionSectionsComparing}
 
 Roughly parallel to what is written in individual *Discussion* sections in a multiple-study IMRaD paper, the summary of findings is followed by a comparison of those findings against what was predicted (usually indicated at the end of the *Introduction*). Except this time, it's the findings overall that are compared against the predictions overall. In other words, the *General Discussion* addresses the "big picture," whereas the individual *Discussion* sections had addressed the "smaller picture" of that particular portion of the study.
+
+Note that often, however, a review of the predictions will be followed by a summary the findings. The choice of order here is stylistic, and up to the author(s).
 
 The question the researchers usually have to ask themselves at this point is as follows:
 
