@@ -132,8 +132,6 @@ fig:unnamed-chunk-169
 fig:unnamed-chunk-170
 tab:RubricForResults
 tab:RubricForDiscussion
-fig:unnamed-chunk-177
-fig:unnamed-chunk-178
 tab:RubricForGeneralDiscussion
 goals
 Resources
