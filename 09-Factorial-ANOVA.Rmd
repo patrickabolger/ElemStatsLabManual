@@ -52,8 +52,7 @@ Sometimes you have more than one predictor variable. This chapter covers the cas
 
 <br/>
 
-## Outside help on factorial ANOVA
-{#OutsideHelpOnFactorialAnova}
+## Outside help on factorial ANOVA {#OutsideHelpOnFactorialAnova}
 
 <br/>
 

@@ -162,7 +162,7 @@ Descriptions that might be covered in this sub-section vary as much as different
 But the description of materials for a psycholinguistic study is going to differ dramatically from that of a survey. A survey is going to list elements like the following:
 
 A. the total number of questions  
-B. the constructs that the questions relate to  
+B. the constructs that the questions relate to (brief mention; the computation of the constructs is better placed in the *Design*/*Analysis* sections)  
 C. the number of items within each construct  
 D. the questions themselves (if not too numerous)  
 E. the potential range of scores if the response to the question is continuous (e.g., a Likert item on a scale of 1 to 5, with 1 meaning *strongly disagree* and 5 meaning *strongly agree*, and 0 meaning *neither disagree nor agree*)  

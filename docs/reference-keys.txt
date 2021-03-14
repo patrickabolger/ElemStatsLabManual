@@ -334,7 +334,7 @@ AdvancedFactorialAnova_NAMEImplementing
 AdvancedFactorialAnova_NAMEInterpreting
 AdvancedFactorialAnova_NAMEReporting
 ConclusionOfFactorialAnova
-outside-help-on-factorial-anova
+OutsideHelpOnFactorialAnova
 PracticingFactorialAnova
 SurveyDesignAndDataCollection
 ResearchProjectsOverview
