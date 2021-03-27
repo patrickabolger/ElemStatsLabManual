@@ -426,6 +426,8 @@ The unique part of this section is that we are not going to ask you to present w
 
 There is nothing unusual about this section relative to the others. The way to think about it is as a walk-through. Your reader, who could have in mind replicating your experiment, should be able to visualize what happened during the study, mostly from the participant's perspective, but also partly from the researcher (to the extent that they were directly involved in the data-collection itself). In a sense, it's what happened between the materials development and the data analysis.
 
+<!-- ADD SOMETHING ABOUT TIME-SENSITIVE TOOLS LIKE GROUP ME. THEY SHOULD EXPLAIN THESE ASSUMING THAT SOMEONE IS GOING TO READ THIS IN 30 YEARS AND NOT AUTOMATICALLY UNDERSTAND WHAT SPECIFIC TOOLS WIDELY USED NOW ARE. -->
+
 <br/>
 
 ## Writing Assignment #2 {#WritingAssignment2}
