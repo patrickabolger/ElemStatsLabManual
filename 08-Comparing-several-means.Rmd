@@ -159,7 +159,10 @@ We can now put together a partial *Results* section for this one analysis:
 
 ### Advanced
 
-***Everything below Scheduled for Spring 2020***
+**UNDER CONSTRUCTION**
+
+<!-- Maybe this study: @article{vonKosstorkildsenHitchinsMyhrumWie2019, -->
+<!-- but not both here and in chapter 15 -->
 
 <br/>
 

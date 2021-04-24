@@ -117,6 +117,8 @@ but then in addition to the test statistics itself, they also report the 95% con
 
 #### Example 3 {#ExamplesOfResultsSections3}
 
+<!-- This example from speech-language therapy might be better: @article{vonKosstorkildsenHitchinsMyhrumWie2019 -->
+
 The following (abridged) *Results* section comes from Experiment 2 in James et al. [-@JamesBonsallHoppittTunbridgeGeddesMiltonHolmes2015]. In this study the researchers tested the promise of a therapy in which potentially intrusive memories of a experimental traumatic event (a 12-minute traumatic film) are (hopefully) blocked by means of pairing reactivation of those traumatic memories (of the film) with a visuo-spatial task (Tetris) that requires a relatively heavy allocation of working memory. There were two groups initially: an experimental group that watched the films and received the therapy, and a control group that was identical but did not receive the therapy. Each group was tested in several ways on intrusive-memory activation, once at 24 hours after the film viewing, and once at 7 days after the film viewing.
 
 After having found that the therapy worked in this limited context, the researchers wanted to to test whether either the intrusive-memory-activation task or the Tetris task had independent effects on the outcomes. Thus, they added two more groups: a Tetris-only group, and a reactivating-only group. They compared the four groups using One-Way ANOVAs.

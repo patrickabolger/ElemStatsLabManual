@@ -440,13 +440,13 @@ Note that the intercept was not mentioned since it is meaningless in this data. 
 
 ### Advanced: {#AdvancedRegressionSPRING2020}
 
-***SLATED FOR SPRING, 2020***
+**UNDER CONSTRUCTION**
 
 <br/>
 
 ## Multiple linear regression {#MultipleLinearRegression}
 
-***SLATED FOR SPRING, 2020***
+**UNDER CONSTRUCTION**
 
 <br/>
 
