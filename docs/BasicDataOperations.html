@@ -6,7 +6,7 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
   <title>Chapter 2 Basic data operations | A Lab Manual for PSYC 301: Elementary Statistics for Psychology</title>
   <meta name="description" content="This is a lab manual for PSYC 301: Elementary Statistics for Psychology. It is an open educational resource (OER), so there is no charge to students." />
-  <meta name="generator" content="bookdown 0.21 and GitBook 2.6.7" />
+  <meta name="generator" content="bookdown 0.22 and GitBook 2.6.7" />
 
   <meta property="og:title" content="Chapter 2 Basic data operations | A Lab Manual for PSYC 301: Elementary Statistics for Psychology" />
   <meta property="og:type" content="book" />
@@ -23,7 +23,7 @@
 
 
 
-<meta name="date" content="2021-04-24" />
+<meta name="date" content="2021-05-15" />
 
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <meta name="apple-mobile-web-app-capable" content="yes" />
@@ -32,7 +32,7 @@
   
 <link rel="prev" href="GettingUsedtoJamovi.html"/>
 <link rel="next" href="DescriptiveStats.html"/>
-<script src="libs/header-attrs-2.7/header-attrs.js"></script>
+<script src="libs/header-attrs-2.8/header-attrs.js"></script>
 <script src="libs/jquery-2.2.3/jquery.min.js"></script>
 <link href="libs/gitbook-2.6.7/css/style.css" rel="stylesheet" />
 <link href="libs/gitbook-2.6.7/css/plugin-table.css" rel="stylesheet" />
@@ -50,10 +50,35 @@
 
 
 
+<link href="libs/anchor-sections-1.0.1/anchor-sections.css" rel="stylesheet" />
+<script src="libs/anchor-sections-1.0.1/anchor-sections.js"></script>
 <script src="libs/kePrint-0.0.1/kePrint.js"></script>
 <link href="libs/lightable-0.0.1/lightable.css" rel="stylesheet" />
 
 
+
+<style type="text/css">
+/* Used with Pandoc 2.11+ new --citeproc when CSL is used */
+div.csl-bib-body { }
+div.csl-entry {
+  clear: both;
+}
+.hanging div.csl-entry {
+  margin-left:2em;
+  text-indent:-2em;
+}
+div.csl-left-margin {
+  min-width:2em;
+  float:left;
+}
+div.csl-right-inline {
+  margin-left:2em;
+  padding-left:1em;
+}
+div.csl-indent {
+  margin-left: 2em;
+}
+</style>
 
 <link rel="stylesheet" href="css/style.css" type="text/css" />
 </head>
@@ -544,7 +569,7 @@ Figure 2.5: Relative ease in seeing a bad level when the data is entered as a nu
 <h2><span class="header-section-number">2.2</span> Opening data files</h2>
 <p>This really isn’t so much about how to open files (something we assume you all learned back in elementary school), as it is about what files are available to open in jamovi in order to get used to how data looks and works in the software.</p>
 <p>jamovi comes with a few sample data sets pre-installed. They can be found by clicking <span class="math inline">\((\equiv)\)</span> &gt; <strong>Open</strong> and choose one of the four default sample data sets.</p>
-<p>If you haven’t already done so, you should also install the module for the main textbook for the class <span class="citation">(<a href="references.html#ref-lsj" role="doc-biblioref">Navarro &amp; Foxcroft, 2019</a>)</span>. To install it go to <strong>Analyses</strong> &gt; <strong>Modules (+)</strong> &gt; <strong>jamovi library</strong> &gt; <strong>Available</strong> &gt; <strong>learning statistics with jamovi</strong> &gt; <strong>Install</strong>. As noted above, you’ll find the sample data sets (all from Psychology) under <span class="math inline">\((\equiv)\)</span> &gt; <strong>Open</strong> &gt; <strong>learning statistics with jamovi</strong>. The main textbook will refer to these data sets throughout the course. You can see this step in Figure <a href="BasicDataOperations.html#fig:OpenLsjDatasets">2.6</a> below. Also, in contrast to the four default data sets in jamovi, not all the data sets from <span class="citation"><a href="references.html#ref-lsj" role="doc-biblioref">Navarro &amp; Foxcroft</a> (<a href="references.html#ref-lsj" role="doc-biblioref">2019</a>)</span> are native-jamovi .omv files; some of them have different file extensions, like .csv. We’ll get to that, especially under <a href="BasicDataOperations.html#Importing">2.3</a>. Finally, you should also install the module called <strong>R data sets</strong>, as you will work with one or more of these in this lab manual.</p>
+<p>If you haven’t already done so, you should also install the module for the main textbook for the class <span class="citation">(<a href="#ref-lsj" role="doc-biblioref">Navarro &amp; Foxcroft, 2019</a>)</span>. To install it go to <strong>Analyses</strong> &gt; <strong>Modules (+)</strong> &gt; <strong>jamovi library</strong> &gt; <strong>Available</strong> &gt; <strong>learning statistics with jamovi</strong> &gt; <strong>Install</strong>. As noted above, you’ll find the sample data sets (all from Psychology) under <span class="math inline">\((\equiv)\)</span> &gt; <strong>Open</strong> &gt; <strong>learning statistics with jamovi</strong>. The main textbook will refer to these data sets throughout the course. You can see this step in Figure <a href="BasicDataOperations.html#fig:OpenLsjDatasets">2.6</a> below. Also, in contrast to the four default data sets in jamovi, not all the data sets from <span class="citation"><a href="#ref-lsj" role="doc-biblioref">Navarro &amp; Foxcroft</a> (<a href="#ref-lsj" role="doc-biblioref">2019</a>)</span> are native-jamovi .omv files; some of them have different file extensions, like .csv. We’ll get to that, especially under <a href="BasicDataOperations.html#Importing">2.3</a>. Finally, you should also install the module called <strong>R data sets</strong>, as you will work with one or more of these in this lab manual.</p>
 <p><br/></p>
 <div class="figure"><span id="fig:OpenLsjDatasets"></span>
 <img src="images/BasicDataPrep/OpenLsjDatasets.png" alt="Finding sample spreadsheet data in jamovi." width="600px" />
@@ -564,7 +589,7 @@ Figure 2.6: Finding sample spreadsheet data in jamovi.
 <p><br/></p>
 <p>A proprietary data format is primarily one generated by commercial software. For instance, SPSS stores its data in .sav files. SAS stores its data in .sas7bdat files<a href="#fn15" class="footnote-ref" id="fnref15"><sup>15</sup></a> and Stata in .dta files. Usually, jamovi will open these directly as it uses powerful R packages, like <a href="https://cran.r-project.org/web/packages/haven/index.html"><em>haven</em></a>, that know how to open these files. Just click <span class="math inline">\((\equiv)\)</span> &gt; <strong>Open</strong> &gt; <strong>This PC</strong> &gt; <strong>Browse</strong> and find the file that you need to open (it needs to be downloaded on your computer already).</p>
 <p>But the most convenient and reliable way to transfer data from computer to computer and software to software is through an intermediate data-file structure known as a delimited text file. This is a plain-text file that can be opened by pretty much any software (free or commercial) that reads text files in any way. A plain-text file is really the simplest of file formats. But a delimited text file is a special case: It takes data that is in table format, and converts it into plain text, where rows from your data frame usually correspond to new lines, and column boundaries from within rows in the data frame are converted into specific characters, like commas, semicolons, or tabs. The top-most row often, but not always, contains the variable names (the <em>header</em>). An example of such a file can be seen in <a href="https://www.jamoviguide.com/loadData.html#file-format">the jamovi Quickstart Guide</a>.</p>
-<p>We converted the data set from <span class="citation"><a href="references.html#ref-lsj" role="doc-biblioref">Navarro &amp; Foxcroft</a> (<a href="references.html#ref-lsj" role="doc-biblioref">2019</a>)</span> called <em>Clinical Trial</em> into both comma-delimited and tab-delimited files. When you open them up with a simple text editor like <em>Notepad</em> or <em>Text Edit</em>, you’ll see something like Figure <a href="BasicDataOperations.html#fig:ClinicalTrialAsCsv">2.7</a> below. It is in raw, plain-text, comma-separated (.csv) format on the left, and in its tab-delimited format (.txt or .tsv) on the right.<a href="#fn16" class="footnote-ref" id="fnref16"><sup>16</sup></a></p>
+<p>We converted the data set from <span class="citation"><a href="#ref-lsj" role="doc-biblioref">Navarro &amp; Foxcroft</a> (<a href="#ref-lsj" role="doc-biblioref">2019</a>)</span> called <em>Clinical Trial</em> into both comma-delimited and tab-delimited files. When you open them up with a simple text editor like <em>Notepad</em> or <em>Text Edit</em>, you’ll see something like Figure <a href="BasicDataOperations.html#fig:ClinicalTrialAsCsv">2.7</a> below. It is in raw, plain-text, comma-separated (.csv) format on the left, and in its tab-delimited format (.txt or .tsv) on the right.<a href="#fn16" class="footnote-ref" id="fnref16"><sup>16</sup></a></p>
 <p><br/></p>
 <div class="figure" style="text-align: left"><span id="fig:ClinicalTrialAsCsv"></span>
 <img src="images/BasicDataPrep/ClinicalTrialAsCsv.png" alt="Examples of comma-delimited (left) and tab-delimited (right) files" width="50%" /><img src="images/BasicDataPrep/ClinicalTrialAsTab.png" alt="Examples of comma-delimited (left) and tab-delimited (right) files" width="50%" />
@@ -574,7 +599,7 @@ Figure 2.7: Examples of comma-delimited (left) and tab-delimited (right) files
 </div>
 <p><br/></p>
 <p>jamovi opens delimited text files just as easily as proprietary data files. In Excel, there’s generally a wizard that you have to get through to import delimited files. In contrast, jamovi imports them straight up, no wizards.</p>
-<p>Just click <span class="math inline">\((\equiv)\)</span> &gt; <strong>Open</strong> &gt; <strong>This PC</strong> &gt; <strong>Browse</strong> and find the delimited file. jamovi will do its best to import the data. It pretty much always works unless there is something wrong with the data file itself. You can try this yourself by opening the data set <strong>booksales</strong>, located at the top of the data sets available from <span class="citation"><a href="references.html#ref-lsj" role="doc-biblioref">Navarro &amp; Foxcroft</a> (<a href="references.html#ref-lsj" role="doc-biblioref">2019</a>)</span>. Just go to <span class="math inline">\((\equiv)\)</span> &gt; <strong>Open</strong> &gt; <strong>Data library</strong>, and look for <strong>booksales</strong> at the top. It’s a comma-delimited text file. It opens up quite easily. However, you will need to go in and change the data types for a few variables. It seems to treat numbers as nominal data.</p>
+<p>Just click <span class="math inline">\((\equiv)\)</span> &gt; <strong>Open</strong> &gt; <strong>This PC</strong> &gt; <strong>Browse</strong> and find the delimited file. jamovi will do its best to import the data. It pretty much always works unless there is something wrong with the data file itself. You can try this yourself by opening the data set <strong>booksales</strong>, located at the top of the data sets available from <span class="citation"><a href="#ref-lsj" role="doc-biblioref">Navarro &amp; Foxcroft</a> (<a href="#ref-lsj" role="doc-biblioref">2019</a>)</span>. Just go to <span class="math inline">\((\equiv)\)</span> &gt; <strong>Open</strong> &gt; <strong>Data library</strong>, and look for <strong>booksales</strong> at the top. It’s a comma-delimited text file. It opens up quite easily. However, you will need to go in and change the data types for a few variables. It seems to treat numbers as nominal data.</p>
 <p>Beware however, that jamovi will sometimes import defective delimited files and assume that they’re not defective. This results in a bad data set. You often need to check your visually. If you data set is large, then you can use descriptive statistics (covered in Chapter @ref(Descriptive Stats)) to find evidence of this kind of problem. To illustrate this, we deliberately distorted a file containing reaction times, and then imported it through jamovi. In this case, we removed the commas from the very last line of data. The results can be seen below in Figure <a href="BasicDataOperations.html#fig:BadReactionTimeImport">2.8</a> below.</p>
 <p><br/></p>
 <div class="figure"><span id="fig:BadReactionTimeImport"></span>
@@ -683,7 +708,7 @@ Figure 2.10: Computed-variable window after the nested if-then-else formula was 
 <p><strong>NOTE</strong>: You might be wondering why we need two equals signs (==) in the computed variable, and not just a single equals sign (=). Recall that jamovi is based on R. In R, two equals signs are used for evaluating particular values. In this case, it can be interpreted as “where it is equal to.” In contrast, a single equals sign (=) is used for various other, common operations, including the creation of variables, the assignment of arguments to functions, etc.</p>
 <p>In addition, the exclamation mark (!) means <strong>NOT</strong> in R and jamovi. So != means “where it is <strong>not</strong> equal to.” Thus, the equivalent for our purposes would be =ClassLevel != ‘Freshman’ (i.e., “if the value is NOT ‘freshman,’ then…”).</p>
 <p>For numerical variables you can also use the symbols &lt; for “less than,” &gt; for “greater than,” &lt;= for “less than or equal to” etc.</p>
-<p>Your main textbook <span class="citation">(<a href="references.html#ref-lsj" role="doc-biblioref">Navarro &amp; Foxcroft, 2019</a>)</span> covers this in Section 6.2.</p>
+<p>Your main textbook <span class="citation">(<a href="#ref-lsj" role="doc-biblioref">Navarro &amp; Foxcroft, 2019</a>)</span> covers this in Section 6.2.</p>
 You might also have noticed the weird sequence of closing parentheses at the end of the formula. This is due to the fact that each IF() statement must have both opening and closing parentheses. The open throughout the formula, but only close at the end. They are actually embedded, like If(IF(IF(IF))), similar to those Russian dolls.
 </div>
 <p><br/></p>
@@ -762,7 +787,7 @@ Figure 2.14: Parameter settings to apply a log transformation (base 10) to posit
 </div>
 <div id="ZScores" class="section level5" number="2.5.1.3.2">
 <h5><span class="header-section-number">2.5.1.3.2</span> <em>z</em>-scores</h5>
-<p>That said, it is probably warranted to remove a few outliers. The main textbook <span class="citation"><a href="references.html#ref-lsj" role="doc-biblioref">Navarro &amp; Foxcroft</a> (<a href="references.html#ref-lsj" role="doc-biblioref">2019</a>)</span> covers outliers in Chapter 5, and in Chapter 12, but they deserve some more attention here. Using the same procedure as above, we will generate <em>z</em>-scores for the data.</p>
+<p>That said, it is probably warranted to remove a few outliers. The main textbook <span class="citation"><a href="#ref-lsj" role="doc-biblioref">Navarro &amp; Foxcroft</a> (<a href="#ref-lsj" role="doc-biblioref">2019</a>)</span> covers outliers in Chapter 5, and in Chapter 12, but they deserve some more attention here. Using the same procedure as above, we will generate <em>z</em>-scores for the data.</p>
 <p>What are <em>z</em>-scores?</p>
 <p><em>Z</em>-scores are used to re-cast raw scores of any interval or continuous variable into standard-deviation units. One advantage of this is that you <em>standardize</em> the scores. We’re not being tautological here.<a href="#fn24" class="footnote-ref" id="fnref24"><sup>24</sup></a> Rather, think of how standardized parts revolutionized manufacturing. Instead of each, say, wheelwright making wheels to their own dimensions, societies could invent standards that all manufacturers must follow. This made the world much easier to live in because you could get a wheel in one town, move to a different county or country, and replace the wheel there. You couldn’t do that before.</p>
 <p>Standardizes scores (<em>z</em>-scores) are kind of the same thing. Whereas before you could not compare, say, raw IQ scores to raw cumulative school grades, standardizes scores let you do just that, as all continuous or interval scores can be converted into a scale where 0 means the mean, whole integers refer to the number of standard deviations, and the polarity refer to whether that particular is above (+) or below (-) the mean. For example, a <em>z</em>-score of 0 means average (the mean, <span class="math inline">\(\overline x\)</span>); a <em>z</em>-score of 1 means “located at one standard deviation above the mean;” and a <em>z</em>-score of -1.75 means “located at 1.75 standard deviations below the mean.”</p>
@@ -850,7 +875,7 @@ Figure 2.17: Results of applying filter to extreme (logged) reaction times.
 <h2><span class="header-section-number">2.6</span> General note: Understanding <em>tidy</em>-ness</h2>
 <p>This final section (before covering outside tutorials) is about understanding how data ought to be organized for easy analysis. As such, it’s less about how you prepare data in jamovi, and more about how you should structure data in general, irrespective of the software you are using.</p>
 <p>Often, when working with data, researchers find themselves dealing with data that was entered in such a way that it can’t be analyzed statistically. This is usually data entered by people who are not used to doing statistical analyses.</p>
-<p>You might fear that each statistical software program has its own way of organizing data for analysis, but we’re happy to tell you that your fears would be unjustified. As luck would have it (<em>skill</em>, not <em>luck</em>, actually), these programs are written by some very smart people, and they have converged on one way of organizing data: <em>tidy</em> format.<a href="#fn28" class="footnote-ref" id="fnref28"><sup>28</sup></a>. (Text-delimited files are covered in more detail in the next section) This universal data format has come to be known as <a href="https://en.wikipedia.org/wiki/Tidy_data">tidy</a> data format, a term we can probably trace back to Hadley Wickham, head programmer at RStudio <span class="citation">(<a href="references.html#ref-tidy-data" role="doc-biblioref">Wickham, 2014</a>)</span>.</p>
+<p>You might fear that each statistical software program has its own way of organizing data for analysis, but we’re happy to tell you that your fears would be unjustified. As luck would have it (<em>skill</em>, not <em>luck</em>, actually), these programs are written by some very smart people, and they have converged on one way of organizing data: <em>tidy</em> format.<a href="#fn28" class="footnote-ref" id="fnref28"><sup>28</sup></a>. (Text-delimited files are covered in more detail in the next section) This universal data format has come to be known as <a href="https://en.wikipedia.org/wiki/Tidy_data">tidy</a> data format, a term we can probably trace back to Hadley Wickham, head programmer at RStudio <span class="citation">(<a href="#ref-tidy-data" role="doc-biblioref">Wickham, 2014</a>)</span>.</p>
 <p>The briefest description is that in a tidy data set, all of the following are true:</p>
 <ul>
 <li>all columns are variables (outcome, predictor, or ID variables; but sometimes things like <em>filters</em> or even comments);</li>
@@ -880,14 +905,14 @@ Figure 2.17: Results of applying filter to extreme (logged) reaction times.
 <div id="OutsideHelpOnImportingData" class="section level3" number="2.7.3">
 <h3><span class="header-section-number">2.7.3</span> Importing data</h3>
 <p>Here is the datalab.cc video tutorial on <a href="https://datalab.cc/tools/jamovi">importing data</a>. Go to video #11. Or <a href="https://www.lynda.com/jamovi-tutorials/Importing-data/5016725/5035745-4.html?org=tamu.edu">here</a> for Texas A&amp;M students.</p>
-<p>Your main textbook <span class="citation">(<a href="references.html#ref-lsj" role="doc-biblioref">Navarro &amp; Foxcroft, 2019</a>)</span> also covers this in Sections 3.4 and 3.5.</p>
+<p>Your main textbook <span class="citation">(<a href="#ref-lsj" role="doc-biblioref">Navarro &amp; Foxcroft, 2019</a>)</span> also covers this in Sections 3.4 and 3.5.</p>
 <p><br/></p>
 </div>
 <div id="OutsideHelpOnRecodingVariables" class="section level3" number="2.7.4">
 <h3><span class="header-section-number">2.7.4</span> Recoding variables</h3>
 <p>There is no tutorial at <a href="https://datalab.cc/tools/jamovi">datalab.cc</a>, <em>per se</em>, for re-coding variables in the way described above in Section <a href="BasicDataOperations.html#ComputingNewVariables">2.5.1</a>. However, it does have a nice tutorial on how to average two or more variables into a third. This is extremely useful sometimes. This video is #13. Texas A&amp;M students can find it <a href="https://www.lynda.com/jamovi-tutorials/Computing-variables/5016725/5035747-4.html?org=tamu.edu">here</a>.</p>
-<p>Your main textbook <span class="citation">(<a href="references.html#ref-lsj" role="doc-biblioref">Navarro &amp; Foxcroft, 2019</a>)</span> covers this in a way not covered here. Specifically, it outlines how to convert a numeric variable to a discrete, nominal variable using formulas.<a href="#fn30" class="footnote-ref" id="fnref30"><sup>30</sup></a> This is Section 6.3.2 of the textbook.</p>
-<p>There is also a tutorial on how to create a <em>transform</em>. Transforms in jamovi are saved functions that allow you to create new variables quickly according to the parameters of the function. This is usually most useful in large data sets with many variables. Go to <a href="https://datalab.cc/tools/jamovi">datalab.cc</a> and scroll to videos #15. At Texas A&amp;M, you can find it <a href="https://www.lynda.com/jamovi-tutorials/Transforming-scores-categories/5016725/2213133-4.html?org=tamu.edu">here</a>. The jamovi blog <span class="citation">(<a href="references.html#ref-jamoviblog" role="doc-biblioref">Love, Dropmann, &amp; Selker, 2019</a>)</span> also has a tutorial on this <a href="https://blog.jamovi.org/2018/10/23/transforming-variables.html">here</a>.</p>
+<p>Your main textbook <span class="citation">(<a href="#ref-lsj" role="doc-biblioref">Navarro &amp; Foxcroft, 2019</a>)</span> covers this in a way not covered here. Specifically, it outlines how to convert a numeric variable to a discrete, nominal variable using formulas.<a href="#fn30" class="footnote-ref" id="fnref30"><sup>30</sup></a> This is Section 6.3.2 of the textbook.</p>
+<p>There is also a tutorial on how to create a <em>transform</em>. Transforms in jamovi are saved functions that allow you to create new variables quickly according to the parameters of the function. This is usually most useful in large data sets with many variables. Go to <a href="https://datalab.cc/tools/jamovi">datalab.cc</a> and scroll to videos #15. At Texas A&amp;M, you can find it <a href="https://www.lynda.com/jamovi-tutorials/Transforming-scores-categories/5016725/2213133-4.html?org=tamu.edu">here</a>. The jamovi blog <span class="citation">(<a href="#ref-jamoviblog" role="doc-biblioref">Love, Dropmann, &amp; Selker, 2019</a>)</span> also has a tutorial on this <a href="https://blog.jamovi.org/2018/10/23/transforming-variables.html">here</a>.</p>
 <p>The jamovi blog also covers data transforms <a href="https://blog.jamovi.org/2018/10/23/transforming-variables.html">here</a></p>
 <p>Finally, your textbooks also covers this in Section 6.3.3.</p>
 <p><br/></p>
@@ -901,14 +926,14 @@ Figure 2.17: Results of applying filter to extreme (logged) reaction times.
 <h3><span class="header-section-number">2.7.6</span> Transforming variables</h3>
 <p>Go to <a href="https://datalab.cc/tools/jamovi">datalab.cc</a> and scroll to video #14 to learn how to transform your data into <em>z</em>-scores. This is really the same kind of procedure (using <em><span class="math inline">\(f_{x}\)</span> NEW COMPUTED VARIABLE</em>) as in Section <a href="BasicDataOperations.html#DataTransformations">2.5.1.3</a> above, and video #13, mentioned above in Section <a href="BasicDataOperations.html#OutsideHelpOnRecodingVariables">2.7.4</a>. This can be found at Texas A&amp;M <a href="https://www.lynda.com/jamovi-tutorials/Computing-Z-score/5016725/2211168-4.html?org=tamu.edu">here</a>.</p>
 <p>The jamovi blog also has a post on computed variables <a href="https://blog.jamovi.org/2017/11/28/jamovi-formulas.html">here</a></p>
-<p>Finally, your main textbook <span class="citation">(<a href="references.html#ref-lsj" role="doc-biblioref">Navarro &amp; Foxcroft, 2019</a>)</span> covers this in section 3.3.2. And it covers logarithms and exponentials in Section 6.4.</p>
+<p>Finally, your main textbook <span class="citation">(<a href="#ref-lsj" role="doc-biblioref">Navarro &amp; Foxcroft, 2019</a>)</span> covers this in section 3.3.2. And it covers logarithms and exponentials in Section 6.4.</p>
 <p><br/></p>
 </div>
 <div id="OutsideHelpOnFilteringData" class="section level3" number="2.7.7">
 <h3><span class="header-section-number">2.7.7</span> Filtering data</h3>
 <p>Go to <a href="https://datalab.cc/tools/jamovi">datalab.cc</a> and scroll down to video #16. At Texas A&amp;M, go <a href="https://www.lynda.com/jamovi-tutorials/Filtering-rows/5016725/5035748-4.html?org=tamu.edu">here</a>.</p>
-<p>The jamovi blog <span class="citation">(<a href="references.html#ref-jamoviblog" role="doc-biblioref">Love, Dropmann, &amp; Selker, 2019</a>)</span> also has an introduction to filters <a href="https://blog.jamovi.org/2018/04/25/jamovi-filters.html">here</a>.</p>
-<p>Your main textbook <span class="citation">(<a href="references.html#ref-lsj" role="doc-biblioref">Navarro &amp; Foxcroft, 2019</a>)</span> covers this in Section 6.5.</p>
+<p>The jamovi blog <span class="citation">(<a href="#ref-jamoviblog" role="doc-biblioref">Love, Dropmann, &amp; Selker, 2019</a>)</span> also has an introduction to filters <a href="https://blog.jamovi.org/2018/04/25/jamovi-filters.html">here</a>.</p>
+<p>Your main textbook <span class="citation">(<a href="#ref-lsj" role="doc-biblioref">Navarro &amp; Foxcroft, 2019</a>)</span> covers this in Section 6.5.</p>
 <p><br/></p>
 </div>
 </div>
@@ -920,7 +945,7 @@ Figure 2.17: Results of applying filter to extreme (logged) reaction times.
 <p><br/></p>
 <div id="the-data" class="section level4" number="2.8.1.1">
 <h4><span class="header-section-number">2.8.1.1</span> The data</h4>
-<p>The textbook by <span class="citation"><a href="references.html#ref-lsj" role="doc-biblioref">Navarro &amp; Foxcroft</a> (<a href="references.html#ref-lsj" role="doc-biblioref">2019</a>)</span> includes a data set about a clinical trial involving 18 participants divided into two treatment groups (Cognitive Behavioral Therapy [CBT] vs. no therapy [no.therapy]). Within each of these groups of nine, three had been taking a drug called <strong>anxifree</strong>, three had been taking a drug called <strong>joyzepam</strong>, and three a placebo. The outcome variable is <strong>mood.gain</strong>, which is some measure of improvement of mood over some time period. The complete data set is displayed below Table <a href="BasicDataOperations.html#tab:tables-ClinTrial">2.1</a>. You will have to use the scroll bar to see the entire data set.</p>
+<p>The textbook by <span class="citation"><a href="#ref-lsj" role="doc-biblioref">Navarro &amp; Foxcroft</a> (<a href="#ref-lsj" role="doc-biblioref">2019</a>)</span> includes a data set about a clinical trial involving 18 participants divided into two treatment groups (Cognitive Behavioral Therapy [CBT] vs. no therapy [no.therapy]). Within each of these groups of nine, three had been taking a drug called <strong>anxifree</strong>, three had been taking a drug called <strong>joyzepam</strong>, and three a placebo. The outcome variable is <strong>mood.gain</strong>, which is some measure of improvement of mood over some time period. The complete data set is displayed below Table <a href="BasicDataOperations.html#tab:tables-ClinTrial">2.1</a>. You will have to use the scroll bar to see the entire data set.</p>
 <p><br/></p>
 <div style="border: 1px solid #ddd; padding: 0px; overflow-y: scroll; height:200px; overflow-x: scroll; width:500px; ">
 <table class="table" style="width: auto !important; margin-left: auto; margin-right: auto;">
@@ -1386,6 +1411,18 @@ Figure 2.28: Deleting variables in jamovi.
 </div>
 </div>
 </div>
+<h3>References</h3>
+<div id="refs" class="references csl-bib-body hanging-indent" line-spacing="2">
+<div id="ref-jamoviblog" class="csl-entry">
+Love, J., Dropmann, D., &amp; Selker, R. (2019). <em><span class="nocase">j</span>amovi blog</em>. Retrieved from <a href="https://blog.jamovi.org/">https://blog.jamovi.org/</a>
+</div>
+<div id="ref-lsj" class="csl-entry">
+Navarro, D. J., &amp; Foxcroft, D. R. (2019). Learning statistics with jamovi: A tutorial for psychology students and other beginners (Version 0.70). <a href="https://doi.org/10.24384/hgc3-7p15">https://doi.org/10.24384/hgc3-7p15</a>
+</div>
+<div id="ref-tidy-data" class="csl-entry">
+Wickham, H. (2014). Tidy data. <em><span>The Journal of Statistical Software</span></em>, <em>59</em>. Retrieved from <a href="http://www.jstatsoft.org/v59/i10/">http://www.jstatsoft.org/v59/i10/</a>
+</div>
+</div>
 <div class="footnotes">
 <hr />
 <ol start="10">
@@ -1445,6 +1482,7 @@ gitbook.start({
 "weibo": false,
 "instapaper": false,
 "vk": false,
+"whatsapp": false,
 "all": ["facebook", "twitter", "linkedin", "weibo", "instapaper"]
 },
 "fontsettings": {

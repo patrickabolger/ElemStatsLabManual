@@ -6,7 +6,7 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
   <title>Chapter 7 Correlation and linear regression | A Lab Manual for PSYC 301: Elementary Statistics for Psychology</title>
   <meta name="description" content="This is a lab manual for PSYC 301: Elementary Statistics for Psychology. It is an open educational resource (OER), so there is no charge to students." />
-  <meta name="generator" content="bookdown 0.21 and GitBook 2.6.7" />
+  <meta name="generator" content="bookdown 0.22 and GitBook 2.6.7" />
 
   <meta property="og:title" content="Chapter 7 Correlation and linear regression | A Lab Manual for PSYC 301: Elementary Statistics for Psychology" />
   <meta property="og:type" content="book" />
@@ -23,7 +23,7 @@
 
 
 
-<meta name="date" content="2021-04-24" />
+<meta name="date" content="2021-05-15" />
 
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <meta name="apple-mobile-web-app-capable" content="yes" />
@@ -32,7 +32,7 @@
   
 <link rel="prev" href="ComparingTwoMeans.html"/>
 <link rel="next" href="ComparingSeveralMeans.html"/>
-<script src="libs/header-attrs-2.7/header-attrs.js"></script>
+<script src="libs/header-attrs-2.8/header-attrs.js"></script>
 <script src="libs/jquery-2.2.3/jquery.min.js"></script>
 <link href="libs/gitbook-2.6.7/css/style.css" rel="stylesheet" />
 <link href="libs/gitbook-2.6.7/css/plugin-table.css" rel="stylesheet" />
@@ -50,10 +50,35 @@
 
 
 
+<link href="libs/anchor-sections-1.0.1/anchor-sections.css" rel="stylesheet" />
+<script src="libs/anchor-sections-1.0.1/anchor-sections.js"></script>
 <script src="libs/kePrint-0.0.1/kePrint.js"></script>
 <link href="libs/lightable-0.0.1/lightable.css" rel="stylesheet" />
 
 
+
+<style type="text/css">
+/* Used with Pandoc 2.11+ new --citeproc when CSL is used */
+div.csl-bib-body { }
+div.csl-entry {
+  clear: both;
+}
+.hanging div.csl-entry {
+  margin-left:2em;
+  text-indent:-2em;
+}
+div.csl-left-margin {
+  min-width:2em;
+  float:left;
+}
+div.csl-right-inline {
+  margin-left:2em;
+  padding-left:1em;
+}
+div.csl-indent {
+  margin-left: 2em;
+}
+</style>
 
 <link rel="stylesheet" href="css/style.css" type="text/css" />
 </head>
@@ -472,7 +497,7 @@
 <p>Restricting ourselves to correlation, the obtained value for a correlation between two continuous variables is known as Pearson’s <em>r</em>, after Karl Pearson.<a href="#fn70" class="footnote-ref" id="fnref70"><sup>70</sup></a> The obtained value of Pearson’s <em>r</em> ranges from -1 to 1, with the extremes (-1 and 1) indicating opposite, but equally strong, directions of correlation, and the middle value, 0, indicating no relationship at all. The closer one is to the extremes (-1 or 1), the <em>stronger</em> the correlation is. The closer one is to the middle (0), the <em>weaker</em> the correlation is.</p>
 <p>The direction of the correlation (i.e., whether it’s positive or negative) simply indicates the how the variables are related. Specifically, if the values of <em>X</em> tend to increase alongside increases in <em>Y</em>, then the correlation is positive (e.g., height and weight are always positively correlated, though the correlation is not perfect).</p>
 <p>In contrast, if as the values of <em>X</em> go up, the values of <em>Y</em> tend to go <strong>down</strong>, then the correlation is negative. This is what you would find if you compared the amount of rainfall to the number of university students who walk or ride their bikes to school (note, that the number of students who <em>drive</em> to school would be positively correlated in this case – thus, the direction of a correlation [positive or negative] has nothing to do with whether the relationship is “good” or “bad”).</p>
-<p>In the textbook <span class="citation">(<a href="references.html#ref-lsj" role="doc-biblioref">Navarro &amp; Foxcroft, 2019</a>)</span> in section 12.1.3, the authors simplify the formula for Pearson’s <em>r</em> to the following:</p>
+<p>In the textbook <span class="citation">(<a href="#ref-lsj" role="doc-biblioref">Navarro &amp; Foxcroft, 2019</a>)</span> in section 12.1.3, the authors simplify the formula for Pearson’s <em>r</em> to the following:</p>
 <p><span class="math display">\[r_{XY}=\frac{COV(X,Y)}{\hat{\sigma}_X,\hat{\sigma}_Y}\]</span></p>
 <p>But for whatever reason, they don’t simplify it further. This can be done. The easiest formula for Pearson’s <em>r</em> (at least from the perspective of the author of this lab manual) is the following:</p>
 <p><span class="math display">\[r_{XY}=\frac{\sum{Z_XZ_Y}}{n-1}\]</span>
@@ -486,7 +511,7 @@
 <p><br/></p>
 <div id="BasicCorrelationParenthood" class="section level3" number="7.1.1">
 <h3><span class="header-section-number">7.1.1</span> Basic: Parenthood data</h3>
-<p>This part of the lab manual simply presents the material in Navarro and Foxcroft <span class="citation">(<a href="references.html#ref-lsj" role="doc-biblioref">2019</a>)</span>, Chapter 12.1 to 12.2, but in a more lab-oriented manner.</p>
+<p>This part of the lab manual simply presents the material in Navarro and Foxcroft <span class="citation">(<a href="#ref-lsj" role="doc-biblioref">2019</a>)</span>, Chapter 12.1 to 12.2, but in a more lab-oriented manner.</p>
 <p><br/></p>
 <div id="BasicCorrelationParenthoodGettingTheData" class="section level4" number="7.1.1.1">
 <h4><span class="header-section-number">7.1.1.1</span> Importing the data</h4>
@@ -500,7 +525,7 @@
 <li>their son’s sleeping patterns (in total hours per night)</li>
 </ol>
 <p>This data set is actually a comma-delimited text file (hence, the title of this subsection: <em>Importing</em>). So although jamovi is good at guessing, sometimes it makes mistakes. You want to make sure that all the variables, except perhaps <code>ID</code>, are continuous. So change any mis-specified variables first.</p>
-<p>You can also re-name the variables, if you wish, into human-readable names, as Navarro and Foxcroft suggest <span class="citation">(<a href="references.html#ref-lsj" role="doc-biblioref">2019, p. 282</a>)</span>. Do this in the top row of each variable when you double click the name. You should also probably save it as a .omv (jamovi) file. For the purposes of display, I chose <code>My sleep (hrs.)</code>, <code>Baby sleep (hrs.)</code>, and <code>My grumpiness</code>.</p>
+<p>You can also re-name the variables, if you wish, into human-readable names, as Navarro and Foxcroft suggest <span class="citation">(<a href="#ref-lsj" role="doc-biblioref">2019, p. 282</a>)</span>. Do this in the top row of each variable when you double click the name. You should also probably save it as a .omv (jamovi) file. For the purposes of display, I chose <code>My sleep (hrs.)</code>, <code>Baby sleep (hrs.)</code>, and <code>My grumpiness</code>.</p>
 <p><br/></p>
 </div>
 <div id="BasicCorrelationParenthoodFamiliarization" class="section level4" number="7.1.1.2">
@@ -530,13 +555,13 @@
 <h4><span class="header-section-number">7.1.1.3</span> Analysis</h4>
 <p>In this case, there are multiple possible correlations, not all of them useful (see section <a href="CorrAndLinearReg.html#BasicCorrelationParenthoodGettingTheData">7.1.1.1</a> above). Nonetheless, it is possible to analyze multiple correlations at the same time in jamovi.</p>
 <p>Go to the <em>Analyses</em> tab, and click <em>Regression</em> and choose <em>Correlation Matrix</em> from the pull-down menu.</p>
-<p>In the textbook, Navarro and Foxcroft <span class="citation">(<a href="references.html#ref-lsj" role="doc-biblioref">2019</a>)</span> have you put all four variables into the analysis, but we will have you only choose the grumpiness and sleep variables (leave <code>day</code> alone).</p>
+<p>In the textbook, Navarro and Foxcroft <span class="citation">(<a href="#ref-lsj" role="doc-biblioref">2019</a>)</span> have you put all four variables into the analysis, but we will have you only choose the grumpiness and sleep variables (leave <code>day</code> alone).</p>
 <p>Make sure to check the boxes <em>Pearson</em> under the heading <strong>Correlation Coefficients</strong>, the boxes <em>Report significance</em> and <em>Confidence intervals</em> (with the interval set to 95%) under the heading <strong>Additional Options</strong>, and the boxes <em>Correlation matrix</em> and <em>Statistics</em> under the heading <strong>Plot</strong>.</p>
 <p>These selections should look like figure <a href="CorrAndLinearReg.html#fig:SetParametersForCorrMatrix">7.1</a> below.</p>
 <div class="figure"><span id="fig:SetParametersForCorrMatrix"></span>
 <img src="images/CorrAndLinReg/SetParametersForCorrMatrix.png" alt="Setting the parameters for a correlation matrix across sleep hours (for infant and parent separately) and grumpiness (of parent), from the `parenthood.csv` dataset in Navarro and Foxcroft [-@lsj]." width="600px" />
 <p class="caption">
-Figure 7.1: Setting the parameters for a correlation matrix across sleep hours (for infant and parent separately) and grumpiness (of parent), from the <code>parenthood.csv</code> dataset in Navarro and Foxcroft <span class="citation">(<a href="references.html#ref-lsj" role="doc-biblioref">2019</a>)</span>.
+Figure 7.1: Setting the parameters for a correlation matrix across sleep hours (for infant and parent separately) and grumpiness (of parent), from the <code>parenthood.csv</code> dataset in Navarro and Foxcroft <span class="citation">(<a href="#ref-lsj" role="doc-biblioref">2019</a>)</span>.
 </p>
 </div>
 <p><br/></p>
@@ -586,7 +611,7 @@ Figure 7.1: Setting the parameters for a correlation matrix across sleep hours (
 <p><br/></p>
 <p>In the analysis here you can see that all the variables are correlated with each other. The strongest correlation is between the author’s sleep and their grumpiness, <span class="math inline">\(r(98)=-0.903, p&lt;.001\)</span>. This is indeed the logical connection to grumpiness. But we can also see that there is a statistically significant correlation between the author’s grumpiness and their baby’s sleep, <span class="math inline">\(r(98)=-0.566, p&lt;.001\)</span> (surely an indirect relationship, mediated by the author’s sleep), and finally between the author’s sleep and their baby’s sleep, <span class="math inline">\(r(98)=0.628, p&lt;.001\)</span>, a positive correlation (the more the baby sleeps, the more the author sleeps). The degrees of freedom for Pearson’s <em>r</em>, by the way, is <span class="math inline">\(N-2\)</span>. The author’s fake data has 100 recordings of these three variables. Thus, the degrees of freedom are <span class="math inline">\(100-2=98\)</span>.</p>
 <p><br/></p>
-<p>There is a useful page online that annotates the output of correlations in jamovi. It is page four of the <em>JAMOVI: Annotated Output</em> document from Wendorf <span class="citation">(<a href="references.html#ref-Wendorf2019" role="doc-biblioref">2018</a>)</span>. You can find it <a href="https://www4.uwsp.edu/psych/cw/statistics/textbook.htm">here</a>, though you need to choose <em>JAMOVI</em> in the menu across the top, then <em>JAMOVI: Annotated Output</em>.</p>
+<p>There is a useful page online that annotates the output of correlations in jamovi. It is page four of the <em>JAMOVI: Annotated Output</em> document from Wendorf <span class="citation">(<a href="#ref-Wendorf2019" role="doc-biblioref">2018</a>)</span>. You can find it <a href="https://www4.uwsp.edu/psych/cw/statistics/textbook.htm">here</a>, though you need to choose <em>JAMOVI</em> in the menu across the top, then <em>JAMOVI: Annotated Output</em>.</p>
 <p><br/></p>
 </div>
 <div id="BasicCorrelationParenthoodVisualizationWithScatr" class="section level4" number="7.1.1.4">
@@ -598,7 +623,7 @@ Figure 7.1: Setting the parameters for a correlation matrix across sleep hours (
 <div class="figure"><span id="fig:SetParametersForScatrOnGrumpinessAndMySleep"></span>
 <img src="images/CorrAndLinReg/SetParametersForScatrOnGrumpinessAndMySleep.png" alt="Setting the parameters for a scatterplot between `My grumpiness` and `My Sleep (hrs.)`, from the `parenthood.csv` dataset in Navarro and Foxcroft [-@lsj]." width="600px" />
 <p class="caption">
-Figure 7.2: Setting the parameters for a scatterplot between <code>My grumpiness</code> and <code>My Sleep (hrs.)</code>, from the <code>parenthood.csv</code> dataset in Navarro and Foxcroft <span class="citation">(<a href="references.html#ref-lsj" role="doc-biblioref">2019</a>)</span>.
+Figure 7.2: Setting the parameters for a scatterplot between <code>My grumpiness</code> and <code>My Sleep (hrs.)</code>, from the <code>parenthood.csv</code> dataset in Navarro and Foxcroft <span class="citation">(<a href="#ref-lsj" role="doc-biblioref">2019</a>)</span>.
 </p>
 </div>
 <p><br/></p>
@@ -614,7 +639,7 @@ Figure 7.2: Setting the parameters for a scatterplot between <code>My grumpiness
 <div class="figure"><span id="fig:SetParametersForScatrStandardizedVersion"></span>
 <img src="images/CorrAndLinReg/SetParametersForScatrStandardizedVersion.png" alt="Setting the parameters for a scatterplot between `My grumpiness` and `My Sleep (hrs)`, both standardized for a closer relation to Pearson's *r*, from the `parenthood.csv` dataset in Navarro and Foxcroft [-@lsj]." width="600px" />
 <p class="caption">
-Figure 7.3: Setting the parameters for a scatterplot between <code>My grumpiness</code> and <code>My Sleep (hrs)</code>, both standardized for a closer relation to Pearson’s <em>r</em>, from the <code>parenthood.csv</code> dataset in Navarro and Foxcroft <span class="citation">(<a href="references.html#ref-lsj" role="doc-biblioref">2019</a>)</span>.
+Figure 7.3: Setting the parameters for a scatterplot between <code>My grumpiness</code> and <code>My Sleep (hrs)</code>, both standardized for a closer relation to Pearson’s <em>r</em>, from the <code>parenthood.csv</code> dataset in Navarro and Foxcroft <span class="citation">(<a href="#ref-lsj" role="doc-biblioref">2019</a>)</span>.
 </p>
 </div>
 <p><br/></p>
@@ -696,7 +721,7 @@ Figure 7.3: Setting the parameters for a scatterplot between <code>My grumpiness
 </div>
 <div id="LinearRegression" class="section level2" number="7.2">
 <h2><span class="header-section-number">7.2</span> Linear regression</h2>
-<p>Chapter 12 of Navarro and Foxcroft <span class="citation">(<a href="references.html#ref-lsj" role="doc-biblioref">2019</a>)</span> begins the discussion of linear regression with a simple linear regression (sections 12.3-12.4). They also note that the <strong>simple</strong> linear regression is essentially the same as Pearson’s <em>r</em>, but without the standardized variables. That is, the simple linear regression uses the raw values of the variables. We also noted this above in section <a href="CorrAndLinearReg.html#BasicCorrelationParenthoodVisualizationWithScatr">7.1.1.4</a>.</p>
+<p>Chapter 12 of Navarro and Foxcroft <span class="citation">(<a href="#ref-lsj" role="doc-biblioref">2019</a>)</span> begins the discussion of linear regression with a simple linear regression (sections 12.3-12.4). They also note that the <strong>simple</strong> linear regression is essentially the same as Pearson’s <em>r</em>, but without the standardized variables. That is, the simple linear regression uses the raw values of the variables. We also noted this above in section <a href="CorrAndLinearReg.html#BasicCorrelationParenthoodVisualizationWithScatr">7.1.1.4</a>.</p>
 <p>This changes two things. First, the intercept gets a real value.</p>
 <p>Recall that since Pearson’s <em>r</em> is calculated from standardized variables, the intercept of the line of best fit (i.e., where it crosses the y-axis) is known beforehand. It is located at <span class="math inline">\(Y=0\)</span>. In fact, the line must cross at the origin (0,0), since by definition, <span class="math inline">\(X=0\)</span> as well at the intercept. So the axes are rarely represented when Pearson’s <em>r</em> is graphed. It would just add visual clutter in the form of a cross drawn through the middle of all the data.</p>
 <p>But since the linear regression uses the raw values, there must be a calculated value at the intercept. The reason here is that all lines must have an intercept before we can map them on to a Cartesian coordinate system (an <span class="math inline">\(X\)</span> and a <span class="math inline">\(Y\)</span> axis). It’s just that in the case of linear regression, this intercept must now be calculated. In Pearson’s <em>r</em>, it was known beforehand.</p>
@@ -705,7 +730,7 @@ Figure 7.3: Setting the parameters for a scatterplot between <code>My grumpiness
 <p>Recall from high-school algebra (or earlier) that the formula for a straight line is as follows:</p>
 <p><span class="math display">\[Y=mX+b\]</span>
 , where <span class="math inline">\(Y\)</span> is some value you’re trying to calculate based on some <span class="math inline">\(X\)</span> value, combined with an intercept, <span class="math inline">\(b\)</span>, and a slope, <span class="math inline">\(m\)</span>.</p>
-<p>Navarro and Foxcroft <span class="citation">(<a href="references.html#ref-lsj" role="doc-biblioref">2019</a>)</span> use the following formula:</p>
+<p>Navarro and Foxcroft <span class="citation">(<a href="#ref-lsj" role="doc-biblioref">2019</a>)</span> use the following formula:</p>
 <p><span class="math display">\[Y=bX+a\]</span>
 , where, as you might imagine, the slope is <span class="math inline">\(b\)</span> and <span class="math inline">\(a\)</span> is the intercept.</p>
 <p>This is just the way they do it in Australia, where Navarro is from.</p>
@@ -717,7 +742,7 @@ Figure 7.3: Setting the parameters for a scatterplot between <code>My grumpiness
 <p><br/></p>
 <div id="BasicRegressionParenthood" class="section level3" number="7.2.1">
 <h3><span class="header-section-number">7.2.1</span> Basic: Parenthood data (again)</h3>
-<p>Navarro and Foxcroft <span class="citation">(<a href="references.html#ref-lsj" role="doc-biblioref">2019</a>)</span> use the same data set to illustrate simple linear regression as they did correlation. This makes sense since it is informative to see the similarity across the two analysis options.</p>
+<p>Navarro and Foxcroft <span class="citation">(<a href="#ref-lsj" role="doc-biblioref">2019</a>)</span> use the same data set to illustrate simple linear regression as they did correlation. This makes sense since it is informative to see the similarity across the two analysis options.</p>
 <p><br/></p>
 <div id="BasicRegressionParenthoodGettingTheData" class="section level4" number="7.2.1.1">
 <h4><span class="header-section-number">7.2.1.1</span> Import and familiarize</h4>
@@ -728,12 +753,12 @@ Figure 7.3: Setting the parameters for a scatterplot between <code>My grumpiness
 </div>
 <div id="BasicRegressionParenthoodAnalysis" class="section level4" number="7.2.1.2">
 <h4><span class="header-section-number">7.2.1.2</span> Analysis</h4>
-<p>Following the textbook <span class="citation">(<a href="references.html#ref-lsj" role="doc-biblioref">Navarro &amp; Foxcroft, 2019, sec. 12.4.1</a>)</span>, go to the <em>Analyses</em> tab and choose <em>Regression</em> &gt; <em>Linear Regression</em>. See Figure <a href="CorrAndLinearReg.html#fig:SetParametersForLinReg">7.4</a> below.</p>
+<p>Following the textbook <span class="citation">(<a href="#ref-lsj" role="doc-biblioref">Navarro &amp; Foxcroft, 2019, sec. 12.4.1</a>)</span>, go to the <em>Analyses</em> tab and choose <em>Regression</em> &gt; <em>Linear Regression</em>. See Figure <a href="CorrAndLinearReg.html#fig:SetParametersForLinReg">7.4</a> below.</p>
 <p><br/></p>
 <div class="figure"><span id="fig:SetParametersForLinReg"></span>
 <img src="images/CorrAndLinReg/SetParametersForLinReg.png" alt="Setting the parameters for a linear regression of `My grumpiness` on `My Sleep (hrs)`, from the `parenthood.csv` dataset in Navarro and Foxcroft [-@lsj]." width="600px" />
 <p class="caption">
-Figure 7.4: Setting the parameters for a linear regression of <code>My grumpiness</code> on <code>My Sleep (hrs)</code>, from the <code>parenthood.csv</code> dataset in Navarro and Foxcroft <span class="citation">(<a href="references.html#ref-lsj" role="doc-biblioref">2019</a>)</span>.
+Figure 7.4: Setting the parameters for a linear regression of <code>My grumpiness</code> on <code>My Sleep (hrs)</code>, from the <code>parenthood.csv</code> dataset in Navarro and Foxcroft <span class="citation">(<a href="#ref-lsj" role="doc-biblioref">2019</a>)</span>.
 </p>
 </div>
 <p><br/></p>
@@ -742,7 +767,7 @@ Figure 7.4: Setting the parameters for a linear regression of <code>My grumpines
 <div class="figure"><span id="fig:SetParametersForLinRegExtra"></span>
 <img src="images/CorrAndLinReg/SetParametersForLinRegExtra.png" alt="Adding some parameters for the linear regression of `My grumpiness` on `My Sleep (hrs)`, from the `parenthood.csv` dataset in Navarro and Foxcroft [-@lsj]." width="600px" />
 <p class="caption">
-Figure 7.5: Adding some parameters for the linear regression of <code>My grumpiness</code> on <code>My Sleep (hrs)</code>, from the <code>parenthood.csv</code> dataset in Navarro and Foxcroft <span class="citation">(<a href="references.html#ref-lsj" role="doc-biblioref">2019</a>)</span>.
+Figure 7.5: Adding some parameters for the linear regression of <code>My grumpiness</code> on <code>My Sleep (hrs)</code>, from the <code>parenthood.csv</code> dataset in Navarro and Foxcroft <span class="citation">(<a href="#ref-lsj" role="doc-biblioref">2019</a>)</span>.
 </p>
 </div>
 <p><br/></p>
@@ -834,7 +859,7 @@ Figure 7.5: Adding some parameters for the linear regression of <code>My grumpin
 </div>
 <div id="OutsideHelpOnCorrelation" class="section level2" number="7.4">
 <h2><span class="header-section-number">7.4</span> Outside help on correlation</h2>
-<p>For outside help on understanding the output from <em>Regression</em> &gt; <em>Correlation matrix</em> in jamovi, go to the <a href="https://www4.uwsp.edu/psych/cw/statistics/textbook.htm">online textbook</a> by Wendorf <span class="citation">(<a href="references.html#ref-Wendorf2019" role="doc-biblioref">2018</a>)</span>. From the pull-down menus, choose <em>JAMOVI</em> &gt; <em>Annotated Output</em>, and scroll down to page 4.</p>
+<p>For outside help on understanding the output from <em>Regression</em> &gt; <em>Correlation matrix</em> in jamovi, go to the <a href="https://www4.uwsp.edu/psych/cw/statistics/textbook.htm">online textbook</a> by Wendorf <span class="citation">(<a href="#ref-Wendorf2019" role="doc-biblioref">2018</a>)</span>. From the pull-down menus, choose <em>JAMOVI</em> &gt; <em>Annotated Output</em>, and scroll down to page 4.</p>
 <p><br/></p>
 <!-- ## Outside help on linear regression {#OutsideHelpOnLinearRegression} -->
 <!-- ## Outside help {#OutsideHelpOnCorrAndReg} -->
@@ -846,6 +871,15 @@ Figure 7.5: Adding some parameters for the linear regression of <code>My grumpin
 <!-- ### Practicing correlations {#PracticingCorrelations} -->
 <!-- ### Practicing linear regression {#PracticingLinearRegression} -->
 
+</div>
+</div>
+<h3>References</h3>
+<div id="refs" class="references csl-bib-body hanging-indent" line-spacing="2">
+<div id="ref-lsj" class="csl-entry">
+Navarro, D. J., &amp; Foxcroft, D. R. (2019). Learning statistics with jamovi: A tutorial for psychology students and other beginners (Version 0.70). <a href="https://doi.org/10.24384/hgc3-7p15">https://doi.org/10.24384/hgc3-7p15</a>
+</div>
+<div id="ref-Wendorf2019" class="csl-entry">
+Wendorf, C. A. (2018). <em>Statistics for social science: A sourcebook of basic statistical methods</em>. Stevens Point, WI: Self.
 </div>
 </div>
 <div class="footnotes">
@@ -887,6 +921,7 @@ gitbook.start({
 "weibo": false,
 "instapaper": false,
 "vk": false,
+"whatsapp": false,
 "all": ["facebook", "twitter", "linkedin", "weibo", "instapaper"]
 },
 "fontsettings": {

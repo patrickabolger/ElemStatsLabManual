@@ -13,6 +13,8 @@ fig:DataTab
 fig:AnalysesTab
 fig:BlankOutput
 fig:DummyOutput
+fig:AnnoteBefore
+fig:AnnoteAfter
 fig:BasicOperationsMenu
 fig:PreferencesTab
 fig:ModuleTabs

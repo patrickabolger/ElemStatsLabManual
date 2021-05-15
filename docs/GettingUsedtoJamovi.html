@@ -6,7 +6,7 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
   <title>Chapter 1 Getting used to jamovi | A Lab Manual for PSYC 301: Elementary Statistics for Psychology</title>
   <meta name="description" content="This is a lab manual for PSYC 301: Elementary Statistics for Psychology. It is an open educational resource (OER), so there is no charge to students." />
-  <meta name="generator" content="bookdown 0.21 and GitBook 2.6.7" />
+  <meta name="generator" content="bookdown 0.22 and GitBook 2.6.7" />
 
   <meta property="og:title" content="Chapter 1 Getting used to jamovi | A Lab Manual for PSYC 301: Elementary Statistics for Psychology" />
   <meta property="og:type" content="book" />
@@ -23,7 +23,7 @@
 
 
 
-<meta name="date" content="2021-04-24" />
+<meta name="date" content="2021-05-15" />
 
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <meta name="apple-mobile-web-app-capable" content="yes" />
@@ -32,7 +32,7 @@
   
 <link rel="prev" href="index.html"/>
 <link rel="next" href="BasicDataOperations.html"/>
-<script src="libs/header-attrs-2.7/header-attrs.js"></script>
+<script src="libs/header-attrs-2.8/header-attrs.js"></script>
 <script src="libs/jquery-2.2.3/jquery.min.js"></script>
 <link href="libs/gitbook-2.6.7/css/style.css" rel="stylesheet" />
 <link href="libs/gitbook-2.6.7/css/plugin-table.css" rel="stylesheet" />
@@ -50,10 +50,35 @@
 
 
 
+<link href="libs/anchor-sections-1.0.1/anchor-sections.css" rel="stylesheet" />
+<script src="libs/anchor-sections-1.0.1/anchor-sections.js"></script>
 <script src="libs/kePrint-0.0.1/kePrint.js"></script>
 <link href="libs/lightable-0.0.1/lightable.css" rel="stylesheet" />
 
 
+
+<style type="text/css">
+/* Used with Pandoc 2.11+ new --citeproc when CSL is used */
+div.csl-bib-body { }
+div.csl-entry {
+  clear: both;
+}
+.hanging div.csl-entry {
+  margin-left:2em;
+  text-indent:-2em;
+}
+div.csl-left-margin {
+  min-width:2em;
+  float:left;
+}
+div.csl-right-inline {
+  margin-left:2em;
+  padding-left:1em;
+}
+div.csl-indent {
+  margin-left: 2em;
+}
+</style>
 
 <link rel="stylesheet" href="css/style.css" type="text/css" />
 </head>
@@ -462,17 +487,19 @@
             <section class="normal" id="section-">
 <div id="GettingUsedtoJamovi" class="section level1" number="1">
 <h1><span class="header-section-number">Chapter 1</span> Getting used to jamovi</h1>
-<p>This short chapter will introduce you to jamovi <span class="citation">(<a href="references.html#ref-jamovi" role="doc-biblioref">The jamovi Project, 2019</a>)</span>.</p>
-<p>As noted in the last chapter, <a href="https://www.jamovi.org/">jamovi</a> (first letter is lowercase) is free statistical-analysis software that is built on top of a wildly popular, free, statistically-centered, programming language called R <span class="citation">(<a href="references.html#ref-R-base" role="doc-biblioref">R Core Team, 2021</a>)</span>. The difference is that jamovi consists of a GUI, whereas R is command-line software. That is, jamovi is point-and-click with easy-to-use pull-down menus, whereas R involves typing code on a blank screen. R is rapidly changing the face of data science, but it can be very intimidating at first because of its command-line nature and, what many (even seasoned programmers) feel to be, unusual programming syntax. jamovi is a much easier program to use, and it is explicitly designed to be manageable for beginners.</p>
+<p>This short chapter will introduce you to jamovi <span class="citation">(<a href="#ref-jamovi" role="doc-biblioref">The jamovi Project, 2019</a>)</span>.</p>
+<p>As noted in the last chapter, <a href="https://www.jamovi.org/">jamovi</a> (first letter is lowercase) is free statistical-analysis software that is built on top of a wildly popular, free, statistically-centered, programming language called R <span class="citation">(<a href="#ref-R-base" role="doc-biblioref">R Core Team, 2021</a>)</span>. The difference is that jamovi consists of a GUI, whereas <em>R</em> is command-line software. That is, jamovi is point-and-click with easy-to-use pull-down menus, whereas R involves typing code on a blank screen. <em>R</em> is rapidly changing the face of data science, but it can be very intimidating at first because of its command-line nature and, what many (even seasoned programmers) feel to be, unusual programming syntax. jamovi is a much easier program to use, and it is explicitly designed to be manageable for beginners.</p>
 <div id="DownloadingAndInstallingJamovi" class="section level2" number="1.1">
 <h2><span class="header-section-number">1.1</span> Downloading and installing</h2>
-<p>This is easy. Just go to the <a href="https://www.jamovi.org/">main jamovi website</a>, find the <strong>download</strong> tab, choose your operating system, then download and install.</p>
+<p>This is easy. Just go to the <a href="https://www.jamovi.org/">main jamovi website</a>, find the <code>download</code> tab, choose your operating system, then download and install.</p>
 </div>
 <div id="NavigatingJamovi" class="section level2" number="1.2">
 <h2><span class="header-section-number">1.2</span> Navigation</h2>
 <p>jamovi is laid out such that your data, your <strong>input</strong>, is always on the left in a spreadsheet format (like Excel), and whatever analyses you apply to those data, your <strong>output</strong>, is always on the right.</p>
-<p>There are four tabs in the uppermost menu bar. They are as follows:</p>
-<p>The <strong>Data</strong> tab in Figure <a href="GettingUsedtoJamovi.html#fig:DataTab">1.1</a> below shows you a set of options on how to manipulate data within the spreadsheet.</p>
+<p>There are five tabs in the uppermost menu (from left to right):</p>
+<p><span class="math inline">\(\equiv\)</span>          <code>Data</code>          <code>Analyses</code>          <code>Edit</code>          <span class="math inline">\(\vdots\)</span></p>
+<p>They are explained below in order of centrality to how most people use jamovi:</p>
+<p>The <code>Data</code> tab in Figure <a href="GettingUsedtoJamovi.html#fig:DataTab">1.1</a> below shows you a set of options on how to manipulate data within the spreadsheet.</p>
 <p><br/></p>
 <div class="figure"><span id="fig:DataTab"></span>
 <img src="images/GettingUsedToJamovi/datatab.png" alt="The data tab." width="600px" />
@@ -480,8 +507,9 @@
 Figure 1.1: The data tab.
 </p>
 </div>
+<hr />
 <p><br/></p>
-<p>The <strong>Analyses</strong> tab in Figure <a href="GettingUsedtoJamovi.html#fig:AnalysesTab">1.2</a> below shows you options for different statistical analyses you can run on the data that you have in the spreadsheet.</p>
+<p>The <code>Analyses</code> tab in Figure <a href="GettingUsedtoJamovi.html#fig:AnalysesTab">1.2</a> below shows you options for different statistical analyses you can run on the data that you have in the spreadsheet.</p>
 <p><br/></p>
 <div class="figure"><span id="fig:AnalysesTab"></span>
 <img src="images/GettingUsedToJamovi/analysestab.png" alt="The analyses tab." width="600px" />
@@ -490,7 +518,7 @@ Figure 1.2: The analyses tab.
 </p>
 </div>
 <p><br/></p>
-<p>The window that occupies most of the right side of the interface is where output goes. It will be blank until you do something. I’m going to open a data set that will be used in sections below for various pedagogical reasons. I’m just going to calculate the mean for the variable called <em>mood.gain</em>.</p>
+<p>The window that occupies most of the right side of the interface is where output goes. It will be blank until you do something. We’re going to open a data set that will be used in sections below for various pedagogical reasons. We’re just going to calculate the mean for the variable called <code>mood.gain</code>.</p>
 <p>In Figure <a href="GettingUsedtoJamovi.html#fig:BlankOutput">1.3</a> below, we have not yet done anything to the data, so the output window on the right is blank.</p>
 <p><br/></p>
 <div class="figure"><span id="fig:BlankOutput"></span>
@@ -500,7 +528,7 @@ Figure 1.3: Data with no analyses performed (blank window on left).
 </p>
 </div>
 <p><br/></p>
-<p>But Figure <a href="GettingUsedtoJamovi.html#fig:DummyOutput">1.4</a> below shows what you see in that same window after asking for descriptive statistics and a histogram (commands you haven’t learned how to execute yet) of the <em>mood.gain</em> variable.</p>
+<p>But Figure <a href="GettingUsedtoJamovi.html#fig:DummyOutput">1.4</a> below shows what you see in that same window after asking for descriptive statistics and a histogram (commands you haven’t learned how to execute yet) of the <code>mood.gain</code> variable.</p>
 <p><br/></p>
 <div class="figure"><span id="fig:DummyOutput"></span>
 <img src="images/GettingUsedToJamovi/dummyoutput.png" alt="Basic descriptive statistics." width="600px" />
@@ -508,46 +536,66 @@ Figure 1.3: Data with no analyses performed (blank window on left).
 Figure 1.4: Basic descriptive statistics.
 </p>
 </div>
+<hr />
+<p><br/></p>
+<p>As of jamovi version <code>1.6.0</code> (released at the end of August, 2020), there is a new menu called <code>Edit</code>. This tab is only useful <strong><em>after</em></strong> you have some statistical output. It allows you to edit the default headers that are displayed when you conduct any analysis. it also allows you to add formatted text (e.g., regular text, underlined, text, italicized text, web links, code blocks, etc.) above and below the statistical output.</p>
+<p>Below (Figure <a href="GettingUsedtoJamovi.html#fig:AnnoteBefore">1.5</a>) is a screenshot of the default output from jamovi when you run a standard <code>Exploration</code> procedure on the <code>afl.margins</code> dataset that comes with the <code>lsj-data</code> module. Below <strong><em>THAT</em></strong> (Figure <a href="GettingUsedtoJamovi.html#fig:AnnoteAfter">1.6</a>) are some simple changes to this default output.</p>
+<div class="figure"><span id="fig:AnnoteBefore"></span>
+<img src="images/GettingUsedToJamovi/annotation_before.png" alt="Default output." width="600px" />
+<p class="caption">
+Figure 1.5: Default output.
+</p>
+</div>
+<p><br/></p>
+<div class="figure"><span id="fig:AnnoteAfter"></span>
+<img src="images/GettingUsedToJamovi/annotation_after.png" alt="Changes applied to default output." width="600px" />
+<p class="caption">
+Figure 1.6: Changes applied to default output.
+</p>
+</div>
+<hr />
 <p><br/></p>
 <ul>
-<li>There is a <strong>Basic operations</strong><a href="#fn8" class="footnote-ref" id="fnref8"><sup>8</sup></a> menu on the far left that is triggered by clicking the three horizontal lines, or <span class="math inline">\((\equiv)\)</span>. See Figure <a href="GettingUsedtoJamovi.html#fig:BasicOperationsMenu">1.5</a> below. Clicking this will make some file operations slide in from the left. These are things like saving the .omv file with a name, importing data, exporting data, etc. Note that to get out of this menu option, you just need to click the big arrow. This is true for any sub-menu in jamovi.</li>
+<li>There is a <code>Basic operations</code><a href="#fn8" class="footnote-ref" id="fnref8"><sup>8</sup></a> menu on the far left that is triggered by clicking the three horizontal lines, or <code>$\equiv$</code>. See Figure <a href="GettingUsedtoJamovi.html#fig:BasicOperationsMenu">1.7</a> below. Clicking this will make some file operations slide in from the left. These are things like saving the .omv file with a name, importing data, exporting data, etc. Note that to get out of this menu option, you just need to click the big arrow. This is true for any sub-menu in jamovi.</li>
 </ul>
 <p><br/></p>
 <div class="figure"><span id="fig:BasicOperationsMenu"></span>
 <img src="images/GettingUsedToJamovi/basicoperations.png" alt="The basic operations menu." width="300px" />
 <p class="caption">
-Figure 1.5: The basic operations menu.
+Figure 1.7: The basic operations menu.
 </p>
 </div>
+<hr />
 <p><br/></p>
 <ul>
-<li>There is a <strong>Preferences</strong><a href="#fn9" class="footnote-ref" id="fnref9"><sup>9</sup></a> menu on the far right. See Figure <a href="GettingUsedtoJamovi.html#fig:PreferencesTab">1.6</a> below. To activate it click the three vertical dots <span class="math inline">\((\vdots)\)</span>. There are settings in here. You may want to change the color scheme, or round numbers to a certain number of decimals, etc. You can set these preferences here.</li>
+<li>There is a <code>Preferences</code><a href="#fn9" class="footnote-ref" id="fnref9"><sup>9</sup></a> menu on the far right. See Figure <a href="GettingUsedtoJamovi.html#fig:PreferencesTab">1.8</a> below. To activate it click the three vertical dots <span class="math inline">\((\vdots)\)</span>. There are settings in here. You may want to change the color scheme, or round numbers to a certain number of decimals, etc. You can set these preferences here.</li>
 </ul>
 <p><br/></p>
 <div class="figure"><span id="fig:PreferencesTab"></span>
 <img src="images/GettingUsedToJamovi/preferences.png" alt="The preferences menu." width="300px" />
 <p class="caption">
-Figure 1.6: The preferences menu.
+Figure 1.8: The preferences menu.
 </p>
 </div>
 <p><br/></p>
 <ul>
-<li>Finally, there is a tab labeled <strong>Modules</strong> on the far right when you are under <strong>Analyses</strong> (there is a <strong>plus sign</strong> “+” to identify it as well). To understand what is going on with this tab, you first have to understand that when you downloaded jamovi, you downloaded it in its base form. The base form is what the authors of the software believe will carry you through basic analyses without overloading the software and making it unnecessarily large to download and install. However, many users will want or need to carry out specific analyses that the software authors consider either unusual or extra. They provide this extra functionality in the form of modules. They are written by either the jamovi team, or in many cases, avid users of jamovi (you can do so as well, if you’re so inclined).</li>
+<li>Finally, there is a tab labeled <code>Modules</code> on the far right when you are under <code>Analyses</code> (there is a <strong>plus sign</strong>, <code>+</code>, to identify it as well). To understand what is going on with this tab, you first have to understand that when you downloaded jamovi, you downloaded it in its base form. The base form is what the authors of the software believe will carry you through basic analyses without overloading the software and making it unnecessarily large to download and install. However, many users will want or need to carry out specific analyses that the software authors consider either unusual or extra. They provide this extra functionality in the form of modules. They are written by either the jamovi team, or in many cases, avid users of jamovi (you can do so as well, if you’re so inclined).</li>
 </ul>
-<p>If you click this tab, and then select <strong>jamovi library</strong>, you will see a pop-up menu consisting of the available modules that are either already <strong>Installed</strong> (the upper-left tab) or <strong>Available</strong> for download (the middle tab). Do not worry about tab on the upper right, <strong>Sideload</strong>, unless you want to write and test your own module. See Figure <a href="GettingUsedtoJamovi.html#fig:ModuleTabs">1.7</a> below.</p>
+<p>If you click this tab, and then select <code>Manage installed</code>, you will see a pop-up menu consisting of the available modules that are either already <code>Installed</code> (the upper-left tab) or <code>Available</code> for download (the middle tab). Do not worry about tab on the upper right, <code>Sideload</code>, unless you want to write and test your own module. See Figure <a href="GettingUsedtoJamovi.html#fig:ModuleTabs">1.9</a> below.</p>
 <p><br/></p>
 <div class="figure" style="text-align: center"><span id="fig:ModuleTabs"></span>
 <img src="images/GettingUsedToJamovi/modules1.png" alt="Modules in jamovi." width="49%" height="20%" /><img src="images/GettingUsedToJamovi/modules2.png" alt="Modules in jamovi." width="49%" height="20%" />
 <p class="caption">
-Figure 1.7: Modules in jamovi.
+Figure 1.9: Modules in jamovi.
 </p>
 </div>
 <p><br/></p>
-<p>You might notice that one module is installed by default. This is the base <strong>jamovi</strong> module that comes with the software. However, there are some other modules you will need installed for this class. They are as follows:</p>
+<p>You might notice that one module is installed by default. This is the base <code>jamovi</code> module that comes with the software.</p>
+<p>And as of version 1.8, <code>scatr</code> is also installed by default. The <code>scatr</code> module lets you make nicer scatterplots than are offered in the base module. Scatterplots are relevant to Chapters <a href="DataVisualization.html#DataVisualization">4</a>, <a href="CorrAndLinearReg.html#CorrAndLinearReg">7</a>, and <a href="WritingResultsSections.html#WritingResultsSections">15</a>. Once installed, you will find the <code>scatr</code> menu under the <code>Analyses</code> tab, under <code>Exploration</code> &gt; <code>scatr</code>.</p>
+<p>However, there are some other modules you will need installed for this class. They are as follows:</p>
 <ul>
-<li><p><strong>learning statistics with jamovi</strong>. This module contains the data sets for your main textbook by <span class="citation"><a href="references.html#ref-lsj" role="doc-biblioref">Navarro &amp; Foxcroft</a> (<a href="references.html#ref-lsj" role="doc-biblioref">2019</a>)</span>. Theses data sets will subsequently become available under the <strong>File Operations</strong> icon (the three horizontal lines in the uppermost menu bar), where you navigate to <strong>Open</strong> &gt; <strong>Data Library</strong> &gt; <strong>learning statistics with jamovi</strong>, where you will then see a list of the data sets.</p></li>
-<li><p><strong>scatr</strong>. This module lets you make nicer scatterplots than are offered in the base module. Scatterplots are relevant to Chapters <a href="DataVisualization.html#DataVisualization">4</a>, <a href="CorrAndLinearReg.html#CorrAndLinearReg">7</a>, and <a href="WritingResultsSections.html#WritingResultsSections">15</a>. Once installed, you will find the <strong>scatr</strong> menu under the <strong>Analyses</strong> view, under <strong>Exploration</strong> &gt; <strong>scatr</strong>.</p></li>
-<li><p><strong>R data Sets</strong>. This module loads the sample data sets that come with R. You will be using one or more of these data sets in this lab manual.</p></li>
+<li><p><code>learning statistics with jamovi</code>. This module contains the data sets for your main textbook by <span class="citation"><a href="#ref-lsj" role="doc-biblioref">Navarro &amp; Foxcroft</a> (<a href="#ref-lsj" role="doc-biblioref">2019</a>)</span>. These data sets will subsequently become available under the <code>Basic Operations</code> icon (<span class="math inline">\(\equiv\)</span>), where you navigate to <code>Open</code> &gt; <code>Data Library</code> &gt; <code>learning statistics with jamovi</code>, where you will then see a list of the data sets.</p></li>
+<li><p><code>R data Sets</code>. This module loads the sample data sets that come with R. You will be using one or more of these data sets in this lab manual.</p></li>
 </ul>
 <p><br/></p>
 </div>
@@ -563,7 +611,7 @@ Figure 1.7: Modules in jamovi.
 <p>Here are some tutorials on how to download and install jamovi:
 - the <a href="https://www.jamovi.org/user-manual.html#installation">jamovi User Guide</a>
 - the <a href="https://datalab.cc/tools/jamovi">datalab.cc video tutorial</a> on how to do this. Scroll to video #2, <strong>Installing jamovi</strong>.
-- <span class="citation"><a href="references.html#ref-lsj" role="doc-biblioref">Navarro &amp; Foxcroft</a> (<a href="references.html#ref-lsj" role="doc-biblioref">2019</a>)</span>, Chapter 3, Section 1 (3.1)</p>
+- <span class="citation"><a href="#ref-lsj" role="doc-biblioref">Navarro &amp; Foxcroft</a> (<a href="#ref-lsj" role="doc-biblioref">2019</a>)</span>, Chapter 3, Section 1 (3.1)</p>
 <p><br/></p>
 </div>
 <div id="OutsideHelpOnNavigating" class="section level3" number="1.3.3">
@@ -586,10 +634,22 @@ Figure 1.7: Modules in jamovi.
 
 </div>
 </div>
+<h3>References</h3>
+<div id="refs" class="references csl-bib-body hanging-indent" line-spacing="2">
+<div id="ref-lsj" class="csl-entry">
+Navarro, D. J., &amp; Foxcroft, D. R. (2019). Learning statistics with jamovi: A tutorial for psychology students and other beginners (Version 0.70). <a href="https://doi.org/10.24384/hgc3-7p15">https://doi.org/10.24384/hgc3-7p15</a>
+</div>
+<div id="ref-R-base" class="csl-entry">
+R Core Team. (2021). <em>R: A language and environment for statistical computing</em>. Retrieved from <a href="https://www.R-project.org/">https://www.R-project.org/</a>
+</div>
+<div id="ref-jamovi" class="csl-entry">
+The jamovi Project. (2019). Jamovi (Version 1.0.0). Retrieved from <a href="https://www.jamovi.org/">https://www.jamovi.org/</a>
+</div>
+</div>
 <div class="footnotes">
 <hr />
 <ol start="8">
-<li id="fn8"><p>We don’t know the official name of this.<a href="GettingUsedtoJamovi.html#fnref8" class="footnote-back">↩︎</a></p></li>
+<li id="fn8"><p>We don’t actually know the official name of this.<a href="GettingUsedtoJamovi.html#fnref8" class="footnote-back">↩︎</a></p></li>
 <li id="fn9"><p>Same here. There seems to be no official name.<a href="GettingUsedtoJamovi.html#fnref9" class="footnote-back">↩︎</a></p></li>
 </ol>
 </div>
@@ -622,6 +682,7 @@ gitbook.start({
 "weibo": false,
 "instapaper": false,
 "vk": false,
+"whatsapp": false,
 "all": ["facebook", "twitter", "linkedin", "weibo", "instapaper"]
 },
 "fontsettings": {

@@ -6,7 +6,7 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
   <title>Chapter 11 Data Preparation and Analyses | A Lab Manual for PSYC 301: Elementary Statistics for Psychology</title>
   <meta name="description" content="This is a lab manual for PSYC 301: Elementary Statistics for Psychology. It is an open educational resource (OER), so there is no charge to students." />
-  <meta name="generator" content="bookdown 0.21 and GitBook 2.6.7" />
+  <meta name="generator" content="bookdown 0.22 and GitBook 2.6.7" />
 
   <meta property="og:title" content="Chapter 11 Data Preparation and Analyses | A Lab Manual for PSYC 301: Elementary Statistics for Psychology" />
   <meta property="og:type" content="book" />
@@ -23,7 +23,7 @@
 
 
 
-<meta name="date" content="2021-04-24" />
+<meta name="date" content="2021-05-15" />
 
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <meta name="apple-mobile-web-app-capable" content="yes" />
@@ -32,7 +32,7 @@
   
 <link rel="prev" href="SurveyDesignAndDataCollection.html"/>
 <link rel="next" href="ReportingResearch.html"/>
-<script src="libs/header-attrs-2.7/header-attrs.js"></script>
+<script src="libs/header-attrs-2.8/header-attrs.js"></script>
 <script src="libs/jquery-2.2.3/jquery.min.js"></script>
 <link href="libs/gitbook-2.6.7/css/style.css" rel="stylesheet" />
 <link href="libs/gitbook-2.6.7/css/plugin-table.css" rel="stylesheet" />
@@ -50,10 +50,35 @@
 
 
 
+<link href="libs/anchor-sections-1.0.1/anchor-sections.css" rel="stylesheet" />
+<script src="libs/anchor-sections-1.0.1/anchor-sections.js"></script>
 <script src="libs/kePrint-0.0.1/kePrint.js"></script>
 <link href="libs/lightable-0.0.1/lightable.css" rel="stylesheet" />
 
 
+
+<style type="text/css">
+/* Used with Pandoc 2.11+ new --citeproc when CSL is used */
+div.csl-bib-body { }
+div.csl-entry {
+  clear: both;
+}
+.hanging div.csl-entry {
+  margin-left:2em;
+  text-indent:-2em;
+}
+div.csl-left-margin {
+  min-width:2em;
+  float:left;
+}
+div.csl-right-inline {
+  margin-left:2em;
+  padding-left:1em;
+}
+div.csl-indent {
+  margin-left: 2em;
+}
+</style>
 
 <link rel="stylesheet" href="css/style.css" type="text/css" />
 </head>
@@ -644,7 +669,7 @@ IT TO THEIR OUTCOME VARIABLES. CHECK FOR OTHER THINGS TOO-->
 <div id="PreparingDataCalculatingCronbachsAlpha" class="section level3" number="11.5.4">
 <h3><span class="header-section-number">11.5.4</span> Calculating Cronbach’s alpha</h3>
 <p>Assuming you have taken care of any conversion of your scores to <em>z</em>-scores (if necessary), you will then need to carry out an analysis of how well your individual questions are working together. This is done through an analysis of Cronbach’s Alpha. If your analysis shows that you can use all three variables, then you use all three. Don’t be surprised, however, if one of your variables does not act like the others. In this case, you may want to consider analyzing that variable separately.</p>
-<p>To illustrate this, we will simply use a dataset called <em>Personality Questionnaire: Ch15 - Personality data sample 3</em> (<em>bfi_sample3</em>) [located at the very bottom] from the datasets associated with <span class="citation"><a href="references.html#ref-lsj" role="doc-biblioref">Navarro &amp; Foxcroft</a> (<a href="references.html#ref-lsj" role="doc-biblioref">2019</a>)</span>. In fact, this is the dataset they use to illustrate the same (pp. 461-463).</p>
+<p>To illustrate this, we will simply use a dataset called <em>Personality Questionnaire: Ch15 - Personality data sample 3</em> (<em>bfi_sample3</em>) [located at the very bottom] from the datasets associated with <span class="citation"><a href="#ref-lsj" role="doc-biblioref">Navarro &amp; Foxcroft</a> (<a href="#ref-lsj" role="doc-biblioref">2019</a>)</span>. In fact, this is the dataset they use to illustrate the same (pp. 461-463).</p>
 <p>Simply go to <span class="math inline">\((\equiv)\)</span> &gt; <em>Open</em> &gt; <em>lsj-data</em> &gt; <em>Personality Questionnaire: Ch15 - Personality data sample 3</em>. This dataset is a sample of people who took a Big-5 Personality test. The variables A1-A5 represent <em>Agreeableness</em>, but A1 is reverse-scored.</p>
 <p>Luckily, we do not need to reverse-score this ourselves. jamovi’s procedure for calculating Cronbach’s Alpha contains a mechanism within it to deal with reverse-scored items.</p>
 <p>When you have the data, click the <em>Analyses</em> tab, and choose <em>Factor</em>.<a href="#fn91" class="footnote-ref" id="fnref91"><sup>91</sup></a> From here select <em>Reliability Analysis</em>.</p>
@@ -652,7 +677,7 @@ IT TO THEIR OUTCOME VARIABLES. CHECK FOR OTHER THINGS TOO-->
 <div class="figure"><span id="fig:ArrangmentOfVariablesForCronbachsAlpha"></span>
 <img src="images/PrepForWA2/ArrangmentOfVariablesForCronbachsAlpha.png" alt="The arrangement of variables for Cronbach's Alpha using the bfi_sample3 dataset from @lsj" width="600px" />
 <p class="caption">
-Figure 11.7: The arrangement of variables for Cronbach’s Alpha using the bfi_sample3 dataset from <span class="citation"><a href="references.html#ref-lsj" role="doc-biblioref">Navarro &amp; Foxcroft</a> (<a href="references.html#ref-lsj" role="doc-biblioref">2019</a>)</span>
+Figure 11.7: The arrangement of variables for Cronbach’s Alpha using the bfi_sample3 dataset from <span class="citation"><a href="#ref-lsj" role="doc-biblioref">Navarro &amp; Foxcroft</a> (<a href="#ref-lsj" role="doc-biblioref">2019</a>)</span>
 </p>
 </div>
 <p><br/></p>
@@ -706,11 +731,17 @@ Figure 11.8: Calculating the sum of A2-A5 and A1R (reversed)
 
 
 
+<h3>References</h3>
+<div id="refs" class="references csl-bib-body hanging-indent" line-spacing="2">
+<div id="ref-lsj" class="csl-entry">
+Navarro, D. J., &amp; Foxcroft, D. R. (2019). Learning statistics with jamovi: A tutorial for psychology students and other beginners (Version 0.70). <a href="https://doi.org/10.24384/hgc3-7p15">https://doi.org/10.24384/hgc3-7p15</a>
+</div>
+</div>
 <div class="footnotes">
 <hr />
 <ol start="90">
 <li id="fn90"><p>This step isn’t actually required, but it can reduce confusion down the line, as one of your group-mates may decide to download more current data without you knowing, thereby giving you two or more datasets.<a href="DataPreparationAndAnalyses.html#fnref90" class="footnote-back">↩︎</a></p></li>
-<li id="fn91"><p>Cronbach’s Alpha is often carried out in conjunction with something called <em>Factor Analysis</em>, which you are free to read about in Chapter 15 of <span class="citation"><a href="references.html#ref-lsj" role="doc-biblioref">Navarro &amp; Foxcroft</a> (<a href="references.html#ref-lsj" role="doc-biblioref">2019</a>)</span><a href="DataPreparationAndAnalyses.html#fnref91" class="footnote-back">↩︎</a></p></li>
+<li id="fn91"><p>Cronbach’s Alpha is often carried out in conjunction with something called <em>Factor Analysis</em>, which you are free to read about in Chapter 15 of <span class="citation"><a href="#ref-lsj" role="doc-biblioref">Navarro &amp; Foxcroft</a> (<a href="#ref-lsj" role="doc-biblioref">2019</a>)</span><a href="DataPreparationAndAnalyses.html#fnref91" class="footnote-back">↩︎</a></p></li>
 <li id="fn92"><p>We could also average them since they’re on the same scale. The result is the same.<a href="DataPreparationAndAnalyses.html#fnref92" class="footnote-back">↩︎</a></p></li>
 </ol>
 </div>
@@ -743,6 +774,7 @@ gitbook.start({
 "weibo": false,
 "instapaper": false,
 "vk": false,
+"whatsapp": false,
 "all": ["facebook", "twitter", "linkedin", "weibo", "instapaper"]
 },
 "fontsettings": {
