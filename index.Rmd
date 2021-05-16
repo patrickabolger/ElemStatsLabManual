@@ -108,7 +108,7 @@ This lab manual [@Bolger2019] was created also using the programming language *R
 
 The *jamovi* user guide [@jamovi] is linked [here](https://www.jamovi.org/user-manual.html). The *jamovi* website has a user manual for basic functions.  
 
-See the figure below.
+See Figure \@ref(fig:jum) below.
 
 <br/>
 
