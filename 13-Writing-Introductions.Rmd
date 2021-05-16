@@ -463,7 +463,7 @@ Fair warning: This writing assignment isn't designed exactly like a normal *Intr
 
 It should be about 1.5 to 2 pages long, double-spaced, Times New Roman, 12 font. **Do** give it a title related to the topic, but do **not** include a header called *Introduction*. The introduction in an APA paper doesn't have a header.^[The first main header comes under *Methods*] 
 
-**Also, do NOT put your name on it**. It will be submitted for anonymous peer review through Peerceptiv, and including your name makes it non-anonymous. Your TAs will know exactly who you are since it is submitted electronically, and Peerceptiv indicates who you are (to the TAs and the instructor only).
+**Also, do NOT put your name on it**. It will be submitted for anonymous peer review through *Peerceptiv*, and including your name makes it non-anonymous. Your TAs will know exactly who you are since it is submitted electronically, and *Peerceptiv* indicates who you are (to the TAs and the instructor only).
 
 <br/>
 
@@ -492,7 +492,7 @@ The rubric that will be used to evaluate this assignment is in **Appendix B**.
 <br/>
 
 ```{block2, type="rmdtip", echo=T}
-***TIP***: We suggest that you write this as a Google Doc as well (in your university Google account only). The reason is that before you upload it to Peerceptiv (and ultimately Turnitin for the final draft), you can "Name (the) current version." Google Docs allows versioning, which is a way of taking a snapshot of the document along with a timestamp. This is useful for many reasons, among which is when you want to provide evidence to your professor that you actually had something done when you said you did. This is much, much more difficult with documents that are written on individual computers. To create a version, just click *File* > *Version history* > *Name current version*. Give it a name like *YourName_PSYC301_Introduction_RoughDraft*. You can see the process of saving a version below in Figure \@ref(fig:SaveNamedVersionInGoogleDocs)
+***TIP***: We suggest that you write this as a Google Doc as well (in your university Google account only). The reason is that before you upload it to *Peerceptiv* (and ultimately Turnitin for the final draft), you can "Name (the) current version." Google Docs allows versioning, which is a way of taking a snapshot of the document along with a timestamp. This is useful for many reasons, among which is when you want to provide evidence to your professor that you actually had something done when you said you did. This is much, much more difficult with documents that are written on individual computers. To create a version, just click *File* > *Version history* > *Name current version*. Give it a name like *YourName_PSYC301_Introduction_RoughDraft*. You can see the process of saving a version below in Figure \@ref(fig:SaveNamedVersionInGoogleDocs)
 ```
 
 <br/>
@@ -505,16 +505,16 @@ knitr::include_graphics(c("images/WriteIntros/VersionHistoryInitiate.png", "imag
 
 ### Uploading the rough draft {#UploadingRoughDraftOfWritingAssignment1}
 
-When you have your rough draft ready to submit, double-check that your name has been removed, and that there is no heading named *Introduction*. The blind peer review in Peerceptiv doesn't really work if you reveal your identity.
+When you have your rough draft ready to submit, double-check that your name has been removed, and that there is no heading named *Introduction*. The blind peer review in *Peerceptiv* doesn't really work if you reveal your identity.
 
-On the day that you are supposed to upload your draft to Peerceptiv (via eCampus only!!), you must do so by the time specified by your instructor. If you submit it late, but within the first 24 hours of the initial due date/time, then you will get half credit for the assignment. That is, if you would normally have gotten 24 points out of 30, you would get 12 points out of 30. This is called a *grace period* by Peerceptiv.
+On the day that you are supposed to upload your draft to *Peerceptiv* (via *Canvas* only!!), you must do so by the time specified by your instructor. If you submit it late, but within the first 24 hours of the initial due date/time, then you will get half credit for the assignment. That is, if you would normally have gotten 24 points out of 30, you would get 12 points out of 30. This is called a *grace period* by *Peerceptiv*.
 
-After the grace period, there is almost no chance that your assignment will get reviewed by one of your peers. As a result, Peerceptiv won't let you upload it. However, you still need to submit it (It's a requirement of *W* courses at Texas A&M that you submit a rough and final draft). This means that you will need to email it to your TA, who will then give you direct feedback (but again, your maximum score would be 15/30). However, for **each** additional 24-hour period after the initial grace-period expires, you lose 10% off your **final** draft. And even if you are down to 0 points, you still must submit a final draft for feedback before you can submit a final draft. Again, these are rules for the *W* courses at Texas A&M.
+After the grace period, there is almost no chance that your assignment will get reviewed by one of your peers. As a result, *Peerceptiv* won't let you upload it. However, you still need to submit it (It's a requirement of *W* courses at Texas A&M that you submit a rough and final draft). This means that you will need to email it to your TA, who will then give you direct feedback (but again, your maximum score would be 15/30). However, for **each** additional 24-hour period after the initial grace-period expires, you lose 10% off your **final** draft. And even if you are down to 0 points, you still must submit a final draft for feedback before you can submit a final draft. Again, these are rules for the *W* courses at Texas A&M.
 
 <br/>
 
 ```{block2, type="rmdnote", echo=T}
-**NOTE**: You may be able to submit your paper directly from Google Docs by copying the unique URL for the document (e.g., https://docs.google.com/document/d/15ApECWiuvoWgQysyQaKKWfNierx-yULT5udKVXdIj9B), but we are not quite certain. If that does not work, you can always download the Google Doc as a .pdf (*File* > *Download* > *PDF Document (.pdf)*), then upload it to Peerceptiv from your computer. That will *always* work.
+**NOTE**: You may be able to submit your paper directly from Google Docs by copying the unique URL for the document (e.g., https://docs.google.com/document/d/15ApECWiuvoWgQysyQaKKWfNierx-yULT5udKVXdIj9B), but we are not quite certain. If that does not work, you can always download the Google Doc as a .pdf (*File* > *Download* > *PDF Document (.pdf)*), then upload it to *Peerceptiv* from your computer. That will *always* work.
 ```
 
 <br/>
@@ -523,15 +523,15 @@ The [Peerceptiv Student User Videos](https://peerceptiv.zendesk.com/hc/en-us/art
 
 <br/>
 
-After you have uploaded your draft, further instructions for Peerceptiv will be given to you in class.
+After you have uploaded your draft, further instructions for *Peerceptiv* will be given to you in class.
 
 <br/>
 
 ### Uploading the final draft 
 
-Your final draft must be an honest attempt to revise your rough draft according to feedback from your peers in Peerceptiv, as well as possibly that of your TA (TAs will spot-review certain peer reviews to make sure the peer reviews proceed accurately and honestly).
+Your final draft must be an honest attempt to revise your rough draft according to feedback from your peers in *Peerceptiv*, as well as possibly that of your TA (TAs will spot-review certain peer reviews to make sure the peer reviews proceed accurately and honestly).
 
-On the day that the final draft is due (a week after the rough draft), the same time deadline is in effect: 6 am. However, instead of uploading to Peerceptiv, you will be uploading the document to Turnitin. For the final draft, late penalties accrue at a rate of 10% per day. This is **on top** of any penalties from the rough draft.
+On the day that the final draft is due (a week after the rough draft), the same time deadline is in effect: 6 am. However, instead of uploading to *Peerceptiv*, you will be uploading the document to Turnitin. For the final draft, late penalties accrue at a rate of 10% per day. This is **on top** of any penalties from the rough draft.
 
 It is easier to "upload" ("sideload"? Cloud-to-cloud) a Google Doc into Turnitin as it is explicitly one of the three upload options on the upload screen:
 

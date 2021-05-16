@@ -56,7 +56,7 @@ Start jamovi and click $(\equiv)$ > *Import*. Navigate to the directory with the
 
 <br/>
 
-Save your imported data as a jamovi file with the following name: *MainData_[YOUR.GROUP.ID].jmv* (e.g., *MainData_905C.jmv*). This is the file that you will ultimately upload (as a group) to the Google Folder assigned to you, and refer to when you notify your instructor that you have done so (in eCampus, under *Lab: BDDO* > *Data*). Only one person from the group needs to upload this.
+Save your imported data as a jamovi file with the following name: *MainData_[YOUR.GROUP.ID].jmv* (e.g., *MainData_905C.jmv*). This is the file that you will ultimately upload (as a group) to the Google Folder assigned to you, and refer to when you notify your instructor that you have done so (in *Canvas*, under *Lab: BDDO* > *Data*). Only one person from the group needs to upload this.
 
 But first, there are some changes you need to make.
 
@@ -280,4 +280,4 @@ knitr::include_graphics("images/PrepForWA2/AgreeablenessCompositeSummedNotAverag
 
 <br/>
 
-And that is it. Once you reach this stage, you have your composite variable and you are ready to upload the jamovi file to your group's Google Folder and let your TA know (through the assignment in eCampus).
+And that is it. Once you reach this stage, you have your composite variable and you are ready to upload the jamovi file to your group's Google Folder and let your TA know (through the assignment in *Canvas*).

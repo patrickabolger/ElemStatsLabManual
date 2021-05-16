@@ -105,7 +105,7 @@ div.csl-indent {
 <li class="chapter" data-level="0.2.1" data-path="index.html"><a href="index.html#FixedResources"><i class="fa fa-check"></i><b>0.2.1</b> Fixed resources</a></li>
 <li class="chapter" data-level="0.2.2" data-path="index.html"><a href="index.html#Software"><i class="fa fa-check"></i><b>0.2.2</b> Software</a></li>
 </ul></li>
-<li class="chapter" data-level="0.3" data-path="index.html"><a href="index.html#RationaleForJamovi"><i class="fa fa-check"></i><b>0.3</b> Rationale for jamovi</a></li>
+<li class="chapter" data-level="0.3" data-path="index.html"><a href="index.html#RationaleForJamovi"><i class="fa fa-check"></i><b>0.3</b> Rationale for <em>jamovi</em></a></li>
 <li class="chapter" data-level="0.4" data-path="index.html"><a href="index.html#OrganizationOfThisManual"><i class="fa fa-check"></i><b>0.4</b> Organization of this manual</a></li>
 <li class="chapter" data-level="0.5" data-path="index.html"><a href="index.html#MainOutcomeOfClass"><i class="fa fa-check"></i><b>0.5</b> Main outcome of class</a></li>
 </ul></li>
@@ -521,7 +521,7 @@ Figure 11.1: Example of tabs available upon opening your Google Form (assuming i
 </p>
 </div>
 <p><br/></p>
-<p>You will then see an option that says <em>Accepting responses</em>. click the button next to that. This will prevent further participants from adding data to your survey.<a href="#fn94" class="footnote-ref" id="fnref94"><sup>94</sup></a></p>
+<p>You will then see an option that says <em>Accepting responses</em>. click the button next to that. This will prevent further participants from adding data to your survey.<a href="#fn96" class="footnote-ref" id="fnref96"><sup>96</sup></a></p>
 <div class="figure" style="text-align: left"><span id="fig:GoogleFormsAcceptingNotResponses"></span>
 <img src="images/PrepForWA2/GoogleFormsAcceptingResponses.png" alt="How to halt all future responses in Google Forms" width="25%" /><img src="images/PrepForWA2/GoogleFormsNotAcceptingResponses.png" alt="How to halt all future responses in Google Forms" width="25%" />
 <p class="caption">
@@ -543,7 +543,7 @@ Figure 11.2: How to halt all future responses in Google Forms
 <strong><em>NOTE</em></strong>: jamovi seems to have no problem recognizing commas inside of comma delimiters in .csv files exported by Google, so you should not have the following problem. However, if there were problems importing the .csv file due to the commas being delimiters, go back to Google Forms and click the square green icon with the white cross inside it. This will create a Google Sheet. From there, you can click <em>File</em> &gt; <em>Download</em> &gt; <em>Tab-separated values (.tsv, current sheet)</em>. This will create a tab-delimited file that jamovi should definitely not have a problem with.
 </div>
 <p><br/></p>
-<p>Save your imported data as a jamovi file with the following name: <em>MainData_[YOUR.GROUP.ID].jmv</em> (e.g., <em>MainData_905C.jmv</em>). This is the file that you will ultimately upload (as a group) to the Google Folder assigned to you, and refer to when you notify your instructor that you have done so (in eCampus, under <em>Lab: BDDO</em> &gt; <em>Data</em>). Only one person from the group needs to upload this.</p>
+<p>Save your imported data as a jamovi file with the following name: <em>MainData_[YOUR.GROUP.ID].jmv</em> (e.g., <em>MainData_905C.jmv</em>). This is the file that you will ultimately upload (as a group) to the Google Folder assigned to you, and refer to when you notify your instructor that you have done so (in <em>Canvas</em>, under <em>Lab: BDDO</em> &gt; <em>Data</em>). Only one person from the group needs to upload this.</p>
 <p>But first, there are some changes you need to make.</p>
 <p><br/></p>
 </div>
@@ -672,7 +672,7 @@ IT TO THEIR OUTCOME VARIABLES. CHECK FOR OTHER THINGS TOO-->
 <p>To illustrate this, we will simply use a dataset called <em>Personality Questionnaire: Ch15 - Personality data sample 3</em> (<em>bfi_sample3</em>) [located at the very bottom] from the datasets associated with <span class="citation"><a href="#ref-lsj" role="doc-biblioref">Navarro &amp; Foxcroft</a> (<a href="#ref-lsj" role="doc-biblioref">2019</a>)</span>. In fact, this is the dataset they use to illustrate the same (pp. 461-463).</p>
 <p>Simply go to <span class="math inline">\((\equiv)\)</span> &gt; <em>Open</em> &gt; <em>lsj-data</em> &gt; <em>Personality Questionnaire: Ch15 - Personality data sample 3</em>. This dataset is a sample of people who took a Big-5 Personality test. The variables A1-A5 represent <em>Agreeableness</em>, but A1 is reverse-scored.</p>
 <p>Luckily, we do not need to reverse-score this ourselves. jamovi’s procedure for calculating Cronbach’s Alpha contains a mechanism within it to deal with reverse-scored items.</p>
-<p>When you have the data, click the <em>Analyses</em> tab, and choose <em>Factor</em>.<a href="#fn95" class="footnote-ref" id="fnref95"><sup>95</sup></a> From here select <em>Reliability Analysis</em>.</p>
+<p>When you have the data, click the <em>Analyses</em> tab, and choose <em>Factor</em>.<a href="#fn97" class="footnote-ref" id="fnref97"><sup>97</sup></a> From here select <em>Reliability Analysis</em>.</p>
 <p>Move variables <em>A1</em>-<em>A5</em> to the <em>Items</em> box. Then look down below and click the window labeled <em>Reverse Scaled Items</em>. In that box (labeled <em>Normal Scaled Items</em>), select <em>A1</em> and move it over to the box labeled <em>Reverse Scaled Items</em>. The arrangement of variables should look as they do in Figure <a href="DataPreparationAndAnalyses.html#fig:ArrangmentOfVariablesForCronbachsAlpha">11.7</a> below.</p>
 <div class="figure"><span id="fig:ArrangmentOfVariablesForCronbachsAlpha"></span>
 <img src="images/PrepForWA2/ArrangmentOfVariablesForCronbachsAlpha.png" alt="The arrangement of variables for Cronbach's Alpha using the bfi_sample3 dataset from @lsj" width="600px" />
@@ -715,7 +715,7 @@ Figure 11.7: The arrangement of variables for Cronbach’s Alpha using the bfi_s
 <h3><span class="header-section-number">11.5.5</span> Creating a composite variable</h3>
 <p>To create a new variable we simply sum or average them together. We can work with the same <em>bfi_sample3</em> data from above to do this. We will need to reverse-score <em>A1</em> first (see section <a href="DataPreparationAndAnalyses.html#PreparingDataReverseScoring">11.5.2</a> above.</p>
 <p>Using the same procedure as we did above for creating reversed scores (section <a href="DataPreparationAndAnalyses.html#PreparingDataReverseScoring">11.5.2</a>) and creating <em>z</em>-scores (section <a href="DataPreparationAndAnalyses.html#PreparingDataCalculatingZScores">11.5.3</a>), we again clicked the header above a blank column and chose NEW COMPUTED VARIABLE.</p>
-<p>Here, we chose to sum together <em>A1R</em> (reversed) and <em>A2</em>-<em>A5</em>.<a href="#fn96" class="footnote-ref" id="fnref96"><sup>96</sup></a> We did this by choosing the function SUM from the <span class="math inline">\(f_x\)</span> menu. Then, inside the parentheses of SUM(), we placed all the variables we needed, separated by commas. See Figure <a href="DataPreparationAndAnalyses.html#fig:AgreeablenessCompositeSummedNotAveraged">11.8</a> below for a visualization of what we did.</p>
+<p>Here, we chose to sum together <em>A1R</em> (reversed) and <em>A2</em>-<em>A5</em>.<a href="#fn98" class="footnote-ref" id="fnref98"><sup>98</sup></a> We did this by choosing the function SUM from the <span class="math inline">\(f_x\)</span> menu. Then, inside the parentheses of SUM(), we placed all the variables we needed, separated by commas. See Figure <a href="DataPreparationAndAnalyses.html#fig:AgreeablenessCompositeSummedNotAveraged">11.8</a> below for a visualization of what we did.</p>
 <div class="figure"><span id="fig:AgreeablenessCompositeSummedNotAveraged"></span>
 <img src="images/PrepForWA2/AgreeablenessCompositeSummedNotAveraged.png" alt="Calculating the sum of A2-A5 and A1R (reversed)" width="600px" />
 <p class="caption">
@@ -723,7 +723,7 @@ Figure 11.8: Calculating the sum of A2-A5 and A1R (reversed)
 </p>
 </div>
 <p><br/></p>
-<p>And that is it. Once you reach this stage, you have your composite variable and you are ready to upload the jamovi file to your group’s Google Folder and let your TA know (through the assignment in eCampus).</p>
+<p>And that is it. Once you reach this stage, you have your composite variable and you are ready to upload the jamovi file to your group’s Google Folder and let your TA know (through the assignment in <em>Canvas</em>).</p>
 
 </div>
 </div>
@@ -739,10 +739,10 @@ Navarro, D. J., &amp; Foxcroft, D. R. (2019). Learning statistics with jamovi: A
 </div>
 <div class="footnotes">
 <hr />
-<ol start="94">
-<li id="fn94"><p>This step isn’t actually required, but it can reduce confusion down the line, as one of your group-mates may decide to download more current data without you knowing, thereby giving you two or more datasets.<a href="DataPreparationAndAnalyses.html#fnref94" class="footnote-back">↩︎</a></p></li>
-<li id="fn95"><p>Cronbach’s Alpha is often carried out in conjunction with something called <em>Factor Analysis</em>, which you are free to read about in Chapter 15 of <span class="citation"><a href="#ref-lsj" role="doc-biblioref">Navarro &amp; Foxcroft</a> (<a href="#ref-lsj" role="doc-biblioref">2019</a>)</span><a href="DataPreparationAndAnalyses.html#fnref95" class="footnote-back">↩︎</a></p></li>
-<li id="fn96"><p>We could also average them since they’re on the same scale. The result is the same.<a href="DataPreparationAndAnalyses.html#fnref96" class="footnote-back">↩︎</a></p></li>
+<ol start="96">
+<li id="fn96"><p>This step isn’t actually required, but it can reduce confusion down the line, as one of your group-mates may decide to download more current data without you knowing, thereby giving you two or more datasets.<a href="DataPreparationAndAnalyses.html#fnref96" class="footnote-back">↩︎</a></p></li>
+<li id="fn97"><p>Cronbach’s Alpha is often carried out in conjunction with something called <em>Factor Analysis</em>, which you are free to read about in Chapter 15 of <span class="citation"><a href="#ref-lsj" role="doc-biblioref">Navarro &amp; Foxcroft</a> (<a href="#ref-lsj" role="doc-biblioref">2019</a>)</span><a href="DataPreparationAndAnalyses.html#fnref97" class="footnote-back">↩︎</a></p></li>
+<li id="fn98"><p>We could also average them since they’re on the same scale. The result is the same.<a href="DataPreparationAndAnalyses.html#fnref98" class="footnote-back">↩︎</a></p></li>
 </ol>
 </div>
             </section>

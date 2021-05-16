@@ -121,7 +121,7 @@ This is an online survey designed to tap into the belief in generic conspiracy t
 
 <br/>
 
-The data (*data.csv*) and codebook (*codebook.txt*) can be found online [here](http://openpsychometrics.org/_rawdata/GCBS.zip) as a .zip file, or, for Texas A&M students in PSYC 301, on eCampus under *Lab: Lab manual data sets* > *TwoMeans_GCBS* (a folder containing the two files). Feel free to follow along with how we analyzed this data. 
+The data (*data.csv*) and codebook (*codebook.txt*) can be found online [here](http://openpsychometrics.org/_rawdata/GCBS.zip) as a .zip file, or, for Texas A&M students in PSYC 301, on *Canvas* under *Lab: Lab manual data sets* > *TwoMeans_GCBS* (a folder containing the two files). Feel free to follow along with how we analyzed this data. 
 
 In this case, as we saw before, the researchers indicated non-responses with a 0. Zero, then, is the number that represents missing values. So before we imported the data, we put 0 (i.e., zero, with no quotes) into the *Default missings* box under preferences $(\vdots)$.
 
@@ -375,7 +375,7 @@ To examine this possibility, the authors randomly assigned 39 professional recru
 #### Your tasks {#IndSamplesSpokeWritTask}
 
 1. Start jamovi.
-2. Import the data file in eCampus called *TwoMeans_SpokeWrit.csv*. 
+2. Import the data file in *Canvas* called *TwoMeans_SpokeWrit.csv*. 
 
 <br/>
 
@@ -715,7 +715,7 @@ Following this 1-2 week exposure period, the parents and their infant returned t
 
 #### Getting the data {#PairedSamplesSingingParentsImportingGetting}
 
-This *open data* set is located on eCampus at *Lab: Lab manual data sets* > *TwoMeans_InfantMusic.csv* (or as an .omv file). Again, the missing value for this .csv file is a blank. So set the *Default missings* to two side-by-side quotation marks: ""
+This *open data* set is located on *Canvas* at *Lab: Lab manual data sets* > *TwoMeans_InfantMusic.csv* (or as an .omv file). Again, the missing value for this .csv file is a blank. So set the *Default missings* to two side-by-side quotation marks: ""
 
 <br/>
 

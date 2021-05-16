@@ -33,7 +33,7 @@ So if you have not yet performed these procedures with your data, please go to s
 
 <br/>
 
-In fact, doing all the procedures above in a single jamovi file corresponds to *Statistical Output for Assignment 2* in eCampus.
+In fact, doing all the procedures above in a single jamovi file corresponds to *Statistical Output for Assignment 2* in *Canvas*.
 
 <br/>
 
@@ -391,7 +391,7 @@ Take a few minutes to revise any part of this sub-section that you think should 
 You should end up with a final, polished sentence that you would be comfortable using later on as a model for your own Participant subsection.
 
 ```{block2, type="rmdwarning", echo=T}
-**WARNING**: Do not re-use the wording of this document for your own papers! Once it is written in lab, it is considered the paper of someone else for the purposes of this class. Copying it for your own writing will thus be considered a form of plagiarism. Moreover, do not copy this document and try to change words progressively until it looks like you have a different document. This is, in fact, the most **dangerous** form of plagiarism, because if you get caught, there is evidence of you not only plagiarizing, but also evidence of you knowing what you were doing was wrong. This is *checkmate* (I assume) as far as the Aggie Honor System Office is concerned. Please read their [section on plagiarism](http://aggiehonor.tamu.edu/Rules-and-Procedures/Rules/Honor-System-Rules#Plagiarism). There is also a handout in eCampus under the appropriate folder titled "Types of Plagiarism (from Turnitin)." This is a more detailed set of descriptions for different kinds of plagiarism. The changing-a-few-words strategy is listed there as number 3 ("Find - Replace"). It is our opinion that this kind of plagiarism is much worse than indicated by Turnitin in the sense that it is also quite "self-incriminating."
+**WARNING**: Do not re-use the wording of this document for your own papers! Once it is written in lab, it is considered the paper of someone else for the purposes of this class. Copying it for your own writing will thus be considered a form of plagiarism. Moreover, do not copy this document and try to change words progressively until it looks like you have a different document. This is, in fact, the most **dangerous** form of plagiarism, because if you get caught, there is evidence of you not only plagiarizing, but also evidence of you knowing what you were doing was wrong. This is *checkmate* (I assume) as far as the Aggie Honor System Office is concerned. Please read their [section on plagiarism](http://aggiehonor.tamu.edu/Rules-and-Procedures/Rules/Honor-System-Rules#Plagiarism). There is also a handout in *Canvas* under the appropriate folder titled "Types of Plagiarism (from Turnitin)." This is a more detailed set of descriptions for different kinds of plagiarism. The changing-a-few-words strategy is listed there as number 3 ("Find - Replace"). It is our opinion that this kind of plagiarism is much worse than indicated by Turnitin in the sense that it is also quite "self-incriminating."
 
 The best way to use the current lab-based document as a template for your own paper is to read each section for the content. Then distract yourself for a little bit with an unrelated task (e.g., making a cup of coffee, washing a couple of dishes). Return after a couple of minutes and try to re-write what you just read without looking at it.
 

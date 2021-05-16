@@ -837,7 +837,7 @@ We will use the for-fun, online version of the Narcissistic Personality Inventor
 
 #### Obtaining the data {#NarcissisticPersonalityInventoryObtainingData}
 
-The data and the codebook are available both available online [here](http://openpsychometrics.org/_rawdata/). You need to scroll down to the row with *Narcissistic Personality Inventory* and click the link on the far right-hand side labeled *NPI*. This will download a .zip file with the files you need. Students in PSYC 301 at Texas A&M can access these files in eCampus under *Lab: Lab manual data sets* > *CategoricalData_NPI*.
+The data and the codebook are available both available online [here](http://openpsychometrics.org/_rawdata/). You need to scroll down to the row with *Narcissistic Personality Inventory* and click the link on the far right-hand side labeled *NPI*. This will download a .zip file with the files you need. Students in PSYC 301 at Texas A&M can access these files in *Canvas* under *Lab: Lab manual data sets* > *CategoricalData_NPI*.
 
 <br/>
 
