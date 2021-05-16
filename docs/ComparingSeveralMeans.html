@@ -23,7 +23,7 @@
 
 
 
-<meta name="date" content="2021-05-15" />
+<meta name="date" content="2021-05-16" />
 
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <meta name="apple-mobile-web-app-capable" content="yes" />
@@ -140,7 +140,7 @@ div.csl-indent {
 <li class="chapter" data-level="2.7.1" data-path="BasicDataOperations.html"><a href="BasicDataOperations.html#OutsideHelpOnEnteringData"><i class="fa fa-check"></i><b>2.7.1</b> Entering and adjusting data</a></li>
 <li class="chapter" data-level="2.7.2" data-path="BasicDataOperations.html"><a href="BasicDataOperations.html#OutsideHelpOnOpeningData"><i class="fa fa-check"></i><b>2.7.2</b> Opening data</a></li>
 <li class="chapter" data-level="2.7.3" data-path="BasicDataOperations.html"><a href="BasicDataOperations.html#OutsideHelpOnImportingData"><i class="fa fa-check"></i><b>2.7.3</b> Importing data</a></li>
-<li class="chapter" data-level="2.7.4" data-path="BasicDataOperations.html"><a href="BasicDataOperations.html#OutsideHelpOnRecodingVariables"><i class="fa fa-check"></i><b>2.7.4</b> Recoding variables</a></li>
+<li class="chapter" data-level="2.7.4" data-path="BasicDataOperations.html"><a href="BasicDataOperations.html#OutsideHelpOnRecodingVariables"><i class="fa fa-check"></i><b>2.7.4</b> Re-coding variables</a></li>
 <li class="chapter" data-level="2.7.5" data-path="BasicDataOperations.html"><a href="BasicDataOperations.html#OutsideHelpOnGeneratingRandomData"><i class="fa fa-check"></i><b>2.7.5</b> Generating random data</a></li>
 <li class="chapter" data-level="2.7.6" data-path="BasicDataOperations.html"><a href="BasicDataOperations.html#OutsideHelpOnTransormingVariables"><i class="fa fa-check"></i><b>2.7.6</b> Transforming variables</a></li>
 <li class="chapter" data-level="2.7.7" data-path="BasicDataOperations.html"><a href="BasicDataOperations.html#OutsideHelpOnFilteringData"><i class="fa fa-check"></i><b>2.7.7</b> Filtering data</a></li>
@@ -493,7 +493,7 @@ div.csl-indent {
 <div id="OnewayAnova" class="section level2" number="8.1">
 <h2><span class="header-section-number">8.1</span> The One-Way ANOVA</h2>
 <p>Carrying out One-Way ANOVA is covered in your main textbook <span class="citation">(<a href="#ref-lsj" role="doc-biblioref">Navarro &amp; Foxcroft, 2019</a>, Sections 13.1 to 13.7)</span>.</p>
-<p>In this test, we are interested in whether three or more groups comprising independent observations differ with each on a single, continuous outcome variable.<a href="#fn73" class="footnote-ref" id="fnref73"><sup>73</sup></a></p>
+<p>In this test, we are interested in whether three or more groups comprising independent observations differ with each on a single, continuous outcome variable.<a href="#fn77" class="footnote-ref" id="fnref77"><sup>77</sup></a></p>
 <p>The <em>F</em>-test is the calculation of a particular kind of ratio, the <em>F</em>-ratio (unsurprisingly!). It is the ratio of between-subjects variance (<em>Mean Squares Between</em>) divided by the within-subjects variance (<em>Mean Squares Within</em>). Each of these, respectively, is the ratio of the <em>Sum of Squares</em> (between or within) divided by the <em>degrees of freedom</em> (between or within). Thus:</p>
 <p><span class="math display">\[F= \frac{MeanSquares_{between}}{MeanSquares_{within}} = \frac{\frac{SumOfSquares_{betweeen}}{DegreesOfFreedom_{between}}}{\frac{SumOfSquares_{within}}{DegreesOfFreedom_{within}}}\]</span>
 <br/></p>
@@ -549,7 +549,7 @@ Figure 8.3: Multiple-comparison, post-hoc settings for the ANOVA procedure using
 </li>
 <li><em>Error bars</em> (under <em>Plot</em>) is set to <em>Confidence interval</em><br />
 </li>
-<li>and for fun, check the box <em>Observed scores</em>.<a href="#fn74" class="footnote-ref" id="fnref74"><sup>74</sup></a></li>
+<li>and for fun, check the box <em>Observed scores</em>.<a href="#fn78" class="footnote-ref" id="fnref78"><sup>78</sup></a></li>
 </ul>
 <p>These options are shown in Figure <a href="ComparingSeveralMeans.html#fig:ANOVAClinicalParamatersEMM">8.4</a> below.</p>
 <div class="figure"><span id="fig:ANOVAClinicalParamatersEMM"></span>
@@ -606,7 +606,7 @@ Figure 8.4: Graphic settings for the ANOVA procedure using the <em>Clinical Tria
 ##    joyzepam    1.4833333    0.1243502    1.2182872    1.7483794   
 ##    placebo     0.4500000    0.1243502    0.1849539    0.7150461   
 ##  ────────────────────────────────────────────────────────────────</code></pre>
-<p><img src="ElemStatsLabManual_files/figure-html/unnamed-chunk-138-1.svg" width="672" /></p>
+<p><img src="ElemStatsLabManual_files/figure-html/unnamed-chunk-139-1.svg" width="672" /></p>
 <p><br/></p>
 </div>
 <div id="OnewayAnovaClinicalTrialDataInterpreting" class="section level4" number="8.1.1.3">
@@ -617,7 +617,7 @@ Figure 8.4: Graphic settings for the ANOVA procedure using the <em>Clinical Tria
 <p><span class="math display">\[\eta^2 = \frac{SumOfSquares_{between}}{SumOfSquares_{total}}= \frac{SumOfSquares_{between}}{SumOfSquares_{between}+SumOfSquares_{within}}=\]</span>
 <span class="math display">\[\frac{3.45}{3.45+1.39} = \frac{3.45}{4.84} = 0.713\]</span></p>
 <p><br/></p>
-<p>Naturally, that <em>F</em>-test is an omnibus test, and only tells us that there are some significant differences among the three means, but it doesn’t tell us which. Therefore, there are also some post-hoc tests that we called for, which are located in third table down. It appears that there is a significant difference between joyzepam and each of the other two drugs, but not between the other two drugs themselves. This is clear in the figure, where you can see that the confidence interval for joyzepam does not overlap with either of the other two drugs, but the confidence intervals of the other two drugs overlap with each other quite a bit.<a href="#fn75" class="footnote-ref" id="fnref75"><sup>75</sup></a></p>
+<p>Naturally, that <em>F</em>-test is an omnibus test, and only tells us that there are some significant differences among the three means, but it doesn’t tell us which. Therefore, there are also some post-hoc tests that we called for, which are located in third table down. It appears that there is a significant difference between joyzepam and each of the other two drugs, but not between the other two drugs themselves. This is clear in the figure, where you can see that the confidence interval for joyzepam does not overlap with either of the other two drugs, but the confidence intervals of the other two drugs overlap with each other quite a bit.<a href="#fn79" class="footnote-ref" id="fnref79"><sup>79</sup></a></p>
 <p>Also note that the <em>Estimated Marginal Means</em> may be slightly different than the means that you obtain from running <em>Exploration</em> &gt; <em>Descriptives</em> in jamovi. This topic is beyond the scope of this class as it has to do with how means are calculated multiple regression. Although these are legitimate estimates, you should report the means and standard deviations from the <em>Descriptives</em> procedure instead of the <em>Estimated Marginal Means</em> from the ANOVA output.</p>
 <p><br/></p>
 </div>
@@ -682,10 +682,10 @@ Navarro, D. J., &amp; Foxcroft, D. R. (2019). Learning statistics with jamovi: A
 </div>
 <div class="footnotes">
 <hr />
-<ol start="73">
-<li id="fn73"><p>Technically, you can also do this kind of test on a categorical variable with only two levels, something you would normally think to do an independent-samples <em>t</em>-test on. However, the results will be the same in this case, except that the ultimate obtained value for <em>F</em> (the ANOVA test) will be the equivalent of the obtained value for <em>t</em>, but squared. <span class="citation">(<a href="#ref-lsj" role="doc-biblioref">Navarro &amp; Foxcroft, 2019</a>)</span> talk about this briefly in section 13.10.<a href="ComparingSeveralMeans.html#fnref73" class="footnote-back">↩︎</a></p></li>
-<li id="fn74"><p>22 Oct 2019: Note however that you may get a strange message in German here: <em>unerwartetes Symbol 1:…</em>, which means “Unexpected symbol 1:….” This seems to be a bug in jamovi. If you get it, just uncheck the box; the error message goes away.<a href="ComparingSeveralMeans.html#fnref74" class="footnote-back">↩︎</a></p></li>
-<li id="fn75"><p>Note that this is an approximate rule. Sometimes confidence intervals do overlap a little between variables that turn out to be significantly different.<a href="ComparingSeveralMeans.html#fnref75" class="footnote-back">↩︎</a></p></li>
+<ol start="77">
+<li id="fn77"><p>Technically, you can also do this kind of test on a categorical variable with only two levels, something you would normally think to do an independent-samples <em>t</em>-test on. However, the results will be the same in this case, except that the ultimate obtained value for <em>F</em> (the ANOVA test) will be the equivalent of the obtained value for <em>t</em>, but squared. <span class="citation">(<a href="#ref-lsj" role="doc-biblioref">Navarro &amp; Foxcroft, 2019</a>)</span> talk about this briefly in section 13.10.<a href="ComparingSeveralMeans.html#fnref77" class="footnote-back">↩︎</a></p></li>
+<li id="fn78"><p>22 Oct 2019: Note however that you may get a strange message in German here: <em>unerwartetes Symbol 1:…</em>, which means “Unexpected symbol 1:….” This seems to be a bug in jamovi. If you get it, just uncheck the box; the error message goes away.<a href="ComparingSeveralMeans.html#fnref78" class="footnote-back">↩︎</a></p></li>
+<li id="fn79"><p>Note that this is an approximate rule. Sometimes confidence intervals do overlap a little between variables that turn out to be significantly different.<a href="ComparingSeveralMeans.html#fnref79" class="footnote-back">↩︎</a></p></li>
 </ol>
 </div>
             </section>

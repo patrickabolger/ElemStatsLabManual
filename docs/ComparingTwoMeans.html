@@ -23,7 +23,7 @@
 
 
 
-<meta name="date" content="2021-05-15" />
+<meta name="date" content="2021-05-16" />
 
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <meta name="apple-mobile-web-app-capable" content="yes" />
@@ -140,7 +140,7 @@ div.csl-indent {
 <li class="chapter" data-level="2.7.1" data-path="BasicDataOperations.html"><a href="BasicDataOperations.html#OutsideHelpOnEnteringData"><i class="fa fa-check"></i><b>2.7.1</b> Entering and adjusting data</a></li>
 <li class="chapter" data-level="2.7.2" data-path="BasicDataOperations.html"><a href="BasicDataOperations.html#OutsideHelpOnOpeningData"><i class="fa fa-check"></i><b>2.7.2</b> Opening data</a></li>
 <li class="chapter" data-level="2.7.3" data-path="BasicDataOperations.html"><a href="BasicDataOperations.html#OutsideHelpOnImportingData"><i class="fa fa-check"></i><b>2.7.3</b> Importing data</a></li>
-<li class="chapter" data-level="2.7.4" data-path="BasicDataOperations.html"><a href="BasicDataOperations.html#OutsideHelpOnRecodingVariables"><i class="fa fa-check"></i><b>2.7.4</b> Recoding variables</a></li>
+<li class="chapter" data-level="2.7.4" data-path="BasicDataOperations.html"><a href="BasicDataOperations.html#OutsideHelpOnRecodingVariables"><i class="fa fa-check"></i><b>2.7.4</b> Re-coding variables</a></li>
 <li class="chapter" data-level="2.7.5" data-path="BasicDataOperations.html"><a href="BasicDataOperations.html#OutsideHelpOnGeneratingRandomData"><i class="fa fa-check"></i><b>2.7.5</b> Generating random data</a></li>
 <li class="chapter" data-level="2.7.6" data-path="BasicDataOperations.html"><a href="BasicDataOperations.html#OutsideHelpOnTransormingVariables"><i class="fa fa-check"></i><b>2.7.6</b> Transforming variables</a></li>
 <li class="chapter" data-level="2.7.7" data-path="BasicDataOperations.html"><a href="BasicDataOperations.html#OutsideHelpOnFilteringData"><i class="fa fa-check"></i><b>2.7.7</b> Filtering data</a></li>
@@ -500,7 +500,7 @@ div.csl-indent {
 <ul>
 <li>In the case where the two samples do not consist of the same people (e.g., men vs. women), you can use an <strong>independent-samples</strong> <strong><em>t</em></strong>-<strong>test</strong><br />
 </li>
-<li>In the case where you have the same group of people sampled twice (e.g., time 1 vs. time 2), you can use a <strong>dependent-samples</strong> <strong><em>t</em></strong>-<strong>test</strong>, also known as a <strong>paired</strong> <strong><em>t</em></strong>-<strong>test</strong>.<a href="#fn55" class="footnote-ref" id="fnref55"><sup>55</sup></a></li>
+<li>In the case where you have the same group of people sampled twice (e.g., time 1 vs. time 2), you can use a <strong>dependent-samples</strong> <strong><em>t</em></strong>-<strong>test</strong>, also known as a <strong>paired</strong> <strong><em>t</em></strong>-<strong>test</strong>.<a href="#fn59" class="footnote-ref" id="fnref59"><sup>59</sup></a></li>
 </ul></li>
 </ul>
 <p><br/></p>
@@ -509,7 +509,7 @@ div.csl-indent {
 <div id="DoingIndSamplesTTest" class="section level2" number="6.1">
 <h2><span class="header-section-number">6.1</span> The independent-samples <em>t</em>-test</h2>
 <p>Carrying out independent-samples <em>t</em>-tests is covered in your main textbook <span class="citation">(<a href="#ref-lsj" role="doc-biblioref">Navarro &amp; Foxcroft, 2019</a>, Section 11.3)</span>.</p>
-<p>In this test, we are interested in whether two groups comprising independent observations differ with each on a single, continuous outcome variable. The standard equation for this is called <em>Student’s <em>t</em></em>.<a href="#fn56" class="footnote-ref" id="fnref56"><sup>56</sup></a></p>
+<p>In this test, we are interested in whether two groups comprising independent observations differ with each on a single, continuous outcome variable. The standard equation for this is called <em>Student’s <em>t</em></em>.<a href="#fn60" class="footnote-ref" id="fnref60"><sup>60</sup></a></p>
 <p>Of course, you do not need to calculate <em>Student’s <em>t</em></em>, or any other statistical equation in jamovi; the software does it for you… which is the <em>sine qua non</em> of statistical software in general. So let’s get to that.</p>
 <p><br/></p>
 <div id="IndSamplesDrHarpo" class="section level3" number="6.1.1">
@@ -524,7 +524,7 @@ div.csl-indent {
 <div id="IndSamplesDrHarpoImplementing" class="section level4" number="6.1.1.2">
 <h4><span class="header-section-number">6.1.1.2</span> Implementing the procedure</h4>
 <p>We clicked the <em>Analyses</em> tab and selected <em>T-Tests</em>. We slid <em>grade</em> into the <em>Dependent Variables</em> box, and <em>tutor</em> into the <em>Grouping Variable</em> box. Under <em>Tests</em> we checked <em>Student’s</em> (for the traditional <em>t</em>-test), as well as the “alternative” test, <em>Welch’s</em>, which actually turns out to be better in most cases (and less confusing!). The research hypothesis <span class="citation">(see Chapter 9 of <a href="#ref-lsj" role="doc-biblioref">Navarro &amp; Foxcroft, 2019</a>)</span> is non-directional, so we left <em>Group 1 <span class="math inline">\(\ne\)</span> Group 2</em> (the default) checked under <em>Hypothesis</em>. As for <em>Additional Statistics</em>, we checked <em>Effect size</em>, <em>Descriptives</em>, and <em>Descriptives plots</em>.</p>
-<p>The top two options under <em>Assumption Checks</em>, can really be addressed before you get to the inferential-test stage, so we chose not to do them here. However, the <em>Equality of variances</em> is an interesting case in jamovi. jamovi is “smart,”<a href="#fn57" class="footnote-ref" id="fnref57"><sup>57</sup></a> so <strong><em>IF</em></strong> you check <em>Student’s</em> without checking <em>Welch’s</em>, then jamovi will add a footnote about the test for equality of variances (<em>Levene’s test</em>). This is because using the <em>Student’s t-test</em> is only appropriate if you have equality of variances across the two conditions. To pass Levene’s test, your <em>p</em>-value must be <strong><em>greater</em></strong> than .05 (not less, like in the regular inferential tests). This is because the null hypothesis for equality of variances is that the variances are equal. So you <strong>want</strong> to <em>fail to reject</em> that particular null hypothesis. This is counter-intuitive once you have a handle on null-hypothesis significance testing, but you’ll get used to it. Many assumption checks work the opposite way from the inferential tests.</p>
+<p>The top two options under <em>Assumption Checks</em>, can really be addressed before you get to the inferential-test stage, so we chose not to do them here. However, the <em>Equality of variances</em> is an interesting case in jamovi. jamovi is “smart,”<a href="#fn61" class="footnote-ref" id="fnref61"><sup>61</sup></a> so <strong><em>IF</em></strong> you check <em>Student’s</em> without checking <em>Welch’s</em>, then jamovi will add a footnote about the test for equality of variances (<em>Levene’s test</em>). This is because using the <em>Student’s t-test</em> is only appropriate if you have equality of variances across the two conditions. To pass Levene’s test, your <em>p</em>-value must be <strong><em>greater</em></strong> than .05 (not less, like in the regular inferential tests). This is because the null hypothesis for equality of variances is that the variances are equal. So you <strong>want</strong> to <em>fail to reject</em> that particular null hypothesis. This is counter-intuitive once you have a handle on null-hypothesis significance testing, but you’ll get used to it. Many assumption checks work the opposite way from the inferential tests.</p>
 <p>But you might also notice (if you play around a bit) that if you <strong>also</strong> check <em>Welch’s</em>, then Levene’s test disappears from the footnote in the output. You have to ask for it specifically (at the lower right). This is because the (smart) programmers at jamovi knew that if you also selected <em>Welch’s</em> that you really didn’t need the test for equality of variances in the first place since the test is irrelevant for <em>Welch’s <em>t</em>-test</em> (which internally corrects for inequality of variances). But you can still ask for it by checking the box for it at the lower right. We did that here. We went one step further and un-checked <em>Student’s</em> just to simplify the output.</p>
 <p>Thus, the options shown below in Figure <a href="ComparingTwoMeans.html#fig:TTestHarpoParameters">6.1</a> should be more than enough to make educated decisions about the <em>t</em>-test.</p>
 <p><br/></p>
@@ -556,12 +556,12 @@ Figure 6.1: Parameter settings for the independent samples <em>t</em>-test using
 ##    grade    Anastasia     15    74.53333    76.00000    8.998942    2.323517   
 ##             Bernadette    18    69.05556    69.00000    5.774918    1.361161   
 ##  ─────────────────────────────────────────────────────────────────────────────</code></pre>
-<p><img src="ElemStatsLabManual_files/figure-html/unnamed-chunk-100-1.svg" width="672" /></p>
+<p><img src="ElemStatsLabManual_files/figure-html/unnamed-chunk-101-1.svg" width="672" /></p>
 <p><br/></p>
 </div>
 <div id="IndSamplesDrHarpoInterpreting" class="section level4" number="6.1.1.3">
 <h4><span class="header-section-number">6.1.1.3</span> Interpreting the output</h4>
-<p>Here you can see that the difference in grades between Anastasia’s and Bernadette’s tutoring groups are <em>marginally significant</em><a href="#fn58" class="footnote-ref" id="fnref58"><sup>58</sup></a> using Welch’s <em>t</em>-test, which is the appropriate choice here.</p>
+<p>Here you can see that the difference in grades between Anastasia’s and Bernadette’s tutoring groups are <em>marginally significant</em><a href="#fn62" class="footnote-ref" id="fnref62"><sup>62</sup></a> using Welch’s <em>t</em>-test, which is the appropriate choice here.</p>
 <p><br/></p>
 </div>
 <div id="IndSamplesDrHarpoReporting" class="section level4" number="6.1.1.4">
@@ -581,7 +581,7 @@ Figure 6.1: Parameter settings for the independent samples <em>t</em>-test using
 <p><br/></p>
 <div id="IndSamplesConspiracyObtainingData" class="section level4" number="6.1.2.1">
 <h4><span class="header-section-number">6.1.2.1</span> Obtaining the data</h4>
-<p>This is an online survey designed to tap into the belief in generic conspiracy theories (there are 15 generic conspiracies covered, which were distilled down, mathematically,<a href="#fn59" class="footnote-ref" id="fnref59"><sup>59</sup></a> from 75). You can see these questions <a href="https://www.frontiersin.org/files/Articles/46573/fpsyg-04-00279-HTML/image_m/fpsyg-04-00279-at001.jpg">here</a>, or in the Appendix of <span class="citation"><a href="#ref-BrothertonFrenchPickering2013" role="doc-biblioref">Brotherton, French, &amp; Pickering</a> (<a href="#ref-BrothertonFrenchPickering2013" role="doc-biblioref">2013</a>)</span>. Responses to these question were on a Likert Scale, ranging from 1 (<em>Definitely not true</em>) to 5 (<em>Definitely true</em>).</p>
+<p>This is an online survey designed to tap into the belief in generic conspiracy theories (there are 15 generic conspiracies covered, which were distilled down, mathematically,<a href="#fn63" class="footnote-ref" id="fnref63"><sup>63</sup></a> from 75). You can see these questions <a href="https://www.frontiersin.org/files/Articles/46573/fpsyg-04-00279-HTML/image_m/fpsyg-04-00279-at001.jpg">here</a>, or in the Appendix of <span class="citation"><a href="#ref-BrothertonFrenchPickering2013" role="doc-biblioref">Brotherton, French, &amp; Pickering</a> (<a href="#ref-BrothertonFrenchPickering2013" role="doc-biblioref">2013</a>)</span>. Responses to these question were on a Likert Scale, ranging from 1 (<em>Definitely not true</em>) to 5 (<em>Definitely true</em>).</p>
 <p><br/></p>
 
 <div class="rmdnote">
@@ -656,7 +656,7 @@ Figure 6.4: Setting the parameters for a <em>t</em>-test on variables from <span
 ##    Note. A low p-value suggests a violation of the
 ##    assumption of equal variances</code></pre>
 <p><br/></p>
-<p>In contrast, if you had only checked <em>Welch’s</em><a href="#fn60" class="footnote-ref" id="fnref60"><sup>60</sup></a>, then the output is much simpler, and safer to go with. You can see it in the output below, where we have also included descriptive statistics and plots.</p>
+<p>In contrast, if you had only checked <em>Welch’s</em><a href="#fn64" class="footnote-ref" id="fnref64"><sup>64</sup></a>, then the output is much simpler, and safer to go with. You can see it in the output below, where we have also included descriptive statistics and plots.</p>
 <p><br/></p>
 <pre><code>## 
 ##  INDEPENDENT SAMPLES T-TEST
@@ -676,12 +676,12 @@ Figure 6.4: Setting the parameters for a <em>t</em>-test on variables from <span
 ##    Comm.Wth.Exts    No       1672    2.147727    1.000000    1.429473    0.03495891   
 ##                     Yes       792    1.848485    1.000000    1.261016    0.04480826   
 ##  ────────────────────────────────────────────────────────────────────────────────────</code></pre>
-<p><img src="ElemStatsLabManual_files/figure-html/unnamed-chunk-106-1.svg" width="672" /></p>
+<p><img src="ElemStatsLabManual_files/figure-html/unnamed-chunk-107-1.svg" width="672" /></p>
 <p><br/></p>
 <p>Clearly, the effect is significant. But how do we interpret that? Well it turns out that with <em>t</em>-tests it’s very simple in the case of a significant effect: The mean that is greater is significantly greater than the other, and vice-versa.</p>
 <p>But there’s a bigger problem. This is something that would have been caught beforehand if looking specifically at <em>Descriptives</em> (as we did in Chapter <a href="DescriptiveStats.html#DescriptiveStats">3</a>). But you can see it in two places here: 1) in the table of <em>Descriptives</em> that we asked for; and especially in 2) in the <em>Descriptives plots.</em></p>
 <p>Do you see it?</p>
-<p>Look at the means vs. the medians. The numbers are give explicitly in the table, but the dot plot really shows you what’s happening. The means are plotted as circles flanked by confidence intervals.<a href="#fn61" class="footnote-ref" id="fnref61"><sup>61</sup></a> They look quite normal. However, the medians (represented as squares) are both at the bottom. This suggests, as you might expect, that the vast majority of respondents do not believe this kind of conspiracy theory. The distribution must be massively skewed to the right.</p>
+<p>Look at the means vs. the medians. The numbers are give explicitly in the table, but the dot plot really shows you what’s happening. The means are plotted as circles flanked by confidence intervals.<a href="#fn65" class="footnote-ref" id="fnref65"><sup>65</sup></a> They look quite normal. However, the medians (represented as squares) are both at the bottom. This suggests, as you might expect, that the vast majority of respondents do not believe this kind of conspiracy theory. The distribution must be massively skewed to the right.</p>
 <p>The best way to see this is with a violin plot with the <em>Data: Jittered</em> option checked (see Section <a href="DataVisualization.html#ViolinPlots">4.3</a>).</p>
 <p><br/></p>
 <pre><code>## 
@@ -694,7 +694,7 @@ Figure 6.4: Setting the parameters for a <em>t</em>-test on variables from <span
 ##    N    No                             1672   
 ##         Yes                             792   
 ##  ────────────────────────────────────────────</code></pre>
-<p><img src="ElemStatsLabManual_files/figure-html/unnamed-chunk-107-1.svg" width="672" /></p>
+<p><img src="ElemStatsLabManual_files/figure-html/unnamed-chunk-108-1.svg" width="672" /></p>
 <p><br/></p>
 <p>Clearly, the distributions are very similar to each other, but they are <strong>heavily</strong> skewed positively (Remember, violin plots are like histograms [density plots, really] tilted 90 degrees counterclockwise, and then mirrored). The “violins” should be fat in the middle and narrow at the extremes. Instead, both violin plots look like narrow vases with wide bases, where the vast majority of the responses are 1, at the lower end of the scale (which is on the y-axis now, not on the left-hand side of the x-axis, as is true for histograms).</p>
 <p>The <em>t</em>-test gave us a significant result, but it is not an appropriate test at all.</p>
@@ -754,7 +754,7 @@ Figure 6.5: Computing a new, 2-level nominal variable based on an old continuous
 </p>
 </div>
 <p><br/></p>
-<p>The end result was a new categorical variable with two levels.<a href="#fn62" class="footnote-ref" id="fnref62"><sup>62</sup></a></p>
+<p>The end result was a new categorical variable with two levels.<a href="#fn66" class="footnote-ref" id="fnref66"><sup>66</sup></a></p>
 <p><br/></p>
 </div>
 <div id="AlternativeConspiracyImplementing" class="section level5" number="6.1.2.6.2">
@@ -800,7 +800,7 @@ Figure 6.5: Computing a new, 2-level nominal variable based on an old continuous
 ##  ─────────────────────────────────</code></pre>
 <p><br/></p>
 <p>The chi-square test was significant. Looking at the contingency table, one can see the following. Among those who <strong>did not</strong> vote, the expected number of people who totally disagreed with the conspiracy theory was lower (867) than expected (920), whereas among those who <strong>did</strong> vote, the number of people who totally disagreed was higher (489) than expected (436). Also, among those who did not vote, there was about a 50/50 split between absolutely disagreeing and not-totally disagreeing with the conspiracy theory. In contrast, among those who did vote, those who disagreed outnumbered those who didn’t totally disagree by about 5-to-3.</p>
-<p>This test is not as potentially informative as having the convenience of 1-5 Likert scale. However, it is more appropriate in this case. You can trust these results more.<a href="#fn63" class="footnote-ref" id="fnref63"><sup>63</sup></a></p>
+<p>This test is not as potentially informative as having the convenience of 1-5 Likert scale. However, it is more appropriate in this case. You can trust these results more.<a href="#fn67" class="footnote-ref" id="fnref67"><sup>67</sup></a></p>
 <p><br/></p>
 </div>
 <div id="AlternativeConspiracyReporting" class="section level5" number="6.1.2.6.3">
@@ -866,7 +866,7 @@ Figure 6.6: Setting <em>Default missings</em> to blanks ("") in jamovi.
 <div id="DoingPairedSamplesTTest" class="section level2" number="6.2">
 <h2><span class="header-section-number">6.2</span> The paired-samples <em>t</em>-test</h2>
 <p>Paired samples <em>t</em>-tests are used when you have a single outcome variable, but the two groups that you are splitting the outcome variable by consist of the same people (or sometimes, <em>different</em> people who are highly matched on key variables). The key here is that the <em>concept</em> that splits the two means must result in correlated values, meaning that the value for one of the “levels” gives you a good idea of what the value for the other “level” is.</p>
-<p>You might be asking yourself why we used the term <em>concept</em> instead of <em>variable</em> (after all, you split your outcome variable by another two-level predictor in the case of the independent samples <em>t</em>-test; don’t you do the same thing here?). You need not worry very much; we’re actually just highlighting something about the data set that is typically used for this kind of analysis. In a traditional paired samples <em>t</em>-test, the two levels of the predictor variable are represented as two separate columns.<a href="#fn64" class="footnote-ref" id="fnref64"><sup>64</sup></a> So there technically is no variable in the data set, per se, that splits the variable into its two levels. You have to understand that your data set has that structure. When you run the analysis in jamovi, you will need to select two different columns corresponding to those two levels.<a href="#fn65" class="footnote-ref" id="fnref65"><sup>65</sup></a> You will see this shortly.</p>
+<p>You might be asking yourself why we used the term <em>concept</em> instead of <em>variable</em> (after all, you split your outcome variable by another two-level predictor in the case of the independent samples <em>t</em>-test; don’t you do the same thing here?). You need not worry very much; we’re actually just highlighting something about the data set that is typically used for this kind of analysis. In a traditional paired samples <em>t</em>-test, the two levels of the predictor variable are represented as two separate columns.<a href="#fn68" class="footnote-ref" id="fnref68"><sup>68</sup></a> So there technically is no variable in the data set, per se, that splits the variable into its two levels. You have to understand that your data set has that structure. When you run the analysis in jamovi, you will need to select two different columns corresponding to those two levels.<a href="#fn69" class="footnote-ref" id="fnref69"><sup>69</sup></a> You will see this shortly.</p>
 <p><br/></p>
 <div id="PairedSamplesChicoBasicData" class="section level3" number="6.2.1">
 <h3><span class="header-section-number">6.2.1</span> Basic: The <em>Chico</em> data</h3>
@@ -874,7 +874,7 @@ Figure 6.6: Setting <em>Default missings</em> to blanks ("") in jamovi.
 <p><br/></p>
 <table class="table table-striped" style="margin-left: auto; margin-right: auto;">
 <caption>
-<span id="tab:unnamed-chunk-114">Table 6.1: </span>The ‘Chico’ data set from Navarro and Foxcroft (2019).
+<span id="tab:unnamed-chunk-115">Table 6.1: </span>The ‘Chico’ data set from Navarro and Foxcroft (2019).
 </caption>
 <thead>
 <tr>
@@ -1129,7 +1129,7 @@ student20
 <p><br/></p>
 <div id="PairedSamplesChicoBasicImplmenting" class="section level4" number="6.2.1.1">
 <h4><span class="header-section-number">6.2.1.1</span> Implementing the procedure</h4>
-<p>To get a paired-samples <em>t</em>-test, Go to <em>Analyses</em> &gt; <em>T-Tests</em> tabs. Then slide <em>grade_test2</em> over to the <em>Paired Variables</em> box. It should end up on the left-hand column of that box. Then slide <em>grade_test1</em> over. This variable should end up in the right-hand column.<a href="#fn66" class="footnote-ref" id="fnref66"><sup>66</sup></a> Additionally, make sure that <em>Student’s</em> is checked, along with <em>Effect size</em> and <em>Descriptive plots</em>. Figure <a href="ComparingTwoMeans.html#fig:PairedTTestBasicParameters">6.7</a> below shows what you should see after doing all this.</p>
+<p>To get a paired-samples <em>t</em>-test, Go to <em>Analyses</em> &gt; <em>T-Tests</em> tabs. Then slide <em>grade_test2</em> over to the <em>Paired Variables</em> box. It should end up on the left-hand column of that box. Then slide <em>grade_test1</em> over. This variable should end up in the right-hand column.<a href="#fn70" class="footnote-ref" id="fnref70"><sup>70</sup></a> Additionally, make sure that <em>Student’s</em> is checked, along with <em>Effect size</em> and <em>Descriptive plots</em>. Figure <a href="ComparingTwoMeans.html#fig:PairedTTestBasicParameters">6.7</a> below shows what you should see after doing all this.</p>
 <p><br/></p>
 <div class="figure"><span id="fig:PairedTTestBasicParameters"></span>
 <img src="images/TwoMeans/PairedTTestBasicParameters.png" alt="Setting the parameters for a paired-samples *t*-test on a simulation of the *Chico* data from @lsj." width="600px" />
@@ -1149,7 +1149,7 @@ Figure 6.7: Setting the parameters for a paired-samples <em>t</em>-test on a sim
 ##  ──────────────────────────────────────────────────────────────────────────────────────────────── 
 ##    grade_test2    grade_test1    Student&#39;s t     6.475436    19.00000    0.0000033     1.447952   
 ##  ────────────────────────────────────────────────────────────────────────────────────────────────</code></pre>
-<p><img src="ElemStatsLabManual_files/figure-html/unnamed-chunk-116-1.svg" width="672" /></p>
+<p><img src="ElemStatsLabManual_files/figure-html/unnamed-chunk-117-1.svg" width="672" /></p>
 <p><br/></p>
 </div>
 <div id="interpreting" class="section level4" number="6.2.1.2">
@@ -1174,7 +1174,7 @@ Figure 6.7: Setting the parameters for a paired-samples <em>t</em>-test on a sim
 <p><br/></p>
 <div id="PairedSamplesChicoAdvancedReplicating" class="section level4" number="6.2.2.1">
 <h4><span class="header-section-number">6.2.2.1</span> “Replicating” the data</h4>
-<p>To start, for the purpose of illustration,<a href="#fn67" class="footnote-ref" id="fnref67"><sup>67</sup></a> we will replicate the original means and standard deviations of the <em>Chico.omv</em> data set with a different set of data points. Begin by opening a new file in jamovi by clicking <span class="math inline">\((\equiv)\)</span> &gt; <em>New</em>.</p>
+<p>To start, for the purpose of illustration,<a href="#fn71" class="footnote-ref" id="fnref71"><sup>71</sup></a> we will replicate the original means and standard deviations of the <em>Chico.omv</em> data set with a different set of data points. Begin by opening a new file in jamovi by clicking <span class="math inline">\((\equiv)\)</span> &gt; <em>New</em>.</p>
 <p>Select the default variables (<em>A</em> through <em>C</em>) and delete them using <em>Delete</em> under the <em>Data</em> tab.</p>
 <p>Double-click a blank variable (at the header, or top row) and choose <em>NEW DATA VARIABLE</em>. Give it the name <em>ID</em>, and make it an <em>ID</em> variable type. See Figure <a href="ComparingTwoMeans.html#fig:TTestRandomlyChicoStartIDVar">6.8</a></p>
 <p><br/></p>
@@ -1207,7 +1207,7 @@ Figure 6.10: Filling in rows in the new, computed variable. Note the ability to 
 <p><br/></p>
 <table class="table table-striped" style="margin-left: auto; margin-right: auto;">
 <caption>
-<span id="tab:unnamed-chunk-118">Table 6.2: </span>The authors’ randomly generated data set based off of the ‘Chico’ data set from Navarro and Foxcroft (2019).
+<span id="tab:unnamed-chunk-119">Table 6.2: </span>The authors’ randomly generated data set based off of the ‘Chico’ data set from Navarro and Foxcroft (2019).
 </caption>
 <thead>
 <tr>
@@ -1477,7 +1477,7 @@ grade_test2
 ##  ──────────────────────────────────────────────────────────────────────────────────────────────── 
 ##    grade_test2    grade_test1    Student&#39;s t    0.6643604    19.00000    0.5144424    0.1485555   
 ##  ────────────────────────────────────────────────────────────────────────────────────────────────</code></pre>
-<p><img src="ElemStatsLabManual_files/figure-html/unnamed-chunk-120-1.svg" width="672" /></p>
+<p><img src="ElemStatsLabManual_files/figure-html/unnamed-chunk-121-1.svg" width="672" /></p>
 <p><br/></p>
 </div>
 <div id="PairedSamplesChicoAdvancedInterpreting" class="section level4" number="6.2.2.3">
@@ -1488,7 +1488,7 @@ grade_test2
 <p><br/></p>
 <table class="table table-striped" style="margin-left: auto; margin-right: auto;">
 <caption>
-<span id="tab:unnamed-chunk-122">Table 6.3: </span>The original Chico.omv data set from Navarro &amp; Foxcroft (2019), with ‘DIFF’ being ‘time 1’ subtracted from ‘time 2.’
+<span id="tab:unnamed-chunk-123">Table 6.3: </span>The original Chico.omv data set from Navarro &amp; Foxcroft (2019), with ‘DIFF’ being ‘time 1’ subtracted from ‘time 2.’
 </caption>
 <thead>
 <tr>
@@ -1794,7 +1794,7 @@ student20
 <p><br/></p>
 <table class="table table-striped" style="margin-left: auto; margin-right: auto;">
 <caption>
-<span id="tab:unnamed-chunk-124">Table 6.4: </span>The randomly generated Chico.omv data set from Navarro &amp; Foxcroft (2019), with ‘DIFF’ being ‘time 1’ subtracted from ‘time 2.’
+<span id="tab:unnamed-chunk-125">Table 6.4: </span>The randomly generated Chico.omv data set from Navarro &amp; Foxcroft (2019), with ‘DIFF’ being ‘time 1’ subtracted from ‘time 2.’
 </caption>
 <thead>
 <tr>
@@ -2107,7 +2107,7 @@ DIFF
 <p><br/></p>
 <table class="table table-striped" style="margin-left: auto; margin-right: auto;">
 <caption>
-<span id="tab:unnamed-chunk-126">Table 6.5: </span>The randomly generated Chico.omv data set (corrected to have correlated levels) from Navarro &amp; Foxcroft (2019), with ‘DIFF’ being ‘time 1’ subtracted from ‘time 2.’
+<span id="tab:unnamed-chunk-127">Table 6.5: </span>The randomly generated Chico.omv data set (corrected to have correlated levels) from Navarro &amp; Foxcroft (2019), with ‘DIFF’ being ‘time 1’ subtracted from ‘time 2.’
 </caption>
 <thead>
 <tr>
@@ -2538,20 +2538,20 @@ Wendorf, C. A. (2018). <em>Statistics for social science: A sourcebook of basic 
 </div>
 <div class="footnotes">
 <hr />
-<ol start="55">
-<li id="fn55"><p>In some cases, you can use a paired-samples <em>t</em>-test for different groups of people, but they must be highly <em>matched</em> (e.g., identical twins, kids from the same home).<a href="ComparingTwoMeans.html#fnref55" class="footnote-back">↩︎</a></p></li>
-<li id="fn56"><p><em>Student’s <em>t</em></em> <strong>would</strong> have been called <em>Gossett’s <em>t</em></em>, had it not been for the strange policies of Gossett’s employer, Guinness Brewing in Ireland. For more on this, see <span class="citation"><a href="#ref-lsj" role="doc-biblioref">Navarro &amp; Foxcroft</a> (<a href="#ref-lsj" role="doc-biblioref">2019</a>)</span>, Section 11.2.1., or <a href="https://en.wikipedia.org/wiki/William_Sealy_Gosset">here</a><a href="ComparingTwoMeans.html#fnref56" class="footnote-back">↩︎</a></p></li>
-<li id="fn57"><p>Actually, its programmers are smart.<a href="ComparingTwoMeans.html#fnref57" class="footnote-back">↩︎</a></p></li>
-<li id="fn58"><p>The use of the term <em>marginally significant</em> is a bit controversial. It means that the <em>p</em>-value was close to going below .05, but didn’t quite get there.<a href="ComparingTwoMeans.html#fnref58" class="footnote-back">↩︎</a></p></li>
-<li id="fn59"><p>using something called <em>factor analysis</em>, which is covered in <span class="citation"><a href="#ref-lsj" role="doc-biblioref">Navarro &amp; Foxcroft</a> (<a href="#ref-lsj" role="doc-biblioref">2019</a>)</span> Chapter 15, but which we don’t cover in this class<a href="ComparingTwoMeans.html#fnref59" class="footnote-back">↩︎</a></p></li>
-<li id="fn60"><p>a better choice in our opinion as well as that of <span class="citation"><a href="#ref-lsj" role="doc-biblioref">Navarro &amp; Foxcroft</a> (<a href="#ref-lsj" role="doc-biblioref">2019</a>)</span>; see Sections 11.3.7 and 11.4; also see <span class="citation"><a href="#ref-DelacreLakensLeys2017" role="doc-biblioref">Delacre, Lakens, &amp; Leys</a> (<a href="#ref-DelacreLakensLeys2017" role="doc-biblioref">2017</a>)</span>, linked <a href="http://doi.org/10.5334/irsp.82">here</a><a href="ComparingTwoMeans.html#fnref60" class="footnote-back">↩︎</a></p></li>
-<li id="fn61"><p>the lines above and below the circle; see <span class="citation"><a href="#ref-lsj" role="doc-biblioref">Navarro &amp; Foxcroft</a> (<a href="#ref-lsj" role="doc-biblioref">2019</a>)</span> Chapter 8 (specifically Section 8.5) for a discussion of confidence intervals<a href="ComparingTwoMeans.html#fnref61" class="footnote-back">↩︎</a></p></li>
-<li id="fn62"><p>We could have split up counts of the new variable in a different way e.g., 1-2 in one group and 3-5 in another, but this is definitely the most efficient since the vast majority of respondents answered 1 (<em>Totally disagree</em>)<a href="ComparingTwoMeans.html#fnref62" class="footnote-back">↩︎</a></p></li>
-<li id="fn63"><p>Note that if were were serious researchers trying to get this published in a peer-reviewed journal, we would probably get some resistance from a reviewer since our transformation was so extreme. They might ask us to re-collect our data using yes/no scale directly, instead of relying on a transformation. This is not unreasonable. After all, what we did was we made several assumptions about how participants <strong>would</strong> have responded if the scale had been pitched differently. But we don’t <strong>know</strong> that they would have responded that way; we can only assume so, which may not be enough for science.<a href="ComparingTwoMeans.html#fnref63" class="footnote-back">↩︎</a></p></li>
-<li id="fn64"><p>This is also true of the big sister to the paired samples <em>t</em>-test: the repeated measures ANOVA, which we won’t get in to here, but can be found in the main textbook <span class="citation">(<a href="#ref-lsj" role="doc-biblioref">Navarro &amp; Foxcroft, 2019</a>)</span>, section 13.8<a href="ComparingTwoMeans.html#fnref64" class="footnote-back">↩︎</a></p></li>
-<li id="fn65"><p>The more modern way to do this kind of analysis works more like the independent samples <em>t</em>-test with a <em>Split by</em> variable, but this approach, called <em>multilevel modeling</em> or <em>mixed-effects modeling</em> is well beyond the scope of this class. However, for what it’s worth, it is mentioned in your main textbook <span class="citation">(<a href="#ref-lsj" role="doc-biblioref">Navarro &amp; Foxcroft, 2019</a>)</span>, in section 17.1.2, under the bullet point labeled <em>Mixed Models</em> (apologies or the multiple names for identical concepts; it’s one of the curses of statistics).<a href="ComparingTwoMeans.html#fnref65" class="footnote-back">↩︎</a></p></li>
-<li id="fn66"><p>You could do this in either order, but we are following <span class="citation"><a href="#ref-lsj" role="doc-biblioref">Navarro &amp; Foxcroft</a> (<a href="#ref-lsj" role="doc-biblioref">2019, sec. 11.5.3</a>)</span>. Presumably, they did this in order to get a positive value for Cohen’s <em>d</em>, in order to reduce confusion for the reader.<a href="ComparingTwoMeans.html#fnref66" class="footnote-back">↩︎</a></p></li>
-<li id="fn67"><p>This is actually a very useful procedure in the world of data analysis, but it only serves as an illustration here.<a href="ComparingTwoMeans.html#fnref67" class="footnote-back">↩︎</a></p></li>
+<ol start="59">
+<li id="fn59"><p>In some cases, you can use a paired-samples <em>t</em>-test for different groups of people, but they must be highly <em>matched</em> (e.g., identical twins, kids from the same home).<a href="ComparingTwoMeans.html#fnref59" class="footnote-back">↩︎</a></p></li>
+<li id="fn60"><p><em>Student’s <em>t</em></em> <strong>would</strong> have been called <em>Gossett’s <em>t</em></em>, had it not been for the strange policies of Gossett’s employer, Guinness Brewing in Ireland. For more on this, see <span class="citation"><a href="#ref-lsj" role="doc-biblioref">Navarro &amp; Foxcroft</a> (<a href="#ref-lsj" role="doc-biblioref">2019</a>)</span>, Section 11.2.1., or <a href="https://en.wikipedia.org/wiki/William_Sealy_Gosset">here</a><a href="ComparingTwoMeans.html#fnref60" class="footnote-back">↩︎</a></p></li>
+<li id="fn61"><p>Actually, its programmers are smart.<a href="ComparingTwoMeans.html#fnref61" class="footnote-back">↩︎</a></p></li>
+<li id="fn62"><p>The use of the term <em>marginally significant</em> is a bit controversial. It means that the <em>p</em>-value was close to going below .05, but didn’t quite get there.<a href="ComparingTwoMeans.html#fnref62" class="footnote-back">↩︎</a></p></li>
+<li id="fn63"><p>using something called <em>factor analysis</em>, which is covered in <span class="citation"><a href="#ref-lsj" role="doc-biblioref">Navarro &amp; Foxcroft</a> (<a href="#ref-lsj" role="doc-biblioref">2019</a>)</span> Chapter 15, but which we don’t cover in this class<a href="ComparingTwoMeans.html#fnref63" class="footnote-back">↩︎</a></p></li>
+<li id="fn64"><p>a better choice in our opinion as well as that of <span class="citation"><a href="#ref-lsj" role="doc-biblioref">Navarro &amp; Foxcroft</a> (<a href="#ref-lsj" role="doc-biblioref">2019</a>)</span>; see Sections 11.3.7 and 11.4; also see <span class="citation"><a href="#ref-DelacreLakensLeys2017" role="doc-biblioref">Delacre, Lakens, &amp; Leys</a> (<a href="#ref-DelacreLakensLeys2017" role="doc-biblioref">2017</a>)</span>, linked <a href="http://doi.org/10.5334/irsp.82">here</a><a href="ComparingTwoMeans.html#fnref64" class="footnote-back">↩︎</a></p></li>
+<li id="fn65"><p>the lines above and below the circle; see <span class="citation"><a href="#ref-lsj" role="doc-biblioref">Navarro &amp; Foxcroft</a> (<a href="#ref-lsj" role="doc-biblioref">2019</a>)</span> Chapter 8 (specifically Section 8.5) for a discussion of confidence intervals<a href="ComparingTwoMeans.html#fnref65" class="footnote-back">↩︎</a></p></li>
+<li id="fn66"><p>We could have split up counts of the new variable in a different way e.g., 1-2 in one group and 3-5 in another, but this is definitely the most efficient since the vast majority of respondents answered 1 (<em>Totally disagree</em>)<a href="ComparingTwoMeans.html#fnref66" class="footnote-back">↩︎</a></p></li>
+<li id="fn67"><p>Note that if were were serious researchers trying to get this published in a peer-reviewed journal, we would probably get some resistance from a reviewer since our transformation was so extreme. They might ask us to re-collect our data using yes/no scale directly, instead of relying on a transformation. This is not unreasonable. After all, what we did was we made several assumptions about how participants <strong>would</strong> have responded if the scale had been pitched differently. But we don’t <strong>know</strong> that they would have responded that way; we can only assume so, which may not be enough for science.<a href="ComparingTwoMeans.html#fnref67" class="footnote-back">↩︎</a></p></li>
+<li id="fn68"><p>This is also true of the big sister to the paired samples <em>t</em>-test: the repeated measures ANOVA, which we won’t get in to here, but can be found in the main textbook <span class="citation">(<a href="#ref-lsj" role="doc-biblioref">Navarro &amp; Foxcroft, 2019</a>)</span>, section 13.8<a href="ComparingTwoMeans.html#fnref68" class="footnote-back">↩︎</a></p></li>
+<li id="fn69"><p>The more modern way to do this kind of analysis works more like the independent samples <em>t</em>-test with a <em>Split by</em> variable, but this approach, called <em>multilevel modeling</em> or <em>mixed-effects modeling</em> is well beyond the scope of this class. However, for what it’s worth, it is mentioned in your main textbook <span class="citation">(<a href="#ref-lsj" role="doc-biblioref">Navarro &amp; Foxcroft, 2019</a>)</span>, in section 17.1.2, under the bullet point labeled <em>Mixed Models</em> (apologies or the multiple names for identical concepts; it’s one of the curses of statistics).<a href="ComparingTwoMeans.html#fnref69" class="footnote-back">↩︎</a></p></li>
+<li id="fn70"><p>You could do this in either order, but we are following <span class="citation"><a href="#ref-lsj" role="doc-biblioref">Navarro &amp; Foxcroft</a> (<a href="#ref-lsj" role="doc-biblioref">2019, sec. 11.5.3</a>)</span>. Presumably, they did this in order to get a positive value for Cohen’s <em>d</em>, in order to reduce confusion for the reader.<a href="ComparingTwoMeans.html#fnref70" class="footnote-back">↩︎</a></p></li>
+<li id="fn71"><p>This is actually a very useful procedure in the world of data analysis, but it only serves as an illustration here.<a href="ComparingTwoMeans.html#fnref71" class="footnote-back">↩︎</a></p></li>
 </ol>
 </div>
             </section>
