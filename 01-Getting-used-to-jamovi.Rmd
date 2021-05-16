@@ -124,12 +124,11 @@ You might notice that one module is installed by default. This is the base `jamo
 
 And as of version 1.8, `scatr` is also installed by default. The `scatr` module lets you make nicer scatterplots than are offered in the base module. Scatterplots are relevant to Chapters \@ref(DataVisualization), \@ref(CorrAndLinearReg), and \@ref(WritingResultsSections). Once installed, you will find the `scatr` menu under the `Analyses` tab, under `Exploration` > `scatr`.
 
-However, there are some other modules you will need installed for this class. They are as follows:
+However, there are some other modules you will absolutely need installed for this class. They are as follows:
 
-- `learning statistics with jamovi`. This module contains the data sets for your main textbook by @lsj. These data sets will subsequently become available under the `Basic Operations` icon ($\equiv$), where you navigate to `Open` > `Data Library` > `learning statistics with jamovi`, where you will then see a list of the data sets.
+- `learning statistics with jamovi`. This module contains the data sets for your main textbook by @lsj. These data sets will subsequently become available under the `Basic Operations` icon ($\equiv$), where you navigate to `Open` > `Data Library` > `learning statistics with jamovi`, where you will then see a list of the data sets.  
 
-
-- `R data Sets`. This module loads the sample data sets that come with R. You will be using one or more of these data sets in this lab manual.
+- `R data Sets`. This module loads the sample data sets that come with R. You will be using one or more of these data sets in this lab manual.  
 
 <br/>
 
