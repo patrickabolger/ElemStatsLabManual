@@ -16,7 +16,7 @@ url: https\://patrickabolger.github.io/ElemStatsLabManual/
 ---
 
 ```{r setup, include=FALSE}
-knitr::opts_chunk$set(echo = F, warning = F, message = F)
+knitr::opts_chunk$set(echo = F, warning = F, message = F, comment = NA)
 library(magrittr)
 library(kableExtra)
 ```

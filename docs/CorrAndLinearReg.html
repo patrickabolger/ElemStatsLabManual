@@ -23,7 +23,7 @@
 
 
 
-<meta name="date" content="2021-05-16" />
+<meta name="date" content="2021-05-17" />
 
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <meta name="apple-mobile-web-app-capable" content="yes" />
@@ -155,7 +155,7 @@ div.csl-indent {
 <li class="chapter" data-level="3" data-path="DescriptiveStats.html"><a href="DescriptiveStats.html"><i class="fa fa-check"></i><b>3</b> Descriptive statistics</a>
 <ul>
 <li class="chapter" data-level="3.1" data-path="DescriptiveStats.html"><a href="DescriptiveStats.html#OverviewOfDescriptiveStats"><i class="fa fa-check"></i><b>3.1</b> Overview</a></li>
-<li class="chapter" data-level="3.2" data-path="DescriptiveStats.html"><a href="DescriptiveStats.html#DescriptivesInJamovi"><i class="fa fa-check"></i><b>3.2</b> Descriptives in jamovi</a>
+<li class="chapter" data-level="3.2" data-path="DescriptiveStats.html"><a href="DescriptiveStats.html#DescriptivesInJamovi"><i class="fa fa-check"></i><b>3.2</b> Descriptives in <em>jamovi</em></a>
 <ul>
 <li class="chapter" data-level="3.2.1" data-path="DescriptiveStats.html"><a href="DescriptiveStats.html#SummarizingContinuousVariables"><i class="fa fa-check"></i><b>3.2.1</b> Summarizing continuous variables</a></li>
 <li class="chapter" data-level="3.2.2" data-path="DescriptiveStats.html"><a href="DescriptiveStats.html#GroupedSummaries"><i class="fa fa-check"></i><b>3.2.2</b> Grouped summaries</a></li>
@@ -488,13 +488,13 @@ div.csl-indent {
 <div id="CorrAndLinearReg" class="section level1" number="7">
 <h1><span class="header-section-number">Chapter 7</span> Correlation and linear regression</h1>
 <p>So far, we have only addressed cases where the predictor variable is categorical in nature (e.g., <strong><em>Sex</em></strong>: <em>male</em>/<em>female</em>; <strong><em>Handedness</em></strong>: <em>left</em>/<em>right</em>/<em>ambidextrous</em>).</p>
-<p>But this chapter is all about how to analyze data when both the outcome variable and the predictor variable are continuous in nature. For example, you might be interested in the proclivity of university students to attend sporting events (measured on a scale from 1-7, 1 being <em>not at all</em>, and 7 being <em>every event I can possibly attend</em>) as predicted by how much they crave social interaction (same scale, 1 being <em>not at all</em> and 7 being <em>all the time</em>). You might expect that students who provide higher values on the first question would also tend to provide higher values on the second, and vice-versa. This sort of analysis cannot be carried out with a chi-square, or <em>t</em>-test, or ANOVA. It can be analyzed, however, as a correlation or a simple regression.<a href="#fn74" class="footnote-ref" id="fnref74"><sup>74</sup></a></p>
+<p>But this chapter is all about how to analyze data when both the outcome variable and the predictor variable are continuous in nature. For example, you might be interested in the proclivity of university students to attend sporting events (measured on a scale from 1-7, 1 being <em>not at all</em>, and 7 being <em>every event I can possibly attend</em>) as predicted by how much they crave social interaction (same scale, 1 being <em>not at all</em> and 7 being <em>all the time</em>). You might expect that students who provide higher values on the first question would also tend to provide higher values on the second, and vice-versa. This sort of analysis cannot be carried out with a chi-square, or <em>t</em>-test, or ANOVA. It can be analyzed, however, as a correlation or a simple regression.<a href="#fn71" class="footnote-ref" id="fnref71"><sup>71</sup></a></p>
 <p><br/></p>
 <div id="Correlations" class="section level2" number="7.1">
 <h2><span class="header-section-number">7.1</span> Correlations</h2>
 <p>The first analysis in this chapter is correlation. The second is a simple regression. Both involved only two variables: a single, continuous outcome variable, and a single, continuous predictor variable.</p>
-<p>Underneath however, these two particular analyses turn out to the same thing. The correlation between two continuous variables (which is the kind of regression we deal with in this section) is essentially a special case of a simple regression between two variables. Specifically, correlation is a simple regression where both the outcome variable and the predictor variable are both standardized (i.e., into <em>z</em>-scores).<a href="#fn75" class="footnote-ref" id="fnref75"><sup>75</sup></a></p>
-<p>Restricting ourselves to correlation, the obtained value for a correlation between two continuous variables is known as Pearson’s <em>r</em>, after Karl Pearson.<a href="#fn76" class="footnote-ref" id="fnref76"><sup>76</sup></a> The obtained value of Pearson’s <em>r</em> ranges from -1 to 1, with the extremes (-1 and 1) indicating opposite, but equally strong, directions of correlation, and the middle value, 0, indicating no relationship at all. The closer one is to the extremes (-1 or 1), the <em>stronger</em> the correlation is. The closer one is to the middle (0), the <em>weaker</em> the correlation is.</p>
+<p>Underneath however, these two particular analyses turn out to the same thing. The correlation between two continuous variables (which is the kind of regression we deal with in this section) is essentially a special case of a simple regression between two variables. Specifically, correlation is a simple regression where both the outcome variable and the predictor variable are both standardized (i.e., into <em>z</em>-scores).<a href="#fn72" class="footnote-ref" id="fnref72"><sup>72</sup></a></p>
+<p>Restricting ourselves to correlation, the obtained value for a correlation between two continuous variables is known as Pearson’s <em>r</em>, after Karl Pearson.<a href="#fn73" class="footnote-ref" id="fnref73"><sup>73</sup></a> The obtained value of Pearson’s <em>r</em> ranges from -1 to 1, with the extremes (-1 and 1) indicating opposite, but equally strong, directions of correlation, and the middle value, 0, indicating no relationship at all. The closer one is to the extremes (-1 or 1), the <em>stronger</em> the correlation is. The closer one is to the middle (0), the <em>weaker</em> the correlation is.</p>
 <p>The direction of the correlation (i.e., whether it’s positive or negative) simply indicates the how the variables are related. Specifically, if the values of <em>X</em> tend to increase alongside increases in <em>Y</em>, then the correlation is positive (e.g., height and weight are always positively correlated, though the correlation is not perfect).</p>
 <p>In contrast, if as the values of <em>X</em> go up, the values of <em>Y</em> tend to go <strong>down</strong>, then the correlation is negative. This is what you would find if you compared the amount of rainfall to the number of university students who walk or ride their bikes to school (note, that the number of students who <em>drive</em> to school would be positively correlated in this case – thus, the direction of a correlation [positive or negative] has nothing to do with whether the relationship is “good” or “bad”).</p>
 <p>In the textbook <span class="citation">(<a href="#ref-lsj" role="doc-biblioref">Navarro &amp; Foxcroft, 2019</a>)</span> in section 12.1.3, the authors simplify the formula for Pearson’s <em>r</em> to the following:</p>
@@ -507,7 +507,7 @@ div.csl-indent {
 <p>where <em>i</em> is an individual observation (e.g., multiply Jerry’s <em>z</em>-score on <em>X</em> by his <em>z</em>-score on <em>Y</em>, then add that product to Jennifer’s <em>z</em>-score on <em>X</em> multiplied by her <em>z</em>-score on <em>Y</em>… etc.)</p>
 <p><br/></p>
 <p>That is, for every observation in your data set, take the <em>z</em>-score for <em>X</em> and multiply it by the <em>z</em>-score for <em>Y</em>; add all those product up; and then divide by the number of observations minus 1 (<em>n-1</em>).</p>
-<p>There is also a significance test associated with correlation. You can perform this inferential test on its own,<a href="#fn77" class="footnote-ref" id="fnref77"><sup>77</sup></a> or as a <em>t</em>-test of a coefficient in a simple regression (more on this later in section <a href="CorrAndLinearReg.html#LinearRegression">7.2</a> below).</p>
+<p>There is also a significance test associated with correlation. You can perform this inferential test on its own,<a href="#fn74" class="footnote-ref" id="fnref74"><sup>74</sup></a> or as a <em>t</em>-test of a coefficient in a simple regression (more on this later in section <a href="CorrAndLinearReg.html#LinearRegression">7.2</a> below).</p>
 <p><br/></p>
 <div id="BasicCorrelationParenthood" class="section level3" number="7.1.1">
 <h3><span class="header-section-number">7.1.1</span> Basic: Parenthood data</h3>
@@ -548,7 +548,7 @@ div.csl-indent {
 <p>Correlation does not <em>necessarily</em> imply causation, although all effects will be statistically correlated somehow with their causes. That said, <em>causation</em> is mostly a research-design issue, not so much a statistical one.</p>
 </blockquote>
 <p><br/></p>
-<p>Importantly, you can probably guess that there will probably be a statistical correlation between the baby’s sleep and the author’s grumpiness. However, such a clearly indirect relationship would be conceptually <em>mediated</em><a href="#fn78" class="footnote-ref" id="fnref78"><sup>78</sup></a> by the author’s own sleep.</p>
+<p>Importantly, you can probably guess that there will probably be a statistical correlation between the baby’s sleep and the author’s grumpiness. However, such a clearly indirect relationship would be conceptually <em>mediated</em><a href="#fn75" class="footnote-ref" id="fnref75"><sup>75</sup></a> by the author’s own sleep.</p>
 <p><br/></p>
 </div>
 <div id="BasicCorrelationParenthoodAnalysis" class="section level4" number="7.1.1.3">
@@ -566,29 +566,29 @@ Figure 7.1: Setting the parameters for a correlation matrix across sleep hours (
 </div>
 <p><br/></p>
 <p>The results of this analysis should appear as below.</p>
-<pre><code>## 
-##  CORRELATION MATRIX
-## 
-##  Correlation Matrix                                                                             
-##  ────────────────────────────────────────────────────────────────────────────────────────────── 
-##                                         My sleep (hrs.)    Baby sleep (hrs.)    My grumpiness   
-##  ────────────────────────────────────────────────────────────────────────────────────────────── 
-##    My sleep (hrs.)      Pearson&#39;s r                   —                                         
-##                         p-value                       —                                         
-##                         95% CI Upper                  —                                         
-##                         95% CI Lower                  —                                         
-##                                                                                                 
-##    Baby sleep (hrs.)    Pearson&#39;s r           0.6279493                    —                    
-##                         p-value              &lt; .0000001                    —                    
-##                         95% CI Upper          0.7338535                    —                    
-##                         95% CI Lower          0.4922450                    —                    
-##                                                                                                 
-##    My grumpiness        Pearson&#39;s r          -0.9033840           -0.5659637                —   
-##                         p-value              &lt; .0000001           &lt; .0000001                —   
-##                         95% CI Upper         -0.8594714           -0.4157643                —   
-##                         95% CI Lower         -0.9340614           -0.6861101                —   
-##  ──────────────────────────────────────────────────────────────────────────────────────────────</code></pre>
-<p><img src="ElemStatsLabManual_files/figure-html/unnamed-chunk-119-1.svg" width="672" /></p>
+<pre><code>
+ CORRELATION MATRIX
+
+ Correlation Matrix                                                                             
+ ────────────────────────────────────────────────────────────────────────────────────────────── 
+                                        My sleep (hrs.)    Baby sleep (hrs.)    My grumpiness   
+ ────────────────────────────────────────────────────────────────────────────────────────────── 
+   My sleep (hrs.)      Pearson&#39;s r                   —                                         
+                        p-value                       —                                         
+                        95% CI Upper                  —                                         
+                        95% CI Lower                  —                                         
+                                                                                                
+   Baby sleep (hrs.)    Pearson&#39;s r           0.6279493                    —                    
+                        p-value              &lt; .0000001                    —                    
+                        95% CI Upper          0.7338535                    —                    
+                        95% CI Lower          0.4922450                    —                    
+                                                                                                
+   My grumpiness        Pearson&#39;s r          -0.9033840           -0.5659637                —   
+                        p-value              &lt; .0000001           &lt; .0000001                —   
+                        95% CI Upper         -0.8594714           -0.4157643                —   
+                        95% CI Lower         -0.9340614           -0.6861101                —   
+ ────────────────────────────────────────────────────────────────────────────────────────────── </code></pre>
+<p><img src="ElemStatsLabManual_files/figure-html/unnamed-chunk-120-1.svg" width="672" /></p>
 <p><br/></p>
 <p>Both results are correlation matrices: one in the form of a table (the top one); the other in the form of a figure (the bottom one). Both of them have the same pattern:</p>
 <ul>
@@ -628,7 +628,7 @@ Figure 7.2: Setting the parameters for a scatterplot between <code>My grumpiness
 </div>
 <p><br/></p>
 <p>The output of this procedure should look something like what is below.</p>
-<p><img src="ElemStatsLabManual_files/figure-html/unnamed-chunk-121-1.svg" width="672" /></p>
+<p><img src="ElemStatsLabManual_files/figure-html/unnamed-chunk-122-1.svg" width="672" /></p>
 <p><br/></p>
 <p>As before, you can see that there is a negative correlation between <code>My grumpiness</code> and <code>My sleep (hrs.)</code>. As the parent sleeps less, their grumpiness goes up, and as they sleep more, their grumpiness goes down.</p>
 <p>Now technically speaking (and this really is getting nit-picky), this is the wrong graph for the Pearson’s <em>r</em>. So was the one above generated through the <em>Regression</em> analysis. This is because, as noted in section <a href="CorrAndLinearReg.html#Correlations">7.1</a> above, Pearson’s <em>r</em> actually uses standardized versions of each variable, and what you see here are the variables in their raw values (just read the axes; a standardized scale would have 0 in the middle).</p>
@@ -644,7 +644,7 @@ Figure 7.3: Setting the parameters for a scatterplot between <code>My grumpiness
 </div>
 <p><br/></p>
 <p>And the results should appear as below.</p>
-<p><img src="ElemStatsLabManual_files/figure-html/unnamed-chunk-122-1.svg" width="672" /></p>
+<p><img src="ElemStatsLabManual_files/figure-html/unnamed-chunk-123-1.svg" width="672" /></p>
 <p><br/></p>
 <p>The outputs are nearly identical, visually, in this case. And again, underneath, they really are the same thing. Sometimes you will see correlations depicted without an <em>X</em> or <em>Y</em> axis, and the reason for that is straightforward: The origin (where both <em>X</em> and <em>Y</em> equal 0) now bisects the data right in the middle of the plot. So visualizing the axes in this case would be both intrusive and redundant.</p>
 <p>One thing that has changed, however, is that the slope of the line in the second scatterplot (directly above) for the standardized variables (recall that the slope of the line is defined as the change in the value on <em>Y</em> for a one-unit change in <em>X</em>) is now tightly related to Pearson’s <em>r</em>. In fact, the slope in the figure above is now Pearson’s <em>r</em> correlation coefficient, <strong><em>exactly</em></strong>. If you wanted to state it in words, you’d say, “For every standard-deviation increase of one in <code>My sleep (hrs.)</code>, there is a corresponding decrease of .903 standard-deviation units in <code>My grumpiness</code>.” Or, “As I sleep more, I get less grumpy.”</p>
@@ -772,38 +772,38 @@ Figure 7.5: Adding some parameters for the linear regression of <code>My grumpin
 </div>
 <p><br/></p>
 <p>The results should look something like the following:</p>
-<pre><code>## 
-##  LINEAR REGRESSION
-## 
-##  Model Fit Measures                  
-##  ─────────────────────────────────── 
-##    Model    R            R²          
-##  ─────────────────────────────────── 
-##        1    0.9033840    0.8161027   
-##  ─────────────────────────────────── 
-## 
-## 
-##  MODEL SPECIFIC RESULTS
-## 
-##  MODEL 1
-## 
-##  Omnibus ANOVA Test                                                                   
-##  ──────────────────────────────────────────────────────────────────────────────────── 
-##                       Sum of Squares    df    Mean Square    F           p            
-##  ──────────────────────────────────────────────────────────────────────────────────── 
-##    My sleep (hrs.)          8159.876     1     8159.87649    434.9062    &lt; .0000001   
-##    Residuals                1838.714    98       18.76238                             
-##  ──────────────────────────────────────────────────────────────────────────────────── 
-##    Note. Type 3 sum of squares
-## 
-## 
-##  Model Coefficients - My grumpiness                                                                                       
-##  ──────────────────────────────────────────────────────────────────────────────────────────────────────────────────────── 
-##    Predictor          Estimate      SE           Lower         Upper         t            p             Stand. Estimate   
-##  ──────────────────────────────────────────────────────────────────────────────────────────────────────────────────────── 
-##    Intercept          125.956292    3.0160692    119.971000    131.941583     41.76174    &lt; .0000001                      
-##    My sleep (hrs.)     -8.936756    0.4285309     -9.787161     -8.086350    -20.85440    &lt; .0000001         -0.9033840   
-##  ────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────</code></pre>
+<pre><code>
+ LINEAR REGRESSION
+
+ Model Fit Measures                  
+ ─────────────────────────────────── 
+   Model    R            R²          
+ ─────────────────────────────────── 
+       1    0.9033840    0.8161027   
+ ─────────────────────────────────── 
+
+
+ MODEL SPECIFIC RESULTS
+
+ MODEL 1
+
+ Omnibus ANOVA Test                                                                   
+ ──────────────────────────────────────────────────────────────────────────────────── 
+                      Sum of Squares    df    Mean Square    F           p            
+ ──────────────────────────────────────────────────────────────────────────────────── 
+   My sleep (hrs.)          8159.876     1     8159.87649    434.9062    &lt; .0000001   
+   Residuals                1838.714    98       18.76238                             
+ ──────────────────────────────────────────────────────────────────────────────────── 
+   Note. Type 3 sum of squares
+
+
+ Model Coefficients - My grumpiness                                                                                       
+ ──────────────────────────────────────────────────────────────────────────────────────────────────────────────────────── 
+   Predictor          Estimate      SE           Lower         Upper         t            p             Stand. Estimate   
+ ──────────────────────────────────────────────────────────────────────────────────────────────────────────────────────── 
+   Intercept          125.956292    3.0160692    119.971000    131.941583     41.76174    &lt; .0000001                      
+   My sleep (hrs.)     -8.936756    0.4285309     -9.787161     -8.086350    -20.85440    &lt; .0000001         -0.9033840   
+ ──────────────────────────────────────────────────────────────────────────────────────────────────────────────────────── </code></pre>
 <p><br/></p>
 <p>This output can be interpreted as follows:</p>
 <p><br/></p>
@@ -823,7 +823,7 @@ Figure 7.5: Adding some parameters for the linear regression of <code>My grumpin
 <div id="BasicRegressionParenthoodVisualizationWithScatr" class="section level4" number="7.2.1.3">
 <h4><span class="header-section-number">7.2.1.3</span> Visualization using scatr</h4>
 <p>We actually did this already in section <a href="CorrAndLinearReg.html#BasicCorrelationParenthoodVisualizationWithScatr">7.1.1.4</a> above. However, we will do it again below, but this time with density plots selected in <em>scatr</em> instead of boxplots:</p>
-<p><img src="ElemStatsLabManual_files/figure-html/unnamed-chunk-125-1.svg" width="672" /></p>
+<p><img src="ElemStatsLabManual_files/figure-html/unnamed-chunk-126-1.svg" width="672" /></p>
 <p><br/></p>
 <p>This visualization adds something that was a little bit more difficult to see with the boxplots for each variable in section <a href="CorrAndLinearReg.html#BasicCorrelationParenthoodVisualizationWithScatr">7.1.1.4</a>. Namely, the shape of the distribution (as density plots) for each variable is skewed negatively. Using our powers of visual inference, it looks like, at least most of the time, the author is getting just over 7 hours/night of sleep, and has a typical grumpiness level of about 60 or so. Nonetheless, there are some bad nights with little sleep (though not less than 4.5 hours of sleep) and subsequent higher levels of grumpiness (though not higher than about 91).</p>
 <p>You might also notice the blue-ish shaded area around the linear regression line. This represents the 95% confidence interval for the slope of the line. From the output of the regression, we can see that the standard error for this slope is 0.429. Using our pretty-good-guess formula for the 95% confidence interval, we get the following:</p>
@@ -884,12 +884,12 @@ Wendorf, C. A. (2018). <em>Statistics for social science: A sourcebook of basic 
 </div>
 <div class="footnotes">
 <hr />
-<ol start="74">
-<li id="fn74"><p>Note that there is a considerable amount of controversy here. Many would argue that Likert scales are either not truly interval scales, or (when used as predictor variables) not measured without error, or both. These are assumptions of the basic, introductory kind of regression we are doing this is class (ordinary least squares), though there are more advanced solutions to these problems (e.g., ordinal logistic regression and errors-in-variables modeling, respectively). At the same time, such questions are beyond the scope of this class. They are worth noting, however, to return to later when your statistical knowledge is sufficiently advanced.<a href="CorrAndLinearReg.html#fnref74" class="footnote-back">↩︎</a></p></li>
-<li id="fn75"><p>Note that in the case of multiple regression, when there is more than one predictor variable, you cannot derive the correlation (Pearson’s <em>r</em>) from any of your continuous predictor variables since the math is different.<a href="CorrAndLinearReg.html#fnref75" class="footnote-back">↩︎</a></p></li>
-<li id="fn76"><p>Karl Pearson should not be confused with his son, Egon Pearson, who also became an historically important statistician. Most notably, we can partly credit the son with the decision-making component (the “Neyman-Pearson approach”) of null-hypothesis significance testing that the frequentist statistics you are learning in this class revolves around.<a href="CorrAndLinearReg.html#fnref76" class="footnote-back">↩︎</a></p></li>
-<li id="fn77"><p>with its own lookup table, if you happen to be in Papua New Guinea with a dead laptop battery, but a functioning hardcopy of a statistics book<a href="CorrAndLinearReg.html#fnref77" class="footnote-back">↩︎</a></p></li>
-<li id="fn78"><p>When the causal relationships among variables is unclear, one can employ <em>mediation analysis</em>, a set of statistical procedures designed to pull apart how inter-correlated variables are directly vs. indirectly related to each other. But this also is beyond the scope of this course.<a href="CorrAndLinearReg.html#fnref78" class="footnote-back">↩︎</a></p></li>
+<ol start="71">
+<li id="fn71"><p>Note that there is a considerable amount of controversy here. Many would argue that Likert scales are either not truly interval scales, or (when used as predictor variables) not measured without error, or both. These are assumptions of the basic, introductory kind of regression we are doing this is class (ordinary least squares), though there are more advanced solutions to these problems (e.g., ordinal logistic regression and errors-in-variables modeling, respectively). At the same time, such questions are beyond the scope of this class. They are worth noting, however, to return to later when your statistical knowledge is sufficiently advanced.<a href="CorrAndLinearReg.html#fnref71" class="footnote-back">↩︎</a></p></li>
+<li id="fn72"><p>Note that in the case of multiple regression, when there is more than one predictor variable, you cannot derive the correlation (Pearson’s <em>r</em>) from any of your continuous predictor variables since the math is different.<a href="CorrAndLinearReg.html#fnref72" class="footnote-back">↩︎</a></p></li>
+<li id="fn73"><p>Karl Pearson should not be confused with his son, Egon Pearson, who also became an historically important statistician. Most notably, we can partly credit the son with the decision-making component (the “Neyman-Pearson approach”) of null-hypothesis significance testing that the frequentist statistics you are learning in this class revolves around.<a href="CorrAndLinearReg.html#fnref73" class="footnote-back">↩︎</a></p></li>
+<li id="fn74"><p>with its own lookup table, if you happen to be in Papua New Guinea with a dead laptop battery, but a functioning hardcopy of a statistics book<a href="CorrAndLinearReg.html#fnref74" class="footnote-back">↩︎</a></p></li>
+<li id="fn75"><p>When the causal relationships among variables is unclear, one can employ <em>mediation analysis</em>, a set of statistical procedures designed to pull apart how inter-correlated variables are directly vs. indirectly related to each other. But this also is beyond the scope of this course.<a href="CorrAndLinearReg.html#fnref75" class="footnote-back">↩︎</a></p></li>
 </ol>
 </div>
             </section>

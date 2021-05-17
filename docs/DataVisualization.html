@@ -23,7 +23,7 @@
 
 
 
-<meta name="date" content="2021-05-16" />
+<meta name="date" content="2021-05-17" />
 
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <meta name="apple-mobile-web-app-capable" content="yes" />
@@ -155,7 +155,7 @@ div.csl-indent {
 <li class="chapter" data-level="3" data-path="DescriptiveStats.html"><a href="DescriptiveStats.html"><i class="fa fa-check"></i><b>3</b> Descriptive statistics</a>
 <ul>
 <li class="chapter" data-level="3.1" data-path="DescriptiveStats.html"><a href="DescriptiveStats.html#OverviewOfDescriptiveStats"><i class="fa fa-check"></i><b>3.1</b> Overview</a></li>
-<li class="chapter" data-level="3.2" data-path="DescriptiveStats.html"><a href="DescriptiveStats.html#DescriptivesInJamovi"><i class="fa fa-check"></i><b>3.2</b> Descriptives in jamovi</a>
+<li class="chapter" data-level="3.2" data-path="DescriptiveStats.html"><a href="DescriptiveStats.html#DescriptivesInJamovi"><i class="fa fa-check"></i><b>3.2</b> Descriptives in <em>jamovi</em></a>
 <ul>
 <li class="chapter" data-level="3.2.1" data-path="DescriptiveStats.html"><a href="DescriptiveStats.html#SummarizingContinuousVariables"><i class="fa fa-check"></i><b>3.2.1</b> Summarizing continuous variables</a></li>
 <li class="chapter" data-level="3.2.2" data-path="DescriptiveStats.html"><a href="DescriptiveStats.html#GroupedSummaries"><i class="fa fa-check"></i><b>3.2.2</b> Grouped summaries</a></li>
@@ -518,21 +518,21 @@ Figure 4.1: Parameters for histograms and density plots for <strong>test grade</
 <p><br/></p>
 <p>The results of this are below.</p>
 <p><br/></p>
-<pre><code>## 
-##  DESCRIPTIVES
-## 
-##  Descriptives                                 
-##  ──────────────────────────────────────────── 
-##                          time    grade_test   
-##  ──────────────────────────────────────────── 
-##    N                     1               20   
-##                          2               20   
-##    Mean                  1         56.98000   
-##                          2         58.38500   
-##    Standard deviation    1         6.616137   
-##                          2         6.405612   
-##  ────────────────────────────────────────────</code></pre>
-<p><img src="ElemStatsLabManual_files/figure-html/unnamed-chunk-38-1.svg" width="672" /></p>
+<pre><code>
+ DESCRIPTIVES
+
+ Descriptives                                 
+ ──────────────────────────────────────────── 
+                         time    grade_test   
+ ──────────────────────────────────────────── 
+   N                     1               20   
+                         2               20   
+   Mean                  1         56.98000   
+                         2         58.38500   
+   Standard deviation    1         6.616137   
+                         2         6.405612   
+ ──────────────────────────────────────────── </code></pre>
+<p><img src="ElemStatsLabManual_files/figure-html/unnamed-chunk-39-1.svg" width="672" /></p>
 <p><br/></p>
 </div>
 <div id="Boxplots" class="section level2" number="4.2">
@@ -570,30 +570,30 @@ Figure 4.2: Parameter settings for boxplots along with related descriptive stati
 <p>All this also suggests that half of all the scores lie between the 1st and 3rd quartile. So, in effect, the box shows you where the middle half of your data is (which also entails that half of the data is outside the confines of the box). This box is also known as the <strong><em>Interquartile Range</em></strong> or <strong><em>IQR</em></strong> (see <span class="citation"><a href="#ref-lsj" role="doc-biblioref">Navarro &amp; Foxcroft</a> (<a href="#ref-lsj" role="doc-biblioref">2019</a>)</span>, Section 4.2.2, for more information).</p>
 <p>So now, what does the horizontal line in the middle of the boxes mean? That line represents the <strong><em>median</em></strong> (also explained below in the glossary below, Section <a href="DescriptiveStats.html#Median">3.5.1.2</a>)). Working from the discussion directly above, the median is simply the <strong>2nd quartile</strong>, or the <strong>50th percentile</strong>. This can be verified by looking at the values for the median and the 50th percentile; they are identical values (for Anastasia and Bernadette, respectively).</p>
 <p><br/></p>
-<pre><code>## 
-##  DESCRIPTIVES
-## 
-##  Descriptives                                  
-##  ───────────────────────────────────────────── 
-##                       tutor         grade      
-##  ───────────────────────────────────────────── 
-##    Median             Anastasia           76   
-##                       Bernadette    69.00000   
-##    Minimum            Anastasia           55   
-##                       Bernadette          56   
-##    Maximum            Anastasia           90   
-##                       Bernadette          79   
-##    25th percentile    Anastasia     69.00000   
-##                       Bernadette    66.25000   
-##    50th percentile    Anastasia     76.00000   
-##                       Bernadette    69.00000   
-##    75th percentile    Anastasia     79.00000   
-##                       Bernadette    73.00000   
-##  ─────────────────────────────────────────────</code></pre>
-<p><img src="ElemStatsLabManual_files/figure-html/unnamed-chunk-44-1.svg" width="672" /></p>
+<pre><code>
+ DESCRIPTIVES
+
+ Descriptives                                  
+ ───────────────────────────────────────────── 
+                      tutor         grade      
+ ───────────────────────────────────────────── 
+   Median             Anastasia           76   
+                      Bernadette    69.00000   
+   Minimum            Anastasia           55   
+                      Bernadette          56   
+   Maximum            Anastasia           90   
+                      Bernadette          79   
+   25th percentile    Anastasia     69.00000   
+                      Bernadette    66.25000   
+   50th percentile    Anastasia     76.00000   
+                      Bernadette    69.00000   
+   75th percentile    Anastasia     79.00000   
+                      Bernadette    73.00000   
+ ───────────────────────────────────────────── </code></pre>
+<p><img src="ElemStatsLabManual_files/figure-html/unnamed-chunk-45-1.svg" width="672" /></p>
 <p><br/></p>
 <p>In other words, the median is the middle value of your data, if you ordered your data from smallest to largest. That is, irrespective of their own values, half of the data points should lie below the median, and half above (and if there is an even number of data points, the median is the average of the middle two values).</p>
-<p>The next issue is the vertical lines extending from the top and bottom of the box, respectively. These are often called <strong><em>whiskers</em></strong>.<a href="#fn50" class="footnote-ref" id="fnref50"><sup>50</sup></a> Traditionally, these lines extend out to 1.5 times the interquartile range (the value at the 3rd quartile minus the value at the 1st quartile), a calculation we can attribute to <span class="citation"><a href="#ref-Tukey1977" role="doc-biblioref">Tukey</a> (<a href="#ref-Tukey1977" role="doc-biblioref">1977</a>)</span>. The idea here is to capture all the data that is not considered potentially extreme within the ends of the whiskers.</p>
+<p>The next issue is the vertical lines extending from the top and bottom of the box, respectively. These are often called <strong><em>whiskers</em></strong>.<a href="#fn47" class="footnote-ref" id="fnref47"><sup>47</sup></a> Traditionally, these lines extend out to 1.5 times the interquartile range (the value at the 3rd quartile minus the value at the 1st quartile), a calculation we can attribute to <span class="citation"><a href="#ref-Tukey1977" role="doc-biblioref">Tukey</a> (<a href="#ref-Tukey1977" role="doc-biblioref">1977</a>)</span>. The idea here is to capture all the data that is not considered potentially extreme within the ends of the whiskers.</p>
 <p>Anything outside the whiskers, then, is considered possibly extreme, and could have an unexpectedly high influence on the calculation of the mean. This brings us to the final element of the boxplot: the dots (sometimes small circles). These appear beyond the whiskers and represent individual observations whose values are probably a bit extreme, given what we’d expect from a normal distribution.</p>
 <p>Another name for such observations is <strong>outliers</strong>, or <strong><em>potential</em></strong> <em>outliers</em>, to be precise. Determining what <em>is</em> vs. <em>isn’t</em> an outlier is a little bit involved and goes well beyond boxplots. Your main textbook <span class="citation">(<a href="#ref-lsj" role="doc-biblioref">Navarro &amp; Foxcroft, 2019</a>)</span> covers this issue with respect to boxplots in Section 5.2.3., though the general concept is introduced in Section 4.2.1.</p>
 <p>Note that in the boxplot figure there is one dot on the plot, which is located at the bottom of Bernadette’s group of students. This is a potential outlier. If you see any dots at all, then the topmost and/or bottomost of these will be equivalent to the <strong>Maximum</strong> and/or <strong>Minimum</strong> values in your data. For the person with the low grade who has Bernadette as a tutor, you can see that the minimum in her group is 56, which is exactly where the dot is at the bottom of Bernadette’s box. Boxplots provide no representations of data beyond these dots.</p>
@@ -617,18 +617,18 @@ Figure 4.2: Parameter settings for boxplots along with related descriptive stati
 <p>Violin plots are really an extension of the boxplot. You can think of it this way: A violin plot is to a boxplot what a density plot is to a histogram (see Section <a href="DataVisualization.html#Histograms">4.1</a>). In fact, you could just call the violin plot a <em>sideways, self-reflected density plot</em> (with the ends cut off), because that’s all it is, really. There are really only two main differences between a density plot and a violin plot:</p>
 <ul>
 <li>A violin plot is vertical, whereas a density plot is horizontal</li>
-<li>A violin plot is usually reflected against itself,<a href="#fn51" class="footnote-ref" id="fnref51"><sup>51</sup></a> whereas a density plot is not.<a href="#fn52" class="footnote-ref" id="fnref52"><sup>52</sup></a></li>
+<li>A violin plot is usually reflected against itself,<a href="#fn48" class="footnote-ref" id="fnref48"><sup>48</sup></a> whereas a density plot is not.<a href="#fn49" class="footnote-ref" id="fnref49"><sup>49</sup></a></li>
 </ul>
 <p><br/></p>
 <p>To get a violin plot, simply click of the <strong>Violin</strong> check box under <em>Box plots</em>. Also click <em>Box plot</em>, as that will give you an idea of how the violin plot circumscribes the boxplot, which you already understand. Finally, also check <em>Density</em> under <em>Histograms</em>. We have seen these before, but it is a good idea to do so now to see how the density plots and violin plots relate.</p>
 <p><br/></p>
-<pre><code>## 
-##  DESCRIPTIVES</code></pre>
-<p><img src="ElemStatsLabManual_files/figure-html/unnamed-chunk-45-1.svg" width="672" /><img src="ElemStatsLabManual_files/figure-html/unnamed-chunk-45-2.svg" width="672" /></p>
+<pre><code>
+ DESCRIPTIVES</code></pre>
+<p><img src="ElemStatsLabManual_files/figure-html/unnamed-chunk-46-1.svg" width="672" /><img src="ElemStatsLabManual_files/figure-html/unnamed-chunk-46-2.svg" width="672" /></p>
 <p><br/></p>
 <p>Nicely, the boxplots get embedded within the violin plots when you click both in jamovi. This is another reason why these kinds of plots can stuff a lot of information into a small space.</p>
 <p>Anyway, the first thing to notice (if you hadn’t already with the boxplots before), the axes are switched between histograms/density plots, on the one hand, and boxplots/violin plots, on the other. In fact, it’s the histograms and density plots that are unusual in the world of statistical visualization. In almost all other cases, the outcome variable is plotted on the y-axis (as you see with the boxplots and violin plots), not the x-axis (as you see with the histograms and density plots). We encourage you to always think of your outcome variable as being plotted on the y-axis; this “mind trick” actually helps you understand other statistics better, especially linear regression (coming up in Chapter <a href="CorrAndLinearReg.html#CorrAndLinearReg">7</a>).</p>
-<p>Note the “violin-like” quality of the plots.<a href="#fn53" class="footnote-ref" id="fnref53"><sup>53</sup></a> This comes from turning a density plot on its side and reflecting it against itself. Obviously, the density plot by itself is more detailed, whereas the violin plot is a more restricted visualization.</p>
+<p>Note the “violin-like” quality of the plots.<a href="#fn50" class="footnote-ref" id="fnref50"><sup>50</sup></a> This comes from turning a density plot on its side and reflecting it against itself. Obviously, the density plot by itself is more detailed, whereas the violin plot is a more restricted visualization.</p>
 <p><br/></p>
 </div>
 <div id="DotPlots" class="section level2" number="4.4">
@@ -644,15 +644,15 @@ Figure 4.3: Parameters for generating a stacked dot plot.
 <p><br/></p>
 <p>The results of the stacked dot plot can be seen below. We also checked <em>Violin</em> in order to illustrate the relationship between the two. Side-by-side dots represent identical values (i.e., students who got the same grade).</p>
 <p><br/></p>
-<pre><code>## 
-##  DESCRIPTIVES</code></pre>
-<p><img src="ElemStatsLabManual_files/figure-html/unnamed-chunk-46-1.svg" width="672" /></p>
+<pre><code>
+ DESCRIPTIVES</code></pre>
+<p><img src="ElemStatsLabManual_files/figure-html/unnamed-chunk-47-1.svg" width="672" /></p>
 <p><br/></p>
 <p>Note that these all fall under <em>Box plots</em> for a reason. Namely, you can combine these plots in any way you see fit. We have combined all three into one plot below. Note that the dots are <strong>jittered</strong> this time, strictly for illustration purposes (i.e., it was not helpful in any way for visualization since the number of observations is low).</p>
 <p><br/></p>
-<pre><code>## 
-##  DESCRIPTIVES</code></pre>
-<p><img src="ElemStatsLabManual_files/figure-html/unnamed-chunk-47-1.svg" width="672" /></p>
+<pre><code>
+ DESCRIPTIVES</code></pre>
+<p><img src="ElemStatsLabManual_files/figure-html/unnamed-chunk-48-1.svg" width="672" /></p>
 <p><br/></p>
 </div>
 <div id="Barplots" class="section level2" number="4.5">
@@ -664,7 +664,7 @@ Figure 4.3: Parameters for generating a stacked dot plot.
 <strong>NOTE</strong>: This is not the clumsy bar <strong><em>graph</em></strong> that has been used so often throughout history. A bar graph (for lack of a better term that distinguishes it from bar <strong>plot</strong>) represents continuous data (e.g., reaction times) with a bar (or bars). This type of chart is often discouraged by many in favor of line charts and dot charts with error bars. One reason is that bar graphs are often wasteful in terms of space. Another reason is that if we restrict bar plots to counts, then we “unite” bar plots with histograms, since histograms represent counts as well. So universally, bars = counts. You cannot rely on that last sentence yet, as it’s only an ideal. But regardless, bars are used in jamovi only to count up frequencies. jamovi replaces bar graphs representing continuous data with dot or line plots These are available under the appropriate inferential tests.
 </div>
 <p><br/></p>
-<p>The bar plot is a good way of visualizing frequency data.<a href="#fn54" class="footnote-ref" id="fnref54"><sup>54</sup></a> This type of visualization is not usually necessary for any kind of write-up summarizing your data set. However, it can be very useful, ultimately, for chi-square analyses and the display of individual Likert items. A discussion of chi-square analyses comes up later in this <em>Guide</em> (Chapter <a href="CategoricalDataAnalysis.html#CategoricalDataAnalysis">5</a>), and in your main textbook [<span class="citation"><a href="#ref-lsj" role="doc-biblioref">Navarro &amp; Foxcroft</a> (<a href="#ref-lsj" role="doc-biblioref">2019</a>)</span>; Chapter 10]. The display of Likert items does not really come up in this class.</p>
+<p>The bar plot is a good way of visualizing frequency data.<a href="#fn51" class="footnote-ref" id="fnref51"><sup>51</sup></a> This type of visualization is not usually necessary for any kind of write-up summarizing your data set. However, it can be very useful, ultimately, for chi-square analyses and the display of individual Likert items. A discussion of chi-square analyses comes up later in this <em>Guide</em> (Chapter <a href="CategoricalDataAnalysis.html#CategoricalDataAnalysis">5</a>), and in your main textbook [<span class="citation"><a href="#ref-lsj" role="doc-biblioref">Navarro &amp; Foxcroft</a> (<a href="#ref-lsj" role="doc-biblioref">2019</a>)</span>; Chapter 10]. The display of Likert items does not really come up in this class.</p>
 <p>Despite the fact that you will probably not need this kind of plot for this class, you can still practice. We will use the <em>Harpo</em> data again. We will compare the number of students in Anastasia’s vs. Bernadette’s tutoring groups. First, you need to drag the <em>tutor</em> variable over to the <em>Variables</em> box. Then check the <em>Frequency tables</em> check box located under the left-most (but label-less) white box. Finally, check the <em>Bar plot</em> box under <em>Bar plots</em> to get the frequency plot. You can see the parameter settings for this in Figure <a href="DataVisualization.html#fig:VisualizationsFrequenciesParameters">4.4</a></p>
 <p><br/></p>
 <div class="figure"><span id="fig:VisualizationsFrequenciesParameters"></span>
@@ -676,19 +676,19 @@ Figure 4.4: Parameters for generating a bar plot.
 <p><br/></p>
 <p>The result is a simple bar plot of the number of students in each tutoring group, along with relevant descriptive statistics above the plot. See below.</p>
 <p><br/></p>
-<pre><code>## 
-##  DESCRIPTIVES
-## 
-##  FREQUENCIES
-## 
-##  Frequencies of tutor                                   
-##  ────────────────────────────────────────────────────── 
-##    Levels        Counts    % of Total    Cumulative %   
-##  ────────────────────────────────────────────────────── 
-##    Anastasia         15      45.45455        45.45455   
-##    Bernadette        18      54.54545       100.00000   
-##  ──────────────────────────────────────────────────────</code></pre>
-<p><img src="ElemStatsLabManual_files/figure-html/unnamed-chunk-49-1.svg" width="672" /></p>
+<pre><code>
+ DESCRIPTIVES
+
+ FREQUENCIES
+
+ Frequencies of tutor                                   
+ ────────────────────────────────────────────────────── 
+   Levels        Counts    % of Total    Cumulative %   
+ ────────────────────────────────────────────────────── 
+   Anastasia         15      45.45455        45.45455   
+   Bernadette        18      54.54545       100.00000   
+ ────────────────────────────────────────────────────── </code></pre>
+<p><img src="ElemStatsLabManual_files/figure-html/unnamed-chunk-50-1.svg" width="672" /></p>
 <p><br/></p>
 <p>The meaning of the bar plot is almost self-explanatory in this case.</p>
 <p><br/></p>
@@ -697,7 +697,7 @@ Figure 4.4: Parameters for generating a bar plot.
 <h2><span class="header-section-number">4.6</span> Q-Q plots</h2>
 <p>Finally, we get to the last type of visualization available under <strong>Descriptives</strong>: the <strong>Q-Q plot</strong> (which is short for <em>quantile-quantile plot</em>).</p>
 <p>This plot is strictly diagnostic. It’s a quick way to detect whether your data is normally distributed or not. In general, it plots the quantiles of two distributions against each other. To assess normality (the default option in jamovi), it plots the quantiles of a theoretically normal distribution on the x-axis against the data that you have on the y-axis in the form of standardized residuals (another term for individual deviations from central tendency; z-scores, essentially).</p>
-<p>That may have made little sense to you at this point, and that’s okay. What’s important about this plot is that the dots should line up near the line without any systematic or extreme deviations.<a href="#fn55" class="footnote-ref" id="fnref55"><sup>55</sup></a></p>
+<p>That may have made little sense to you at this point, and that’s okay. What’s important about this plot is that the dots should line up near the line without any systematic or extreme deviations.<a href="#fn52" class="footnote-ref" id="fnref52"><sup>52</sup></a></p>
 <p>We’ve provided the Q-Q plot for the <em>Harpo</em> data, with <em>grade</em> divided into the two <em>tutor</em> groups: Anastasia and Bernadette. The parameters you need to set to generate this is in Figure <a href="DataVisualization.html#fig:VisualizationsQQPlotParameters">4.5</a> below.</p>
 <p><br/></p>
 <div class="figure"><span id="fig:VisualizationsQQPlotParameters"></span>
@@ -707,16 +707,16 @@ Figure 4.5: Parameters for generating Q-Q plots.
 </p>
 </div>
 <p><br/></p>
-<pre><code>## 
-##  DESCRIPTIVES</code></pre>
-<p><img src="ElemStatsLabManual_files/figure-html/unnamed-chunk-50-1.svg" width="672" /></p>
+<pre><code>
+ DESCRIPTIVES</code></pre>
+<p><img src="ElemStatsLabManual_files/figure-html/unnamed-chunk-51-1.svg" width="672" /></p>
 <p><br/></p>
 <p>As you can see, the dots line up quite closely to the line, suggesting that the data is normally distributed.</p>
 <p>To show what a positively skewed data set looks like in a Q-Q plot, we have opened the <strong>AFL Margins</strong> data set from <span class="citation"><a href="#ref-lsj" role="doc-biblioref">Navarro &amp; Foxcroft</a> (<a href="#ref-lsj" role="doc-biblioref">2019</a>)</span>, a data set that has something to do with Australian Rules Football. You can see the results of this below.</p>
 <p><br/></p>
-<pre><code>## 
-##  DESCRIPTIVES</code></pre>
-<p><img src="ElemStatsLabManual_files/figure-html/unnamed-chunk-53-1.svg" width="672" /><img src="ElemStatsLabManual_files/figure-html/unnamed-chunk-53-2.svg" width="672" /></p>
+<pre><code>
+ DESCRIPTIVES</code></pre>
+<p><img src="ElemStatsLabManual_files/figure-html/unnamed-chunk-54-1.svg" width="672" /><img src="ElemStatsLabManual_files/figure-html/unnamed-chunk-54-2.svg" width="672" /></p>
 <p><br/></p>
 <p>This time we included the histogram to show you the positive skew. In the Q-Q plot, look at the y-axis, and how the scale only goes down to about -1.5 standardized residuals (<em>z</em>-scores), whereas the x-axis goes down to -3. The dots splay out to the left away from the line, suggesting that they’re clumping up at the bottom end and <strong>not</strong> producing a nice, leftward, asymptotic (small) tail. At the upper end, you can see that several dots have higher values than the line would “suggest.” This means that the <em>z</em>-scores are too high for the distribution for it to be considered a normal. In other words, there is positive skew.</p>
 <p>If you didn’t understand very much of that, that’s okay. The beauty of the Q-Q plot is that dots-<strong>on-or-near</strong>-the-line means that your data fit that particular theoretical distribution well (in this case, the default: a normally distribution). Dots-<strong>not-on-or-near</strong>-the-line means that you might need to do something to your data (a transformation) in order to do statistics, or choose a different kind of analysis altogether.</p>
@@ -766,13 +766,13 @@ Tukey, J. W. (1977). <em>Exploratory data analysis</em>. Reading, MA: Addison We
 </div>
 <div class="footnotes">
 <hr />
-<ol start="50">
-<li id="fn50"><p>Moreover, a more descriptive name for the boxplot is the <em>box-and-whiskers plot</em>. <em>Boxplot</em> is really just a shortened version of that.<a href="DataVisualization.html#fnref50" class="footnote-back">↩︎</a></p></li>
-<li id="fn51"><p>Sometimes, the reflecting is dispensed with since it is, actually, redundant.<a href="DataVisualization.html#fnref51" class="footnote-back">↩︎</a></p></li>
-<li id="fn52"><p>The reflecting is what ultimately gives the violin plot its shape, and hence, its name.<a href="DataVisualization.html#fnref52" class="footnote-back">↩︎</a></p></li>
-<li id="fn53"><p>This is sort of a lie. Honestly, normally distributed data look more like deep-sea skates or rays, but the labels <em>stingray plot</em> or <em>skate plot</em> are going to take off any time soon; the misnomer has stuck. Nonetheless, when the data is really bimodal, you do get a violin-like quality to the plots.<a href="DataVisualization.html#fnref53" class="footnote-back">↩︎</a></p></li>
-<li id="fn54"><p>Traditionally, pie charts have been used to do this, but pie charts can be problematic for several reasons. <a href="https://www.businessinsider.com/pie-charts-are-the-worst-2013-6">Here</a> is a link that explains pretty clearly why.<a href="DataVisualization.html#fnref54" class="footnote-back">↩︎</a></p></li>
-<li id="fn55"><p>A really nice feature of the QQ plot is that it isn’t restricted to comparing your data to normal distributions (though that’s all we do in this class). Rather, you can use it to determine whether your data conform to some other well-known distribution, which might lead to another family of statistics (this is way beyond the scope of this class, but you should know about it).<a href="DataVisualization.html#fnref55" class="footnote-back">↩︎</a></p></li>
+<ol start="47">
+<li id="fn47"><p>Moreover, a more descriptive name for the boxplot is the <em>box-and-whiskers plot</em>. <em>Boxplot</em> is really just a shortened version of that.<a href="DataVisualization.html#fnref47" class="footnote-back">↩︎</a></p></li>
+<li id="fn48"><p>Sometimes, the reflecting is dispensed with since it is, actually, redundant.<a href="DataVisualization.html#fnref48" class="footnote-back">↩︎</a></p></li>
+<li id="fn49"><p>The reflecting is what ultimately gives the violin plot its shape, and hence, its name.<a href="DataVisualization.html#fnref49" class="footnote-back">↩︎</a></p></li>
+<li id="fn50"><p>This is sort of a lie. Honestly, normally distributed data look more like deep-sea skates or rays, but the labels <em>stingray plot</em> or <em>skate plot</em> are going to take off any time soon; the misnomer has stuck. Nonetheless, when the data is really bimodal, you do get a violin-like quality to the plots.<a href="DataVisualization.html#fnref50" class="footnote-back">↩︎</a></p></li>
+<li id="fn51"><p>Traditionally, pie charts have been used to do this, but pie charts can be problematic for several reasons. <a href="https://www.businessinsider.com/pie-charts-are-the-worst-2013-6">Here</a> is a link that explains pretty clearly why.<a href="DataVisualization.html#fnref51" class="footnote-back">↩︎</a></p></li>
+<li id="fn52"><p>A really nice feature of the QQ plot is that it isn’t restricted to comparing your data to normal distributions (though that’s all we do in this class). Rather, you can use it to determine whether your data conform to some other well-known distribution, which might lead to another family of statistics (this is way beyond the scope of this class, but you should know about it).<a href="DataVisualization.html#fnref52" class="footnote-back">↩︎</a></p></li>
 </ol>
 </div>
             </section>

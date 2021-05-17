@@ -23,7 +23,7 @@
 
 
 
-<meta name="date" content="2021-05-16" />
+<meta name="date" content="2021-05-17" />
 
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <meta name="apple-mobile-web-app-capable" content="yes" />
@@ -155,7 +155,7 @@ div.csl-indent {
 <li class="chapter" data-level="3" data-path="DescriptiveStats.html"><a href="DescriptiveStats.html"><i class="fa fa-check"></i><b>3</b> Descriptive statistics</a>
 <ul>
 <li class="chapter" data-level="3.1" data-path="DescriptiveStats.html"><a href="DescriptiveStats.html#OverviewOfDescriptiveStats"><i class="fa fa-check"></i><b>3.1</b> Overview</a></li>
-<li class="chapter" data-level="3.2" data-path="DescriptiveStats.html"><a href="DescriptiveStats.html#DescriptivesInJamovi"><i class="fa fa-check"></i><b>3.2</b> Descriptives in jamovi</a>
+<li class="chapter" data-level="3.2" data-path="DescriptiveStats.html"><a href="DescriptiveStats.html#DescriptivesInJamovi"><i class="fa fa-check"></i><b>3.2</b> Descriptives in <em>jamovi</em></a>
 <ul>
 <li class="chapter" data-level="3.2.1" data-path="DescriptiveStats.html"><a href="DescriptiveStats.html#SummarizingContinuousVariables"><i class="fa fa-check"></i><b>3.2.1</b> Summarizing continuous variables</a></li>
 <li class="chapter" data-level="3.2.2" data-path="DescriptiveStats.html"><a href="DescriptiveStats.html#GroupedSummaries"><i class="fa fa-check"></i><b>3.2.2</b> Grouped summaries</a></li>
@@ -766,8 +766,8 @@ Figure 2.13: Inserting the formula and observations for a random, normal distrib
 <p>Below is some raw reaction-time data.<a href="#fn27" class="footnote-ref" id="fnref27"><sup>27</sup></a> Our only purpose here is to show you the positive skew in a histogram, and how applying a logarithm to the data brings in the skew.</p>
 <p><br/></p>
 <p><br/></p>
-<pre><code>## 
-##  DESCRIPTIVES</code></pre>
+<pre><code>
+ DESCRIPTIVES</code></pre>
 <p><img src="ElemStatsLabManual_files/figure-html/unnamed-chunk-10-1.svg" width="672" /></p>
 <p><br/></p>
 <p>Clearly, the reaction-time data is extremely skewed.</p>
@@ -787,8 +787,8 @@ Figure 2.14: Parameter settings to apply a log transformation (base 10) to posit
 <p><br/></p>
 <p>Now, we can create of histogram of the new, logged reaction-time variable. It is still slightly skewed to the right, but it is much better than before.<a href="#fn29" class="footnote-ref" id="fnref29"><sup>29</sup></a></p>
 <p><br/></p>
-<pre><code>## 
-##  DESCRIPTIVES</code></pre>
+<pre><code>
+ DESCRIPTIVES</code></pre>
 <p><img src="ElemStatsLabManual_files/figure-html/unnamed-chunk-12-1.svg" width="672" /></p>
 <p><br/></p>
 </div>
@@ -850,17 +850,17 @@ Figure 2.16: Results of applying filter (Consent==‘Yes’) to fabricated lack-
 <p><br/></p>
 <p>In the figure (or your own <em>jamovi</em> file, if you are following along), note the green check marks <span class="math inline">\((\color{green}\checkmark)\)</span> versus red <em>times</em> or <span class="math inline">\(\color{red}\times\)</span> in the new filter variable that appears on the left under the new variable called <code>Filter 1</code>. This means that any subsequent analysis of our variables would be restricted to the observations with green check marks, and any with a red <span class="math inline">\(\color{red}\times\)</span> will be excluded. That is, the analysis would only apply to people who had consented to have their data analyzed.<a href="#fn33" class="footnote-ref" id="fnref33"><sup>33</sup></a></p>
 <p><br/></p>
-<pre><code>## 
-##  DESCRIPTIVES
-## 
-##  Descriptives            
-##  ─────────────────────── 
-##               rt         
-##  ─────────────────────── 
-##    N                18   
-##    Missing           0   
-##    Mean       575.8419   
-##  ───────────────────────</code></pre>
+<pre><code>
+ DESCRIPTIVES
+
+ Descriptives            
+ ─────────────────────── 
+              rt         
+ ─────────────────────── 
+   N                18   
+   Missing           0   
+   Mean       575.8419   
+ ─────────────────────── </code></pre>
 <p><br/></p>
 <p>If you do a simple <code>Descriptives</code> procedure (see Section <a href="DescriptiveStats.html#DescriptivesInJamovi">3.2</a> in the next chapter), you can see that <em>N</em> = 18 (as above) since the procedure did not analyze the observations that were filtered out (i.e., #19 and #20).</p>
 <p>To remove the logged reaction-time outliers described in Section <a href="BasicDataOperations.html#DataTransformations">2.5.1.3</a> above, you would simple repeat the filter above, but the formula in the <span class="math inline">\(f_{x}\)</span> box would be as follows (for deleting observations greater than 2.5 standard deviations from the mean). In this case, we are not using the <em>z</em>-score column we created; rather, we’re calculating the <em>z</em>-score within the filter formula.</p>

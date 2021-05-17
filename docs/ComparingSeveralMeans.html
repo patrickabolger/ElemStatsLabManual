@@ -23,7 +23,7 @@
 
 
 
-<meta name="date" content="2021-05-16" />
+<meta name="date" content="2021-05-17" />
 
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <meta name="apple-mobile-web-app-capable" content="yes" />
@@ -155,7 +155,7 @@ div.csl-indent {
 <li class="chapter" data-level="3" data-path="DescriptiveStats.html"><a href="DescriptiveStats.html"><i class="fa fa-check"></i><b>3</b> Descriptive statistics</a>
 <ul>
 <li class="chapter" data-level="3.1" data-path="DescriptiveStats.html"><a href="DescriptiveStats.html#OverviewOfDescriptiveStats"><i class="fa fa-check"></i><b>3.1</b> Overview</a></li>
-<li class="chapter" data-level="3.2" data-path="DescriptiveStats.html"><a href="DescriptiveStats.html#DescriptivesInJamovi"><i class="fa fa-check"></i><b>3.2</b> Descriptives in jamovi</a>
+<li class="chapter" data-level="3.2" data-path="DescriptiveStats.html"><a href="DescriptiveStats.html#DescriptivesInJamovi"><i class="fa fa-check"></i><b>3.2</b> Descriptives in <em>jamovi</em></a>
 <ul>
 <li class="chapter" data-level="3.2.1" data-path="DescriptiveStats.html"><a href="DescriptiveStats.html#SummarizingContinuousVariables"><i class="fa fa-check"></i><b>3.2.1</b> Summarizing continuous variables</a></li>
 <li class="chapter" data-level="3.2.2" data-path="DescriptiveStats.html"><a href="DescriptiveStats.html#GroupedSummaries"><i class="fa fa-check"></i><b>3.2.2</b> Grouped summaries</a></li>
@@ -493,7 +493,7 @@ div.csl-indent {
 <div id="OnewayAnova" class="section level2" number="8.1">
 <h2><span class="header-section-number">8.1</span> The One-Way ANOVA</h2>
 <p>Carrying out One-Way ANOVA is covered in your main textbook <span class="citation">(<a href="#ref-lsj" role="doc-biblioref">Navarro &amp; Foxcroft, 2019</a>, Sections 13.1 to 13.7)</span>.</p>
-<p>In this test, we are interested in whether three or more groups comprising independent observations differ with each on a single, continuous outcome variable.<a href="#fn79" class="footnote-ref" id="fnref79"><sup>79</sup></a></p>
+<p>In this test, we are interested in whether three or more groups comprising independent observations differ with each on a single, continuous outcome variable.<a href="#fn76" class="footnote-ref" id="fnref76"><sup>76</sup></a></p>
 <p>The <em>F</em>-test is the calculation of a particular kind of ratio, the <em>F</em>-ratio (unsurprisingly!). It is the ratio of between-subjects variance (<em>Mean Squares Between</em>) divided by the within-subjects variance (<em>Mean Squares Within</em>). Each of these, respectively, is the ratio of the <em>Sum of Squares</em> (between or within) divided by the <em>degrees of freedom</em> (between or within). Thus:</p>
 <p><span class="math display">\[F= \frac{MeanSquares_{between}}{MeanSquares_{within}} = \frac{\frac{SumOfSquares_{betweeen}}{DegreesOfFreedom_{between}}}{\frac{SumOfSquares_{within}}{DegreesOfFreedom_{within}}}\]</span>
 <br/></p>
@@ -549,7 +549,7 @@ Figure 8.3: Multiple-comparison, post-hoc settings for the ANOVA procedure using
 </li>
 <li><em>Error bars</em> (under <em>Plot</em>) is set to <em>Confidence interval</em><br />
 </li>
-<li>and for fun, check the box <em>Observed scores</em>.<a href="#fn80" class="footnote-ref" id="fnref80"><sup>80</sup></a></li>
+<li>and for fun, check the box <em>Observed scores</em>.<a href="#fn77" class="footnote-ref" id="fnref77"><sup>77</sup></a></li>
 </ul>
 <p>These options are shown in Figure <a href="ComparingSeveralMeans.html#fig:ANOVAClinicalParamatersEMM">8.4</a> below.</p>
 <div class="figure"><span id="fig:ANOVAClinicalParamatersEMM"></span>
@@ -560,53 +560,53 @@ Figure 8.4: Graphic settings for the ANOVA procedure using the <em>Clinical Tria
 </div>
 <p><br/></p>
 <p>The results should appear as follows:</p>
-<pre><code>## 
-##  ANOVA
-## 
-##  ANOVA - mood.gain                                                                          
-##  ────────────────────────────────────────────────────────────────────────────────────────── 
-##                 Sum of Squares    df    Mean Square    F           p            η²p         
-##  ────────────────────────────────────────────────────────────────────────────────────────── 
-##    drug               3.453333     2     1.72666667    18.61078    0.0000865    0.7127623   
-##    Residuals          1.391667    15     0.09277778                                         
-##  ────────────────────────────────────────────────────────────────────────────────────────── 
-## 
-## 
-##  ASSUMPTION CHECKS
-## 
-##  Homogeneity of Variances Test (Levene&#39;s) 
-##  ──────────────────────────────────────── 
-##    F           df1    df2    p           
-##  ──────────────────────────────────────── 
-##    1.449739      2     15    0.2656941   
-##  ──────────────────────────────────────── 
-## 
-## 
-##  POST HOC TESTS
-## 
-##  Post Hoc Comparisons - drug                                                                         
-##  ─────────────────────────────────────────────────────────────────────────────────────────────────── 
-##    drug             drug        Mean Difference    SE           df          t            p-holm      
-##  ─────────────────────────────────────────────────────────────────────────────────────────────────── 
-##    anxifree    -    joyzepam         -0.7666667    0.1758577    15.00000    -4.359586    0.0011211   
-##                -    placebo           0.2666667    0.1758577    15.00000     1.516378    0.1502131   
-##    joyzepam    -    placebo           1.0333333    0.1758577    15.00000     5.875963    0.0000914   
-##  ─────────────────────────────────────────────────────────────────────────────────────────────────── 
-## 
-## 
-##  ESTIMATED MARGINAL MEANS
-## 
-##  DRUG
-## 
-##  Estimated Marginal Means - drug                                  
-##  ──────────────────────────────────────────────────────────────── 
-##    drug        Mean         SE           Lower        Upper       
-##  ──────────────────────────────────────────────────────────────── 
-##    anxifree    0.7166667    0.1243502    0.4516206    0.9817128   
-##    joyzepam    1.4833333    0.1243502    1.2182872    1.7483794   
-##    placebo     0.4500000    0.1243502    0.1849539    0.7150461   
-##  ────────────────────────────────────────────────────────────────</code></pre>
-<p><img src="ElemStatsLabManual_files/figure-html/unnamed-chunk-127-1.svg" width="672" /></p>
+<pre><code>
+ ANOVA
+
+ ANOVA - mood.gain                                                                          
+ ────────────────────────────────────────────────────────────────────────────────────────── 
+                Sum of Squares    df    Mean Square    F           p            η²p         
+ ────────────────────────────────────────────────────────────────────────────────────────── 
+   drug               3.453333     2     1.72666667    18.61078    0.0000865    0.7127623   
+   Residuals          1.391667    15     0.09277778                                         
+ ────────────────────────────────────────────────────────────────────────────────────────── 
+
+
+ ASSUMPTION CHECKS
+
+ Homogeneity of Variances Test (Levene&#39;s) 
+ ──────────────────────────────────────── 
+   F           df1    df2    p           
+ ──────────────────────────────────────── 
+   1.449739      2     15    0.2656941   
+ ──────────────────────────────────────── 
+
+
+ POST HOC TESTS
+
+ Post Hoc Comparisons - drug                                                                         
+ ─────────────────────────────────────────────────────────────────────────────────────────────────── 
+   drug             drug        Mean Difference    SE           df          t            p-holm      
+ ─────────────────────────────────────────────────────────────────────────────────────────────────── 
+   anxifree    -    joyzepam         -0.7666667    0.1758577    15.00000    -4.359586    0.0011211   
+               -    placebo           0.2666667    0.1758577    15.00000     1.516378    0.1502131   
+   joyzepam    -    placebo           1.0333333    0.1758577    15.00000     5.875963    0.0000914   
+ ─────────────────────────────────────────────────────────────────────────────────────────────────── 
+
+
+ ESTIMATED MARGINAL MEANS
+
+ DRUG
+
+ Estimated Marginal Means - drug                                  
+ ──────────────────────────────────────────────────────────────── 
+   drug        Mean         SE           Lower        Upper       
+ ──────────────────────────────────────────────────────────────── 
+   anxifree    0.7166667    0.1243502    0.4516206    0.9817128   
+   joyzepam    1.4833333    0.1243502    1.2182872    1.7483794   
+   placebo     0.4500000    0.1243502    0.1849539    0.7150461   
+ ──────────────────────────────────────────────────────────────── </code></pre>
+<p><img src="ElemStatsLabManual_files/figure-html/unnamed-chunk-128-1.svg" width="672" /></p>
 <p><br/></p>
 </div>
 <div id="OnewayAnovaClinicalTrialDataInterpreting" class="section level4" number="8.1.1.3">
@@ -617,7 +617,7 @@ Figure 8.4: Graphic settings for the ANOVA procedure using the <em>Clinical Tria
 <p><span class="math display">\[\eta^2 = \frac{SumOfSquares_{between}}{SumOfSquares_{total}}= \frac{SumOfSquares_{between}}{SumOfSquares_{between}+SumOfSquares_{within}}=\]</span>
 <span class="math display">\[\frac{3.45}{3.45+1.39} = \frac{3.45}{4.84} = 0.713\]</span></p>
 <p><br/></p>
-<p>Naturally, that <em>F</em>-test is an omnibus test, and only tells us that there are some significant differences among the three means, but it doesn’t tell us which. Therefore, there are also some post-hoc tests that we called for, which are located in third table down. It appears that there is a significant difference between joyzepam and each of the other two drugs, but not between the other two drugs themselves. This is clear in the figure, where you can see that the confidence interval for joyzepam does not overlap with either of the other two drugs, but the confidence intervals of the other two drugs overlap with each other quite a bit.<a href="#fn81" class="footnote-ref" id="fnref81"><sup>81</sup></a></p>
+<p>Naturally, that <em>F</em>-test is an omnibus test, and only tells us that there are some significant differences among the three means, but it doesn’t tell us which. Therefore, there are also some post-hoc tests that we called for, which are located in third table down. It appears that there is a significant difference between joyzepam and each of the other two drugs, but not between the other two drugs themselves. This is clear in the figure, where you can see that the confidence interval for joyzepam does not overlap with either of the other two drugs, but the confidence intervals of the other two drugs overlap with each other quite a bit.<a href="#fn78" class="footnote-ref" id="fnref78"><sup>78</sup></a></p>
 <p>Also note that the <em>Estimated Marginal Means</em> may be slightly different than the means that you obtain from running <em>Exploration</em> &gt; <em>Descriptives</em> in jamovi. This topic is beyond the scope of this class as it has to do with how means are calculated multiple regression. Although these are legitimate estimates, you should report the means and standard deviations from the <em>Descriptives</em> procedure instead of the <em>Estimated Marginal Means</em> from the ANOVA output.</p>
 <p><br/></p>
 </div>
@@ -682,10 +682,10 @@ Navarro, D. J., &amp; Foxcroft, D. R. (2019). Learning statistics with jamovi: A
 </div>
 <div class="footnotes">
 <hr />
-<ol start="79">
-<li id="fn79"><p>Technically, you can also do this kind of test on a categorical variable with only two levels, something you would normally think to do an independent-samples <em>t</em>-test on. However, the results will be the same in this case, except that the ultimate obtained value for <em>F</em> (the ANOVA test) will be the equivalent of the obtained value for <em>t</em>, but squared. <span class="citation">(<a href="#ref-lsj" role="doc-biblioref">Navarro &amp; Foxcroft, 2019</a>)</span> talk about this briefly in section 13.10.<a href="ComparingSeveralMeans.html#fnref79" class="footnote-back">↩︎</a></p></li>
-<li id="fn80"><p>22 Oct 2019: Note however that you may get a strange message in German here: <em>unerwartetes Symbol 1:…</em>, which means “Unexpected symbol 1:….” This seems to be a bug in jamovi. If you get it, just uncheck the box; the error message goes away.<a href="ComparingSeveralMeans.html#fnref80" class="footnote-back">↩︎</a></p></li>
-<li id="fn81"><p>Note that this is an approximate rule. Sometimes confidence intervals do overlap a little between variables that turn out to be significantly different.<a href="ComparingSeveralMeans.html#fnref81" class="footnote-back">↩︎</a></p></li>
+<ol start="76">
+<li id="fn76"><p>Technically, you can also do this kind of test on a categorical variable with only two levels, something you would normally think to do an independent-samples <em>t</em>-test on. However, the results will be the same in this case, except that the ultimate obtained value for <em>F</em> (the ANOVA test) will be the equivalent of the obtained value for <em>t</em>, but squared. <span class="citation">(<a href="#ref-lsj" role="doc-biblioref">Navarro &amp; Foxcroft, 2019</a>)</span> talk about this briefly in section 13.10.<a href="ComparingSeveralMeans.html#fnref76" class="footnote-back">↩︎</a></p></li>
+<li id="fn77"><p>22 Oct 2019: Note however that you may get a strange message in German here: <em>unerwartetes Symbol 1:…</em>, which means “Unexpected symbol 1:….” This seems to be a bug in jamovi. If you get it, just uncheck the box; the error message goes away.<a href="ComparingSeveralMeans.html#fnref77" class="footnote-back">↩︎</a></p></li>
+<li id="fn78"><p>Note that this is an approximate rule. Sometimes confidence intervals do overlap a little between variables that turn out to be significantly different.<a href="ComparingSeveralMeans.html#fnref78" class="footnote-back">↩︎</a></p></li>
 </ol>
 </div>
             </section>
