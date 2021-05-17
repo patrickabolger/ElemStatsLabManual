@@ -115,13 +115,13 @@ Now we will cover how to view descriptive statistics by group in *jamovi*. Recal
 Using the same data, `Clinical Trial`, we will split `mood.gain` into six groups, namely, those patients who got the following:
 
 - `anxifree` while getting `CBT` therapy  
-- `anxifree` while getting `*no therapy`*  
+- `anxifree` while getting `no therapy`  
 
 - `joyzepam` while getting `CBT` therapy  
-- `joyzepam` while getting `*no therapy`*  
+- `joyzepam` while getting `no therapy`  
 
 - a `placebo` while getting `CBT` therapy  
-- a `placebo` while getting `*no therapy`*
+- a `placebo` while getting `no therapy`
 
 <br/>
 
