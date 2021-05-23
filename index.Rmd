@@ -19,20 +19,21 @@ url: https\://patrickabolger.github.io/ElemStatsLabManual/
 knitr::opts_chunk$set(echo = F, warning = F, message = F, comment = "")
 library(magrittr)
 library(kableExtra)
+library(pander)
 ```
 
 ```{r, eval=F, include=F}
 # The code below will install packages that you need for this Bookdown document,
 # but only if you don't already have the package(s).
 # To make it work, you'll need to switch eval=F to eval=T, above, then run this chunk
-# by clicking the green arrow in the uppr right of this chunk. 
+# by clicking the green arrow in the upper right of this chunk. 
 # IMPORTANT: Afterwards, set eval=T back to eval=F. (the reason for this is that it is
 # considered rude to share code that automatically installs programs on other people's computers.)
-# want <- c("readr", "dplyr", "magrittr", "jmv", "kableExtra", "trimr", "haven", "scatr")
-# have <- want %in% rownames(installed.packages())
-# if(any(!have)) install.packages(want[!have])
-# rm(want)
-# rm(have)
+ # want <- c("readr", "dplyr", "magrittr", "jmv", "kableExtra", "trimr", "haven", "scatr")
+ # have <- want %in% rownames(installed.packages())
+ # if(any(!have)) install.packages(want[!have])
+ # rm(want)
+ # rm(have)
 ```
 
 
@@ -95,7 +96,7 @@ As noted above, you will need certain resources in order to achieve these goals.
 
 ### Fixed resources {#FixedResources}
 
-#### This ***lab manual*** 
+#### This lab manual 
 
 This lab manual [@Bolger2019] was created also using the programming language *R* within *RStudio Desktop*, along with the *R* package [bookdown](https://bookdown.org/) [@R-bookdown], which uses [rmarkdown](https://rmarkdown.rstudio.com/) [@R-rmarkdown] to create books. *R Markdown* is a [markdown language](https://en.wikipedia.org/wiki/Markdown) for *R* created by the popular integrated development environment ([IDE](https://en.wikipedia.org/wiki/Integrated_development_environment)) [RStudio](https://www.rstudio.com/) [@RStudio], which makes programming in *R* easier. Several other *R* packages were also used throughout. These are represented by the hexagon stickers near the top of this page
 

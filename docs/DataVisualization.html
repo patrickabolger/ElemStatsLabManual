@@ -23,7 +23,7 @@
 
 
 
-<meta name="date" content="2021-05-18" />
+<meta name="date" content="2021-05-22" />
 
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <meta name="apple-mobile-web-app-capable" content="yes" />
@@ -532,7 +532,7 @@ Figure 4.1: Parameters for histograms and density plots for <strong>test grade</
    Standard deviation    1         6.616137   
                          2         6.405612   
  ──────────────────────────────────────────── </code></pre>
-<p><img src="ElemStatsLabManual_files/figure-html/unnamed-chunk-39-1.svg" width="672" /></p>
+<p><img src="ElemStatsLabManual_files/figure-html/unnamed-chunk-40-1.svg" width="672" /></p>
 <p><br/></p>
 </div>
 <div id="Boxplots" class="section level2" number="4.2">
@@ -594,7 +594,7 @@ Figure 4.2: Parameter settings for boxplots along with related descriptive stati
    75th percentile    Anastasia     79.00000   
                       Bernadette    73.00000   
  ───────────────────────────────────────────── </code></pre>
-<p><img src="ElemStatsLabManual_files/figure-html/unnamed-chunk-46-1.svg" width="672" /></p>
+<p><img src="ElemStatsLabManual_files/figure-html/unnamed-chunk-47-1.svg" width="672" /></p>
 <p><br/></p>
 <p>In other words, the median is the middle value of your data, if you ordered your data from smallest to largest. That is, half of the data points should lie below the median, and half above (and if there is an even number of data points, the median is the average of the middle two values).</p>
 <p>The next feature is the pair of vertical lines extending from the top and bottom of the box, respectively. These are often called <strong><em>whiskers</em></strong>.<a href="#fn47" class="footnote-ref" id="fnref47"><sup>47</sup></a> Traditionally, these lines extend out to 1.5 times the interquartile range (the value at the 3rd quartile minus the value at the 1st quartile), a calculation we can attribute to <span class="citation"><a href="#ref-Tukey1977" role="doc-biblioref">Tukey</a> (<a href="#ref-Tukey1977" role="doc-biblioref">1977</a>)</span>. The idea here is to capture all the data that is not considered potentially extreme within the ends of the whiskers.</p>
@@ -629,7 +629,7 @@ Figure 4.2: Parameter settings for boxplots along with related descriptive stati
 <p><br/></p>
 <pre><code>
  DESCRIPTIVES</code></pre>
-<p><img src="ElemStatsLabManual_files/figure-html/unnamed-chunk-47-1.svg" width="672" /><img src="ElemStatsLabManual_files/figure-html/unnamed-chunk-47-2.svg" width="672" /></p>
+<p><img src="ElemStatsLabManual_files/figure-html/unnamed-chunk-48-1.svg" width="672" /><img src="ElemStatsLabManual_files/figure-html/unnamed-chunk-48-2.svg" width="672" /></p>
 <p><br/></p>
 <p>Nicely, the boxplots get embedded within the violin plots when you click both in <em>jamovi</em>. This is another reason why these kinds of plots can stuff a lot of information into a small space.</p>
 <p>Anyway, the first thing to notice (if you hadn’t already with the boxplots before), the axes are switched between histograms/density plots, on the one hand, and boxplots/violin plots, on the other. In fact, it’s the histograms and density plots that are somewhat unusual in the world of statistical visualization. In almost all other cases, the outcome variable is plotted on the <em>y</em>-axis (as you see with the boxplots and violin plots), not the <em>x</em>-axis (as you see with the histograms and density plots). We encourage you to always think of your outcome variable as being plotted on the <em>y</em>-axis; this “mind trick” actually helps you understand other statistics better, especially linear regression (coming up in Chapter <a href="CorrAndLinearReg.html#CorrAndLinearReg">7</a>).</p>
@@ -651,13 +651,13 @@ Figure 4.3: Parameters for generating a stacked dot plot.
 <p><br/></p>
 <pre><code>
  DESCRIPTIVES</code></pre>
-<p><img src="ElemStatsLabManual_files/figure-html/unnamed-chunk-48-1.svg" width="672" /></p>
+<p><img src="ElemStatsLabManual_files/figure-html/unnamed-chunk-49-1.svg" width="672" /></p>
 <p><br/></p>
 <p>Note that these all fall under <em>Box plots</em> for a reason. Namely, you can combine these plots in any way you see fit. We have combined all three into one plot below. Note that the dots are <strong>jittered</strong> this time, strictly for illustration purposes (i.e., it was not helpful in any way for visualization since the number of observations is low).</p>
 <p><br/></p>
 <pre><code>
  DESCRIPTIVES</code></pre>
-<p><img src="ElemStatsLabManual_files/figure-html/unnamed-chunk-49-1.svg" width="672" /></p>
+<p><img src="ElemStatsLabManual_files/figure-html/unnamed-chunk-50-1.svg" width="672" /></p>
 <p><br/></p>
 </div>
 <div id="Barplots" class="section level2" number="4.5">
@@ -693,7 +693,7 @@ Figure 4.4: Parameters for generating a bar plot.
    Anastasia         15      45.45455        45.45455   
    Bernadette        18      54.54545       100.00000   
  ────────────────────────────────────────────────────── </code></pre>
-<p><img src="ElemStatsLabManual_files/figure-html/unnamed-chunk-51-1.svg" width="672" /></p>
+<p><img src="ElemStatsLabManual_files/figure-html/unnamed-chunk-52-1.svg" width="672" /></p>
 <p><br/></p>
 <p>The meaning of the bar plot is almost self-explanatory in this case.</p>
 <p><br/></p>
@@ -714,14 +714,14 @@ Figure 4.5: Parameters for generating Q-Q plots.
 <p><br/></p>
 <pre><code>
  DESCRIPTIVES</code></pre>
-<p><img src="ElemStatsLabManual_files/figure-html/unnamed-chunk-52-1.svg" width="672" /></p>
+<p><img src="ElemStatsLabManual_files/figure-html/unnamed-chunk-53-1.svg" width="672" /></p>
 <p><br/></p>
 <p>As you can see, the dots line up quite closely to the line, suggesting that the data is normally distributed.</p>
 <p>To show what a positively skewed data set looks like in a Q-Q plot, we have opened the <code>AFL Margins</code> data set from <span class="citation"><a href="#ref-lsj" role="doc-biblioref">Navarro &amp; Foxcroft</a> (<a href="#ref-lsj" role="doc-biblioref">2019</a>)</span>, a data set that has something to do with Australian Rules Football. You can see the results of this below.</p>
 <p><br/></p>
 <pre><code>
  DESCRIPTIVES</code></pre>
-<p><img src="ElemStatsLabManual_files/figure-html/unnamed-chunk-55-1.svg" width="672" /><img src="ElemStatsLabManual_files/figure-html/unnamed-chunk-55-2.svg" width="672" /></p>
+<p><img src="ElemStatsLabManual_files/figure-html/unnamed-chunk-56-1.svg" width="672" /><img src="ElemStatsLabManual_files/figure-html/unnamed-chunk-56-2.svg" width="672" /></p>
 <p><br/></p>
 <p>This time we included the histogram to show you the positive skew. In the Q-Q plot, look at the <em>y</em>-axis, and how the scale only goes down to about -1.5 standardized residuals (<em>z</em>-scores), whereas the <em>x</em>-axis goes down to -3. The dots splay out to the left away from the line, suggesting that they’re clumping up at the bottom end and <strong>not</strong> producing a nice, leftward, asymptotic (small) tail. At the upper end, you can see that several dots have higher values than the line would “suggest.” This means that the <em>z</em>-scores are too high for the distribution for it to be considered a normal. In other words, there is positive skew.</p>
 <p>If you didn’t understand very much of that, that’s okay. The beauty of the Q-Q plot is that dots-<strong>on-or-near</strong>-the-line means that your data fit that particular theoretical distribution well (in this case, the default: a normally distribution). Dots-<strong>not-on-or-near</strong>-the-line means that you might need to do something to your data (a transformation) in order to do statistics, or choose a different kind of analysis altogether.</p>
