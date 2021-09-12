@@ -153,7 +153,7 @@ Finally, predictor variables are equivalent (in linear regression) to any *X* in
 
 You can probably think of (and you will inevitably run in to) examples where the outcome variable is not really under the "control" of the participants, or is not really "provided" by them. This is entirely understandable because there is, in fact, **no statistical distinction** between outcome and predictor variables (see below). These labels come from *research design*, not statistics *per se*. In fact, statistics are somewhat blind to the distinction. Rather, the researcher needs to determine whether a variable is an outcome or a predictor. There is no statistical procedure to figure this out.
 
-Also note that the experimental tradition (as opposed to the correlational tradition that we are using) uses the term *dependent* variable for *outcome*, as well as *independent variable* for *predictor*. The relatively opaque terms from the experimental traditional are ultimately somewhat more confusing terms to use. Navarro and Foxcroft [@lsj] use *outcome* and *predictor* rather than *dependent* and *independent*. Since this lab manual is based on @lsj, we will follow their preference for the terms *outcome* and *predictor*. But (ironically) you will notice that jamovi uses the terms *dependent* and *independent* variable. In the end, it is a simple substitution: *outcome* for *dependent* and *predictor* for *independent*.
+Also note that the experimental tradition (as opposed to the correlational tradition that we are using) uses the term *dependent* variable for *outcome*, as well as *independent variable* for *predictor*. The relatively opaque terms from the experimental traditional are ultimately somewhat more confusing terms to use. Navarro and Foxcroft [@lsj] use *outcome* and *predictor* rather than *dependent* and *independent*. Since this lab manual is based on @lsj, we will follow their preference for the terms *outcome* and *predictor*. But (ironically) you will notice that *jamovi* uses the terms *dependent* and *independent* variable. In the end, it is a simple substitution: *outcome* for *dependent* and *predictor* for *independent*.
 
 <br/>
 
@@ -176,7 +176,7 @@ c. Getting into your groups and deciding on a topic for your study
 d. Designing a research project around that topic, using a survey using Google Forms to collect the data  
 e. Writing a rough and final draft of the *Introduction* to the IMRaD paper (Writing Assignment #1)  
 f. Collecting the data  
-g. Downloading the data into jamovi  
+g. Downloading the data into *jamovi*  
 h. Preparing the data for analysis, and carrying out descriptive statistics    
 i. Writing a rough and final draft of the *Method* section of the IMRaD paper  
 j. Completing a *t*-test and an ANOVA from the data you have collected  
@@ -250,7 +250,7 @@ The Google-Form template (named *GoogleFormTemplate*) that you have ready in you
 
 Note that if you change a scale to an even range (e.g., 1 to 4), you will not have a Likert scale. It will be an interval scale, but not a Likert scale. So please do not do this.
 
-Also note that using **any other** question type (e.g., *Multiple choice*, *Checkboxes*) to implement a Likert scale will result in a considerable amount of extra work for you, as you will then have to convert text to numbers in jamovi (an unnecessary task if you use the *Linear scale* option). Don't make this mistake.
+Also note that using **any other** question type (e.g., *Multiple choice*, *Checkboxes*) to implement a Likert scale will result in a considerable amount of extra work for you, as you will then have to convert text to numbers in *jamovi* (an unnecessary task if you use the *Linear scale* option). Don't make this mistake.
 
 <br/>
 

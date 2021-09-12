@@ -1,6 +1,8 @@
 # Basic data operations {#BasicDataOperations}
 
-This chapter helps you through a number of issues that have to do with data entry, opening it, exploring it, importing it. exporting it, modifying it, etc. The best way to learn in this chapter is to follow along in each section using *jamovi* on your own computer. There are also some extra practice exercises at the end of the chapter.
+This chapter helps you through a number of issues that have to do with data entry, opening it, exploring it, importing it. exporting it, modifying it, etc. The best way to learn in this chapter is to follow along in each section using *jamovi* on your own computer.^{$\dagger$} There are also some extra practice exercises at the end of the chapter.
+
+$\dagger$ Note that the most recent versions of *jamovi* (2.0 and later) have added a `Variables` tab. This is a very useful tool, but it was introduced in mid-July, 2021. There has not been enough time to update this manual accordingly. However, if you choose to use it, just understand that this lab manual and the the version of *jamovi* your using may differ a little bit. That said, the `Variables` tab almost certainly makes things easier.
 
 ---
 
@@ -8,13 +10,13 @@ This chapter helps you through a number of issues that have to do with data entr
 
 ## Entering data manually {#Manualling}
 
-Okay, about the only people who enter data manually anymore are students who are learning about statistical analysis software.^[In some cases, presumably, data might be collected on paper, and have to be entered manually. And there might be people digitizing certain, important data from analog to digital for archiving purposes. But overall, these sorts of tasks are rare nowadays in psychology.] Nonetheless, entering data manually is a great exercise in getting to know any statistical-analysis software, like jamovi. In fact, there is one case where entering data manually serves a unique purpose in jamovi. We'll get to that at the end of this chapter since it is not critical.
+Okay, about the only people who enter data manually anymore are students who are learning about statistical analysis software.^[In some cases, presumably, data might be collected on paper, and have to be entered manually. And there might be people digitizing certain, important data from analog to digital for archiving purposes. But overall, these sorts of tasks are rare nowadays in psychology.] Nonetheless, entering data manually is a great exercise in getting to know any statistical-analysis software, like *jamovi*. In fact, there is one case where entering data manually serves a unique purpose in *jamovi*. We'll get to that at the end of this chapter since it is not critical.
 
-When you start *jamovi*, or open a *new* document (i.e., $\equiv$ > `New`), you will see three default variable names, `A`, `B`, and `C`, in the the three leftmost columns of the spreadsheet (jamovi expects you to change these variable names). There is also a tiny, grayed-out column on the far left that gives you the row number of the spreadsheet. The default scale of measurement for variables A, B, and C is nominal (categorical). To see this, just double-click `A`, `B`, or `C`. See Figure \@ref(fig:DefaultVarView) 
+When you start *jamovi*, or open a *new* document (i.e., $\equiv$ > `New`), you will see three default variable names, `A`, `B`, and `C`, in the the three leftmost columns of the spreadsheet (*jamovi* expects you to change these variable names). There is also a tiny, grayed-out column on the far left that gives you the row number of the spreadsheet. The default scale of measurement for variables A, B, and C is nominal (categorical). To see this, just double-click `A`, `B`, or `C`. See Figure \@ref(fig:DefaultVarView) 
 
 <br/>
 
-```{r DefaultVarView, fig.cap="Default view of variables in jamovi.", echo=F, out.width="600px"}
+```{r DefaultVarView, fig.cap="Default view of variables in *jamovi*.", echo=F, out.width="600px"}
 knitr::include_graphics("images/BasicDataPrep/DefaultVarView.png")
 ```
 
@@ -62,11 +64,11 @@ knitr::include_graphics("images/BasicDataPrep/SexZeroOneVar.png")
 
 Now that that's done, if you start entering the real data manually in the spreadsheet, one of three things will happen.
 
-1. If your data is continuous, and you enter a number, it will stay as that number. Note however, that the maximum number of decimal places that *jamovi* will display (irrespective of how many you enter) is defined under preferences, or $(\vdots)$ > `Results` > `Number format`.  
+1. If your data is continuous, and you enter a number, it will stay as that number. Note however, that the maximum number of decimal places that *jamovi* will display (irrespective of how many you enter) is defined under preferences, or ($\vdots$) > `Results` > `Number format`.  
 2. If your data is nominal, with numbers representing levels (e.g., `0` = `female`), then as you enter a number in the spreadsheet (say `1`, under `Sex`), that cell will turn into `male` as soon as you enter a `1` in there. Underlyingly, it is a `1`, but *jamovi* is displaying it as `male` to you.  
 3. If you have your nominal variable coded as text, then you can just type in the level in here (e.g., `female`).  
 
-jamovi can deal with both (2) and (3) above for analysis, but method (3) is not really recommended as it's much more likely that you'll accidentally introduce a new, unwanted level through misspelling (e.g., `famale`). See Figure \@ref(fig:BadLevelThruMisspell) below for an example of this, which you might not notice browsing through the spreadsheet.
+*jamovi* can deal with both (2) and (3) above for analysis, but method (3) is not really recommended as it's much more likely that you'll accidentally introduce a new, unwanted level through misspelling (e.g., `famale`). See Figure \@ref(fig:BadLevelThruMisspell) below for an example of this, which you might not notice browsing through the spreadsheet.
 
 That said, when using method (2), it's a good idea to make sure that in the drop-down menu under `Data type` you choose `text`. Otherwise, you will get some confusing (albeit harmless) statistics when carry out `Descriptives` (the topic of Chapter \@ref(DescriptiveStats)).
 
@@ -100,20 +102,20 @@ Now on to something much simpler, but also much more reflective of what you will
 
 This really isn't so much about how to open files (something we assume you all learned back in elementary school), as it is about what files are available to open in *jamovi* in order to get used to how data looks and works in the software.
 
-jamovi comes with a few sample data sets pre-installed. They can be found by clicking $(\equiv)$ > `Open` and choose one of the four default sample data sets.
+*jamovi* comes with a few sample data sets pre-installed. They can be found by clicking ($\equiv$) > `Open` and choose one of the four default sample data sets.
 
-If you haven't already done so, you should also install the module for the main textbook for the class [@lsj]. To install it go to `Analyses` > `Modules (+)` > `jamovi library` > `Available` > `learning statistics with jamovi` > `Install`. As noted above, you'll find the sample data sets (all from Psychology) under $(\equiv)$ > `Open` > `lsj-data`. The main textbook will refer to these data sets throughout the course. You can see this step in Figure \@ref(fig:OpenLsjDatasets) below. Also, in contrast to the four default data sets in *jamovi*, not all the data sets from @lsj are native-jamovi `.omv` files; some of them have different file extensions, like `.csv`. We'll get to that, especially under \@ref(Importing). Finally, as noted in Section \@ref(OutsideHelpOnDownloadingAndInstalling) in the last chapter, you should also install the module called `R data sets`, as you will work with one or more of these in this lab manual.
+If you haven't already done so, you should also install the module for the main textbook for the class [@lsj]. To install it go to `Analyses` > `Modules (+)` > `jamovi library` > `Available` > `learning statistics with jamovi` > `Install`. As noted above, you'll find the sample data sets (all from Psychology) under ($\equiv$) > `Open` > `lsj-data`. The main textbook will refer to these data sets throughout the course. You can see this step in Figure \@ref(fig:OpenLsjDatasets) below. Also, in contrast to the four default data sets in *jamovi*, not all the data sets from @lsj are native-*jamovi* `.omv` files; some of them have different file extensions, like `.csv`. We'll get to that, especially under \@ref(Importing). Finally, as noted in Section \@ref(OutsideHelpOnDownloadingAndInstalling) in the last chapter, you should also install the module called `R data sets`, as you will work with one or more of these in this lab manual.
 
 <br/>
 
-```{r OpenLsjDatasets, fig.cap="Finding sample spreadsheet data in jamovi.", echo=F, out.width="600px"}
+```{r OpenLsjDatasets, fig.cap="Finding sample spreadsheet data in *jamovi*.", echo=F, out.width="600px"}
 knitr::include_graphics("images/BasicDataPrep/OpenLsjDatasets.png")
 ```
 
 <br/>
 
 ``` {block2, type = ".rmdnote"}
-**NOTE**: *jamovi* will keep opening up new windows as you open new data sets. You can close any one of them by clicking the red button in the upper, left-hand corner of the *jamovi* window (on a Mac) or the x symbol in the upper, right-hand side (on Windows).^[We are not yet sure how this is done in Linux or ChromeOS yet] However, if you want to keep *jamovi* up and running, make sure you have at least one other *jamovi* window active. The easiest way to do this is to go to $(\equiv)$ > **New** before you close the data set you are working on. Otherwise, you will need to re-start jamovi. Much like *SPSS*, *jamovi* assumes that if you do not have a data file open, then you do not want software program open either.^[One trick is just to keep a blank, *New* data file open at all times. This is useful if you keep accidentally closing *jamovi* down.]
+**NOTE**: *jamovi* will keep opening up new windows as you open new data sets. You can close any one of them by clicking the red button in the upper, left-hand corner of the *jamovi* window (on a Mac) or the x symbol in the upper, right-hand side (on Windows).^[We are not yet sure how this is done in Linux or ChromeOS yet] However, if you want to keep *jamovi* up and running, make sure you have at least one other *jamovi* window active. The easiest way to do this is to go to ($\equiv$) > **New** before you close the data set you are working on. Otherwise, you will need to re-start *jamovi*. Much like *SPSS*, *jamovi* assumes that if you do not have a data file open, then you do not want software program open either.^[One trick is just to keep a blank, *New* data file open at all times. This is useful if you keep accidentally closing *jamovi* down.]
 
 ```
 
@@ -123,7 +125,7 @@ knitr::include_graphics("images/BasicDataPrep/OpenLsjDatasets.png")
 
 ## Importing data {#Importing}
 
-jamovi is not data-collection software.^[Nor are *SPSS*, *SAS*, *Stata*, *R*, or any data-analysis software, with the two notable exceptions of *MATLAB* and *Python*, which can be used to write programs that collect data.] This means that when the data file is not given to you from within *jamovi* (e.g., sample data sets), you will need to obtain the data from wherever you collected it into jamovi. This is known as *importing data*.
+*jamovi* is not data-collection software.^[Nor are *SPSS*, *SAS*, *Stata*, *R*, or any data-analysis software, with the two notable exceptions of *MATLAB* and *Python*, which can be used to write programs that collect data.] This means that when the data file is not given to you from within *jamovi* (e.g., sample data sets), you will need to obtain the data from wherever you collected it into *jamovi*. This is known as *importing data*.
 
 There are a variety of ways that this might take place, but two of them are far more common than others:  
 - importing data from a proprietary data format  
@@ -131,9 +133,9 @@ There are a variety of ways that this might take place, but two of them are far 
 
 <br/>
 
-A proprietary data format is primarily one generated by commercial software. For instance, *SPSS* stores its data in `.sav` files. *SAS* stores its data in `.*SAS*7bdat` files^[Yes, that's the weirdest file extension in the history of computers.] and *Stata* in `.dta` files. Usually, *jamovi* will open these directly as it uses powerful *R* packages, like [*haven*](https://cran.r-project.org/web/packages/haven/index.html), that know how to open these files. Just click $(\equiv)$ > `Open` > `This PC` > `Browse` and find the file that you need to open (it needs to be downloaded on your computer already).
+A proprietary data format is primarily one generated by commercial software. For instance, *SPSS* stores its data in `.sav` files. *SAS* stores its data in `.*SAS*7bdat` files^[Yes, that's the weirdest file extension in the history of computers.] and *Stata* in `.dta` files. Usually, *jamovi* will open these directly as it uses powerful *R* packages, like [*haven*](https://cran.r-project.org/web/packages/haven/index.html), that know how to open these files. Just click ($\equiv$) > `Open` > `This PC` > `Browse` and find the file that you need to open (it needs to be downloaded on your computer already).
 
-But the most convenient and reliable way to transfer data from computer to computer and software to software is through an intermediate data-file structure known as a delimited text file. This is a plain-text file that can be opened by pretty much any software (free or commercial) that reads text files in any way. A plain-text file is really the simplest of file formats. But a delimited text file is a special case: It takes data that is in table format, and converts it into plain text, where rows from your data frame usually correspond to new lines, and column boundaries from within rows in the data frame are converted into specific characters, like commas, semicolons, or tabs. The top-most row often, but not always, contains the variable names (the *header*). An example of such a file can be seen in [the *jamovi* Quickstart Guide](https://www.jamoviguide.com/load-data-into-jamovi.html). 
+But the most convenient and reliable way to transfer data from computer to computer and software to software is through an intermediate data-file structure known as a delimited text file. This is a plain-text file that can be opened by pretty much any software (free or commercial) that reads text files in any way. A plain-text file is really the simplest of file formats. But a delimited text file is a special case: It takes data that is in table format, and converts it into plain text, where rows from your data frame usually correspond to new lines, and column boundaries from within rows in the data frame are converted into specific characters, like commas, semicolons, or tabs. The top-most row often, but not always, contains the variable names (the *header*). An example of such a file can be seen in [the jamovi Quickstart Guide](https://www.jamoviguide.com/load-data-into-jamovi.html). 
 
 We converted the data set from @lsj called `Clinical Trial` into both comma-delimited and tab-delimited files. When you open them up with a simple text editor like *Notepad* or *Text Edit*, you'll see something like Figure \@ref(fig:ClinicalTrialAsCsv) below. It is in raw, plain-text, comma-separated (`.csv`) format on the left, and in its tab-delimited format (`.txt` or `.tsv`) on the right.^[You can't see the tabs because tabs aren't normally meant to be seen by computer users, but rest assured: they're there.]
 
@@ -147,13 +149,13 @@ knitr::include_graphics(c("images/BasicDataPrep/ClinicalTrialAsCsv.png", "images
 
 *jamovi* opens delimited text files just as easily as proprietary data files. In *Excel*, there's generally a wizard that you have to get through to import delimited files. In contrast, *jamovi* imports them directly with no wizard. One downside to this faster process is that you encounter mistakes once in a while. This is because *jamovi* is "guessing" the appropriate file format. These mistakes are easy to correct in most cases.
 
-Just click $(\equiv)$ > `Open` > `This PC` > `Browse` and find the delimited file. *jamovi* will do its best to import the data. It pretty much always works unless there is something wrong with the data file itself. You can try this yourself by opening the data set `booksales`, located at the top of the data sets available from @lsj. Just go to $(\equiv)$ > `Open` > `Data library`, and look for `booksales` at the top. It's a comma-delimited text file. It opens up quite easily. However, you will need to go in and change the data types for a few variables. It seems to treat numbers as nominal data.
+Just click ($\equiv$) > `Open` > `This PC` > `Browse` and find the delimited file. *jamovi* will do its best to import the data. It pretty much always works unless there is something wrong with the data file itself. You can try this yourself by opening the data set `booksales`, located at the top of the data sets available from @lsj. Just go to ($\equiv$) > `Open` > `Data library`, and look for `booksales` at the top. It's a comma-delimited text file. It opens up quite easily. However, you will need to go in and change the data types for a few variables. It seems to treat numbers as nominal data.
 
-Beware however, that *jamovi* will sometimes import defective delimited files and assume that they're not defective. This results in a bad data set. You often need to check your visually. If you data set is large, then you can use descriptive statistics (covered in Chapter \@ref(Descriptive Stats)) to find evidence of this kind of problem. To illustrate this, we deliberately distorted a file containing reaction times, and then imported it through jamovi. In this case, we removed the commas from the very last line of data. The results can be seen below in Figure \@ref(fig:BadReactionTimeImport) below.
+Beware however, that *jamovi* will sometimes import defective delimited files and assume that they're not defective. This results in a bad data set. You often need to check your visually. If you data set is large, then you can use descriptive statistics (covered in Chapter \@ref(Descriptive Stats)) to find evidence of this kind of problem. To illustrate this, we deliberately distorted a file containing reaction times, and then imported it through *jamovi*. In this case, we removed the commas from the very last line of data. The results can be seen below in Figure \@ref(fig:BadReactionTimeImport) below.
 
 <br/>
 
-```{r BadReactionTimeImport, fig.cap="jamovi importing a bad comma-delimited file, where the final line of data had its commas removed.", echo=F, out.width="600px"}
+```{r BadReactionTimeImport, fig.cap="*jamovi* importing a bad comma-delimited file, where the final line of data had its commas removed.", echo=F, out.width="600px"}
 knitr::include_graphics("images/BasicDataPrep/BadReactionTimeImport.png")
 ```
 
@@ -272,15 +274,17 @@ What's going on is that the basic formula is *if-then-else*, but the *else* part
 <br/>
 
 ```{block2, type="rmdnote", echo=T}
+
 **NOTE**: You might be wondering why we need two equals signs (`==`) in the computed variable, and not just a single equals sign (`=`). Recall that *jamovi* is based on *R*. In *R*, two equals signs are used for evaluating particular values. In this case, it can be interpreted as "where it is equal to." In contrast, a single equals sign (`=`) is used for various other, common operations, including the creation of variables, the assignment of arguments to functions, etc.
 
-In addition, the exclamation mark (`!`) means **NOT** in R and jamovi. So `!=` means "where it is **not** equal to." Thus, the equivalent for our purposes would be `=ClassLevel != 'Freshman'` (i.e., "if the value is NOT 'freshman', then...").
+In addition, the exclamation mark (`!`) means **NOT** in R and *jamovi*. So `!=` means "where it is **not** equal to." Thus, the equivalent for our purposes would be `=ClassLevel != 'Freshman'` (i.e., "if the value is NOT 'freshman', then...").
 
 For numerical variables you can also use the symbols `<` for "less than", `>` for "greater than", `<=` for "less than or equal to", etc.
 
 Your main textbook [@lsj] covers this in Section 6.2.
 
 You might also have noticed the weird sequence of closing parentheses at the end of the formula. This is due to the fact that each `IF()` statement must have both opening and closing parentheses. The open throughout the formula, but only close at the end. They are actually embedded, like `If(IF(IF(IF)))`, similar to russian [Matryoshka dolls](https://en.wikipedia.org/wiki/Matryoshka_doll).
+
 ```
 
 <br/>
@@ -484,13 +488,13 @@ Just like *R*, unless you tell *jamovi* otherwise, it will analyze ***all*** the
 
 For instance, it is common to have a question at the end of a survey that asks the participant whether they are still comfortable with the researcher(s) using the data they provided for general analysis. The questions could be as simple as "Is it still okay to use your data for analysis? Remember, your data will be completely anonymized, and so in no way will it be traceable back to your identity." Some people are not comfortable with having their data analyzed, and so they answer, "No." Researchers are required to filter these observations out.
 
-It is easy enough to create such a data set, so we will do so using the technique learned above in Section \@ref(Randoming). We opened a new file in *jamovi* [$(\equiv)$ > `File` > `New`]. Under column `A`, we typed in a `1` in the first cell, and changed the variable type to `ID`, and renamed the variable `ID`. For variable `B`, we renamed it `Consent` (with variable type set to `Nominal` and `Text`). Then we typed in `Yes` in the first cell. Finally, we deleted variable `C`, and double-clicked on a blank variable and chose `NEW COMPUTED VARIABLE`. We renamed that to `rt`, and then applied the `NORM()` function to the first cell (see Section \@ref(Randoming) above). We arbitrarily set the mean to 615 ms, and the standard deviation to 112 [hence, `NORM(615,112)`].
+It is easy enough to create such a data set, so we will do so using the technique learned above in Section \@ref(Randoming). We opened a new file in *jamovi* [($\equiv$) > `File` > `New`]. Under column `A`, we typed in a `1` in the first cell, and changed the variable type to `ID`, and renamed the variable `ID`. For variable `B`, we renamed it `Consent` (with variable type set to `Nominal` and `Text`). Then we typed in `Yes` in the first cell. Finally, we deleted variable `C`, and double-clicked on a blank variable and chose `NEW COMPUTED VARIABLE`. We renamed that to `rt`, and then applied the `NORM()` function to the first cell (see Section \@ref(Randoming) above). We arbitrarily set the mean to 615 ms, and the standard deviation to 112 [hence, `NORM(615,112)`].
 
 We then typed in `20` in row 20 under `ID`. Under `Consent` we copied-and-pasted `Yes` from row 1 all the way down to row 18. But for the cells in rows 19 and 20, we typed `No`. This would mean that fake participants 19 and 20 did not consent to have their data used. 
 
 So then we needed to filter them out.
 
-This was easy to do. The filter function is located under the `Data` tab. Once there, we just clicked the icon labeled `Filters` (at the upper-right). The icon looks like a funnel, half full of liquid. There's a box there labeled `ROW FILTERS`. In the box under `Filter 1`, labeled $f_{x}$, we typed in the following (the first "=" sign is provided by jamovi):
+This was easy to do. The filter function is located under the `Data` tab. Once there, we just clicked the icon labeled `Filters` (at the upper-right). The icon looks like a funnel, half full of liquid. There's a box there labeled `ROW FILTERS`. In the box under `Filter 1`, labeled $f_{x}$, we typed in the following (the first "=" sign is provided by *jamovi*):
 
 <br/>
 
@@ -510,7 +514,7 @@ knitr::include_graphics("images/BasicDataPrep/FilterOnFakeNoConsents.png")
 
 <br/>
 
-In the figure (or your own *jamovi* file, if you are following along), note the green check marks $(\color{green}\checkmark)$ versus red *times* or $\color{red}\times$ in the new filter variable that appears on the left under the new variable called `Filter 1`. This means that any subsequent analysis of our variables would be restricted to the observations with green check marks, and any with a red $\color{red}\times$ will be excluded. That is, the analysis would only apply to people who had consented to have their data analyzed.^[If you click the "eye" symbol, it will hide any row with a $\color{red}\times$ in it. Click it back, however, before you proceed below, assuming you are following along.]
+In the figure (or your own *jamovi* file, if you are following along), note the green check marks ($\color{green}\checkmark$) versus red *times* or ($\color{red}\times$) in the new filter variable that appears on the left under the new variable called `Filter 1`. This means that any subsequent analysis of our variables would be restricted to the observations with green check marks, and any with a red ($\color{red}\times$) will be excluded. That is, the analysis would only apply to people who had consented to have their data analyzed.^[If you click the "eye" symbol, it will hide any row with a $\color{red}\times$ in it. Click it back, however, before you proceed below, assuming you are following along.]^[Recall that the output below (and further down) was generated from the *jmv* package in *R*, and will therefore be rounded to more decimal places than the native output in *jamovi*.]
 
 <br/>
 
@@ -674,9 +678,9 @@ knitr::kable(ClinTrial, caption="A clinical-trial data set.") %>%
 
 <br/>
 
-Your task is to enter this data manually into a new spreadsheet in jamovi. You'll need to assign levels to the numbers you use for the two nominal variables. Do not enter them as text.
+Your task is to enter this data manually into a new spreadsheet in *jamovi*. You'll need to assign levels to the numbers you use for the two nominal variables. Do not enter them as text.
 
-First, open a new spreadsheet in *jamovi* by clicking $(\equiv)$ > `New`. Then save it with a reasonable name, like `P301.Exercise_`\@ref(PracManualing)`.omv`.
+First, open a new spreadsheet in *jamovi* by clicking ($\equiv$) > `New`. Then save it with a reasonable name, like `P301.Exercise_`\@ref(PracManualing)`.omv`.
 
 <br/>
 
@@ -742,7 +746,7 @@ Fourth, prepare the variable `therapy`. This is another nominal variable. There 
 
 #### The `mood.gain` variable {#PracticeManuallingMoodGain}
 
-Fifth, you need to enter the data for `mood.gain`. When you click this fourth, blank column, a little menu with three options will appear (jamovi only provides you with 3 default variables). Choose `NEW DATA VARIABLE`. Rename `D` (or whatever letter you get there) with `mood.gain`. Then click the `Continuous` button, because this variable is going to be on an interval scale. Under the `Data type` pull-down menu, switch the variable from `Integer` to `Decimal`. At this point, you can just enter the data. Do so carefully, however, as the data are different for each row. And double-check your work. When you're finished, you should see something like what's depicted in Figure \@ref(fig:PracEnterMoodGain) below.
+Fifth, you need to enter the data for `mood.gain`. When you click this fourth, blank column, a little menu with three options will appear (*jamovi* only provides you with 3 default variables). Choose `NEW DATA VARIABLE`. Rename `D` (or whatever letter you get there) with `mood.gain`. Then click the `Continuous` button, because this variable is going to be on an interval scale. Under the `Data type` pull-down menu, switch the variable from `Integer` to `Decimal`. At this point, you can just enter the data. Do so carefully, however, as the data are different for each row. And double-check your work. When you're finished, you should see something like what's depicted in Figure \@ref(fig:PracEnterMoodGain) below.
 
 <br/>
 
@@ -768,7 +772,7 @@ Here is some practice on Exporting, *Practice Exercise* \@ref(BasicDataOperation
 
 #### Spreadsheet data {#PracEnterGoogleSheetData}
 
-A great many researchers end up with their data stored somehow in a spreadsheet. This is not ideal, but it is very common. However, spreadsheets are not very powerful at statistics. For this reason, it's usually best to export whatever data is in the spreadsheet into a delimited text file for subsequent import into statistics software like *jamovi*.^[*jamovi* itself will also export data into different formats (as long as it has some data). To do this go to $(\equiv)$ > `Export`. There are both proprietary (e.g., *SPSS*' `.sav` format) and delimited text formats (e.g., `.csv`). We won't be doing this in this class, but it may be useful when sharing your data with others who don't use *jamovi*.]
+A great many researchers end up with their data stored somehow in a spreadsheet. This is not ideal, but it is very common. However, spreadsheets are not very powerful at statistics. For this reason, it's usually best to export whatever data is in the spreadsheet into a delimited text file for subsequent import into statistics software like *jamovi*.^[*jamovi* itself will also export data into different formats (as long as it has some data). To do this go to ($\equiv$) > `Export`. There are both proprietary (e.g., *SPSS*' `.sav` format) and delimited text formats (e.g., `.csv`). We won't be doing this in this class, but it may be useful when sharing your data with others who don't use *jamovi*.]
 
 So to mimic this all-too-common experience, you need to open up a spreadsheet in [Google Sheets](https://www.google.com/docs/about/). The link takes you to *Google Docs* which includes *Google Sheets*. Note, you will need to create a Google account if you do not have one already. If you are a student at Texas A&M, you already have this, and we require you to use your university Google account. You can find it [here](https://google.tamu.edu/), where you log in to **Google Drive**.
 
@@ -827,7 +831,7 @@ You could also bypass all this exporting from a spreadsheet program by just ente
 3. Paste the clipboard material in (you could also try typing it in directly)  
 4. Go to `File` > `Save`, give the file a name, and a `.csv` extension, and then click `Save`  
 5. Open up *jamovi*  
-6. Go to $(\equiv)$ > `Import` and find the file you just created  
+6. Go to ($\equiv$) > `Import` and find the file you just created  
 
 <br/>
 
@@ -839,11 +843,11 @@ This should work as well, though you can see why you'd have to be crazy to do it
 
 Here is some practice on Importing, Exercise \@ref(BasicDataOperations)C: importing.
 
-Open jamovi. Go to $(\equiv)$ > `Import`. Once there, optionally select `CSV` at the bottom where it gives you a drop-down menu called `Data files` (this will narrow the file search). Click the `Browse` button at the upper right, and then search for your `.csv` file. You should see something like what's in Figure \@ref(fig:JamoviImportStart).
+Open *jamovi*. Go to ($\equiv$) > `Import`. Once there, optionally select `CSV` at the bottom where it gives you a drop-down menu called `Data files` (this will narrow the file search). Click the `Browse` button at the upper right, and then search for your `.csv` file. You should see something like what's in Figure \@ref(fig:JamoviImportStart).
 
 <br/>
 
-```{r JamoviImportStart, fig.cap="Starting to import a delimited file in jamovi.", echo=F, out.width="600px"}
+```{r JamoviImportStart, fig.cap="Starting to import a delimited file in *jamovi*.", echo=F, out.width="600px"}
 knitr::include_graphics("images/BasicDataPrep/JamoviImportStart.png")
 ```
 
@@ -853,7 +857,7 @@ Double-click it when you see it. You should see something like you see in Figure
 
 <br/>
 
-```{r JamoviImportEnd, fig.cap="jamovi spreadsheet after importing delimited file.", echo=F, out.width="600px"}
+```{r JamoviImportEnd, fig.cap="*jamovi* spreadsheet after importing delimited file.", echo=F, out.width="600px"}
 knitr::include_graphics("images/BasicDataPrep/JamoviImportEnd.png")
 ```
 
@@ -863,7 +867,7 @@ Notice that *jamovi* just added the variables to the right of its default variab
 
 <br/>
 
-```{r JamoviImportDeleteVars, fig.cap="Deleting variables in jamovi.", echo=F, out.width="600px"}
+```{r JamoviImportDeleteVars, fig.cap="Deleting variables in *jamovi*.", echo=F, out.width="600px"}
 knitr::include_graphics("images/BasicDataPrep/JamoviImportDeleteVars.png")
 ```
 

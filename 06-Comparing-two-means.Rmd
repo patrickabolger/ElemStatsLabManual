@@ -23,29 +23,29 @@ Carrying out independent-samples *t*-tests is covered in your main textbook [@ls
 
 In this test, we are interested in whether two groups comprising independent observations differ with each on a single, continuous outcome variable. The standard equation for this is called *Student's _t_*.^[*Student's _t_* **would** have been called *Gossett's _t_*, had it not been for the strange policies of Gossett's employer, Guinness Brewing in Ireland. For more on this, see @lsj, Section 11.2.1., or [here](https://en.wikipedia.org/wiki/William_Sealy_Gosset)]
 
-Of course, you do not need to calculate *Student's _t_*, or any other statistical equation in jamovi; the software does it for you... which is the *sine qua non* of statistical software in general. So let's get to that.
+Of course, you do not need to calculate *Student's _t_*, or any other statistical equation in *jamovi*; the software does it for you... which is the *sine qua non* of statistical software in general. So let's get to that.
 
 <br/>
 
 ### Basic: Dr. Harpo's statistics class {#IndSamplesDrHarpo}
 
-For a basic introduction to how to do a *t*-test in jamovi, we replicated the the example from the textbook in Section 11.3. It's the *Harpo* data again, which you already worked on in this lab manual in Section \@ref(Boxplots) under visualizing data with boxplots. 
+For a basic introduction to how to do a *t*-test in *jamovi*, we replicated the the example from the textbook in Section 11.3. It's the `Harpo` data again, which you already worked on in this lab manual in Section \@ref(Boxplots) under visualizing data with boxplots. 
 
 <br/>
 
 #### Obtaining the data {#IndSamplesDrHarpoObtaining}
 
-To follow along yourself, you can open that file (if you saved it), or the one in the module from @lsj: $(\equiv)$ > *File* > *Data Library* > *learning statistics with jamovi* > *Harpo.omv*. Make sure to modify *grade* to be continuous (if necessary) and *tutor* to have two levels: *Anastasia* and *Bernadette* (if necessary).
+To follow along yourself, you can open that file (if you saved it), or the one in the module from @lsj: ($\equiv$) > `File` > `Data Library` > `learning statistics with jamovi` > `Harpo.omv`. Make sure to modify `grade` to be continuous (if necessary) and `tutor` to have two levels: `Anastasia` and `Bernadette` (if necessary).
 
 <br/>
 
 #### Implementing the procedure {#IndSamplesDrHarpoImplementing}
 
-We clicked the *Analyses* tab and selected *T-Tests*. We slid *grade* into the *Dependent Variables* box, and *tutor* into the *Grouping Variable* box. Under *Tests* we checked *Student's* (for the traditional *t*-test), as well as the "alternative" test, *Welch's*, which actually turns out to be better in most cases (and less confusing!). The research hypothesis [see Chapter 9 of @lsj] is non-directional, so we left *Group 1 $\ne$ Group 2* (the default) checked under *Hypothesis*. As for *Additional Statistics*, we checked *Effect size*, *Descriptives*, and *Descriptives plots*. 
+We clicked the `Analyses` tab and selected `T-Tests`. We slid `grade` into the `Dependent Variables` box, and `tutor` into the `Grouping Variable` box. Under `Tests` we checked `Student's` (for the traditional *t*-test), as well as the "alternative" test, `Welch's`, which actually turns out to be better in most cases (and less confusing!). The research hypothesis [see Chapter 9 of @lsj] is non-directional, so we left `Group 1` $\ne$ `Group 2` (the default) checked under `Hypothesis`. As for `Additional Statistics`, we checked `Effect size`, `Descriptives`, and `Descriptives plots`. 
 
-The top two options under *Assumption Checks*, can really be addressed before you get to the inferential-test stage, so we chose not to do them here. However, the *Equality of variances* is an interesting case in jamovi. jamovi is "smart",^[Actually, its programmers are smart.] so ***IF*** you check *Student's* without checking *Welch's*, then jamovi will add a footnote about the test for equality of variances (*Levene's test*). This is because using the *Student's t-test* is only appropriate if you have equality of variances across the two conditions. To pass Levene's test, your *p*-value must be ***greater*** than .05 (not less, like in the regular inferential tests). This is because the null hypothesis for equality of variances is that the variances are equal. So you **want** to *fail to reject* that particular null hypothesis. This is counter-intuitive once you have a handle on null-hypothesis significance testing, but you'll get used to it. Many assumption checks work the opposite way from the inferential tests.
+The top two options under `Assumption Checks`, can really be addressed before you get to the inferential-test stage, so we chose not to do them here. However, the `Equality of variances` option is an interesting case in *jamovi*. *jamovi* is "smart",^[Actually, its programmers are smart.] so ***IF*** you check `Student's` without checking `Welch's`, then *jamovi* will add a footnote about the test for equality of variances (`Levene's test`). This is because using the *Student's t-test* is only appropriate if you have equality of variances across the two conditions. To pass Levene's test, your *p*-value must be ***greater*** than .05 (not less, like in the regular inferential tests). This is because the null hypothesis for equality of variances is that the variances are equal. So you **want** to *fail to reject* that particular null hypothesis. This is counter-intuitive once you have a handle on null-hypothesis significance testing, but you'll get used to it. Many assumption checks work the opposite way from the inferential tests.
 
-But you might also notice (if you play around a bit) that if you **also** check *Welch's*, then Levene's test disappears from the footnote in the output. You have to ask for it specifically (at the lower right). This is because the (smart) programmers at jamovi knew that if you also selected *Welch's* that you really didn't need the test for equality of variances in the first place since the test is irrelevant for *Welch's _t_-test* (which internally corrects for inequality of variances). But you can still ask for it by checking the box for it at the lower right. We did that here. We went one step further and un-checked *Student's* just to simplify the output.
+But you might also notice (if you play around a bit) that if you **also** check `Welch's`, then Levene's test disappears from the footnote in the output. You have to ask for it specifically (at the lower right). This is because the (smart) programmers at *jamovi* knew that if you also selected `Welch's` that you really didn't need the test for equality of variances in the first place since the test is irrelevant for *Welch's _t_-test* (which internally corrects for inequality of variances). But you can still ask for it by checking the box for it at the lower right. We did that here. We went one step further and un-checked `Student's` just to simplify the output.
 
 Thus, the options shown below in Figure \@ref(fig:TTestHarpoParameters) should be more than enough to make educated decisions about the *t*-test.
 
@@ -57,7 +57,7 @@ knitr::include_graphics("images/TwoMeans/TTestHarpoParameters.png")
 
 <br/>
 
-If you're following along, you should see something like the following as output:
+If you're following along, you should see something like the following as output:^[Recall that the output below (and further down) was generated from the *jmv* package in *R*, and will therefore be rounded to more decimal places than the native output in *jamovi*.]
 
 <br/>
 
@@ -105,13 +105,13 @@ rm(HarpoData)
 
 ### Advanced 1: The conspiracy data {#IndSamplesConspiracyData}
 
-We're going to use another online *open data* set. This one is more involved, but fun. It is called the **Generic Conspiracist Beliefs Scale** [@BrothertonFrenchPickering2013]. If you like, you can take the survey yourself [here](https://openpsychometrics.org/tests/GCBS/). The online version is strictly for fun.
+We're going to use another online *open data* set. This one is more involved, but fun. It is called the `Generic Conspiracist Beliefs Scale` [@BrothertonFrenchPickering2013]. If you like, you can take the survey yourself [here](https://openpsychometrics.org/tests/GCBS/). The online version is strictly for fun.
 
 <br/>
 
 #### Obtaining the data {#IndSamplesConspiracyObtainingData}
 
-This is an online survey designed to tap into the belief in generic conspiracy theories (there are 15 generic conspiracies covered, which were distilled down, mathematically,^[using something called *factor analysis*, which is covered in @lsj Chapter 15, but which we don't cover in this class] from 75). You can see these questions [here](https://www.frontiersin.org/files/Articles/46573/fpsyg-04-00279-HTML/image_m/fpsyg-04-00279-at001.jpg), or in the Appendix of @BrothertonFrenchPickering2013. Responses to these question were on a Likert Scale, ranging from 1 (*Definitely not true*) to 5 (*Definitely true*).
+This is an online survey designed to tap into the belief in generic conspiracy theories (there are 15 generic conspiracies covered, which were distilled down, mathematically,^[using something called *factor analysis*, which is covered in @lsj Chapter 15, but which we don't cover in this class] from 75). You can see these questions [here](https://www.frontiersin.org/files/Articles/46573/fpsyg-04-00279-HTML/image_m/fpsyg-04-00279-at001.jpg), or in the Appendix of @BrothertonFrenchPickering2013. Responses to these question were on a Likert Scale, ranging from 1 (`Definitely not true`) to 5 (`Definitely true`).
 
 <br/>
 
@@ -121,29 +121,29 @@ This is an online survey designed to tap into the belief in generic conspiracy t
 
 <br/>
 
-The data (*data.csv*) and codebook (*codebook.txt*) can be found online [here](http://openpsychometrics.org/_rawdata/GCBS.zip) as a .zip file, or, for Texas A&M students in PSYC 301, on *Canvas* under *Lab: Lab manual data sets* > *TwoMeans_GCBS* (a folder containing the two files). Feel free to follow along with how we analyzed this data. 
+The data (`data.csv`) and codebook (`codebook.txt`) can be found online [here](http://openpsychometrics.org/_rawdata/GCBS.zip) as a .zip file, or, for Texas A&M students in PSYC 301, on *Canvas* under `Lab: Lab manual data sets` > `TwoMeans_GCBS` (a folder containing the two files). Feel free to follow along with how we analyzed this data. 
 
-In this case, as we saw before, the researchers indicated non-responses with a 0. Zero, then, is the number that represents missing values. So before we imported the data, we put 0 (i.e., zero, with no quotes) into the *Default missings* box under preferences $(\vdots)$.
+In this case, as we saw before, the researchers indicated non-responses with a 0. Zero, then, is the number that represents missing values. So before we imported the data, we put 0 (i.e., zero, with no quotes) into the `Default missings` box under preferences ($\vdots$).
 
 <br/>
 
 #### Adjusting the data {#IndSamplesConspiracyAdjustinggData}
 
-Once the data was imported (as we did back in Sections \@ref(Importing) and \@ref(PracticeImporting)), we changed some variable names with some help from the codebook. We also adjusted the variable types. We chose variable ***Q3*** (*Secret organizations communicate with extraterrestrials, but keep this fact from the public*) as our outcome variable (We called it *Comm.Wth.Exts* just to save space in the jamovi output). The changes are depicted below in \@ref(fig:TTestConspiracyImportExtraters).  
+Once the data was imported (as we did back in Sections \@ref(Importing) and \@ref(PracticeImporting)), we changed some variable names with some help from the codebook. We also adjusted the variable types. We chose variable `Q3` (*Secret organizations communicate with extraterrestrials, but keep this fact from the public*) as our outcome variable (We called it `Comm.Wth.Exts` just to save space in the *jamovi* output). The changes are depicted below in \@ref(fig:TTestConspiracyImportExtraters).  
 
 <br/>
 
-```{r TTestConspiracyImportExtraters, fig.cap="Changes made in jamovi to the variable *Q3* from @BrothertonFrenchPickering2013.", echo=F, out.width="600px"}
+```{r TTestConspiracyImportExtraters, fig.cap="Changes made in *jamovi* to the variable *Q3* from @BrothertonFrenchPickering2013.", echo=F, out.width="600px"}
 knitr::include_graphics("images/TwoMeans/TTestConspiracyImportExtraterrs.png")
 ```
 
 <br/>
 
-We chose ***voted*** (*Have you voted in a national election in the past year?*) as our two-level predictor variable. We changed the name to *Voted.In.Past.Year*. The change we made to it is shown in Figure \@ref(fig:TTestConspiracyImportVoting) below.
+We chose `voted` (*Have you voted in a national election in the past year?*) as our two-level predictor variable. We changed the name to *Voted.In.Past.Year*. The change we made to it is shown in Figure \@ref(fig:TTestConspiracyImportVoting) below.
 
 <br/>
 
-```{r TTestConspiracyImportVoting, fig.cap="Changes made in jamovi to the variable *voted* from @BrothertonFrenchPickering2013.", echo=F, out.width="600px"}
+```{r TTestConspiracyImportVoting, fig.cap="Changes made in *jamovi* to the variable *voted* from @BrothertonFrenchPickering2013.", echo=F, out.width="600px"}
 knitr::include_graphics("images/TwoMeans/TTestConspiracyImportVoting.png")
 ```
 
@@ -178,7 +178,7 @@ GCBSdata <- GCBSdata.raw %>%
 rm(GCBSdata.raw)
 ```
 
-The output below is what you should see in jamovi if you had only checked *Student's _t_-test*. Notice the footnote telling you that you can't really use Student's *t*-test. We also explicitly included the more detailed output for Levene's test below the *t*-test output. There you can see that the failure of this test is a pretty spectacular failure with an *F* value of 35.9 (trust us, this is a large *F* value). We'll get to what this all means when we analyze the final output.
+The output below is what you should see in *jamovi* if you had only checked *Student's _t_-test*. Notice the footnote telling you that you can't really use Student's *t*-test. We also explicitly included the more detailed output for Levene's test below the *t*-test output. There you can see that the failure of this test is a pretty spectacular failure with an *F* value of 35.9 (trust us, this is a large *F* value). We'll get to what this all means when we analyze the final output.
 
 <br/>
 
@@ -296,7 +296,7 @@ Briefly, to deal with this particular problem, one could carry out chi-square an
 GCBSdata$Count.Comm.Wth.Exts <- as.factor(ifelse(GCBSdata$Comm.Wth.Exts==1,"Totally Disagree","Do NOT Totally Disagree"))
 ```
 
-We created a new two-level factor from the original Likert item. This was done in jamovi through the *Data* tab. We just clicked *Compute* from there. This automatically inserted a new column, but without any values. We gave the variable a new name (*Count.Comm.Wth.Exts*), and inserted the following IF-THEN-ELSE statement into the function box:
+We created a new two-level factor from the original Likert item. This was done in *jamovi* through the *Data* tab. We just clicked *Compute* from there. This automatically inserted a new column, but without any values. We gave the variable a new name (*Count.Comm.Wth.Exts*), and inserted the following IF-THEN-ELSE statement into the function box:
 
 > "IF(Comm.Wth.Exts==1,"Totally Disagree","Do NOT Totally Disagree")"
 
@@ -306,7 +306,7 @@ See Figure \@ref(fig:TTestConspiracyComputeNewCount) below.
 
 <br/>
 
-```{r TTestConspiracyComputeNewCount, fig.cap="Computing a new, 2-level nominal variable based on an old continuous variable using an IF-THEN-ELSE function in jamovi.", echo=F, out.width="600px"}
+```{r TTestConspiracyComputeNewCount, fig.cap="Computing a new, 2-level nominal variable based on an old continuous variable using an IF-THEN-ELSE function in *jamovi*.", echo=F, out.width="600px"}
 knitr::include_graphics("images/TwoMeans/TTestConspiracyComputeNewCount.png")
 ```
 
@@ -374,18 +374,18 @@ To examine this possibility, the authors randomly assigned 39 professional recru
 
 #### Your tasks {#IndSamplesSpokeWritTask}
 
-1. Start jamovi.
-2. Import the data file in *Canvas* called *TwoMeans_SpokeWrit.csv*. 
+1. Start *jamovi*.
+2. Import the data file in *Canvas* called `TwoMeans_SpokeWrit.csv`. 
 
 <br/>
 
 ```{block2, type="rmcaution", echo=T}
-**CAUTION**: When you import this .csv file, you will notice that there is no codebook for this data set. However, it is pretty clear that the missing values are blanks. Therefore, in jamovi under $(\vdots)$ > *Import: Default missings* you should type in "", as displayed below in Figure \@ref(fig:PracticeInfantMusicDefaultMissings).
+**CAUTION**: When you import this .csv file, you will notice that there is no codebook for this data set. However, it is pretty clear that the missing values are blanks. Therefore, in *jamovi* under ($\vdots$) > `Import: Default missings` you should type in "", as displayed below in Figure \@ref(fig:PracticeInfantMusicDefaultMissings).
 ```
 
 <br/>
 
-```{r PracticeInfantMusicDefaultMissings, fig.cap='Setting *Default missings* to blanks ("") in jamovi.', echo=F, out.width="300px"}
+```{r PracticeInfantMusicDefaultMissings, fig.cap='Setting *Default missings* to blanks ("") in *jamovi*.', echo=F, out.width="300px"}
 knitr::include_graphics("images/TwoMeans/PracticeInfantMusicDefaultMissings.png")
 ```
 
@@ -393,9 +393,9 @@ knitr::include_graphics("images/TwoMeans/PracticeInfantMusicDefaultMissings.png"
 
 3. Explore the data file. Note, you will not analyze all of these variables. Try to find the variables that are relevant to the study description above. Modify them if necessary.  
 4. Save it as .omv file with the following name: "SpokeWritExercise_YOURLASTNAME_YOUR FIRSTNAME.omv" (where the elements in uppercase are replaced with your last and first name, respectively).  
-5. You first want compare participants in the audio condition to participants in the ***transcript*** condition on the ***Intellect_Rating*** variable. Which type of analysis is appropriate, given the design described above?  
-6. Next compare participants in the ***audio*** condition to participants in the ***transcript*** condition on the ***Impression_Rating*** variable.  
-7. Finally, compare participants in the ***audio*** condition to participants in the ***transcript*** condition on the ***Hire_Rating*** variable.  
+5. You first want compare participants in the audio condition to participants in the `transcript` condition on the `Intellect_Rating` variable. Which type of analysis is appropriate, given the design described above?  
+6. Next compare participants in the `audio` condition to participants in the `transcript` condition on the `Impression_Rating` variable.  
+7. Finally, compare participants in the `audio` condition to participants in the `transcript` condition on the `Hire_Rating` variable.  
 8. Prepare an APA-style results paragraph describing the results of the analyses performed above.  
 
 <br/>
@@ -404,13 +404,13 @@ knitr::include_graphics("images/TwoMeans/PracticeInfantMusicDefaultMissings.png"
 
 Paired samples *t*-tests are used when you have a single outcome variable, but the two groups that you are splitting the outcome variable by consist of the same people (or sometimes, *different* people who are highly matched on key variables). The key here is that the *concept* that splits the two means must result in correlated values, meaning that the value for one of the "levels" gives you a good idea of what the value for the other "level" is.
 
-You might be asking yourself why we used the term *concept* instead of *variable* (after all, you split your outcome variable by another two-level predictor in the case of the independent samples *t*-test; don't you do the same thing here?). You need not worry very much; we're actually just highlighting something about the data set that is typically used for this kind of analysis. In a traditional paired samples *t*-test, the two levels of the predictor variable are represented as two separate columns.^[This is also true of the big sister to the paired samples *t*-test: the repeated measures ANOVA, which we won't get in to here, but can be found in the main textbook [@lsj], section 13.8] So there technically is no variable in the data set, per se, that splits the variable into its two levels. You have to understand that your data set has that structure. When you run the analysis in jamovi, you will need to select two different columns corresponding to those two levels.^[The more modern way to do this kind of analysis works more like the independent samples *t*-test with a *Split by* variable, but this approach, called *multilevel modeling* or *mixed-effects modeling* is well beyond the scope of this class. However, for what it's worth, it is mentioned in your main textbook [@lsj], in section 17.1.2, under the bullet point labeled *Mixed Models* (apologies or the multiple names for identical concepts; it's one of the curses of statistics).] You will see this shortly.
+You might be asking yourself why we used the term *concept* instead of *variable* (after all, you split your outcome variable by another two-level predictor in the case of the independent samples *t*-test; don't you do the same thing here?). You need not worry very much; we're actually just highlighting something about the data set that is typically used for this kind of analysis. In a traditional paired samples *t*-test, the two levels of the predictor variable are represented as two separate columns.^[This is also true of the big sister to the paired samples *t*-test: the repeated measures ANOVA, which we won't get in to here, but can be found in the main textbook [@lsj], section 13.8] So there technically is no variable in the data set, per se, that splits the variable into its two levels. You have to understand that your data set has that structure. When you run the analysis in *jamovi*, you will need to select two different columns corresponding to those two levels.^[The more modern way to do this kind of analysis works more like the independent samples *t*-test with a *Split by* variable, but this approach, called *multilevel modeling* or *mixed-effects modeling* is well beyond the scope of this class. However, for what it's worth, it is mentioned in your main textbook [@lsj], in section 17.1.2, under the bullet point labeled *Mixed Models* (apologies or the multiple names for identical concepts; it's one of the curses of statistics).] You will see this shortly.
 
 <br/>
 
 ### Basic: The *Chico* data {#PairedSamplesChicoBasicData}
 
-For the basic paired-samples *t*-test we are going to analyze the sample data provided by @lsj in the data set *Chico.omv*. To find this data set, simply go to $(\equiv)$ > *File* > *Open* > *Data Library* > *Chico*. The data should look like the table below.
+For the basic paired-samples *t*-test we are going to analyze the sample data provided by @lsj in the data set *Chico.omv*. To find this data set, simply go to ($\equiv$) > *File* > *Open* > *Data Library* > *Chico*. The data should look like the table below.
 
 <br/>
 
@@ -497,7 +497,7 @@ For the first advanced, paired *t*-test we are just going to add a small twist. 
 
 #### "Replicating" the data {#PairedSamplesChicoAdvancedReplicating}
 
-To start, for the purpose of illustration,^[This is actually a very useful procedure in the world of data analysis, but it only serves as an illustration here.] we will replicate the original means and standard deviations of the *Chico.omv* data set with a different set of data points. Begin by opening a new file in jamovi by clicking $(\equiv)$ > *New*. 
+To start, for the purpose of illustration,^[This is actually a very useful procedure in the world of data analysis, but it only serves as an illustration here.] we will replicate the original means and standard deviations of the *Chico.omv* data set with a different set of data points. Begin by opening a new file in *jamovi* by clicking ($\equiv$) > *New*. 
 
 Select the default variables (*A* through *C*) and delete them using *Delete* under the *Data* tab.
 
@@ -521,7 +521,7 @@ knitr::include_graphics("images/TwoMeans/TTestRandomlyChicoStartGradeVar.png")
 
 <br/>
 
-Now, go back to the spreadsheet and start entering values into the *ID* cells. Start with the top left, and enter "1" (without quotation marks). You'll see the two computed variables automatically fill up with "random" numbers. Do this for 20 rows, with a different number for each row of *ID* (the easiest is to use the numbers 1-20, of course, and jamovi will not think that they're numbers since you set it as an ID variable type). In Figure \@ref(fig:TTestRandomlyChicoFill) below, you can see that it's possible to skip rows on the *ID* variable. The ID variable is not that important for our purposes anyway.
+Now, go back to the spreadsheet and start entering values into the *ID* cells. Start with the top left, and enter "1" (without quotation marks). You'll see the two computed variables automatically fill up with "random" numbers. Do this for 20 rows, with a different number for each row of *ID* (the easiest is to use the numbers 1-20, of course, and *jamovi* will not think that they're numbers since you set it as an ID variable type). In Figure \@ref(fig:TTestRandomlyChicoFill) below, you can see that it's possible to skip rows on the *ID* variable. The ID variable is not that important for our purposes anyway.
 
 <br/>
 
@@ -563,7 +563,7 @@ jmv::descriptives(
 
 <br/>
 
-You might be shocked to notice that the means and standard deviations are not exactly the same as they are in the original *Chico.omv* file. This is because the ***=NORM()*** function does not replicate the data set *per se*. Rather, it draws values at random from a theoretical, normal distribution defined by your parameters (e.g., a mean of 57 and a standard deviation of 6.62), and those theoretical distributions consist of an infinite number of observations to draw from. It also follows that the more observations you add here, the closer you will get to the means and standard deviations of the original settings.
+You might be shocked to notice that the means and standard deviations are not exactly the same as they are in the original *Chico.omv* file. This is because the `=NORM()` function does not replicate the data set *per se*. Rather, it draws values at random from a theoretical, normal distribution defined by your parameters (e.g., a mean of 57 and a standard deviation of 6.62), and those theoretical distributions consist of an infinite number of observations to draw from. It also follows that the more observations you add here, the closer you will get to the means and standard deviations of the original settings.
 
 We are now ready to analyze the data using a paired-samples *t*-test. We will show you the results of with our randomly generated data, but yours will necessarily be different.
 
@@ -624,17 +624,17 @@ knitr::kable(RandomlyChico, caption="The randomly generated Chico.omv data set f
 
 <br/>
 
-It is clear from this second table that these scores are **uncorrelated** with each other. Some values are higher during the 2nd test, whereas others a lower. The underlying pattern is random, except that the values for *time 2* are slightly higher, **on average** than the values for *time 1*. That makes sense because jamovi calculated random values for each variable, without any kind of underlying correlation between any two values for one student (i.e., some did better on the 2nd test; some did worse, in about equal). Apologies for leading you up the garden path. But we needed to illustrate that two randomly generated variables are not necessarily correlated (and probably won't be).
+It is clear from this second table that these scores are **uncorrelated** with each other. Some values are higher during the 2nd test, whereas others a lower. The underlying pattern is random, except that the values for *time 2* are slightly higher, **on average** than the values for *time 1*. That makes sense because *jamovi* calculated random values for each variable, without any kind of underlying correlation between any two values for one student (i.e., some did better on the 2nd test; some did worse, in about equal). Apologies for leading you up the garden path. But we needed to illustrate that two randomly generated variables are not necessarily correlated (and probably won't be).
 
 It turns out that there was a way to get *time 2* correlated with *time 1*, with the former being slightly greater than the latter. See below.
 
 In the *NEW VARIABLE* formula for *time 2*, we should **not** have entered "*=NORM(58.4,6.41)*" for *grade_test2* (see Figure \@ref(fig:TTestRandomlyChicoStartGradeVar)) but rather "*=grade_test1 + NORM(1.4, 0.97)*" (which correspond the actual mean and standard deviation of the difference scores in the original data set). This new formula can be read as follows:
 
->"take *grade_test1* and ***add*** to it a value randomly drawn from a distribution (of infinite values) with a mean of 1.4, and a standard deviation of 0.97."
+>"take `grade_test1` and ***add*** to it a value randomly drawn from a distribution (of infinite values) with a mean of 1.4, and a standard deviation of 0.97."
 
 <br/>
 
-This will generate correlated values within observations. You can see this in the table below if you look at the *DIFF* scores.
+This will generate correlated values within observations. You can see this in the table below if you look at the `DIFF` scores.
 
 <br/>
 
@@ -715,7 +715,7 @@ Following this 1-2 week exposure period, the parents and their infant returned t
 
 #### Getting the data {#PairedSamplesSingingParentsImportingGetting}
 
-This *open data* set is located on *Canvas* at *Lab: Lab manual data sets* > *TwoMeans_InfantMusic.csv* (or as an .omv file). Again, the missing value for this .csv file is a blank. So set the *Default missings* to two side-by-side quotation marks: ""
+This *open data* set is located on *Canvas* at `Lab: Lab manual data sets` > `TwoMeans_InfantMusic.csv` (or as an .omv file). Again, the missing value for this .csv file is a blank. So set the `Default missings` to two side-by-side quotation marks: ""
 
 <br/>
 
@@ -723,15 +723,15 @@ This *open data* set is located on *Canvas* at *Lab: Lab manual data sets* > *Tw
 
 The first thing you will need to do is filter the experiments down to only those for Experiment 1.
 
-The data are deliberately set up such that you can use a *filter* to restrict the data. There are three variables in the data set named, respectively, *exp1*, *exp2*, and *exp3*. You only need the first for this. It is coded "1" if that observation (row) corresponds to Experiment 1, and "0" if it corresponds to Experiments 2 or 3.
+The data are deliberately set up such that you can use a *filter* to restrict the data. There are three variables in the data set named, respectively, `exp1`, `exp2`, and `exp3`. You only need the first for this. It is coded "1" if that observation (row) corresponds to Experiment 1, and "0" if it corresponds to Experiments 2 or 3.
 
-You do this by going to the *Data* tab in jamovi, and finding the *Filters* icon. Click it and a window will pop up. The filter will be named *Filter 1*, and a new column will appear on the left of the spreadsheet. The filter formula goes into the box to the left of the formula symbol $(f_{x})$. In this box, you should type in the following: ***exp1==1***.
+You do this by going to the `Data` tab in *jamovi*, and finding the `Filters` icon. Click it and a window will pop up. The filter will be named `Filter 1`, and a new column will appear on the left of the spreadsheet. The filter formula goes into the box to the left of the formula symbol $(f_{x})$. In this box, you should type in the following: `exp1==1`.
 
 The results of this process should look similar to Figure \@ref(fig:PracticeInfantMusicFilter1) below.
 
 <br/>
 
-```{r PracticeInfantMusicFilter1, fig.cap='Creating a filter in jamovi.', echo=F, out.width="600px"}
+```{r PracticeInfantMusicFilter1, fig.cap='Creating a filter in *jamovi*.', echo=F, out.width="600px"}
 knitr::include_graphics("images/TwoMeans/PracticeInfantMusicFilter1.png")
 ```
 
@@ -740,7 +740,7 @@ knitr::include_graphics("images/TwoMeans/PracticeInfantMusicFilter1.png")
 ### Your tasks {#PairedSamplesSingingParentsStudentTask}
 
 1. Explore the data file. Note, you will not analyze all of these variables. Try to find the variables that are relevant to the study description above (Section \@ref(ExtraPracticingPairedSamplesStudyDescription).  
-2. Next, you want to demonstrate that infants attended equally to the two singers during the familiarization trials. Run a paired samples *t*-test comparing the ***Gaze to Familiar Song*** vs. the ***Gaze to Unfamiliar Song***.  
+2. Next, you want to demonstrate that infants attended equally to the two singers during the familiarization trials. Run a paired samples *t*-test comparing the `Gaze to Familiar Song` vs. the `Gaze to Unfamiliar Song`.  
 3. Finally, compare looking behavior at baseline to looking behavior at test, using a paired-samples *t*-test.  
 4. Prepare an APA-style results section to describe each of the analyses conducted above.
 
@@ -758,7 +758,7 @@ For a just-the-basics online tutorial on the independent samples *t*-test, go to
 
 [datalab.cc's tutorial](https://datalab.cc/tools/jamovi) has a more extensive video tutorial. Choose videos #27. 
 
-You will also find online tutorials at [Statistics for Psychologists](https://www4.uwsp.edu/psych/cw/statistics/textbook.htm) [@Wendorf2019]. Choose *JAMOVI* > *JAMOVI: Using the Software*. Scroll to the table of contents, and click *INDEPENDENT SAMPLES T TEST*. On the same website, you can find a tutorial for interpreting the output. Just go to *JAMOVI* > *JAMOVI: Annotated Output*. Then scroll down to the table of contents and choose *T-TEST (INDEPENDENT SAMPLES)*. The annotations are based on a slightly older version of jamovi, but they will suffice.
+You will also find online tutorials at [Statistics for Psychologists](https://www4.uwsp.edu/psych/cw/statistics/textbook.htm) [@Wendorf2019]. Choose *JAMOVI* > *JAMOVI: Using the Software*. Scroll to the table of contents, and click *INDEPENDENT SAMPLES T TEST*. On the same website, you can find a tutorial for interpreting the output. Just go to *JAMOVI* > *JAMOVI: Annotated Output*. Then scroll down to the table of contents and choose *T-TEST (INDEPENDENT SAMPLES)*. The annotations are based on a slightly older version of *jamovi*, but they will suffice.
 
 Your main textbook [@lsj] covers this in Sections 11.3 and 11.4.
 

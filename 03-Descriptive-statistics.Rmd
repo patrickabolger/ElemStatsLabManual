@@ -21,13 +21,13 @@ There is one more category here, but it covers all three types of descriptive st
 
 ## Descriptives in *jamovi* {#DescriptivesInJamovi}
 
-To briefly illustrate descriptive statistics in *jamovi* in this lab manual, we will use main textbook's [@lsj] data set `Clinical Trial` again (we used this data set previously in sections \@ref(Importing) and \@ref(PracManualing)). You can get to this data by clicking $(\equiv)$ > `Open` (`Data Library`) > `learning statistics with jamovi` > `Clinical Trial`.
+To briefly illustrate descriptive statistics in *jamovi* in this lab manual, we will use main textbook's [@lsj] data set `Clinical Trial` again (we used this data set previously in sections \@ref(Importing) and \@ref(PracManualing)). You can get to this data by clicking ($\equiv$) > `Open` (`Data Library`) > `learning statistics with jamovi` > `Clinical Trial`.
 
 Once open, if you click the `Analyses` tab on top, then click `Exploration` on the left, a drop-down menu will appear where you select `Descriptives`. You'll see a window with the variables from the data set on the right in a box. If you want to analyze them, you need to select them and click the arrow to get them into the right box (either `Variables` or `Split by`).  You can see how this all begins in Figure \@ref(fig:DescriptivesStart) below.
 
 <br/>
 
-```{r DescriptivesStart, fig.cap="The opening *Descriptives* window in jamovi [with the data set 'Clinical Trial' from @lsj]. The green box (not seen in jamovi) encloses measures of central tendency. The violet/purple box at the lower left encloses measures of dispersion/error. The blue boxes enclose either simple measures or measures that can be used as diagnostics.", echo=F, out.width="750px"}
+```{r DescriptivesStart, fig.cap="The opening *Descriptives* window in *jamovi* [with the data set 'Clinical Trial' from @lsj]. The green box (not seen in *jamovi*) encloses measures of central tendency. The violet/purple box at the lower left encloses measures of dispersion/error. The blue boxes enclose either simple measures or measures that can be used as diagnostics.", echo=F, out.width="750px"}
 knitr::include_graphics("images/DescStats/DescriptivesStart.png")
 ```
 
@@ -53,11 +53,11 @@ The data are summarized in some, but not all ways. We chose descriptives that ar
 
 ### Summarizing continuous variables {#SummarizingContinuousVariables}
 
-For reasons of simplicity, we also chose only two variables to analyze: `drug`, which is one of the predictors, and `mood.gain`, the outcome variable for this data set. These choices can be seen below in Figure \@ref(fig:DescriptivesParametersClinicalData). The results are below that.
+For reasons of simplicity, we also chose only two variables to analyze: `drug`, which is one of the predictors, and `mood.gain`, the outcome variable for this data set. These choices can be seen below in Figure \@ref(fig:DescriptivesParametersClinicalData). The results are below that.^[Recall that the output below (and further down) was generated from the *jmv* package in *R*, and will therefore be rounded to more decimal places than the native output in *jamovi*.]
 
 <br/>
 
-```{r DescriptivesParametersClinicalData, fig.cap="Parameters for certain descriptive statistics in jamovi [with the data set 'Clinical Trial' from @lsj].", echo=F, out.width="600px"}
+```{r DescriptivesParametersClinicalData, fig.cap="Parameters for certain descriptive statistics in *jamovi* [with the data set 'Clinical Trial' from @lsj].", echo=F, out.width="600px"}
 knitr::include_graphics("images/DescStats/DescriptivesParametersClinicalData.png")
 ```
 
@@ -90,7 +90,7 @@ Under the `mood.gain` variable is where you see most of the work done. In additi
 
 <br/>
 
-```{r DescriptivesClinicalDataRemove, fig.cap="Removing output from jamovi.", echo=F, out.width="300px"}
+```{r DescriptivesClinicalDataRemove, fig.cap="Removing output from *jamovi*.", echo=F, out.width="300px"}
 knitr::include_graphics("images/DescStats/DescriptivesClinicalDataRemove.png")
 ```
 
@@ -102,7 +102,7 @@ knitr::include_graphics("images/DescStats/DescriptivesClinicalDataRemove.png")
 
 <br/>
 
-```{r DescriptivesClinicalTableSave, fig.cap="How to save a table in jamovi as a .pdf file for further use.", echo=F, out.width="300px"}
+```{r DescriptivesClinicalTableSave, fig.cap="How to save a table in *jamovi* as a .pdf file for further use.", echo=F, out.width="300px"}
 knitr::include_graphics("images/DescStats/DescriptivesClinicalTableSave.png")
 ```
 
@@ -129,7 +129,7 @@ To split up your descriptive statistics along these groupings, you drag `mood.ga
 
 <br/>
 
-```{r DescriptivesOnClinicalDataSplit, fig.cap="Setting parameters for descriptives statistics split by nominal variables in jamovi [with the data set 'Clinical Trial' from @lsj].", echo=F, out.width="600px"}
+```{r DescriptivesOnClinicalDataSplit, fig.cap="Setting parameters for descriptives statistics split by nominal variables in *jamovi* [with the data set 'Clinical Trial' from @lsj].", echo=F, out.width="600px"}
 knitr::include_graphics("images/DescStats/DescriptivesClinicalDataSplit.png")
 ```
 
@@ -309,7 +309,7 @@ This file extension might be a little confusing. The file ends with a *.csv* ext
 
 Something that is ***very, very, very*** useful when you are importing a data set is a **codebook**, if one exists. A codebook is either a separate file or an additional sheet in a spreadsheet program. The codebook tells you what the (often-opaque) variable names really stand for (e.g., `Q3A` is *My connection to nature and the environment is a part of my spirituality*), and what the numbers under the nominal variables represent. On this note, recall from Sections \@ref(Manualling) and \@ref(PracManualing) that responses like `male` vs. `female` (as levels for `Sex`) are often initially recorded as numbers. It is then your job to translate them back into categories. This data set comes with a codebook called `codebook.txt` in the original zip folder, but in the *GitHub* `datasets` folder for this textbook, it is called `DescStats_NR6_codebook.txt`.
 
-One thing that is really important that we can infer^[The researchers did not directly write this in the codebook, but they did indicate the possible responses, which never included `0`. Thus, we can infer that the 0 represents a non-response, a *missing value*.] from this particular codebook is that the number `0` is used to indicate ***missing values*** on nominal variables.^[Blanks are used under free responses, like the last variable in the data set: *major*, but "messy" free-response data is a topic for another course] Sometimes when we collect data, especially on surveys, people (either deliberately or by mistake) don't respond to certain questions.^[You can force them to respond to certain questions in online surveys like *Google Forms*, but respondents often find this annoyingly coercive, especially if you do this for lots of questions.] The code for such a non-response in this data set is `0`. So before you import this data set in *jamovi*, you should change the `Default missings` option to `0`. To do this, go to $(\vdots)$ > `Import` > `Default missings` and replace *NA* with `0`. See the very bottom of Figure \@ref(fig:PracticeNR6DefaultMissings) below.
+One thing that is really important that we can infer^[The researchers did not directly write this in the codebook, but they did indicate the possible responses, which never included `0`. Thus, we can infer that the 0 represents a non-response, a *missing value*.] from this particular codebook is that the number `0` is used to indicate ***missing values*** on nominal variables.^[Blanks are used under free responses, like the last variable in the data set: *major*, but "messy" free-response data is a topic for another course] Sometimes when we collect data, especially on surveys, people (either deliberately or by mistake) don't respond to certain questions.^[You can force them to respond to certain questions in online surveys like *Google Forms*, but respondents often find this annoyingly coercive, especially if you do this for lots of questions.] The code for such a non-response in this data set is `0`. So before you import this data set in *jamovi*, you should change the `Default missings` option to `0`. To do this, go to ($\vdots$) > `Import` > `Default missings` and replace *NA* with `0`. See the very bottom of Figure \@ref(fig:PracticeNR6DefaultMissings) below.
 
 <br/>
 

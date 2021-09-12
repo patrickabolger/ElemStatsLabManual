@@ -2,11 +2,11 @@
 
 # Categorical data analysis {#CategoricalDataAnalysis}
 
-Up to this point, we have been following, roughly, the order of information set out in your main textbook by @lsj. We depart a little at this point as we are not going to cover the material in Chapter 6 of that book. We will cover that material in Appendix A. Nor will we cover chapter 7-9 at all. Instead, this lab manual resumes below as parallel to Chapter 10 of @lsj.
+Up to this point, we have been following, roughly, the order of information set out in your main textbook by @lsj. We depart a little at this point as we are not going to cover the material in Chapter 6 of that book. We will cover that material in *Appendix A*. Nor will we cover chapter 7-9 at all. Instead, this lab manual resumes below as parallel to Chapter 10 of @lsj.
 
 From the current chapter (Chapters \@ref(CategoricalDataAnalysis)) to Chapter \@ref(FactorialAnova), you'll see that the point of inferential statistics is to calculate specific signal-to-noise ratios in order to see if the signal that emerges from our data is so strong over the noise (that emerges from our data) that we can confidently claim that we indeed have a signal, and not just a bunch of noise.
 
-We will start with the first of these tests: the *chi-square test*. Thus, this chapter shows you how to use jamovi to conduct analyses when your outcome variable consists of counts of nominal (categorical) data (e.g., the number of men vs. women who voted in a particular district, where the proportions are known to be about 50/50). The topic is covered in much more detail in your main textbook @lsj [Chapter 10].
+We will start with the first of these tests: the *chi-square test*. Thus, this chapter shows you how to use *jamovi* to conduct analyses when your outcome variable consists of counts of nominal (categorical) data (e.g., the number of men vs. women who voted in a particular district, where the proportions are known to be about 50/50). The topic is covered in much more detail in your main textbook @lsj [Chapter 10].
 
 There are several versions of the chi-square test, but we will only cover two here: the $\chi^2$ *goodness-of-fit test*, and the $\chi^2$ *test of association*. The former is used is when you want to compare your sample data to known population proportions (like the voting example above), and the latter is when you want to compare the counts of two groups against one another. For example, perhaps you wanted to know whether the morning-beverage preferences (coffee, tea, or juice) were the same across men and women. A $\chi^2$ test of association could answer this (assuming you collected the data, of course).
 
@@ -22,25 +22,25 @@ In each chapter in this manual, there will be one basic analysis, and often, one
 
 ### Basic: The Cards data {#ChiSquareGoodnessOfFitBasicCards}
 
-This is from Section 10.1.1 of @lsj, and the data set is labeled *Randomness.csv*. Thus: $(\equiv)$ > *Open* > *Data Library* > *learning statistics with jamovi* > *randomness.csv*.
+This is from Section 10.1.1 of @lsj, and the data set is labeled `Randomness.csv`. Thus: ($\equiv$) > `Open` > `Data Library` > `learning statistics with jamovi` > `randomness.csv`.
 
-In this imaginary experiment (with imaginary data), participants were asked to mentally choose a single card from an imagined deck of cards, and then a second card. The idea was to figure out if people really could do things at random, or if they had preferences for different suits (*clubs*, *diamonds*, *hearts*, or *spades*).
+In this imaginary experiment (with imaginary data), participants were asked to mentally choose a single card from an imagined deck of cards, and then a second card. The idea was to figure out if people really could do things at random, or if they had preferences for different suits (`clubs`, `diamonds`, `hearts`, or `spades`).
 
 <br/>
 
 #### Inspecting {#ChiSquareGoodnessOfFitBasicCardsInspecting}
 
-To start, you just want to get a bird's-eye view of the relative proportions across the two choices. So you to go *Exploration* > *Descriptives*, drag the first choice over to the *Variables* box and check *Frequency tables*. We also unchecked all the other options for descriptive statistics. You should see what is below in Figure (\@ref(fig:ChisquareGoodFitTestChoice1FrequencyTable)). 
+To start, you just want to get a bird's-eye view of the relative proportions across the two choices. So you to go `Exploration` > `Descriptives`, drag the first choice over to the `Variables` box and check `Frequency tables`. We also unchecked all the other options for descriptive statistics. You should see what is below in Figure (\@ref(fig:ChisquareGoodFitTestChoice1FrequencyTable)). 
 
 <br/>
 
-```{r ChisquareGoodFitTestChoice1FrequencyTable, fig.cap="Setting the parameters in jamovi for getting the counts on the first choice of the *cards* data from @lsj.", echo=F, out.width="600px"}
+```{r ChisquareGoodFitTestChoice1FrequencyTable, fig.cap="Setting the parameters in *jamovi* for getting the counts on the first choice of the *cards* data from @lsj.", echo=F, out.width="600px"}
 knitr::include_graphics("images/CategoricalData/ChisquareGoodFitTestChoice1FrequencyTable.png")
 ```
 
 <br/>
 
-Your output should look like the following:
+Your output should look like the following:^[Recall that the output below (and further down) was generated from the *jmv* package in *R*, and will therefore be rounded to more decimal places than the native output in *jamovi*.]
 
 <br/>
 
@@ -113,21 +113,21 @@ Conversely, the research hypothesis would be as follows:
 
 #### Testing {#ChiSquareGoodnessOfFitBasicCardsTesting}
 
-Carrying out the chi-square goodness-of-fit test is ultimately quite easy in jamovi. But we will spend a little extra time explaining the results since this is the first inferential test in the lab manual.
+Carrying out the chi-square goodness-of-fit test is ultimately quite easy in *jamovi*. But we will spend a little extra time explaining the results since this is the first inferential test in the lab manual.
 
-To carry out the test, Go to the *Analyses* tab across the top, click *Frequencies*, and then choose *N Outcomes* $\chi^2$ *Goodness of fit*. This is shown in the screenshot below, Figure \@ref(fig:ChisquareGoodFitChooseFromPullDown).
+To carry out the test, Go to the `Analyses` tab across the top, click `Frequencies`, and then choose `N Outcomes` $\chi^2$ `Goodness of fit`. This is shown in the screenshot below, Figure \@ref(fig:ChisquareGoodFitChooseFromPullDown).
 
-```{r ChisquareGoodFitChooseFromPullDown, fig.cap="Choosing the chi-square goodness-of-fit test from the *Frequencies* menu in jamovi.", echo=F, out.width="600px"}
+```{r ChisquareGoodFitChooseFromPullDown, fig.cap="Choosing the chi-square goodness-of-fit test from the *Frequencies* menu in *jamovi*.", echo=F, out.width="600px"}
 knitr::include_graphics("images/CategoricalData/ChisquareGoodFitChooseFromPullDown.png")
 ```
 
 <br/>
 
-Then slide the variable *choice_1* over to the *Variable* box. Also click the *Expected counts* box. The parameters should be as you see below in Figure \@ref(fig:ChisquareGoodFitTestChoice1Parameters).
+Then slide the variable *choice_1* over to the `Variable` box. Also click the `Expected counts` box. The parameters should be as you see below in Figure \@ref(fig:ChisquareGoodFitTestChoice1Parameters).
 
 <br/>
 
-```{r ChisquareGoodFitTestChoice1Parameters, fig.cap="Setting the parameters in jamovi for doing the chi-square goodness-of-fit test on first choice of the *cards* data from @lsj.", echo=F, out.width="600px"}
+```{r ChisquareGoodFitTestChoice1Parameters, fig.cap="Setting the parameters in *jamovi* for doing the chi-square goodness-of-fit test on first choice of the *cards* data from @lsj.", echo=F, out.width="600px"}
 knitr::include_graphics("images/CategoricalData/ChisquareGoodFitTestChoice1Parameters.png")
 ```
 
@@ -147,11 +147,11 @@ jmv::propTestN(
 
 <br/>
 
-You might also want to plot this in jamovi. The way to do this is by checking the *Barplot* box in *Descriptives*. See Figure \@ref(fig:ChisquareGoodFitTestChoice1BarplotParameters) below for the right parameter settings.
+You might also want to plot this in *jamovi*. The way to do this is by checking the `Barplot` box in `Descriptives`. See Figure \@ref(fig:ChisquareGoodFitTestChoice1BarplotParameters) below for the right parameter settings.
 
 <br/>
 
-```{r ChisquareGoodFitTestChoice1BarplotParameters, fig.cap="Setting the parameters in jamovi for creating a barplot for the first choice of the *cards* data from @lsj.", echo=F, out.width="600px"}
+```{r ChisquareGoodFitTestChoice1BarplotParameters, fig.cap="Setting the parameters in *jamovi* for creating a barplot for the first choice of the *cards* data from @lsj.", echo=F, out.width="600px"}
 knitr::include_graphics("images/CategoricalData/ChisquareGoodFitTestChoice1BarplotParameters.png")
 ```
 
@@ -179,7 +179,7 @@ rm(Randomness)
 
 #### Interpreting {#ChiSquareGoodnessOfFitBasicCardsInterpretingOutput}
 
-First, note that since we asked for *Expected counts*, jamovi told use the exact numbers that would have been expected under the null hypothesis. This was 50 for each group since there were a total of 200 participants, and we assumed that there was an equal chance of any card suit being preferred (25% for each suit).
+First, note that since we asked for `Expected counts`, *jamovi* told use the exact numbers that would have been expected under the null hypothesis. This was 50 for each group since there were a total of 200 participants, and we assumed that there was an equal chance of any card suit being preferred (25% for each suit).
 
 The observed values are the counts that we actually got from the participants.
 
@@ -193,7 +193,7 @@ $$\chi^2=\sum_{i=1}^{k}\frac{(O_{i}-E_{i})^2}{E_i}$$
 
 <br/>
 
-The obtained value is 8.44, which is what you get after you refer to the table above, and substitute the *O*s and the *E*s with the *Observed* and *Expected* values (respectively) for each card suit (*i*) found in the table above, .
+The obtained value is 8.44, which is what you get after you refer to the table above, and substitute the *O*s and the *E*s with the *Observed* and *Expected* values (respectively) for each card suit (`i`) found in the table above, .
 
 What is important about the degrees of freedom (3 in this case) is that this figure sets up the particular chi-squared **distribution** that the test statistics of 8.44 will be evaluated against. This distribution is the solid line in Figure 10.1 in @lsj [section 10.1.5, p. 217]. But we reproduce it below.
 
@@ -274,9 +274,9 @@ At first blush, it looks like men are being favored over women in graduate admis
 
 #### Opening data {#UCBAdmissionsOpeningData}
 
-This data set is available as one of the data sets that comes with base-R. Since jamovi is built on top of R, it has no problem opening R data sets. In fact, the module called **R data sets** includes this data set. Install this module if you haven't already (see the end of Section \@ref(NavigatingJamovi) for how to do this).
+This data set is available as one of the data sets that comes with base-R. Since *jamovi* is built on top of R, it has no problem opening R data sets. In fact, the module called `R data sets` includes this data set. Install this module if you haven't already (see the end of Section \@ref(NavigatingJamovi) for how to do this).
 
-Once you have done this, all you have to do is click $(\equiv)$ > *Open* > *Data library* > *R data sets* > *UCBAdmissions* (the file is near the bottom of the list). Your data should look like what is below.
+Once you have done this, all you have to do is click ($\equiv$) > `Open` > `Data library` > `R data sets` > `UCBAdmissions` (the file is near the bottom of the list). Your data should look like what is below.
 
 <br/>
 
@@ -310,11 +310,11 @@ The default null hypothesis for a chi-square goodness-of-fit test is that all ou
 
 There is a big problem with the admissions data at Cal, however. Namely, not only did the numbers of men vs. women who applied to graduate school at the university differ overall (2,691 vs. 1,835), but the numbers also differed by department. So if more men apply than women, you'd expect more men to be accepted than women, even if the university (or department) is admitting men and women without bias towards one or the other. In fact, if equal numbers of men and women were accepted, you'd likely have to conclude that the university was favoring women in admissions.
 
-As noted in @lsj [section 10.1.8], this test offers a way to correct for this. We will need to do so here. To start, we will need to carry out some *Descriptives* on the data. First, we go to the *Analysis* tab, and click *Descriptives.* We move the variable *Freq* over to the *Variables* box, and the variable *Gender* over to the *Split by* box. Then we make sure that the only box that is checked is *Sum* under *Central Tendency*. This will add up the numbers for Admitted and Rejected applicants across all departments, but divided by *Gender*. See Figure \@ref(fig:ChisquareGoodFitSumMenWomenAcrossUniversity) below.
+As noted in @lsj [section 10.1.8], this test offers a way to correct for this. We will need to do so here. To start, we will need to carry out some `Descriptives` on the data. First, we go to the `Analysis` tab, and click `Descriptives.` We move the variable `Freq` over to the `Variables` box, and the variable `Gender` over to the `Split by` box. Then we make sure that the only box that is checked is `Sum` under `Central Tendency`. This will add up the numbers for Admitted and Rejected applicants across all departments, but divided by `Gender`. See Figure \@ref(fig:ChisquareGoodFitSumMenWomenAcrossUniversity) below.
 
 <br/>
 
-```{r ChisquareGoodFitSumMenWomenAcrossUniversity, fig.cap="Setting the jamovi parameters for summing overall numbers of men versus women (admitted plus rejected) across the university for the Cal Berkeley admissions sample data set from @R-base.", echo=F, out.width="600px"}
+```{r ChisquareGoodFitSumMenWomenAcrossUniversity, fig.cap="Setting the *jamovi* parameters for summing overall numbers of men versus women (admitted plus rejected) across the university for the Cal Berkeley admissions sample data set from @R-base.", echo=F, out.width="600px"}
 knitr::include_graphics("images/CategoricalData/ChisquareGoodFitSumMenWomenAcrossUniversity.png")
 ```
 
@@ -359,11 +359,11 @@ You will need these numbers soon enough.
 
 <br/>
 
-Now we need to get these figures by academic department (*A* through *F*). To do this, we just do the same as in Figure \@ref(fig:ChisquareGoodFitSumMenWomenAcrossUniversity) above, but we also slide *Dept* into the *Split by* box. See Figure \@ref(fig:ChisquareGoodFitSumMenWomenByDepartment) below. In fact, you'll probably want to get the variables in the *Split by* box in the order shown in the figure, so you may need to slide *Gender* out, then slide *Dept* and then *Gender* back in a again.
+Now we need to get these figures by academic department (`A` through `F`). To do this, we just do the same as in Figure \@ref(fig:ChisquareGoodFitSumMenWomenAcrossUniversity) above, but we also slide `Dept` into the `Split by` box. See Figure \@ref(fig:ChisquareGoodFitSumMenWomenByDepartment) below. In fact, you'll probably want to get the variables in the `Split by` box in the order shown in the figure, so you may need to slide `Gender` out, then slide `Dept` and then `Gender` back in a again.
 
 <br/>
 
-```{r ChisquareGoodFitSumMenWomenByDepartment, fig.cap="Setting the jamovi parameters for summing the numbers of men versus women (admitted plus rejected) by academic department at the university for the Cal Berkeley admissions sample data set (UCBAdmissions) from @R-base.", echo=F, out.width="600px"}
+```{r ChisquareGoodFitSumMenWomenByDepartment, fig.cap="Setting the *jamovi* parameters for summing the numbers of men versus women (admitted plus rejected) by academic department at the university for the Cal Berkeley admissions sample data set (UCBAdmissions) from @R-base.", echo=F, out.width="600px"}
 knitr::include_graphics("images/CategoricalData/ChisquareGoodFitSumMenWomenByDepartment.png")
 ```
 
@@ -417,9 +417,9 @@ We are done with calculating relative proportions of applicants by gender. Now w
 
 ##### Filtering {#UCBAdmissionsFiltering}
 
-Due to a quirk in jamovi, in the sole case of chi-square goodness-of-fit tests, it was most convenient to save 7 different jamovi (.omv) files. We did this after we created each filter (See section \@ref(FilteringData) for how to filter data).
+Due to a quirk in *jamovi*, in the sole case of chi-square goodness-of-fit tests, it was most convenient to save 7 different *jamovi* (.omv) files. We did this after we created each filter (See section \@ref(FilteringData) for how to filter data).
 
-In the first filter, we wanted to filter **in** all the rows that say *Admitted* under *Admit*, and filter **out** all the rows that have *Rejected* under *Admit*. We left the variable *Dept* alone for the first filter. This filter gave us the counts for men and women who were *admitted* to the six largest graduate schools at Cal.
+In the first filter, we wanted to filter **in** all the rows that say `Admitted` under `Admit`, and filter **out** all the rows that have *Rejected* under `Admit`. We left the variable `Dept` alone for the first filter. This filter gave us the counts for men and women who were *admitted* to the six largest graduate schools at Cal.
 
 This was easy to do. We just typed the following into the filter function:
 
@@ -439,13 +439,13 @@ knitr::include_graphics("images/CategoricalData/ChisquareGoodFitFilterForAdmitte
 
 <br/>
 
-As noted above, there is a strange quirk having to do with the interaction between filters and chi-square goodness-of-fit tests, so we had to save this file as *CategoricalData_UCBAdmissions_AllDepartments.omv*.
+As noted above, there is a strange quirk having to do with the interaction between filters and chi-square goodness-of-fit tests, so we had to save this file as `CategoricalData_UCBAdmissions_AllDepartments.omv`.
 
-But we needed six more filters, each of which would restrict the analysis to one department (i.e., one of *A* through *F*).
+But we needed six more filters, each of which would restrict the analysis to one department (i.e., one of `A` through `F`).
 
-To create the first for *Department A*, we took the *CategoricalData_UCBAdmissions_AllDepartments.omv* file and saved it as *CategoricalData_UCBAdmissions_DepartmentA.omv* [$(\equiv)$ > *Save As*].
+To create the first for `Department A`, we took the `CategoricalData_UCBAdmissions_AllDepartments.omv` file and saved it as `CategoricalData_UCBAdmissions_DepartmentA.omv` [($\equiv$) > `Save As`].
 
-After doing this, we could modify *Filter 1* by adding to its conditions. So we re-opened *Filter 1*, and clicked the $+$ sign on the far, right-hand sign of the line with $f_{x}$. This creates a second line $f_{x}$ line in addition to the one above it. It is pre-pended by the word **and**. The expression *AND* is called a *conjunction* in Boolean logic, and it means "this also must be true." Ultimately, this means that jamovi will return only the rows where condition 1 (only *Admitted"*) **AND** condition 2 (only department *A*) are **both** true. You can see the results of this in Figure \@ref(fig:ChisquareGoodFitFilterForAdmittedInDepartmentA) below.
+After doing this, we could modify `Filter 1` by adding to its conditions. So we re-opened `Filter 1`, and clicked the $+$ sign on the far, right-hand sign of the line with $f_{x}$. This creates a second line $f_{x}$ line in addition to the one above it. It is pre-pended by the word **and**. The expression *AND* is called a *conjunction* in Boolean logic, and it means "this also must be true." Ultimately, this means that *jamovi* will return only the rows where condition 1 (only *Admitted"*) **AND** condition 2 (only department `A`) are **both** true. You can see the results of this in Figure \@ref(fig:ChisquareGoodFitFilterForAdmittedInDepartmentA) below.
 
 <br/>
 
@@ -455,9 +455,9 @@ knitr::include_graphics("images/CategoricalData/ChisquareGoodFitFilterForAdmitte
 
 <br/>
 
-Note that there are two new columns now: *Filter 1* and *F1 (2)*. jamovi does this automatically. *F1 (2)* means that it's the second part of *Filter 1*. Also note that all rows are filtered out except for admissions in Department A.
+Note that there are two new columns now: `Filter 1` and `F1 (2)`. *jamovi* does this automatically. `F1 (2)` means that it's the second part of `Filter 1`. Also note that all rows are filtered out except for admissions in Department A.
 
-Now we could save this file as another, named *CategoricalData_UCBAdmissions_Department.omv* (for Department B, obviously). Then, we just changed the second condition to the following:
+Now we could save this file as another, named `CategoricalData_UCBAdmissions_Department.omv` (for Department B, obviously). Then, we just changed the second condition to the following:
 
 >and Dept=='B'
 
@@ -465,13 +465,13 @@ Now we could save this file as another, named *CategoricalData_UCBAdmissions_Dep
 
 We needed to repeat this so that we ended up with seven .omv files, each with its own unique filter. Thus:
 
--CategoricalData_UCBAdmissions_**AllDepartments**.omv  
--CategoricalData_UCBAdmissions_Department**A**.omv  
--CategoricalData_UCBAdmissions_Department**B**.omv  
--CategoricalData_UCBAdmissions_Department**C**.omv  
--CategoricalData_UCBAdmissions_Department**D**.omv  
--CategoricalData_UCBAdmissions_Department**E**.omv  
--CategoricalData_UCBAdmissions_Department**F**.omv  
+- CategoricalData_UCBAdmissions_**AllDepartments**.omv  
+- CategoricalData_UCBAdmissions_Department**A**.omv  
+- CategoricalData_UCBAdmissions_Department**B**.omv  
+- CategoricalData_UCBAdmissions_Department**C**.omv  
+- CategoricalData_UCBAdmissions_Department**D**.omv  
+- CategoricalData_UCBAdmissions_Department**E**.omv  
+- CategoricalData_UCBAdmissions_Department**F**.omv  
 
 <br/>
 
@@ -479,18 +479,18 @@ We needed to repeat this so that we ended up with seven .omv files, each with it
 
 Now that we had the relative proportions and the necessary filters, we could proceed to the chi-square goodness-of-fit test to determine whether there was actually gender discrimination in graduate admissions at Cal Berkeley in 1973.
 
-First, we wanted to look at the graduate admissions by gender across the university. So we opened the jamovi file CategoricalData_UCBAdmissions_**AllDepartments**.omv. First, to reduce clutter, we clicked the "eye" icon in the filter menu to remove from view all the rows that were filtered out. All that remained visible were admissions. Then we went to the *Analyses* tab, and selected *Frequencies* > *One Sample Proportion Tests: N Outcomes - $\chi^2$ Goodness of fit*. When we opened this, we click-and-dragged to the right the left-hand side of the window headed with *Proportion Test (N Outcomes)*. This made the data appear on the left (as in Figure \@ref(fig:ChisquareGoodFitTestParametersForAllUniversity) below). 
+First, we wanted to look at the graduate admissions by gender across the university. So we opened the *jamovi* file CategoricalData_UCBAdmissions_**AllDepartments**.omv. First, to reduce clutter, we clicked the "eye" icon in the filter menu to remove from view all the rows that were filtered out. All that remained visible were admissions. Then we went to the `Analyses` tab, and selected `Frequencies` > `One Sample Proportion Tests: N Outcomes - $\chi^2$ Goodness of fit`. When we opened this, we click-and-dragged to the right the left-hand side of the window headed with `Proportion Test (N Outcomes)`. This made the data appear on the left (as in Figure \@ref(fig:ChisquareGoodFitTestParametersForAllUniversity) below). 
 
-We then dragged the *Gender* variable to the *Variable* box, and the *Freq* variable over to the *Counts (optional)* box.^[The reason that *Counts* is optional is that it is summarized data. Thus, it is not "tidy," *per se*. One could also do this chi-square if each row corresponded to one person, without the *Count* variable. This would have been a data set with 4,526 rows. In fact, this is normally the way data is collected. In this case, jamovi would have just counted the relevant numbers of rows instead of having them provided in an extra variable.]
+We then dragged the `Gender` variable to the `Variable` box, and the `Freq` variable over to the `Counts (optional)` box.^[The reason that `Counts` is optional is that it is summarized data. Thus, it is not "tidy," *per se*. One could also do this chi-square if each row corresponded to one person, without the `Count` variable. This would have been a data set with 4,526 rows. In fact, this is normally the way data is collected. In this case, *jamovi* would have just counted the relevant numbers of rows instead of having them provided in an extra variable.]
 
 Next, we needed to add in the expected proportions manually. Recall, this is what we did in Section \@ref(UCBAdmissionsCalculateRelativeProportions). The expected proportions will be the same proportions of males versus females in the total applicant pool. The observed values will be the proportions of men versus women that were actually admitted. To the extend that these proportions differ is the extent to which you have evidence of gender discrimination... possibly.
 
-The proportion of male applicants was 59.45%, which we can type in (59.45) to the *Expected Proportions* box under *Male*. The complementary proportion for females was 40.55%, so we type in 40.55 under *Female*. For good measure, we also checked the *Expected Counts* box.
+The proportion of male applicants was 59.45%, which we can type in (59.45) to the `Expected Proportions` box under `Male`. The complementary proportion for females was 40.55%, so we type in 40.55 under `Female`. For good measure, we also checked the `Expected Counts` box.
 
 <br/>
 
 ```{block2, type="rmdnote", echo=T}
-This is actually the reason that you have to create separate files for each goodness-of-fit analysis. The filter applies to **all** analyses. However, each of our analyses requires different values in the *Expected Proportions* box. Thus, we need to separate the analyses into different files. This is a jamovi quirk that seems only to apply to one-sample tests in jamovi, like the chi-square goodness-of-fit test.
+This is actually the reason that you have to create separate files for each goodness-of-fit analysis. The filter applies to **all** analyses. However, each of our analyses requires different values in the `Expected Proportions` box. Thus, we need to separate the analyses into different files. This is a *jamovi* quirk that seems only to apply to one-sample tests in *jamovi*, like the chi-square goodness-of-fit test.
 ```
 
 <br/>
@@ -499,7 +499,7 @@ See Figure \@ref(fig:ChisquareGoodFitTestParametersForAllUniversity) below to ge
 
 <br/>
 
-```{r ChisquareGoodFitTestParametersForAllUniversity, fig.cap="jamovi paramaters for a Chi-square goodness-of-fit test on admitted male versus female graduate applicants at UC Berkeley in 1973.", echo=F, out.width="750px"}
+```{r ChisquareGoodFitTestParametersForAllUniversity, fig.cap="*jamovi* paramaters for a Chi-square goodness-of-fit test on admitted male versus female graduate applicants at UC Berkeley in 1973.", echo=F, out.width="750px"}
 knitr::include_graphics("images/CategoricalData/ChisquareGoodFitTestParametersForAllUniversity.png")
 ```
 
@@ -521,15 +521,15 @@ rm(UCBAdmissionsOverall)
 
 <br/>
 
-But we had more detailed information than just overall admissions by gender. We had information by department. This required six different analyses, where we will use the six remaining files that we created since the *Expected Proportions* values differed for each department (the ones we calculated in section \@ref(UCBAdmissionsCalculateRelativeProportions)).
+But we had more detailed information than just overall admissions by gender. We had information by department. This required six different analyses, where we will use the six remaining files that we created since the `Expected Proportions` values differed for each department (the ones we calculated in section \@ref(UCBAdmissionsCalculateRelativeProportions)).
 
-We will not display how to set the parameters in jamovi here. We will simply display the results.
+We will not display how to set the parameters in *jamovi* here. We will simply display the results.
 
 <br/>
 
 ##### Department A {#GoodnessOfFitForDepartmentA}
 
-This file is *CategoricalData_UCBAdmissions_DepartmentA.omv*. Recall from section \@ref(UCBAdmissionsCalculateRelativeProportions) above that the proportion of women applying was 11.58%, whereas the proportion of men applying was 88.42%. The results of the chi-square goodness-of-fit test for Department A are below.
+This file is `CategoricalData_UCBAdmissions_DepartmentA.omv`. Recall from section \@ref(UCBAdmissionsCalculateRelativeProportions) above that the proportion of women applying was 11.58%, whereas the proportion of men applying was 88.42%. The results of the chi-square goodness-of-fit test for Department A are below.
 
 <br/>
 
@@ -551,7 +551,7 @@ The chi-square goodness-of-fit test for department A was significant: $\chi^2 (1
 
 ##### Department B {#GoodnessOfFitForDepartmentB}
 
-This file is *CategoricalData_UCBAdmissions_DepartmentB.omv*. The proportion of women applying was 4.27%, whereas the proportion of men applying was 95.73%. The results of the chi-square goodness-of-fit test for Department B are below.
+This file is `CategoricalData_UCBAdmissions_DepartmentB.omv`. The proportion of women applying was 4.27%, whereas the proportion of men applying was 95.73%. The results of the chi-square goodness-of-fit test for Department B are below.
 
 <br/>
 
@@ -573,7 +573,7 @@ The results of the analysis for Department B were not significant: $\chi^2 (1)=0
 
 ##### Department C {#GoodnessOfFitForDepartmentC}
 
-This file is *CategoricalData_UCBAdmissions_DepartmentC.omv*. The proportion of women applying was higher this time, at 64.6%. In contrast, the proportion of men applying was down to 35.4%. The results of the chi-square goodness-of-fit test for Department C are below.
+This file is `CategoricalData_UCBAdmissions_DepartmentC.omv`. The proportion of women applying was higher this time, at 64.6%. In contrast, the proportion of men applying was down to 35.4%. The results of the chi-square goodness-of-fit test for Department C are below.
 
 <br/>
 
@@ -595,7 +595,7 @@ Department C had a similar outcome to Department B. There seems to have been no 
 
 ##### Department D {#GoodnessOfFitForDepartmentD}
 
-This file is *CategoricalData_UCBAdmissions_DepartmentD.omv*. The proportion of women applying was roughly even with the men this time, at 47.35%. The proportion of men applying was 52.65%. The results of the chi-square goodness-of-fit test for Department D are below.
+This file is `CategoricalData_UCBAdmissions_DepartmentD.omv`. The proportion of women applying was roughly even with the men this time, at 47.35%. The proportion of men applying was 52.65%. The results of the chi-square goodness-of-fit test for Department D are below.
 
 <br/>
 
@@ -617,7 +617,7 @@ Department D also seems not to have been engaging in any kind of gender discrimi
 
 ##### Department E {#GoodnessOfFitForDepartmentE}
 
-This file is *CategoricalData_UCBAdmissions_DepartmentE.omv*. The proportion of women applying was higher again, at 67.29% of applicants. The proportion of men applying was down to 32.71% for this department. The results of the chi-square goodness-of-fit test for Department E are below.
+This file is `CategoricalData_UCBAdmissions_DepartmentE.omv`. The proportion of women applying was higher again, at 67.29% of applicants. The proportion of men applying was down to 32.71% for this department. The results of the chi-square goodness-of-fit test for Department E are below.
 
 <br/>
 
@@ -639,7 +639,7 @@ Department E as well, seems not to have engaged in gender discrimination: $\chi^
 
 ##### Department F {#GoodnessOfFitForDepartmentF}
 
-This file is *CategoricalData_UCBAdmissions_DepartmentF.omv*. The proportion of women applying to this department was about even with the men again, at 48.48%. The proportion of men applying was about equal at 51.52%. The results of the chi-square goodness-of-fit test for Department F are below.
+This file is `CategoricalData_UCBAdmissions_DepartmentF.omv`. The proportion of women applying to this department was about even with the men again, at 48.48%. The proportion of men applying was about equal at 51.52%. The results of the chi-square goodness-of-fit test for Department F are below.
 
 <br/>
 
@@ -691,9 +691,9 @@ The key difference between this test and the goodness-of-fit test, is that this 
 
 <br/>
 
-### Basic: The *Chapek 9* data {#ChiSquareTestOfIndependenceChapek9}
+### Basic: The `Chapek 9` data {#ChiSquareTestOfIndependenceChapek9}
 
-The *Chapek 9* data from @lsj [section 10.2] is from the imagination of the primary author of that book. But it is a good one for illustration. You can obtain the data set from jamovi by clicking $(\equiv)$ > *Open* > *Data library* > *learning statistics with jamovi* > *Chapek 9*.
+The `Chapek 9` data from @lsj [section 10.2] is from the imagination of the primary author of that book. But it is a good one for illustration. You can obtain the data set from *jamovi* by clicking ($\equiv$) > `Open` > `Data library` > `learning statistics with jamovi` > `Chapek 9`.
 
 The story goes that the residents of Chapek 9 (a city) are all robots, and to gain access, you must be a robot. So the robots design a test to determine if someone is a robot or a human.^[This is clearly a spin on Alan Turing's [-@Turing1950] [Turing Test](https://en.wikipedia.org/wiki/Turing_test)] The test that the robots devised asked w(whether a candidate to enter the city preferred puppies, flowers, or large, properly formatted data files. But the validity of the test needed to be checked against data that were collected (in someone's imagination).
 
@@ -701,11 +701,11 @@ The story goes that the residents of Chapek 9 (a city) are all robots, and to ga
 
 #### Inspecting {#ChiSquareTestOfAssociationBasicChapek9Inspecting}
 
-The first thing to do is create a cross-tabulation of the data. Go to the Analyses tab and click *Frequencies* > *Contingency Tables* > *Independent Samples $\chi^2$ test of association*. *species* should go in the *Columns* box, and *choice* should go in the *Rows* box.^[You could do this the other way around; it's the same. But this is the way it was done in @lsj. We do the same here so as to reduce confusion.] The parameters you need to choose to follow @lsj are as depicted in Figure \@ref(fig:ChisquareTestOfIndependenceChapek9Parameters) below.
+The first thing to do is create a cross-tabulation of the data. Go to the Analyses tab and click `Frequencies` > `Contingency Tables` > `Independent Samples $\chi^2$ test of association`. `species` should go in the `Columns` box, and `choice` should go in the `Rows` box.^[You could do this the other way around; it's the same. But this is the way it was done in @lsj. We do the same here so as to reduce confusion.] The parameters you need to choose to follow @lsj are as depicted in Figure \@ref(fig:ChisquareTestOfIndependenceChapek9Parameters) below.
 
 <br/>
 
-```{r ChisquareTestOfIndependenceChapek9Parameters, fig.cap="Parameter settings in jamovi for a chi-square test of independenc on the Chapek 9 data in @lsj.", echo=F, out.width="600px"}
+```{r ChisquareTestOfIndependenceChapek9Parameters, fig.cap="Parameter settings in *jamovi* for a chi-square test of independenc on the Chapek 9 data in @lsj.", echo=F, out.width="600px"}
 knitr::include_graphics("images/CategoricalData/ChisquareTestOfIndependenceChapek9Parameters.png")
 ```
 
@@ -730,7 +730,7 @@ jmv::contTables(
 
 <br/>
 
-For good measure, we also included a barplot with *species* as a *Split by* variable in the *Descriptives* menu (see section \@ref(ChiSquareGoodnessOfFitBasicCardsInspecting) above for the right parameter settings). You just additionally slide *species* into the *Split by* column.
+For good measure, we also included a barplot with `species` as a `Split by` variable in the `Descriptives` menu (see section \@ref(ChiSquareGoodnessOfFitBasicCardsInspecting) above for the right parameter settings). You just additionally slide `species` into the `Split by` column.
 
 <br/>
 
@@ -749,9 +749,9 @@ jmv::descriptives(
 
 <br/>
 
-In the data set you can see that there were 180 participants, 87 who turned out to be robots (in reality), and 93 who turned out to be human. The main question is whether the responses to *flower*, *puppy*, and *large, properly formatted data file* were equally proportioned across both humans and robots. If so, the test is no good at distinguishing them. But if not, then it might have some value as a shibboleth.
+In the data set you can see that there were 180 participants, 87 who turned out to be robots (in reality), and 93 who turned out to be human. The main question is whether the responses to `flower`, `puppy`, and `large, properly formatted data file` were equally proportioned across both humans and robots. If so, the test is no good at distinguishing them. But if not, then it might have some value as a shibboleth.
 
-The expected values are calculated by dividing the total number of participants (human and robot) who chose, say, *puppy*, and dividing by the total (180, then applying that ratio to the population of each group. There were 28 participants who chose *puppy*, which comprises $\frac {28}{180}=15.55\%$ So the expected value for humans was $Expected_{human}=93 \times.1555=14.5$. For robots, this was $Expected_{robot}=87 \times.1555=13.5$. The same is done for the other two categories (*flowers* and *data files*). These are then compared to the observed values for each group through the formula for the chi-square test for independence, which we will get to shortly.
+The expected values are calculated by dividing the total number of participants (human and robot) who chose, say, `puppy`, and dividing by the total (180, then applying that ratio to the population of each group. There were 28 participants who chose `puppy`, which comprises $\frac {28}{180}=15.55\%$ So the expected value for humans was $Expected_{human}=93 \times.1555=14.5$. For robots, this was $Expected_{robot}=87 \times.1555=13.5$. The same is done for the other two categories (`flowers` and `data files`). These are then compared to the observed values for each group through the formula for the chi-square test for independence, which we will get to shortly.
 
 <br/>
 
@@ -778,14 +778,14 @@ The formula for this test is in @lsj [section 10.2.1, p. 227], and is as follows
 <br/>
  
 ```{block2, type="rmdnote", echo=T}
-**NOTE**: The double sigmas $\sum_{i=1}^{r} \sum_{j=1}^{c}$ are not as scary as they look. Just replace *r* with *rows* (object preferences) and  and *c* with columns (species) and you will see that these are just the combinations of object preferences by species. That is, *i* takes the values *puppy*, *flower*, and *large, properly formatted data file*, whereas *j* takes on the values *human* and *robot*.
+**NOTE**: The double sigmas $\sum_{i=1}^{r} \sum_{j=1}^{c}$ are not as scary as they look. Just replace `r` with `rows` (object preferences) and  and `c` with columns (species) and you will see that these are just the combinations of object preferences by species. That is, `i` takes the values `puppy`, `flower`, and `large, properly formatted data file`, whereas `j` takes on the values `human` and `robot`.
 
-Walking through this might help. You start with $i=robot$ on the left-hand sigma, then choose $j=puppy$ in the right-hand sigma. With those two values for *i* and *j* (i.e., *robots who chose puppies*), you can calculate the formula on the right. After you do that, you keep the sigma on the left constant (i.e., $i=robot$) and change the sigma on the right by one to *flower* (i.e., *robots who chose flowers*, or $j=flower$). Then you plug the appropriate numbers into the formula again to get another number. That gets added to the last one you calculater. Then you do *large, properly formated data files*. When you have exhasted all the values of *j* for *robots*, you then change the sigma on the left to refer to *humans* (i.e., $i=human$). Then you start all over again for the different values of *j*. When you have exhausted all the values for *j* on every vaue of *i*, you are done.
+Walking through this might help. You start with $i=robot$ on the left-hand sigma, then choose $j=puppy$ in the right-hand sigma. With those two values for `i` and `j` (i.e., *robots who chose puppies*), you can calculate the formula on the right. After you do that, you keep the sigma on the left constant (i.e., $i=robot$) and change the sigma on the right by one to `flower` (i.e., *robots who chose flowers*, or $j=flower$). Then you plug the appropriate numbers into the formula again to get another number. That gets added to the last one you calculater. Then you do `large, properly formated data files`. When you have exhasted all the values of `j` for `robots`, you then change the sigma on the left to refer to `humans` (i.e., $i=human$). Then you start all over again for the different values of `j`. When you have exhausted all the values for `j` on every vaue of `i`, you are done.
 ```
 
 <br/>
 
-Plugging in the *Expected* and *Observed* values into the formula renders the *obtained value*. The degrees of freedom are determined by the total number of data points minus the number of constraints. In this case, it's $(r-1)(c-1)=(3-1)(2-1)=(2)(1)=2$. See @lsj [section 10.2.1, pp. 227-228] for more detail.
+Plugging in the `Expected` and `Observed` values into the formula renders the *obtained value*. The degrees of freedom are determined by the total number of data points minus the number of constraints. In this case, it's $(r-1)(c-1)=(3-1)(2-1)=(2)(1)=2$. See @lsj [section 10.2.1, pp. 227-228] for more detail.
 
 The degrees of freedom define the particular chi-square distribution that the obtained value gets evaluated against. 
 
@@ -809,7 +809,7 @@ But nothing changes with respect to its function. It defines the probabilities o
 
 The chi-square test statistic came out as follows: $\chi^2 (2)=10.7,p=.005$. Thus, our obtained value was quite improbably if the null hypothesis were true. As a result, we have enough confidence to reject the null hypothesis and resort to the research hypothesis.
 
-Without going in to too much detail, it is pretty clear from the test results, the table, and the figure that the robots were over-choosing *flower* and the humans were over-choosing *large, properly formatted data files*. 
+Without going in to too much detail, it is pretty clear from the test results, the table, and the figure that the robots were over-choosing `flower` and the humans were over-choosing `large, properly formatted data files`. 
 
 This effect was not that strong as Cramér's *V* was only .244. According to @Cohen1988, who was the great grandfather of effect sizes, this would be a small-ish effect size.
 
@@ -825,7 +825,7 @@ Borrowing from Danielle Navarro's imagination here a little bit, this is how we 
 
 ### Advanced: The Narcissistic Personality Inventory {#NarcissisticPersonalityInventory}
 
-We will use the for-fun, online version of the Narcissistic Personality Inventory (NPI) to illustrate how to perform more realistic version of this test in jamovi. This data is part of the *Dark Triad*. You can take the dark-triad survey yourself for fun [here](https://openpsychometrics.org/tests/SD3/).
+We will use the for-fun, online version of the Narcissistic Personality Inventory (NPI) to illustrate how to perform more realistic version of this test in *jamovi*. This data is part of the *Dark Triad*. You can take the dark-triad survey yourself for fun [here](https://openpsychometrics.org/tests/SD3/).
 
 <br/>
 
@@ -837,7 +837,7 @@ We will use the for-fun, online version of the Narcissistic Personality Inventor
 
 #### Obtaining the data {#NarcissisticPersonalityInventoryObtainingData}
 
-The data and the codebook are available both available online [here](http://openpsychometrics.org/_rawdata/). You need to scroll down to the row with *Narcissistic Personality Inventory* and click the link on the far right-hand side labeled *NPI*. This will download a .zip file with the files you need. Students in PSYC 301 at Texas A&M can access these files in *Canvas* under *Lab: Lab manual data sets* > *CategoricalData_NPI*.
+The data and the codebook are available both available online [here](http://openpsychometrics.org/_rawdata/). You need to scroll down to the row with `Narcissistic Personality Inventory` and click the link on the far right-hand side labeled `NPI`. This will download a .zip file with the files you need. Students in PSYC 301 at Texas A&M can access these files in *Canvas* under `Lab: Lab manual data sets` > `CategoricalData_NPI`.
 
 <br/>
 
@@ -849,7 +849,7 @@ The data and the codebook are available both available online [here](http://open
 
 #### Preparing {#NarcissisticPersonalityInventoryPreparing}
 
-One could analyze a combination of almost any of two of the variables *Q1* through *Q40*. The variables don't have names other than *Q##*. Respondents simply choose one of two answers that appear on the screen. We arbitrarily chose the following questions to analyze in chi-square test of independence: *Q16* and *Q24*. These two questions carried the following two response possibilities according to the codebook (i.e., *codebook.txt*):
+One could analyze a combination of almost any of two of the variables `Q1` through `Q40`. The variables don't have names other than `Q##`. Respondents simply choose one of two answers that appear on the screen. We arbitrarily chose the following questions to analyze in chi-square test of independence: `Q16` and `Q24`. These two questions carried the following two response possibilities according to the codebook (i.e., `codebook.txt`):
 
 - Q16
   - 1 = I can read people like a book
@@ -862,21 +862,21 @@ One could analyze a combination of almost any of two of the variables *Q1* throu
 
 Thus, presumably, such an analysis would look at whether one's self-assessed ability to understand others' behavior (theory of mind) predicts how self-centered one is. Because... why not?
 
-The first step was to re-code *Q16* according to the codebook (as above). We clicked the *Data* tab and double-clicked variable *Q16*. We typed "Theory of Mind" into the *Description* box, and then typed over "1" with *I can read people like a book* and "2" with *People are sometimes hard to understand*. Then we decided, in order to reduce the width of the contingency table, to replace these rather long labels with the shorter versions: *Good Theory of Mind* and *Poor Theory of Mind*, respectively. Finally, we made sure that the *Data type* drop-down menu was set to *text*. These settings are illustrated below in Figure \@ref(fig:ChisquareTestOfIndependenceQ16Settings).
+The first step was to re-code `Q16` according to the codebook (as above). We clicked the `Data` tab and double-clicked variable `Q16`. We typed "Theory of Mind" into the `Description` box, and then typed over "1" with `I can read people like a book` and "2" with `People are sometimes hard to understand`. Then we decided, in order to reduce the width of the contingency table, to replace these rather long labels with the shorter versions: `Good Theory of Mind` and `Poor Theory of Mind`, respectively. Finally, we made sure that the `Data type` drop-down menu was set to `text`. These settings are illustrated below in Figure \@ref(fig:ChisquareTestOfIndependenceQ16Settings).
 
 <br/>
 
-```{r ChisquareTestOfIndependenceQ16Settings, fig.cap="Settings in jamovi for the variable Q16 from the online version of the Narcisisstic Personality Inventory from @RaskinTerry1988.", echo=F, out.width="600px"}
+```{r ChisquareTestOfIndependenceQ16Settings, fig.cap="Settings in *jamovi* for the variable Q16 from the online version of the Narcisisstic Personality Inventory from @RaskinTerry1988.", echo=F, out.width="600px"}
 knitr::include_graphics("images/CategoricalData/ChisquareTestOfIndependenceQ16Settings.png")
 ```
 
 <br/>
 
-Figure \@ref(fig:ChisquareTestOfIndependenceQ24Settings) below shows how to do the same thing for *Q24* (replacing *I expect a great deal from other people* with *Self-centered*, and *I like to do things for other people* with *Selfless*.
+Figure \@ref(fig:ChisquareTestOfIndependenceQ24Settings) below shows how to do the same thing for `Q24` (replacing `I expect a great deal from other people` with `Self-centered`, and `I like to do things for other people` with `Selfless`.
 
 <br/>
 
-```{r ChisquareTestOfIndependenceQ24Settings, fig.cap="Settings in jamovi for the variable Q24 from the online version of the NPI from @RaskinTerry1988.", echo=F, out.width="600px"}
+```{r ChisquareTestOfIndependenceQ24Settings, fig.cap="Settings in *jamovi* for the variable Q24 from the online version of the NPI from @RaskinTerry1988.", echo=F, out.width="600px"}
 knitr::include_graphics("images/CategoricalData/ChisquareTestOfIndependenceQ24Settings.png")
 ```
 
@@ -906,7 +906,7 @@ This is all we needed for an analysis.
 
 #### Testing {#NarcissisticPersonalityInventoryTesting}
 
-First, we reported some descriptive statistics for the survey. We wanted the counts for *Q24* ("Selflessness") split by the levels of *Q16* ("Theory of Mind"). This would give us a birds-eye view of the responses out of 11,186 (as of the writing of this lab manual). See section \@ref(Frequencies) for instructions on how to do this yourself.
+First, we reported some descriptive statistics for the survey. We wanted the counts for `Q24` ("Selflessness") split by the levels of `Q16` ("Theory of Mind"). This would give us a birds-eye view of the responses out of 11,186 (as of the writing of this lab manual). See section \@ref(Frequencies) for instructions on how to do this yourself.
 
 <br/>
 
@@ -931,7 +931,7 @@ jmv::descriptives(
 
 Thus, of the 11,186 responses, about 55% reported having a relatively poor theory of mind (6,174), and about 45% (5,012) reported having a relative good theory of mind. Less than half of one percent failed to provide any response, equally distributed across both levels of Theory of Mind. A cursory glance at the bar plot suggests that those reporting a relatively poor theory of mind are more likely to self-report selflessness than those reporting a relatively good theory of mind. But plots can deceive. We needed to carry out an inferential test to see if this might be a real difference or not.
 
-Carrying this procedure out was much more straightforward than the chi-square goodness-of-fit test in the last section. We started by clicking the *Analyses* tab, and then *Frequencies*. Drag *Q16* to the *Rows* box and *Q24* to the *Columns* box (or vice-versa; it doesn't matter).
+Carrying this procedure out was much more straightforward than the chi-square goodness-of-fit test in the last section. We started by clicking the `Analyses` tab, and then `Frequencies`. Drag `Q16` to the `Rows` box and `Q24` to the `Columns` box (or vice-versa; it doesn't matter).
 
 Also click the following options. 
 
@@ -954,7 +954,7 @@ See Figure \@ref(fig:ChisquareTestOfIndependenceParameters) for a visual illustr
 
 <br/>
 
-```{r ChisquareTestOfIndependenceParameters, fig.cap="Parameter settings in jamovi for a chi-square test of independence on the online NPI data, originally from @RaskinTerry1988.", echo=F, out.width="600px"}
+```{r ChisquareTestOfIndependenceParameters, fig.cap="Parameter settings in *jamovi* for a chi-square test of independence on the online NPI data, originally from @RaskinTerry1988.", echo=F, out.width="600px"}
 knitr::include_graphics("images/CategoricalData/ChisquareTestOfIndependenceParameters.png")
 ```
 
@@ -983,7 +983,7 @@ rm(NPI)
 
 #### Interpreting {#NarcissisticPersonalityInventoryInterpreting}
 
-The results were "highly" significant, with $\chi^2 (1)=99.8,p<.001$. We could tentatively conclude that having a good or poor theory of mind does affect your selflessness. Those with poor theories of mind showed higher counts of selflessness (4,521) than expected (4,279), whereas those with good theories of mind showed unexpectedly lower counts of selflessness (3,231) than expected (3,473). The converse was true of the counts of *Self-centered*. However, the significance may have been primarily an artifact of having such a large sample size (11,186). The effect-size measures (the $\phi$ coefficient and *Cramér's V*) were both quite small at .095.
+The results were "highly" significant, with $\chi^2 (1)=99.8,p<.001$. We could tentatively conclude that having a good or poor theory of mind does affect your selflessness. Those with poor theories of mind showed higher counts of selflessness (4,521) than expected (4,279), whereas those with good theories of mind showed unexpectedly lower counts of selflessness (3,231) than expected (3,473). The converse was true of the counts of `Self-centered`. However, the significance may have been primarily an artifact of having such a large sample size (11,186). The effect-size measures (the $\phi$ coefficient and *Cramér's V*) were both quite small at .095.
 
 <br/>
 
@@ -991,7 +991,7 @@ The results were "highly" significant, with $\chi^2 (1)=99.8,p<.001$. We could t
 
 This is how it might have been written up:
 
->We took variables *Q16* ("Theory of Mind": *Good* vs. *Poor*) and *Q24* ("Selflessness": *Selfless* vs. *Self-centered*) and subjected the relative counts of these levels to a $\chi^2$ test of independence. All else being equal, the null hypothesis would predict that 69.3% of the respondents for both good and poor theories of mind would have reported that they were selfless, and 30.7% would have reported that they were self-centered. The results were significant [$\chi^2 (1)=99.8,p<.001$] with those who self-reported a poor theory of mind also reporting unexpectedly higher counts of selflessness (4,521, or 73.2%) than 69.3% would predict (4,279), and those who self-reported a good theory of mind also reporting unexpectedly lower counts of selflessness (3,231, or 64.5%) than 69.3% would predict (3,473). The effect size was negligible, however, with $\phi=.095$. Thus, the statistical significance could be an artifact of the large sample (N= 11,186).
+>We took variables `Q16` ("Theory of Mind": `Good` vs. `Poor`) and `Q24` ("Selflessness": `Selfless` vs. `Self-centered`) and subjected the relative counts of these levels to a $\chi^2$ test of independence. All else being equal, the null hypothesis would predict that 69.3% of the respondents for both good and poor theories of mind would have reported that they were selfless, and 30.7% would have reported that they were self-centered. The results were significant [$\chi^2 (1)=99.8,p<.001$] with those who self-reported a poor theory of mind also reporting unexpectedly higher counts of selflessness (4,521, or 73.2%) than 69.3% would predict (4,279), and those who self-reported a good theory of mind also reporting unexpectedly lower counts of selflessness (3,231, or 64.5%) than 69.3% would predict (3,473). The effect size was negligible, however, with $\phi=.095$. Thus, the statistical significance could be an artifact of the large sample (N= 11,186).
 
 <br/>
 
@@ -1003,9 +1003,9 @@ It's also an example of how a large sample size can exaggerate the inferential s
 
 ## Outside help on chi-square {#OutsideHelpOnChisquare}
 
-For whatever reason, there is less overall outside help on analyzing frequency data in jamovi.
+For whatever reason, there is less overall outside help on analyzing frequency data in *jamovi*.
 
-Still, to reinforce your learning here, you can go to [datalab.cc](https://datalab.cc/tools/jamovi) [@datalab.cc]. The first video to watch is #45, which discusses analyzing count data in general. We only covered how to do two analyses here, though five are possible under *Frequencies* in jamovi. Texas A&M students can find these datalab.cc tutorials in the *LinkedIn Learning* series, available through the *Howdy!* portal.
+Still, to reinforce your learning here, you can go to [datalab.cc](https://datalab.cc/tools/jamovi) [@datalab.cc]. The first video to watch is #45, which discusses analyzing count data in general. We only covered how to do two analyses here, though five are possible under `Frequencies` in *jamovi*. Texas A&M students can find these datalab.cc tutorials in the *LinkedIn Learning* series, available through the *Howdy!* portal.
 
 Your textbook [@lsj] obviously has a chapter on chi-square. But it also has a short tutorial on how to create contingency tables in Section 6.1.^[The data for this little tutorial in @lsj are from *In the Night Garden*, a television show for really young children that isn't shown in the US, but the main author (Bolger) got to see extensively while living in Canada when his son was very young. It has achieved some sort of cult status even among adults, who often find it so remarkably bizarre as to be entertaining even for them (at least for short stretches). The website for it is [here](https://www.inthenightgarden.co.uk/) in case you are interested in a truly strange children's show.]
 

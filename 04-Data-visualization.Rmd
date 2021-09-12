@@ -5,12 +5,14 @@ There are a few visualizations possible from among the *jamovi* `Descriptives` o
 <br/>
 
 ```{block2, type="rmdnote", echo=T}
+
 **NOTE**: There is one important thing you should understand, however, about the visualizations in this chapter (e.g., histograms, boxplots, Q-Q plots). Namely, these visualizations of descriptive statistics are used mostly by researchers to help them make decisions about subsequent analyses. These are ***NOT*** typically visualizations that are reported in the *Results* sections of journal articles. In *jamovi*, the plots that **are** used in *Results* sections are included within the menu for the statistical analysis itself. For example, there is a box called `Descriptives plots` that you can check under the `T-Tests` tab. This will give you a dot plot with confidence intervals [to be explained later in @lsj]. The exception below is the bar plot for frequency data (section \@ref(Barplots)). Such plots are, in fact, often used in *Results* sections of papers.
+
 ```
 
 <br/>
 
-To illustrate these various visualizations, we will use the `Chico2.omv` sample data set from @lsj. To get to this, just go to $(\equiv)$ > `Open` > `Data Library` > `Chico 2`. The data consist of grades on some test (`grade_test`), which is a continuous variable, along with a time-of-test variable, `time`, which is a 2-level factor, where `1` represents `at time 1` and `2` represents `at time 2`.
+To illustrate these various visualizations, we will use the `Chico2.omv` sample data set from @lsj. To get to this, just go to ($\equiv$) > `Open` > `Data Library` > `Chico 2`. The data consist of grades on some test (`grade_test`), which is a continuous variable, along with a time-of-test variable, `time`, which is a 2-level factor, where `1` represents `at time 1` and `2` represents `at time 2`.
 
 <br/>
 
@@ -26,7 +28,7 @@ The first visualization is the well-known histogram, where the frequency of part
 
 What does this mean? For certain variables, like reaction times, values almost never repeat. It would be very strange for any one or two people to get the same exact reaction time of 632.44 milliseconds (ms). Therefore, you can't really "stack" these observations in a histogram. What you can do, however, is bin them. You can create various bins of, say, 50 milliseconds, and place relevant values in there. For instance, there could be a bin for reaction timess between 350-400 ms, another one adjacent, to the right of that one for reaction times between 400-450 ms, then for 450-500 ms, and so on. You can change the width of the bin.
 
-For other variables, it's entirely possible to stack them, sometimes. For instance, if age (in years) is recorded as a simple integer (e.g., 18, 19, 20), it would be very easy to stack the 18s, the 19s, the 20s, the 21s, and so on, as long as your age range is relatively limited (e.g., typical college students). Note that if you had a really wide range of ages, you might bin them (1-5, 6-10, 11-15, 16-20,... 61-65... etc.).
+For other variables, it's entirely possible to stack them, sometimes. For instance, if age (in years) is recorded as a simple integer (e.g., 18, 19, 20), it would be very easy to stack the 18s, the 19s, the 20s, the 21s, and so on, as long as your age range is relatively limited (e.g., typical college students). Note that if you had a really wide range of ages, you might bin them (`1-5`, `6-10`, `11-15`, `16-20`,... `61-65`... etc.).
 
 Often paired with the histogram is the **density plot**, which uses math to estimate what a population distribution with many, many observations would look like based on the sample data you have. 
 
@@ -40,7 +42,7 @@ knitr::include_graphics("images/DataVis/VisualizationsHistAndDensity.png")
 
 <br/>
 
-The results of this are below.
+The results of this are below.^[Recall that the output below (and further down) was generated from the *jmv* package in *R*, and will therefore be rounded to more decimal places than the native output in *jamovi*.]
 
 <br/>
 
@@ -73,7 +75,7 @@ rm(Chico2)
 
 One of the drawbacks of histograms and density plots is that, although they are handy with respect to depicting the informal shape of a distribution, they are not so good at showing particular statistics about any given variable. This is where the boxplot comes in. Together with violin plots and dotplots (which can all be superimposed), you can offer your reader/listener a great deal of information about your variables.
 
-We will use the `Harpo` data set provided by @lsj (we see this data again in Chapter 11 of @lsj). This data has to do with the grades of 33 fictional students in "Dr. Harpo's" statistics class. Dr. Harpo also has two tutors: Anastasia and Bernadette. Go to $(\equiv)$ > `Open` > `Data Library` > `Harpo`.
+We will use the `Harpo` data set provided by @lsj (we see this data again in Chapter 11 of @lsj). This data has to do with the grades of 33 fictional students in "Dr. Harpo's" statistics class. Dr. Harpo also has two tutors: Anastasia and Bernadette. Go to ($\equiv$) > `Open` > `Data Library` > `Harpo`.
 
 <br/>
 
@@ -135,7 +137,7 @@ jmv::descriptives(
     n = FALSE,
     missing = FALSE,
     mean = FALSE,
-    quart = TRUE)
+    pcEqGr = TRUE)
 ```
 
 <br/>
@@ -214,7 +216,11 @@ The results of the stacked dot plot can be seen below. We also checked *Violin* 
 
 <br/>
 
-```{r, echo=FALSE}
+```{r VisualizationsDotPlainTemp, fig.cap="A stacked dot plot within a violin plot.", echo=F, out.width="600px"}
+knitr::include_graphics("images/DataVis/Visualizations_temp_HarpoViolinWithDots.png")
+```
+
+```{r, echo=FALSE, eval = F}
 jmv::descriptives(
     formula = grade ~ tutor,
     data = Harpo,
@@ -235,19 +241,26 @@ Note that these all fall under *Box plots* for a reason. Namely, you can combine
 
 <br/>
 
-```{r, echo=FALSE}
+```{r VisualizationsDotPlainTemp2, fig.cap="A jittered dot plot and box plot within a violin plot.", echo=F, out.width="600px"}
+knitr::include_graphics("images/DataVis/Visualizations_temp_HarpoViolinWithDots2.png")
+```
+
+```{r, echo=FALSE, eval = F}
+
 jmv::descriptives(
     formula = grade ~ tutor,
-    data = Harpo,
-    box = TRUE,
+    data = data,
     violin = TRUE,
     dot = TRUE,
+    dotType = "stack",
     n = FALSE,
     missing = FALSE,
     mean = FALSE,
     median = FALSE,
+    sd = FALSE,
     min = FALSE,
     max = FALSE)
+
 ```
 
 <br/>
@@ -404,4 +417,4 @@ For outside help on dot plots, you can go to [datalab.cc's tutorial on dot plots
 
 ### Bar plots (#OutsideHelpOnBarPlots)
 
-For outside help on bar plots in jamovi, you can go to [datalab.cc's tutorial on bar charts](https://datalab.cc/tools/jamovi), which is the video labeled *Bar plots*.
+For outside help on bar plots in *jamovi*, you can go to [datalab.cc's tutorial on bar charts](https://datalab.cc/tools/jamovi), which is the video labeled *Bar plots*.

@@ -2,13 +2,13 @@
 
 ## Chapter overview {#DataPreparationAndAnalysesChapterOverview}
 
-This section is dedicated to showing you how to get your data that you have collected from Google into jamovi, and then prepared in such a way that you can begin Writing Assignment #2 (in section \@ref(WritingAssignment2)). 
+This section is dedicated to showing you how to get your data that you have collected from Google into *jamovi*, and then prepared in such a way that you can begin Writing Assignment #2 (in section \@ref(WritingAssignment2)). 
 
 This section will proceed as follows:
 
 1. Exporting your data from Google Forms  
-2. Importing your data into jamovi  
-3. Cleaning up the data in jamovi so that only your pertinent variables remain  
+2. Importing your data into *jamovi*  
+3. Cleaning up the data in *jamovi* so that only your pertinent variables remain  
 4. Filtering out observations that should not be analyzed  
 5. Reverse-scoring data any variables that need this transformation  
 6. Calculating *z*-scores (if necessary)  
@@ -36,7 +36,7 @@ knitr::include_graphics(c("images/PrepForWA2/GoogleFormsAcceptingResponses.png",
 
 <br/>
 
-From here, there is an option to download the data as a .csv file directly by clicking the three vertical dots. So click $(\vdots)$ > *Download responses (.csv)*. This will place a compressed .zip folder on your computer. 
+From here, there is an option to download the data as a .csv file directly by clicking the three vertical dots. So click ($\vdots$) > *Download responses (.csv)*. This will place a compressed .zip folder on your computer. 
 
 You will then need to unzip it. On a Mac, simply double-click it and it will unzip it in the same location. On Windows 10, right-click it and choose *Extract All* and choose an appropriate destination and click *Extract* at the bottom. Note down where the extracted directory is.
 
@@ -44,19 +44,19 @@ That's it.
 
 <br/>
 
-## Importing the data into jamovi {#PreparingDataImportingTheData}
+## Importing the data into *jamovi* {#PreparingDataImportingTheData}
 
-Start jamovi and click $(\equiv)$ > *Import*. Navigate to the directory with the .csv file and double click the file.
+Start *jamovi* and click ($\equiv$) > *Import*. Navigate to the directory with the .csv file and double click the file.
 
 <br/>
 
 ```{block2, type="rmdnote", echo=T}
-***NOTE***: jamovi seems to have no problem recognizing commas inside of comma delimiters in .csv files exported by Google, so you should not have the following problem. However, if there were problems importing the .csv file due to the commas being delimiters, go back to Google Forms and click the square green icon with the white cross inside it. This will create a Google Sheet. From there, you can click *File* > *Download* > *Tab-separated values (.tsv, current sheet)*. This will create a tab-delimited file that jamovi should definitely not have a problem with.
+***NOTE***: *jamovi* seems to have no problem recognizing commas inside of comma delimiters in .csv files exported by Google, so you should not have the following problem. However, if there were problems importing the .csv file due to the commas being delimiters, go back to Google Forms and click the square green icon with the white cross inside it. This will create a Google Sheet. From there, you can click *File* > *Download* > *Tab-separated values (.tsv, current sheet)*. This will create a tab-delimited file that *jamovi* should definitely not have a problem with.
 ```
 
 <br/>
 
-Save your imported data as a jamovi file with the following name: *MainData_[YOUR.GROUP.ID].jmv* (e.g., *MainData_905C.jmv*). This is the file that you will ultimately upload (as a group) to the Google Folder assigned to you, and refer to when you notify your instructor that you have done so (in *Canvas*, under *Lab: BDDO* > *Data*). Only one person from the group needs to upload this.
+Save your imported data as a *jamovi* file with the following name: *MainData_[YOUR.GROUP.ID].jmv* (e.g., *MainData_905C.jmv*). This is the file that you will ultimately upload (as a group) to the Google Folder assigned to you, and refer to when you notify your instructor that you have done so (in *Canvas*, under *Lab: BDDO* > *Data*). Only one person from the group needs to upload this.
 
 But first, there are some changes you need to make.
 
@@ -74,21 +74,21 @@ First, Google Forms just exported the questions as your variable names. This is 
 
 <br/>
 
-Double-click the header at the top of the relevant column in jamovi. This will open up the *DATA VARIABLE* window, where you can manipulate things like the levels of the variable, the name, the descriptions, etc. In this case, you are going to manipulate the variable name and description.
+Double-click the header at the top of the relevant column in *jamovi*. This will open up the *DATA VARIABLE* window, where you can manipulate things like the levels of the variable, the name, the descriptions, etc. In this case, you are going to manipulate the variable name and description.
 
 First read the variable name at the top and think of a reasonable name for it. Don't type over the variable name yet. Just think of a reasonable, shorter replacement and write it down. A reasonable, shorter replacement name is one that is transparent enough for figures and tables, but not so long that it creates space problems for the same elements (i.e., figures and tables). For instance, a variable with the original name of *How satisfied are you with the amount of sleep you get each night* could be changed to *Nightly Sleep Satisfaction*.
 
 Next, select the entire variable name. Then either click CTRL-X or go to *Edit* > *Cut*. The long name should disappear from the top box. Now read the caution below:
 
 ```{block2, type="rmcaution", echo=T}
-**CAUTION**: For the moment, leave that long label in your clipboard (memory). You will come back to it shortly. And do not use the copy function again until you are finished with the process below. The reason for this is that jamovi will not allow you to leave that top box blank, even just to paste what you just copied into the *Description* box (see below). You must provide a variable name right now or nothing else will work. How to do this is explained below.
+**CAUTION**: For the moment, leave that long label in your clipboard (memory). You will come back to it shortly. And do not use the copy function again until you are finished with the process below. The reason for this is that *jamovi* will not allow you to leave that top box blank, even just to paste what you just copied into the *Description* box (see below). You must provide a variable name right now or nothing else will work. How to do this is explained below.
 ```
 
 <br/>
 
 So the very next thing you must do is re-name the variable in the top box. Use the variable name you wrote down (see above).
 
-Now, place the mouse in the *Description* box (make sure the cursor is blinking inside there) and click CTRL-V, or *Edit* > *Paste*. Now the long name of the variable is in the *Description*. The description in jamovi is mostly for researcher reference. It doesn't appear anywhere in any analyses, tables, or figures.
+Now, place the mouse in the *Description* box (make sure the cursor is blinking inside there) and click CTRL-V, or *Edit* > *Paste*. Now the long name of the variable is in the *Description*. The description in *jamovi* is mostly for researcher reference. It doesn't appear anywhere in any analyses, tables, or figures.
 
 <br/>
 
@@ -114,11 +114,11 @@ This is the topic of section \@ref(PreparingDataFilteringData) below. But first,
 
 ### Adjusting variables {#PreparingDataAdjustingVariables}
 
-When jamovi imports data from a delimited text file, sometimes it gets the variable type wrong.
+When *jamovi* imports data from a delimited text file, sometimes it gets the variable type wrong.
 
-For instance, when we imported some data from a past project in this class, jamovi imported *Age* as a nominal variable. If this happened to you, just double-click on *Age* and click the *Continuous* box. That will take care of it.
+For instance, when we imported some data from a past project in this class, *jamovi* imported *Age* as a nominal variable. If this happened to you, just double-click on *Age* and click the *Continuous* box. That will take care of it.
 
-jamovi may have done this with your Likert data as well, as it did in our case. That data should be *Continuous* (Data type: *Integer*). Do that for all variables that were imported as nominal, but should be continuous.
+*jamovi* may have done this with your Likert data as well, as it did in our case. That data should be *Continuous* (Data type: *Integer*). Do that for all variables that were imported as nominal, but should be continuous.
 
 <br/>
 
@@ -158,7 +158,7 @@ Many or most of you have a reverse-scored item. That means that the response sca
 
 There is a simple formula for reverse scoring. If your variable is *x*, then the formula is $max(x)+1-x$. That is, take the maximum possible value of *x*, add one to it, and subtract the value of *x* for that cell in the spreadsheet.
 
-In jamovi, you click the *Data* tab, and find a blank column on the right-hand side of the spreadsheet, and double-click the header. You will see several options, but you should click NEW COMPUTED VARIABLE.
+In *jamovi*, you click the *Data* tab, and find a blank column on the right-hand side of the spreadsheet, and double-click the header. You will see several options, but you should click NEW COMPUTED VARIABLE.
 
 You should come up with a new name for the variable that relates to the original. Thus, if the original had been *Aggression1*, the new one could be *Aggression1R* (with an *R* to indicate *reversed*). We have done one in plain English here with spaces (thereby requiring backticks). Here we are reverse-scoring *Nightly Sleep Satisfaction* into *Nightly Sleep Satisfaction (reversed)*.
 
@@ -178,7 +178,7 @@ In the figure, you can also compare the scores on the *Nightly Sleep Satisfactio
 
 <br/>
 
-[Here](https://psychology.hanover.edu/classes/ResearchMethods/jamovi/reliability/reverseScoring.html) is a more detailed link that describes reverse-scoring and how to carry it out in jamovi.
+[Here](https://psychology.hanover.edu/classes/ResearchMethods/jamovi/reliability/reverseScoring.html) is a more detailed link that describes reverse-scoring and how to carry it out in *jamovi*.
 
 <br/>
 
@@ -226,9 +226,9 @@ Assuming you have taken care of any conversion of your scores to *z*-scores (if 
 
 To illustrate this, we will simply use a dataset called *Personality Questionnaire: Ch15 - Personality data sample 3* (*bfi_sample3*) [located at the very bottom] from the datasets associated with @lsj. In fact, this is the dataset they use to illustrate the same (pp. 461-463).
 
-Simply go to $(\equiv)$ > *Open* > *lsj-data* > *Personality Questionnaire: Ch15 - Personality data sample 3*. This dataset is a sample of people who took a Big-5 Personality test. The variables A1-A5 represent *Agreeableness*, but A1 is reverse-scored.
+Simply go to ($\equiv$) > *Open* > *lsj-data* > *Personality Questionnaire: Ch15 - Personality data sample 3*. This dataset is a sample of people who took a Big-5 Personality test. The variables A1-A5 represent *Agreeableness*, but A1 is reverse-scored.
 
-Luckily, we do not need to reverse-score this ourselves. jamovi's procedure for calculating Cronbach's Alpha contains a mechanism within it to deal with reverse-scored items.
+Luckily, we do not need to reverse-score this ourselves. *jamovi*'s procedure for calculating Cronbach's Alpha contains a mechanism within it to deal with reverse-scored items.
 
 When you have the data, click the *Analyses* tab, and choose *Factor*.^[Cronbach's Alpha is often carried out in conjunction with something called *Factor Analysis*, which you are free to read about in Chapter 15 of @lsj] From here select *Reliability Analysis*.
 
@@ -240,7 +240,7 @@ knitr::include_graphics("images/PrepForWA2/ArrangmentOfVariablesForCronbachsAlph
 
 <br/>
 
-The result of the analysis should looks as follows:
+The result of the analysis should looks as follows:^[Recall that the output below (and further down) was generated from the *jmv* package in *R*, and will therefore be rounded to more decimal places than the native output in *jamovi*.]
 
 ```{r, include=FALSE}
 bfi_sample3 <- readRDS("datasets/PreppingData_bfi_sample3.rds")
@@ -280,4 +280,4 @@ knitr::include_graphics("images/PrepForWA2/AgreeablenessCompositeSummedNotAverag
 
 <br/>
 
-And that is it. Once you reach this stage, you have your composite variable and you are ready to upload the jamovi file to your group's Google Folder and let your TA know (through the assignment in *Canvas*).
+And that is it. Once you reach this stage, you have your composite variable and you are ready to upload the *jamovi* file to your group's Google Folder and let your TA know (through the assignment in *Canvas*).

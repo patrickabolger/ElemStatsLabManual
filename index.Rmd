@@ -4,13 +4,14 @@ author:
   affiliation: 'Department of Psychological & Brain Sciences at Texas A&M University'
   name: "Patrick Bolger, PhD"
 date: "`r format(Sys.time(), '%d %B %Y')`"
-bibliography: ["book.bib", "packages.bib"]  
 description: 'This is a lab manual for PSYC 301: Elementary Statistics for Psychology. It is an open educational resource (OER), so there is no charge to students.'
 documentclass: book
 github-repo: patrickabolger/ElemStatsLabManual
 link-citations: true
+bibliography: ["book.bib", "packages.bib"] 
+biblio-style: "apa"
+csl: "apa.csl"
 nocite: "@SchroederEpley2015, \n@MehrSongSpelke2016,\n@RogersMilkman2016\n"
-biblio-style: "apalike"
 site: bookdown::bookdown_site
 url: https\://patrickabolger.github.io/ElemStatsLabManual/
 ---
@@ -45,13 +46,13 @@ library(pander)
 #devtools::install_github("rstudio/bookdown")
 ```
 
-```{r}
+```{r writePackageBib, eval=F, include=F}
 # automatically create a bib database for *R* packages
 # Some are obscured from the reader, so they don't need to go here
-knitr::write_bib(c(
-  .packages(), 'bookdown', 'knitr', 'rmarkdown', 'haven', 'kableExtra', 'jmv', 'tinytex', 'tidyverse'
-  ), 
-'packages.bib')
+# knitr::write_bib(c(
+#   .packages(), 'bookdown', 'knitr', 'rmarkdown', 'haven', 'kableExtra', 'jmv', 'tinytex', 'tidyverse'
+#   ), 
+# 'packages.bib')
 ```
 
 # Preface {-}
@@ -98,12 +99,15 @@ As noted above, you will need certain resources in order to achieve these goals.
 
 #### This lab manual 
 
-This lab manual [@Bolger2019] was created also using the programming language *R* within *RStudio Desktop*, along with the *R* package [bookdown](https://bookdown.org/) [@R-bookdown], which uses [rmarkdown](https://rmarkdown.rstudio.com/) [@R-rmarkdown] to create books. *R Markdown* is a [markdown language](https://en.wikipedia.org/wiki/Markdown) for *R* created by the popular integrated development environment ([IDE](https://en.wikipedia.org/wiki/Integrated_development_environment)) [RStudio](https://www.rstudio.com/) [@RStudio], which makes programming in *R* easier. Several other *R* packages were also used throughout. These are represented by the hexagon stickers near the top of this page
+This lab manual [@Bolger2019] was created also using the programming language *R* within *RStudio Desktop*, along with the *R* package [bookdown](https://bookdown.org/) [@R-bookdown], which uses [rmarkdown](https://rmarkdown.rstudio.com/) [@R-rmarkdown] to create books. *R Markdown* is a [markdown language](https://en.wikipedia.org/wiki/Markdown) for *R* created by the popular integrated development environment ([IDE](https://en.wikipedia.org/wiki/Integrated_development_environment)) [RStudio](https://www.rstudio.com/) [@RStudio], which makes programming in *R* easier. 
+
+Several other *R* packages were also used throughout. Many of these are represented by the hexagon icons near the top of this page. But note that hexagon icons are just a popular aesthetic. Some of the most important packages in *R* (and even in this manual) are not represented by hex icons.
+
+<!-- REVISIT: ADD SOMETHING ABOUT WHERE THE PACKAGE CITATIONS ARE, WHENEVER THAT GETS FIXED. -->
 
 ---
 
 <br/>
-
 
 #### The jamovi user guide
 
@@ -215,7 +219,7 @@ There will also be a number of data sets freely available online that we will us
 
 ### Software {#Software}
 
-#### The free statistical software *jamovi*
+#### *jamovi*
 
 *jamovi* [@jamovi] is linked [here](https://www.jamovi.org/), which again, is a friendly graphical user interface (GUI) for basic functions from the powerful open-source statistical software *R* [@R-base]. *jamovi* (all lowercase) was designed to provide the basic functionality that *SPSS* provides. *SPSS* is more common in the social sciences (for now), but you have to pay a lot of money to download it on your computer. *jamovi* can be downloaded and installed onto the following operating systems: Windows, Macs, Linux, and ChromeOS. See the next section for more detailed rationale for using *jamovi*.  
 
@@ -226,6 +230,14 @@ See Figure \@ref(fig:jamovi) below.
 ```{r jamovi, fig.cap="jamovi.", echo=F, out.width="600px"}
 knitr::include_graphics("images/Index/jamovi.png")
 ```
+
+<br/>
+
+``` {block2, type='rmdnote', echo=T}
+
+***NOTE***: This manual also uses the *R* package *jmv*, which is a package that generates *jamovi* output from within *R* itself. The formatting of the output is slightly different, especially with respect to the number of decimal places. These differences will be noted throughout as the need arises.
+
+```  
 
 ---
 

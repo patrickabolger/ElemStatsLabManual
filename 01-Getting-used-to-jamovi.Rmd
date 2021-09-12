@@ -1,10 +1,10 @@
 # (PART) Basics {-}
 
-# Getting used to jamovi {#GettingUsedtoJamovi}
+# Getting used to *jamovi* {#GettingUsedtoJamovi}
 
-This short chapter will introduce you to jamovi [@jamovi]. 
+This short chapter will introduce you to *jamovi* [@jamovi]. 
 
-As noted in the last chapter, [jamovi](https://www.jamovi.org/) (first letter is lowercase) is free statistical-analysis software that is built on top of a wildly popular, free, statistically-centered, programming language called R [@R-base]. The difference is that jamovi consists of a GUI, whereas *R* is command-line software. That is, jamovi is point-and-click with easy-to-use pull-down menus, whereas R involves typing code on a blank screen. *R* is rapidly changing the face of data science, but it can be very intimidating at first because of its command-line nature and, what many (even seasoned programmers) feel to be, unusual programming syntax. jamovi is a much easier program to use, and it is explicitly designed to be manageable for beginners.
+As noted in the last chapter, [jamovi](https://www.jamovi.org/) (first letter is lowercase) is free statistical-analysis software that is built on top of a wildly popular, free, statistically-centered, programming language called R [@R-base]. The difference is that *jamovi* consists of a GUI, whereas *R* is command-line software. That is, *jamovi* is point-and-click with easy-to-use pull-down menus, whereas R involves typing code on a blank screen. *R* is rapidly changing the face of data science, but it can be very intimidating at first because of its command-line nature and, what many (even seasoned programmers) feel to be, unusual programming syntax. *jamovi* is a much easier program to use, and it is explicitly designed to be manageable for beginners.
 
 ## Downloading and installing {#DownloadingAndInstallingJamovi}
 
@@ -12,14 +12,14 @@ This is easy. Just go to the [main jamovi website](https://www.jamovi.org/), fin
 
 ## Navigation {#NavigatingJamovi}
 
-jamovi is laid out such that your data, your **input**, is always on the left in a spreadsheet format (like Excel), and whatever analyses you apply to those data, your **output**, is always on the right. 
+*jamovi* is laid out such that your data, your **input**, is always on the left in a spreadsheet format (like Excel), and whatever analyses you apply to those data, your **output**, is always on the right. 
 
 There are five tabs in the uppermost menu (from left to right): 
 
 
 $\equiv$&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;`Data`&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;`Analyses`&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;`Edit`&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;$\vdots$  
 
-They are explained below in order of centrality to how most people use jamovi:
+They are explained below in order of centrality to how most people use *jamovi*:
 
 The `Data` tab in Figure \@ref(fig:DataTab) below shows you a set of options on how to manipulate data within the spreadsheet. 
 
@@ -67,9 +67,9 @@ knitr::include_graphics("images/GettingUsedToJamovi/dummyoutput.png")
 
 <br/>
 
-As of jamovi version `1.6.0` (released at the end of August, 2020), there is a new menu called `Edit`. This tab is only useful ***after*** you have some statistical output. It allows you to edit the default headers that are displayed when you conduct any analysis. it also allows you to add formatted text (e.g., regular text, underlined, text, italicized text, web links, code blocks, etc.) above and below the statistical output.
+As of *jamovi* version `1.6.0` (released at the end of August, 2020), there is a new menu called `Edit`. This tab is only useful ***after*** you have some statistical output. It allows you to edit the default headers that are displayed when you conduct any analysis. it also allows you to add formatted text (e.g., regular text, underlined, text, italicized text, web links, code blocks, etc.) above and below the statistical output.
 
-Below (Figure \@ref(fig:AnnoteBefore)) is a screenshot of the default output from jamovi when you run a standard `Exploration` procedure on the `afl.margins` dataset that comes with the `lsj-data` module. Below ***THAT*** (Figure \@ref(fig:AnnoteAfter)) are some simple changes to this default output.
+Below (Figure \@ref(fig:AnnoteBefore)) is a screenshot of the default output from *jamovi* when you run a standard `Exploration` procedure on the `afl.margins` dataset that comes with the `lsj-data` module. Below ***THAT*** (Figure \@ref(fig:AnnoteAfter)) are some simple changes to this default output.
 
 ```{r AnnoteBefore, fig.cap="Default output.", echo=F, out.width="600px"}
 knitr::include_graphics("images/GettingUsedToJamovi/annotation_before.png")
@@ -85,7 +85,7 @@ knitr::include_graphics("images/GettingUsedToJamovi/annotation_after.png")
 
 <br/>
 
-- There is a `Basic operations`^[We don't actually know the official name of this.] menu on the far left that is triggered by clicking the three horizontal lines, or `$\equiv$`. See Figure \@ref(fig:BasicOperationsMenu) below. Clicking this will make some file operations slide in from the left. These are things like saving the .omv file with a name, importing data, exporting data, etc. Note that to get out of this menu option, you just need to click the big arrow. This is true for any sub-menu in jamovi.
+- There is a `Basic operations`^[We don't actually know the official name of this.] menu on the far left that is triggered by clicking the three horizontal lines, or `$\equiv$`. See Figure \@ref(fig:BasicOperationsMenu) below. Clicking this will make some file operations slide in from the left. These are things like saving the .omv file with a name, importing data, exporting data, etc. Note that to get out of this menu option, you just need to click the big arrow. This is true for any sub-menu in *jamovi*.
 
 <br/>
 
@@ -97,7 +97,7 @@ knitr::include_graphics("images/GettingUsedToJamovi/basicoperations.png")
 
 <br/>
 
-- There is a `Preferences`^[Same here. There seems to be no official name.] menu on the far right. See Figure \@ref(fig:PreferencesTab) below. To activate it click the three vertical dots $(\vdots)$. There are settings in here. You may want to change the color scheme, or round numbers to a certain number of decimals, etc. You can set these preferences here.
+- There is a `Preferences`^[Same here. There seems to be no official name.] menu on the far right. See Figure \@ref(fig:PreferencesTab) below. To activate it click the three vertical dots ($\vdots$). There are settings in here. You may want to change the color scheme, or round numbers to a certain number of decimals, etc. You can set these preferences here.
 
 <br/>
 
@@ -107,13 +107,13 @@ knitr::include_graphics("images/GettingUsedToJamovi/preferences.png")
 
 <br/>
 
-- Finally, there is a tab labeled `Modules` on the far right when you are under `Analyses` (there is a **plus sign**, `+`, to identify it as well). To understand what is going on with this tab, you first have to understand that when you downloaded jamovi, you downloaded it in its base form. The base form is what the authors of the software believe will carry you through basic analyses without overloading the software and making it unnecessarily large to download and install. However, many users will want or need to carry out specific analyses that the software authors consider either unusual or extra. They provide this extra functionality in the form of modules. They are written by either the jamovi team, or in many cases, avid users of jamovi (you can do so as well, if you're so inclined).
+- Finally, there is a tab labeled `Modules` on the far right when you are under `Analyses` (there is a **plus sign**, `+`, to identify it as well). To understand what is going on with this tab, you first have to understand that when you downloaded *jamovi*, you downloaded it in its base form. The base form is what the authors of the software believe will carry you through basic analyses without overloading the software and making it unnecessarily large to download and install. However, many users will want or need to carry out specific analyses that the software authors consider either unusual or extra. They provide this extra functionality in the form of modules. They are written by either the *jamovi* team, or in many cases, avid users of *jamovi* (you can do so as well, if you're so inclined).
 
 If you click this tab, and then select `Manage installed`, you will see a pop-up menu consisting of the available modules that are either already `Installed` (the upper-left tab) or `Available` for download (the middle tab). Do not worry about tab on the upper right, `Sideload`, unless you want to write and test your own module. See Figure \@ref(fig:ModuleTabs) below.
 
 <br/>
 
-```{r ModuleTabs, fig.cap="Modules in jamovi.", echo=F, out.width="49%", out.height="20%",fig.show='hold',fig.align='center'}
+```{r ModuleTabs, fig.cap="Modules in *jamovi*.", echo=F, out.width="49%", out.height="20%",fig.show='hold',fig.align='center'}
 knitr::include_graphics(c("images/GettingUsedToJamovi/modules1.png","images/GettingUsedToJamovi/modules2.png"))
 ```
 
@@ -136,13 +136,13 @@ However, there are some other modules you will absolutely need installed for thi
 
 ### Overall introduction {#OutsideHelpOnOveralIntroduction}
 
-[datalab.cc's general introductory tutorial on jamovi](https://datalab.cc/tools/jamovi) is a nice overview of jamovi. Choose video #1, called **Welcome**. If you are at Texas A&M University, you can also go to the *Howdy!* portal and search for jamovi in the *LinkedIn Learning* tutorials. In fact, all of  datalab.cc's tutorials on jamovi are available there.
+[datalab.cc's general introductory tutorial on jamovi](https://datalab.cc/tools/jamovi) is a nice overview of *jamovi*. Choose video #1, called **Welcome**. If you are at Texas A&M University, you can also go to the *Howdy!* portal and search for *jamovi* in the *LinkedIn Learning* tutorials. In fact, all of  datalab.cc's tutorials on *jamovi* are available there.
 
 <br/>
 
 ### Downloading and installing {#OutsideHelpOnDownloadingAndInstalling}
 
-Here are some tutorials on how to download and install jamovi:
+Here are some tutorials on how to download and install *jamovi*:
   - the [jamovi User Guide](https://www.jamovi.org/user-manual.html#installation)
   - the [datalab.cc video tutorial](https://datalab.cc/tools/jamovi) on how to do this. Scroll to video #2, **Installing jamovi**.
   - @lsj, Chapter 3, Section 1 (3.1)
@@ -164,4 +164,4 @@ Here are some tutorials on how to download and install jamovi:
 
 ## Conclusion {#ConclusionOfBasics}
 
-Now that you are somewhat familiar with the layout of jamovi, it's time to learn how to work with data. This is the topic of the next chapter.
+Now that you are somewhat familiar with the layout of *jamovi*, it's time to learn how to work with data. This is the topic of the next chapter.

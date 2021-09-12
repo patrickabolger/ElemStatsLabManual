@@ -1,8 +1,8 @@
 # Correlation and linear regression {#CorrAndLinearReg}
 
-So far, we have only addressed cases where the predictor variable is categorical in nature (e.g., ***Sex***: *male*/*female*; ***Handedness***: *left*/*right*/*ambidextrous*). 
+So far, we have only addressed cases where the predictor variable is categorical in nature (e.g., `Sex`: `male`/`female`; `Handedness`: `left`/`right`/`ambidextrous`). 
 
-But this chapter is all about how to analyze data when both the outcome variable and the predictor variable are continuous in nature. For example, you might be interested in the proclivity of university students to attend sporting events (measured on a scale from 1-7, 1 being *not at all*, and 7 being *every event I can possibly attend*) as predicted by how much they crave social interaction (same scale, 1 being *not at all* and 7 being *all the time*). You might expect that students who provide higher values on the first question would also tend to provide higher values on the second, and vice-versa. This sort of analysis cannot be carried out with a chi-square, or *t*-test, or ANOVA. It can be analyzed, however, as a correlation or a simple regression.^[Note that there is a considerable amount of controversy here. Many would argue that Likert scales are either not truly interval scales, or (when used as predictor variables) not measured without error, or both. These are assumptions of the basic, introductory kind of regression we are doing this is class (ordinary least squares), though there are more advanced solutions to these problems (e.g., ordinal logistic regression and errors-in-variables modeling, respectively). At the same time, such questions are beyond the scope of this class. They are worth noting, however, to return to later when your statistical knowledge is sufficiently advanced.]
+But this chapter is all about how to analyze data when both the outcome variable and the predictor variable are continuous in nature. For example, you might be interested in the proclivity of university students to attend sporting events (measured on a scale from 1-7, 1 being `not at all`, and 7 being `every event I can possibly attend`) as predicted by how much they crave social interaction (same scale, 1 being `not at all` and 7 being `all the time`). You might expect that students who provide higher values on the first question would also tend to provide higher values on the second, and vice-versa. This sort of analysis cannot be carried out with a chi-square, or *t*-test, or ANOVA. It can be analyzed, however, as a correlation or a simple regression.^[Note that there is a considerable amount of controversy here. Many would argue that Likert scales are either not truly interval scales, or (when used as predictor variables) not measured without error, or both. These are assumptions of the basic, introductory kind of regression we are doing this is class (ordinary least squares), though there are more advanced solutions to these problems (e.g., ordinal logistic regression and errors-in-variables modeling, respectively). At the same time, such questions are beyond the scope of this class. They are worth noting, however, to return to later when your statistical knowledge is sufficiently advanced.]
 
 <br/>
 
@@ -31,7 +31,7 @@ Or more specifically:
 
 $$r_{XY}=\frac{1}{n-1} \sum_{i=1}^n Z_{X_i}Z_{Y_i}$$
 
-where *i* is an individual observation (e.g., multiply Jerry's *z*-score on *X* by his *z*-score on *Y*, then add that product to Jennifer's *z*-score on *X* multiplied by her *z*-score on *Y*... etc.)
+where `i` is an individual observation (e.g., multiply Jerry's *z*-score on *X* by his *z*-score on *Y*, then add that product to Jennifer's *z*-score on *X* multiplied by her *z*-score on *Y*... etc.)
 
 <br/>
 
@@ -49,17 +49,17 @@ This part of the lab manual simply presents the material in Navarro and Foxcroft
 
 #### Importing the data {#BasicCorrelationParenthoodGettingTheData}
 
-The data used to illustrate correlation in this chapter is called `Parenthood.csv` and it is available from the jamovi module associated with this textbook. Just go to $(\equiv)$ > *Open* > *Data Library* > `Parentood.csv`.
+The data used to illustrate correlation in this chapter is called `Parenthood.csv` and it is available from the *jamovi* module associated with this textbook. Just go to ($\equiv$) > `Open` > `Data Library` > `Parentood.csv`.
 
 The data is fictional, but real in the sense that the first author has a son, who was naturally an infant at one point. It is a fictitious data set where the author recorded three things:
 
 1. their own sleep patterns (in total hours per night)  
-2. their grumpiness over the course of 100 days (0 meaning *not at all grumpy*, and 100 meaning *extremely grumpy*)  
+2. their grumpiness over the course of 100 days (0 meaning `not at all grumpy`, and 100 meaning `extremely grumpy`)  
 3. their son's sleeping patterns (in total hours per night)  
 
-This data set is actually a comma-delimited text file (hence, the title of this subsection: *Importing*). So although jamovi is good at guessing, sometimes it makes mistakes. You want to make sure that all the variables, except perhaps `ID`, are continuous. So change any mis-specified variables first.
+This data set is actually a comma-delimited text file (hence, the title of this subsection: *Importing*). So although *jamovi* is good at guessing, sometimes it makes mistakes. You want to make sure that all the variables, except perhaps `ID`, are continuous. So change any mis-specified variables first.
 
-You can also re-name the variables, if you wish, into human-readable names, as Navarro and Foxcroft suggest [-@lsj, p. 282]. Do this in the top row of each variable when you double click the name. You should also probably save it as a .omv (jamovi) file. For the purposes of display, I chose `My sleep (hrs.)`, `Baby sleep (hrs.)`, and `My grumpiness`.
+You can also re-name the variables, if you wish, into human-readable names, as Navarro and Foxcroft suggest [-@lsj, p. 282]. Do this in the top row of each variable when you double click the name. You should also probably save it as a .omv (*jamovi*) file. For the purposes of display, I chose `My sleep (hrs.)`, `Baby sleep (hrs.)`, and `My grumpiness`.
 
 <br/>
 
@@ -79,7 +79,7 @@ The first two seem like direct relationships. the last seems like an indirect re
 
 Or more precisely:
 
->Correlation does not *necessarily* imply causation, although all effects will be statistically correlated somehow with their causes. That said, *causation* is mostly a research-design issue, not so much a statistical one.
+>Correlation does not *necessarily* imply causation, although all effects will be statistically correlated somehow with their causes as long as there are no significant moderating variables (variables that affect the relationship between the cause and the effect). That said, *causation* is mostly a research-design issue, not so much a statistical one.
 
 <br/>
 
@@ -89,13 +89,13 @@ Importantly, you can probably guess that there will probably be a statistical co
 
 #### Analysis {#BasicCorrelationParenthoodAnalysis}
 
-In this case, there are multiple possible correlations, not all of them useful (see section \@ref(BasicCorrelationParenthoodGettingTheData) above). Nonetheless, it is possible to analyze multiple correlations at the same time in jamovi.
+In this case, there are multiple possible correlations, not all of them useful (see section \@ref(BasicCorrelationParenthoodGettingTheData) above). Nonetheless, it is possible to analyze multiple correlations at the same time in *jamovi*.
 
-Go to the *Analyses* tab, and click *Regression* and choose *Correlation Matrix* from the pull-down menu.
+Go to the `Analyses` tab, and click `Regression` and choose `Correlation Matrix` from the pull-down menu.
 
-In the textbook, Navarro and Foxcroft [-@lsj] have you put all four variables into the analysis, but we will have you only choose the grumpiness and sleep variables (leave `day` alone). 
+In the textbook, Navarro and Foxcroft [-@lsj] have you put all four variables into the analysis, but we will have you only choose the variables related to grumpiness and sleep (leave `day` alone). 
 
-Make sure to check the boxes *Pearson* under the heading **Correlation Coefficients**, the boxes *Report significance* and *Confidence intervals* (with the interval set to 95%) under the heading **Additional Options**, and the boxes *Correlation matrix* and *Statistics* under the heading **Plot**.
+Make sure to check the boxes `Pearson` under the heading `Correlation Coefficients`, the boxes `Report significance` and `Confidence intervals` (with the interval set to 95%) under the heading `Additional Options`, and the boxes `Correlation matrix` and `Statistics` under the heading `Plot`.
 
 These selections should look like figure \@ref(fig:SetParametersForCorrMatrix) below.
 
@@ -135,7 +135,7 @@ As noted earlier, correlations near zero indicate no relationship at all between
 <br/>
 
 ```{block2, type="rmdtip", echo=T}
-***TIP***: An easy way to look at confidence intervals here is to see if both values (for one correlation) are either both negative or both positive. If they are, then the correlation is significant since the range cannot contain 0. If on the other hand, the lower bound is negative and the upper bound is positive, then the range *does* contain zero, and you do not have significance. Thus, to test for significance, you don't need to actually look at the values in the confidence intervals, just the signs (+ or -).
+***TIP***: An easy way to look at confidence intervals here is to see if both values (for one correlation) are either both negative or both positive. If they are, then the correlation is significant since the range cannot contain 0. If on the other hand, the lower bound is negative and the upper bound is positive, then the range *does* contain zero, and you do not have significance. Thus, to test for significance, you do not need to actually look at the values in the confidence intervals, just the signs (`+` or `-`).
 ```
 
 <br/>
@@ -144,19 +144,17 @@ In the analysis here you can see that all the variables are correlated with each
 
 <br/>
 
-There is a useful page online that annotates the output of correlations in jamovi. It is page four of the *JAMOVI: Annotated Output* document from Wendorf [-@Wendorf2019]. You can find it [here](https://www4.uwsp.edu/psych/cw/statistics/textbook.htm), though you need to choose *JAMOVI* in the menu across the top, then *JAMOVI: Annotated Output*.
+There is a useful page online that annotates the output of correlations in *jamovi*. It is page four of the *JAMOVI: Annotated Output* document from Wendorf [-@Wendorf2019]. You can find it [here](https://www4.uwsp.edu/psych/cw/statistics/textbook.htm), though you need to choose *JAMOVI* in the menu across the top, then *JAMOVI: Annotated Output*.
 
 <br/>
 
 #### Visualization using scatr {#BasicCorrelationParenthoodVisualizationWithScatr}
 
-The visualization provided by jamovi in the *Regression* analysis tab is somewhat limited. One of the software developers at jamovi, Ravi Selker, build an add-on module for jamovi named *scatr*, which does a better job of creating scatterplots.
+The visualization provided by *jamovi* in the `Regression` analysis tab is somewhat limited. One of the software developers at *jamovi*, Ravi Selker, built an add-on module for *jamovi* named `scatr`, which does a better job of creating scatterplots.
 
-To do this with the current data, make sure that *scatr* is installed (*Modules* > *Manage installed*; find the tab *Installed* (if *scatr* is listed there, then stop by clicking the "up" arrow at the upper right); if *scatr* is not listed under *Installed*, then find the tab *Available* and scroll to find *scatr* and click *INSTALL*); then click the "up" arrow at the upper-right to get out of this menu.
+Under the `Analyses` tab, click `Exploration`. Choose `scatterplot` under the `scatr` sub-menu (from the pull-down menu).
 
-Once *scatr* is installed, then under the *Analyses* tab, click *Exploration*. Choose *scatterplot* under the *scatr* sub-menu (from the pull-down menu).
-
-At this point, put one of the variables you want to analyze as part of the correlation into the box labeled *X-axis*, and the other variable you want to analyze into the *Y-axis* box. Under the sub-menu called **Regression Line**, choose *Linear* and (when it subsequently appears) *Standard error*. Under **Marginals**, choose either *Densities* or *Boxplots*. We chose *Boxplots* for illustration purposes here (and because they are more informative than density plots). These options are shown below in Figure \@ref(fig:SetParametersForScatrOnGrumpinessAndMySleep) for the variables `My Sleep (hrs.)` and `My grumpiness`.
+At this point, put one of the variables you want to analyze as part of the correlation into the box labeled `X-axis`, and the other variable you want to analyze into the `Y-axis` box. Under the sub-menu called `Regression Line`, choose `Linear` and (when it subsequently appears) `Standard error`. Under `Marginals`, choose either `Densities` or `Boxplots`. We chose `Boxplots` for illustration purposes here (and because they are more informative than density plots). These options are shown below in Figure \@ref(fig:SetParametersForScatrOnGrumpinessAndMySleep) for the variables `My Sleep (hrs.)` and `My grumpiness`.
 
 
 ```{r SetParametersForScatrOnGrumpinessAndMySleep, fig.cap="Setting the parameters for a scatterplot between `My grumpiness` and `My Sleep (hrs.)`, from the `parenthood.csv` dataset in Navarro and Foxcroft [-@lsj].", echo=F, out.width="600px"}
@@ -189,7 +187,7 @@ No. As we *also* mentioned above, the statistical test will come out the same wh
 
 But let's say that you wanted to get a scatterplot of Pearson's *r*, and not the scatterplot for the regression. All you have to do is standardize the variables, as was demonstrated in sections \@ref(ZScores) and \@ref(PreparingDataCalculatingZScores).
 
-Once you have the *z*-scores for each variable, simply run the same analysis using *scatr*. We have done this in Figure \@ref(fig:SetParametersForScatrStandardizedVersion) below.
+Once you have the *z*-scores for each variable, simply run the same analysis using `scatr`. We have done this in Figure \@ref(fig:SetParametersForScatrStandardizedVersion) below.
 
 ```{r SetParametersForScatrStandardizedVersion, fig.cap="Setting the parameters for a scatterplot between `My grumpiness` and `My Sleep (hrs)`, both standardized for a closer relation to Pearson's *r*, from the `parenthood.csv` dataset in Navarro and Foxcroft [-@lsj].", echo=F, out.width="600px"}
 knitr::include_graphics("images/CorrAndLinReg/SetParametersForScatrStandardizedVersion.png")
@@ -245,7 +243,7 @@ To report Pearson's *r* in APA format, you can get most of the information you n
 
 Next, we need the *p*-values, which are also located in the correlation matrix (since we requested them). The exact values are not given in this case, but rather just the value $<.001$. The reason for this is that correlation matrices can get quite crowded with many variables, so this keeps the display clean-looking. It is enough for our purposes, since the APA discourages reporting exact values below $.001$ anyway.
 
-Finally, we should report the confidence intervals, which we asked for in jamovi. These were
+Finally, we should report the confidence intervals, which we asked for in *jamovi*. These were
 
 - $[-0.934, -0.859]$  
 - $[-0.686, -0.416]$  
@@ -275,7 +273,7 @@ We can now put together a partial *Results* section for this one analysis:
 
 ### Advanced {#AdvancedCorrelationSPRING2020}
 
-***SLATED FOR SPRING 2020***
+***SLATED FOR SPRING 2021***
 
 <br/>
 
@@ -283,7 +281,7 @@ We can now put together a partial *Results* section for this one analysis:
 
 Chapter 12 of Navarro and Foxcroft [-@lsj] begins the discussion of linear regression with a simple linear regression (sections 12.3-12.4). They also note that the **simple** linear regression is essentially the same as Pearson's *r*, but without the standardized variables. That is, the simple linear regression uses the raw values of the variables. We also noted this above in section \@ref(BasicCorrelationParenthoodVisualizationWithScatr).
 
-This changes two things. First, the intercept gets a real value. 
+This changes two things. First, the intercept gets a value other than zero. 
 
 Recall that since Pearson's *r* is calculated from standardized variables, the intercept of the line of best fit (i.e., where it crosses the y-axis) is known beforehand. It is located at $Y=0$. In fact, the line must cross at the origin (0,0), since by definition, $X=0$ as well at the intercept. So the axes are rarely represented when Pearson's *r* is graphed. It would just add visual clutter in the form of a cross drawn through the middle of all the data.
 
@@ -298,10 +296,7 @@ Recall from high-school algebra (or earlier) that the formula for a straight lin
 $$Y=mX+b$$
 , where $Y$ is some value you're trying to calculate based on some $X$ value, combined with an intercept, $b$, and a slope, $m$.
 
-Navarro and Foxcroft [-@lsj] use the following formula:
-
-$$Y=bX+a$$
-, where, as you might imagine, the slope is $b$ and $a$ is the intercept. 
+Navarro and Foxcroft [-@lsj] use the formula $Y=bX+a$, where, as you might imagine, the slope is $b$ and $a$ is the intercept. 
 
 This is just the way they do it in Australia, where Navarro is from.
 
@@ -325,7 +320,7 @@ Navarro and Foxcroft [-@lsj] use the same data set to illustrate simple linear r
 
 #### Import and familiarize {#BasicRegressionParenthoodGettingTheData}
 
-As you did above (and you don't currently have it open), just go to $(\equiv)$ > *Open* > *Data Library* > `Parentood.csv`.
+As you did above (and you don't currently have it open), just go to ($\equiv$) > `Open` > `Data Library` > `Parentood.csv`.
 
 You will probably need to make some adjustments as we did for the correlation analysis. Refer to the instructions above in section \@ref(BasicCorrelationParenthoodGettingTheData).
 
@@ -335,7 +330,9 @@ Also familiarize yourself with the data as illustrated in section \@ref(BasicCor
 
 #### Analysis {#BasicRegressionParenthoodAnalysis}
 
-Following the textbook [@lsj, section 12.4.1], go to the *Analyses* tab and choose *Regression* > *Linear Regression*. See Figure \@ref(fig:SetParametersForLinReg) below.
+Following the textbook [@lsj, section 12.4.1], go to the `Analyses` tab and choose `Regression` > `Linear Regression`.
+
+Slide `My grumpiness` into the `Dependent Variable` box and `My Sleep (hrs)` into the `Covariates` box. See Figure \@ref(fig:SetParametersForLinReg) below.
 
 <br/>
 
@@ -345,7 +342,7 @@ knitr::include_graphics("images/CorrAndLinReg/SetParametersForLinReg.png")
 
 <br/>
 
-You should also choose a couple of options under the *Model Coefficients* box, which lies below the main window (see Figure \@ref(fig:SetParametersForLinRegExtra) below). These options are the *ANOVA test*, the *Confidence interval* (set at 95%), and the *Standardized estimate*.
+You should also choose a couple of options under the `Model Coefficients` box, which lies below the main window (see Figure \@ref(fig:SetParametersForLinRegExtra) below). These options are the `ANOVA test`, the `Confidence interval` (set at 95%), and the `Standardized estimate`.
 
 <br/>
 
@@ -355,7 +352,7 @@ knitr::include_graphics("images/CorrAndLinReg/SetParametersForLinRegExtra.png")
 
 <br/>
 
-The results should look something like the following:
+The results should look something like the following:^[Recall that the output below (and further down) was generated from the *jmv* package in *R*, and will therefore be rounded to more decimal places than the native output in *jamovi*.]
 
 ```{r, echo=F, warning=F, message=F}
 jmv::linReg(
@@ -381,7 +378,7 @@ This output can be interpreted as follows:
 
 <br/>
 
-Recall that this was also interpretable as Pearson's *r*, but only in standard-deviation units. Thus, using Pearson's *r* from section \@ref(BasicCorrelationParenthoodAnalysis) above, or just the far right-hand side of the output above (the result of checking the *Standardized estimate* box in our regression analysis):
+Recall that this was also interpretable as Pearson's *r*, but only in standard-deviation units. Thus, using Pearson's *r* from section \@ref(BasicCorrelationParenthoodAnalysis) above, or just the far right-hand side of the output above (the result of checking the `Standardized estimate` box in our regression analysis):
 
 <br/>
 
@@ -395,7 +392,7 @@ Not very concrete, to say the least. For this reason, the regression coefficient
 
 #### Visualization using scatr {#BasicRegressionParenthoodVisualizationWithScatr}
 
-We actually did this already in section \@ref(BasicCorrelationParenthoodVisualizationWithScatr) above. However, we will do it again below, but this time with density plots selected in *scatr* instead of boxplots:
+We actually did this already in section \@ref(BasicCorrelationParenthoodVisualizationWithScatr) above. However, we will do it again below, but this time with density plots selected in `scatr` instead of boxplots:
 
 ```{r, echo=F, warning=F, message=F}
 scatr::scat(
@@ -416,9 +413,9 @@ You might also notice the blue-ish shaded area around the linear regression line
 $$CI_{95\%}=-8.94 \pm 1.96(0.429) = -8.94 \pm 0.841 = [-9.78,-8.1]$$
 <br/>
 
-This was actually nearly identical to the confidence interval provided in jamovi in the output above: [-9.79, -8.09], which jamovi calculated using a value from the *t*-distribution at 95% instead of the value we used from the *z*-distribution (1.96).
+This was actually nearly identical to the confidence interval provided in *jamovi* in the output above: [-9.79, -8.09], which *jamovi* calculated using a value from the *t*-distribution at 95% instead of the value we used from the *z*-distribution (1.96).
 
-Of course, this confidence interval suggests that if we ran this experiment 100 times, and calculated this confidence interval each time, 95 of those confidence intervals would contain the population mean. Assuming this is one of those 95 times, the true grumpiness-to-sleep relation is between -9.79 and -8.09 (using the output from jamovi), with the best estimate at -8.94.
+Of course, this confidence interval suggests that if we ran this experiment 100 times, and calculated this confidence interval each time, 95 of those confidence intervals would contain the population mean. Assuming this is one of those 95 times, the true grumpiness-to-sleep relation is between -9.79 and -8.09 (using the output from *jamovi*), with the best estimate at -8.94.
 
 You might also have noticed that the confidence interval (the shaded area) near the ends of the line is further away from the line than it is near the middle of the line. This turns out to have a straightforward explanation: The confidence interval refers to a slope, not a fixed point, like a mean. As such, both a shallower and a steeper slope will diverge from the line more towards the ends than towards the middle. To visualize what's going on here mentally, think of the line as lying on a fulcrum towards the middle of the line, and rotating over that fulcrum like a see-saw through the confidence interval.
 
@@ -442,19 +439,126 @@ Note that the intercept was not mentioned since it is meaningless in this data. 
 
 **UNDER CONSTRUCTION**
 
-<br/>
+<!-- <br/> -->
 
-## Multiple linear regression {#MultipleLinearRegression}
+<!-- ## Multiple linear regression {#MultipleLinearRegression} -->
 
-**UNDER CONSTRUCTION**
+<!-- Arguably, the most productive procedure in all of statistical procedures is multiple linear regression. It turns out to be a minor generalization of simple linear regression, but a minor generalization that has massive implications. Specifically, whereas simple linear regression has only one predictor, multiple linear regression incorporates more than one predictor. -->
 
-<br/>
+<!-- Here was the formula from above for a simple linear regression: -->
 
-## Outside help on correlation {#OutsideHelpOnCorrelation}
+<!-- $$Y=\beta_0+\beta_1X$$ -->
+<!-- <br/> -->
 
-For outside help on understanding the output from *Regression* > *Correlation matrix* in jamovi, go to the [online textbook](https://www4.uwsp.edu/psych/cw/statistics/textbook.htm) by Wendorf [-@Wendorf2019]. From the pull-down menus, choose *JAMOVI* > *Annotated Output*, and scroll down to page 4.
+<!-- Multiple linear regression just adds a subscript to the $X$ since there can be more than one $X$ variable now. The fact that that there is technically no limit to the number of predictors you can include is represented by the subscript *n*. That is, you can include up to *n* predictors. -->
 
-<br/>
+<!-- $$Y=\beta_0+\beta_1X_1+\beta_2X_2...\beta_nX_n$$ -->
+<!-- <br/> -->
+
+<!-- Let's face it: This is a more realistic data-analysis scenario. It is rare that we can isolate a single predictor variable and view its effects on an outcome variable. We can certainly attempt this in a lab environment with experimental controls (and this is often done successfully). However, the more one wants to connect one's research to real-world contexts (*ecological validity*), the more one will have to face including multiple predictors in one's statistics. -->
+
+<!-- And by far the most common tool to carry this out is multiple linear regression.  -->
+
+<!-- ```{block2, type="rmdnote", echo=T} -->
+
+<!-- In fact, we have been doing it all along. Regression is typically introduced as a continuous predictor acting on a continuous outcome, but this is purely for  (arguably outdated) pedagogical reasons. It is trivial to include nominal predictors in a simple or multiple regression. And it turns out that a *t*-test is a simple regression with one nominal predictor with two levels. The output will look different from a traditional *t*-test (because it will have an intercept and a slope, unlike the *t*-test we carried out in Chapter \@ref(ComparingTwoMeans)), but the underlying statistical output will be identical. And not just close, but rather ***identical***. -->
+
+<!-- By extension, a Oneway ANOVA is a simple linear regression where a single, nominal predictor with three or more levels acts on a single continuous outcome variable. A factorial ANOVA is a *multiple* linear regression where two or more nominal predictors (and possibly their interaction) act on a single continuous outcome variable. -->
+
+<!-- You can also "mix and match" predictors. That is, you can include both nominal and continous predictors in the same model, as well as their interactions. -->
+
+<!-- More advanced version of regression include nominal outcome variables (*logistic regression*), outcome variables that are rates (*poisson regression*), multiple continuous outcome variables (*multivariate regression*), and other more advanced forms of regression (e.g., *multilevel modeling*, aka *mixed-effects modeling*). -->
+
+<!-- So this rather extended note is an indirect way of informing you that understanding regression is really the gateway to learning more advanced statistics.  -->
+
+<!-- Thus, Chapter 12 in @lsj is arguably the most important chapter in the book. -->
+
+<!-- ``` -->
+
+<!-- <br/> -->
+
+<!-- The incorporation of multiple predictors (as opposed to one in simple regression) introduces several new concepts and complications. Among these are the following issues that relate to how multiple predictors behave: -->
+
+<!-- - ***mediation***   -->
+<!--   - This happens when one predictor predicts another predictor, which in turn predicts the outcome   -->
+<!--   - This is beyond the scope of this manual, and isn't even covered in the main textbook   -->
+<!--   - It is common in personality and industrial/organizational psychology, however   -->
+<!-- - ***moderation***   -->
+<!--   - This is when one predictor strengthens or weakens the effect of another predictor on the outcome   -->
+<!--   - We have actuallly already covered this   -->
+<!--     - It was the *interaction* from Chapter \@ref(FactorialAnova))   -->
+<!--     - One difference with factorial ANOVAs, however, is that moderation in multiple regression is not restricted to nominal predictors; you can also include continuous variables in interactions   -->
+<!--     - But this is an complicated topic and not covered here; and it is only mentioned in the main textbook as a topic that they would like to have covered, but didn't (mentioned in Chapter 17.1.1) -->
+<!-- - ***multicollinearity*** (aka *collinearity*)   -->
+<!--   - This is what occurs when one or more predictors can predict one or more of the other predictors with *substantial* accuracy (though *minor* correlations across predictors are not considered a problem)   -->
+<!--   - It is a sign of *confounding*   -->
+<!--   - In other words, predictors should correlate with the outcome variable, but not with each other   -->
+<!--   - As noted above, multicollinearity is a sign of confounded variables  -->
+<!-- - ***suppression***^[Sometimes, a predictor that does this is called a *suppressor*. This is because it artificially suppresses the error term. But some call such a variable an *enhancer*. This is because it artificially enhances the effect of one or more of the other predictors in the model. It is the same phenomenon, however.]   -->
+<!--   - This is when a predictor doesn't so much contribute to the predictive power of the model so much as it merely reduces the error term   -->
+<!--   - This often throws regression coefficients off their true values, and leads to something called *overfitting* (a model that does well with your current data set, but doesn't do well on future datasets)     -->
+<!--   - This is beyond the scope of this lab manual and isn't even discussed in the main textbook     -->
+
+<!-- There are also some other important issues that come up that don't have to do with the fact that you have multiple predictors, per se, but rather have to do with the fact that you will now be dealing with multiple statistical models. They are as follows:  -->
+
+<!-- - ***assessing model fit***   -->
+<!--   - Basically, this involves evaluating whether the predictor that you choose do a good job of predicting the outcome variable   -->
+<!-- - ***model specification*** -->
+<!--   - This involves *how* you include your predictors   -->
+<!--   - You can include them as predictors by themselves, you can include them as interactions with other predictors, and you can even specify them as polynomials, though polynomials are beyond the scope of both the textbook and this lab manual   -->
+<!-- - ***model comparison and selection***   -->
+<!--   - This is the process of deciding *which* predictors to exclude and *which* to include   -->
+<!--   - Ultimately, researchers try to settle on the most parsimonious model (i.e., the model in which the fewest predictors possible account for the most variance in the outcome variable)   -->
+
+<!-- There are also several assumptions that come with multiple regression. However, they are pretty much the same assumptions that we have seen for all the parametric statistics we have studied so far. These are listed in @lsj, Chapter 12, sections 12.9 to 12.10. -->
+
+<!-- However, one assumption this isn't quite clear in the textbook is *linearity* (Section 12.9, p. 309). After noticing that it possible to specify a linear regression model with interactions and even polynomials (e.g., a predictor multiplied by itself; see above), a careful learner might wonder how such a model could be "linear." The answer is that linearity refers to the coefficients, not to the predictors themselves or any combination thereof (e.g., interactions, polynomials, etc.). That is, the coefficients (the $\beta$s) that are calculated from the data must be single, real numbers (and not anything more complex than that), whereas the predictors that are provided with the data set can be specified as non-linear. In other words, the *linearity* assumption does not refer to how you specify the model, but rather to the resulting coefficients that are calcuated from that specification. -->
+
+<!-- <br/> -->
+
+<!-- ### Basic: Parenthood data (third time) {#BasicMultRegressionParenthood} -->
+
+<!-- Navarro and Foxcroft [-@lsj] use the same data set to illustrate multiple linear regression as they did simple linear regression. This allows the reader to build upon earlier knowledge. We repeat this here. -->
+
+<!-- <br/> -->
+
+<!-- #### Import and familiarize {#BasicMultRegressionParenthoodGettingTheData} -->
+
+<!-- As you did twice above (and if you don't already have it open), just go to ($\equiv$) > `Open` > `Data Library` > `Parentood.csv`. -->
+
+<!-- You will probably need to make some adjustments as we did for the correlation analysis. Refer to the instructions above in section \@ref(BasicCorrelationParenthoodGettingTheData). -->
+
+<!-- Also familiarize yourself with the data as illustrated in section \@ref(BasicCorrelationParenthoodFamiliarization) above. -->
+
+<!-- <br/> -->
+
+<!-- #### Analysis {#BasicMultRegressionParenthoodAnalysis} -->
+
+<!-- Following the textbook [@lsj, section 12.5.1], go to the `Analyses` tab and choose `Regression` > `Linear Regression`.  -->
+
+<!-- Instead of just sliding `My grumpiness` into the `Dependent Variable` box and `My Sleep (hrs)` into the `Covariates` box, you should ***also*** slide `The baby's sleep (hrs)` into the `Covariates` box. -->
+
+<!-- See Figure \@ref(fig:SetParametersForMultLinReg) below. -->
+
+<!-- <br/> -->
+
+<!-- ```{r SetParametersForMultLinReg, fig.cap="Setting the parameters for a multiple linear regression of `My grumpiness` on both `My Sleep (hrs)` and `Baby sleep (hrs)`, from the `parenthood.csv` dataset in Navarro and Foxcroft [-@lsj].", echo=F, out.width="600px"} -->
+<!-- knitr::include_graphics("images/CorrAndLinReg/SetParametersForMultLinReg.png") -->
+<!-- ``` -->
+
+<!-- <br/> -->
+
+<!-- As above, you should also choose a couple of options under the `Model Coefficients` box, which lies below the main window (see Figure \@ref(fig:SetParametersForMultLinRegExtra) below). These options are the `ANOVA test`, the `Confidence interval` (set at 95%), and the `Standardized estimate`. -->
+
+<!-- ```{r SetParametersForMultLinRegExtra, fig.cap="Adding some parameters for the multiple linear regression of `My grumpiness` on both `My Sleep (hrs)` and `The baby's sleep (hrs)`, from the `parenthood.csv` dataset in Navarro and Foxcroft [-@lsj].", echo=F, out.width="600px"} -->
+<!-- knitr::include_graphics("images/CorrAndLinReg/SetParametersForMultLinRegExtra.png") -->
+<!-- ``` -->
+
+<!-- ## Outside help on correlation {#OutsideHelpOnCorrelation} -->
+
+<!-- For outside help on understanding the output from `Regression` > `Correlation matrix` in *jamovi*, go to the [online textbook](https://www4.uwsp.edu/psych/cw/statistics/textbook.htm) by Wendorf [-@Wendorf2019]. From the pull-down menus, choose `JAMOVI` > `Annotated Output`, and scroll down to page 4. -->
+
+<!-- <br/> -->
 
 <!-- ## Outside help on linear regression {#OutsideHelpOnLinearRegression} -->
 
