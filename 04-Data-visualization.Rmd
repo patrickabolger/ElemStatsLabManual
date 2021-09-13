@@ -216,11 +216,7 @@ The results of the stacked dot plot can be seen below. We also checked *Violin* 
 
 <br/>
 
-```{r VisualizationsDotPlainTemp, fig.cap="A stacked dot plot within a violin plot.", echo=F, out.width="600px"}
-knitr::include_graphics("images/DataVis/Visualizations_temp_HarpoViolinWithDots.png")
-```
-
-```{r, echo=FALSE, eval = F}
+```{r, echo=FALSE, eval = T}
 jmv::descriptives(
     formula = grade ~ tutor,
     data = Harpo,
@@ -241,15 +237,11 @@ Note that these all fall under *Box plots* for a reason. Namely, you can combine
 
 <br/>
 
-```{r VisualizationsDotPlainTemp2, fig.cap="A jittered dot plot and box plot within a violin plot.", echo=F, out.width="600px"}
-knitr::include_graphics("images/DataVis/Visualizations_temp_HarpoViolinWithDots2.png")
-```
-
-```{r, echo=FALSE, eval = F}
+```{r, echo=FALSE, eval = T}
 
 jmv::descriptives(
     formula = grade ~ tutor,
-    data = data,
+    data = Harpo,
     violin = TRUE,
     dot = TRUE,
     dotType = "stack",

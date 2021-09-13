@@ -23,7 +23,7 @@
 
 
 
-<meta name="date" content="2021-09-12" />
+<meta name="date" content="2021-09-13" />
 
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <meta name="apple-mobile-web-app-capable" content="yes" />
@@ -657,21 +657,23 @@ Figure 4.3: Parameters for generating a stacked dot plot.
 <p><br/></p>
 <p>The results of the stacked dot plot can be seen below. We also checked <em>Violin</em> in order to illustrate the relationship between the two. Side-by-side dots represent identical values (i.e., students who got the same grade).</p>
 <p><br/></p>
-<div class="figure"><span style="display:block;" id="fig:VisualizationsDotPlainTemp"></span>
-<img src="images/DataVis/Visualizations_temp_HarpoViolinWithDots.png" alt="A stacked dot plot within a violin plot." width="600px" />
-<p class="caption">
-Figure 4.4: A stacked dot plot within a violin plot.
-</p>
-</div>
+<pre><code>
+ DESCRIPTIVES
+
+ Descriptives                                     
+ ──────────────────────────────────────────────── 
+                         tutor         grade      
+ ──────────────────────────────────────────────── 
+   Standard deviation    Anastasia     8.998942   
+                         Bernadette    5.774918   
+ ──────────────────────────────────────────────── </code></pre>
+<p><img src="ElemStatsLabManual_files/figure-html/unnamed-chunk-48-1.svg" width="672" /></p>
 <p><br/></p>
 <p>Note that these all fall under <em>Box plots</em> for a reason. Namely, you can combine these plots in any way you see fit. We have combined all three into one plot below. Note that the dots are <strong>jittered</strong> this time, strictly for illustration purposes (i.e., it was not helpful in any way for visualization since the number of observations is low).</p>
 <p><br/></p>
-<div class="figure"><span style="display:block;" id="fig:VisualizationsDotPlainTemp2"></span>
-<img src="images/DataVis/Visualizations_temp_HarpoViolinWithDots2.png" alt="A jittered dot plot and box plot within a violin plot." width="600px" />
-<p class="caption">
-Figure 4.5: A jittered dot plot and box plot within a violin plot.
-</p>
-</div>
+<pre><code>
+ DESCRIPTIVES</code></pre>
+<p><img src="ElemStatsLabManual_files/figure-html/unnamed-chunk-49-1.svg" width="672" /></p>
 <p><br/></p>
 </div>
 <div id="Barplots" class="section level2" number="4.5">
@@ -684,12 +686,12 @@ Figure 4.5: A jittered dot plot and box plot within a violin plot.
 </div>
 <p><br/></p>
 <p>The bar plot is a good way of visualizing frequency data.<a href="#fn52" class="footnote-ref" id="fnref52"><sup>52</sup></a> This type of visualization is not usually necessary for any kind of visual summary of any data you collect in this course. However, it can be very useful, ultimately, for chi-square analyses and the display of individual Likert items. A discussion of chi-square analyses comes up later in this lab manual (Chapter <a href="CategoricalDataAnalysis.html#CategoricalDataAnalysis">5</a>), and in your main textbook [<span class="citation"><a href="#ref-lsj" role="doc-biblioref">Navarro &amp; Foxcroft</a> (<a href="#ref-lsj" role="doc-biblioref">2019</a>)</span>; Chapter 10]. The display of Likert items does not really come up in this class.</p>
-<p>Despite the fact that you will probably not need this kind of plot for this class, you can still practice. We will use the <code>Harpo</code> data again. We will compare the number of students in Anastasia’s vs. Bernadette’s tutoring groups. First, you need to drag the <code>tutor</code> variable over to the <code>Variables</code> box. Then check the <code>Frequency tables</code> check box located under the left-most (but label-less) white box. Finally, check the <code>Bar plot</code> box under <code>Bar plots</code> to get the frequency plot. You can see the parameter settings for this in Figure <a href="DataVisualization.html#fig:VisualizationsFrequenciesParameters">4.6</a></p>
+<p>Despite the fact that you will probably not need this kind of plot for this class, you can still practice. We will use the <code>Harpo</code> data again. We will compare the number of students in Anastasia’s vs. Bernadette’s tutoring groups. First, you need to drag the <code>tutor</code> variable over to the <code>Variables</code> box. Then check the <code>Frequency tables</code> check box located under the left-most (but label-less) white box. Finally, check the <code>Bar plot</code> box under <code>Bar plots</code> to get the frequency plot. You can see the parameter settings for this in Figure <a href="DataVisualization.html#fig:VisualizationsFrequenciesParameters">4.4</a></p>
 <p><br/></p>
 <div class="figure"><span style="display:block;" id="fig:VisualizationsFrequenciesParameters"></span>
 <img src="images/DataVis/VisualizationsFrequenciesParameters.png" alt="Parameters for generating a bar plot." width="600px" />
 <p class="caption">
-Figure 4.6: Parameters for generating a bar plot.
+Figure 4.4: Parameters for generating a bar plot.
 </p>
 </div>
 <p><br/></p>
@@ -725,12 +727,12 @@ Figure 4.6: Parameters for generating a bar plot.
 <p>Finally, we get to the last type of visualization available under <code>Descriptives</code>: <code>Q-Q plot</code> (which is short for <em>quantile-quantile plot</em>).</p>
 <p>This plot is strictly diagnostic. It’s a quick way to detect whether your data is normally distributed or not. In general, it plots the quantiles of two distributions against each other. To assess normality (the default option in <em>jamovi</em>), it plots the quantiles of a theoretically normal distribution on the <em>x</em>-axis against the data that you have on the <em>y</em>-axis in the form of standardized residuals (another term for individual deviations from central tendency; <em>z</em>-scores, essentially).</p>
 <p>That may have made little sense to you at this point, and that’s okay. What’s important about this plot is that the dots should line up near the line without any systematic or extreme deviations.<a href="#fn53" class="footnote-ref" id="fnref53"><sup>53</sup></a></p>
-<p>We’ve provided the Q-Q plot for the <code>Harpo</code> data, with <code>grade</code> divided into the two <code>tutor</code> groups: <code>Anastasia</code> and <code>Bernadette</code>. The parameters you need to set to generate this is in Figure <a href="DataVisualization.html#fig:VisualizationsQQPlotParameters">4.7</a> below.</p>
+<p>We’ve provided the Q-Q plot for the <code>Harpo</code> data, with <code>grade</code> divided into the two <code>tutor</code> groups: <code>Anastasia</code> and <code>Bernadette</code>. The parameters you need to set to generate this is in Figure <a href="DataVisualization.html#fig:VisualizationsQQPlotParameters">4.5</a> below.</p>
 <p><br/></p>
 <div class="figure"><span style="display:block;" id="fig:VisualizationsQQPlotParameters"></span>
 <img src="images/DataVis/VisualizationsQQPlotParameters.png" alt="Parameters for generating Q-Q plots." width="600px" />
 <p class="caption">
-Figure 4.7: Parameters for generating Q-Q plots.
+Figure 4.5: Parameters for generating Q-Q plots.
 </p>
 </div>
 <p><br/></p>

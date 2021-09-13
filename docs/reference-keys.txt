@@ -60,8 +60,6 @@ fig:PracticeNR6ChangeHand
 fig:VisualizationsHistAndDensity
 fig:VisualizationsBoxplotParameters
 fig:VisualizationsDotPlainParameters
-fig:VisualizationsDotPlainTemp
-fig:VisualizationsDotPlainTemp2
 fig:VisualizationsFrequenciesParameters
 fig:VisualizationsQQPlotParameters
 fig:ChisquareGoodFitTestChoice1FrequencyTable
