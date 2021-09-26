@@ -4,7 +4,7 @@ First, a note on Writing Assignment #4.
 
 <br/>
 
-<!-- Check to see if I included the part about including stats in the Design & Analysis part of Methods -->
+<!-- Check to see if I included the part about including stats in the Design & Analysis part of Method -->
 
 ## A note on Writing Assignment 4 {#NoteOnWritingAssignments4}
 
@@ -103,7 +103,7 @@ We begin with the summary of findings. Below is that very section from the paper
 
 >**Experiment 3**...
 >
->*Materials and Methods*...
+>*Materials and Method*...
 >
 >*Results*...
 >

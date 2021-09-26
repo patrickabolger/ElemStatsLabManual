@@ -461,7 +461,7 @@ Fair warning: This writing assignment isn't designed exactly like a normal *Intr
 
 <!-- add section where it specifies that it must be related to the group project. some students didn't understand this in fall 19 -->
 
-It should be about 1.5 to 2 pages long, double-spaced, Times New Roman, 12 font. **Do** give it a title related to the topic, but do **not** include a header called *Introduction*. The introduction in an APA paper doesn't have a header.^[The first main header comes under *Methods*] 
+It should be about 1.5 to 2 pages long, double-spaced, Times New Roman, 12 font. **Do** give it a title related to the topic, but do **not** include a header called *Introduction*. The introduction in an APA paper doesn't have a header.^[The first main header comes under *Method*] 
 
 **Also, do NOT put your name on it**. It will be submitted for anonymous peer review through *Peerceptiv*, and including your name makes it non-anonymous. Your TAs will know exactly who you are since it is submitted electronically, and *Peerceptiv* indicates who you are (to the TAs and the instructor only).
 

@@ -26,11 +26,11 @@ An outline of this kind of paper can be found near the end of section \@ref(Orga
 
 - Introduction
 - Study/Experiment 1
-  - Methods
+  - Method
   - Results
   - Discussion
 - Study/Experiment 2
-  - Methods
+  - Method
   - Results
   - Discussion
 - General Discussion^[In fact, both Assignment #3 and Assignment #4 roughtly conform to the two *Study/Experiment* structures. That is, Assignment #3 is the *Results* and *Discussion* for the *t*-test and ANOVA, whereas Assignment #4 is the same for the correlation and regression, along with *General Discussion* at the end. One major difference between your papers and the canonical multi-study paper is that you wrote a *Method* section that applied to all the studies, instead of having separate methods for each study/experiment (a more common approach).]
@@ -71,7 +71,7 @@ The *Discussion* section of The Experiment 1 is presented below. Note that the v
 
 >**Experiment 1**...
 >
->*Materials and Methods*...
+>*Materials and Method*...
 >
 >*Results*...
 >
@@ -114,7 +114,7 @@ It is useful here to contrast the first and the last *Discussion* sections from 
 
 >**Experiment 3**...
 >
->*Materials and Methods*...
+>*Materials and Method*...
 >
 >*Results*...
 >
@@ -144,7 +144,7 @@ The small takeaway here is that it is also an option to put transitions at the b
 >
 >Study 1 revealed that perspective has an impact on facial judgments, especially for body weight judgments...; other postulated effects were less pronounced or absent. However, the used viewing perspectives of Study 1 are sometimes found with selfies but some additional ones are even more typical of the selfie style ... Just imagine that you are going to take a selfie on your next trip. It is unlikely that you will only rotate your mobile phone rigidly around one axis, but typically you will use a combination of such rotations. Accordingly, the aim of Study 2 was to examine the impact of typical *perspectives* of selfies on facial judgments...
 >
->*Methods*...
+>*Method*...
 >
 >*Results*...
 >

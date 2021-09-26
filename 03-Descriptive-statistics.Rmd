@@ -155,7 +155,7 @@ jmv::descriptives(
 
 ### Frequencies {#Frequencies}
 
-Lastly, when describing our data (say, in a *Methods* section in a manuscript), we usually need to provide an indication of the relative numbers of responses in each category. For instance, the reader/listener will usually want to know how many responses there were in our data set across the levels of the *drug* condition as well as across the levels of the *therapy* condition..
+Lastly, when describing our data (say, in a *Method* section in a manuscript), we usually need to provide an indication of the relative numbers of responses in each category. For instance, the reader/listener will usually want to know how many responses there were in our data set across the levels of the *drug* condition as well as across the levels of the *therapy* condition..
 
 To do this, you need to slide the two nominal variables, `drug` and `therapy` into the `Variables` box. Then simply check the `Frequency tables` check box just above the `Statistics` sub-menu label. Figure \@ref(fig:DescriptivesFrequenciesParameters) shows you how to do this.
 
@@ -222,7 +222,7 @@ A great deal of this lab is devoted to writing. The first step will be writing q
 <br/>
 
 ```{block2, type="rmdcaution", echo=T}
-**CAUTION**: You might be tempted to put all possible descriptive statistics in the *Results* section of the paper (the one that comes after *Method*), but this is not true of all variables. The *Results* section is about reporting on inferential statistics, or your main analysis (whatever that may be). The descriptive statistics you provide there are the ones relevant to your inferential statistics (i.e., the means and standard deviations that correspond to the levels relevant to your intereential statistics). Some of your descriptive statistics (e.g., the total number of participants [N], the number of men vs. women, the average age, etc.) often go in the *Methods* section, especially if they are not critical to your main analyses.
+**CAUTION**: You might be tempted to put all possible descriptive statistics in the *Results* section of the paper (the one that comes after *Method*), but this is not true of all variables. The *Results* section is about reporting on inferential statistics, or your main analysis (whatever that may be). The descriptive statistics you provide there are the ones relevant to your inferential statistics (i.e., the means and standard deviations that correspond to the levels relevant to your intereential statistics). Some of your descriptive statistics (e.g., the total number of participants [N], the number of men vs. women, the average age, etc.) often go in the *Method* section, especially if they are not critical to your main analyses.
 
 ```
 
@@ -262,7 +262,7 @@ Here is how it could be summarized at the beginning of the *Results* section:
 
 <br/>
 
-Eventually, you will see that whatever was reported in the *Method* section is material that would **not** be reported in the *Results* section, at least not directly. That said, `Sex`/`Gender` and `Age` are almost always reported in the *Methods* section, irrespective of their use in the main analysis.
+Eventually, you will see that whatever was reported in the *Method* section is material that would **not** be reported in the *Results* section, at least not directly. That said, `Sex`/`Gender` and `Age` are almost always reported in the *Method* section, irrespective of their use in the main analysis.
 
 More information on how to report on different elements of the study in the *Method* section will be provided later in Chapter \@ref(WritingMethodSections). 
 
@@ -386,7 +386,7 @@ jmv::descriptives(
 
 Here is an example of how one might summarize this data:
 
-> *Methods*
+> *Method*
 >
 > ...There were a total of 1,522 participants who responded to this study... The range of responses (4) covered the entire spectrum of possible answers, from 1 ("disagree") to 5 ("agree").
 >

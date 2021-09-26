@@ -324,7 +324,7 @@ The following link from [The Visual Communication Guy](https://thevisualcommunic
 <br/>
 
 ## Practice writing exercise 1 {#PWEFM1}
-<!-- PWEFM is an acronym for "Practice Writing Assignment for Methods" -->
+<!-- PWEFM is an acronym for "Practice Writing Assignment for Method" -->
 
 Form working dyads (or triads) like you did for the last assignment of this type (section \@ref(PWEFI1)). However, this time, work with someone from your own research group, if you can. 
 
@@ -438,7 +438,7 @@ This is part of the main writing assignments in your lab. It is the second part 
 
 ### General Instructions {#GeneralInstructionsOnWritingAssignment2}
 
-Unlike *Writing Assignment #1* (the *Introduction*), this second assignment will be more authentic. That is, since you will have both your data and your research designs available, it should be no problem to write out a fully fleshed-out *Methods* section.
+Unlike *Writing Assignment #1* (the *Introduction*), this second assignment will be more authentic. That is, since you will have both your data and your research designs available, it should be no problem to write out a fully fleshed-out *Method* section.
 
 Like the *Introduction* in *Writing Assignment #1*, it should be about 2 to 3 additional pages long, double-spaced, Times New Roman, 12 font.
 

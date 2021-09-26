@@ -209,7 +209,7 @@ The rhetorical shape of this structure is not that much different from the simpl
 In this class you will be producing one of these reports. Ultimately, it will take the following form:
 
 - Introduction
-- Methods
+- Method
 - Study/Experiment 1
   - Results
   - Discussion
