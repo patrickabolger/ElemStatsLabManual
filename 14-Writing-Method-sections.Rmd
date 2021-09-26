@@ -165,7 +165,7 @@ A. the total number of questions
 B. the constructs that the questions relate to (brief mention; the computation of the constructs is better placed in the *Design*/*Analysis* sections)  
 C. the number of items within each construct  
 D. the questions themselves (if not too numerous)  
-E. the potential range of scores if the response to the question is continuous (e.g., a Likert item on a scale of 1 to 5, with 1 meaning *strongly disagree* and 5 meaning *strongly agree*, and 0 meaning *neither disagree nor agree*)  
+E. the potential range of scores if the response to the question is bounded (e.g., a Likert item on a scale of 1 to 5, with 1 meaning *strongly disagree* and 5 meaning *strongly agree*, and 0 meaning *neither disagree nor agree*)  
 F. the order of the questions on the survey  
 G. any branching that occurs during the survey (subsets of questions that only appear if a respondent answers a certain way on another question)  
 
