@@ -23,7 +23,7 @@
 
 
 
-<meta name="date" content="2021-09-26" />
+<meta name="date" content="2021-10-01" />
 
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <meta name="apple-mobile-web-app-capable" content="yes" />
@@ -668,10 +668,14 @@ IT TO THEIR OUTCOME VARIABLES. CHECK FOR OTHER THINGS TOO-->
 <h3><span class="header-section-number">11.5.4</span> Calculating Cronbach’s alpha</h3>
 <p>Assuming you have taken care of any conversion of your scores to <em>z</em>-scores (if necessary), you will then need to carry out an analysis of how well your individual questions are working together. This is done through an analysis of Cronbach’s Alpha. If your analysis shows that you can use all three variables, then you use all three. Don’t be surprised, however, if one of your variables does not act like the others. In this case, you may want to consider analyzing that variable separately.</p>
 <p>To illustrate this, we will simply use a dataset called <em>Personality Questionnaire: Ch15 - Personality data sample 3</em> (<em>bfi_sample3</em>) [located at the very bottom] from the datasets associated with <span class="citation"><a href="#ref-lsj" role="doc-biblioref">Navarro &amp; Foxcroft</a> (<a href="#ref-lsj" role="doc-biblioref">2019</a>)</span>. In fact, this is the dataset they use to illustrate the same (pp. 461-463).</p>
-<p>Simply go to (<span class="math inline">\(\equiv\)</span>) &gt; <em>Open</em> &gt; <em>lsj-data</em> &gt; <em>Personality Questionnaire: Ch15 - Personality data sample 3</em>. This dataset is a sample of people who took a Big-5 Personality test. The variables A1-A5 represent <em>Agreeableness</em>, but A1 is reverse-scored.</p>
-<p>Luckily, we do not need to reverse-score this ourselves. <em>jamovi</em>’s procedure for calculating Cronbach’s Alpha contains a mechanism within it to deal with reverse-scored items.</p>
+<p>Simply go to (<span class="math inline">\(\equiv\)</span>) &gt; <em>Open</em> &gt; <em>lsj-data</em> &gt; <em>Personality Questionnaire: Ch15 - Personality data sample 3</em>. This dataset is a sample of people who took a Big-5 Personality test. The variables <code>A1</code>-<code>A5</code> represent <em>Agreeableness</em>, but <code>A1</code> is reverse-scored.</p>
+<p>Luckily, we do not need to reverse-score this ourselves. <em>jamovi</em>’s procedure for calculating <em>Cronbach’s Alpha</em> contains a mechanism within it to deal with reverse-scored items.</p>
+<p>One thing you <strong><em>may</em></strong> have to do, however, is convert the <code>A1</code> through <code>A5</code> variables from nominal variables to continuous variables. For whatever reason, <em>jamovi</em> is reading these variables as nominal variables when they are, in fact, continuous.</p>
+<p>Under the <em>Data</em> tab, just double-click the variable and change the <em>Measure type</em> from <em>Nominal</em> to <em>Continuous</em>. Do this for variables <code>A1</code> to <code>A5</code> (don’t bother with the other variables since we are not working with them at this time).</p>
 <p>When you have the data, click the <em>Analyses</em> tab, and choose <em>Factor</em>.<a href="#fn105" class="footnote-ref" id="fnref105"><sup>105</sup></a> From here select <em>Reliability Analysis</em>.</p>
-<p>Move variables <em>A1</em>-<em>A5</em> to the <em>Items</em> box. Then look down below and click the window labeled <em>Reverse Scaled Items</em>. In that box (labeled <em>Normal Scaled Items</em>), select <em>A1</em> and move it over to the box labeled <em>Reverse Scaled Items</em>. The arrangement of variables should look as they do in Figure <a href="DataPreparationAndAnalyses.html#fig:ArrangmentOfVariablesForCronbachsAlpha">11.7</a> below.</p>
+<p>Move variables <code>A1</code>-<code>A5</code> to the <em>Items</em> box. Then look down below and click the window labeled <em>Reverse Scaled Items</em>. In that box (labeled <em>Normal Scaled Items</em>), select <code>A1</code> and move it over to the box labeled <em>Reverse Scaled Items</em>.
+Also, under <em>Additional Options</em>, click <em>Correlation heatmap</em>.</p>
+<p>The arrangement of variables should look as they do in Figure <a href="DataPreparationAndAnalyses.html#fig:ArrangmentOfVariablesForCronbachsAlpha">11.7</a> below.</p>
 <div class="figure"><span style="display:block;" id="fig:ArrangmentOfVariablesForCronbachsAlpha"></span>
 <img src="images/PrepForWA2/ArrangmentOfVariablesForCronbachsAlpha.png" alt="The arrangement of variables for Cronbach's Alpha using the bfi_sample3 dataset from @lsj" width="600px" />
 <p class="caption">
@@ -702,10 +706,12 @@ Figure 11.7: The arrangement of variables for Cronbach’s Alpha using the bfi_s
    A5         0.6448210   
  ─────────────────────────── 
    ᵃ reverse scaled item</code></pre>
+<p><img src="ElemStatsLabManual_files/figure-html/CronbachsAlphaOutput-1.svg" width="672" /></p>
 <p><br/></p>
-<p>Normally what you are looking for is a relatively high Cronbach’s Alpha, and any items that result in a significant increase in Cronbach’s Alpha if it is removed.</p>
-<p>In this case, the removal of <em>A1</em> would result in a higher Cronbach’s Alpha than the removal of any other item, but the increase is not really severe enough to warrant removal from analysis.</p>
+<p>Normally what you are looking for is a relatively high <em>Cronbach’s Alpha</em>, along with any items that result in a significant increase in <em>Cronbach’s Alpha</em> if it is removed.</p>
+<p>In this case, the removal of <code>A1</code> would result in a higher <em>Cronbach’s Alpha</em> than the removal of any other item, but the increase is not really significant enough to warrant removal from analysis.</p>
 <p>Had there been an item that was odd compared to the others, then you might have considered removing it and analyzing it separately.</p>
+<p>Also notice in the heatmap (a correlation matrix with shades of green representing strength of correlation [Pearson’s <em>r</em>]), that all of the correlations were pretty weak to moderate (<span class="math inline">\(r_{A1.A5}\)</span> = .13 to <span class="math inline">\(r_{A3.A5}\)</span> = .53, respectively). This merely suggests that the construct is not unidimensional.</p>
 <p>The final stage is next.</p>
 <p><br/></p>
 </div>
@@ -739,7 +745,7 @@ Navarro, D. J., &amp; Foxcroft, D. R. (2019). Learning statistics with jamovi: A
 <hr />
 <ol start="104">
 <li id="fn104"><p>This step isn’t actually required, but it can reduce confusion down the line, as one of your group-mates may decide to download more current data without you knowing, thereby giving you two or more datasets.<a href="DataPreparationAndAnalyses.html#fnref104" class="footnote-back">↩︎</a></p></li>
-<li id="fn105"><p>Cronbach’s Alpha is often carried out in conjunction with something called <em>Factor Analysis</em>, which you are free to read about in Chapter 15 of <span class="citation"><a href="#ref-lsj" role="doc-biblioref">Navarro &amp; Foxcroft</a> (<a href="#ref-lsj" role="doc-biblioref">2019</a>)</span><a href="DataPreparationAndAnalyses.html#fnref105" class="footnote-back">↩︎</a></p></li>
+<li id="fn105"><p><em>Cronbach’s Alpha</em> is often carried out in conjunction with something called <em>Factor Analysis</em>, which you are free to read about in Chapter 15 of <span class="citation"><a href="#ref-lsj" role="doc-biblioref">Navarro &amp; Foxcroft</a> (<a href="#ref-lsj" role="doc-biblioref">2019</a>)</span><a href="DataPreparationAndAnalyses.html#fnref105" class="footnote-back">↩︎</a></p></li>
 <li id="fn106"><p>Recall that the output below (and further down) was generated from the <em>jmv</em> package in <em>R</em>, and will therefore be rounded to more decimal places than the native output in <em>jamovi</em>.<a href="DataPreparationAndAnalyses.html#fnref106" class="footnote-back">↩︎</a></p></li>
 <li id="fn107"><p>We could also average them since they’re on the same scale. The result is the same.<a href="DataPreparationAndAnalyses.html#fnref107" class="footnote-back">↩︎</a></p></li>
 </ol>

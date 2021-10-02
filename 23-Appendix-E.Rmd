@@ -72,7 +72,9 @@ $\dagger$ relevant only to Writing Assignment #3
 >
 >We used Pearson's *r* to uncover the relation between *Sleep Quality* and *Workload Intensity*. This relation can be seen below in Figure 3 below.
 >
->```{r, fig.cap="Figure 3. The effect of *Workload Intensity* on *Sleep Quality*. Both *Sleep Quality* and *Workload Intensity* are on standardized scales.", echo=F, out.width="600px"}
+>
+
+```{r, fig.cap="Figure 3. The effect of *Workload Intensity* on *Sleep Quality*. Both *Sleep Quality* and *Workload Intensity* are on standardized scales.", echo=F, out.width="600px"}
 knitr::include_graphics("images/ResultsAppendices/Corr_WorkIntensityOnSleepQual.png")
 ```
 >
@@ -82,7 +84,9 @@ knitr::include_graphics("images/ResultsAppendices/Corr_WorkIntensityOnSleepQual.
 >
 >The outcome variable *Sleep Quality* was regressed on *Academic Hours* using a simple linear regression. The results can be seen in Figure 4 below.
 >
->```{r, fig.cap="Figure 4. *Workload Intensity* regressed on *Academic Hours*.", echo=F, out.width="600px"}
+>
+
+```{r, fig.cap="Figure 4. *Workload Intensity* regressed on *Academic Hours*.", echo=F, out.width="600px"}
 knitr::include_graphics("images/ResultsAppendices/Reg_AcademicUnitsOnSleepQual.png")
 ```
 >

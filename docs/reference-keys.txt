@@ -131,10 +131,10 @@ fig:HowToExportImageFromJamovi
 fig:HourglassImageFromTurbekEtAl2016b
 tab:RubricForIntroduction
 tab:RubricForMethod
+fig:unnamed-chunk-157
+fig:unnamed-chunk-158
 fig:unnamed-chunk-159
 fig:unnamed-chunk-160
-fig:unnamed-chunk-161
-fig:unnamed-chunk-162
 tab:RubricForResults
 tab:RubricForDiscussion
 tab:RubricForGeneralDiscussion

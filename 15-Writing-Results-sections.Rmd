@@ -45,9 +45,14 @@ Participants reported experiencing all three mental states: mind-blanking, mind-
 >
 >
 >
->```{r WardWegner2013Table1, fig.cap="(Not a figure, but rather a table) Table 1. Means and SDs of conscious states in Experiment 1, from @WardWegner2013", echo=F, out.width="600px"}
+>
+
+```{r WardWegner2013Table1, fig.cap="(Not a figure, but rather a table) Table 1. Means and SDs of conscious states in Experiment 1, from @WardWegner2013", echo=F, out.width="600px"}
+
 knitr::include_graphics("images/WriteRsltsDisc/WardWegner2013_Table1.jpg")
+
 ```
+
 >
 >We also tested for correlations between mental states. Mind-wandering was negatively correlated with being focused, $r_{(23)}=-0.71,p<0.001$. Mind-blanking, on the other hand, was uncorrelated with both mind-wandering, $r_{(23)}=-0.06, p=0.80$, and being focused, $r_{(23)}=-0.26, p=0.24$.
 
@@ -79,8 +84,12 @@ Below is the *Results* section from a study by Schroeder and Epley [-@SchroederE
 >
 >
 >
->```{r SchroederEpley2015Figure7, fig.cap="Fig. 7. Results from Experiment 4: professional recruiters’ ratings of the job candidates’ intellect, their general impressions of the candidates, and their likelihood of hiring the candidates. Results are shown separately for the audio and transcript conditions. Error bars represent ±1 SEM.", echo=F, out.width="600px"}
+>
+
+```{r SchroederEpley2015Figure7, fig.cap="Fig. 7. Results from Experiment 4: professional recruiters’ ratings of the job candidates’ intellect, their general impressions of the candidates, and their likelihood of hiring the candidates. Results are shown separately for the audio and transcript conditions. Error bars represent ±1 SEM.", echo=F, out.width="600px"}
+
 knitr::include_graphics("images/WriteRsltsDisc/SchroederEpley2015Fig7.jpg")
+
 ```
 
 >...
@@ -136,8 +145,12 @@ They reported their results as follows:
 >First, prior to the intervention (over the first 24 hr after viewing the film: Day 0), we confirmed that the four groups experienced a similar number of intrusive memories, *F*(3, 68) = 0.16, *p* = .92 (Fig. 4a).
 >
 >
->```{r JamesEtAl2015Fig4, fig.cap="Fig. 4. Results from Experiment 2: mean number of intrusive memories recorded in the diary during the first 24 hr following viewing of the experimental trauma film (i.e., preintervention; a), mean number of intrusive memories recorded in the diary across totaled over the 7-day period after the intervention (b), and mean score on the intrusion-provocation task on Day 7 (c). In each graph, results are shown separately for the four groups. Asterisks indicate that results for the reactivation-plus-Tetris group were significantly different from results for the other three groups (*p < .01). Error bars represent +1 SEM.", echo=F, out.width="600px"}
+>
+
+```{r JamesEtAl2015Fig4, fig.cap="Fig. 4. Results from Experiment 2: mean number of intrusive memories recorded in the diary during the first 24 hr following viewing of the experimental trauma film (i.e., preintervention; a), mean number of intrusive memories recorded in the diary across totaled over the 7-day period after the intervention (b), and mean score on the intrusion-provocation task on Day 7 (c). In each graph, results are shown separately for the four groups. Asterisks indicate that results for the reactivation-plus-Tetris group were significantly different from results for the other three groups (*p < .01). Error bars represent +1 SEM.", echo=F, out.width="600px"}
+
 knitr::include_graphics("images/WriteRsltsDisc/JamesEtAl2015Fig4.jpg")
+
 ```
 >
 >***Intrusive memories postintervention***

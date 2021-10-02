@@ -226,13 +226,20 @@ Assuming you have taken care of any conversion of your scores to *z*-scores (if 
 
 To illustrate this, we will simply use a dataset called *Personality Questionnaire: Ch15 - Personality data sample 3* (*bfi_sample3*) [located at the very bottom] from the datasets associated with @lsj. In fact, this is the dataset they use to illustrate the same (pp. 461-463).
 
-Simply go to ($\equiv$) > *Open* > *lsj-data* > *Personality Questionnaire: Ch15 - Personality data sample 3*. This dataset is a sample of people who took a Big-5 Personality test. The variables A1-A5 represent *Agreeableness*, but A1 is reverse-scored.
+Simply go to ($\equiv$) > *Open* > *lsj-data* > *Personality Questionnaire: Ch15 - Personality data sample 3*. This dataset is a sample of people who took a Big-5 Personality test. The variables `A1`-`A5` represent *Agreeableness*, but `A1` is reverse-scored.
 
-Luckily, we do not need to reverse-score this ourselves. *jamovi*'s procedure for calculating Cronbach's Alpha contains a mechanism within it to deal with reverse-scored items.
+Luckily, we do not need to reverse-score this ourselves. *jamovi*'s procedure for calculating *Cronbach's Alpha* contains a mechanism within it to deal with reverse-scored items.
 
-When you have the data, click the *Analyses* tab, and choose *Factor*.^[Cronbach's Alpha is often carried out in conjunction with something called *Factor Analysis*, which you are free to read about in Chapter 15 of @lsj] From here select *Reliability Analysis*.
+One thing you ***may*** have to do, however, is convert the `A1` through `A5` variables from nominal variables to continuous variables. For whatever reason, *jamovi* is reading these variables as nominal variables when they are, in fact, continuous.
 
-Move variables *A1*-*A5* to the *Items* box. Then look down below and click the window labeled *Reverse Scaled Items*. In that box (labeled *Normal Scaled Items*), select *A1* and move it over to the box labeled *Reverse Scaled Items*. The arrangement of variables should look as they do in Figure \@ref(fig:ArrangmentOfVariablesForCronbachsAlpha) below.
+Under the *Data* tab, just double-click the variable and change the *Measure type* from *Nominal* to *Continuous*. Do this for variables `A1` to `A5` (don't bother with the other variables since we are not working with them at this time).
+
+When you have the data, click the *Analyses* tab, and choose *Factor*.^[*Cronbach's Alpha* is often carried out in conjunction with something called *Factor Analysis*, which you are free to read about in Chapter 15 of @lsj] From here select *Reliability Analysis*.
+
+Move variables `A1`-`A5` to the *Items* box. Then look down below and click the window labeled *Reverse Scaled Items*. In that box (labeled *Normal Scaled Items*), select `A1` and move it over to the box labeled *Reverse Scaled Items*. 
+Also, under *Additional Options*,  click *Correlation heatmap*. 
+
+The arrangement of variables should look as they do in Figure \@ref(fig:ArrangmentOfVariablesForCronbachsAlpha) below.
 
 ```{r ArrangmentOfVariablesForCronbachsAlpha, fig.cap="The arrangement of variables for Cronbach's Alpha using the bfi_sample3 dataset from @lsj", echo=F, out.width="600px"}
 knitr::include_graphics("images/PrepForWA2/ArrangmentOfVariablesForCronbachsAlpha.png")
@@ -242,25 +249,29 @@ knitr::include_graphics("images/PrepForWA2/ArrangmentOfVariablesForCronbachsAlph
 
 The result of the analysis should looks as follows:^[Recall that the output below (and further down) was generated from the *jmv* package in *R*, and will therefore be rounded to more decimal places than the native output in *jamovi*.]
 
-```{r, include=FALSE}
+```{r import_bfi_sample3, include=FALSE}
 bfi_sample3 <- readRDS("datasets/PreppingData_bfi_sample3.rds")
 ```
 
-```{r, echo=FALSE}
+```{r CronbachsAlphaOutput, echo=FALSE}
+
 jmv::reliability(
     data = bfi_sample3,
     vars = vars(A1, A2, A3, A4, A5),
+    corPlot = TRUE,
     alphaItems = TRUE,
     revItems = A1)
 ```
 
 <br/>
 
-Normally what you are looking for is a relatively high Cronbach's Alpha, and any items that result in a significant increase in Cronbach's Alpha if it is removed.
+Normally what you are looking for is a relatively high *Cronbach's Alpha*, along with any items that result in a significant increase in *Cronbach's Alpha* if it is removed.
 
-In this case, the removal of *A1* would result in a higher Cronbach's Alpha than the removal of any other item, but the increase is not really severe enough to warrant removal from analysis.
+In this case, the removal of `A1` would result in a higher *Cronbach's Alpha* than the removal of any other item, but the increase is not really significant enough to warrant removal from analysis.
 
 Had there been an item that was odd compared to the others, then you might have considered removing it and analyzing it separately.
+
+Also notice in the heatmap (a correlation matrix with shades of green representing strength of correlation [Pearson's *r*]), that all of the correlations were pretty weak to moderate ($r_{A1.A5}$ = .13 to $r_{A3.A5}$ = .53, respectively). This merely suggests that the construct is not unidimensional. 
 
 The final stage is next.
 
