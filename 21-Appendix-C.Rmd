@@ -34,6 +34,8 @@ The survey design and data for the example *Method* section below is adapted fro
 
 > Summaries of the predictor variables follow. On *Restedness*, our participants scored a little bit lower than the middle of the Likert scale, 3, on average (*M* = 2.92, *SD* = 0.92, with scores ranging from 1 to 5), which could be interpreted as "slightly unrested." In contrast, they reported being markedly more overworked than the middle of the scale (*M* = 3.92, *SD* = 0.76, with scores ranging from 3 to 5, meaning that no one reported being more rested than usual). The mean number of hours they reported sleeping was 6.45 hours per night (*SD* = 1.59), with values ranging from 3 to 9 hours per night. They also reported taking an average of 14.4 credit hours for the semester (*SD* = 1.59), with values ranging from 10 to 17. Six of them reported engaging in no extracurricular activities whatsoever, whereas 31 reported engaging in one or more such activities. Finally, one person reported working full-time, eight reported working part-time, and 28 reported not working at all.
 >
+>Naturally, we want to see how these predictors regarding sleep, rest, and workload relate to the composite outcome variable, *Sleep Satisfication*. These relations are reported in *Study 1* and *Study 2* below.
+>
 >
 >**Procedures**
 >
