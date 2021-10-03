@@ -5,10 +5,9 @@ MethodRubric <- readr::read_tsv("OtherResources/RubricForMethod.tsv")
 ```
 
 ```{r RubricForMethod, echo=F, warning=F, message=F}
-library(magrittr)
-knitr::kable(MethodRubric,
-caption = 'Rubric for Method sections.'
-) %>%
-kableExtra::kable_styling(bootstrap_options = c("striped", "condensed", "responsive"), font_size=11, full_width = T) %>%
-kableExtra::column_spec(1, bold = T, border_right = T)
+MethodRubric %>% 
+kableExtra::kbl(caption = 'Rubric for Method sections.') %>%
+kableExtra::column_spec(3, width = "30em", border_right = T) %>%
+kableExtra::kable_styling(bootstrap_options = c("striped", "condensed", "responsive"), font_size=11, full_width = T, fixed_thead = T)
+
 ```
