@@ -8,6 +8,7 @@ MethodRubric <- readr::read_tsv("OtherResources/RubricForMethod.tsv")
 MethodRubric %>% 
 kableExtra::kbl(caption = 'Rubric for Method sections.') %>%
 kableExtra::column_spec(3, width = "30em", border_right = T) %>%
-kableExtra::kable_styling(bootstrap_options = c("striped", "condensed", "responsive"), font_size=11, full_width = T, fixed_thead = T)
-
+kableExtra::kable_styling(bootstrap_options = c("striped", "condensed", "responsive"), font_size=11, full_width = T, fixed_thead = T)%>%
+  kableExtra::add_header_above(c(" " = 3, "Rating (number of criteria met)" = 4))
 ```
+
