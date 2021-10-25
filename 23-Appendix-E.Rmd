@@ -55,7 +55,7 @@ knitr::include_graphics("images/ResultsAppendices/ANOVA_EmplStatOnSleepQual.png"
 >**Discussion**...
 
 ```{block2, type="rmdtip", echo=T}
-$\dagger\dagger$ **NOTE**: Since there was no significant difference in the omnibus test, this paragraph would not normally appear in the *Results* section at all. Please recall that you are required to report them whether or not your omnibus *F*-test was significant. This is to keep the writing burdens equal across research groups, whether or not they got a significant effec in the omnibus test.
+$\dagger\dagger$ **NOTE**: Since there was no significant difference in the omnibus test, this paragraph would **not normally** appear in the *Results* section at all. But please recall that you are required to report them whether or not your omnibus *F*-test was significant. This is to keep the writing burdens equal across research groups, whether or not they got a significant effect in the omnibus test.
 ```
 
 
