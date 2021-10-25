@@ -16,13 +16,11 @@ The survey design and data for the example *Results* sections below are adapted 
 
 <br/>
 
->**Study 1**$^{\dagger}$
+>**Study 1**
 >
 >**Results**
 >
->In this portion of the study, we looked at the effects on overall sleep quality from two categorical variables. The first was whether students were involved in extracurricular activities. This was answered as either *Yes* or *No* in the survey, and therefore had two levels. The second was their employment status, and could be answered as *No* (not employed), *Part-time*, or *Full-time*. Therefore, it had three levels.
->
->The variable *Extracurricular Activities* was analyzed using an independent-samples *t*-test, and the variable *Employment Status* was analyzed using a One-Way ANOVA. For the *t*-test, we used Welch's test, which is corrected for heterogeneity of variance, whereas in the One-Way ANOVA, we tested the assumption of homogeneity of variance with Levene's Test.
+>In this portion of the study, we looked at the effects on overall sleep quality from two categorical variables. The first was whether students were involved in extracurricular activities. This was answered as either *Yes* or *No* in the survey, and therefore had two levels. The second was their employment status, and could be answered as *No* (not employed), *Part-time*, or *Full-time*. Therefore, it had three levels. The variable *Extracurricular Activities* was analyzed using an independent-samples *t*-test, and the variable *Employment Status* was analyzed using a One-Way ANOVA. For the *t*-test, we used Welch's test, which is corrected for heterogeneity of variance, whereas in the One-Way ANOVA, we tested the assumption of homogeneity of variance with Levene's Test.
 >
 >*Extracurricular Activities*
 >
@@ -46,7 +44,9 @@ knitr::include_graphics("images/ResultsAppendices/ANOVA_EmplStatOnSleepQual.png"
 ```
 >
 >
->There seems to be a trend for participants who are working full time to report having lower sleep quality (*M* = -0.798, *SD* = not available, *n* = 1) than either the participants who were not working at all (*M* = 0.0124, *SD* = 0.915, *n* = 28) or who were working part-time (*M* = 0.0563, *SD* = 0.831, *n* = 8). However, there were no significant differences among the groups, *F*(2,34) = 0.504, *p* = 0.609, partial eta-squared = 0.029.^[NOTE: THIS WOULD NOT APPEAR AT ALL IN THE RESULTS SECTION; IT IS HYPOTHETICAL. However, if there had been a significant difference, we would have reported the post-hoc tests as follows, which would normally highlight at least one significant difference, but not in this case since there was no significant difference in the omnibus test: "We also ran post-hoc comparisons using the Holm correction. There was no significant difference between those who reported working full time and those who reported not working at all, *t*(34) = -0.886, *p* = 1. Nor was there any significant difference between full-timers and those who reported working part time, *t*(34) = -0.897, *p* = 1. Finally, there was no significant difference between the part-timers and those who reported not working at all, *t*(34) = -0.122, *p* = 1.]
+>There seems to be a trend for participants who are working full time to report having lower sleep quality (*M* = -0.798, *SD* = not available, *n* = 1) than either the participants who were not working at all (*M* = 0.0124, *SD* = 0.915, *n* = 28) or who were working part-time (*M* = 0.0563, *SD* = 0.831, *n* = 8). However, there were no significant differences among the groups, *F*(2,34) = 0.504, *p* = 0.609, partial eta-squared = 0.029. Thus, although there were some trends in the data, nothing was statistically significant.
+>
+>We also ran post-hoc comparisons$^{\dagger\dagger}$ using the Holm correction. There was no significant difference between those who reported working full time and those who reported not working at all, *t*(34) = -0.886, *p* = 1. Nor was there any significant difference between full-timers and those who reported working part time, *t*(34) = -0.897, *p* = 1. Finally, there was no significant difference between the part-timers and those who reported not working at all, *t*(34) = -0.122, *p* = 1.]
 >
 >In fact, as is clear to see, there was only one participant who indicated they were working full time. These results cannot be trusted since there is no within-group variance associated with a factor level with an *n* of 1.
 >
@@ -54,13 +54,26 @@ knitr::include_graphics("images/ResultsAppendices/ANOVA_EmplStatOnSleepQual.png"
 >
 >**Discussion**...
 
+```{block2, type="rmdtip", echo=T}
+$\dagger\dagger$ **NOTE**: Since there was no significant difference in the omnibus test, this paragraph would not normally appear in the *Results* section at all. Please recall that you are required to report them whether or not your omnibus *F*-test was significant. This is to keep the writing burdens equal across research groups, whether or not they got a significant effec in the omnibus test.
+```
+
+
+<br/>
+
 ---
 
-$\dagger$ relevant only to Writing Assignment #3  
+<br/>
+
+```{block2, type="rmdtip", echo=T}
+
+**NOTE**: The example below pertains only to *Writing Assignment 4*.
+
+``` 
 
 ---
 
->**Study 2**$^{\dagger\dagger}$
+>**Study 2**
 >
 >**Results**
 >
@@ -95,7 +108,3 @@ knitr::include_graphics("images/ResultsAppendices/Reg_AcademicUnitsOnSleepQual.p
 >Standardized *Sleep Quality* did decrease by a miniscule amount (*b*=.0093, 95% CI [-0.203, 0.185]) for every extra academic unit taken (starting in this sample of students at 10 units). This tiny drop in quality of sleep was, unsurprisingly, not statistically significant, *t*(34) = -0.097, *p* = .92. In general then, the quality of sleep that students report seems not to be affected at all by their courseload.
 >
 >**Discussion**...
-
----
-
-$\dagger\dagger$ relevant only to Writing Assignment #4
