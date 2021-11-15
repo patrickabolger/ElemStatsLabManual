@@ -23,7 +23,7 @@
 
 
 
-<meta name="date" content="2021-10-26" />
+<meta name="date" content="2021-11-15" />
 
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <meta name="apple-mobile-web-app-capable" content="yes" />
@@ -485,7 +485,7 @@ div.csl-indent {
             <section class="normal" id="section-">
 <div id="ComparingTwoMeans" class="section level1" number="6">
 <h1><span class="header-section-number">Chapter 6</span> Comparing two means</h1>
-<p>This chapter is about inferential tests that compare two means, each with a normal distribution of errors. It follows the main textbook <span class="citation">(<a href="#ref-lsj" role="doc-biblioref">Navarro &amp; Foxcroft, 2019</a>, Chapter 11)</span>. Think of it this way: If you have a single outcome variable, but both men and women contributed to the responses on that outcome variable, then you can split that outcome variable into two means: one for the women, and one for the men. Now you can compare these two means (with an independent samples <em>t</em>-test).</p>
+<p>This chapter is about inferential tests that compare two means, each with a normal distribution of errors. It follows the main textbook <span class="citation">(<a href="#ref-lsj" role="doc-biblioref">Navarro &amp; Foxcroft, 2019, Chapter 11</a>)</span>. Think of it this way: If you have a single outcome variable, but both men and women contributed to the responses on that outcome variable, then you can split that outcome variable into two means: one for the women, and one for the men. Now you can compare these two means (with an independent samples <em>t</em>-test).</p>
 <p>In fact, there are four different situations when you might compare two means:</p>
 <ul>
 <li>When you have collected only one sample (you can’t split your outcome into two), but you have information about a population that you’d like to compare that sample to.
@@ -502,11 +502,11 @@ div.csl-indent {
 </ul></li>
 </ul>
 <p><br/></p>
-<p>We will skip the one-sample <em>z</em>-test since it is unrealistic to begin with <span class="citation">(See <a href="#ref-lsj" role="doc-biblioref">Navarro &amp; Foxcroft, 2019</a> Section 11.1)</span>. In fact, we will also skip one-sample <em>t</em>-test for the sake of brevity. The independent samples, and paired-samples <em>t</em>-tests are much more common in practice anyway.</p>
+<p>We will skip the one-sample <em>z</em>-test since it is unrealistic to begin with <span class="citation">(See <a href="#ref-lsj" role="doc-biblioref">Navarro &amp; Foxcroft, 2019, sec. 11.1</a>)</span>. In fact, we will also skip one-sample <em>t</em>-test for the sake of brevity. The independent samples, and paired-samples <em>t</em>-tests are much more common in practice anyway.</p>
 <p><br/></p>
 <div id="DoingIndSamplesTTest" class="section level2" number="6.1">
 <h2><span class="header-section-number">6.1</span> The independent-samples <em>t</em>-test</h2>
-<p>Carrying out independent-samples <em>t</em>-tests is covered in your main textbook <span class="citation">(<a href="#ref-lsj" role="doc-biblioref">Navarro &amp; Foxcroft, 2019</a>, Section 11.3)</span>.</p>
+<p>Carrying out independent-samples <em>t</em>-tests is covered in your main textbook <span class="citation">(<a href="#ref-lsj" role="doc-biblioref">Navarro &amp; Foxcroft, 2019, sec. 11.3</a>)</span>.</p>
 <p>In this test, we are interested in whether two groups comprising independent observations differ with each on a single, continuous outcome variable. The standard equation for this is called <em>Student’s <em>t</em></em>.<a href="#fn61" class="footnote-ref" id="fnref61"><sup>61</sup></a></p>
 <p>Of course, you do not need to calculate <em>Student’s <em>t</em></em>, or any other statistical equation in <em>jamovi</em>; the software does it for you… which is the <em>sine qua non</em> of statistical software in general. So let’s get to that.</p>
 <p><br/></p>
@@ -579,11 +579,11 @@ Figure 6.1: Parameter settings for the independent samples <em>t</em>-test using
 <p><br/></p>
 <div id="IndSamplesConspiracyObtainingData" class="section level4" number="6.1.2.1">
 <h4><span class="header-section-number">6.1.2.1</span> Obtaining the data</h4>
-<p>This is an online survey designed to tap into the belief in generic conspiracy theories (there are 15 generic conspiracies covered, which were distilled down, mathematically,<a href="#fn65" class="footnote-ref" id="fnref65"><sup>65</sup></a> from 75). You can see these questions <a href="https://www.frontiersin.org/files/Articles/46573/fpsyg-04-00279-HTML/image_m/fpsyg-04-00279-at001.jpg">here</a>, or in the Appendix of <span class="citation"><a href="#ref-BrothertonFrenchPickering2013" role="doc-biblioref">Brotherton, French, &amp; Pickering</a> (<a href="#ref-BrothertonFrenchPickering2013" role="doc-biblioref">2013</a>)</span>. Responses to these question were on a Likert Scale, ranging from 1 (<code>Definitely not true</code>) to 5 (<code>Definitely true</code>).</p>
+<p>This is an online survey designed to tap into the belief in generic conspiracy theories (there are 15 generic conspiracies covered, which were distilled down, mathematically,<a href="#fn65" class="footnote-ref" id="fnref65"><sup>65</sup></a> from 75). You can see these questions <a href="https://www.frontiersin.org/files/Articles/46573/fpsyg-04-00279-HTML/image_m/fpsyg-04-00279-at001.jpg">here</a>, or in the Appendix of <span class="citation"><a href="#ref-BrothertonFrenchPickering2013" role="doc-biblioref">Brotherton et al.</a> (<a href="#ref-BrothertonFrenchPickering2013" role="doc-biblioref">2013</a>)</span>. Responses to these question were on a Likert Scale, ranging from 1 (<code>Definitely not true</code>) to 5 (<code>Definitely true</code>).</p>
 <p><br/></p>
 
 <div class="rmdnote">
-<strong>NOTE</strong>: The data that was collected online is not the data that was reported in <span class="citation"><a href="#ref-BrothertonFrenchPickering2013" role="doc-biblioref">Brotherton, French, &amp; Pickering</a> (<a href="#ref-BrothertonFrenchPickering2013" role="doc-biblioref">2013</a>)</span>, which was a more serious effort. Rather, the data you have access to was collected for fun. Or as the authors put it in the codebook: “Visitors [to the online survey] completed the test primarily for personal amusement.” A major consequence of this is that you should not take any results you find here very seriously. If you want to find serious answers, read the published article.
+<strong>NOTE</strong>: The data that was collected online is not the data that was reported in <span class="citation"><a href="#ref-BrothertonFrenchPickering2013" role="doc-biblioref">Brotherton et al.</a> (<a href="#ref-BrothertonFrenchPickering2013" role="doc-biblioref">2013</a>)</span>, which was a more serious effort. Rather, the data you have access to was collected for fun. Or as the authors put it in the codebook: “Visitors [to the online survey] completed the test primarily for personal amusement.” A major consequence of this is that you should not take any results you find here very seriously. If you want to find serious answers, read the published article.
 </div>
 <p><br/></p>
 <p>The data (<code>data.csv</code>) and codebook (<code>codebook.txt</code>) can be found online <a href="http://openpsychometrics.org/_rawdata/GCBS.zip">here</a> as a .zip file, or, for Texas A&amp;M students in PSYC 301, on <em>Canvas</em> under <code>Lab: Lab manual data sets</code> &gt; <code>TwoMeans_GCBS</code> (a folder containing the two files). Feel free to follow along with how we analyzed this data.</p>
@@ -597,7 +597,7 @@ Figure 6.1: Parameter settings for the independent samples <em>t</em>-test using
 <div class="figure"><span style="display:block;" id="fig:TTestConspiracyImportExtraters"></span>
 <img src="images/TwoMeans/TTestConspiracyImportExtraterrs.png" alt="Changes made in *jamovi* to the variable *Q3* from @BrothertonFrenchPickering2013." width="600px" />
 <p class="caption">
-Figure 6.2: Changes made in <em>jamovi</em> to the variable <em>Q3</em> from <span class="citation"><a href="#ref-BrothertonFrenchPickering2013" role="doc-biblioref">Brotherton, French, &amp; Pickering</a> (<a href="#ref-BrothertonFrenchPickering2013" role="doc-biblioref">2013</a>)</span>.
+Figure 6.2: Changes made in <em>jamovi</em> to the variable <em>Q3</em> from <span class="citation"><a href="#ref-BrothertonFrenchPickering2013" role="doc-biblioref">Brotherton et al.</a> (<a href="#ref-BrothertonFrenchPickering2013" role="doc-biblioref">2013</a>)</span>.
 </p>
 </div>
 <p><br/></p>
@@ -606,7 +606,7 @@ Figure 6.2: Changes made in <em>jamovi</em> to the variable <em>Q3</em> from <sp
 <div class="figure"><span style="display:block;" id="fig:TTestConspiracyImportVoting"></span>
 <img src="images/TwoMeans/TTestConspiracyImportVoting.png" alt="Changes made in *jamovi* to the variable *voted* from @BrothertonFrenchPickering2013." width="600px" />
 <p class="caption">
-Figure 6.3: Changes made in <em>jamovi</em> to the variable <em>voted</em> from <span class="citation"><a href="#ref-BrothertonFrenchPickering2013" role="doc-biblioref">Brotherton, French, &amp; Pickering</a> (<a href="#ref-BrothertonFrenchPickering2013" role="doc-biblioref">2013</a>)</span>.
+Figure 6.3: Changes made in <em>jamovi</em> to the variable <em>voted</em> from <span class="citation"><a href="#ref-BrothertonFrenchPickering2013" role="doc-biblioref">Brotherton et al.</a> (<a href="#ref-BrothertonFrenchPickering2013" role="doc-biblioref">2013</a>)</span>.
 </p>
 </div>
 <p><br/></p>
@@ -620,7 +620,7 @@ Figure 6.3: Changes made in <em>jamovi</em> to the variable <em>voted</em> from 
 <div class="figure"><span style="display:block;" id="fig:TTestConspiracySetParameters"></span>
 <img src="images/TwoMeans/TTestConspiracySetParameters.png" alt="Setting the parameters for a *t*-test on variables from @BrothertonFrenchPickering2013." width="600px" />
 <p class="caption">
-Figure 6.4: Setting the parameters for a <em>t</em>-test on variables from <span class="citation"><a href="#ref-BrothertonFrenchPickering2013" role="doc-biblioref">Brotherton, French, &amp; Pickering</a> (<a href="#ref-BrothertonFrenchPickering2013" role="doc-biblioref">2013</a>)</span>.
+Figure 6.4: Setting the parameters for a <em>t</em>-test on variables from <span class="citation"><a href="#ref-BrothertonFrenchPickering2013" role="doc-biblioref">Brotherton et al.</a> (<a href="#ref-BrothertonFrenchPickering2013" role="doc-biblioref">2013</a>)</span>.
 </p>
 </div>
 <p><br/></p>
@@ -742,7 +742,7 @@ Figure 6.4: Setting the parameters for a <em>t</em>-test on variables from <span
 <!-- The code below is to add the new variable for the chi-square analysis -->
 <p>We created a new two-level factor from the original Likert item. This was done in <em>jamovi</em> through the <em>Data</em> tab. We just clicked <em>Compute</em> from there. This automatically inserted a new column, but without any values. We gave the variable a new name (<em>Count.Comm.Wth.Exts</em>), and inserted the following IF-THEN-ELSE statement into the function box:</p>
 <blockquote>
-<p>“IF(Comm.Wth.Exts==1,”Totally Disagree“,”Do NOT Totally Disagree“)”</p>
+<p>“IF(Comm.Wth.Exts==1,”Totally Disagree”,“Do NOT Totally Disagree”)”</p>
 </blockquote>
 <p><br/></p>
 <p>See Figure <a href="ComparingTwoMeans.html#fig:TTestConspiracyComputeNewCount">6.5</a> below.</p>
@@ -836,13 +836,13 @@ Figure 6.5: Computing a new, 2-level nominal variable based on an old continuous
 <p><br/></p>
 
 <div class="rmcaution">
-<strong>CAUTION</strong>: When you import this .csv file, you will notice that there is no codebook for this data set. However, it is pretty clear that the missing values are blanks. Therefore, in <em>jamovi</em> under (<span class="math inline">\(\vdots\)</span>) &gt; <code>Import: Default missings</code> you should type in "", as displayed below in Figure <a href="ComparingTwoMeans.html#fig:PracticeInfantMusicDefaultMissings">6.6</a>.
+<strong>CAUTION</strong>: When you import this .csv file, you will notice that there is no codebook for this data set. However, it is pretty clear that the missing values are blanks. Therefore, in <em>jamovi</em> under (<span class="math inline">\(\vdots\)</span>) &gt; <code>Import: Default missings</code> you should type in ““, as displayed below in Figure <a href="ComparingTwoMeans.html#fig:PracticeInfantMusicDefaultMissings">6.6</a>.
 </div>
 <p><br/></p>
 <div class="figure"><span style="display:block;" id="fig:PracticeInfantMusicDefaultMissings"></span>
 <img src="images/TwoMeans/PracticeInfantMusicDefaultMissings.png" alt="Setting *Default missings* to blanks (&quot;&quot;) in *jamovi*." width="300px" />
 <p class="caption">
-Figure 6.6: Setting <em>Default missings</em> to blanks ("") in <em>jamovi</em>.
+Figure 6.6: Setting <em>Default missings</em> to blanks (““) in <em>jamovi</em>.
 </p>
 </div>
 <p><br/></p>
@@ -2463,7 +2463,7 @@ DIFF
 </div>
 <div id="PairedSamplesSingingParentsImportingGetting" class="section level4" number="6.2.3.2">
 <h4><span class="header-section-number">6.2.3.2</span> Getting the data</h4>
-<p>This <em>open data</em> set is located on <em>Canvas</em> at <code>Lab: Lab manual data sets</code> &gt; <code>TwoMeans_InfantMusic.csv</code> (or as an .omv file). Again, the missing value for this .csv file is a blank. So set the <code>Default missings</code> to two side-by-side quotation marks: ""</p>
+<p>This <em>open data</em> set is located on <em>Canvas</em> at <code>Lab: Lab manual data sets</code> &gt; <code>TwoMeans_InfantMusic.csv</code> (or as an .omv file). Again, the missing value for this .csv file is a blank. So set the <code>Default missings</code> to two side-by-side quotation marks: “”</p>
 <p><br/></p>
 </div>
 <div id="PairedSamplesSingingParentsAdjusting" class="section level4" number="6.2.3.3">
