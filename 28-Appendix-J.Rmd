@@ -4,7 +4,6 @@
 GeneralDiscussionRubric <- readr::read_tsv("OtherResources/RubricForGeneralDiscussion.tsv")
 ```
 
-
 ```{r RubricForGeneralDiscussion, echo=F, warning=F, message=F}
 GeneralDiscussionRubric %>% 
 kableExtra::kbl(caption = 'Rubric for General Discussion sections.') %>%
