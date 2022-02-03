@@ -23,7 +23,7 @@
 
 
 
-<meta name="date" content="2021-11-25" />
+<meta name="date" content="2022-02-03" />
 
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <meta name="apple-mobile-web-app-capable" content="yes" />
@@ -331,7 +331,7 @@ div.csl-indent {
 <li class="chapter" data-level="12.5" data-path="ReportingResearch.html"><a href="ReportingResearch.html#IssuesNotExtensivelyCovered"><i class="fa fa-check"></i><b>12.5</b> Issues not extensively covered</a>
 <ul>
 <li class="chapter" data-level="12.5.1" data-path="ReportingResearch.html"><a href="ReportingResearch.html#CriticalThinking"><i class="fa fa-check"></i><b>12.5.1</b> Critical thinking</a></li>
-<li class="chapter" data-level="12.5.2" data-path="ReportingResearch.html"><a href="ReportingResearch.html#MechanicsOfWriting"><i class="fa fa-check"></i><b>12.5.2</b> “Grammar,” clarity, and mechanics</a></li>
+<li class="chapter" data-level="12.5.2" data-path="ReportingResearch.html"><a href="ReportingResearch.html#MechanicsOfWriting"><i class="fa fa-check"></i><b>12.5.2</b> “Grammar”, clarity, and mechanics</a></li>
 <li class="chapter" data-level="12.5.3" data-path="ReportingResearch.html"><a href="ReportingResearch.html#PacingTheWritingProcess"><i class="fa fa-check"></i><b>12.5.3</b> Pacing the writing process</a></li>
 </ul></li>
 <li class="chapter" data-level="12.6" data-path="ReportingResearch.html"><a href="ReportingResearch.html#OutsideHelpOnWritingUpResearch"><i class="fa fa-check"></i><b>12.6</b> Outside help on writing up research</a>
@@ -519,7 +519,7 @@ Figure 11.1: Example of tabs available upon opening your Google Form (assuming i
 </p>
 </div>
 <p><br/></p>
-<p>You will then see an option that says <em>Accepting responses</em>. click the button next to that. This will prevent further participants from adding data to your survey.<a href="#fn104" class="footnote-ref" id="fnref104"><sup>104</sup></a></p>
+<p>You will then see an option that says <em>Accepting responses</em>. click the button next to that. This will prevent further participants from adding data to your survey.<a href="references.html#fn103" class="footnote-ref" id="fnref103"><sup>103</sup></a></p>
 <div class="figure" style="text-align: left"><span style="display:block;" id="fig:GoogleFormsAcceptingNotResponses"></span>
 <img src="images/PrepForWA2/GoogleFormsAcceptingResponses.png" alt="How to halt all future responses in Google Forms" width="25%" /><img src="images/PrepForWA2/GoogleFormsNotAcceptingResponses.png" alt="How to halt all future responses in Google Forms" width="25%" />
 <p class="caption">
@@ -574,7 +574,7 @@ Figure 11.2: How to halt all future responses in Google Forms
 <p>In the same way, you will also want to delete the <em>Timestamp</em> variable that Google Forms creates that you do not need.</p>
 <p><br/></p>
 <p>Assuming you used the Google Form template, there was a question at the beginning asking participants whether they wanted to continue. If they chose <em>yes</em>, then their data were recorded. If they chose <em>no</em>, they were bumped out of the survey and thanked, but their data was not recorded.</p>
-<p>What this means is that for all or most of you, the next variable is useless [i.e., <em>I would like to continue with this survey (by clicking “No,” you will exit the survey)</em>]. If the survey worked right, the column should have only <em>yes</em> responses, and no <em>no</em> responses since only people who responded <em>yes</em> even have data there. So you can delete this variable too.</p>
+<p>What this means is that for all or most of you, the next variable is useless [i.e., <em>I would like to continue with this survey (by clicking “No”, you will exit the survey)</em>]. If the survey worked right, the column should have only <em>yes</em> responses, and no <em>no</em> responses since only people who responded <em>yes</em> even have data there. So you can delete this variable too.</p>
 <p>However, this agreement to participate should not be confused with the variable near the end of the survey (to the far right in the spreadsheet), where participants indicated whether they wanted their data analyzed (i.e., <em>Do you give permission for the data you just provided to be used and analyzed for research purposes?</em>). This is different. This variable was collected <strong>after</strong> the data had undergone recording. It is an indication whether or not the participant is comfortable with you analyzing the data. If the response was <em>no</em>, then you need to filter out that response.</p>
 <p>This is the topic of section <a href="DataPreparationAndAnalyses.html#PreparingDataFilteringData">11.5.1</a> below. But first, you may need to adjust some variables.</p>
 <p><br/></p>
@@ -599,7 +599,7 @@ Figure 11.2: How to halt all future responses in Google Forms
 <blockquote>
 <p>Consent == ‘Yes’</p>
 </blockquote>
-<p>The double equals sign is the way that the underlying programming language, R, wants you to ask yes/no questions. Basically, <em>Consent == ‘Yes’</em> translates to “Is the value in this row under the column ‘Consent’ the same as ‘Yes?’”</p>
+<p>The double equals sign is the way that the underlying programming language, R, wants you to ask yes/no questions. Basically, <em>Consent == ‘Yes’</em> translates to “Is the value in this row under the column ‘Consent’ the same as ‘Yes’?”</p>
 <p>Also note that if you have a space between a two-word variable name (e.g., <em>Informed Consent</em>), you will need to surround the whole variable name with single back-ticks. This is how R can deal with spaces within variables. You can see this below in Figure <a href="DataPreparationAndAnalyses.html#fig:BackticksInJamoviFilter">11.3</a>. On your keyboard, the backtick is located just below the tilde (~), which is in turn is located just below the Escape key in the upper-left corner.</p>
 <div class="figure"><span style="display:block;" id="fig:BackticksInJamoviFilter"></span>
 <img src="images/PrepForWA2/BackticksInJamoviFilter.png" alt="Surround any variable with spaces in it with backticks." width="300px" />
@@ -667,23 +667,23 @@ IT TO THEIR OUTCOME VARIABLES. CHECK FOR OTHER THINGS TOO-->
 <div id="PreparingDataCalculatingCronbachsAlpha" class="section level3" number="11.5.4">
 <h3><span class="header-section-number">11.5.4</span> Calculating Cronbach’s alpha</h3>
 <p>Assuming you have taken care of any conversion of your scores to <em>z</em>-scores (if necessary), you will then need to carry out an analysis of how well your individual questions are working together. This is done through an analysis of Cronbach’s Alpha. If your analysis shows that you can use all three variables, then you use all three. Don’t be surprised, however, if one of your variables does not act like the others. In this case, you may want to consider analyzing that variable separately.</p>
-<p>To illustrate this, we will simply use a dataset called <em>Personality Questionnaire: Ch15 - Personality data sample 3</em> (<em>bfi_sample3</em>) [located at the very bottom] from the datasets associated with <span class="citation"><a href="#ref-lsj" role="doc-biblioref">Navarro &amp; Foxcroft</a> (<a href="#ref-lsj" role="doc-biblioref">2019</a>)</span>. In fact, this is the dataset they use to illustrate the same (pp. 461-463).</p>
+<p>To illustrate this, we will simply use a dataset called <em>Personality Questionnaire: Ch15 - Personality data sample 3</em> (<em>bfi_sample3</em>) [located at the very bottom] from the datasets associated with <span class="citation">Navarro &amp; Foxcroft (<a href="#ref-lsj" role="doc-biblioref">2019</a>)</span>. In fact, this is the dataset they use to illustrate the same (pp. 461-463).</p>
 <p>Simply go to (<span class="math inline">\(\equiv\)</span>) &gt; <em>Open</em> &gt; <em>lsj-data</em> &gt; <em>Personality Questionnaire: Ch15 - Personality data sample 3</em>. This dataset is a sample of people who took a Big-5 Personality test. The variables <code>A1</code>-<code>A5</code> represent <em>Agreeableness</em>, but <code>A1</code> is reverse-scored.</p>
 <p>Luckily, we do not need to reverse-score this ourselves. <em>jamovi</em>’s procedure for calculating <em>Cronbach’s Alpha</em> contains a mechanism within it to deal with reverse-scored items.</p>
 <p>One thing you <strong><em>may</em></strong> have to do, however, is convert the <code>A1</code> through <code>A5</code> variables from nominal variables to continuous variables. For whatever reason, <em>jamovi</em> is reading these variables as nominal variables when they are, in fact, continuous.</p>
 <p>Under the <em>Data</em> tab, just double-click the variable and change the <em>Measure type</em> from <em>Nominal</em> to <em>Continuous</em>. Do this for variables <code>A1</code> to <code>A5</code> (don’t bother with the other variables since we are not working with them at this time).</p>
-<p>When you have the data, click the <em>Analyses</em> tab, and choose <em>Factor</em>.<a href="#fn105" class="footnote-ref" id="fnref105"><sup>105</sup></a> From here select <em>Reliability Analysis</em>.</p>
+<p>When you have the data, click the <em>Analyses</em> tab, and choose <em>Factor</em>.<a href="references.html#fn104" class="footnote-ref" id="fnref104"><sup>104</sup></a> From here select <em>Reliability Analysis</em>.</p>
 <p>Move variables <code>A1</code>-<code>A5</code> to the <em>Items</em> box. Then look down below and click the window labeled <em>Reverse Scaled Items</em>. In that box (labeled <em>Normal Scaled Items</em>), select <code>A1</code> and move it over to the box labeled <em>Reverse Scaled Items</em>.
 Also, under <em>Additional Options</em>, click <em>Correlation heatmap</em>.</p>
 <p>The arrangement of variables should look as they do in Figure <a href="DataPreparationAndAnalyses.html#fig:ArrangmentOfVariablesForCronbachsAlpha">11.7</a> below.</p>
 <div class="figure"><span style="display:block;" id="fig:ArrangmentOfVariablesForCronbachsAlpha"></span>
 <img src="images/PrepForWA2/ArrangmentOfVariablesForCronbachsAlpha.png" alt="The arrangement of variables for Cronbach's Alpha using the bfi_sample3 dataset from @lsj" width="600px" />
 <p class="caption">
-Figure 11.7: The arrangement of variables for Cronbach’s Alpha using the bfi_sample3 dataset from <span class="citation"><a href="#ref-lsj" role="doc-biblioref">Navarro &amp; Foxcroft</a> (<a href="#ref-lsj" role="doc-biblioref">2019</a>)</span>
+Figure 11.7: The arrangement of variables for Cronbach’s Alpha using the bfi_sample3 dataset from <span class="citation">Navarro &amp; Foxcroft (<a href="#ref-lsj" role="doc-biblioref">2019</a>)</span>
 </p>
 </div>
 <p><br/></p>
-<p>The result of the analysis should looks as follows:<a href="#fn106" class="footnote-ref" id="fnref106"><sup>106</sup></a></p>
+<p>The result of the analysis should looks as follows:<a href="references.html#fn105" class="footnote-ref" id="fnref105"><sup>105</sup></a></p>
 <pre><code>
  RELIABILITY ANALYSIS
 
@@ -719,7 +719,7 @@ Figure 11.7: The arrangement of variables for Cronbach’s Alpha using the bfi_s
 <h3><span class="header-section-number">11.5.5</span> Creating a composite variable</h3>
 <p>To create a new variable we simply sum or average them together. We can work with the same <em>bfi_sample3</em> data from above to do this. We will need to reverse-score <em>A1</em> first (see section <a href="DataPreparationAndAnalyses.html#PreparingDataReverseScoring">11.5.2</a> above.</p>
 <p>Using the same procedure as we did above for creating reversed scores (section <a href="DataPreparationAndAnalyses.html#PreparingDataReverseScoring">11.5.2</a>) and creating <em>z</em>-scores (section <a href="DataPreparationAndAnalyses.html#PreparingDataCalculatingZScores">11.5.3</a>), we again clicked the header above a blank column and chose NEW COMPUTED VARIABLE.</p>
-<p>Here, we chose to sum together <em>A1R</em> (reversed) and <em>A2</em>-<em>A5</em>.<a href="#fn107" class="footnote-ref" id="fnref107"><sup>107</sup></a> We did this by choosing the function SUM from the <span class="math inline">\(f_x\)</span> menu. Then, inside the parentheses of SUM(), we placed all the variables we needed, separated by commas. See Figure <a href="DataPreparationAndAnalyses.html#fig:AgreeablenessCompositeSummedNotAveraged">11.8</a> below for a visualization of what we did.</p>
+<p>Here, we chose to sum together <em>A1R</em> (reversed) and <em>A2</em>-<em>A5</em>.<a href="references.html#fn106" class="footnote-ref" id="fnref106"><sup>106</sup></a> We did this by choosing the function SUM from the <span class="math inline">\(f_x\)</span> menu. Then, inside the parentheses of SUM(), we placed all the variables we needed, separated by commas. See Figure <a href="DataPreparationAndAnalyses.html#fig:AgreeablenessCompositeSummedNotAveraged">11.8</a> below for a visualization of what we did.</p>
 <div class="figure"><span style="display:block;" id="fig:AgreeablenessCompositeSummedNotAveraged"></span>
 <img src="images/PrepForWA2/AgreeablenessCompositeSummedNotAveraged.png" alt="Calculating the sum of A2-A5 and A1R (reversed)" width="600px" />
 <p class="caption">
@@ -740,15 +740,6 @@ Figure 11.8: Calculating the sum of A2-A5 and A1R (reversed)
 <div id="ref-lsj" class="csl-entry">
 Navarro, D. J., &amp; Foxcroft, D. R. (2019). <em>Learning statistics with jamovi: A tutorial for psychology students and other beginners</em> (Version 0.70) [Computer software]. Self. <a href="https://doi.org/10.24384/hgc3-7p15">https://doi.org/10.24384/hgc3-7p15</a>
 </div>
-</div>
-<div class="footnotes">
-<hr />
-<ol start="104">
-<li id="fn104"><p>This step isn’t actually required, but it can reduce confusion down the line, as one of your group-mates may decide to download more current data without you knowing, thereby giving you two or more datasets.<a href="DataPreparationAndAnalyses.html#fnref104" class="footnote-back">↩︎</a></p></li>
-<li id="fn105"><p><em>Cronbach’s Alpha</em> is often carried out in conjunction with something called <em>Factor Analysis</em>, which you are free to read about in Chapter 15 of <span class="citation"><a href="#ref-lsj" role="doc-biblioref">Navarro &amp; Foxcroft</a> (<a href="#ref-lsj" role="doc-biblioref">2019</a>)</span><a href="DataPreparationAndAnalyses.html#fnref105" class="footnote-back">↩︎</a></p></li>
-<li id="fn106"><p>Recall that the output below (and further down) was generated from the <em>jmv</em> package in <em>R</em>, and will therefore be rounded to more decimal places than the native output in <em>jamovi</em>.<a href="DataPreparationAndAnalyses.html#fnref106" class="footnote-back">↩︎</a></p></li>
-<li id="fn107"><p>We could also average them since they’re on the same scale. The result is the same.<a href="DataPreparationAndAnalyses.html#fnref107" class="footnote-back">↩︎</a></p></li>
-</ol>
 </div>
             </section>
 
