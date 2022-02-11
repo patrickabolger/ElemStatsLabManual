@@ -23,7 +23,7 @@
 
 
 
-<meta name="date" content="2022-02-03" />
+<meta name="date" content="2022-02-10" />
 
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <meta name="apple-mobile-web-app-capable" content="yes" />
@@ -576,7 +576,7 @@ if you implement a way to do it. Once you have done so, you will have a <em>vari
 <h3><span class="header-section-number">10.3.4</span> What are <em>variables</em>?</h3>
 <p>A variable is a quantity or quality that can adopt any value from a given range of values. For example, <code>Height</code> (in centimeters) is a variable that can take on any value from zero onward. A human might be 155 or 170 cm tall.</p>
 <p>With our example from <em>conscientiousness</em> above, we operationalized it on a Likert scale. As a result, <code>Conscientiousness</code> is a variable that can take on any value between 1 and 5 (but not 6 or 7, since we did not operationalize it that way).</p>
-<p>Tautology aside, even qualitative variables are variables. So biological <code>Sex</code> can take on two values: <em>female</em> and <em>male</em>.<a href="references.html#fn93" class="footnote-ref" id="fnref93"><sup>93</sup></a> And <code>Class Level</code> (assuming you are an undergraduate at a US university) can be any of the following: <em>freshman</em>, <em>sophomore</em>, <em>junior</em>, or <em>senior</em>.<a href="references.html#fn94" class="footnote-ref" id="fnref94"><sup>94</sup></a></p>
+<p>Tautology aside, even qualitative variables are variables. So anatomical <code>Sex</code> can take on two values: <em>female</em> and <em>male</em>.<a href="references.html#fn93" class="footnote-ref" id="fnref93"><sup>93</sup></a> And <code>Class Level</code> (assuming you are an undergraduate at a US university) can be any of the following: <em>freshman</em>, <em>sophomore</em>, <em>junior</em>, or <em>senior</em>.<a href="references.html#fn94" class="footnote-ref" id="fnref94"><sup>94</sup></a></p>
 <p>Since this is a statistics course, we will also conceptualize our variables along another dimension: their role in statistical analyses. For now, we will restrict this to <em>outcome</em> and <em>predictor</em> variables.</p>
 <p><br/></p>
 <div id="WhatAreOutcomeVariables" class="section level4" number="10.3.4.1">
@@ -854,9 +854,9 @@ Figure 10.1: The Likert scale is implemented through the <em>Linear scale</em> o
 <li>two will be continuous</li>
 </ul>
 <p><br/></p>
-<div id="SexAndAge" class="section level5" number="10.4.1.2.1">
-<h5><span class="header-section-number">10.4.1.2.1</span> Required predictor variables: <code>Sex</code> and <code>Age</code></h5>
-<p>Two of your nine variables are already chosen for you: <code>Sex</code> and <code>Age</code>. These two variables are almost always collected in psychology, if nothing else only to describe general characteristics of the sample of participants. <code>Sex</code> will have two levels: <em>male</em> and <em>female</em>; and <code>Age</code> will be a natural number (a positive number with no decimals).<a href="references.html#fn97" class="footnote-ref" id="fnref97"><sup>97</sup></a></p>
+<div id="GenderAndAge" class="section level5" number="10.4.1.2.1">
+<h5><span class="header-section-number">10.4.1.2.1</span> Required predictor variables: <code>Gender</code> and <code>Age</code></h5>
+<p>Two of your nine variables are already chosen for you: <code>Gender</code> and <code>Age</code>. These two variables are almost always collected in psychology, if nothing else only to describe general characteristics of the sample of participants. <code>Gender</code> will have three levels: <em>male</em>, <em>female</em>, and <em>not listed</em>; and <code>Age</code> will be a natural number (a positive number with no decimals).<a href="references.html#fn97" class="footnote-ref" id="fnref97"><sup>97</sup></a></p>
 <p>That leaves four other predictor variables.</p>
 <p><br/></p>
 </div>
@@ -918,7 +918,7 @@ Figure 10.2: How to implement a nominal variable in Google Forms with the <em>Mu
 <h5><span class="header-section-number">10.4.1.2.3</span> Two more continuous variables</h5>
 <p>The last two variables that you will need are two more continuous variables. You will need these to carry out an analysis using Pearson’s <em>r</em> correlation coefficient (section <a href="CorrAndLinearReg.html#Correlations">7.1</a>) and a simple linear regression (section <a href="CorrAndLinearReg.html#LinearRegression">7.2</a>). Both of these analyses will be necessary in order for you to write the Results section (explained Chapter <a href="WritingResultsSections.html#WritingResultsSections">15</a>) for Assignment #4.</p>
 <p>Unlike the outcome variables (which must be Likert items), these two variables can be of any variety, as long as they qualify as continuous. That is, they can very well be Likert items (and many of you will do exactly this). However, they could also be items with response scales that are different from Likert scales.</p>
-<p>You could just have participants input a number like they do for <code>Age</code> (see section <a href="SurveyDesignAndDataCollection.html#SexAndAge">10.4.1.2.1</a> below). This would be carried out through the <em>Short answer</em> question-type option in Google Forms, where you also included response validation by clicking the <span class="math inline">\(\vdots\)</span> symbol at the lower-right and checking <em>Response validation</em>. From there, you can choose from several parameters to “force” your participant to type in the type of number you need (e.g., decimal, integer, etc.). See Figure <a href="SurveyDesignAndDataCollection.html#fig:UsingOtherContinuousVariablesResponseValidation">10.3</a> below:</p>
+<p>You could just have participants input a number like they do for <code>Age</code> (see section <a href="SurveyDesignAndDataCollection.html#GenderAndAge">10.4.1.2.1</a> below). This would be carried out through the <em>Short answer</em> question-type option in Google Forms, where you also included response validation by clicking the <span class="math inline">\(\vdots\)</span> symbol at the lower-right and checking <em>Response validation</em>. From there, you can choose from several parameters to “force” your participant to type in the type of number you need (e.g., decimal, integer, etc.). See Figure <a href="SurveyDesignAndDataCollection.html#fig:UsingOtherContinuousVariablesResponseValidation">10.3</a> below:</p>
 <div class="figure"><span style="display:block;" id="fig:UsingOtherContinuousVariablesResponseValidation"></span>
 <img src="images/DesigningASurvey/UsingOtherContinuousVariablesResponseValidation.png" alt="To have the respondent provide a number, choose *Short answer* along with *Response validation* and the appropriate parameters." width="750px" />
 <p class="caption">
@@ -1150,7 +1150,7 @@ I am satisfied overall with my college experience</p>
 <ul>
 <li>Two required predictors
 <ul>
-<li>(biological) <code>Sex</code> (<em>Female</em> vs. <em>Male</em>)<br />
+<li><code>Gender</code> (<em>Female</em>, <em>Male</em>, <em>Not listed</em>)<br />
 </li>
 <li><code>Age</code> (in whole-number years)<br />
 </li>

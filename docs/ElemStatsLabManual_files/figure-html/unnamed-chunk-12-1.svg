@@ -9,6 +9,9 @@
       stroke-linejoin: round;
       stroke-miterlimit: 10.00;
     }
+    .svglite text {
+      white-space: pre;
+    }
   ]]></style>
 </defs>
 <rect width='100%' height='100%' style='stroke: none; fill: #FFFFFF;'/>
@@ -54,11 +57,11 @@
 <polyline points='156.93,303.08 156.93,299.09 ' style='stroke-width: 1.55; stroke: #333333; stroke-linecap: butt;' />
 <polyline points='269.08,303.08 269.08,299.09 ' style='stroke-width: 1.55; stroke: #333333; stroke-linecap: butt;' />
 <polyline points='381.23,303.08 381.23,299.09 ' style='stroke-width: 1.55; stroke: #333333; stroke-linecap: butt;' />
-<text x='44.78' y='318.67' text-anchor='middle' style='font-size: 12.80px; fill: #333333; font-family: Arial;' textLength='17.78px' lengthAdjust='spacingAndGlyphs'>2.4</text>
-<text x='156.93' y='318.67' text-anchor='middle' style='font-size: 12.80px; fill: #333333; font-family: Arial;' textLength='17.78px' lengthAdjust='spacingAndGlyphs'>2.8</text>
-<text x='269.08' y='318.67' text-anchor='middle' style='font-size: 12.80px; fill: #333333; font-family: Arial;' textLength='17.78px' lengthAdjust='spacingAndGlyphs'>3.2</text>
-<text x='381.23' y='318.67' text-anchor='middle' style='font-size: 12.80px; fill: #333333; font-family: Arial;' textLength='17.78px' lengthAdjust='spacingAndGlyphs'>3.6</text>
-<text x='266.47' y='343.30' text-anchor='middle' style='font-size: 16.00px; fill: #333333; font-family: Arial;' textLength='57.82px' lengthAdjust='spacingAndGlyphs'>log10_rt</text>
-<text transform='translate(28.18,157.02) rotate(-90)' text-anchor='middle' style='font-size: 16.00px; fill: #333333; font-family: Arial;' textLength='50.70px' lengthAdjust='spacingAndGlyphs'>density</text>
+<text x='44.78' y='318.67' text-anchor='middle' style='font-size: 12.80px;fill: #333333; font-family: "Arial";' textLength='17.78px' lengthAdjust='spacingAndGlyphs'>2.4</text>
+<text x='156.93' y='318.67' text-anchor='middle' style='font-size: 12.80px;fill: #333333; font-family: "Arial";' textLength='17.78px' lengthAdjust='spacingAndGlyphs'>2.8</text>
+<text x='269.08' y='318.67' text-anchor='middle' style='font-size: 12.80px;fill: #333333; font-family: "Arial";' textLength='17.78px' lengthAdjust='spacingAndGlyphs'>3.2</text>
+<text x='381.23' y='318.67' text-anchor='middle' style='font-size: 12.80px;fill: #333333; font-family: "Arial";' textLength='17.78px' lengthAdjust='spacingAndGlyphs'>3.6</text>
+<text x='266.47' y='343.30' text-anchor='middle' style='font-size: 16.00px;fill: #333333; font-family: "Arial";' textLength='57.82px' lengthAdjust='spacingAndGlyphs'>log10_rt</text>
+<text transform='translate(28.18,157.02) rotate(-90)' text-anchor='middle' style='font-size: 16.00px;fill: #333333; font-family: "Arial";' textLength='50.70px' lengthAdjust='spacingAndGlyphs'>density</text>
 </g>
 </svg>

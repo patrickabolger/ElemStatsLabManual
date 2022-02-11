@@ -9,6 +9,9 @@
       stroke-linejoin: round;
       stroke-miterlimit: 10.00;
     }
+    .svglite text {
+      white-space: pre;
+    }
   ]]></style>
 </defs>
 <rect width='100%' height='100%' style='stroke: none; fill: #FFFFFF;'/>
@@ -40,21 +43,21 @@
 </g>
 <g clip-path='url(#cpMC4wMHw1MDQuMDB8MC4wMHwzNjAuMDA=)'>
 <polyline points='53.63,308.55 53.63,5.48 ' style='stroke-width: 1.07; stroke: #333333; stroke-linecap: butt;' />
-<text x='37.55' y='221.00' text-anchor='middle' style='font-size: 12.80px; fill: #333333; font-family: Arial;' textLength='14.23px' lengthAdjust='spacingAndGlyphs'>70</text>
-<text x='37.55' y='112.52' text-anchor='middle' style='font-size: 12.80px; fill: #333333; font-family: Arial;' textLength='14.23px' lengthAdjust='spacingAndGlyphs'>75</text>
+<text x='37.55' y='221.00' text-anchor='middle' style='font-size: 12.80px;fill: #333333; font-family: "Arial";' textLength='14.23px' lengthAdjust='spacingAndGlyphs'>70</text>
+<text x='37.55' y='112.52' text-anchor='middle' style='font-size: 12.80px;fill: #333333; font-family: "Arial";' textLength='14.23px' lengthAdjust='spacingAndGlyphs'>75</text>
 <polyline points='49.65,216.41 53.63,216.41 ' style='stroke-width: 1.55; stroke: #333333; stroke-linecap: butt;' />
 <polyline points='49.65,107.93 53.63,107.93 ' style='stroke-width: 1.55; stroke: #333333; stroke-linecap: butt;' />
 <polyline points='53.63,308.55 333.81,308.55 ' style='stroke-width: 1.07; stroke: #333333; stroke-linecap: butt;' />
 <polyline points='130.04,312.54 130.04,308.55 ' style='stroke-width: 1.55; stroke: #333333; stroke-linecap: butt;' />
 <polyline points='257.40,312.54 257.40,308.55 ' style='stroke-width: 1.55; stroke: #333333; stroke-linecap: butt;' />
-<text x='130.04' y='328.13' text-anchor='middle' style='font-size: 12.80px; fill: #333333; font-family: Arial;' textLength='56.19px' lengthAdjust='spacingAndGlyphs'>Anastasia</text>
-<text x='257.40' y='328.13' text-anchor='middle' style='font-size: 12.80px; fill: #333333; font-family: Arial;' textLength='62.59px' lengthAdjust='spacingAndGlyphs'>Bernadette</text>
-<text x='193.72' y='352.76' text-anchor='middle' style='font-size: 16.00px; fill: #333333; font-family: Arial;' textLength='32.01px' lengthAdjust='spacingAndGlyphs'>tutor</text>
-<text transform='translate(18.72,157.02) rotate(-90)' text-anchor='middle' style='font-size: 16.00px; fill: #333333; font-family: Arial;' textLength='40.92px' lengthAdjust='spacingAndGlyphs'>grade</text>
+<text x='130.04' y='328.13' text-anchor='middle' style='font-size: 12.80px;fill: #333333; font-family: "Arial";' textLength='56.19px' lengthAdjust='spacingAndGlyphs'>Anastasia</text>
+<text x='257.40' y='328.13' text-anchor='middle' style='font-size: 12.80px;fill: #333333; font-family: "Arial";' textLength='62.59px' lengthAdjust='spacingAndGlyphs'>Bernadette</text>
+<text x='193.72' y='352.76' text-anchor='middle' style='font-size: 16.00px;fill: #333333; font-family: "Arial";' textLength='32.01px' lengthAdjust='spacingAndGlyphs'>tutor</text>
+<text transform='translate(18.72,157.02) rotate(-90)' text-anchor='middle' style='font-size: 16.00px;fill: #333333; font-family: "Arial";' textLength='40.92px' lengthAdjust='spacingAndGlyphs'>grade</text>
 <rect x='349.75' y='120.28' width='148.77' height='73.48' style='stroke-width: 1.55; stroke: none;' />
 <circle cx='366.36' cy='159.87' r='3.56' style='stroke-width: 0.71; stroke: #333333; fill: #FFFFFF;' />
 <rect x='363.21' y='174.00' width='6.30' height='6.30' style='stroke-width: 0.71; stroke: #333333; fill: #FFFFFF;' />
-<text x='382.97' y='165.60' style='font-size: 16.00px; fill: #333333; font-family: Arial;' textLength='107.59px' lengthAdjust='spacingAndGlyphs'>Mean (95% CI)</text>
-<text x='382.97' y='182.88' style='font-size: 16.00px; fill: #333333; font-family: Arial;' textLength='52.48px' lengthAdjust='spacingAndGlyphs'>Median</text>
+<text x='382.97' y='165.60' style='font-size: 16.00px;fill: #333333; font-family: "Arial";' textLength='107.59px' lengthAdjust='spacingAndGlyphs'>Mean (95% CI)</text>
+<text x='382.97' y='182.88' style='font-size: 16.00px;fill: #333333; font-family: "Arial";' textLength='52.48px' lengthAdjust='spacingAndGlyphs'>Median</text>
 </g>
 </svg>

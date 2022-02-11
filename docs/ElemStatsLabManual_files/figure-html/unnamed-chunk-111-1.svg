@@ -9,6 +9,9 @@
       stroke-linejoin: round;
       stroke-miterlimit: 10.00;
     }
+    .svglite text {
+      white-space: pre;
+    }
   ]]></style>
 </defs>
 <rect width='100%' height='100%' style='stroke: none; fill: #FFFFFF;'/>
@@ -40,21 +43,21 @@
 </g>
 <g clip-path='url(#cpMC4wMHw1MDQuMDB8MC4wMHwzNjAuMDA=)'>
 <polyline points='28.67,333.51 28.67,5.48 ' style='stroke-width: 1.07; stroke: #333333; stroke-linecap: butt;' />
-<text x='12.59' y='272.69' text-anchor='middle' style='font-size: 12.80px; fill: #333333; font-family: Arial;' textLength='14.23px' lengthAdjust='spacingAndGlyphs'>54</text>
-<text x='12.59' y='181.13' text-anchor='middle' style='font-size: 12.80px; fill: #333333; font-family: Arial;' textLength='14.23px' lengthAdjust='spacingAndGlyphs'>56</text>
-<text x='12.59' y='89.58' text-anchor='middle' style='font-size: 12.80px; fill: #333333; font-family: Arial;' textLength='14.23px' lengthAdjust='spacingAndGlyphs'>58</text>
+<text x='12.59' y='272.69' text-anchor='middle' style='font-size: 12.80px;fill: #333333; font-family: "Arial";' textLength='14.23px' lengthAdjust='spacingAndGlyphs'>54</text>
+<text x='12.59' y='181.13' text-anchor='middle' style='font-size: 12.80px;fill: #333333; font-family: "Arial";' textLength='14.23px' lengthAdjust='spacingAndGlyphs'>56</text>
+<text x='12.59' y='89.58' text-anchor='middle' style='font-size: 12.80px;fill: #333333; font-family: "Arial";' textLength='14.23px' lengthAdjust='spacingAndGlyphs'>58</text>
 <polyline points='24.69,268.10 28.67,268.10 ' style='stroke-width: 1.55; stroke: #333333; stroke-linecap: butt;' />
 <polyline points='24.69,176.54 28.67,176.54 ' style='stroke-width: 1.55; stroke: #333333; stroke-linecap: butt;' />
 <polyline points='24.69,84.99 28.67,84.99 ' style='stroke-width: 1.55; stroke: #333333; stroke-linecap: butt;' />
 <polyline points='28.67,333.51 333.81,333.51 ' style='stroke-width: 1.07; stroke: #333333; stroke-linecap: butt;' />
 <polyline points='111.89,337.50 111.89,333.51 ' style='stroke-width: 1.55; stroke: #333333; stroke-linecap: butt;' />
 <polyline points='250.59,337.50 250.59,333.51 ' style='stroke-width: 1.55; stroke: #333333; stroke-linecap: butt;' />
-<text x='111.89' y='353.09' text-anchor='middle' style='font-size: 12.80px; fill: #333333; font-family: Arial;' textLength='67.57px' lengthAdjust='spacingAndGlyphs'>grade_test2</text>
-<text x='250.59' y='353.09' text-anchor='middle' style='font-size: 12.80px; fill: #333333; font-family: Arial;' textLength='67.57px' lengthAdjust='spacingAndGlyphs'>grade_test1</text>
+<text x='111.89' y='353.09' text-anchor='middle' style='font-size: 12.80px;fill: #333333; font-family: "Arial";' textLength='67.57px' lengthAdjust='spacingAndGlyphs'>grade_test2</text>
+<text x='250.59' y='353.09' text-anchor='middle' style='font-size: 12.80px;fill: #333333; font-family: "Arial";' textLength='67.57px' lengthAdjust='spacingAndGlyphs'>grade_test1</text>
 <rect x='349.75' y='132.76' width='148.77' height='73.48' style='stroke-width: 1.55; stroke: none;' />
 <circle cx='366.36' cy='172.35' r='3.56' style='stroke-width: 0.71; stroke: #333333; fill: #FFFFFF;' />
 <rect x='363.21' y='186.48' width='6.30' height='6.30' style='stroke-width: 0.71; stroke: #333333; fill: #FFFFFF;' />
-<text x='382.97' y='178.08' style='font-size: 16.00px; fill: #333333; font-family: Arial;' textLength='107.59px' lengthAdjust='spacingAndGlyphs'>Mean (95% CI)</text>
-<text x='382.97' y='195.36' style='font-size: 16.00px; fill: #333333; font-family: Arial;' textLength='52.48px' lengthAdjust='spacingAndGlyphs'>Median</text>
+<text x='382.97' y='178.08' style='font-size: 16.00px;fill: #333333; font-family: "Arial";' textLength='107.59px' lengthAdjust='spacingAndGlyphs'>Mean (95% CI)</text>
+<text x='382.97' y='195.36' style='font-size: 16.00px;fill: #333333; font-family: "Arial";' textLength='52.48px' lengthAdjust='spacingAndGlyphs'>Median</text>
 </g>
 </svg>

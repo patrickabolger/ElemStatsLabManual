@@ -123,7 +123,7 @@ A variable is a quantity or quality that can adopt any value from a given range 
 
 With our example from *conscientiousness* above, we operationalized it on a Likert scale. As a result, `Conscientiousness` is a variable that can take on any value between 1 and 5 (but not 6 or 7, since we did not operationalize it that way).
 
-Tautology aside, even qualitative variables are variables. So biological `Sex` can take on two values: *female* and *male*.^[We recognize that there are grey areas here, biologically] And `Class Level` (assuming you are an undergraduate at a US university) can be any of the following: *freshman*, *sophomore*, *junior*, or *senior*.^[Incidentally, this class-level system is very US-centric. For instance, Canadians call these simply *first-years*, *second-years*, *third-years*, and *fourth-years*, respectively.]
+Tautology aside, even qualitative variables are variables. So anatomical `Sex` can take on two values: *female* and *male*.^[We recognize that there are grey areas here, biologically] And `Class Level` (assuming you are an undergraduate at a US university) can be any of the following: *freshman*, *sophomore*, *junior*, or *senior*.^[Incidentally, this class-level system is very US-centric. For instance, Canadians call these simply *first-years*, *second-years*, *third-years*, and *fourth-years*, respectively.]
 
 Since this is a statistics course, we will also conceptualize our variables along another dimension: their role in statistical analyses. For now, we will restrict this to *outcome* and *predictor* variables.
 
@@ -347,9 +347,9 @@ More specifically, of the six remaining, the predictor variables carry the follo
 
 <br/>
 
-##### Required predictor variables: `Sex` and `Age` {#SexAndAge}
+##### Required predictor variables: `Gender` and `Age` {#GenderAndAge}
 
-Two of your nine variables are already chosen for you: `Sex` and `Age`. These two variables are almost always collected in psychology, if nothing else only to describe general characteristics of the sample of participants. `Sex` will have two levels: *male* and *female*; and `Age` will be a natural number (a positive number with no decimals).^[Unless you are working with small children, it is usually a bad idea to record ages more exact than a natural number with no decimals. The reason has to do with collecting information that could identify participants. The more precise the age (e.g., years & months, or exact birth dates), the less anonymous the data. Combined with other data you collect from the participant, you could end up uniquely identifying them. Data collection that leans in this direction is very highly discouraged because of privacy concerns. Good researchers try to anonymize their data to the maximum extent possible, given the nature of the research.]
+Two of your nine variables are already chosen for you: `Gender` and `Age`. These two variables are almost always collected in psychology, if nothing else only to describe general characteristics of the sample of participants. `Gender` will have three levels: *male*, *female*, and *not listed*; and `Age` will be a natural number (a positive number with no decimals).^[Unless you are working with small children, it is usually a bad idea to record ages more exact than a natural number with no decimals. The reason has to do with collecting information that could identify participants. The more precise the age (e.g., years & months, or exact birth dates), the less anonymous the data. Combined with other data you collect from the participant, you could end up uniquely identifying them. Data collection that leans in this direction is very highly discouraged because of privacy concerns. Good researchers try to anonymize their data to the maximum extent possible, given the nature of the research.]
 
 That leaves four other predictor variables.
 
@@ -429,7 +429,7 @@ The last two variables that you will need are two more continuous variables. You
 
 Unlike the outcome variables (which must be Likert items), these two  variables can be of any variety, as long as they qualify as continuous. That is, they can very well be Likert items (and many of you will do exactly this). However, they could also be items with response scales that are different from Likert scales.
 
-You could just have participants input a number like they do for `Age` (see section \@ref(SexAndAge) below). This would be carried out through the *Short answer* question-type option in Google Forms, where you also included response validation by clicking the $\vdots$ symbol at the lower-right and checking *Response validation*. From there, you can choose from several parameters to "force" your participant to type in the type of number you need (e.g., decimal, integer, etc.). See Figure \@ref(fig:UsingOtherContinuousVariablesResponseValidation) below:
+You could just have participants input a number like they do for `Age` (see section \@ref(GenderAndAge) below). This would be carried out through the *Short answer* question-type option in Google Forms, where you also included response validation by clicking the $\vdots$ symbol at the lower-right and checking *Response validation*. From there, you can choose from several parameters to "force" your participant to type in the type of number you need (e.g., decimal, integer, etc.). See Figure \@ref(fig:UsingOtherContinuousVariablesResponseValidation) below:
 
 ```{r UsingOtherContinuousVariablesResponseValidation, fig.cap='To have the respondent provide a number, choose *Short answer* along with *Response validation* and the appropriate parameters.', echo=F, out.width="750px"}
 knitr::include_graphics("images/DesigningASurvey/UsingOtherContinuousVariablesResponseValidation.png")
@@ -678,7 +678,7 @@ You must create a survey using Google Forms with nine variables in it. There wil
   - You could add a fourth outcome variable, if you so chose, but you cannot have fewer than three  
 - Six predictor variables  
   - Two required predictors  
-    - (biological) `Sex` (*Female* vs. *Male*)  
+    - `Gender` (*Female*, *Male*, *Not listed*)  
     - `Age` (in whole-number years)    
   - Two nominal (categorical) predictors  
     - A predictor with exactly two levels  

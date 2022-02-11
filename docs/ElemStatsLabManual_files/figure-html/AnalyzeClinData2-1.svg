@@ -9,6 +9,9 @@
       stroke-linejoin: round;
       stroke-miterlimit: 10.00;
     }
+    .svglite text {
+      white-space: pre;
+    }
   ]]></style>
 </defs>
 <rect width='100%' height='100%' style='stroke: none; fill: #FFFFFF;'/>
@@ -42,9 +45,9 @@
 </g>
 <g clip-path='url(#cpMC4wMHw1MDQuMDB8MC4wMHwzNjAuMDA=)'>
 <polyline points='66.65,299.09 66.65,14.94 ' style='stroke-width: 1.07; stroke: #333333; stroke-linecap: butt;' />
-<text x='48.80' y='244.83' text-anchor='middle' style='font-size: 12.80px; fill: #333333; font-family: Arial;' textLength='17.78px' lengthAdjust='spacingAndGlyphs'>0.5</text>
-<text x='48.80' y='155.66' text-anchor='middle' style='font-size: 12.80px; fill: #333333; font-family: Arial;' textLength='17.78px' lengthAdjust='spacingAndGlyphs'>1.0</text>
-<text x='48.80' y='66.49' text-anchor='middle' style='font-size: 12.80px; fill: #333333; font-family: Arial;' textLength='17.78px' lengthAdjust='spacingAndGlyphs'>1.5</text>
+<text x='48.80' y='244.83' text-anchor='middle' style='font-size: 12.80px;fill: #333333; font-family: "Arial";' textLength='17.78px' lengthAdjust='spacingAndGlyphs'>0.5</text>
+<text x='48.80' y='155.66' text-anchor='middle' style='font-size: 12.80px;fill: #333333; font-family: "Arial";' textLength='17.78px' lengthAdjust='spacingAndGlyphs'>1.0</text>
+<text x='48.80' y='66.49' text-anchor='middle' style='font-size: 12.80px;fill: #333333; font-family: "Arial";' textLength='17.78px' lengthAdjust='spacingAndGlyphs'>1.5</text>
 <polyline points='62.67,240.24 66.65,240.24 ' style='stroke-width: 1.55; stroke: #333333; stroke-linecap: butt;' />
 <polyline points='62.67,151.07 66.65,151.07 ' style='stroke-width: 1.55; stroke: #333333; stroke-linecap: butt;' />
 <polyline points='62.67,61.90 66.65,61.90 ' style='stroke-width: 1.55; stroke: #333333; stroke-linecap: butt;' />
@@ -52,10 +55,10 @@
 <polyline points='145.85,303.08 145.85,299.09 ' style='stroke-width: 1.55; stroke: #333333; stroke-linecap: butt;' />
 <polyline points='277.85,303.08 277.85,299.09 ' style='stroke-width: 1.55; stroke: #333333; stroke-linecap: butt;' />
 <polyline points='409.86,303.08 409.86,299.09 ' style='stroke-width: 1.55; stroke: #333333; stroke-linecap: butt;' />
-<text x='145.85' y='318.67' text-anchor='middle' style='font-size: 12.80px; fill: #333333; font-family: Arial;' textLength='45.52px' lengthAdjust='spacingAndGlyphs'>anxifree</text>
-<text x='277.85' y='318.67' text-anchor='middle' style='font-size: 12.80px; fill: #333333; font-family: Arial;' textLength='54.76px' lengthAdjust='spacingAndGlyphs'>joyzepam</text>
-<text x='409.86' y='318.67' text-anchor='middle' style='font-size: 12.80px; fill: #333333; font-family: Arial;' textLength='44.81px' lengthAdjust='spacingAndGlyphs'>placebo</text>
-<text x='277.85' y='343.30' text-anchor='middle' style='font-size: 16.00px; fill: #333333; font-family: Arial;' textLength='32.03px' lengthAdjust='spacingAndGlyphs'>drug</text>
-<text transform='translate(28.18,157.02) rotate(-90)' text-anchor='middle' style='font-size: 16.00px; fill: #333333; font-family: Arial;' textLength='74.72px' lengthAdjust='spacingAndGlyphs'>mood.gain</text>
+<text x='145.85' y='318.67' text-anchor='middle' style='font-size: 12.80px;fill: #333333; font-family: "Arial";' textLength='45.52px' lengthAdjust='spacingAndGlyphs'>anxifree</text>
+<text x='277.85' y='318.67' text-anchor='middle' style='font-size: 12.80px;fill: #333333; font-family: "Arial";' textLength='54.76px' lengthAdjust='spacingAndGlyphs'>joyzepam</text>
+<text x='409.86' y='318.67' text-anchor='middle' style='font-size: 12.80px;fill: #333333; font-family: "Arial";' textLength='44.81px' lengthAdjust='spacingAndGlyphs'>placebo</text>
+<text x='277.85' y='343.30' text-anchor='middle' style='font-size: 16.00px;fill: #333333; font-family: "Arial";' textLength='32.03px' lengthAdjust='spacingAndGlyphs'>drug</text>
+<text transform='translate(28.18,157.02) rotate(-90)' text-anchor='middle' style='font-size: 16.00px;fill: #333333; font-family: "Arial";' textLength='74.72px' lengthAdjust='spacingAndGlyphs'>mood.gain</text>
 </g>
 </svg>

@@ -5,7 +5,7 @@ This chapter covers how to write the second part of an empirical IMRaD research 
 Note that Before carrying out either *Practice Writing Exercise 1* (section \@ref(PWEFM1)) or *Writing Assignment 2* (section \@ref(WritingAssignment2)), you will probably need to have already performed the following procedures on your survey data: 
 
 a. filtering out participants who did not want their data analyzed  
-b. generating descriptive statistics about basic demographics, namely counts by sex and mean age (and standard deviation)  
+b. generating descriptive statistics about basic demographics, namely counts by gender and mean age (and standard deviation)  
 c. reverse-scoring any reverse-coded items  
 d. transforming variables on different scales  
 e. evaluating internal reliability (Cronbach's Alpha)  
@@ -19,7 +19,7 @@ We included these procedures (again, see section \@ref(PreparingDataFinalStepsBe
 
 First (*a* above), there is always the possibility that a participant or two doesn't want their data analyzed. If you recall, you placed this question near the end of the survey. We can use the values provided here to remove those observations with a filter. You need to do this first as it will affect any descriptive statistics you carry out in (b).
 
-Second (*b* above), all studies involving human participants report the numbers of participants by sex, and the mean and standard deviation of their ages in years. You may also want to carry out descriptive statistics on each of your outcome variables. You can see how, for the example in Appendix C, this mattered a little bit. It depends on your study, however.
+Second (*b* above), all studies involving human participants report the numbers of participants by sex or gender, and the mean and standard deviation of their ages in years. You may also want to carry out descriptive statistics on each of your outcome variables. You can see how, for the example in Appendix C, this mattered a little bit. It depends on your study, however.
 
 Third (*c* above), one of your outcome variable is probably reverse-coded. This means that it is answered in the opposite way from other questions For example, whereas two of your variables might be worded as, "I like X's very much" (1 = Agree, 5 = Disagree), a reverse-coded question might be worded as, "I **dis**like Y's very much." Most longer surveys contain reverse-coded questions in order to either make the survey more interesting overall, or to detect dishonest (mechanical) responses, or both.
 
@@ -75,7 +75,7 @@ We cover them in turn below.
 
 This sub-section was traditionally called *Subjects*, but that more passive label fell out of use as the more active *Participants* label better reflected the shift to higher standards of informed consent over the years.^[Naturally however, it would be more appropriate to use *Subjects* if the source of your data were entities who were less capable of active consent or assent, like monkeys, rats, neurons, etc.]
 
-The sub-section details the general demographics of the sample. In reports several numbers, including those referring to the total number of participants analyzed, proportion of participants by sex, and the mean and standard deviation of age (in years for adults; years and months for children). 
+The sub-section details the general demographics of the sample. In reports several numbers, including those referring to the total number of participants analyzed, proportion of participants by gender, and the mean and standard deviation of age (in years for adults; years and months for children). 
 
 It also reports any exclusion criteria (a priori reasons why participants would be removed for analysis). Normally, the sub-sub-section on exclusion criteria contrasts the total number of participants who completed the study versus the final number of participants analyzed.
 
@@ -342,7 +342,7 @@ You are now ready to start the practice writing exercises for the *Method* secti
 
 ### Participants {#PWEFM1Participants}
 
-As explained above in section \@ref(MethodSection1Participants), one thing that this section does, if the participant group consists of humans, is to report basic demographics. This usually means the numbers of each sex in the sample of participants, as well as their mean age (and standard deviation).
+As explained above in section \@ref(MethodSection1Participants), one thing that this section does, if the participant group consists of humans, is to report basic demographics. This usually means the numbers of each sex or gender in the sample of participants, as well as their mean age (and standard deviation).
 
 But beyond that, the best way to think of this sub-section of the Method section (and, indeed, all the sub-sections that follow it) is as a road map to another researcher who might want to replicate the study.
 
@@ -360,7 +360,7 @@ Discuss this as a class once you are done brainstorming.
 
 Now look at your own data (or the data from *one* of your research groups if you're not all from the same research group). You probably have the basic statistics you need from jamovi for the Method section at this point, so refer back to that. If not, you can fabricate the statistics based on what you expect.
 
-Together, write out a *Participant* sub-section for your data. Naturally, you must include information about sex and age, but also include anything else about your sample that your group and the class in general brainstormed in the exercise above (section \@ref(PWEFM1ParticipantsBrainstormOnThingsToWrite)).
+Together, write out a *Participant* sub-section for your data. Naturally, you must include information about gender and age, but also include anything else about your sample that your group and the class in general brainstormed in the exercise above (section \@ref(PWEFM1ParticipantsBrainstormOnThingsToWrite)).
 
 <br/>
 

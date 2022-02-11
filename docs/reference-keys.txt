@@ -377,7 +377,7 @@ FinalNoteOnTheOutcomeVariables
 TheCompositeVariable
 AdditionalRequirementReverseScoring
 TheSixPredictorVariables
-SexAndAge
+GenderAndAge
 TwoMoreNominalVariables
 ATwoLevelNominalPredictor
 AThreeToFiveLevelNominalPredictor

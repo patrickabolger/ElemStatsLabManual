@@ -9,6 +9,9 @@
       stroke-linejoin: round;
       stroke-miterlimit: 10.00;
     }
+    .svglite text {
+      white-space: pre;
+    }
   ]]></style>
 </defs>
 <rect width='100%' height='100%' style='stroke: none; fill: #FFFFFF;'/>
@@ -36,10 +39,10 @@
 </g>
 <g clip-path='url(#cpMC4wMHw1MDQuMDB8MC4wMHwzNjAuMDA=)'>
 <polyline points='63.10,299.09 63.10,14.94 ' style='stroke-width: 1.07; stroke: #333333; stroke-linecap: butt;' />
-<text x='47.02' y='290.76' text-anchor='middle' style='font-size: 12.80px; fill: #333333; font-family: Arial;' textLength='7.11px' lengthAdjust='spacingAndGlyphs'>0</text>
-<text x='47.02' y='211.28' text-anchor='middle' style='font-size: 12.80px; fill: #333333; font-family: Arial;' textLength='14.23px' lengthAdjust='spacingAndGlyphs'>20</text>
-<text x='47.02' y='131.80' text-anchor='middle' style='font-size: 12.80px; fill: #333333; font-family: Arial;' textLength='14.23px' lengthAdjust='spacingAndGlyphs'>40</text>
-<text x='47.02' y='52.32' text-anchor='middle' style='font-size: 12.80px; fill: #333333; font-family: Arial;' textLength='14.23px' lengthAdjust='spacingAndGlyphs'>60</text>
+<text x='47.02' y='290.76' text-anchor='middle' style='font-size: 12.80px;fill: #333333; font-family: "Arial";' textLength='7.11px' lengthAdjust='spacingAndGlyphs'>0</text>
+<text x='47.02' y='211.28' text-anchor='middle' style='font-size: 12.80px;fill: #333333; font-family: "Arial";' textLength='14.23px' lengthAdjust='spacingAndGlyphs'>20</text>
+<text x='47.02' y='131.80' text-anchor='middle' style='font-size: 12.80px;fill: #333333; font-family: "Arial";' textLength='14.23px' lengthAdjust='spacingAndGlyphs'>40</text>
+<text x='47.02' y='52.32' text-anchor='middle' style='font-size: 12.80px;fill: #333333; font-family: "Arial";' textLength='14.23px' lengthAdjust='spacingAndGlyphs'>60</text>
 <polyline points='59.11,286.17 63.10,286.17 ' style='stroke-width: 1.55; stroke: #333333; stroke-linecap: butt;' />
 <polyline points='59.11,206.69 63.10,206.69 ' style='stroke-width: 1.55; stroke: #333333; stroke-linecap: butt;' />
 <polyline points='59.11,127.21 63.10,127.21 ' style='stroke-width: 1.55; stroke: #333333; stroke-linecap: butt;' />
@@ -48,16 +51,16 @@
 <polyline points='123.08,303.08 123.08,299.09 ' style='stroke-width: 1.55; stroke: #333333; stroke-linecap: butt;' />
 <polyline points='223.06,303.08 223.06,299.09 ' style='stroke-width: 1.55; stroke: #333333; stroke-linecap: butt;' />
 <polyline points='323.03,303.08 323.03,299.09 ' style='stroke-width: 1.55; stroke: #333333; stroke-linecap: butt;' />
-<text x='123.08' y='318.67' text-anchor='middle' style='font-size: 12.80px; fill: #333333; font-family: Arial;' textLength='34.86px' lengthAdjust='spacingAndGlyphs'>puppy</text>
-<text x='223.06' y='318.67' text-anchor='middle' style='font-size: 12.80px; fill: #333333; font-family: Arial;' textLength='34.14px' lengthAdjust='spacingAndGlyphs'>flower</text>
-<text x='323.03' y='318.67' text-anchor='middle' style='font-size: 12.80px; fill: #333333; font-family: Arial;' textLength='24.90px' lengthAdjust='spacingAndGlyphs'>data</text>
-<text x='223.06' y='343.30' text-anchor='middle' style='font-size: 16.00px; fill: #333333; font-family: Arial;' textLength='46.25px' lengthAdjust='spacingAndGlyphs'>choice</text>
-<text transform='translate(28.18,157.02) rotate(-90)' text-anchor='middle' style='font-size: 16.00px; fill: #333333; font-family: Arial;' textLength='47.14px' lengthAdjust='spacingAndGlyphs'>counts</text>
+<text x='123.08' y='318.67' text-anchor='middle' style='font-size: 12.80px;fill: #333333; font-family: "Arial";' textLength='34.86px' lengthAdjust='spacingAndGlyphs'>puppy</text>
+<text x='223.06' y='318.67' text-anchor='middle' style='font-size: 12.80px;fill: #333333; font-family: "Arial";' textLength='34.14px' lengthAdjust='spacingAndGlyphs'>flower</text>
+<text x='323.03' y='318.67' text-anchor='middle' style='font-size: 12.80px;fill: #333333; font-family: "Arial";' textLength='24.90px' lengthAdjust='spacingAndGlyphs'>data</text>
+<text x='223.06' y='343.30' text-anchor='middle' style='font-size: 16.00px;fill: #333333; font-family: "Arial";' textLength='46.25px' lengthAdjust='spacingAndGlyphs'>choice</text>
+<text transform='translate(28.18,157.02) rotate(-90)' text-anchor='middle' style='font-size: 16.00px;fill: #333333; font-family: "Arial";' textLength='47.14px' lengthAdjust='spacingAndGlyphs'>counts</text>
 <rect x='398.95' y='120.28' width='90.10' height='73.48' style='stroke-width: 1.55; stroke: none;' />
-<text x='444.00' y='141.49' text-anchor='middle' style='font-size: 16.00px; fill: #333333; font-family: Arial;' textLength='54.25px' lengthAdjust='spacingAndGlyphs'>species</text>
+<text x='444.00' y='141.49' text-anchor='middle' style='font-size: 16.00px;fill: #333333; font-family: "Arial";' textLength='54.25px' lengthAdjust='spacingAndGlyphs'>species</text>
 <rect x='407.63' y='151.93' width='15.86' height='15.86' style='stroke-width: 1.07; stroke: #333333; stroke-linecap: square; stroke-linejoin: miter; fill: #A6C4F1;' />
 <rect x='407.63' y='169.21' width='15.86' height='15.86' style='stroke-width: 1.07; stroke: #333333; stroke-linecap: square; stroke-linejoin: miter; fill: #F0CD8C;' />
-<text x='432.17' y='165.60' style='font-size: 16.00px; fill: #333333; font-family: Arial;' textLength='36.47px' lengthAdjust='spacingAndGlyphs'>robot</text>
-<text x='432.17' y='182.88' style='font-size: 16.00px; fill: #333333; font-family: Arial;' textLength='48.92px' lengthAdjust='spacingAndGlyphs'>human</text>
+<text x='432.17' y='165.60' style='font-size: 16.00px;fill: #333333; font-family: "Arial";' textLength='36.47px' lengthAdjust='spacingAndGlyphs'>robot</text>
+<text x='432.17' y='182.88' style='font-size: 16.00px;fill: #333333; font-family: "Arial";' textLength='48.92px' lengthAdjust='spacingAndGlyphs'>human</text>
 </g>
 </svg>

@@ -9,6 +9,9 @@
       stroke-linejoin: round;
       stroke-miterlimit: 10.00;
     }
+    .svglite text {
+      white-space: pre;
+    }
   ]]></style>
 </defs>
 <rect width='100%' height='100%' style='stroke: none; fill: #FFFFFF;'/>
@@ -40,12 +43,12 @@
 </g>
 <g clip-path='url(#cpMC4wMHw1MDQuMDB8MC4wMHwzNjAuMDA=)'>
 <polyline points='64.30,308.55 64.30,5.48 ' style='stroke-width: 1.07; stroke: #333333; stroke-linecap: butt;' />
-<text x='42.89' y='299.37' text-anchor='middle' style='font-size: 12.80px; fill: #333333; font-family: Arial;' textLength='24.90px' lengthAdjust='spacingAndGlyphs'>1.00</text>
-<text x='42.89' y='242.73' text-anchor='middle' style='font-size: 12.80px; fill: #333333; font-family: Arial;' textLength='24.90px' lengthAdjust='spacingAndGlyphs'>1.25</text>
-<text x='42.89' y='186.10' text-anchor='middle' style='font-size: 12.80px; fill: #333333; font-family: Arial;' textLength='24.90px' lengthAdjust='spacingAndGlyphs'>1.50</text>
-<text x='42.89' y='129.47' text-anchor='middle' style='font-size: 12.80px; fill: #333333; font-family: Arial;' textLength='24.90px' lengthAdjust='spacingAndGlyphs'>1.75</text>
-<text x='42.89' y='72.83' text-anchor='middle' style='font-size: 12.80px; fill: #333333; font-family: Arial;' textLength='24.90px' lengthAdjust='spacingAndGlyphs'>2.00</text>
-<text x='42.89' y='16.20' text-anchor='middle' style='font-size: 12.80px; fill: #333333; font-family: Arial;' textLength='24.90px' lengthAdjust='spacingAndGlyphs'>2.25</text>
+<text x='42.89' y='299.37' text-anchor='middle' style='font-size: 12.80px;fill: #333333; font-family: "Arial";' textLength='24.90px' lengthAdjust='spacingAndGlyphs'>1.00</text>
+<text x='42.89' y='242.73' text-anchor='middle' style='font-size: 12.80px;fill: #333333; font-family: "Arial";' textLength='24.90px' lengthAdjust='spacingAndGlyphs'>1.25</text>
+<text x='42.89' y='186.10' text-anchor='middle' style='font-size: 12.80px;fill: #333333; font-family: "Arial";' textLength='24.90px' lengthAdjust='spacingAndGlyphs'>1.50</text>
+<text x='42.89' y='129.47' text-anchor='middle' style='font-size: 12.80px;fill: #333333; font-family: "Arial";' textLength='24.90px' lengthAdjust='spacingAndGlyphs'>1.75</text>
+<text x='42.89' y='72.83' text-anchor='middle' style='font-size: 12.80px;fill: #333333; font-family: "Arial";' textLength='24.90px' lengthAdjust='spacingAndGlyphs'>2.00</text>
+<text x='42.89' y='16.20' text-anchor='middle' style='font-size: 12.80px;fill: #333333; font-family: "Arial";' textLength='24.90px' lengthAdjust='spacingAndGlyphs'>2.25</text>
 <polyline points='60.32,294.78 64.30,294.78 ' style='stroke-width: 1.55; stroke: #333333; stroke-linecap: butt;' />
 <polyline points='60.32,238.14 64.30,238.14 ' style='stroke-width: 1.55; stroke: #333333; stroke-linecap: butt;' />
 <polyline points='60.32,181.51 64.30,181.51 ' style='stroke-width: 1.55; stroke: #333333; stroke-linecap: butt;' />
@@ -55,14 +58,14 @@
 <polyline points='64.30,308.55 333.81,308.55 ' style='stroke-width: 1.07; stroke: #333333; stroke-linecap: butt;' />
 <polyline points='137.80,312.54 137.80,308.55 ' style='stroke-width: 1.55; stroke: #333333; stroke-linecap: butt;' />
 <polyline points='260.31,312.54 260.31,308.55 ' style='stroke-width: 1.55; stroke: #333333; stroke-linecap: butt;' />
-<text x='137.80' y='328.13' text-anchor='middle' style='font-size: 12.80px; fill: #333333; font-family: Arial;' textLength='16.36px' lengthAdjust='spacingAndGlyphs'>No</text>
-<text x='260.31' y='328.13' text-anchor='middle' style='font-size: 12.80px; fill: #333333; font-family: Arial;' textLength='22.05px' lengthAdjust='spacingAndGlyphs'>Yes</text>
-<text x='199.05' y='352.76' text-anchor='middle' style='font-size: 16.00px; fill: #333333; font-family: Arial;' textLength='134.29px' lengthAdjust='spacingAndGlyphs'>Voted.In.Past.Year</text>
-<text transform='translate(18.72,157.02) rotate(-90)' text-anchor='middle' style='font-size: 16.00px; fill: #333333; font-family: Arial;' textLength='115.55px' lengthAdjust='spacingAndGlyphs'>Comm.Wth.Exts</text>
+<text x='137.80' y='328.13' text-anchor='middle' style='font-size: 12.80px;fill: #333333; font-family: "Arial";' textLength='16.36px' lengthAdjust='spacingAndGlyphs'>No</text>
+<text x='260.31' y='328.13' text-anchor='middle' style='font-size: 12.80px;fill: #333333; font-family: "Arial";' textLength='22.05px' lengthAdjust='spacingAndGlyphs'>Yes</text>
+<text x='199.05' y='352.76' text-anchor='middle' style='font-size: 16.00px;fill: #333333; font-family: "Arial";' textLength='134.29px' lengthAdjust='spacingAndGlyphs'>Voted.In.Past.Year</text>
+<text transform='translate(18.72,157.02) rotate(-90)' text-anchor='middle' style='font-size: 16.00px;fill: #333333; font-family: "Arial";' textLength='115.55px' lengthAdjust='spacingAndGlyphs'>Comm.Wth.Exts</text>
 <rect x='349.75' y='120.28' width='148.77' height='73.48' style='stroke-width: 1.55; stroke: none;' />
 <circle cx='366.36' cy='159.87' r='3.56' style='stroke-width: 0.71; stroke: #333333; fill: #FFFFFF;' />
 <rect x='363.21' y='174.00' width='6.30' height='6.30' style='stroke-width: 0.71; stroke: #333333; fill: #FFFFFF;' />
-<text x='382.97' y='165.60' style='font-size: 16.00px; fill: #333333; font-family: Arial;' textLength='107.59px' lengthAdjust='spacingAndGlyphs'>Mean (95% CI)</text>
-<text x='382.97' y='182.88' style='font-size: 16.00px; fill: #333333; font-family: Arial;' textLength='52.48px' lengthAdjust='spacingAndGlyphs'>Median</text>
+<text x='382.97' y='165.60' style='font-size: 16.00px;fill: #333333; font-family: "Arial";' textLength='107.59px' lengthAdjust='spacingAndGlyphs'>Mean (95% CI)</text>
+<text x='382.97' y='182.88' style='font-size: 16.00px;fill: #333333; font-family: "Arial";' textLength='52.48px' lengthAdjust='spacingAndGlyphs'>Median</text>
 </g>
 </svg>

@@ -69,7 +69,7 @@ But first, there are some changes you need to make.
 First, Google Forms just exported the questions as your variable names. This is not convenient since they are very long, and will clutter up any statistical output, figure, or table you subsequently produce. 
 
 ```{block2, type="rmnote", echo=T}
-**NOTE**: You do not need to do this for variables with short names, like *Age* or *Sex*.
+**NOTE**: You do not need to do this for variables with short names, like `Age` or `Gender`.
 ```
 
 <br/>
