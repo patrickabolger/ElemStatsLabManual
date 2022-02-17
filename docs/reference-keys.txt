@@ -375,7 +375,6 @@ LikertScale
 OtherContinuousScales
 FinalNoteOnTheOutcomeVariables
 TheCompositeVariable
-AdditionalRequirementReverseScoring
 TheSixPredictorVariables
 GenderAndAge
 TwoMoreNominalVariables

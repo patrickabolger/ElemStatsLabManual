@@ -23,7 +23,7 @@
 
 
 
-<meta name="date" content="2022-02-10" />
+<meta name="date" content="2022-02-17" />
 
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <meta name="apple-mobile-web-app-capable" content="yes" />
@@ -613,9 +613,9 @@ Figure 11.3: Surround any variable with spaces in it with backticks.
 <h3><span class="header-section-number">11.5.2</span> Reverse-scoring</h3>
 <p>For your particular assignments, we have required that you collect three, related outcome variables that, together, form a single construct in the form of a composite variable. Thus, you will be adding or averaging these variables together.</p>
 <p>But you will need to take care of a few things before doing so. Some may not apply to you, but others will.</p>
-<p>Many or most of you have a reverse-scored item. That means that the response scale is reversed compared to the other items. For example, the responses to the statement “I am disappointed with my cumulative grade-point average” (1 - Strongly disagree &lt;—&gt; 5 - Strongly agree) would be reverse-scored relative to the responses to the statement “I am generally happy with my GPA this semester” (1 - Strongly disagree &lt;—&gt; 5 - Strongly agree). Someone who was happy with both would respond low to the first statement and high to the second statement.</p>
+<p>You might have intentionally or inadvertently included a reverse-scored item. That means that the response scale is reversed compared to the other items. For example, the responses to the statement “I am disappointed with my cumulative grade-point average” (1 - Strongly disagree &lt;—&gt; 5 - Strongly agree) would be reverse-scored relative to the responses to the statement “I am generally happy with my GPA this semester” (1 - Strongly disagree &lt;—&gt; 5 - Strongly agree). Someone who was happy with both would respond low to the first statement and high to the second statement.</p>
 <p>There is a simple formula for reverse scoring. If your variable is <em>x</em>, then the formula is <span class="math inline">\(max(x)+1-x\)</span>. That is, take the maximum possible value of <em>x</em>, add one to it, and subtract the value of <em>x</em> for that cell in the spreadsheet.</p>
-<p>In <em>jamovi</em>, you click the <em>Data</em> tab, and find a blank column on the right-hand side of the spreadsheet, and double-click the header. You will see several options, but you should click NEW COMPUTED VARIABLE.</p>
+<p>In <em>jamovi</em>, you click the <em>Data</em> tab, and find a blank column on the right-hand side of the spreadsheet, and double-click the header. You will see several options, but you should click <code>NEW COMPUTED VARIABLE</code>.</p>
 <p>You should come up with a new name for the variable that relates to the original. Thus, if the original had been <em>Aggression1</em>, the new one could be <em>Aggression1R</em> (with an <em>R</em> to indicate <em>reversed</em>). We have done one in plain English here with spaces (thereby requiring backticks). Here we are reverse-scoring <em>Nightly Sleep Satisfaction</em> into <em>Nightly Sleep Satisfaction (reversed)</em>.</p>
 <p>The scale was a 1-5 Likert scale, so we added 1 to 5, giving us 6. We then subtracted <em>Nightly Sleep Satisfaction</em> from 6. See Figure <a href="DataPreparationAndAnalyses.html#fig:ReverseScoringInJamoviScreen">11.4</a> below.</p>
 <div class="figure"><span style="display:block;" id="fig:ReverseScoringInJamoviScreen"></span>
