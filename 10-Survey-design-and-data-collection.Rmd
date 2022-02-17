@@ -302,38 +302,46 @@ It is easy to see that the results of the three responses can be averaged or add
 
 <br/>
 
-<!-- ##### Additional requirement: reverse-scoring {#AdditionalRequirementReverseScoring} -->
+##### Additional ~~requirement~~ **issue**: reverse-scoring {#AdditionalRequirementReverseScoring}
 
-<!-- We have one additional requirement for these three outcome variables. Specifically, one of the questions must be reverse-scored. We discussed this above in section \@ref(LikertScale). Basically, for any particular participant, one of the questions, relative to the other questions, must elicit an expected response that lies on the other end of the numerical scale. -->
+```{block2, type="rmdnote", echo=T}
+This is no longer a requirement in this course. It does come up, however, if students intentionally or inadvertently create a reverse-scored item. See section \@ref(PreparingDataReverseScoring) for how to deal with this situation.
 
-<!-- Using the examples from above, we will re-phrase them as Likert items, and then reverse-score the third: -->
+```
 
-<!-- >1. I am satisfied with *social* life at the university   -->
-<!-- 2. I am satisfied with my life *volunteering* at the university   -->
-<!-- 3. I am dissatisfied with my *academic* life at the university     -->
+~~We have one additional requirement for these three outcome variables. Specifically, one of the questions must be reverse-scored. We discussed this above in section \@ref(LikertScale). Basically, for any particular participant, one of the questions, relative to the other questions, must elicit an expected response that lies on the other end of the numerical scale.~~
 
-<!-- <br/> -->
+~~Using the examples from above, we will re-phrase them as Likert items, and then reverse-score the third:~~
 
-<!-- Note that if they use the scale directly below, then someone who is generally *very* satisfied in all aspect of their student life would respond with 5s on the first two question, but with a 1 on the last. -->
 
-<!-- | Response 	| 1 	| 2 	| 3 	| 4 	| 5 	| -->
-<!-- |:--------:	|:-----------------:	|:--------:	|:--------------------------:	|:-----:	|:--------------:	| -->
-<!-- | Meaning 	| Strongly Disagree 	| Disagree 	| Neither Agree nor Disagree 	| Agree 	| Strongly Agree 	| -->
+>1. I am satisfied with *social* life at the university
+2. I am satisfied with my life *volunteering* at the university
+3. I am dissatisfied with my *academic* life at the university
 
-<!-- <br/> -->
 
-<!-- Subsequently, before averaging these items, you will then need to reverse-score this item to make it conform to the others. -->
+<br/>
 
-<!-- This may seem like busywork, but the purpose of it is twofold: -->
+~~Note that if they use the scale directly below, then someone who is generally *very* satisfied in all aspect of their student life would respond with 5s on the first two question, but with a 1 on the last.~~
 
-<!-- 1. It keeps the participants from getting bored with the same types of questions over and over again. This is more important on longer surveys, but we practice it here.   -->
-<!-- 2. It captures respondents who may be responding "robotically" (e.g., just indicating the same number over and over again to get through the survey, without actually reading the questions). In many cases, researchers can use such inconsistent responses to filter out disingenuous observations. Again, this is more important for longer surveys, but we practice it here.   -->
 
-<!-- <br/> -->
+| Response 	| 1 	| 2 	| 3 	| 4 	| 5 	|
+|:--------:	|:-----------------:	|:--------:	|:--------------------------:	|:-----:	|:--------------:	|
+| Meaning 	| Strongly Disagree 	| Disagree 	| Neither Agree nor Disagree 	| Agree 	| Strongly Agree 	|
 
-<!-- But we now need to turn to the six predictor variables. -->
+<br/>
 
-<!-- <br/> -->
+~~Subsequently, before averaging these items, you will then need to reverse-score this item to make it conform to the others.~~
+
+~~This may seem like busywork, but the purpose of it is twofold:~~
+
+~~1. It keeps the participants from getting bored with the same types of questions over and over again. This is more important on longer surveys, but we practice it here.~~
+~~2. It captures respondents who may be responding "robotically" (e.g., just indicating the same number over and over again to get through the survey, without actually reading the questions). In many cases, researchers can use such inconsistent responses to filter out disingenuous observations. Again, this is more important for longer surveys, but we practice it here.~~
+
+<br/>
+
+~~But we now need to turn to the six predictor variables.~~
+
+<br/>
 
 #### The six **predictor** variables {#TheSixPredictorVariables}
 
