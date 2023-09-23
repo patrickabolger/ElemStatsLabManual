@@ -2,6 +2,7 @@ BuildMyBook.R
 docs/.nojekyll
 .DS_Store
 images/.DS_Store
+images/.DS_Store
 css/toc.css
 
 ### R ###
