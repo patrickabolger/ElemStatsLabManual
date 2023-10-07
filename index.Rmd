@@ -1,7 +1,7 @@
 --- 
 title: 'A Lab Manual for PSYC 301: Elementary Statistics for Psychology'
 author:
-  affiliation: 'Department of Psychological & Brain Sciences at Texas A&M University'
+  affiliation: 'Department of Psychological & Brain Sciences at Texas A&M University (until May 2022)'
   name: "Patrick Bolger, PhD"
 date: "`r format(Sys.time(), '%d %B %Y')`"
 description: 'This is a lab manual for PSYC 301: Elementary Statistics for Psychology. It is an open educational resource (OER), so there is no charge to students.'
@@ -30,7 +30,7 @@ library(pander)
 # by clicking the green arrow in the upper right of this chunk. 
 # IMPORTANT: Afterwards, set eval=T back to eval=F. (the reason for this is that it is
 # considered rude to share code that automatically installs programs on other people's computers.)
- # want <- c("readr", "dplyr", "magrittr", "jmv", "kableExtra", "trimr", "haven", "scatr")
+ # want <- c("readr", "dplyr", "magrittr", "jmv", "kableExtra", "trimr", "haven", "scatr", "jquerylib")
  # have <- want %in% rownames(installed.packages())
  # if(any(!have)) install.packages(want[!have])
  # rm(want)
@@ -54,6 +54,11 @@ library(pander)
 #   ), 
 # 'packages.bib')
 ```
+
+```{r}
+jquerylib::jquery_core(3)
+```
+
 
 # Preface {-}
 

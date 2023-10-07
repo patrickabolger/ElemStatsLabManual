@@ -22,7 +22,7 @@
 
 
 
-<meta name="date" content="2023-09-23" />
+<meta name="date" content="2023-10-07" />
 
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <meta name="apple-mobile-web-app-capable" content="yes" />
@@ -575,21 +575,24 @@ Figure 7.1: Setting the parameters for a correlation matrix across sleep hours (
                                         My sleep (hrs.)    Baby sleep (hrs.)    My grumpiness   
  ────────────────────────────────────────────────────────────────────────────────────────────── 
    My sleep (hrs.)      Pearson&#39;s r                   —                                         
+                        df                            —                                         
                         p-value                       —                                         
                         95% CI Upper                  —                                         
                         95% CI Lower                  —                                         
                                                                                                 
    Baby sleep (hrs.)    Pearson&#39;s r           0.6279493                    —                    
+                        df                           98                    —                    
                         p-value              &lt; .0000001                    —                    
                         95% CI Upper          0.7338535                    —                    
                         95% CI Lower          0.4922450                    —                    
                                                                                                 
    My grumpiness        Pearson&#39;s r          -0.9033840           -0.5659637                —   
+                        df                           98                   98                —   
                         p-value              &lt; .0000001           &lt; .0000001                —   
                         95% CI Upper         -0.8594714           -0.4157643                —   
                         95% CI Lower         -0.9340614           -0.6861101                —   
  ────────────────────────────────────────────────────────────────────────────────────────────── </code></pre>
-<p><img src="ElemStatsLabManual_files/figure-html/unnamed-chunk-121-1.svg" width="672" /></p>
+<p><img src="ElemStatsLabManual_files/figure-html/unnamed-chunk-122-1.svg" width="672" /></p>
 <p><br/></p>
 <p>Both results are correlation matrices: one in the form of a table (the top one); the other in the form of a figure (the bottom one). Both of them have the same pattern:</p>
 <ul>
@@ -628,7 +631,7 @@ Figure 7.2: Setting the parameters for a scatterplot between <code>My grumpiness
 </div>
 <p><br/></p>
 <p>The output of this procedure should look something like what is below.</p>
-<p><img src="ElemStatsLabManual_files/figure-html/unnamed-chunk-123-1.svg" width="672" /></p>
+<p><img src="ElemStatsLabManual_files/figure-html/unnamed-chunk-124-1.svg" width="672" /></p>
 <p><br/></p>
 <p>As before, you can see that there is a negative correlation between <code>My grumpiness</code> and <code>My sleep (hrs.)</code>. As the parent sleeps less, their grumpiness goes up, and as they sleep more, their grumpiness goes down.</p>
 <p>Now technically speaking (and this really is getting nit-picky), this is the wrong graph for the Pearson’s <em>r</em>. So was the one above generated through the <em>Regression</em> analysis. This is because, as noted in section <a href="CorrAndLinearReg.html#Correlations">7.1</a> above, Pearson’s <em>r</em> actually uses standardized versions of each variable, and what you see here are the variables in their raw values (just read the axes; a standardized scale would have 0 in the middle).</p>
@@ -644,7 +647,7 @@ Figure 7.3: Setting the parameters for a scatterplot between <code>My grumpiness
 </div>
 <p><br/></p>
 <p>And the results should appear as below.</p>
-<p><img src="ElemStatsLabManual_files/figure-html/unnamed-chunk-124-1.svg" width="672" /></p>
+<p><img src="ElemStatsLabManual_files/figure-html/unnamed-chunk-125-1.svg" width="672" /></p>
 <p><br/></p>
 <p>The outputs are nearly identical, visually, in this case. And again, underneath, they really are the same thing. Sometimes you will see correlations depicted without an <em>X</em> or <em>Y</em> axis, and the reason for that is straightforward: The origin (where both <em>X</em> and <em>Y</em> equal 0) now bisects the data right in the middle of the plot. So visualizing the axes in this case would be both intrusive and redundant.</p>
 <p>One thing that has changed, however, is that the slope of the line in the second scatterplot (directly above) for the standardized variables (recall that the slope of the line is defined as the change in the value on <em>Y</em> for a one-unit change in <em>X</em>) is now tightly related to Pearson’s <em>r</em>. In fact, the slope in the figure above is now Pearson’s <em>r</em> correlation coefficient, <strong><em>exactly</em></strong>. If you wanted to state it in words, you’d say, “For every standard-deviation increase of one in <code>My sleep (hrs.)</code>, there is a corresponding decrease of .903 standard-deviation units in <code>My grumpiness</code>.” Or, “As I sleep more, I get less grumpy.”</p>
@@ -822,7 +825,7 @@ Figure 7.5: Adding some parameters for the linear regression of <code>My grumpin
 <div id="BasicRegressionParenthoodVisualizationWithScatr" class="section level4 hasAnchor" number="7.2.1.3">
 <h4><span class="header-section-number">7.2.1.3</span> Visualization using scatr<a href="CorrAndLinearReg.html#BasicRegressionParenthoodVisualizationWithScatr" class="anchor-section" aria-label="Anchor link to header"></a></h4>
 <p>We actually did this already in section <a href="CorrAndLinearReg.html#BasicCorrelationParenthoodVisualizationWithScatr">7.1.1.4</a> above. However, we will do it again below, but this time with density plots selected in <code>scatr</code> instead of boxplots:</p>
-<p><img src="ElemStatsLabManual_files/figure-html/unnamed-chunk-127-1.svg" width="672" /></p>
+<p><img src="ElemStatsLabManual_files/figure-html/unnamed-chunk-128-1.svg" width="672" /></p>
 <p><br/></p>
 <p>This visualization adds something that was a little bit more difficult to see with the boxplots for each variable in section <a href="CorrAndLinearReg.html#BasicCorrelationParenthoodVisualizationWithScatr">7.1.1.4</a>. Namely, the shape of the distribution (as density plots) for each variable is skewed negatively. Using our powers of visual inference, it looks like, at least most of the time, the author is getting just over 7 hours/night of sleep, and has a typical grumpiness level of about 60 or so. Nonetheless, there are some bad nights with little sleep (though not less than 4.5 hours of sleep) and subsequent higher levels of grumpiness (though not higher than about 91).</p>
 <p>You might also notice the blue-ish shaded area around the linear regression line. This represents the 95% confidence interval for the slope of the line. From the output of the regression, we can see that the standard error for this slope is 0.429. Using our pretty-good-guess formula for the 95% confidence interval, we get the following:</p>

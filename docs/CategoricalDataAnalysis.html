@@ -22,7 +22,7 @@
 
 
 
-<meta name="date" content="2023-09-23" />
+<meta name="date" content="2023-10-07" />
 
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <meta name="apple-mobile-web-app-capable" content="yes" />
@@ -531,7 +531,7 @@ Figure 5.1: Setting the parameters in <em>jamovi</em> for getting the counts on 
 
  Frequencies of choice_1                              
  ──────────────────────────────────────────────────── 
-   Levels      Counts    % of Total    Cumulative %   
+   choice_1    Counts    % of Total    Cumulative %   
  ──────────────────────────────────────────────────── 
    clubs           35      17.50000        17.50000   
    diamonds        51      25.50000        43.00000   
@@ -650,7 +650,7 @@ Figure 5.4: Setting the parameters in <em>jamovi</em> for creating a barplot for
  ────────────────────────────────── 
    Standard deviation               
  ────────────────────────────────── </code></pre>
-<p><img src="ElemStatsLabManual_files/figure-html/unnamed-chunk-62-1.svg" width="672" /></p>
+<p><img src="ElemStatsLabManual_files/figure-html/unnamed-chunk-63-1.svg" width="672" /></p>
 <p><br/></p>
 </div>
 <div id="ChiSquareGoodnessOfFitBasicCardsInterpretingOutput" class="section level4 hasAnchor" number="5.1.1.4">
@@ -665,7 +665,7 @@ Figure 5.4: Setting the parameters in <em>jamovi</em> for creating a barplot for
 <p>The obtained value is 8.44, which is what you get after you refer to the table above, and substitute the <em>O</em>s and the <em>E</em>s with the <em>Observed</em> and <em>Expected</em> values (respectively) for each card suit (<code>i</code>) found in the table above, .</p>
 <p>What is important about the degrees of freedom (3 in this case) is that this figure sets up the particular chi-squared <strong>distribution</strong> that the test statistics of 8.44 will be evaluated against. This distribution is the solid line in Figure 10.1 in <span class="citation">Navarro &amp; Foxcroft (<a href="#ref-lsj">2019, sec. 10.1.5</a>, p. 217)</span>. But we reproduce it below.</p>
 <p><br/></p>
-<p><img src="ElemStatsLabManual_files/figure-html/unnamed-chunk-63-1.svg" width="672" /></p>
+<p><img src="ElemStatsLabManual_files/figure-html/unnamed-chunk-64-1.svg" width="672" /></p>
 <p><br/></p>
 <p>What does this distribution represent? Think of it this way: If you carried out an infinite number of these experiments with the cards and the four suits, this <span class="math inline">\(\chi_2\)</span> distribution (with degrees of freedom equal to 3) represents the relative probabilities (areas under the curve) of getting different ranges of observed values (mapped across the x-axis) under the assumption that the null hypothesis is underlyingly true.</p>
 <p>It turns out that for this inferential test (<span class="math inline">\(\chi^2\)</span> goodness of fit) with three degrees of freedom, obtained values of 7.815 or greater would be less than 5% likely to occur if the null hypothesis were true. The value 7.815 is the critical value, where that 5% area extending out to the right starts. Our obtained value of 8.44 is greater than that (7.815) of course. In fact, if we were to calculate the area under the curve to the right of 8.44, we would get 3.8%, which is our <em>p</em>-value up above (an <em>exact</em> <em>p</em>-value).</p>
@@ -723,7 +723,7 @@ Figure 5.4: Setting the parameters in <em>jamovi</em> for creating a barplot for
 <p><br/></p>
 <table class="table table-striped" style="margin-left: auto; margin-right: auto;">
 <caption>
-<span id="tab:unnamed-chunk-67">Table 5.1: </span>Graduate-school admissions figures by gender and department from the University of California Berkeley in 1973 (available as the ‘UCBAdmissions’ sample data set in base-R).
+<span id="tab:unnamed-chunk-68">Table 5.1: </span>Graduate-school admissions figures by gender and department from the University of California Berkeley in 1973 (available as the ‘UCBAdmissions’ sample data set in base-R).
 </caption>
 <thead>
 <tr>
@@ -1583,7 +1583,7 @@ Figure 5.10: Parameter settings in <em>jamovi</em> for a chi-square test of inde
    Standard deviation    robot               
                          human               
  ─────────────────────────────────────────── </code></pre>
-<p><img src="ElemStatsLabManual_files/figure-html/unnamed-chunk-81-1.svg" width="672" /></p>
+<p><img src="ElemStatsLabManual_files/figure-html/unnamed-chunk-82-1.svg" width="672" /></p>
 <p><br/></p>
 <p>In the data set you can see that there were 180 participants, 87 who turned out to be robots (in reality), and 93 who turned out to be human. The main question is whether the responses to <code>flower</code>, <code>puppy</code>, and <code>large, properly formatted data file</code> were equally proportioned across both humans and robots. If so, the test is no good at distinguishing them. But if not, then it might have some value as a shibboleth.</p>
 <p>The expected values are calculated by dividing the total number of participants (human and robot) who chose, say, <code>puppy</code>, and dividing by the total (180, then applying that ratio to the population of each group. There were 28 participants who chose <code>puppy</code>, which comprises <span class="math inline">\(\frac {28}{180}=15.55\%\)</span> So the expected value for humans was <span class="math inline">\(Expected_{human}=93 \times.1555=14.5\)</span>. For robots, this was <span class="math inline">\(Expected_{robot}=87 \times.1555=13.5\)</span>. The same is done for the other two categories (<code>flowers</code> and <code>data files</code>). These are then compared to the observed values for each group through the formula for the chi-square test for independence, which we will get to shortly.</p>
@@ -1613,7 +1613,7 @@ Walking through this might help. You start with <span class="math inline">\(i=ro
 <p>Plugging in the <code>Expected</code> and <code>Observed</code> values into the formula renders the <em>obtained value</em>. The degrees of freedom are determined by the total number of data points minus the number of constraints. In this case, it’s <span class="math inline">\((r-1)(c-1)=(3-1)(2-1)=(2)(1)=2\)</span>. See <span class="citation">Navarro &amp; Foxcroft (<a href="#ref-lsj">2019, sec. 10.2.1</a>, pp. 227-228)</span> for more detail.</p>
 <p>The degrees of freedom define the particular chi-square distribution that the obtained value gets evaluated against.</p>
 <p><br/></p>
-<p><img src="ElemStatsLabManual_files/figure-html/unnamed-chunk-83-1.svg" width="672" /></p>
+<p><img src="ElemStatsLabManual_files/figure-html/unnamed-chunk-84-1.svg" width="672" /></p>
 <p><br/></p>
 <p>Obviously, this chi-square distribution looks very different from the one above with 3 degrees of freedom (with the cards data). The chi-square distribution in general has the unique feature of changing its shape dramatically depending on the degrees of freedom, something that doesn’t change very much with <em>t</em>-distributions (next chapter).</p>
 <p>But nothing changes with respect to its function. It defines the probabilities of an infinite set of test outcomes (from an infinite set of study replications) with 2 degrees of freedom, all under the assumption that the null hypothesis is true. With 2 degrees of freedom, you can see that the most common obtained value under the null hypothesis would be 0, with progressively diminishing probabilities for more extreme obtained values. Moreover, the critical value on this distribution (for <span class="math inline">\(\alpha=.05\)</span>) is 5.991. This means that obtained values of 5.991 or greater are less than 5% likely to occur if the null hypothesis is true.</p>
@@ -1718,7 +1718,7 @@ Figure 5.12: Settings in <em>jamovi</em> for the variable Q24 from the online ve
    Standard deviation    Poor Theory of Mind           
                          Good Theory of Mind           
  ───────────────────────────────────────────────────── </code></pre>
-<p><img src="ElemStatsLabManual_files/figure-html/unnamed-chunk-87-1.svg" width="672" /></p>
+<p><img src="ElemStatsLabManual_files/figure-html/unnamed-chunk-88-1.svg" width="672" /></p>
 <p><br/></p>
 <p>Thus, of the 11,186 responses, about 55% reported having a relatively poor theory of mind (6,174), and about 45% (5,012) reported having a relative good theory of mind. Less than half of one percent failed to provide any response, equally distributed across both levels of Theory of Mind. A cursory glance at the bar plot suggests that those reporting a relatively poor theory of mind are more likely to self-report selflessness than those reporting a relatively good theory of mind. But plots can deceive. We needed to carry out an inferential test to see if this might be a real difference or not.</p>
 <p>Carrying this procedure out was much more straightforward than the chi-square goodness-of-fit test in the last section. We started by clicking the <code>Analyses</code> tab, and then <code>Frequencies</code>. Drag <code>Q16</code> to the <code>Rows</code> box and <code>Q24</code> to the <code>Columns</code> box (or vice-versa; it doesn’t matter).</p>

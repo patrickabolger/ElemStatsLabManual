@@ -22,7 +22,7 @@
 
 
 
-<meta name="date" content="2023-09-23" />
+<meta name="date" content="2023-10-07" />
 
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <meta name="apple-mobile-web-app-capable" content="yes" />
@@ -683,7 +683,7 @@ Figure 3.6: Setting the parameters for the frequencies of different nominal vari
 
  Frequencies of drug                                  
  ──────────────────────────────────────────────────── 
-   Levels      Counts    % of Total    Cumulative %   
+   drug        Counts    % of Total    Cumulative %   
  ──────────────────────────────────────────────────── 
    anxifree         6      33.33333        33.33333   
    joyzepam         6      33.33333        66.66667   
@@ -693,7 +693,7 @@ Figure 3.6: Setting the parameters for the frequencies of different nominal vari
 
  Frequencies of therapy                                 
  ────────────────────────────────────────────────────── 
-   Levels        Counts    % of Total    Cumulative %   
+   therapy       Counts    % of Total    Cumulative %   
  ────────────────────────────────────────────────────── 
    CBT                9      50.00000        50.00000   
    no.therapy         9      50.00000       100.00000   
@@ -722,14 +722,17 @@ Figure 3.7: Setting the parameters to examin the frequencies of different nomina
 
  FREQUENCIES
 
- Frequencies of drug               
- ───────────────────────────────── 
-   drug        CBT    no.therapy   
- ───────────────────────────────── 
-   anxifree      3             3   
-   joyzepam      3             3   
-   placebo       3             3   
- ───────────────────────────────── </code></pre>
+ Frequencies of drug                                                
+ ────────────────────────────────────────────────────────────────── 
+   drug        therapy       Counts    % of Total    Cumulative %   
+ ────────────────────────────────────────────────────────────────── 
+   anxifree    CBT                3      16.66667        16.66667   
+               no.therapy         3      16.66667        33.33333   
+   joyzepam    CBT                3      16.66667        50.00000   
+               no.therapy         3      16.66667        66.66667   
+   placebo     CBT                3      16.66667        83.33333   
+               no.therapy         3      16.66667       100.00000   
+ ────────────────────────────────────────────────────────────────── </code></pre>
 <p><br/></p>
 <p>Here there is one table, with the <code>Variables</code> variable (<code>drug</code>) represented vertically on the left, and the <code>Split by</code> variable (<code>therapy</code>) represented horizontally across the top. Note that there are a total of 18 observations, where 3 belong to each combination of levels across the two variables. This is a more succinct summary than the one in the first table produced above.</p>
 <p><br/></p>

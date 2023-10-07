@@ -22,7 +22,7 @@
 
 
 
-<meta name="date" content="2023-09-23" />
+<meta name="date" content="2023-10-07" />
 
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <meta name="apple-mobile-web-app-capable" content="yes" />
@@ -548,6 +548,8 @@ Figure 6.1: Parameter settings for the independent samples <em>t</em>-test using
  ──────────────────────────────────────────────────────────── 
    grade    Welch&#39;s t     2.034187    23.02481    0.0536100   
  ──────────────────────────────────────────────────────────── 
+   Note. Hₐ μ &lt;sub&gt;Anastasia&lt;/sub&gt; ≠
+   μ &lt;sub&gt;Bernadette&lt;/sub&gt;
 
 
  Group Descriptives                                                            
@@ -557,7 +559,7 @@ Figure 6.1: Parameter settings for the independent samples <em>t</em>-test using
    grade    Anastasia     15    74.53333    76.00000    8.998942    2.323517   
             Bernadette    18    69.05556    69.00000    5.774918    1.361161   
  ───────────────────────────────────────────────────────────────────────────── </code></pre>
-<p><img src="ElemStatsLabManual_files/figure-html/unnamed-chunk-91-1.svg" width="672" /></p>
+<p><img src="ElemStatsLabManual_files/figure-html/unnamed-chunk-92-1.svg" width="672" /></p>
 <p><br/></p>
 </div>
 <div id="IndSamplesDrHarpoInterpreting" class="section level4 hasAnchor" number="6.1.1.3">
@@ -642,6 +644,7 @@ Figure 6.4: Setting the parameters for a <em>t</em>-test on variables from <span
  ─────────────────────────────────────────────────────────────────────── 
    Comm.Wth.Exts    Student&#39;s t    5.035711 ᵃ    2462.000    0.0000005   
  ─────────────────────────────────────────────────────────────────────── 
+   Note. Hₐ μ &lt;sub&gt;No&lt;/sub&gt; ≠ μ &lt;sub&gt;Yes&lt;/sub&gt;
    ᵃ Levene&#39;s test is significant (p &lt; .05), suggesting a violation
    of the assumption of equal variances
 
@@ -668,6 +671,7 @@ Figure 6.4: Setting the parameters for a <em>t</em>-test on variables from <span
  ──────────────────────────────────────────────────────────────────────────────────────────────── 
    Comm.Wth.Exts    Welch&#39;s t     5.265362    1741.577    0.0000002    Cohen&#39;s d      0.2220098   
  ──────────────────────────────────────────────────────────────────────────────────────────────── 
+   Note. Hₐ μ &lt;sub&gt;No&lt;/sub&gt; ≠ μ &lt;sub&gt;Yes&lt;/sub&gt;
 
 
  Group Descriptives                                                                   
@@ -677,7 +681,7 @@ Figure 6.4: Setting the parameters for a <em>t</em>-test on variables from <span
    Comm.Wth.Exts    No       1672    2.147727    1.000000    1.429473    0.03495891   
                     Yes       792    1.848485    1.000000    1.261016    0.04480826   
  ──────────────────────────────────────────────────────────────────────────────────── </code></pre>
-<p><img src="ElemStatsLabManual_files/figure-html/unnamed-chunk-97-1.svg" width="672" /></p>
+<p><img src="ElemStatsLabManual_files/figure-html/unnamed-chunk-98-1.svg" width="672" /></p>
 <p><br/></p>
 <p>Clearly, the effect is significant. But how do we interpret that? Well it turns out that with <em>t</em>-tests it’s very simple in the case of a significant effect: The mean that is greater is significantly greater than the other, and vice-versa.</p>
 <p>But there’s a bigger problem. This is something that would have been caught beforehand if looking specifically at <em>Descriptives</em> (as we did in Chapter <a href="DescriptiveStats.html#DescriptiveStats">3</a>). But you can see it in two places here: 1) in the table of <em>Descriptives</em> that we asked for; and especially in 2) in the <em>Descriptives plots.</em></p>
@@ -697,7 +701,7 @@ Figure 6.4: Setting the parameters for a <em>t</em>-test on variables from <span
    Standard deviation    No                         1.429473   
                          Yes                        1.261016   
  ───────────────────────────────────────────────────────────── </code></pre>
-<p><img src="ElemStatsLabManual_files/figure-html/unnamed-chunk-98-1.svg" width="672" /></p>
+<p><img src="ElemStatsLabManual_files/figure-html/unnamed-chunk-99-1.svg" width="672" /></p>
 <p><br/></p>
 <p>Clearly, the distributions are very similar to each other, but they are <strong>heavily</strong> skewed positively (Remember, violin plots are like histograms [density plots, really] tilted 90 degrees counterclockwise, and then mirrored). The “violins” should be fat in the middle and narrow at the extremes. Instead, both violin plots look like narrow vases with wide bases, where the vast majority of the responses are 1, at the lower end of the scale (which is on the y-axis now, not on the left-hand side of the x-axis, as is true for histograms).</p>
 <p>The <em>t</em>-test gave us a significant result, but it is not an appropriate test at all.</p>
@@ -877,7 +881,7 @@ Figure 6.6: Setting <em>Default missings</em> to blanks (““) in <em>jamovi</
 <p><br/></p>
 <table class="table table-striped" style="margin-left: auto; margin-right: auto;">
 <caption>
-<span id="tab:unnamed-chunk-105">Table 6.1: </span>The ‘Chico’ data set from Navarro and Foxcroft (2019).
+<span id="tab:unnamed-chunk-106">Table 6.1: </span>The ‘Chico’ data set from Navarro and Foxcroft (2019).
 </caption>
 <thead>
 <tr>
@@ -1151,8 +1155,9 @@ Figure 6.7: Setting the parameters for a paired-samples <em>t</em>-test on a sim
                                                 statistic    df          p                         Effect Size   
  ─────────────────────────────────────────────────────────────────────────────────────────────────────────────── 
    grade_test2    grade_test1    Student&#39;s t     6.475436    19.00000    0.0000033    Cohen&#39;s d       1.447952   
- ─────────────────────────────────────────────────────────────────────────────────────────────────────────────── </code></pre>
-<p><img src="ElemStatsLabManual_files/figure-html/unnamed-chunk-107-1.svg" width="672" /></p>
+ ─────────────────────────────────────────────────────────────────────────────────────────────────────────────── 
+   Note. Hₐ μ &lt;sub&gt;Measure 1 - Measure 2&lt;/sub&gt; ≠ 0</code></pre>
+<p><img src="ElemStatsLabManual_files/figure-html/unnamed-chunk-108-1.svg" width="672" /></p>
 <p><br/></p>
 </div>
 <div id="interpreting" class="section level4 hasAnchor" number="6.2.1.2">
@@ -1210,7 +1215,7 @@ Figure 6.10: Filling in rows in the new, computed variable. Note the ability to 
 <p><br/></p>
 <table class="table table-striped" style="margin-left: auto; margin-right: auto;">
 <caption>
-<span id="tab:unnamed-chunk-109">Table 6.2: </span>The authors’ randomly generated data set based off of the ‘Chico’ data set from Navarro and Foxcroft (2019).
+<span id="tab:unnamed-chunk-110">Table 6.2: </span>The authors’ randomly generated data set based off of the ‘Chico’ data set from Navarro and Foxcroft (2019).
 </caption>
 <thead>
 <tr>
@@ -1479,8 +1484,9 @@ grade_test2
                                                 statistic    df          p                         Effect Size   
  ─────────────────────────────────────────────────────────────────────────────────────────────────────────────── 
    grade_test2    grade_test1    Student&#39;s t    0.6643604    19.00000    0.5144424    Cohen&#39;s d      0.1485555   
- ─────────────────────────────────────────────────────────────────────────────────────────────────────────────── </code></pre>
-<p><img src="ElemStatsLabManual_files/figure-html/unnamed-chunk-111-1.svg" width="672" /></p>
+ ─────────────────────────────────────────────────────────────────────────────────────────────────────────────── 
+   Note. Hₐ μ &lt;sub&gt;Measure 1 - Measure 2&lt;/sub&gt; ≠ 0</code></pre>
+<p><img src="ElemStatsLabManual_files/figure-html/unnamed-chunk-112-1.svg" width="672" /></p>
 <p><br/></p>
 </div>
 <div id="PairedSamplesChicoAdvancedInterpreting" class="section level4 hasAnchor" number="6.2.2.3">
@@ -1491,7 +1497,7 @@ grade_test2
 <p><br/></p>
 <table class="table table-striped" style="margin-left: auto; margin-right: auto;">
 <caption>
-<span id="tab:unnamed-chunk-113">Table 6.3: </span>The original Chico.omv data set from Navarro &amp; Foxcroft (2019), with ‘DIFF’ being ‘time 1’ subtracted from ‘time 2’.
+<span id="tab:unnamed-chunk-114">Table 6.3: </span>The original Chico.omv data set from Navarro &amp; Foxcroft (2019), with ‘DIFF’ being ‘time 1’ subtracted from ‘time 2’.
 </caption>
 <thead>
 <tr>
@@ -1797,7 +1803,7 @@ student20
 <p><br/></p>
 <table class="table table-striped" style="margin-left: auto; margin-right: auto;">
 <caption>
-<span id="tab:unnamed-chunk-115">Table 6.4: </span>The randomly generated Chico.omv data set from Navarro &amp; Foxcroft (2019), with ‘DIFF’ being ‘time 1’ subtracted from ‘time 2’.
+<span id="tab:unnamed-chunk-116">Table 6.4: </span>The randomly generated Chico.omv data set from Navarro &amp; Foxcroft (2019), with ‘DIFF’ being ‘time 1’ subtracted from ‘time 2’.
 </caption>
 <thead>
 <tr>
@@ -2110,7 +2116,7 @@ DIFF
 <p><br/></p>
 <table class="table table-striped" style="margin-left: auto; margin-right: auto;">
 <caption>
-<span id="tab:unnamed-chunk-117">Table 6.5: </span>The randomly generated Chico.omv data set (corrected to have correlated levels) from Navarro &amp; Foxcroft (2019), with ‘DIFF’ being ‘time 1’ subtracted from ‘time 2’.
+<span id="tab:unnamed-chunk-118">Table 6.5: </span>The randomly generated Chico.omv data set (corrected to have correlated levels) from Navarro &amp; Foxcroft (2019), with ‘DIFF’ being ‘time 1’ subtracted from ‘time 2’.
 </caption>
 <thead>
 <tr>
@@ -2423,6 +2429,7 @@ DIFF
  ─────────────────────────────────────────────────────────────────────────────────────────────────────────────── 
    grade_test2    grade_test1    Student&#39;s t     8.191378    19.00000    0.0000001    Cohen&#39;s d       1.831648   
  ─────────────────────────────────────────────────────────────────────────────────────────────────────────────── 
+   Note. Hₐ μ &lt;sub&gt;Measure 1 - Measure 2&lt;/sub&gt; ≠ 0
 
 
  Descriptives                                                          
